@@ -1,0 +1,68 @@
+name: Sports Data Scraper
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'  # Every 30 minutes
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  update-sports-data:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install System Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y wget unzip
+
+      - name: Install Playwright
+        run: |
+          pip install playwright
+          playwright install chromium
+
+      - name: Install Python Dependencies
+        run: |
+          pip install aiohttp
+          pip install playwright
+          pip install pyzipper
+
+      - name: Extract Protected Script
+        run: |
+          # Extract the password-protected zip
+          ZIP_PASSWORD="${{ secrets.ZIP_PASSWORD }}" python extract_script.py
+
+      - name: Run Sports Scraper
+        run: python sports_scraper.py
+
+      - name: Commit and Push Changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          
+          # Add all new and modified files
+          git add output/
+          git add sports_status.json
+          
+          # Check if there are changes to commit
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "🤖 Auto update sports data - $(date '+%Y-%m-%d %H:%M:%S')"
+          fi
+
+      - name: Push Changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
+
+permissions:
+  contents: write 
