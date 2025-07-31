@@ -47,9 +47,10 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           
-          # Add all new and modified files
-          git add output/
-          git add sports_status.json
+          # Add output directory if it exists
+          if [ -d "output" ]; then
+            git add output/
+          fi
           
           # Check if there are changes to commit
           if git diff --staged --quiet; then
