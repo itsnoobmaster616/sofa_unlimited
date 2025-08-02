@@ -1143,9 +1143,9 @@
       },
       "customId": "WdZdswTJi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 70,
+        "description": "Canceled",
+        "type": "canceled"
       },
       "homeTeam": {
         "name": "underrated",
@@ -1204,7 +1204,12 @@
       "coverage": 90,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type"
+        ],
+        "changeTimestamp": 1754173396
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -2211,6 +2216,32 @@
         "type": "notstarted"
       },
       "homeTeam": {
+        "name": "NRG",
+        "slug": "nrg",
+        "sport": {
+          "name": "E-sports",
+          "slug": "esports",
+          "id": 72
+        },
+        "userCount": 86,
+        "nameCode": "NRG",
+        "national": false,
+        "type": 0,
+        "id": 366536,
+        "country": {
+          "alpha2": "US",
+          "alpha3": "USA",
+          "name": "USA",
+          "slug": "usa"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "awayTeam": {
         "name": "M80",
         "slug": "m80",
         "sport": {
@@ -2242,32 +2273,6 @@
             "bn": "এম80"
           },
           "shortNameTranslation": {}
-        }
-      },
-      "awayTeam": {
-        "name": "NRG",
-        "slug": "nrg",
-        "sport": {
-          "name": "E-sports",
-          "slug": "esports",
-          "id": 72
-        },
-        "userCount": 86,
-        "nameCode": "NRG",
-        "national": false,
-        "type": 0,
-        "id": 366536,
-        "country": {
-          "alpha2": "US",
-          "alpha3": "USA",
-          "name": "USA",
-          "slug": "usa"
-        },
-        "subTeams": [],
-        "teamColors": {
-          "primary": "#374df5",
-          "secondary": "#374df5",
-          "text": "#ffffff"
         }
       },
       "homeScore": {},
@@ -2852,10 +2857,11 @@
       },
       "customId": "AFKdsNTXd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 1001,
+        "description": "First game",
+        "type": "inprogress"
       },
+      "winnerCode": 3,
       "homeTeam": {
         "name": "BESTIA",
         "slug": "bestia",
@@ -2919,12 +2925,30 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
       "coverage": 91,
-      "time": {},
+      "time": {
+        "currentPeriodStartTimestamp": 1754172744
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.display",
+          "awayScore.display",
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "awayScore.current",
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1754172790
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
@@ -2933,7 +2957,7 @@
       "eventType": "best_of",
       "roundsInAHalf": 12,
       "slug": "2game-bestia",
-      "startTimestamp": 1754172000,
+      "startTimestamp": 1754172900,
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -12445,10 +12469,11 @@
       },
       "customId": "cDVcsVNri",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 1001,
+        "description": "First game",
+        "type": "inprogress"
       },
+      "winnerCode": 3,
       "homeTeam": {
         "name": "LYON",
         "slug": "lyon",
@@ -12509,12 +12534,25 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 15
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 6
+      },
       "coverage": 92,
-      "time": {},
+      "time": {
+        "currentPeriodStartTimestamp": 1754171132
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.period1"
+        ],
+        "changeTimestamp": 1754173386
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
@@ -12522,7 +12560,7 @@
       "bestOf": 3,
       "eventType": "best_of",
       "slug": "lyon-team-liquid",
-      "startTimestamp": 1754172000,
+      "startTimestamp": 1754171400,
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
