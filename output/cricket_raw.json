@@ -294,9 +294,9 @@
       },
       "customId": "xTadsATad",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 21,
+        "description": "1st Inning",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "London Spirit",
@@ -362,19 +362,36 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 21,
+        "display": 21,
+        "innings": {
+          "inning1": {
+            "score": 21,
+            "wickets": 2,
+            "overs": 5,
+            "runRate": 4.2
+          }
+        }
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
       "coverage": 1,
       "time": {},
       "changes": {
         "changes": [
-          "status"
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.innings"
         ],
-        "changeTimestamp": 1754413571
+        "changeTimestamp": 1754416148
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 13402295,
+      "currentBattingTeamId": 377175,
       "endTimestamp": 1754429400,
       "slug": "london-spirit-oval-invincibles",
       "startTimestamp": 1754415000,
@@ -385,6 +402,7 @@
         "inning3": "3rd Inning",
         "inning4": "4th Inning"
       },
+      "lastPeriod": "inning1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -1943,10 +1961,11 @@
       },
       "customId": "BgAbsEgAb",
       "status": {
-        "code": 21,
-        "description": "1st Inning",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Nottinghamshire",
         "slug": "nottinghamshire",
@@ -2034,14 +2053,14 @@
         }
       },
       "awayScore": {
-        "current": 216,
-        "display": 216,
+        "current": 233,
+        "display": 233,
         "innings": {
           "inning1": {
-            "score": 216,
-            "wickets": 9,
-            "overs": 38,
-            "runRate": 5.68,
+            "score": 233,
+            "wickets": 10,
+            "overs": 41.1,
+            "runRate": 5.66,
             "targetRunRate": 6.22
           }
         }
@@ -2050,13 +2069,16 @@
       "time": {},
       "changes": {
         "changes": [
-          "awayScore.innings"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1754414527
+        "changeTimestamp": 1754415487
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 13448386,
+      "note": "Nottinghamshire beat Essex by 52 runs (DLS method)",
       "currentBattingTeamId": 187829,
       "endTimestamp": 1754416800,
       "slug": "essex-nottinghamshire",
@@ -2068,7 +2090,6 @@
         "inning3": "3rd Inning",
         "inning4": "4th Inning"
       },
-      "lastPeriod": "inning1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
