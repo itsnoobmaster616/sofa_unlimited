@@ -8125,6 +8125,7 @@
       "isEditor": false
     },
     {
+      "firstToServe": 1,
       "tournament": {
         "name": "Toronto, Canada, Doubles",
         "slug": "toronto-canada-doubles",
@@ -8195,9 +8196,9 @@
       },
       "customId": "qKjbsmotc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 8,
+        "description": "1st set",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Salisbury J / Skupski N",
@@ -8421,11 +8422,29 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 1,
+        "point": "0"
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 2,
+        "point": "0"
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1754512726
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.point",
+          "awayScore.period1",
+          "awayScore.point",
+          "firstToServe"
+        ],
+        "changeTimestamp": 1754513330
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -8441,6 +8460,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
@@ -11717,7 +11737,7 @@
       "isEditor": false
     },
     {
-      "firstToServe": 1,
+      "firstToServe": 2,
       "tournament": {
         "name": "Cincinnati, USA, Qualifying",
         "slug": "cincinnati-usa-qualifying",
@@ -11795,8 +11815,8 @@
       },
       "customId": "gTZsPjJb",
       "status": {
-        "code": 8,
-        "description": "1st set",
+        "code": 9,
+        "description": "2nd set",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -11885,25 +11905,29 @@
         "current": 0,
         "display": 0,
         "period1": 6,
+        "period2": 3,
         "period1TieBreak": 3,
-        "point": "3"
+        "point": "0"
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 6,
-        "period1TieBreak": 3,
-        "point": "3"
+        "current": 1,
+        "display": 1,
+        "period1": 7,
+        "period2": 2,
+        "period1TieBreak": 7,
+        "point": "0"
       },
       "time": {
-        "currentPeriodStartTimestamp": 1754509716
+        "currentPeriodStartTimestamp": 1754512298
       },
       "changes": {
         "changes": [
-          "homeScore.period1TieBreak",
-          "homeScore.point"
+          "homeScore.period2",
+          "homeScore.point",
+          "awayScore.point",
+          "firstToServe"
         ],
-        "changeTimestamp": 1754512075
+        "changeTimestamp": 1754513329
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -11919,7 +11943,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
@@ -12111,7 +12135,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
       "isEditor": false
@@ -13878,10 +13902,11 @@
       },
       "customId": "JgKsHNYc",
       "status": {
-        "code": 10,
-        "description": "3rd set",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Priscilla Hon",
         "slug": "hon-priscilla",
@@ -13961,24 +13986,27 @@
         "period1": 7,
         "period2": 3,
         "period3": 4,
-        "point": "0"
+        "point": "0",
+        "normaltime": 1
       },
       "awayScore": {
-        "current": 1,
-        "display": 1,
+        "current": 2,
+        "display": 2,
         "period1": 5,
         "period2": 6,
-        "period3": 5,
-        "point": "40"
+        "period3": 6,
+        "point": "40",
+        "normaltime": 2
       },
       "time": {
         "currentPeriodStartTimestamp": 1754509565
       },
       "changes": {
         "changes": [
-          "awayScore.point"
+          "time.currentPeriodStart",
+          "time.period3"
         ],
-        "changeTimestamp": 1754512093
+        "changeTimestamp": 1754512206
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -13994,7 +14022,6 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
@@ -14414,7 +14441,7 @@
       "isEditor": false
     },
     {
-      "firstToServe": 1,
+      "firstToServe": 2,
       "tournament": {
         "name": "Cincinnati, USA, Qualifying",
         "slug": "cincinnati-usa-qualifying",
@@ -14492,10 +14519,11 @@
       },
       "customId": "JpDstEBc",
       "status": {
-        "code": 9,
-        "description": "2nd set",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Antonia Ružić",
         "slug": "ruzic-antonia",
@@ -14566,27 +14594,29 @@
         }
       },
       "homeScore": {
-        "current": 1,
-        "display": 1,
+        "current": 2,
+        "display": 2,
         "period1": 6,
-        "period2": 3,
-        "point": "30"
+        "period2": 6,
+        "point": "40",
+        "normaltime": 2
       },
       "awayScore": {
         "current": 0,
         "display": 0,
         "period1": 3,
-        "period2": 0,
-        "point": "40"
+        "period2": 1,
+        "point": "30",
+        "normaltime": 0
       },
       "time": {
         "currentPeriodStartTimestamp": 1754511239
       },
       "changes": {
         "changes": [
-          "awayScore.point"
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1754512102
+        "changeTimestamp": 1754513013
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -14602,198 +14632,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period2",
       "finalResultOnly": false,
-      "feedLocked": false,
-      "groundType": "Hardcourt outdoor",
-      "isEditor": false
-    },
-    {
-      "tournament": {
-        "name": "Cincinnati, USA, Qualifying",
-        "slug": "cincinnati-usa-qualifying",
-        "category": {
-          "name": "WTA",
-          "slug": "wta",
-          "sport": {
-            "name": "Tennis",
-            "slug": "tennis",
-            "id": 5
-          },
-          "id": 6,
-          "country": {},
-          "flag": "wta",
-          "fieldTranslations": {
-            "nameTranslation": {
-              "ar": "رابطة لاعبات التنس",
-              "hi": "चैलेंजर",
-              "bn": "ডব্লিউটিএ"
-            },
-            "shortNameTranslation": {}
-          }
-        },
-        "uniqueTournament": {
-          "name": "Cincinnati",
-          "slug": "cincinnati",
-          "category": {
-            "name": "WTA",
-            "slug": "wta",
-            "sport": {
-              "name": "Tennis",
-              "slug": "tennis",
-              "id": 5
-            },
-            "id": 6,
-            "country": {},
-            "flag": "wta",
-            "fieldTranslations": {
-              "nameTranslation": {
-                "ar": "رابطة لاعبات التنس",
-                "hi": "चैलेंजर",
-                "bn": "ডব্লিউটিএ"
-              },
-              "shortNameTranslation": {}
-            }
-          },
-          "userCount": 2632,
-          "groundType": "Hardcourt outdoor",
-          "tennisPoints": 1000,
-          "hasPerformanceGraphFeature": false,
-          "id": 2548,
-          "hasEventPlayerStatistics": false,
-          "displayInverseHomeAwayTeams": false,
-          "fieldTranslations": {
-            "nameTranslation": {
-              "ar": "سينسيناتي",
-              "hi": "सिनसिनाटी",
-              "bn": "সিনসিনাটি"
-            },
-            "shortNameTranslation": {}
-          }
-        },
-        "priority": 0,
-        "id": 160041
-      },
-      "season": {
-        "name": "WTA Cincinnati, USA Women Singles 2025",
-        "year": "2025",
-        "editor": false,
-        "id": 67242
-      },
-      "roundInfo": {
-        "round": 250,
-        "name": "Qualification Final"
-      },
-      "customId": "hjVseWZ",
-      "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
-      },
-      "homeTeam": {
-        "name": "Leolia Jeanjean",
-        "slug": "jeanjean-leolia",
-        "shortName": "L. Jeanjean",
-        "gender": "F",
-        "sport": {
-          "name": "Tennis",
-          "slug": "tennis",
-          "id": 5
-        },
-        "userCount": 1717,
-        "playerTeamInfo": {
-          "id": 4592
-        },
-        "nameCode": "JEA",
-        "national": false,
-        "type": 1,
-        "id": 112957,
-        "country": {
-          "alpha2": "FR",
-          "alpha3": "FRA",
-          "name": "France",
-          "slug": "france"
-        },
-        "subTeams": [],
-        "teamColors": {
-          "primary": "#374df5",
-          "secondary": "#374df5",
-          "text": "#ffffff"
-        },
-        "fieldTranslations": {
-          "nameTranslation": {
-            "ru": "Жанжан, Лоли",
-            "hi": "लेओलिया जीनजीन",
-            "bn": "লিওলিয়া জিনজিন"
-          },
-          "shortNameTranslation": {
-            "ar": "ل. جانجان"
-          }
-        }
-      },
-      "awayTeam": {
-        "name": "Rebeka Masarova",
-        "slug": "masarova-rebeka",
-        "shortName": "R. Masarova",
-        "gender": "F",
-        "sport": {
-          "name": "Tennis",
-          "slug": "tennis",
-          "id": 5
-        },
-        "userCount": 2824,
-        "playerTeamInfo": {
-          "id": 2902
-        },
-        "nameCode": "MAS",
-        "disabled": false,
-        "national": false,
-        "type": 1,
-        "id": 124804,
-        "country": {
-          "alpha2": "CH",
-          "alpha3": "CHE",
-          "name": "Switzerland",
-          "slug": "switzerland"
-        },
-        "subTeams": [],
-        "teamColors": {
-          "primary": "#374df5",
-          "secondary": "#374df5",
-          "text": "#ffffff"
-        },
-        "fieldTranslations": {
-          "nameTranslation": {
-            "ru": "Машарова, Ребека"
-          },
-          "shortNameTranslation": {
-            "ar": "ر. ماساروفا",
-            "hi": "आर. मासारोवा",
-            "bn": "আর. মাসারোভা"
-          }
-        }
-      },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
-      "changes": {
-        "changeTimestamp": 0
-      },
-      "hasGlobalHighlights": false,
-      "crowdsourcingDataDisplayEnabled": false,
-      "id": 14367849,
-      "slug": "rebeka-masarova-leolia-jeanjean",
-      "startTimestamp": 1754508600,
-      "periods": {
-        "point": "Game",
-        "current": "Match",
-        "period1": "1st set",
-        "period2": "2nd set",
-        "period3": "3rd set",
-        "period4": "4th set",
-        "period5": "5th set"
-      },
-      "finalResultOnly": true,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
       "isEditor": false
@@ -14877,8 +14716,8 @@
       },
       "customId": "GHOsFmOb",
       "status": {
-        "code": 8,
-        "description": "1st set",
+        "code": 9,
+        "description": "2nd set",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -14968,25 +14807,24 @@
         "current": 0,
         "display": 0,
         "period1": 3,
-        "point": "0"
+        "period2": 1,
+        "point": "15"
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 5,
+        "current": 1,
+        "display": 1,
+        "period1": 6,
+        "period2": 2,
         "point": "0"
       },
       "time": {
-        "currentPeriodStartTimestamp": 1754509578
+        "currentPeriodStartTimestamp": 1754512381
       },
       "changes": {
         "changes": [
-          "homeScore.point",
-          "awayScore.period1",
-          "awayScore.point",
-          "firstToServe"
+          "homeScore.point"
         ],
-        "changeTimestamp": 1754512105
+        "changeTimestamp": 1754513230
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -15002,14 +14840,14 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
       "isEditor": false
     },
     {
-      "firstToServe": 1,
+      "firstToServe": 2,
       "tournament": {
         "name": "Cincinnati, USA, Qualifying",
         "slug": "cincinnati-usa-qualifying",
@@ -15087,8 +14925,8 @@
       },
       "customId": "VjOsUTtc",
       "status": {
-        "code": 8,
-        "description": "1st set",
+        "code": 9,
+        "description": "2nd set",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -15166,23 +15004,25 @@
       "homeScore": {
         "current": 0,
         "display": 0,
-        "period1": 2,
-        "point": "40"
+        "period1": 3,
+        "period2": 1,
+        "point": "15"
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 3,
+        "current": 1,
+        "display": 1,
+        "period1": 6,
+        "period2": 0,
         "point": "40"
       },
       "time": {
-        "currentPeriodStartTimestamp": 1754510983
+        "currentPeriodStartTimestamp": 1754512757
       },
       "changes": {
         "changes": [
-          "homeScore.point"
+          "awayScore.point"
         ],
-        "changeTimestamp": 1754512099
+        "changeTimestamp": 1754513254
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -15198,7 +15038,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
@@ -15372,26 +15212,23 @@
       "homeScore": {
         "current": 0,
         "display": 0,
-        "period1": 0,
-        "point": "0"
+        "period1": 2,
+        "point": "40"
       },
       "awayScore": {
         "current": 0,
         "display": 0,
-        "period1": 1,
-        "point": "0"
+        "period1": 3,
+        "point": "15"
       },
       "time": {
         "currentPeriodStartTimestamp": 1754511797
       },
       "changes": {
         "changes": [
-          "homeScore.point",
-          "awayScore.period1",
-          "awayScore.point",
-          "firstToServe"
+          "awayScore.point"
         ],
-        "changeTimestamp": 1754512099
+        "changeTimestamp": 1754513317
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -15414,7 +15251,7 @@
       "isEditor": false
     },
     {
-      "firstToServe": 1,
+      "firstToServe": 2,
       "tournament": {
         "name": "Cincinnati, USA, Qualifying",
         "slug": "cincinnati-usa-qualifying",
@@ -15572,26 +15409,23 @@
       "homeScore": {
         "current": 0,
         "display": 0,
-        "period1": 0,
-        "point": "0"
+        "period1": 2,
+        "point": "A"
       },
       "awayScore": {
         "current": 0,
         "display": 0,
-        "period1": 1,
-        "point": "0"
+        "period1": 2,
+        "point": "40"
       },
       "time": {
         "currentPeriodStartTimestamp": 1754511986
       },
       "changes": {
         "changes": [
-          "homeScore.point",
-          "awayScore.period1",
-          "awayScore.point",
-          "firstToServe"
+          "homeScore.point"
         ],
-        "changeTimestamp": 1754512096
+        "changeTimestamp": 1754513299
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -15614,6 +15448,214 @@
       "isEditor": false
     },
     {
+      "firstToServe": 2,
+      "tournament": {
+        "name": "Cincinnati, USA, Qualifying",
+        "slug": "cincinnati-usa-qualifying",
+        "category": {
+          "name": "WTA",
+          "slug": "wta",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "id": 6,
+          "country": {},
+          "flag": "wta",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "رابطة لاعبات التنس",
+              "hi": "चैलेंजर",
+              "bn": "ডব্লিউটিএ"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "Cincinnati",
+          "slug": "cincinnati",
+          "category": {
+            "name": "WTA",
+            "slug": "wta",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "id": 6,
+            "country": {},
+            "flag": "wta",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "رابطة لاعبات التنس",
+                "hi": "चैलेंजर",
+                "bn": "ডব্লিউটিএ"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 2632,
+          "groundType": "Hardcourt outdoor",
+          "tennisPoints": 1000,
+          "hasPerformanceGraphFeature": false,
+          "id": 2548,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "سينسيناتي",
+              "hi": "सिनसिनाटी",
+              "bn": "সিনসিনাটি"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "id": 160041
+      },
+      "season": {
+        "name": "WTA Cincinnati, USA Women Singles 2025",
+        "year": "2025",
+        "editor": false,
+        "id": 67242
+      },
+      "roundInfo": {
+        "round": 250,
+        "name": "Qualification Final"
+      },
+      "customId": "hjVseWZ",
+      "status": {
+        "code": 8,
+        "description": "1st set",
+        "type": "inprogress"
+      },
+      "homeTeam": {
+        "name": "Leolia Jeanjean",
+        "slug": "jeanjean-leolia",
+        "shortName": "L. Jeanjean",
+        "gender": "F",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 1717,
+        "playerTeamInfo": {
+          "id": 4592
+        },
+        "nameCode": "JEA",
+        "national": false,
+        "type": 1,
+        "id": 112957,
+        "country": {
+          "alpha2": "FR",
+          "alpha3": "FRA",
+          "name": "France",
+          "slug": "france"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ru": "Жанжан, Лоли",
+            "hi": "लेओलिया जीनजीन",
+            "bn": "লিওলিয়া জিনজিন"
+          },
+          "shortNameTranslation": {
+            "ar": "ل. جانجان"
+          }
+        }
+      },
+      "awayTeam": {
+        "name": "Rebeka Masarova",
+        "slug": "masarova-rebeka",
+        "shortName": "R. Masarova",
+        "gender": "F",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 2824,
+        "playerTeamInfo": {
+          "id": 2902
+        },
+        "nameCode": "MAS",
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "id": 124804,
+        "country": {
+          "alpha2": "CH",
+          "alpha3": "CHE",
+          "name": "Switzerland",
+          "slug": "switzerland"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ru": "Машарова, Ребека"
+          },
+          "shortNameTranslation": {
+            "ar": "ر. ماساروفا",
+            "hi": "आर. मासारोवा",
+            "bn": "আর. মাসারোভা"
+          }
+        }
+      },
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "point": "40"
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "point": "40"
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1754513061
+      },
+      "changes": {
+        "changes": [
+          "homeScore.point"
+        ],
+        "changeTimestamp": 1754513320
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 14367849,
+      "slug": "rebeka-masarova-leolia-jeanjean",
+      "startTimestamp": 1754512500,
+      "periods": {
+        "point": "Game",
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set"
+      },
+      "lastPeriod": "period1",
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "groundType": "Hardcourt outdoor",
+      "isEditor": false
+    },
+    {
+      "firstToServe": 1,
       "tournament": {
         "name": "Cincinnati, USA, Qualifying",
         "slug": "cincinnati-usa-qualifying",
@@ -15691,9 +15733,9 @@
       },
       "customId": "fNOsQhcc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 8,
+        "description": "1st set",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Maddison Inglis",
@@ -15777,17 +15819,32 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "point": "40"
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "point": "A"
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1754512967
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "awayScore.point"
+        ],
+        "changeTimestamp": 1754513224
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14359059,
       "slug": "anastasia-zakharova-maddison-inglis",
-      "startTimestamp": 1754511900,
+      "startTimestamp": 1754512500,
       "periods": {
         "point": "Game",
         "current": "Match",
@@ -15797,6 +15854,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
@@ -18025,7 +18083,7 @@
       "isEditor": false
     },
     {
-      "firstToServe": 2,
+      "firstToServe": 1,
       "tournament": {
         "name": "Cordenons, Italy",
         "slug": "cordenons-italy",
@@ -18096,10 +18154,11 @@
       },
       "customId": "JJpsrnld",
       "status": {
-        "code": 9,
-        "description": "2nd set",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Carlo Alberto Caniato",
         "slug": "caniato-carlo-alberto",
@@ -18177,24 +18236,27 @@
         "current": 0,
         "display": 0,
         "period1": 4,
-        "period2": 2,
-        "point": "0"
+        "period2": 3,
+        "point": "30",
+        "normaltime": 0
       },
       "awayScore": {
-        "current": 1,
-        "display": 1,
+        "current": 2,
+        "display": 2,
         "period1": 6,
-        "period2": 3,
-        "point": "15"
+        "period2": 6,
+        "point": "40",
+        "normaltime": 2
       },
       "time": {
         "currentPeriodStartTimestamp": 1754510761
       },
       "changes": {
         "changes": [
-          "awayScore.point"
+          "time.currentPeriodStart",
+          "time.period2"
         ],
-        "changeTimestamp": 1754512120
+        "changeTimestamp": 1754512889
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -18210,7 +18272,6 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Red clay",
@@ -19067,6 +19128,190 @@
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14311062,
       "slug": "zsombor-piros-cedrik-marcel-stebe",
+      "startTimestamp": 1754652600,
+      "periods": {
+        "point": "Game",
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "groundType": "Red clay",
+      "isEditor": false
+    },
+    {
+      "tournament": {
+        "name": "Cordenons, Italy",
+        "slug": "cordenons-italy",
+        "category": {
+          "name": "Challenger",
+          "slug": "challenger",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "id": 72,
+          "country": {},
+          "flag": "challenger",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "تحدي (تنس)",
+              "hi": "डेनमार्क",
+              "bn": "চ্যালেঞ্জার"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "Cordenons, Italy",
+          "slug": "cordenons-italy",
+          "category": {
+            "name": "Challenger",
+            "slug": "challenger",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "id": 72,
+            "country": {},
+            "flag": "challenger",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "تحدي (تنس)",
+                "hi": "डेनमार्क",
+                "bn": "চ্যালেঞ্জার"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 223,
+          "groundType": "Red clay",
+          "tennisPoints": 75,
+          "hasPerformanceGraphFeature": false,
+          "id": 3494,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false
+        },
+        "priority": 0,
+        "id": 159562
+      },
+      "season": {
+        "name": "ATP Challenger Cordenons, Italy Men Singles 2025",
+        "year": "2025",
+        "editor": false,
+        "id": 73834
+      },
+      "roundInfo": {
+        "round": 27,
+        "name": "Quarterfinals",
+        "cupRoundType": 4
+      },
+      "customId": "JJpsJizb",
+      "status": {
+        "code": 0,
+        "description": "Not started",
+        "type": "notstarted"
+      },
+      "homeTeam": {
+        "name": "Santiago Rodriguez Taverna",
+        "slug": "rodriguez-taverna-santiago",
+        "shortName": "S. Rodriguez Taverna",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 1427,
+        "playerTeamInfo": {
+          "id": 2468
+        },
+        "nameCode": "ROD",
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "id": 185434,
+        "country": {
+          "alpha2": "AR",
+          "alpha3": "ARG",
+          "name": "Argentina",
+          "slug": "argentina"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ru": "Родригес Таверна, Сантьяго ФА"
+          },
+          "shortNameTranslation": {
+            "ar": "س. رودريجيز تافيرنا",
+            "hi": "एस. रोड्रिगेज टावेर्ना",
+            "bn": "এস. রদ্রিগেজ তাভেরনা"
+          }
+        }
+      },
+      "awayTeam": {
+        "name": "Dusan Lajovic",
+        "slug": "lajovic-dusan",
+        "shortName": "D. Lajovic",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 6541,
+        "playerTeamInfo": {
+          "id": 43
+        },
+        "nameCode": "LAJ",
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "id": 39234,
+        "country": {
+          "alpha2": "RS",
+          "alpha3": "SRB",
+          "name": "Serbia",
+          "slug": "serbia"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ru": "Душан Ладжович"
+          },
+          "shortNameTranslation": {
+            "ar": "د. لايوفيتش",
+            "hi": "डी. लाजोविच",
+            "bn": "ডি. লাজোভিচ"
+          }
+        }
+      },
+      "homeScore": {},
+      "awayScore": {},
+      "time": {},
+      "changes": {
+        "changeTimestamp": 0
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 14311060,
+      "slug": "santiago-rodriguez-taverna-dusan-lajovic",
       "startTimestamp": 1754652600,
       "periods": {
         "point": "Game",
@@ -21153,8 +21398,8 @@
       },
       "customId": "uQvsLICb",
       "status": {
-        "code": 8,
-        "description": "1st set",
+        "code": 9,
+        "description": "2nd set",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -21241,25 +21486,27 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 5,
-        "point": "30"
+        "current": 1,
+        "display": 1,
+        "period1": 6,
+        "period2": 2,
+        "point": "15"
       },
       "awayScore": {
         "current": 0,
         "display": 0,
-        "period1": 2,
+        "period1": 3,
+        "period2": 0,
         "point": "30"
       },
       "time": {
-        "currentPeriodStartTimestamp": 1754510546
+        "currentPeriodStartTimestamp": 1754512427
       },
       "changes": {
         "changes": [
-          "awayScore.point"
+          "homeScore.point"
         ],
-        "changeTimestamp": 1754512114
+        "changeTimestamp": 1754513350
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -21275,7 +21522,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
@@ -23859,19 +24106,20 @@
       "awayScore": {
         "current": 2,
         "display": 2,
-        "period1": 7,
+        "period1": 6,
         "period2": 6,
         "point": "0",
         "normaltime": 2
       },
       "time": {
-        "currentPeriodStartTimestamp": 1754511996
+        "currentPeriodStartTimestamp": 1754418207
       },
       "changes": {
         "changes": [
+          "awayScore.period1",
           "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1754512003
+        "changeTimestamp": 1754512392
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -24702,6 +24950,274 @@
       "id": 14311843,
       "slug": "nam-ji-yuzuki-blanchet-jacquet",
       "startTimestamp": 1754573400,
+      "periods": {
+        "point": "Game",
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "groundType": "Hardcourt outdoor",
+      "isEditor": false
+    },
+    {
+      "tournament": {
+        "name": "Grodzisk Mazowiecki, Poland, Doubles",
+        "slug": "grodzisk-mazowiecki-poland-doubles",
+        "category": {
+          "name": "Challenger",
+          "slug": "challenger",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "id": 72,
+          "country": {},
+          "flag": "challenger",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "تحدي (تنس)",
+              "hi": "डेनमार्क",
+              "bn": "চ্যালেঞ্জার"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "Grodzisk Mazowiecki, Poland, Doubles",
+          "slug": "grodzisk-mazowiecki-poland-doubles",
+          "category": {
+            "name": "Challenger",
+            "slug": "challenger",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "id": 72,
+            "country": {},
+            "flag": "challenger",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "تحدي (تنس)",
+                "hi": "डेनमार्क",
+                "bn": "চ্যালেঞ্জার"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 23,
+          "groundType": "Hardcourt outdoor",
+          "tennisPoints": 100,
+          "hasPerformanceGraphFeature": false,
+          "id": 18861,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false
+        },
+        "priority": 0,
+        "id": 159570
+      },
+      "season": {
+        "name": "ATP Challenger Grodzisk Mazowiecki, Poland Men Doubles 2025",
+        "year": "2025",
+        "editor": false,
+        "id": 73839
+      },
+      "roundInfo": {
+        "round": 27,
+        "name": "Quarterfinals",
+        "cupRoundType": 4
+      },
+      "customId": "hfGdsUcje",
+      "status": {
+        "code": 0,
+        "description": "Not started",
+        "type": "notstarted"
+      },
+      "homeTeam": {
+        "name": "Kielan S / Pieczonka F",
+        "slug": "kielan-s-pieczonka-f",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 27,
+        "nameCode": "K/P",
+        "national": false,
+        "type": 2,
+        "id": 522644,
+        "country": {},
+        "subTeams": [
+          {
+            "name": "Szymon Kielan",
+            "slug": "kielan-szymon",
+            "shortName": "S. Kielan",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 354,
+            "nameCode": "KIE",
+            "national": false,
+            "type": 1,
+            "id": 353583,
+            "country": {
+              "alpha2": "PL",
+              "alpha3": "POL",
+              "name": "Poland",
+              "slug": "poland"
+            },
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            }
+          },
+          {
+            "name": "Filip Pieczonka",
+            "slug": "pieczonka-filip",
+            "shortName": "F. Pieczonka",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 382,
+            "nameCode": "PIE",
+            "national": false,
+            "type": 1,
+            "id": 324576,
+            "country": {
+              "alpha2": "PL",
+              "alpha3": "POL",
+              "name": "Poland",
+              "slug": "poland"
+            },
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            }
+          }
+        ],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "awayTeam": {
+        "name": "Paris J / Willis M",
+        "slug": "paris-j-willis-m",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 3,
+        "nameCode": "P/W",
+        "national": false,
+        "type": 2,
+        "id": 452757,
+        "country": {},
+        "subTeams": [
+          {
+            "name": "Joshua Paris",
+            "slug": "paris-joshua",
+            "shortName": "J. Paris",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 111,
+            "nameCode": "PAR",
+            "national": false,
+            "type": 1,
+            "id": 95923,
+            "country": {
+              "alpha2": "GB",
+              "alpha3": "GBR",
+              "name": "United Kingdom",
+              "slug": "united-kingdom"
+            },
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            }
+          },
+          {
+            "name": "Marcus Willis",
+            "slug": "willis-marcus",
+            "shortName": "M. Willis",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 195,
+            "nameCode": "WIL",
+            "national": false,
+            "type": 1,
+            "id": 16992,
+            "country": {
+              "alpha2": "GB",
+              "alpha3": "GBR",
+              "name": "United Kingdom",
+              "slug": "united-kingdom"
+            },
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ru": "Уиллис, Маркус",
+                "hi": "मार्कस विलिस",
+                "bn": "মার্কাস উইলিস"
+              },
+              "shortNameTranslation": {
+                "ar": "ج. مريدا"
+              }
+            }
+          }
+        ],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "homeScore": {},
+      "awayScore": {},
+      "time": {},
+      "changes": {
+        "changeTimestamp": 0
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 14311840,
+      "slug": "kielan-pieczonka-paris-willis",
+      "startTimestamp": 1754575200,
       "periods": {
         "point": "Game",
         "current": "Match",
@@ -31899,7 +32415,7 @@
       "isEditor": false
     },
     {
-      "firstToServe": 2,
+      "firstToServe": 1,
       "tournament": {
         "name": "Chicago, USA, Doubles",
         "slug": "chicago-usa-doubles",
@@ -31969,8 +32485,8 @@
       },
       "customId": "eCVisfCVi",
       "status": {
-        "code": 9,
-        "description": "2nd set",
+        "code": 10,
+        "description": "3rd set",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -32161,27 +32677,34 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
+        "current": 1,
+        "display": 1,
         "period1": 4,
-        "period2": 5,
-        "point": "40"
+        "period2": 7,
+        "period3": 6,
+        "period3TieBreak": 6,
+        "point": "6"
       },
       "awayScore": {
         "current": 1,
         "display": 1,
         "period1": 6,
-        "period2": 4,
-        "point": "30"
+        "period2": 5,
+        "period3": 5,
+        "period3TieBreak": 5,
+        "point": "5"
       },
       "time": {
-        "currentPeriodStartTimestamp": 1754509670
+        "currentPeriodStartTimestamp": 1754512770
       },
       "changes": {
         "changes": [
-          "awayScore.point"
+          "homeScore.period3",
+          "homeScore.period3TieBreak",
+          "awayScore.period3",
+          "awayScore.period3TieBreak"
         ],
-        "changeTimestamp": 1754512082
+        "changeTimestamp": 1754513323
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -32197,7 +32720,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period2",
+      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
@@ -32274,8 +32797,8 @@
       },
       "customId": "GvMdskCVi",
       "status": {
-        "code": 9,
-        "description": "2nd set",
+        "code": 10,
+        "description": "3rd set",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -32439,10 +32962,11 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
+        "current": 1,
+        "display": 1,
         "period1": 6,
-        "period2": 1,
+        "period2": 6,
+        "period3": 0,
         "period1TieBreak": 4,
         "point": "0"
       },
@@ -32450,21 +32974,30 @@
         "current": 1,
         "display": 1,
         "period1": 7,
-        "period2": 1,
+        "period2": 2,
+        "period3": 0,
         "period1TieBreak": 7,
         "point": "0"
       },
       "time": {
-        "currentPeriodStartTimestamp": 1754511690
+        "currentPeriodStartTimestamp": 1754513315
       },
       "changes": {
         "changes": [
+          "status.code",
+          "status.description",
+          "homeScore.current",
+          "homeScore.display",
           "homeScore.period2",
+          "homeScore.period3",
           "homeScore.point",
+          "awayScore.period3",
           "awayScore.point",
+          "time.currentPeriodStart",
+          "time.period2",
           "firstToServe"
         ],
-        "changeTimestamp": 1754512120
+        "changeTimestamp": 1754513323
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -32480,7 +33013,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period2",
+      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
@@ -39310,10 +39843,11 @@
       },
       "customId": "vznbsziRi",
       "status": {
-        "code": 10,
-        "description": "3rd set",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Hidde Schoenmakers",
         "slug": "schoenmakers-hidde",
@@ -39382,26 +39916,29 @@
         "display": 1,
         "period1": 7,
         "period2": 6,
-        "period3": 3,
+        "period3": 4,
         "period2TieBreak": 4,
-        "point": "15"
+        "point": "0"
       },
       "awayScore": {
-        "current": 1,
-        "display": 1,
+        "current": 2,
+        "display": 2,
         "period1": 5,
         "period2": 7,
-        "period3": 5,
+        "period3": 6,
         "period2TieBreak": 7,
-        "point": "30"
+        "point": "0"
       },
       "coverage": -1,
       "time": {},
       "changes": {
         "changes": [
-          "homeScore.point"
+          "status.code",
+          "status.description",
+          "status.type",
+          "firstToServe"
         ],
-        "changeTimestamp": 1754512084
+        "changeTimestamp": 1754512801
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -39417,7 +39954,6 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Clay",
@@ -57260,23 +57796,21 @@
       "homeScore": {
         "current": 0,
         "display": 0,
-        "period1": 1,
+        "period1": 3,
         "point": "0"
       },
       "awayScore": {
         "current": 0,
         "display": 0,
-        "period1": 1,
-        "point": "0"
+        "period1": 3,
+        "point": "30"
       },
       "time": {},
       "changes": {
         "changes": [
-          "homeScore.period1",
-          "homeScore.point",
-          "firstToServe"
+          "awayScore.point"
         ],
-        "changeTimestamp": 1754512086
+        "changeTimestamp": 1754513336
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -60308,7 +60842,7 @@
       "isEditor": false
     },
     {
-      "firstToServe": 1,
+      "firstToServe": 2,
       "tournament": {
         "name": "ITF M25 Southaven Men",
         "slug": "itf-m25-southaven-men",
@@ -60362,8 +60896,8 @@
       },
       "customId": "jfNsUlrd",
       "status": {
-        "code": 9,
-        "description": "2nd set",
+        "code": 10,
+        "description": "3rd set",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -60435,26 +60969,31 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
+        "current": 1,
+        "display": 1,
         "period1": 5,
-        "period2": 3,
-        "point": "40"
+        "period2": 6,
+        "period3": 0,
+        "point": "0"
       },
       "awayScore": {
         "current": 1,
         "display": 1,
         "period1": 7,
         "period2": 4,
-        "point": "15"
+        "period3": 0,
+        "point": "0"
       },
       "coverage": -1,
       "time": {},
       "changes": {
         "changes": [
-          "homeScore.point"
+          "status.code",
+          "status.description",
+          "homeScore.period3",
+          "awayScore.period3"
         ],
-        "changeTimestamp": 1754512067
+        "changeTimestamp": 1754512901
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -60470,7 +61009,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period2",
+      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
@@ -60967,7 +61506,7 @@
       "isEditor": false
     },
     {
-      "firstToServe": 1,
+      "firstToServe": 2,
       "tournament": {
         "name": "ITF M25 Southaven Men",
         "slug": "itf-m25-southaven-men",
@@ -61097,23 +61636,26 @@
         "current": 0,
         "display": 0,
         "period1": 3,
-        "period2": 4,
-        "point": "40"
+        "period2": 6,
+        "point": "0"
       },
       "awayScore": {
         "current": 1,
         "display": 1,
         "period1": 6,
-        "period2": 4,
-        "point": "40"
+        "period2": 5,
+        "point": "0"
       },
       "coverage": -1,
       "time": {},
       "changes": {
         "changes": [
-          "homeScore.point"
+          "homeScore.period2",
+          "homeScore.point",
+          "awayScore.point",
+          "firstToServe"
         ],
-        "changeTimestamp": 1754512077
+        "changeTimestamp": 1754513191
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -61366,10 +61908,11 @@
       },
       "customId": "eLccsBeid",
       "status": {
-        "code": 9,
-        "description": "2nd set",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Cannon Kingsley",
         "slug": "kingsley-cannon",
@@ -61443,28 +61986,28 @@
         }
       },
       "homeScore": {
-        "current": 1,
-        "display": 1,
+        "current": 2,
+        "display": 2,
         "period1": 6,
-        "period2": 4,
+        "period2": 6,
         "point": "0"
       },
       "awayScore": {
         "current": 0,
         "display": 0,
         "period1": 4,
-        "period2": 1,
+        "period2": 3,
         "point": "0"
       },
       "coverage": -1,
       "time": {},
       "changes": {
         "changes": [
-          "homeScore.period2",
-          "homeScore.point",
-          "awayScore.point"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1754512016
+        "changeTimestamp": 1754513318
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -61480,7 +62023,6 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
@@ -61540,8 +62082,8 @@
       },
       "customId": "ngHbskCnd",
       "status": {
-        "code": 8,
-        "description": "1st set",
+        "code": 9,
+        "description": "2nd set",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -61615,22 +62157,25 @@
       "homeScore": {
         "current": 0,
         "display": 0,
-        "period1": 1,
-        "point": "A"
+        "period1": 2,
+        "period2": 1,
+        "point": "0"
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 3,
-        "point": "40"
+        "current": 1,
+        "display": 1,
+        "period1": 6,
+        "period2": 0,
+        "point": "0"
       },
       "coverage": -1,
       "time": {},
       "changes": {
         "changes": [
+          "homeScore.period2",
           "homeScore.point"
         ],
-        "changeTimestamp": 1754512092
+        "changeTimestamp": 1754513359
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -61646,14 +62191,14 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
       "isEditor": false
     },
     {
-      "firstToServe": 1,
+      "firstToServe": 2,
       "tournament": {
         "name": "ITF M25 Southaven Men",
         "slug": "itf-m25-southaven-men",
@@ -61783,25 +62328,28 @@
         "current": 1,
         "display": 1,
         "period1": 7,
-        "period2": 1,
+        "period2": 5,
         "period1TieBreak": 7,
-        "point": "30"
+        "point": "0"
       },
       "awayScore": {
         "current": 0,
         "display": 0,
         "period1": 6,
-        "period2": 1,
+        "period2": 2,
         "period1TieBreak": 4,
-        "point": "30"
+        "point": "0"
       },
       "coverage": -1,
       "time": {},
       "changes": {
         "changes": [
-          "awayScore.point"
+          "homeScore.period2",
+          "homeScore.point",
+          "awayScore.point",
+          "firstToServe"
         ],
-        "changeTimestamp": 1754512088
+        "changeTimestamp": 1754513312
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -62950,7 +63498,7 @@
       "isEditor": false
     },
     {
-      "firstToServe": 1,
+      "firstToServe": 2,
       "tournament": {
         "name": "ITF M25 Tauste Men",
         "slug": "itf-m25-tauste-men",
@@ -63074,21 +63622,21 @@
       "homeScore": {
         "current": 0,
         "display": 0,
-        "period1": 4,
-        "point": "40"
+        "period1": 6,
+        "point": "A"
       },
       "awayScore": {
         "current": 0,
         "display": 0,
-        "period1": 4,
-        "point": "A"
+        "period1": 5,
+        "point": "40"
       },
       "time": {},
       "changes": {
         "changes": [
-          "awayScore.point"
+          "homeScore.point"
         ],
-        "changeTimestamp": 1754512125
+        "changeTimestamp": 1754513359
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -65404,6 +65952,1644 @@
       "id": 14356661,
       "slug": "simona-wirglerova-anna-hertel",
       "startTimestamp": 1754478000,
+      "periods": {
+        "point": "Game",
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "groundType": "Clay",
+      "isEditor": false
+    },
+    {
+      "tournament": {
+        "name": "ITF W15 Bielsko Biala Women",
+        "slug": "itf-w15-bielsko-biala-women",
+        "category": {
+          "name": "ITF Women",
+          "slug": "itf-women",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "id": 213,
+          "country": {},
+          "flag": "itf-women"
+        },
+        "uniqueTournament": {
+          "name": "ITF W15 Bielsko Biala Women",
+          "slug": "itf-w15-bielsko-biala-women",
+          "category": {
+            "name": "ITF Women",
+            "slug": "itf-women",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "id": 213,
+            "country": {},
+            "flag": "itf-women"
+          },
+          "userCount": 3,
+          "groundType": "Clay",
+          "hasPerformanceGraphFeature": false,
+          "id": 28455,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false
+        },
+        "priority": 0,
+        "id": 159858
+      },
+      "season": {
+        "name": "2025",
+        "year": "2025",
+        "editor": false,
+        "id": 79662
+      },
+      "roundInfo": {
+        "round": 5,
+        "name": "Round of 16",
+        "cupRoundType": 8
+      },
+      "customId": "cocbsDHOb",
+      "status": {
+        "code": 0,
+        "description": "Not started",
+        "type": "notstarted"
+      },
+      "homeTeam": {
+        "name": "Angelina Wirges",
+        "slug": "wirges-angelina",
+        "shortName": "A. Wirges",
+        "gender": "F",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 195,
+        "playerTeamInfo": {
+          "id": 4906
+        },
+        "nameCode": "AWI",
+        "national": false,
+        "type": 1,
+        "id": 224128,
+        "country": {
+          "alpha2": "DE",
+          "alpha3": "DEU",
+          "name": "Germany",
+          "slug": "germany"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ru": "Виргес, Ангелина"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "awayTeam": {
+        "name": "Katarzyna Wysoczanska",
+        "slug": "wysoczanska-katarzyna",
+        "shortName": "K. Wysoczanska",
+        "gender": "F",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 127,
+        "playerTeamInfo": {
+          "id": 2946
+        },
+        "nameCode": "WYS",
+        "national": false,
+        "type": 1,
+        "id": 130702,
+        "country": {
+          "alpha2": "PL",
+          "alpha3": "POL",
+          "name": "Poland",
+          "slug": "poland"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "homeScore": {},
+      "awayScore": {},
+      "coverage": -1,
+      "time": {},
+      "changes": {
+        "changeTimestamp": 0
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 14368110,
+      "slug": "angelina-wirges-katarzyna-wysoczanska",
+      "startTimestamp": 1754553600,
+      "periods": {
+        "point": "Game",
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "groundType": "Clay",
+      "isEditor": false
+    },
+    {
+      "tournament": {
+        "name": "ITF W15 Bielsko Biala Women",
+        "slug": "itf-w15-bielsko-biala-women",
+        "category": {
+          "name": "ITF Women",
+          "slug": "itf-women",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "id": 213,
+          "country": {},
+          "flag": "itf-women"
+        },
+        "uniqueTournament": {
+          "name": "ITF W15 Bielsko Biala Women",
+          "slug": "itf-w15-bielsko-biala-women",
+          "category": {
+            "name": "ITF Women",
+            "slug": "itf-women",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "id": 213,
+            "country": {},
+            "flag": "itf-women"
+          },
+          "userCount": 3,
+          "groundType": "Clay",
+          "hasPerformanceGraphFeature": false,
+          "id": 28455,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false
+        },
+        "priority": 0,
+        "id": 159858
+      },
+      "season": {
+        "name": "2025",
+        "year": "2025",
+        "editor": false,
+        "id": 79662
+      },
+      "roundInfo": {
+        "round": 5,
+        "name": "Round of 16",
+        "cupRoundType": 8
+      },
+      "customId": "HfHbsLwQc",
+      "status": {
+        "code": 0,
+        "description": "Not started",
+        "type": "notstarted"
+      },
+      "homeTeam": {
+        "name": "Katarina Kuzmova",
+        "slug": "kuzmova-katarina",
+        "shortName": "K. Kužmová",
+        "gender": "F",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 382,
+        "playerTeamInfo": {
+          "id": 3970
+        },
+        "nameCode": "KKU",
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "id": 205282,
+        "country": {
+          "alpha2": "SK",
+          "alpha3": "SVK",
+          "name": "Slovakia",
+          "slug": "slovakia"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ru": "Катарина Кузьмова"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "awayTeam": {
+        "name": "Daria Gorska",
+        "slug": "gorska-daria",
+        "shortName": "D. Gorska",
+        "gender": "F",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 181,
+        "playerTeamInfo": {
+          "id": 18315
+        },
+        "nameCode": "DGO",
+        "national": false,
+        "type": 1,
+        "id": 353586,
+        "country": {
+          "alpha2": "PL",
+          "alpha3": "POL",
+          "name": "Poland",
+          "slug": "poland"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "homeScore": {},
+      "awayScore": {},
+      "coverage": -1,
+      "time": {},
+      "changes": {
+        "changeTimestamp": 0
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 14368135,
+      "slug": "daria-gorska-katarina-kuzmova",
+      "startTimestamp": 1754553600,
+      "periods": {
+        "point": "Game",
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "groundType": "Clay",
+      "isEditor": false
+    },
+    {
+      "tournament": {
+        "name": "ITF W15 Bielsko Biala Women",
+        "slug": "itf-w15-bielsko-biala-women",
+        "category": {
+          "name": "ITF Women",
+          "slug": "itf-women",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "id": 213,
+          "country": {},
+          "flag": "itf-women"
+        },
+        "uniqueTournament": {
+          "name": "ITF W15 Bielsko Biala Women",
+          "slug": "itf-w15-bielsko-biala-women",
+          "category": {
+            "name": "ITF Women",
+            "slug": "itf-women",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "id": 213,
+            "country": {},
+            "flag": "itf-women"
+          },
+          "userCount": 3,
+          "groundType": "Clay",
+          "hasPerformanceGraphFeature": false,
+          "id": 28455,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false
+        },
+        "priority": 0,
+        "id": 159858
+      },
+      "season": {
+        "name": "2025",
+        "year": "2025",
+        "editor": false,
+        "id": 79662
+      },
+      "roundInfo": {
+        "round": 5,
+        "name": "Round of 16",
+        "cupRoundType": 8
+      },
+      "customId": "NBEbsnrme",
+      "status": {
+        "code": 0,
+        "description": "Not started",
+        "type": "notstarted"
+      },
+      "homeTeam": {
+        "name": "Nika Hurkacz",
+        "slug": "hurkacz-nika",
+        "shortName": "N. Hurkacz",
+        "gender": "F",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 164,
+        "nameCode": "HUR",
+        "national": false,
+        "type": 1,
+        "id": 530863,
+        "country": {
+          "alpha2": "PL",
+          "alpha3": "POL",
+          "name": "Poland",
+          "slug": "poland"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "awayTeam": {
+        "name": "Merel Hoedt",
+        "slug": "hoedt-merel",
+        "shortName": "M. Hoedt",
+        "gender": "F",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 245,
+        "playerTeamInfo": {
+          "id": 3334
+        },
+        "nameCode": "MHO",
+        "national": false,
+        "type": 1,
+        "id": 198838,
+        "country": {
+          "alpha2": "NL",
+          "alpha3": "NLD",
+          "name": "Netherlands",
+          "slug": "netherlands"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ru": "Худт, Мерел"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "homeScore": {},
+      "awayScore": {},
+      "coverage": -1,
+      "time": {},
+      "changes": {
+        "changeTimestamp": 0
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 14368108,
+      "slug": "nika-hurkacz-merel-hoedt",
+      "startTimestamp": 1754553600,
+      "periods": {
+        "point": "Game",
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "groundType": "Clay",
+      "isEditor": false
+    },
+    {
+      "tournament": {
+        "name": "ITF W15 Bielsko Biala Women",
+        "slug": "itf-w15-bielsko-biala-women",
+        "category": {
+          "name": "ITF Women",
+          "slug": "itf-women",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "id": 213,
+          "country": {},
+          "flag": "itf-women"
+        },
+        "uniqueTournament": {
+          "name": "ITF W15 Bielsko Biala Women",
+          "slug": "itf-w15-bielsko-biala-women",
+          "category": {
+            "name": "ITF Women",
+            "slug": "itf-women",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "id": 213,
+            "country": {},
+            "flag": "itf-women"
+          },
+          "userCount": 3,
+          "groundType": "Clay",
+          "hasPerformanceGraphFeature": false,
+          "id": 28455,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false
+        },
+        "priority": 0,
+        "id": 159858
+      },
+      "season": {
+        "name": "2025",
+        "year": "2025",
+        "editor": false,
+        "id": 79662
+      },
+      "roundInfo": {
+        "round": 5,
+        "name": "Round of 16",
+        "cupRoundType": 8
+      },
+      "customId": "TuAbsaxfd",
+      "status": {
+        "code": 0,
+        "description": "Not started",
+        "type": "notstarted"
+      },
+      "homeTeam": {
+        "name": "Zuzanna Kolonus",
+        "slug": "bednarz-zuzanna",
+        "shortName": "Z. Kolonus",
+        "gender": "F",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 202,
+        "playerTeamInfo": {
+          "id": 12398
+        },
+        "nameCode": "KOL",
+        "national": false,
+        "type": 1,
+        "id": 388600,
+        "country": {
+          "alpha2": "PL",
+          "alpha3": "POL",
+          "name": "Poland",
+          "slug": "poland"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "awayTeam": {
+        "name": "Marcelina Podlinska",
+        "slug": "podlinska-marcelina",
+        "shortName": "M. Podlinska",
+        "gender": "F",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 329,
+        "playerTeamInfo": {
+          "id": 12272
+        },
+        "nameCode": "POD",
+        "national": false,
+        "type": 1,
+        "id": 188493,
+        "country": {
+          "alpha2": "PL",
+          "alpha3": "POL",
+          "name": "Poland",
+          "slug": "poland"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ru": "Подлинска, Марцелина"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "homeScore": {},
+      "awayScore": {},
+      "coverage": -1,
+      "time": {},
+      "changes": {
+        "changeTimestamp": 0
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 14368109,
+      "slug": "zuzanna-kolonus-marcelina-podlinska",
+      "startTimestamp": 1754553600,
+      "periods": {
+        "point": "Game",
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "groundType": "Clay",
+      "isEditor": false
+    },
+    {
+      "tournament": {
+        "name": "ITF W15 Bielsko Biala Women",
+        "slug": "itf-w15-bielsko-biala-women",
+        "category": {
+          "name": "ITF Women",
+          "slug": "itf-women",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "id": 213,
+          "country": {},
+          "flag": "itf-women"
+        },
+        "uniqueTournament": {
+          "name": "ITF W15 Bielsko Biala Women",
+          "slug": "itf-w15-bielsko-biala-women",
+          "category": {
+            "name": "ITF Women",
+            "slug": "itf-women",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "id": 213,
+            "country": {},
+            "flag": "itf-women"
+          },
+          "userCount": 3,
+          "groundType": "Clay",
+          "hasPerformanceGraphFeature": false,
+          "id": 28455,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false
+        },
+        "priority": 0,
+        "id": 159858
+      },
+      "season": {
+        "name": "2025",
+        "year": "2025",
+        "editor": false,
+        "id": 79662
+      },
+      "roundInfo": {
+        "round": 5,
+        "name": "Round of 16",
+        "cupRoundType": 8
+      },
+      "customId": "kdTbsiETd",
+      "status": {
+        "code": 0,
+        "description": "Not started",
+        "type": "notstarted"
+      },
+      "homeTeam": {
+        "name": "Linda Ševčíková",
+        "slug": "sevcikova-linda",
+        "shortName": "L. Ševčíková ",
+        "gender": "F",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 169,
+        "playerTeamInfo": {
+          "id": 5567
+        },
+        "nameCode": "LEV",
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "id": 232660,
+        "country": {
+          "alpha2": "CZ",
+          "alpha3": "CZE",
+          "name": "Czechia",
+          "slug": "czechia"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "awayTeam": {
+        "name": "Julie Pastikova",
+        "slug": "pastikova-julie",
+        "shortName": "J. Pastikova",
+        "gender": "F",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 115,
+        "playerTeamInfo": {
+          "id": 15466
+        },
+        "nameCode": "PAS",
+        "national": false,
+        "type": 1,
+        "id": 483958,
+        "country": {
+          "alpha2": "CZ",
+          "alpha3": "CZE",
+          "name": "Czechia",
+          "slug": "czechia"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "homeScore": {},
+      "awayScore": {},
+      "coverage": -1,
+      "time": {},
+      "changes": {
+        "changeTimestamp": 0
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 14368112,
+      "slug": "julie-pastikova-linda-sevcikova",
+      "startTimestamp": 1754557200,
+      "periods": {
+        "point": "Game",
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "groundType": "Clay",
+      "isEditor": false
+    },
+    {
+      "tournament": {
+        "name": "ITF W15 Bielsko Biala Women",
+        "slug": "itf-w15-bielsko-biala-women",
+        "category": {
+          "name": "ITF Women",
+          "slug": "itf-women",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "id": 213,
+          "country": {},
+          "flag": "itf-women"
+        },
+        "uniqueTournament": {
+          "name": "ITF W15 Bielsko Biala Women",
+          "slug": "itf-w15-bielsko-biala-women",
+          "category": {
+            "name": "ITF Women",
+            "slug": "itf-women",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "id": 213,
+            "country": {},
+            "flag": "itf-women"
+          },
+          "userCount": 3,
+          "groundType": "Clay",
+          "hasPerformanceGraphFeature": false,
+          "id": 28455,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false
+        },
+        "priority": 0,
+        "id": 159858
+      },
+      "season": {
+        "name": "2025",
+        "year": "2025",
+        "editor": false,
+        "id": 79662
+      },
+      "roundInfo": {
+        "round": 5,
+        "name": "Round of 16",
+        "cupRoundType": 8
+      },
+      "customId": "KTNbsWCkd",
+      "status": {
+        "code": 0,
+        "description": "Not started",
+        "type": "notstarted"
+      },
+      "homeTeam": {
+        "name": "S. Rogozińska-Dzik",
+        "slug": "rogozinska-dzik-stefania",
+        "shortName": "S. Rogozińska-Dzik",
+        "gender": "F",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 374,
+        "playerTeamInfo": {
+          "id": 3723
+        },
+        "nameCode": "SRO",
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "id": 222185,
+        "country": {
+          "alpha2": "PL",
+          "alpha3": "POL",
+          "name": "Poland",
+          "slug": "poland"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "awayTeam": {
+        "name": "Lucie Urbanova",
+        "slug": "urbanova-lucie",
+        "shortName": "L. Urbanova",
+        "gender": "F",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 47,
+        "playerTeamInfo": {
+          "id": 12425
+        },
+        "nameCode": "URB",
+        "national": false,
+        "type": 1,
+        "id": 401396,
+        "country": {
+          "alpha2": "CZ",
+          "alpha3": "CZE",
+          "name": "Czechia",
+          "slug": "czechia"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "homeScore": {},
+      "awayScore": {},
+      "coverage": -1,
+      "time": {},
+      "changes": {
+        "changeTimestamp": 0
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 14368111,
+      "slug": "lucie-urbanova-s-rogozinska-dzik",
+      "startTimestamp": 1754557200,
+      "periods": {
+        "point": "Game",
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "groundType": "Clay",
+      "isEditor": false
+    },
+    {
+      "tournament": {
+        "name": "ITF W15 Bielsko Biala Women",
+        "slug": "itf-w15-bielsko-biala-women",
+        "category": {
+          "name": "ITF Women",
+          "slug": "itf-women",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "id": 213,
+          "country": {},
+          "flag": "itf-women"
+        },
+        "uniqueTournament": {
+          "name": "ITF W15 Bielsko Biala Women",
+          "slug": "itf-w15-bielsko-biala-women",
+          "category": {
+            "name": "ITF Women",
+            "slug": "itf-women",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "id": 213,
+            "country": {},
+            "flag": "itf-women"
+          },
+          "userCount": 3,
+          "groundType": "Clay",
+          "hasPerformanceGraphFeature": false,
+          "id": 28455,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false
+        },
+        "priority": 0,
+        "id": 159858
+      },
+      "season": {
+        "name": "2025",
+        "year": "2025",
+        "editor": false,
+        "id": 79662
+      },
+      "roundInfo": {
+        "round": 5,
+        "name": "Round of 16",
+        "cupRoundType": 8
+      },
+      "customId": "WEDdsCoOi",
+      "status": {
+        "code": 0,
+        "description": "Not started",
+        "type": "notstarted"
+      },
+      "homeTeam": {
+        "name": "Amelia Paszun",
+        "slug": "amelia-paszun",
+        "shortName": "A. Paszun",
+        "gender": "F",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 38,
+        "playerTeamInfo": {
+          "id": 22216
+        },
+        "nameCode": "APA",
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "id": 1098227,
+        "country": {
+          "alpha2": "PL",
+          "alpha3": "POL",
+          "name": "Poland",
+          "slug": "poland"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "awayTeam": {
+        "name": "Anastasiia Firman",
+        "slug": "firman-anastasiia",
+        "shortName": "A. Firman",
+        "gender": "F",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 175,
+        "playerTeamInfo": {
+          "id": 18647
+        },
+        "nameCode": "FIR",
+        "national": false,
+        "type": 1,
+        "id": 446496,
+        "country": {
+          "alpha2": "UA",
+          "alpha3": "UKR",
+          "name": "Ukraine",
+          "slug": "ukraine"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "homeScore": {},
+      "awayScore": {},
+      "coverage": -1,
+      "time": {},
+      "changes": {
+        "changeTimestamp": 0
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 14368113,
+      "slug": "amelia-paszun-anastasiia-firman",
+      "startTimestamp": 1754559000,
+      "periods": {
+        "point": "Game",
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "groundType": "Clay",
+      "isEditor": false
+    },
+    {
+      "tournament": {
+        "name": "ITF W15 Bielsko Biala Women",
+        "slug": "itf-w15-bielsko-biala-women",
+        "category": {
+          "name": "ITF Women",
+          "slug": "itf-women",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "id": 213,
+          "country": {},
+          "flag": "itf-women"
+        },
+        "uniqueTournament": {
+          "name": "ITF W15 Bielsko Biala Women",
+          "slug": "itf-w15-bielsko-biala-women",
+          "category": {
+            "name": "ITF Women",
+            "slug": "itf-women",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "id": 213,
+            "country": {},
+            "flag": "itf-women"
+          },
+          "userCount": 3,
+          "groundType": "Clay",
+          "hasPerformanceGraphFeature": false,
+          "id": 28455,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false
+        },
+        "priority": 0,
+        "id": 159858
+      },
+      "season": {
+        "name": "2025",
+        "year": "2025",
+        "editor": false,
+        "id": 79662
+      },
+      "roundInfo": {
+        "round": 5,
+        "name": "Round of 16",
+        "cupRoundType": 8
+      },
+      "customId": "ZVNbscCvg",
+      "status": {
+        "code": 0,
+        "description": "Not started",
+        "type": "notstarted"
+      },
+      "homeTeam": {
+        "name": "Magdalena Baniak",
+        "slug": "baniak-magdalena",
+        "shortName": "M. Baniak",
+        "gender": "F",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 83,
+        "playerTeamInfo": {
+          "id": 22874
+        },
+        "nameCode": "MBA",
+        "national": false,
+        "type": 1,
+        "id": 801352,
+        "country": {
+          "alpha2": "PL",
+          "alpha3": "POL",
+          "name": "Poland",
+          "slug": "poland"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "awayTeam": {
+        "name": "Anna Hertel",
+        "slug": "hertel-anna",
+        "shortName": "A. Hertel",
+        "gender": "F",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 416,
+        "playerTeamInfo": {
+          "id": 3469
+        },
+        "nameCode": "AHE",
+        "national": false,
+        "type": 1,
+        "id": 222299,
+        "country": {
+          "alpha2": "PL",
+          "alpha3": "POL",
+          "name": "Poland",
+          "slug": "poland"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ru": "Хертел, Анна"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "homeScore": {},
+      "awayScore": {},
+      "coverage": -1,
+      "time": {},
+      "changes": {
+        "changeTimestamp": 0
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 14368114,
+      "slug": "magdalena-baniak-anna-hertel",
+      "startTimestamp": 1754564400,
+      "periods": {
+        "point": "Game",
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "groundType": "Clay",
+      "isEditor": false
+    },
+    {
+      "tournament": {
+        "name": "ITF W15 Brasov Women",
+        "slug": "itf-w15-brasov-women",
+        "category": {
+          "name": "ITF Women",
+          "slug": "itf-women",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "id": 213,
+          "country": {},
+          "flag": "itf-women"
+        },
+        "uniqueTournament": {
+          "name": "ITF W15 Brasov Women",
+          "slug": "itf-w15-brasov-women",
+          "category": {
+            "name": "ITF Women",
+            "slug": "itf-women",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "id": 213,
+            "country": {},
+            "flag": "itf-women"
+          },
+          "userCount": 5,
+          "groundType": "Clay",
+          "hasPerformanceGraphFeature": false,
+          "id": 28459,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false
+        },
+        "priority": 0,
+        "id": 159862
+      },
+      "season": {
+        "name": "2025",
+        "year": "2025",
+        "editor": false,
+        "id": 79666
+      },
+      "roundInfo": {
+        "round": 5,
+        "name": "Round of 16",
+        "cupRoundType": 8
+      },
+      "customId": "naLcspROi",
+      "status": {
+        "code": 0,
+        "description": "Not started",
+        "type": "notstarted"
+      },
+      "homeTeam": {
+        "name": "Alesia Breaz",
+        "slug": "alesia-breaz",
+        "shortName": "A. Breaz",
+        "gender": "F",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 19,
+        "playerTeamInfo": {
+          "id": 22479
+        },
+        "nameCode": "ABR",
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "id": 1099615,
+        "country": {
+          "alpha2": "RO",
+          "alpha3": "ROU",
+          "name": "Romania",
+          "slug": "romania"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "awayTeam": {
+        "name": "Sara Dols",
+        "slug": "dols-sara",
+        "shortName": "S. Dols",
+        "gender": "F",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 198,
+        "playerTeamInfo": {
+          "id": 13600
+        },
+        "nameCode": "SDO",
+        "national": false,
+        "type": 1,
+        "id": 340013,
+        "country": {
+          "alpha2": "ES",
+          "alpha3": "ESP",
+          "name": "Spain",
+          "slug": "spain"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "homeScore": {},
+      "awayScore": {},
+      "coverage": -1,
+      "time": {},
+      "changes": {
+        "changeTimestamp": 0
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 14368166,
+      "slug": "alesia-breaz-sara-dols",
+      "startTimestamp": 1754550000,
+      "periods": {
+        "point": "Game",
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "groundType": "Clay",
+      "isEditor": false
+    },
+    {
+      "tournament": {
+        "name": "ITF W15 Brasov Women",
+        "slug": "itf-w15-brasov-women",
+        "category": {
+          "name": "ITF Women",
+          "slug": "itf-women",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "id": 213,
+          "country": {},
+          "flag": "itf-women"
+        },
+        "uniqueTournament": {
+          "name": "ITF W15 Brasov Women",
+          "slug": "itf-w15-brasov-women",
+          "category": {
+            "name": "ITF Women",
+            "slug": "itf-women",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "id": 213,
+            "country": {},
+            "flag": "itf-women"
+          },
+          "userCount": 5,
+          "groundType": "Clay",
+          "hasPerformanceGraphFeature": false,
+          "id": 28459,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false
+        },
+        "priority": 0,
+        "id": 159862
+      },
+      "season": {
+        "name": "2025",
+        "year": "2025",
+        "editor": false,
+        "id": 79666
+      },
+      "roundInfo": {
+        "round": 5,
+        "name": "Round of 16",
+        "cupRoundType": 8
+      },
+      "customId": "mjDdsApTd",
+      "status": {
+        "code": 0,
+        "description": "Not started",
+        "type": "notstarted"
+      },
+      "homeTeam": {
+        "name": "Alexandra Irina Anghel",
+        "slug": "anghel-alexandra-irina",
+        "shortName": "A. Anghel",
+        "gender": "F",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 78,
+        "playerTeamInfo": {
+          "id": 22054
+        },
+        "nameCode": "AIA",
+        "national": false,
+        "type": 1,
+        "id": 483275,
+        "country": {
+          "alpha2": "RO",
+          "alpha3": "ROU",
+          "name": "Romania",
+          "slug": "romania"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "awayTeam": {
+        "name": "Lidia Encheva",
+        "slug": "encheva-lidia",
+        "shortName": "L. Encheva",
+        "gender": "F",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 153,
+        "playerTeamInfo": {
+          "id": 13532
+        },
+        "nameCode": "LEN",
+        "national": false,
+        "type": 1,
+        "id": 445462,
+        "country": {
+          "alpha2": "BG",
+          "alpha3": "BGR",
+          "name": "Bulgaria",
+          "slug": "bulgaria"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "homeScore": {},
+      "awayScore": {},
+      "coverage": -1,
+      "time": {},
+      "changes": {
+        "changeTimestamp": 0
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 14368165,
+      "slug": "alexandra-irina-anghel-lidia-encheva",
+      "startTimestamp": 1754550000,
+      "periods": {
+        "point": "Game",
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "groundType": "Clay",
+      "isEditor": false
+    },
+    {
+      "tournament": {
+        "name": "ITF W15 Brasov Women",
+        "slug": "itf-w15-brasov-women",
+        "category": {
+          "name": "ITF Women",
+          "slug": "itf-women",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "id": 213,
+          "country": {},
+          "flag": "itf-women"
+        },
+        "uniqueTournament": {
+          "name": "ITF W15 Brasov Women",
+          "slug": "itf-w15-brasov-women",
+          "category": {
+            "name": "ITF Women",
+            "slug": "itf-women",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "id": 213,
+            "country": {},
+            "flag": "itf-women"
+          },
+          "userCount": 5,
+          "groundType": "Clay",
+          "hasPerformanceGraphFeature": false,
+          "id": 28459,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false
+        },
+        "priority": 0,
+        "id": 159862
+      },
+      "season": {
+        "name": "2025",
+        "year": "2025",
+        "editor": false,
+        "id": 79666
+      },
+      "roundInfo": {
+        "round": 5,
+        "name": "Round of 16",
+        "cupRoundType": 8
+      },
+      "customId": "OawcsQMge",
+      "status": {
+        "code": 0,
+        "description": "Not started",
+        "type": "notstarted"
+      },
+      "homeTeam": {
+        "name": "Jennifer Ruggeri",
+        "slug": "ruggeri-jennifer",
+        "shortName": "J. Ruggeri",
+        "gender": "F",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 366,
+        "playerTeamInfo": {
+          "id": 5070
+        },
+        "nameCode": "JRU",
+        "national": false,
+        "type": 1,
+        "id": 302539,
+        "country": {
+          "alpha2": "IT",
+          "alpha3": "ITA",
+          "name": "Italy",
+          "slug": "italy"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "awayTeam": {
+        "name": "Noemi Maines",
+        "slug": "maines-noemi",
+        "shortName": "N. Maines",
+        "gender": "F",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 83,
+        "playerTeamInfo": {
+          "id": 19137
+        },
+        "nameCode": "NMA",
+        "national": false,
+        "type": 1,
+        "id": 516891,
+        "country": {
+          "alpha2": "IT",
+          "alpha3": "ITA",
+          "name": "Italy",
+          "slug": "italy"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "homeScore": {},
+      "awayScore": {},
+      "coverage": -1,
+      "time": {},
+      "changes": {
+        "changeTimestamp": 0
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 14368168,
+      "slug": "noemi-maines-jennifer-ruggeri",
+      "startTimestamp": 1754550000,
       "periods": {
         "point": "Game",
         "current": "Match",
@@ -82613,8 +84799,8 @@
       },
       "customId": "pNOsgake",
       "status": {
-        "code": 8,
-        "description": "1st set",
+        "code": 9,
+        "description": "2nd set",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -82685,22 +84871,27 @@
       "homeScore": {
         "current": 0,
         "display": 0,
-        "period1": 4,
-        "point": "15"
+        "period1": 5,
+        "period2": 0,
+        "point": "0"
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 5,
+        "current": 1,
+        "display": 1,
+        "period1": 7,
+        "period2": 0,
         "point": "0"
       },
       "coverage": -1,
       "time": {},
       "changes": {
         "changes": [
-          "homeScore.point"
+          "status.code",
+          "status.description",
+          "homeScore.period2",
+          "awayScore.period2"
         ],
-        "changeTimestamp": 1754512111
+        "changeTimestamp": 1754512988
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -82716,7 +84907,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
@@ -82848,22 +85039,22 @@
       "homeScore": {
         "current": 0,
         "display": 0,
-        "period1": 2,
-        "point": "30"
+        "period1": 3,
+        "point": "40"
       },
       "awayScore": {
         "current": 0,
         "display": 0,
         "period1": 1,
-        "point": "0"
+        "point": "A"
       },
       "coverage": -1,
       "time": {},
       "changes": {
         "changes": [
-          "homeScore.point"
+          "awayScore.point"
         ],
-        "changeTimestamp": 1754512110
+        "changeTimestamp": 1754513338
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -91027,170 +93218,6 @@
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14358385,
-      "slug": "mary-stoiana-arianne-hartono",
-      "startTimestamp": 1754575200,
-      "periods": {
-        "point": "Game",
-        "current": "Match",
-        "period1": "1st set",
-        "period2": "2nd set",
-        "period3": "3rd set",
-        "period4": "4th set",
-        "period5": "5th set"
-      },
-      "finalResultOnly": false,
-      "feedLocked": false,
-      "groundType": "Hardcourt outdoor",
-      "isEditor": false
-    },
-    {
-      "tournament": {
-        "name": "ITF W100 Landisville Women",
-        "slug": "itf-w100-landisville-women",
-        "category": {
-          "name": "ITF Women",
-          "slug": "itf-women",
-          "sport": {
-            "name": "Tennis",
-            "slug": "tennis",
-            "id": 5
-          },
-          "id": 213,
-          "country": {},
-          "flag": "itf-women"
-        },
-        "uniqueTournament": {
-          "name": "ITF W100 Landisville Women",
-          "slug": "itf-w100-landisville-women",
-          "category": {
-            "name": "ITF Women",
-            "slug": "itf-women",
-            "sport": {
-              "name": "Tennis",
-              "slug": "tennis",
-              "id": 5
-            },
-            "id": 213,
-            "country": {},
-            "flag": "itf-women"
-          },
-          "userCount": 6,
-          "groundType": "Hardcourt outdoor",
-          "hasPerformanceGraphFeature": false,
-          "id": 28429,
-          "hasEventPlayerStatistics": false,
-          "displayInverseHomeAwayTeams": false
-        },
-        "priority": 0,
-        "id": 159831
-      },
-      "season": {
-        "name": "2025",
-        "year": "2025",
-        "editor": false,
-        "id": 79636
-      },
-      "roundInfo": {
-        "round": 5,
-        "name": "Round of 16",
-        "cupRoundType": 8
-      },
-      "customId": "PdobsRkLc",
-      "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
-      },
-      "homeTeam": {
-        "name": "Arianne Hartono",
-        "slug": "hartono-arianne",
-        "shortName": "A. Hartono",
-        "gender": "F",
-        "sport": {
-          "name": "Tennis",
-          "slug": "tennis",
-          "id": 5
-        },
-        "userCount": 1090,
-        "playerTeamInfo": {
-          "id": 3185
-        },
-        "nameCode": "HAR",
-        "national": false,
-        "type": 1,
-        "id": 160190,
-        "country": {
-          "alpha2": "NL",
-          "alpha3": "NLD",
-          "name": "Netherlands",
-          "slug": "netherlands"
-        },
-        "subTeams": [],
-        "teamColors": {
-          "primary": "#374df5",
-          "secondary": "#374df5",
-          "text": "#ffffff"
-        },
-        "fieldTranslations": {
-          "nameTranslation": {
-            "hi": "आरियान हार्तोनो",
-            "bn": "আরিয়ান হারটোনো"
-          },
-          "shortNameTranslation": {
-            "ar": "أ. هارتونو"
-          }
-        }
-      },
-      "awayTeam": {
-        "name": "Mary Stoiana",
-        "slug": "stoiana-mary",
-        "shortName": "M. Stoiana",
-        "gender": "F",
-        "sport": {
-          "name": "Tennis",
-          "slug": "tennis",
-          "id": 5
-        },
-        "userCount": 235,
-        "playerTeamInfo": {
-          "id": 12347
-        },
-        "nameCode": "MST",
-        "national": false,
-        "type": 1,
-        "id": 340542,
-        "country": {
-          "alpha2": "US",
-          "alpha3": "USA",
-          "name": "USA",
-          "slug": "usa"
-        },
-        "subTeams": [],
-        "teamColors": {
-          "primary": "#374df5",
-          "secondary": "#374df5",
-          "text": "#ffffff"
-        },
-        "fieldTranslations": {
-          "nameTranslation": {
-            "hi": "मैरी स्टोइना",
-            "bn": "মেরি স্টোইয়ানা"
-          },
-          "shortNameTranslation": {
-            "ar": "م. برزيسيزني"
-          }
-        }
-      },
-      "homeScore": {},
-      "awayScore": {},
-      "coverage": -1,
-      "time": {},
-      "changes": {
-        "changeTimestamp": 0
-      },
-      "hasGlobalHighlights": false,
-      "crowdsourcingDataDisplayEnabled": false,
-      "id": 14367562,
       "slug": "mary-stoiana-arianne-hartono",
       "startTimestamp": 1754575200,
       "periods": {
@@ -113642,7 +115669,7 @@
       "isEditor": false
     },
     {
-      "firstToServe": 1,
+      "firstToServe": 2,
       "tournament": {
         "name": "ITF M25 Tauste Men Doubles",
         "slug": "itf-m25-tauste-men-doubles",
@@ -113885,23 +115912,23 @@
         "current": 0,
         "display": 0,
         "period1": 2,
-        "period2": 1,
-        "point": "15"
+        "period2": 4,
+        "point": "30"
       },
       "awayScore": {
         "current": 1,
         "display": 1,
         "period1": 6,
-        "period2": 1,
-        "point": "15"
+        "period2": 3,
+        "point": "0"
       },
       "coverage": -1,
       "time": {},
       "changes": {
         "changes": [
-          "awayScore.point"
+          "homeScore.point"
         ],
-        "changeTimestamp": 1754512101
+        "changeTimestamp": 1754513333
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -121839,7 +123866,998 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "groundType": "Clay",
+      "isEditor": false
+    },
+    {
+      "tournament": {
+        "name": "ITF W15 Slovenske Konjice Women Doubles",
+        "slug": "itf-w15-slovenske-konjice-women-doubles",
+        "category": {
+          "name": "ITF Women",
+          "slug": "itf-women",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "id": 213,
+          "country": {},
+          "flag": "itf-women"
+        },
+        "uniqueTournament": {
+          "name": "ITF W15 Slovenske Konjice Women Doubles",
+          "slug": "itf-w15-slovenske-konjice-women-doubles",
+          "category": {
+            "name": "ITF Women",
+            "slug": "itf-women",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "id": 213,
+            "country": {},
+            "flag": "itf-women"
+          },
+          "userCount": 1,
+          "groundType": "Clay",
+          "hasPerformanceGraphFeature": false,
+          "id": 28454,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false
+        },
+        "priority": 0,
+        "id": 159856
+      },
+      "season": {
+        "name": "2025",
+        "year": "2025",
+        "editor": false,
+        "id": 79661
+      },
+      "roundInfo": {
+        "round": 27,
+        "name": "Quarterfinals",
+        "cupRoundType": 4
+      },
+      "customId": "rGVislUVi",
+      "status": {
+        "code": 0,
+        "description": "Not started",
+        "type": "notstarted"
+      },
+      "homeTeam": {
+        "name": "Mozgaleva A / Senica A",
+        "slug": "mozgaleva-a-senica-a",
+        "shortName": "Mozgaleva A / Senica A",
+        "gender": "F",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 0,
+        "nameCode": "MAS",
+        "disabled": false,
+        "national": false,
+        "type": 2,
+        "id": 1114711,
+        "country": {},
+        "subTeams": [
+          {
+            "name": "Anastasia Mozgaleva",
+            "slug": "mozgaleva-anastasia",
+            "shortName": "A. Mozgaleva",
+            "gender": "F",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 74,
+            "nameCode": "AMO",
+            "national": false,
+            "type": 1,
+            "id": 271417,
+            "country": {
+              "alpha2": "RU",
+              "alpha3": "RUS",
+              "name": "Russia",
+              "slug": "russia"
+            },
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            }
+          },
+          {
+            "name": "Alja Senica",
+            "slug": "senica-alja",
+            "shortName": "A. Senica",
+            "gender": "F",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 62,
+            "nameCode": "ASE",
+            "national": false,
+            "type": 1,
+            "id": 467025,
+            "country": {
+              "alpha2": "SI",
+              "alpha3": "SVN",
+              "name": "Slovenia",
+              "slug": "slovenia"
+            },
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            }
+          }
+        ],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "awayTeam": {
+        "name": "Squarcialupi G / Troiano C",
+        "slug": "squarcialupi-g-troiano-c",
+        "gender": "F",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 0,
+        "nameCode": "SGT",
+        "disabled": false,
+        "national": false,
+        "type": 2,
+        "id": 1114067,
+        "country": {},
+        "subTeams": [
+          {
+            "name": "Gaia Squarcialupi",
+            "slug": "squarcialupi-gaia",
+            "shortName": "G. Squarcialupi",
+            "gender": "F",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 177,
+            "nameCode": "GSQ",
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "id": 138660,
+            "country": {
+              "alpha2": "IT",
+              "alpha3": "ITA",
+              "name": "Italy",
+              "slug": "italy"
+            },
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ru": "Скарчиалупи, Гайя"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          {
+            "name": "Carolina Troiano",
+            "slug": "troiano-carolina",
+            "shortName": "C. Troiano",
+            "gender": "F",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 66,
+            "nameCode": "CTR",
+            "national": false,
+            "type": 1,
+            "id": 464848,
+            "country": {
+              "alpha2": "IT",
+              "alpha3": "ITA",
+              "name": "Italy",
+              "slug": "italy"
+            },
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            }
+          }
+        ],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "homeScore": {},
+      "awayScore": {},
+      "coverage": -1,
+      "time": {},
+      "changes": {
+        "changeTimestamp": 0
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 14368093,
+      "slug": "mozgaleva-senica-squarcialupi-troiano",
+      "startTimestamp": 1754569800,
+      "periods": {
+        "point": "Game",
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "groundType": "Clay",
+      "isEditor": false
+    },
+    {
+      "tournament": {
+        "name": "ITF W15 Slovenske Konjice Women Doubles",
+        "slug": "itf-w15-slovenske-konjice-women-doubles",
+        "category": {
+          "name": "ITF Women",
+          "slug": "itf-women",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "id": 213,
+          "country": {},
+          "flag": "itf-women"
+        },
+        "uniqueTournament": {
+          "name": "ITF W15 Slovenske Konjice Women Doubles",
+          "slug": "itf-w15-slovenske-konjice-women-doubles",
+          "category": {
+            "name": "ITF Women",
+            "slug": "itf-women",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "id": 213,
+            "country": {},
+            "flag": "itf-women"
+          },
+          "userCount": 1,
+          "groundType": "Clay",
+          "hasPerformanceGraphFeature": false,
+          "id": 28454,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false
+        },
+        "priority": 0,
+        "id": 159856
+      },
+      "season": {
+        "name": "2025",
+        "year": "2025",
+        "editor": false,
+        "id": 79661
+      },
+      "roundInfo": {
+        "round": 27,
+        "name": "Quarterfinals",
+        "cupRoundType": 4
+      },
+      "customId": "qjPdsmUVi",
+      "status": {
+        "code": 0,
+        "description": "Not started",
+        "type": "notstarted"
+      },
+      "homeTeam": {
+        "name": "Avataneo S / Veleva V",
+        "slug": "avataneo-s-veleva-v",
+        "gender": "F",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 0,
+        "nameCode": "A/V",
+        "national": false,
+        "type": 2,
+        "id": 475466,
+        "country": {},
+        "subTeams": [
+          {
+            "name": "Sofia Avataneo",
+            "slug": "avataneo-sofia",
+            "shortName": "S. Avataneo",
+            "gender": "F",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 132,
+            "nameCode": "SAV",
+            "national": false,
+            "type": 1,
+            "id": 388417,
+            "country": {
+              "alpha2": "IT",
+              "alpha3": "ITA",
+              "name": "Italy",
+              "slug": "italy"
+            },
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            }
+          },
+          {
+            "name": "Viktoria Veleva",
+            "slug": "veleva-viktoria",
+            "shortName": "V. Veleva",
+            "gender": "F",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 32,
+            "nameCode": "VVE",
+            "national": false,
+            "type": 1,
+            "id": 371905,
+            "country": {
+              "alpha2": "BG",
+              "alpha3": "BGR",
+              "name": "Bulgaria",
+              "slug": "bulgaria"
+            },
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            }
+          }
+        ],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "awayTeam": {
+        "name": "Giordano M / Smejkal L",
+        "slug": "giordano-m-smejkal-l",
+        "shortName": "Giordano M / Smejkal L",
+        "gender": "F",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 0,
+        "nameCode": "GMS",
+        "disabled": false,
+        "national": false,
+        "type": 2,
+        "id": 1114712,
+        "country": {},
+        "subTeams": [
+          {
+            "name": "Maddalena Giordano",
+            "slug": "giordano-maddalena",
+            "shortName": "M. Giordano",
+            "gender": "F",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 131,
+            "nameCode": "MGI",
+            "national": false,
+            "type": 1,
+            "id": 262922,
+            "country": {
+              "alpha2": "IT",
+              "alpha3": "ITA",
+              "name": "Italy",
+              "slug": "italy"
+            },
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            }
+          },
+          {
+            "name": "Lara Smejkal",
+            "slug": "smejkal-lara",
+            "shortName": "L. Smejkal",
+            "gender": "F",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 53,
+            "nameCode": "LSM",
+            "national": false,
+            "type": 1,
+            "id": 412841,
+            "country": {
+              "alpha2": "SI",
+              "alpha3": "SVN",
+              "name": "Slovenia",
+              "slug": "slovenia"
+            },
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            }
+          }
+        ],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "homeScore": {},
+      "awayScore": {},
+      "coverage": -1,
+      "time": {},
+      "changes": {
+        "changeTimestamp": 0
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 14368102,
+      "slug": "giordano-smejkal-avataneo-veleva",
+      "startTimestamp": 1754577000,
+      "periods": {
+        "point": "Game",
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "groundType": "Clay",
+      "isEditor": false
+    },
+    {
+      "tournament": {
+        "name": "ITF W15 Slovenske Konjice Women Doubles",
+        "slug": "itf-w15-slovenske-konjice-women-doubles",
+        "category": {
+          "name": "ITF Women",
+          "slug": "itf-women",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "id": 213,
+          "country": {},
+          "flag": "itf-women"
+        },
+        "uniqueTournament": {
+          "name": "ITF W15 Slovenske Konjice Women Doubles",
+          "slug": "itf-w15-slovenske-konjice-women-doubles",
+          "category": {
+            "name": "ITF Women",
+            "slug": "itf-women",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "id": 213,
+            "country": {},
+            "flag": "itf-women"
+          },
+          "userCount": 1,
+          "groundType": "Clay",
+          "hasPerformanceGraphFeature": false,
+          "id": 28454,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false
+        },
+        "priority": 0,
+        "id": 159856
+      },
+      "season": {
+        "name": "2025",
+        "year": "2025",
+        "editor": false,
+        "id": 79661
+      },
+      "roundInfo": {
+        "round": 27,
+        "name": "Quarterfinals",
+        "cupRoundType": 4
+      },
+      "customId": "nUVisoUVi",
+      "status": {
+        "code": 0,
+        "description": "Not started",
+        "type": "notstarted"
+      },
+      "homeTeam": {
+        "name": "Drugdova S / Smekalova M",
+        "slug": "drugdova-s-smekalova-m",
+        "shortName": "Drugdova S / Smekalova M",
+        "gender": "F",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 0,
+        "nameCode": "DSS",
+        "disabled": false,
+        "national": false,
+        "type": 2,
+        "id": 1114713,
+        "country": {},
+        "subTeams": [
+          {
+            "name": "Salma Drugdová",
+            "slug": "drugdova-salma",
+            "shortName": "S. Drugdová",
+            "gender": "F",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 121,
+            "nameCode": "SDR",
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "id": 377987,
+            "country": {
+              "alpha2": "SK",
+              "alpha3": "SVK",
+              "name": "Slovakia",
+              "slug": "slovakia"
+            },
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            }
+          },
+          {
+            "name": "Magdalena Smekalova",
+            "slug": "smekalova-magdalena",
+            "shortName": "M. Smekalova",
+            "gender": "F",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 38,
+            "nameCode": "SME",
+            "national": false,
+            "type": 1,
+            "id": 402451,
+            "country": {
+              "alpha2": "CZ",
+              "alpha3": "CZE",
+              "name": "Czechia",
+              "slug": "czechia"
+            },
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            }
+          }
+        ],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "awayTeam": {
+        "name": "Jelinkova A / Lackova V",
+        "slug": "jelinkova-a-lackova-v",
+        "shortName": "Jelinkova A / Lackova V",
+        "gender": "F",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 0,
+        "nameCode": "JAL",
+        "disabled": false,
+        "national": false,
+        "type": 2,
+        "id": 1114714,
+        "country": {},
+        "subTeams": [
+          {
+            "name": "Anna Jelinkova",
+            "slug": "jelinkova-anna",
+            "shortName": "A. Jelinkova",
+            "gender": "F",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 23,
+            "nameCode": "JEL",
+            "national": false,
+            "type": 1,
+            "id": 515227,
+            "country": {
+              "alpha2": "CZ",
+              "alpha3": "CZE",
+              "name": "Czechia",
+              "slug": "czechia"
+            },
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            }
+          },
+          {
+            "name": "Viktoria Lackova",
+            "slug": "lackova-viktoria",
+            "shortName": "V. Lackova",
+            "gender": "F",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 71,
+            "nameCode": "LAC",
+            "national": false,
+            "type": 1,
+            "id": 419510,
+            "country": {
+              "alpha2": "SK",
+              "alpha3": "SVK",
+              "name": "Slovakia",
+              "slug": "slovakia"
+            },
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            }
+          }
+        ],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "homeScore": {},
+      "awayScore": {},
+      "coverage": -1,
+      "time": {},
+      "changes": {
+        "changeTimestamp": 0
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 14368103,
+      "slug": "jelinkova-lackova-drugdova-smekalova",
+      "startTimestamp": 1754577000,
+      "periods": {
+        "point": "Game",
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "groundType": "Clay",
+      "isEditor": false
+    },
+    {
+      "tournament": {
+        "name": "ITF W15 Slovenske Konjice Women Doubles",
+        "slug": "itf-w15-slovenske-konjice-women-doubles",
+        "category": {
+          "name": "ITF Women",
+          "slug": "itf-women",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "id": 213,
+          "country": {},
+          "flag": "itf-women"
+        },
+        "uniqueTournament": {
+          "name": "ITF W15 Slovenske Konjice Women Doubles",
+          "slug": "itf-w15-slovenske-konjice-women-doubles",
+          "category": {
+            "name": "ITF Women",
+            "slug": "itf-women",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "id": 213,
+            "country": {},
+            "flag": "itf-women"
+          },
+          "userCount": 1,
+          "groundType": "Clay",
+          "hasPerformanceGraphFeature": false,
+          "id": 28454,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false
+        },
+        "priority": 0,
+        "id": 159856
+      },
+      "season": {
+        "name": "2025",
+        "year": "2025",
+        "editor": false,
+        "id": 79661
+      },
+      "roundInfo": {
+        "round": 27,
+        "name": "Quarterfinals",
+        "cupRoundType": 4
+      },
+      "customId": "aKDdsZkge",
+      "status": {
+        "code": 0,
+        "description": "Not started",
+        "type": "notstarted"
+      },
+      "homeTeam": {
+        "name": "Kovacic N / Najzer K",
+        "slug": "kovacic-n-najzer-k",
+        "gender": "F",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 1,
+        "nameCode": "K/N",
+        "national": false,
+        "type": 2,
+        "id": 515549,
+        "country": {},
+        "subTeams": [
+          {
+            "name": "Nala Kovacic",
+            "slug": "kovacic-nala",
+            "shortName": "N. Kovacic",
+            "gender": "F",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 11,
+            "nameCode": "NKO",
+            "national": false,
+            "type": 1,
+            "id": 470160,
+            "country": {
+              "alpha2": "SI",
+              "alpha3": "SVN",
+              "name": "Slovenia",
+              "slug": "slovenia"
+            },
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            }
+          },
+          {
+            "name": "Kaja Najzer",
+            "slug": "najzer-kaja",
+            "shortName": "K. Najzer",
+            "gender": "F",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 17,
+            "nameCode": "KNA",
+            "national": false,
+            "type": 1,
+            "id": 468009,
+            "country": {
+              "alpha2": "SI",
+              "alpha3": "SVN",
+              "name": "Slovenia",
+              "slug": "slovenia"
+            },
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            }
+          }
+        ],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "awayTeam": {
+        "name": "Dessolis B / Dessolis M",
+        "slug": "dessolis-b-dessolis-m",
+        "gender": "F",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 1,
+        "nameCode": "D/D",
+        "national": false,
+        "type": 2,
+        "id": 446750,
+        "country": {},
+        "subTeams": [
+          {
+            "name": "Barbara Dessolis",
+            "slug": "dessolis-barbara",
+            "shortName": "B. Dessolis",
+            "gender": "F",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 130,
+            "nameCode": "BDE",
+            "national": false,
+            "type": 1,
+            "id": 221400,
+            "country": {
+              "alpha2": "IT",
+              "alpha3": "ITA",
+              "name": "Italy",
+              "slug": "italy"
+            },
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ru": "Дессолис, Барбара"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          {
+            "name": "Marcella Dessolis",
+            "slug": "dessolis-marcella",
+            "shortName": "M. Dessolis",
+            "gender": "F",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 68,
+            "nameCode": "MDE",
+            "national": false,
+            "type": 1,
+            "id": 446501,
+            "country": {
+              "alpha2": "IT",
+              "alpha3": "ITA",
+              "name": "Italy",
+              "slug": "italy"
+            },
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            }
+          }
+        ],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "homeScore": {},
+      "awayScore": {},
+      "coverage": -1,
+      "time": {},
+      "changes": {
+        "changeTimestamp": 0
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 14368104,
+      "slug": "kovacic-najzer-dessolis-dessolis",
+      "startTimestamp": 1754577000,
+      "periods": {
+        "point": "Game",
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set"
+      },
+      "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Clay",
       "isEditor": false
@@ -123114,7 +126132,7 @@
       "isEditor": false
     },
     {
-      "firstToServe": 1,
+      "firstToServe": 2,
       "tournament": {
         "name": "ITF W35 Chacabuco Women Doubles",
         "slug": "itf-w35-chacabuco-women-doubles",
@@ -123352,16 +126370,16 @@
         "current": 1,
         "display": 1,
         "period1": 6,
-        "period2": 0,
-        "point": "40"
+        "period2": 5,
+        "point": "15"
       },
       "coverage": -1,
       "time": {},
       "changes": {
         "changes": [
-          "awayScore.point"
+          "homeScore.point"
         ],
-        "changeTimestamp": 1754512091
+        "changeTimestamp": 1754513341
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -127897,9 +130915,9 @@
       },
       "customId": "nFVisqFVi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 8,
+        "description": "1st set",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Collins K / Hewitt D",
@@ -128068,12 +131086,25 @@
           "text": "#ffffff"
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "point": "15"
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 1,
+        "point": "0"
+      },
       "coverage": -1,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.point"
+        ],
+        "changeTimestamp": 1754513359
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -128089,7 +131120,8 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "finalResultOnly": true,
+      "lastPeriod": "period1",
+      "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
       "isEditor": false
@@ -136543,10 +139575,11 @@
       },
       "customId": "znwbsoDVi",
       "status": {
-        "code": 9,
-        "description": "2nd set",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Aney J / Failla J",
         "slug": "aney-j-failla-j",
@@ -136738,22 +139771,24 @@
         "display": 0,
         "period1": 5,
         "period2": 2,
-        "point": "15"
+        "point": "0"
       },
       "awayScore": {
-        "current": 1,
-        "display": 1,
+        "current": 2,
+        "display": 2,
         "period1": 7,
-        "period2": 5,
-        "point": "30"
+        "period2": 6,
+        "point": "0"
       },
       "coverage": -1,
       "time": {},
       "changes": {
         "changes": [
-          "awayScore.point"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1754512091
+        "changeTimestamp": 1754512196
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -136769,7 +139804,6 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
@@ -137126,10 +140160,11 @@
       },
       "customId": "GKKisaiOi",
       "status": {
-        "code": 9,
-        "description": "2nd set",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Cross K / Smith A",
         "slug": "cross-k-smith-a",
@@ -137295,22 +140330,24 @@
         "display": 0,
         "period1": 4,
         "period2": 2,
-        "point": "15"
+        "point": "0"
       },
       "awayScore": {
-        "current": 1,
-        "display": 1,
+        "current": 2,
+        "display": 2,
         "period1": 6,
-        "period2": 4,
-        "point": "40"
+        "period2": 6,
+        "point": "0"
       },
       "coverage": -1,
       "time": {},
       "changes": {
         "changes": [
-          "awayScore.point"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1754512125
+        "changeTimestamp": 1754512503
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -137326,14 +140363,12 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
       "isEditor": false
     },
     {
-      "firstToServe": 1,
       "tournament": {
         "name": "ITF W100 Landisville Women Doubles",
         "slug": "itf-w100-landisville-women-doubles",
@@ -137387,10 +140422,11 @@
       },
       "customId": "hpqisigQi",
       "status": {
-        "code": 10,
-        "description": "3rd set",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Jones M / Rogers A S",
         "slug": "jones-m-rogers-a-s",
@@ -137571,8 +140607,8 @@
         "point": "0"
       },
       "awayScore": {
-        "current": 1,
-        "display": 1,
+        "current": 2,
+        "display": 2,
         "period1": 6,
         "period2": 6,
         "period3": 10,
@@ -137583,9 +140619,14 @@
       "time": {},
       "changes": {
         "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "awayScore.current",
+          "awayScore.display",
           "firstToServe"
         ],
-        "changeTimestamp": 1754512092
+        "changeTimestamp": 1754512127
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -137601,7 +140642,6 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
@@ -142696,6 +145736,143 @@
       "roundInfo": {
         "round": 4
       },
+      "customId": "rvNbszbgc",
+      "status": {
+        "code": 0,
+        "description": "Not started",
+        "type": "notstarted"
+      },
+      "homeTeam": {
+        "name": "Agustin Tamagnone",
+        "slug": "tamagnone-agustin",
+        "shortName": "A. Tamagnone",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 16,
+        "nameCode": "TAM",
+        "national": false,
+        "type": 1,
+        "id": 221017,
+        "country": {
+          "alpha2": "AR",
+          "alpha3": "ARG",
+          "name": "Argentina",
+          "slug": "argentina"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "awayTeam": {
+        "name": "Elias Grubert",
+        "slug": "grubert-elias",
+        "shortName": "E. Grubert",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 26,
+        "nameCode": "GRU",
+        "national": false,
+        "type": 1,
+        "id": 265074,
+        "country": {
+          "alpha2": "AR",
+          "alpha3": "ARG",
+          "name": "Argentina",
+          "slug": "argentina"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "homeScore": {},
+      "awayScore": {},
+      "time": {},
+      "changes": {
+        "changeTimestamp": 0
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 14349914,
+      "slug": "elias-grubert-agustin-tamagnone",
+      "startTimestamp": 1754575800,
+      "periods": {
+        "point": "Game",
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "groundType": "Red clay",
+      "isEditor": false
+    },
+    {
+      "tournament": {
+        "name": "UTR PTT Cordoba Men +H 03, Group B",
+        "slug": "utr-ptt-cordoba-men-plus-h-03-group-b",
+        "category": {
+          "name": "UTR Men",
+          "slug": "utr-men",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "id": 1843,
+          "country": {},
+          "flag": "utr-men"
+        },
+        "uniqueTournament": {
+          "name": "UTR PTT Cordoba Men +H 03",
+          "slug": "utr-ptt-cordoba-men-plus-h-03",
+          "category": {
+            "name": "UTR Men",
+            "slug": "utr-men",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "id": 1843,
+            "country": {},
+            "flag": "utr-men"
+          },
+          "userCount": 8,
+          "groundType": "Red clay",
+          "hasPerformanceGraphFeature": false,
+          "id": 28383,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false
+        },
+        "priority": 0,
+        "id": 159763
+      },
+      "season": {
+        "name": "2025 Cordoba Men +H 03",
+        "year": "2025",
+        "editor": false,
+        "id": 79565
+      },
+      "roundInfo": {
+        "round": 4
+      },
       "customId": "gJqbsMbGd",
       "status": {
         "code": 0,
@@ -143584,7 +146761,7 @@
       "isEditor": false
     },
     {
-      "firstToServe": 1,
+      "firstToServe": 2,
       "tournament": {
         "name": "UTR PTT Cordoba Men +H 03, Group D",
         "slug": "utr-ptt-cordoba-men-plus-h-03-group-d",
@@ -143712,14 +146889,14 @@
         "current": 0,
         "display": 0,
         "period1": 4,
-        "period2": 2,
+        "period2": 5,
         "point": "0"
       },
       "awayScore": {
         "current": 1,
         "display": 1,
         "period1": 6,
-        "period2": 1,
+        "period2": 3,
         "point": "0"
       },
       "time": {
@@ -143732,7 +146909,7 @@
           "awayScore.point",
           "firstToServe"
         ],
-        "changeTimestamp": 1754512120
+        "changeTimestamp": 1754513347
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
