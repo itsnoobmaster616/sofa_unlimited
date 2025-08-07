@@ -3009,10 +3009,11 @@
       },
       "customId": "CNZdsEjve",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 1001,
+        "description": "First game",
+        "type": "inprogress"
       },
+      "winnerCode": 3,
       "homeTeam": {
         "name": "BOSS",
         "slug": "boss",
@@ -3072,12 +3073,30 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
       "coverage": 91,
-      "time": {},
+      "time": {
+        "currentPeriodStartTimestamp": 1754605926
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "awayScore.current",
+          "awayScore.display",
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1754605929
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
@@ -3086,7 +3105,7 @@
       "eventType": "best_of",
       "roundsInAHalf": 12,
       "slug": "marcaregistrada-boss",
-      "startTimestamp": 1754604600,
+      "startTimestamp": 1754605800,
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -17466,11 +17485,11 @@
       },
       "customId": "OljesEYRi",
       "status": {
-        "code": 1001,
-        "description": "First game",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
-      "winnerCode": 3,
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Dorado Gaming",
         "slug": "dorado-gaming",
@@ -17537,28 +17556,28 @@
       },
       "homeScore": {
         "current": 0,
-        "display": 0
+        "display": 0,
+        "period1": 0
       },
       "awayScore": {
-        "current": 0,
-        "display": 0
+        "current": 1,
+        "display": 1,
+        "period1": 1
       },
       "coverage": 91,
-      "time": {
-        "currentPeriodStartTimestamp": 1754603623
-      },
+      "time": {},
       "changes": {
         "changes": [
           "status.code",
           "status.description",
           "status.type",
-          "homeScore.current",
-          "homeScore.display",
+          "homeScore.period1",
           "awayScore.current",
           "awayScore.display",
+          "awayScore.period1",
           "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1754603646
+        "changeTimestamp": 1754606044
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
@@ -17718,7 +17737,7 @@
       "bestOf": 1,
       "eventType": "best_of",
       "slug": "winthrop-university-supernova",
-      "startTimestamp": 1754607600,
+      "startTimestamp": 1754607000,
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
