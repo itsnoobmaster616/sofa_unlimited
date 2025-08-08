@@ -4604,11 +4604,28 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
+      "time": {
+        "played": 0,
+        "periodLength": 600,
+        "overtimeLength": 300,
+        "totalPeriodCount": 4
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.played",
+          "time.periodLength",
+          "time.overtimeLength",
+          "time.totalPeriodCount"
+        ],
+        "changeTimestamp": 1754648584
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -9505,10 +9522,11 @@
       },
       "customId": "MxcsHXi",
       "status": {
-        "code": 30,
-        "description": "Pause",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "South Korea",
         "slug": "south-korea",
@@ -9584,21 +9602,25 @@
         }
       },
       "homeScore": {
-        "current": 75,
-        "display": 75,
+        "current": 97,
+        "display": 97,
         "period1": 25,
         "period2": 28,
-        "period3": 22
+        "period3": 22,
+        "period4": 22,
+        "normaltime": 97
       },
       "awayScore": {
-        "current": 61,
-        "display": 61,
+        "current": 83,
+        "display": 83,
         "period1": 22,
         "period2": 16,
-        "period3": 23
+        "period3": 23,
+        "period4": 22,
+        "normaltime": 83
       },
       "time": {
-        "played": 1800,
+        "played": 2400,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4,
@@ -9607,9 +9629,12 @@
       "changes": {
         "changes": [
           "status.code",
-          "status.description"
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1754645499
+        "changeTimestamp": 1754648400
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -14656,9 +14681,9 @@
       },
       "customId": "DKTisKpVi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 15,
+        "description": "3rd quarter",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "National Taiwan University of Arts",
@@ -14716,11 +14741,32 @@
           "text": "#ffffff"
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 59,
+        "display": 59,
+        "period1": 20,
+        "period2": 27,
+        "period3": 12
+      },
+      "awayScore": {
+        "current": 39,
+        "display": 39,
+        "period1": 16,
+        "period2": 18,
+        "period3": 5
+      },
+      "time": {
+        "played": 1519,
+        "periodLength": 600,
+        "overtimeLength": 300,
+        "totalPeriodCount": 4,
+        "currentPeriodStartTimestamp": 1754648456
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.played"
+        ],
+        "changeTimestamp": 1754648877
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -14735,6 +14781,7 @@
       },
       "slug": "national-taiwan-university-of-science-and-technology-national-taiwan-university-of-arts",
       "startTimestamp": 1754645400,
+      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -16127,10 +16174,11 @@
       },
       "customId": "RmQisTmQi",
       "status": {
-        "code": 15,
-        "description": "3rd quarter",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Czechia U16",
         "slug": "czechia-u16",
@@ -16206,30 +16254,38 @@
         }
       },
       "homeScore": {
-        "current": 45,
-        "display": 45,
+        "current": 63,
+        "display": 63,
         "period1": 20,
         "period2": 16,
-        "period3": 9
+        "period3": 14,
+        "period4": 13,
+        "normaltime": 63
       },
       "awayScore": {
-        "current": 37,
-        "display": 37,
+        "current": 56,
+        "display": 56,
         "period1": 16,
         "period2": 13,
-        "period3": 8
+        "period3": 12,
+        "period4": 15,
+        "normaltime": 56
       },
       "time": {
-        "played": 1695,
+        "played": 2400,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
       },
       "changes": {
         "changes": [
-          "time.played"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1754645431
+        "changeTimestamp": 1754647492
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -16244,7 +16300,6 @@
       },
       "slug": "slovakia-u16-czechia-u16",
       "startTimestamp": 1754641800,
-      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -16492,8 +16547,8 @@
       },
       "customId": "NNTisUNTi",
       "status": {
-        "code": 14,
-        "description": "2nd quarter",
+        "code": 30,
+        "description": "Pause",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -16555,31 +16610,32 @@
         }
       },
       "homeScore": {
-        "current": 20,
-        "display": 20,
+        "current": 45,
+        "display": 45,
         "period1": 15,
-        "period2": 5
+        "period2": 17,
+        "period3": 13
       },
       "awayScore": {
-        "current": 21,
-        "display": 21,
+        "current": 51,
+        "display": 51,
         "period1": 12,
-        "period2": 9
+        "period2": 24,
+        "period3": 15
       },
       "time": {
-        "played": 850,
+        "played": 1800,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
       },
       "changes": {
         "changes": [
-          "awayScore.current",
-          "awayScore.display",
-          "time.played",
-          "awayScore.period2"
+          "status.code",
+          "status.description",
+          "time.played"
         ],
-        "changeTimestamp": 1754645504
+        "changeTimestamp": 1754648745
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -16595,7 +16651,6 @@
       },
       "slug": "portugal-u16-great-britain-u16",
       "startTimestamp": 1754643600,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -18337,8 +18392,8 @@
       },
       "customId": "DxTisPNTi",
       "status": {
-        "code": 14,
-        "description": "2nd quarter",
+        "code": 16,
+        "description": "4th quarter",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -18408,28 +18463,35 @@
         }
       },
       "homeScore": {
-        "current": 28,
-        "display": 28,
+        "current": 60,
+        "display": 60,
         "period1": 19,
-        "period2": 9
+        "period2": 20,
+        "period3": 18,
+        "period4": 3
       },
       "awayScore": {
-        "current": 18,
-        "display": 18,
+        "current": 52,
+        "display": 52,
         "period1": 10,
-        "period2": 8
+        "period2": 19,
+        "period3": 19,
+        "period4": 4
       },
       "time": {
-        "played": 835,
+        "played": 1925,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
       },
       "changes": {
         "changes": [
-          "time.played"
+          "awayScore.current",
+          "awayScore.display",
+          "time.played",
+          "awayScore.period4"
         ],
-        "changeTimestamp": 1754645478
+        "changeTimestamp": 1754648860
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -18445,7 +18507,7 @@
       },
       "slug": "kosovo-u16-croatia-u16",
       "startTimestamp": 1754643600,
-      "lastPeriod": "period2",
+      "lastPeriod": "period4",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -19979,8 +20041,8 @@
       },
       "customId": "LjQishOTi",
       "status": {
-        "code": 13,
-        "description": "1st quarter",
+        "code": 31,
+        "description": "Halftime",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -20050,26 +20112,29 @@
         }
       },
       "homeScore": {
-        "current": 2,
-        "display": 2,
-        "period1": 2
+        "current": 26,
+        "display": 26,
+        "period1": 13,
+        "period2": 13
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0
+        "current": 43,
+        "display": 43,
+        "period1": 22,
+        "period2": 21
       },
       "time": {
-        "played": 42,
+        "played": 1200,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
       },
       "changes": {
         "changes": [
-          "time.played"
+          "status.code",
+          "status.description"
         ],
-        "changeTimestamp": 1754645486
+        "changeTimestamp": 1754648547
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -20085,7 +20150,6 @@
       },
       "slug": "lithuania-u16-estonia-u16",
       "startTimestamp": 1754645400,
-      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -20468,8 +20532,8 @@
       },
       "customId": "bOTiskOTi",
       "status": {
-        "code": 13,
-        "description": "1st quarter",
+        "code": 31,
+        "description": "Halftime",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -20531,26 +20595,29 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0
+        "current": 21,
+        "display": 21,
+        "period1": 13,
+        "period2": 8
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0
+        "current": 45,
+        "display": 45,
+        "period1": 19,
+        "period2": 26
       },
       "time": {
-        "played": 27,
+        "played": 1200,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
       },
       "changes": {
         "changes": [
-          "time.played"
+          "status.code",
+          "status.description"
         ],
-        "changeTimestamp": 1754645508
+        "changeTimestamp": 1754648109
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -20566,7 +20633,6 @@
       },
       "slug": "switzerland-u16-france-u16",
       "startTimestamp": 1754645400,
-      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -26067,9 +26133,9 @@
       },
       "customId": "aFpcsqRpc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 14,
+        "description": "2nd quarter",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Davao Occ. Tigers",
@@ -26137,13 +26203,32 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 17,
+        "display": 17,
+        "period1": 10,
+        "period2": 7
+      },
+      "awayScore": {
+        "current": 29,
+        "display": 29,
+        "period1": 19,
+        "period2": 10
+      },
+      "time": {
+        "played": 757,
+        "periodLength": 600,
+        "overtimeLength": 300,
+        "totalPeriodCount": 4
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.played"
+        ],
+        "changeTimestamp": 1754648870
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14132064,
       "periods": {
@@ -26156,6 +26241,7 @@
       },
       "slug": "san-juan-knights-davao-occ-tigers",
       "startTimestamp": 1754647200,
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
