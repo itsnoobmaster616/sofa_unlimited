@@ -4479,10 +4479,11 @@
       },
       "customId": "WBIisXBIi",
       "status": {
-        "code": 16,
-        "description": "4th quarter",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Basquete da Luz +50",
         "slug": "basquete-da-luz-plus-50",
@@ -4563,7 +4564,8 @@
         "period1": 21,
         "period2": 14,
         "period3": 11,
-        "period4": 14
+        "period4": 14,
+        "normaltime": 60
       },
       "awayScore": {
         "current": 95,
@@ -4571,7 +4573,8 @@
         "period1": 24,
         "period2": 12,
         "period3": 32,
-        "period4": 27
+        "period4": 27,
+        "normaltime": 95
       },
       "time": {
         "played": 2400,
@@ -4581,12 +4584,13 @@
       },
       "changes": {
         "changes": [
-          "awayScore.current",
-          "awayScore.display",
-          "time.played",
-          "awayScore.period4"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1754770467
+        "changeTimestamp": 1754776208
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -4602,7 +4606,6 @@
       },
       "slug": "botafogo-plus-50-basquete-da-luz-plus-50",
       "startTimestamp": 1754764200,
-      "lastPeriod": "period4",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -6433,7 +6436,7 @@
         ],
         "changeTimestamp": 1754771147
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 13620893,
@@ -9433,7 +9436,7 @@
         ],
         "changeTimestamp": 1754775108
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14380860,
@@ -18381,9 +18384,9 @@
       },
       "customId": "HhVisPhVi",
       "status": {
-        "code": 13,
-        "description": "1st quarter",
-        "type": "inprogress"
+        "code": 0,
+        "description": "Not started",
+        "type": "notstarted"
       },
       "homeTeam": {
         "name": "Uruguay TDF",
@@ -18441,30 +18444,27 @@
           "text": "#ffffff"
         }
       },
-      "homeScore": {
-        "current": 6,
-        "display": 6,
-        "period1": 6,
-        "normaltime": 6
-      },
-      "awayScore": {
-        "current": 9,
-        "display": 9,
-        "period1": 9,
-        "normaltime": 9
-      },
+      "homeScore": {},
+      "awayScore": {},
       "coverage": -1,
-      "time": {
-        "currentPeriodStartTimestamp": 1754773200
-      },
+      "time": {},
       "changes": {
         "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.normaltime",
           "awayScore.current",
           "awayScore.display",
           "awayScore.period1",
-          "awayScore.normaltime"
+          "awayScore.normaltime",
+          "time.currentPeriodStart",
+          "time.period1Start"
         ],
-        "changeTimestamp": 1754773487
+        "changeTimestamp": 1754778162
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -18480,7 +18480,6 @@
       "slug": "qatar-tdf-uruguay-tdf",
       "previousLegEventId": 14382411,
       "startTimestamp": 1754772600,
-      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
