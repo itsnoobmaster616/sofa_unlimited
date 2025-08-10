@@ -2059,9 +2059,9 @@
       },
       "customId": "uKbsrYKb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 31,
+        "description": "Halftime",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "London Broncos",
@@ -2138,11 +2138,37 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 14,
+        "display": 14,
+        "period1": 14,
+        "period2": 0
+      },
+      "awayScore": {
+        "current": 6,
+        "display": 6,
+        "period1": 6,
+        "period2": 0
+      },
+      "time": {
+        "played": 2400,
+        "periodLength": 2400,
+        "overtimeLength": 600,
+        "totalPeriodCount": 2,
+        "currentPeriodStartTimestamp": 1754829925
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "homeScore.period2",
+          "awayScore.period2",
+          "time.currentPeriodStart",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1"
+        ],
+        "changeTimestamp": 1754829928
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -10289,10 +10315,11 @@
       },
       "customId": "whPiszhPi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Krasny Yar Krasnoyarsk",
         "slug": "krasny-yar",
@@ -10365,12 +10392,27 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 13,
+        "display": 13
+      },
+      "awayScore": {
+        "current": 8,
+        "display": 8
+      },
       "coverage": -1,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "awayScore.current",
+          "awayScore.display"
+        ],
+        "changeTimestamp": 1754829938
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -10536,7 +10578,7 @@
       "id": 14033620,
       "slug": "lokomotiv-penza-enisey-stm-krasnoyarsk",
       "startTimestamp": 1754823600,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
