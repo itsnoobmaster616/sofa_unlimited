@@ -1203,9 +1203,9 @@
       },
       "customId": "xTadszTad",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 21,
+        "description": "1st Inning",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Birmingham Phoenix",
@@ -1271,16 +1271,36 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 20,
+        "display": 20,
+        "innings": {
+          "inning1": {
+            "score": 20,
+            "wickets": 2,
+            "overs": 4,
+            "runRate": 5
+          }
+        }
+      },
       "coverage": 1,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.innings"
+        ],
+        "changeTimestamp": 1755020708
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 13403327,
+      "currentBattingTeamId": 377172,
       "endTimestamp": 1755034200,
       "slug": "birmingham-phoenix-oval-invincibles",
       "startTimestamp": 1755019800,
@@ -1291,6 +1311,7 @@
         "inning3": "3rd Inning",
         "inning4": "4th Inning"
       },
+      "lastPeriod": "inning1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
