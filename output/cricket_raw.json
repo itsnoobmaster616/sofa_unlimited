@@ -72,9 +72,9 @@
       },
       "customId": "DKEbsaepd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 21,
+        "description": "1st Inning",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Guernsey",
@@ -162,12 +162,30 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 53,
+        "display": 53,
+        "innings": {
+          "inning1": {
+            "score": 53,
+            "wickets": 2,
+            "overs": 9,
+            "runRate": 5.89
+          }
+        }
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
       "coverage": 3,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description"
+        ],
+        "changeTimestamp": 1755190027
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -182,7 +200,8 @@
         "inning3": "3rd Inning",
         "inning4": "4th Inning"
       },
-      "finalResultOnly": true,
+      "lastPeriod": "inning1",
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -1459,7 +1478,10 @@
       "coverage": 1,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status"
+        ],
+        "changeTimestamp": 1755190331
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -2014,10 +2036,11 @@
       },
       "customId": "dUadseUad",
       "status": {
-        "code": 21,
-        "description": "1st Inning",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "London Spirit Women",
         "slug": "london-spirit-women",
@@ -2090,9 +2113,9 @@
         "innings": {
           "inning1": {
             "score": 116,
-            "wickets": 9,
-            "overs": 18.4,
-            "runRate": 6.17,
+            "wickets": 10,
+            "overs": 19,
+            "runRate": 6.11,
             "targetRunRate": 7.5
           }
         }
@@ -2113,15 +2136,17 @@
       "time": {},
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display",
-          "homeScore.innings"
+          "homeScore.innings",
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1755189130
+        "changeTimestamp": 1755189191
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 13403332,
+      "note": "Trent Rockets Women beat London Spirit Women by 33 runs",
       "currentBattingTeamId": 377203,
       "endTimestamp": 1755194400,
       "slug": "trent-rockets-women-london-spirit-women",
@@ -2133,7 +2158,6 @@
         "inning3": "3rd Inning",
         "inning4": "4th Inning"
       },
-      "lastPeriod": "inning1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -2717,10 +2741,11 @@
       },
       "customId": "HgAbsMgAb",
       "status": {
-        "code": 21,
-        "description": "1st Inning",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Yorkshire",
         "slug": "yorkshire",
@@ -2820,14 +2845,14 @@
         }
       },
       "awayScore": {
-        "current": 231,
-        "display": 231,
+        "current": 252,
+        "display": 252,
         "innings": {
           "inning1": {
-            "score": 231,
+            "score": 252,
             "wickets": 4,
-            "overs": 46.4,
-            "runRate": 4.95,
+            "overs": 49.1,
+            "runRate": 5.13,
             "targetRunRate": 4.96
           }
         }
@@ -2838,13 +2863,17 @@
         "changes": [
           "awayScore.current",
           "awayScore.display",
-          "awayScore.innings"
+          "awayScore.innings",
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1755189128
+        "changeTimestamp": 1755189848
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 13449156,
+      "note": "Somerset beat Yorkshire by 6 wickets",
       "currentBattingTeamId": 187832,
       "endTimestamp": 1755194400,
       "slug": "yorkshire-somerset",
@@ -2856,7 +2885,6 @@
         "inning3": "3rd Inning",
         "inning4": "4th Inning"
       },
-      "lastPeriod": "inning1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
