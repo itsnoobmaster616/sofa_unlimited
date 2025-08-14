@@ -100,10 +100,11 @@
       },
       "customId": "Qxbscyb",
       "status": {
-        "code": 28,
-        "description": "8th Inning",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Baltimore Orioles",
         "slug": "baltimore-orioles",
@@ -203,6 +204,8 @@
         "period6": 0,
         "period7": 0,
         "period8": 0,
+        "period9": 0,
+        "normaltime": 5,
         "innings": {
           "inning1": {
             "run": 0
@@ -227,12 +230,15 @@
           },
           "inning8": {
             "run": 0
+          },
+          "inning9": {
+            "run": -1
           }
         }
       },
       "awayScore": {
-        "current": 2,
-        "display": 2,
+        "current": 3,
+        "display": 3,
         "period1": 0,
         "period2": 0,
         "period3": 0,
@@ -241,6 +247,8 @@
         "period6": 2,
         "period7": 0,
         "period8": 0,
+        "period9": 1,
+        "normaltime": 3,
         "innings": {
           "inning1": {
             "run": 0
@@ -265,18 +273,27 @@
           },
           "inning8": {
             "run": 0
+          },
+          "inning9": {
+            "run": 1
           }
         }
       },
       "time": {
-        "currentPeriodStartTimestamp": 1755207510
+        "currentPeriodStartTimestamp": 1755208963
       },
       "changes": {
         "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
           "homeScore.innings",
-          "awayScore.innings"
+          "awayScore.normaltime",
+          "awayScore.innings",
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1755207742
+        "changeTimestamp": 1755208969
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -297,7 +314,6 @@
         "inning9": "9th Inning",
         "extra1": "10th Inning"
       },
-      "lastPeriod": "inning8",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
