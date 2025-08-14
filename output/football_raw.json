@@ -1272,10 +1272,11 @@
       },
       "customId": "UUstzC",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
+      "aggregatedWinnerCode": 1,
       "homeTeam": {
         "name": "KuPS",
         "slug": "kups",
@@ -1365,18 +1366,26 @@
         }
       },
       "homeScore": {
+        "current": 0,
+        "display": 0,
         "aggregated": 2
       },
       "awayScore": {
+        "current": 0,
+        "display": 0,
         "aggregated": 1
       },
-      "time": {},
+      "time": {
+        "initial": 0,
+        "max": 2700,
+        "extra": 540,
+        "currentPeriodStartTimestamp": 1755183610
+      },
       "changes": {
         "changes": [
-          "homeScore.aggregated",
-          "awayScore.aggregated"
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1754543444
+        "changeTimestamp": 1755185149
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -1385,9 +1394,17 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1755183610,
+        "extra": 540
+      },
       "slug": "rfs-kups",
       "previousLegEventId": 14244738,
       "startTimestamp": 1755183600,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -1570,19 +1587,15 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {
-        "aggregated": 3
-      },
-      "awayScore": {
-        "aggregated": 1
-      },
+      "homeScore": {},
+      "awayScore": {},
       "time": {},
       "changes": {
         "changes": [
           "homeScore.aggregated",
           "awayScore.aggregated"
         ],
-        "changeTimestamp": 1754629691
+        "changeTimestamp": 1755183617
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -4012,8 +4025,8 @@
       },
       "customId": "WYsfyo",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "aggregatedWinnerCode": 2,
@@ -4106,28 +4119,32 @@
         "current": 0,
         "display": 0,
         "period1": 0,
+        "period2": 0,
         "normaltime": 0,
         "aggregated": 1
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
+        "current": 2,
+        "display": 2,
         "period1": 0,
-        "normaltime": 0,
-        "aggregated": 3
+        "period2": 1,
+        "normaltime": 1,
+        "aggregated": 5
       },
       "time": {
         "injuryTime1": 2,
-        "initial": 0,
-        "max": 2700,
-        "extra": 660,
-        "currentPeriodStartTimestamp": 1755180013
+        "initial": 2700,
+        "max": 5400,
+        "extra": 540,
+        "currentPeriodStartTimestamp": 1755183818
       },
       "changes": {
         "changes": [
-          "time.injuryTime1"
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.aggregated"
         ],
-        "changeTimestamp": 1755182791
+        "changeTimestamp": 1755185065
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -4141,15 +4158,15 @@
       },
       "statusTime": {
         "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1755180013,
-        "extra": 660
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1755183818,
+        "extra": 540
       },
       "slug": "astana-fc-lausanne-sport",
       "previousLegEventId": 14250635,
       "startTimestamp": 1755180000,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": true,
       "isEditor": false
@@ -4343,12 +4360,12 @@
       "time": {},
       "changes": {
         "changes": [
-          "homeScore.aggregated",
-          "awayScore.aggregated"
+          "cardsCode"
         ],
-        "changeTimestamp": 1754629691
+        "changeTimestamp": 1755184099
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": false,
       "detailId": 4,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14326524,
@@ -4549,12 +4566,12 @@
       "time": {},
       "changes": {
         "changes": [
-          "homeScore.aggregated",
-          "awayScore.aggregated"
+          "cardsCode"
         ],
-        "changeTimestamp": 1754629691
+        "changeTimestamp": 1755184352
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": false,
       "detailId": 4,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14250674,
@@ -13746,9 +13763,9 @@
       },
       "customId": "MdosFqgc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Al-Ittihad Alexandria",
@@ -13838,16 +13855,32 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "awayScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 1,
+        "normaltime": 1
+      },
+      "time": {
+        "initial": 0,
+        "max": 2700,
+        "extra": 540,
+        "currentPeriodStartTimestamp": 1755183689
+      },
       "changes": {
         "changes": [
-          "cardsCode"
+          "awayScore.period1",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1755181916
+        "changeTimestamp": 1755184153
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
       "hasEventPlayerHeatMap": true,
       "detailId": 1,
@@ -13857,8 +13890,16 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1755183689,
+        "extra": 540
+      },
       "slug": "modern-sport-fc-al-ittihad-alexandria",
       "startTimestamp": 1755183600,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -13954,9 +13995,9 @@
       },
       "customId": "xHYcstnZc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "ZED FC",
@@ -14044,14 +14085,32 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "time": {
+        "initial": 0,
+        "max": 2700,
+        "extra": 540,
+        "currentPeriodStartTimestamp": 1755183758
+      },
       "changes": {
         "changes": [
-          "cardsCode"
+          "homeScore.period1",
+          "homeScore.normaltime",
+          "awayScore.period1",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1755182521
+        "changeTimestamp": 1755183963
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -14063,8 +14122,16 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1755183758,
+        "extra": 540
+      },
       "slug": "zed-fc-ceramica-cleopatra",
       "startTimestamp": 1755183600,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -16768,6 +16835,7 @@
         "changeTimestamp": 0
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerHeatMap": true,
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14044722,
@@ -17047,8 +17115,8 @@
       },
       "customId": "vUbsDVb",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -17140,29 +17208,32 @@
         }
       },
       "homeScore": {
-        "current": 1,
-        "display": 1,
-        "period1": 0,
-        "normaltime": 0
+        "current": 2,
+        "display": 2,
+        "period1": 1,
+        "period2": 0,
+        "normaltime": 1
       },
       "awayScore": {
         "current": 0,
         "display": 0,
         "period1": 0,
+        "period2": 0,
         "normaltime": 0
       },
       "time": {
         "injuryTime1": 2,
-        "initial": 0,
-        "max": 2700,
-        "extra": 660,
-        "currentPeriodStartTimestamp": 1755180012
+        "initial": 2700,
+        "max": 5400,
+        "extra": 540,
+        "currentPeriodStartTimestamp": 1755183929
       },
       "changes": {
         "changes": [
-          "time.injuryTime1"
+          "homeScore.current",
+          "homeScore.display"
         ],
-        "changeTimestamp": 1755182824
+        "changeTimestamp": 1755185186
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -17176,14 +17247,14 @@
       },
       "statusTime": {
         "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1755180012,
-        "extra": 660
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1755183929,
+        "extra": 540
       },
       "slug": "morocco-zambia",
       "startTimestamp": 1755180000,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
