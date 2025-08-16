@@ -10265,7 +10265,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -10352,9 +10352,9 @@
       },
       "customId": "FDbsulc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 30,
+        "description": "Pause",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Red Bull Salzburg",
@@ -10446,11 +10446,28 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "time": {
+        "played": 1200,
+        "periodLength": 1200,
+        "overtimeLength": 300,
+        "totalPeriodCount": 3,
+        "currentPeriodStartTimestamp": 1755350948
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.played"
+        ],
+        "changeTimestamp": 1755351002
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -10665,7 +10682,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -10863,7 +10880,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -14497,10 +14514,11 @@
       },
       "customId": "PFocsDMoc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Botany Swarm",
         "slug": "botany-swarm",
@@ -14584,11 +14602,42 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "period2": 0,
+        "period3": 0,
+        "normaltime": 0
+      },
+      "awayScore": {
+        "current": 8,
+        "display": 8,
+        "period1": 4,
+        "period2": 2,
+        "period3": 2,
+        "normaltime": 8
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.period3",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.period3",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1755350634
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -14603,7 +14652,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
