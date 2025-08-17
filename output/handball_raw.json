@@ -4418,10 +4418,11 @@
       },
       "customId": "HEbshYc",
       "status": {
-        "code": 31,
-        "description": "Halftime",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "SC Magdeburg",
         "slug": "sc-magdeburg",
@@ -4514,31 +4515,38 @@
         }
       },
       "homeScore": {
-        "current": 20,
-        "display": 20,
-        "period1": 20
+        "current": 36,
+        "display": 36,
+        "period1": 20,
+        "period2": 16,
+        "normaltime": 36
       },
       "awayScore": {
-        "current": 13,
-        "display": 13,
-        "period1": 13
+        "current": 32,
+        "display": 32,
+        "period1": 13,
+        "period2": 19,
+        "normaltime": 32
       },
       "time": {
-        "played": 1763,
+        "played": 3525,
         "periodLength": 1800,
         "overtimeLength": 300,
         "totalPeriodCount": 2,
-        "currentPeriodStartTimestamp": 1755430618
+        "currentPeriodStartTimestamp": 1755433793
       },
       "changes": {
         "changes": [
           "time.currentPeriodStart",
           "status.code",
           "status.description",
-          "homeScore.period1",
-          "awayScore.period1"
+          "status.type",
+          "homeScore.period2",
+          "homeScore.normaltime",
+          "awayScore.period2",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1755430625
+        "changeTimestamp": 1755433796
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -6250,9 +6258,9 @@
       },
       "customId": "wlGbsxlGb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 7,
+        "description": "2nd half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Egypt U19",
@@ -6346,17 +6354,41 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 19,
+        "display": 19,
+        "period1": 12,
+        "period2": 7
+      },
+      "awayScore": {
+        "current": 22,
+        "display": 22,
+        "period1": 17,
+        "period2": 5
+      },
+      "time": {
+        "played": 2403,
+        "periodLength": 1800,
+        "overtimeLength": 300,
+        "totalPeriodCount": 2,
+        "currentPeriodStartTimestamp": 1755431102
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period2",
+          "time.played"
+        ],
+        "changeTimestamp": 1755434842
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14453460,
       "slug": "iceland-u19-egypt-u19",
       "startTimestamp": 1755431100,
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -6864,7 +6896,7 @@
       "id": 14330834,
       "slug": "mexico-u21-brazil-u21",
       "startTimestamp": 1755432000,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
