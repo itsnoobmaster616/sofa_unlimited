@@ -4418,9 +4418,9 @@
       },
       "customId": "HEbshYc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "SC Magdeburg",
@@ -4513,17 +4513,35 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 12,
+        "display": 12
+      },
+      "awayScore": {
+        "current": 8,
+        "display": 8
+      },
+      "time": {
+        "played": 1010,
+        "periodLength": 1800,
+        "overtimeLength": 300,
+        "totalPeriodCount": 2,
+        "currentPeriodStartTimestamp": 1755428384
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.played",
+          "homeScore.current",
+          "homeScore.display"
+        ],
+        "changeTimestamp": 1755429546
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14385043,
       "slug": "skanderborg-aarhus-handbold-sc-magdeburg",
       "startTimestamp": 1755428400,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -5832,10 +5850,11 @@
       },
       "customId": "qlGbsylGb",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Norway U19",
         "slug": "norway-u19",
@@ -5929,28 +5948,34 @@
         }
       },
       "homeScore": {
-        "current": 29,
-        "display": 29,
+        "current": 34,
+        "display": 34,
         "period1": 17,
-        "period2": 12
+        "period2": 17,
+        "normaltime": 34
       },
       "awayScore": {
-        "current": 32,
-        "display": 32,
+        "current": 42,
+        "display": 42,
         "period1": 19,
-        "period2": 13
+        "period2": 23,
+        "normaltime": 42
       },
       "time": {
-        "played": 2991,
+        "played": 3600,
         "periodLength": 1800,
         "overtimeLength": 300,
         "totalPeriodCount": 2
       },
       "changes": {
         "changes": [
-          "time.played"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1755427479
+        "changeTimestamp": 1755428268
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -5958,7 +5983,6 @@
       "id": 14453459,
       "slug": "norway-u19-hungary-u19",
       "startTimestamp": 1755423000,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
