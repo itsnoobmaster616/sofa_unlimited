@@ -67,9 +67,9 @@
       },
       "customId": "otjsHqo",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 8,
+        "description": "1st set",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Denmark",
@@ -156,11 +156,24 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 22
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 14
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1755442900
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.period1"
+        ],
+        "changeTimestamp": 1755444169
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -178,6 +191,7 @@
         "period7": "7th set",
         "overtime": "Overtime"
       },
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -3631,10 +3645,11 @@
       },
       "customId": "vxqdsurrd",
       "status": {
-        "code": 10,
-        "description": "3rd set",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Czechia U21",
         "slug": "czech-republic",
@@ -3735,15 +3750,17 @@
         "display": 3,
         "period1": 25,
         "period2": 25,
-        "period3": 24
+        "period3": 25
       },
       "time": {},
       "changes": {
         "changes": [
-          "awayScore.current",
-          "awayScore.display"
+          "status.code",
+          "status.description",
+          "status.type",
+          "awayScore.period3"
         ],
-        "changeTimestamp": 1755437005
+        "changeTimestamp": 1755442670
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -3761,7 +3778,6 @@
         "period7": "7th set",
         "overtime": "Overtime"
       },
-      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
