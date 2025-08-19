@@ -1299,9 +1299,9 @@
       },
       "customId": "yTadsBTad",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 21,
+        "description": "1st Inning",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Trent Rockets",
@@ -1367,16 +1367,34 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 19,
+        "display": 19,
+        "innings": {
+          "inning1": {
+            "score": 19,
+            "wickets": 1,
+            "overs": 3,
+            "runRate": 6.33
+          }
+        }
+      },
       "coverage": 1,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "awayScore.innings"
+        ],
+        "changeTimestamp": 1755625328
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 13403346,
+      "currentBattingTeamId": 377173,
       "endTimestamp": 1755639000,
       "slug": "trent-rockets-manchester-originals",
       "startTimestamp": 1755624600,
@@ -1387,6 +1405,7 @@
         "inning3": "3rd Inning",
         "inning4": "4th Inning"
       },
+      "lastPeriod": "inning1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -2120,10 +2139,11 @@
       },
       "customId": "IgAbsJgAb",
       "status": {
-        "code": 21,
-        "description": "1st Inning",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Middlesex",
         "slug": "middlesex",
@@ -2211,14 +2231,14 @@
         }
       },
       "homeScore": {
-        "current": 249,
-        "display": 249,
+        "current": 283,
+        "display": 283,
         "innings": {
           "inning1": {
-            "score": 249,
+            "score": 283,
             "wickets": 4,
-            "overs": 41.5,
-            "runRate": 5.95,
+            "overs": 45,
+            "runRate": 6.29,
             "targetRunRate": 5.6
           }
         }
@@ -2239,15 +2259,16 @@
       "time": {},
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display",
-          "homeScore.innings"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1755624007
+        "changeTimestamp": 1755624848
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 13451052,
+      "note": "Middlesex beat Kent by 6 wickets",
       "currentBattingTeamId": 187833,
       "endTimestamp": 1755626400,
       "slug": "kent-middlesex",
@@ -2259,7 +2280,6 @@
         "inning3": "3rd Inning",
         "inning4": "4th Inning"
       },
-      "lastPeriod": "inning1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
