@@ -2202,10 +2202,11 @@
       },
       "customId": "FQosUlmc",
       "status": {
-        "code": 30,
-        "description": "Pause",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Kalmar HC",
         "slug": "kalmar-hc",
@@ -2298,29 +2299,38 @@
         }
       },
       "homeScore": {
-        "current": 2,
-        "display": 2,
+        "current": 3,
+        "display": 3,
         "period1": 2,
-        "period2": 0
+        "period2": 0,
+        "period3": 1,
+        "normaltime": 3
       },
       "awayScore": {
         "current": 4,
         "display": 4,
         "period1": 3,
-        "period2": 1
+        "period2": 1,
+        "period3": 0,
+        "normaltime": 4
       },
       "time": {
-        "played": 2400,
+        "played": 3597,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3,
-        "currentPeriodStartTimestamp": 1755714130
+        "currentPeriodStartTimestamp": 1755717033
       },
       "changes": {
         "changes": [
-          "time.played"
+          "time.currentPeriodStart",
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1755714182
+        "changeTimestamp": 1755717039
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -3734,7 +3744,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
