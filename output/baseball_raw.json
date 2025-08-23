@@ -393,8 +393,8 @@
       },
       "customId": "OxbsRxb",
       "status": {
-        "code": 30,
-        "description": "Pause",
+        "code": 23,
+        "description": "3rd Inning",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -478,39 +478,47 @@
         "current": 0,
         "display": 0,
         "period1": 0,
+        "period2": 0,
+        "period3": 0,
         "innings": {
           "inning1": {
             "run": 0
+          },
+          "inning2": {
+            "run": 0
+          },
+          "inning3": {
+            "run": 0
           }
-        },
-        "inningsBaseball": {
-          "hits": 0,
-          "errors": 0
         }
       },
       "awayScore": {
         "current": 0,
         "display": 0,
         "period1": 0,
+        "period2": 0,
+        "period3": 0,
         "innings": {
           "inning1": {
             "run": 0
+          },
+          "inning2": {
+            "run": 0
+          },
+          "inning3": {
+            "run": 0
           }
-        },
-        "inningsBaseball": {
-          "hits": 0,
-          "errors": 0
         }
       },
       "time": {
-        "currentPeriodStartTimestamp": 1755980444
+        "currentPeriodStartTimestamp": 1755981403
       },
       "changes": {
         "changes": [
           "homeScore.innings",
           "awayScore.innings"
         ],
-        "changeTimestamp": 1755980547
+        "changeTimestamp": 1755981658
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -531,6 +539,7 @@
         "inning9": "9th Inning",
         "extra1": "10th Inning"
       },
+      "lastPeriod": "inning3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -8389,10 +8398,11 @@
       },
       "customId": "gkGdslkGd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "HSV Stealers",
         "slug": "hsv-stealers",
@@ -8460,11 +8470,30 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "normaltime": 0
+      },
+      "awayScore": {
+        "current": 2,
+        "display": 2,
+        "normaltime": 2
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1755981290
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -8484,7 +8513,7 @@
         "inning9": "9th Inning",
         "extra1": "10th Inning"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
