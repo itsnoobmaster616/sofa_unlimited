@@ -2128,9 +2128,9 @@
       },
       "customId": "UtBbstvBb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 60,
+        "description": "Postponed",
+        "type": "postponed"
       },
       "homeTeam": {
         "name": "Wynnum Manly Seagulls",
@@ -2201,7 +2201,12 @@
       "awayScore": {},
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type"
+        ],
+        "changeTimestamp": 1756038537
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -4602,7 +4607,7 @@
       "id": 13238219,
       "slug": "leigh-leopards-leeds-rhinos",
       "startTimestamp": 1756036800,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -6291,7 +6296,7 @@
         "normaltime": 28
       },
       "time": {
-        "played": 2355,
+        "played": 2400,
         "periodLength": 2400,
         "overtimeLength": 600,
         "totalPeriodCount": 2,
@@ -7980,10 +7985,11 @@
       },
       "customId": "gRpbsRUec",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Ireland",
         "slug": "ireland",
@@ -8056,27 +8062,29 @@
         }
       },
       "homeScore": {
-        "current": 28,
-        "display": 28,
-        "period1": 28
+        "current": 42,
+        "display": 42,
+        "period1": 28,
+        "period2": 14
       },
       "awayScore": {
-        "current": 7,
-        "display": 7,
-        "period1": 7
+        "current": 14,
+        "display": 14,
+        "period1": 7,
+        "period2": 7
       },
       "time": {
-        "played": 2275,
+        "played": 4581,
         "periodLength": 2400,
         "overtimeLength": 600,
         "totalPeriodCount": 2,
-        "currentPeriodStartTimestamp": 1756033236
+        "currentPeriodStartTimestamp": 1756036616
       },
       "changes": {
         "changes": [
           "time.played"
         ],
-        "changeTimestamp": 1756035549
+        "changeTimestamp": 1756039448
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -8084,7 +8092,7 @@
       "id": 13242019,
       "slug": "japan-ireland",
       "startTimestamp": 1756033200,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -8750,12 +8758,14 @@
       "time": {},
       "changes": {
         "changes": [
-          "status.code",
-          "status.description",
-          "status.type",
-          "time.currentPeriodStart"
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.normaltime",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1755980768
+        "changeTimestamp": 1756037841
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
