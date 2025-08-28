@@ -604,10 +604,11 @@
       },
       "customId": "EzbsTCb",
       "status": {
-        "code": 3,
-        "description": "3rd period",
-        "type": "inprogress"
+        "code": 110,
+        "description": "AET",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Luleå Hockey",
         "slug": "lulea-hockey",
@@ -693,27 +694,36 @@
         "display": 2,
         "period1": 1,
         "period2": 0,
-        "period3": 1
+        "period3": 1,
+        "normaltime": 2,
+        "overtime": 0
       },
       "awayScore": {
-        "current": 2,
-        "display": 2,
+        "current": 3,
+        "display": 3,
         "period1": 0,
         "period2": 2,
-        "period3": 0
+        "period3": 0,
+        "normaltime": 2,
+        "overtime": 1
       },
       "time": {
-        "played": 3498,
+        "played": 3750,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3,
-        "currentPeriodStartTimestamp": 1756406644
+        "currentPeriodStartTimestamp": 1756409269
       },
       "changes": {
         "changes": [
-          "time.played"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime",
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1756408685
+        "changeTimestamp": 1756409272
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -729,7 +739,6 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -1094,7 +1103,7 @@
         "period3": 0
       },
       "time": {
-        "played": 2563,
+        "played": 3371,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3,
@@ -1102,11 +1111,9 @@
       },
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display",
-          "homeScore.period3"
+          "time.played"
         ],
-        "changeTimestamp": 1756408696
+        "changeTimestamp": 1756409944
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -1194,8 +1201,8 @@
       },
       "customId": "tlcscEX",
       "status": {
-        "code": 2,
-        "description": "2nd period",
+        "code": 30,
+        "description": "Pause",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -1290,17 +1297,19 @@
         "period2": 0
       },
       "time": {
-        "played": 2203,
+        "played": 2400,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3,
-        "currentPeriodStartTimestamp": 1756407022
+        "currentPeriodStartTimestamp": 1756409482
       },
       "changes": {
         "changes": [
-          "time.played"
+          "status.code",
+          "status.description",
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1756408685
+        "changeTimestamp": 1756409485
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -1316,7 +1325,6 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -1477,13 +1485,13 @@
         "period2": 0
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
+        "current": 2,
+        "display": 2,
         "period1": 0,
-        "period2": 0
+        "period2": 2
       },
       "time": {
-        "played": 1558,
+        "played": 2219,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3,
@@ -1493,7 +1501,7 @@
         "changes": [
           "time.played"
         ],
-        "changeTimestamp": 1756408686
+        "changeTimestamp": 1756409944
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -1581,8 +1589,8 @@
       },
       "customId": "BCbsxDb",
       "status": {
-        "code": 2,
-        "description": "2nd period",
+        "code": 30,
+        "description": "Pause",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -1672,23 +1680,26 @@
         "period2": 0
       },
       "awayScore": {
-        "current": 1,
-        "display": 1,
+        "current": 2,
+        "display": 2,
         "period1": 1,
-        "period2": 0
+        "period2": 1
       },
       "time": {
-        "played": 1618,
+        "played": 2400,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3,
-        "currentPeriodStartTimestamp": 1756408106
+        "currentPeriodStartTimestamp": 1756409806
       },
       "changes": {
         "changes": [
-          "time.played"
+          "time.played",
+          "time.currentPeriodStart",
+          "status.code",
+          "status.description"
         ],
-        "changeTimestamp": 1756408686
+        "changeTimestamp": 1756409822
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -1704,7 +1715,6 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -5227,9 +5237,9 @@
       },
       "customId": "zatbszZtb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 70,
+        "description": "Canceled",
+        "type": "canceled"
       },
       "homeTeam": {
         "name": "HC RT Torax Poruba",
@@ -5313,7 +5323,12 @@
       "awayScore": {},
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type"
+        ],
+        "changeTimestamp": 1756408787
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -5824,9 +5839,9 @@
       },
       "customId": "uCbszDb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 70,
+        "description": "Canceled",
+        "type": "canceled"
       },
       "homeTeam": {
         "name": "VHK ROBE Vsetín U21",
@@ -5909,7 +5924,12 @@
       "awayScore": {},
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type"
+        ],
+        "changeTimestamp": 1756408726
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -16838,10 +16858,11 @@
       },
       "customId": "zocsAoc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Switzerland",
         "slug": "switzerland",
@@ -16912,11 +16933,42 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 4,
+        "display": 4,
+        "period1": 0,
+        "period2": 1,
+        "period3": 3,
+        "normaltime": 4
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "period2": 0,
+        "period3": 0,
+        "normaltime": 0
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.period3",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.period3",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1756408786
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -16931,7 +16983,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
