@@ -1465,9 +1465,9 @@
       },
       "customId": "adzbskJkc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 8,
+        "description": "1st set",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Se Young An.",
@@ -1540,17 +1540,30 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 2
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 5
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1756557388
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "awayScore.period1"
+        ],
+        "changeTimestamp": 1756557706
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14576022,
       "slug": "se-young-an-chen",
-      "startTimestamp": 1756556100,
+      "startTimestamp": 1756556700,
       "periods": {
         "current": "Match",
         "period1": "1st set",
@@ -1559,6 +1572,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -5137,10 +5151,11 @@
       },
       "customId": "pqacsQgJd",
       "status": {
-        "code": 8,
-        "description": "1st set",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Gicquel T / Delrue D",
         "slug": "gicquel-t-delrue-d",
@@ -5301,21 +5316,33 @@
       "homeScore": {
         "current": 0,
         "display": 0,
-        "period1": 6
+        "period1": 18,
+        "period2": 16,
+        "normaltime": 0
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 8
+        "current": 2,
+        "display": 2,
+        "period1": 21,
+        "period2": 21,
+        "normaltime": 2
       },
       "time": {
-        "currentPeriodStartTimestamp": 1756553464
+        "currentPeriodStartTimestamp": 1756556690
       },
       "changes": {
         "changes": [
-          "homeScore.period1"
+          "time.currentPeriodStart",
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period2",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1756553968
+        "changeTimestamp": 1756556698
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -5330,7 +5357,6 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
