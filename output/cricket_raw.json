@@ -443,9 +443,9 @@
       },
       "customId": "efAbswfAb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 21,
+        "description": "1st Inning",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "United Arab Emirates",
@@ -523,16 +523,34 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 39,
+        "display": 39,
+        "innings": {
+          "inning1": {
+            "score": 39,
+            "wickets": 2,
+            "overs": 3.4,
+            "runRate": 10.64
+          }
+        }
+      },
       "coverage": 1,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "awayScore.innings"
+        ],
+        "changeTimestamp": 1756567247
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14325006,
+      "currentBattingTeamId": 187754,
       "endTimestamp": 1756580400,
       "slug": "united-arab-emirates-pakistan",
       "startTimestamp": 1756566000,
@@ -543,6 +561,7 @@
         "inning3": "3rd Inning",
         "inning4": "4th Inning"
       },
+      "lastPeriod": "inning1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -1954,8 +1973,8 @@
       },
       "customId": "dUadsgUad",
       "status": {
-        "code": 45,
-        "description": "Inn break",
+        "code": 21,
+        "description": "1st Inning",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -2036,14 +2055,14 @@
         }
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
+        "current": 110,
+        "display": 110,
         "innings": {
           "inning1": {
-            "score": 0,
-            "wickets": 0,
-            "overs": 0,
-            "runRate": 0,
+            "score": 110,
+            "wickets": 6,
+            "overs": 11.1,
+            "runRate": 9.82,
             "targetRunRate": 10.75
           }
         }
@@ -2052,14 +2071,16 @@
       "time": {},
       "changes": {
         "changes": [
+          "awayScore.current",
+          "awayScore.display",
           "awayScore.innings"
         ],
-        "changeTimestamp": 1756564817
+        "changeTimestamp": 1756567272
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14551385,
-      "currentBattingTeamId": 377206,
+      "currentBattingTeamId": 377203,
       "endTimestamp": 1756574100,
       "slug": "northern-superchargers-women-london-spirit-women",
       "startTimestamp": 1756559700,
@@ -2070,6 +2091,7 @@
         "inning3": "3rd Inning",
         "inning4": "4th Inning"
       },
+      "lastPeriod": "inning1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -3757,7 +3779,7 @@
         "inning3": "3rd Inning",
         "inning4": "4th Inning"
       },
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -3917,7 +3939,7 @@
         "inning3": "3rd Inning",
         "inning4": "4th Inning"
       },
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -4994,10 +5016,11 @@
       },
       "customId": "UeAbsPgAb",
       "status": {
-        "code": 21,
-        "description": "1st Inning",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Bangladesh",
         "slug": "bangladesh",
@@ -5075,14 +5098,14 @@
         }
       },
       "homeScore": {
-        "current": 86,
-        "display": 86,
+        "current": 138,
+        "display": 138,
         "innings": {
           "inning1": {
-            "score": 86,
-            "wickets": 1,
-            "overs": 8.4,
-            "runRate": 9.92,
+            "score": 138,
+            "wickets": 2,
+            "overs": 13.3,
+            "runRate": 10.22,
             "targetRunRate": 6.85
           }
         }
@@ -5103,17 +5126,17 @@
       "time": {},
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display",
-          "homeScore.innings"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1756564833
+        "changeTimestamp": 1756566216
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14352925,
-      "currentBattingTeamId": 187744,
-      "endTimestamp": 1756569600,
+      "note": "Bangladesh beat Netherlands by 8 wickets",
+      "endTimestamp": 1756566180,
       "slug": "netherlands-bangladesh",
       "startTimestamp": 1756555200,
       "periods": {
@@ -5123,7 +5146,6 @@
         "inning3": "3rd Inning",
         "inning4": "4th Inning"
       },
-      "lastPeriod": "inning1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -6018,7 +6040,7 @@
         "inning3": "3rd Inning",
         "inning4": "4th Inning"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -6347,35 +6369,42 @@
         }
       },
       "homeScore": {
-        "current": 130,
-        "display": 130,
+        "current": 145,
+        "display": 145,
         "innings": {
           "inning1": {
-            "score": 130,
-            "wickets": 8,
-            "overs": 35.3,
-            "runRate": 3.66
+            "score": 145,
+            "wickets": 10,
+            "overs": 38,
+            "runRate": 3.82
           }
         }
       },
       "awayScore": {
-        "current": 0,
-        "display": 0
+        "current": 6,
+        "display": 6,
+        "innings": {
+          "inning1": {
+            "score": 6,
+            "wickets": 1,
+            "overs": 2,
+            "runRate": 3,
+            "targetRunRate": 3.43
+          }
+        }
       },
       "coverage": 2,
       "time": {},
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display",
-          "homeScore.innings"
+          "awayScore.innings"
         ],
-        "changeTimestamp": 1756564843
+        "changeTimestamp": 1756567257
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14190161,
-      "currentBattingTeamId": 199278,
+      "currentBattingTeamId": 459350,
       "endTimestamp": 1756576800,
       "slug": "qatar-papua-new-guinea",
       "startTimestamp": 1756548000,
@@ -6913,7 +6942,7 @@
         "inning3": "3rd Inning",
         "inning4": "4th Inning"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -7107,7 +7136,7 @@
         "inning3": "3rd Inning",
         "inning4": "4th Inning"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -7302,7 +7331,7 @@
         "inning3": "3rd Inning",
         "inning4": "4th Inning"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -7631,7 +7660,7 @@
         "inning3": "3rd Inning",
         "inning4": "4th Inning"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     }
