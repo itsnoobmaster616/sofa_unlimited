@@ -1774,10 +1774,11 @@
       },
       "customId": "oVVcsLFWc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 1001,
+        "description": "First game",
+        "type": "inprogress"
       },
+      "winnerCode": 3,
       "homeTeam": {
         "name": "NRG",
         "slug": "nrg",
@@ -1842,12 +1843,30 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
       "coverage": 91,
-      "time": {},
+      "time": {
+        "currentPeriodStartTimestamp": 1756688661
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.display",
+          "awayScore.display",
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "awayScore.current",
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1756688711
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
@@ -11297,9 +11316,9 @@
       },
       "customId": "CNZdsqqwi",
       "status": {
-        "code": 1002,
-        "description": "Second game",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
       "winnerCode": 1,
       "homeTeam": {
@@ -11367,26 +11386,33 @@
         }
       },
       "homeScore": {
-        "current": 1,
-        "display": 1,
-        "period1": 1
+        "current": 3,
+        "display": 3,
+        "period1": 1,
+        "period2": 1,
+        "period3": 1
       },
       "awayScore": {
         "current": 0,
         "display": 0,
-        "period1": 0
+        "period1": 0,
+        "period2": 0,
+        "period3": 0
       },
       "coverage": 91,
-      "time": {
-        "currentPeriodStartTimestamp": 1756681096
-      },
+      "time": {},
       "changes": {
         "changes": [
           "status.code",
           "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period3",
+          "awayScore.period3",
           "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1756681144
+        "changeTimestamp": 1756684991
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
