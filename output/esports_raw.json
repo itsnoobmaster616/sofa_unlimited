@@ -2591,10 +2591,11 @@
       },
       "customId": "qrUdsJkXd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 1001,
+        "description": "First game",
+        "type": "inprogress"
       },
+      "winnerCode": 3,
       "homeTeam": {
         "name": "BetBoom Team",
         "slug": "betboom-team",
@@ -2663,12 +2664,30 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
       "coverage": 91,
-      "time": {},
+      "time": {
+        "currentPeriodStartTimestamp": 1756746136
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "awayScore.current",
+          "awayScore.display",
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1756746186
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
@@ -6063,11 +6082,11 @@
       },
       "customId": "jMZcsYCWi",
       "status": {
-        "code": 1003,
-        "description": "Third game",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
-      "winnerCode": 3,
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Anonymo",
         "slug": "anonymo",
@@ -6125,28 +6144,33 @@
         }
       },
       "homeScore": {
-        "current": 1,
-        "display": 1,
+        "current": 2,
+        "display": 2,
         "period1": 0,
-        "period2": 1
+        "period2": 1,
+        "period3": 1
       },
       "awayScore": {
         "current": 1,
         "display": 1,
         "period1": 1,
-        "period2": 0
+        "period2": 0,
+        "period3": 0
       },
       "coverage": 90,
-      "time": {
-        "currentPeriodStartTimestamp": 1756743865
-      },
+      "time": {},
       "changes": {
         "changes": [
           "status.code",
           "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period3",
+          "awayScore.period3",
           "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1756743913
+        "changeTimestamp": 1756746849
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -7417,9 +7441,9 @@
       },
       "customId": "UAaeswvOi",
       "status": {
-        "code": 1002,
-        "description": "Second game",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
       "winnerCode": 1,
       "homeTeam": {
@@ -7487,26 +7511,31 @@
         }
       },
       "homeScore": {
-        "current": 1,
-        "display": 1,
-        "period1": 1
+        "current": 2,
+        "display": 2,
+        "period1": 1,
+        "period2": 1
       },
       "awayScore": {
         "current": 0,
         "display": 0,
-        "period1": 0
+        "period1": 0,
+        "period2": 0
       },
       "coverage": 91,
-      "time": {
-        "currentPeriodStartTimestamp": 1756743210
-      },
+      "time": {},
       "changes": {
         "changes": [
           "status.code",
           "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period2",
+          "awayScore.period2",
           "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1756743246
+        "changeTimestamp": 1756745353
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
@@ -7516,6 +7545,157 @@
       "roundsInAHalf": 12,
       "slug": "tpudcatb-tpu-hyperspirit",
       "startTimestamp": 1756740600,
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "isEditor": false
+    },
+    {
+      "tournament": {
+        "name": "Exort Series Playoffs",
+        "slug": "exort-series-playoffs",
+        "category": {
+          "id": 1572,
+          "country": {},
+          "name": "Counter Strike",
+          "slug": "csgo",
+          "sport": {
+            "name": "E-sports",
+            "slug": "esports",
+            "id": 72
+          },
+          "flag": "counter-strike",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "كاونتر سترايك",
+              "hi": "काउंटर स्ट्राइक",
+              "bn": "কাউন্টার স্ট্রাইক"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "Exort Series",
+          "slug": "exort-series",
+          "category": {
+            "id": 1572,
+            "country": {},
+            "name": "Counter Strike",
+            "slug": "csgo",
+            "sport": {
+              "name": "E-sports",
+              "slug": "esports",
+              "id": 72
+            },
+            "flag": "counter-strike",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "كاونتر سترايك",
+                "hi": "काउंटर स्ट्राइक",
+                "bn": "কাউন্টার স্ট্রাইক"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 40,
+          "hasPerformanceGraphFeature": false,
+          "id": 23645,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false
+        },
+        "priority": 0,
+        "id": 139440
+      },
+      "season": {
+        "name": "Season 15 2025",
+        "year": "2025",
+        "editor": false,
+        "id": 80272
+      },
+      "customId": "nEFiswvOi",
+      "status": {
+        "code": 0,
+        "description": "Not started",
+        "type": "notstarted"
+      },
+      "homeTeam": {
+        "name": "Phantom",
+        "slug": "phantom",
+        "sport": {
+          "name": "E-sports",
+          "slug": "esports",
+          "id": 72
+        },
+        "userCount": 31,
+        "nameCode": "PHA",
+        "national": false,
+        "type": 0,
+        "id": 1076463,
+        "country": {
+          "alpha2": "PL",
+          "alpha3": "POL",
+          "name": "Poland",
+          "slug": "poland"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "فانتوم"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "awayTeam": {
+        "name": "TPuDCATb TPu",
+        "slug": "tpudcatb-tpu",
+        "sport": {
+          "name": "E-sports",
+          "slug": "esports",
+          "id": 72
+        },
+        "userCount": 26,
+        "nameCode": "TTP",
+        "national": false,
+        "type": 0,
+        "id": 1098521,
+        "country": {
+          "alpha2": "RU",
+          "alpha3": "RUS",
+          "name": "Russia",
+          "slug": "russia"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "تي بي يو دي كات بي تي بي"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "homeScore": {},
+      "awayScore": {},
+      "coverage": 91,
+      "time": {},
+      "changes": {
+        "changeTimestamp": 0
+      },
+      "hasGlobalHighlights": true,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 14593010,
+      "bestOf": 3,
+      "eventType": "best_of",
+      "roundsInAHalf": 12,
+      "slug": "tpudcatb-tpu-phantom",
+      "startTimestamp": 1756755000,
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -9244,12 +9424,12 @@
       "homeScore": {
         "current": 0,
         "display": 0,
-        "period1": 0
+        "period1": 5
       },
       "awayScore": {
         "current": 0,
         "display": 0,
-        "period1": 2
+        "period1": 9
       },
       "coverage": 92,
       "time": {
@@ -9259,7 +9439,7 @@
         "changes": [
           "awayScore.period1"
         ],
-        "changeTimestamp": 1756745156
+        "changeTimestamp": 1756747082
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
@@ -9429,7 +9609,7 @@
       "eventType": "best_of",
       "roundsInAHalf": 12,
       "slug": "g2-spirit",
-      "startTimestamp": 1756747800,
+      "startTimestamp": 1756751400,
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -9506,10 +9686,11 @@
       },
       "customId": "BCXcsOuJi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 1001,
+        "description": "First game",
+        "type": "inprogress"
       },
+      "winnerCode": 3,
       "homeTeam": {
         "name": "Infinite",
         "slug": "infinite",
@@ -9567,12 +9748,30 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
       "coverage": 90,
-      "time": {},
+      "time": {
+        "currentPeriodStartTimestamp": 1756747005
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.display",
+          "awayScore.display",
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "awayScore.current",
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1756747030
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -9581,7 +9780,7 @@
       "eventType": "best_of",
       "roundsInAHalf": 12,
       "slug": "am-gaming-infinite",
-      "startTimestamp": 1756746000,
+      "startTimestamp": 1756746900,
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -13871,11 +14070,11 @@
       },
       "customId": "pwbesouAh",
       "status": {
-        "code": 1001,
-        "description": "First game",
+        "code": 1002,
+        "description": "Second game",
         "type": "inprogress"
       },
-      "winnerCode": 3,
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Kalmychata",
         "slug": "kalmychata",
@@ -13941,29 +14140,26 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0
+        "current": 1,
+        "display": 1,
+        "period1": 1
       },
       "awayScore": {
         "current": 0,
-        "display": 0
+        "display": 0,
+        "period1": 0
       },
       "coverage": 91,
       "time": {
-        "currentPeriodStartTimestamp": 1756742467
+        "currentPeriodStartTimestamp": 1756746597
       },
       "changes": {
         "changes": [
-          "homeScore.display",
-          "awayScore.display",
           "status.code",
           "status.description",
-          "status.type",
-          "homeScore.current",
-          "awayScore.current",
           "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1756742536
+        "changeTimestamp": 1756746615
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
