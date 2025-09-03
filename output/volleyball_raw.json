@@ -85,9 +85,9 @@
       },
       "customId": "kJcsrJc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 30,
+        "description": "Pause",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Netherlands",
@@ -165,11 +165,29 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 25
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 20
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1756894875
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.currentPeriodStart",
+          "status.code",
+          "status.description",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1"
+        ],
+        "changeTimestamp": 1756894884
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -2262,7 +2280,7 @@
         "period7": "7th set",
         "overtime": "Overtime"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -2433,7 +2451,7 @@
         "period7": "7th set",
         "overtime": "Overtime"
       },
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
