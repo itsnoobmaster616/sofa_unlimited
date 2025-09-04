@@ -1439,10 +1439,11 @@
       },
       "customId": "peJdsmKue",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 1001,
+        "description": "First game",
+        "type": "inprogress"
       },
+      "winnerCode": 3,
       "homeTeam": {
         "name": "Eruption",
         "slug": "eruption",
@@ -1509,12 +1510,30 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
       "coverage": 90,
-      "time": {},
+      "time": {
+        "currentPeriodStartTimestamp": 1756959570
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.display",
+          "awayScore.display",
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "awayScore.current",
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1756959611
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
@@ -1523,7 +1542,7 @@
       "eventType": "best_of",
       "roundsInAHalf": 12,
       "slug": "nomads-eruption",
-      "startTimestamp": 1756958400,
+      "startTimestamp": 1756959600,
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
