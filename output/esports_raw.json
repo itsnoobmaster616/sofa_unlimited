@@ -1844,10 +1844,11 @@
       },
       "customId": "jDbesmKue",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 1001,
+        "description": "First game",
+        "type": "inprogress"
       },
+      "winnerCode": 3,
       "homeTeam": {
         "name": "Chinggis Warriors",
         "slug": "chinggis-warriors",
@@ -1912,12 +1913,30 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
       "coverage": 90,
-      "time": {},
+      "time": {
+        "currentPeriodStartTimestamp": 1757039630
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.display",
+          "awayScore.display",
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "awayScore.current",
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1757039648
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
@@ -1926,7 +1945,7 @@
       "eventType": "best_of",
       "roundsInAHalf": 12,
       "slug": "nomads-chinggis-warriors",
-      "startTimestamp": 1757037600,
+      "startTimestamp": 1757039400,
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
