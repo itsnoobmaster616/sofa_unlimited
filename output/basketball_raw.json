@@ -86,9 +86,9 @@
       },
       "customId": "dAcsrLw",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 30,
+        "description": "Pause",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Türkiye",
@@ -166,13 +166,34 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 20,
+        "display": 20,
+        "period1": 20
+      },
+      "awayScore": {
+        "current": 23,
+        "display": 23,
+        "period1": 23
+      },
+      "time": {
+        "played": 600,
+        "periodLength": 600,
+        "overtimeLength": 300,
+        "totalPeriodCount": 4,
+        "currentPeriodStartTimestamp": 1757150297
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.currentPeriodStart",
+          "status.code",
+          "status.description",
+          "time.played"
+        ],
+        "changeTimestamp": 1757150306
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14096376,
       "periods": {
@@ -19245,8 +19266,8 @@
       },
       "customId": "dOJisMUYi",
       "status": {
-        "code": 13,
-        "description": "1st quarter",
+        "code": 31,
+        "description": "Halftime",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -19315,26 +19336,30 @@
         }
       },
       "homeScore": {
-        "current": 13,
-        "display": 13,
-        "period1": 13
+        "current": 38,
+        "display": 38,
+        "period1": 16,
+        "period2": 22
       },
       "awayScore": {
-        "current": 9,
-        "display": 9,
-        "period1": 9
+        "current": 32,
+        "display": 32,
+        "period1": 14,
+        "period2": 18
       },
       "time": {
-        "played": 409,
+        "played": 1200,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
       },
       "changes": {
         "changes": [
+          "status.code",
+          "status.description",
           "time.played"
         ],
-        "changeTimestamp": 1757148101
+        "changeTimestamp": 1757150002
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -19350,7 +19375,6 @@
       },
       "slug": "new-zealand-u16-china-u16",
       "startTimestamp": 1757147400,
-      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -19752,9 +19776,9 @@
       },
       "customId": "eCRisEEZi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 13,
+        "description": "1st quarter",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Angola U16",
@@ -19821,13 +19845,30 @@
           "text": "#ffffff"
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 16,
+        "display": 16,
+        "period1": 16
+      },
+      "awayScore": {
+        "current": 12,
+        "display": 12,
+        "period1": 12
+      },
+      "time": {
+        "played": 487,
+        "periodLength": 600,
+        "overtimeLength": 300,
+        "totalPeriodCount": 4
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.played"
+        ],
+        "changeTimestamp": 1757150357
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14597757,
       "periods": {
@@ -19840,6 +19881,7 @@
       },
       "slug": "guinea-u16-angola-u16",
       "startTimestamp": 1757149200,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -23054,10 +23096,11 @@
       },
       "customId": "PbpdslINi",
       "status": {
-        "code": 16,
-        "description": "4th quarter",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Seeta High Ladies",
         "slug": "seeta-high-ladies",
@@ -23127,12 +23170,13 @@
         }
       },
       "homeScore": {
-        "current": 40,
-        "display": 40,
+        "current": 43,
+        "display": 43,
         "period1": 11,
         "period2": 9,
         "period3": 7,
-        "period4": 13
+        "period4": 16,
+        "normaltime": 43
       },
       "awayScore": {
         "current": 52,
@@ -23140,10 +23184,11 @@
         "period1": 10,
         "period2": 15,
         "period3": 14,
-        "period4": 13
+        "period4": 13,
+        "normaltime": 52
       },
       "time": {
-        "played": 2319,
+        "played": 2400,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
@@ -23152,15 +23197,12 @@
         "changes": [
           "status.code",
           "status.description",
-          "homeScore.current",
-          "homeScore.display",
-          "awayScore.current",
-          "awayScore.display",
-          "time.played",
-          "homeScore.period4",
-          "awayScore.period4"
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime",
+          "time.played"
         ],
-        "changeTimestamp": 1757148048
+        "changeTimestamp": 1757148367
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -23176,7 +23218,6 @@
       },
       "slug": "seeta-high-ladies-kampala-university-ladies",
       "startTimestamp": 1757142000,
-      "lastPeriod": "period4",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -23253,9 +23294,9 @@
       },
       "customId": "aTAcsiINi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 13,
+        "description": "1st quarter",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Kibuli",
@@ -23325,13 +23366,30 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 4,
+        "display": 4,
+        "period1": 4
+      },
+      "awayScore": {
+        "current": 14,
+        "display": 14,
+        "period1": 14
+      },
+      "time": {
+        "played": 466,
+        "periodLength": 600,
+        "overtimeLength": 300,
+        "totalPeriodCount": 4
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.played"
+        ],
+        "changeTimestamp": 1757150353
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14360907,
       "periods": {
@@ -23344,6 +23402,7 @@
       },
       "slug": "kibuli-ymca-lady-hamstars",
       "startTimestamp": 1757149200,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -23420,8 +23479,8 @@
       },
       "customId": "ZRAcsObpd",
       "status": {
-        "code": 13,
-        "description": "1st quarter",
+        "code": 14,
+        "description": "2nd quarter",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -23493,17 +23552,19 @@
         }
       },
       "homeScore": {
-        "current": 4,
-        "display": 4,
-        "period1": 4
+        "current": 20,
+        "display": 20,
+        "period1": 14,
+        "period2": 6
       },
       "awayScore": {
-        "current": 4,
-        "display": 4,
-        "period1": 4
+        "current": 20,
+        "display": 20,
+        "period1": 11,
+        "period2": 9
       },
       "time": {
-        "played": 98,
+        "played": 979,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
@@ -23512,7 +23573,7 @@
         "changes": [
           "time.played"
         ],
-        "changeTimestamp": 1757148050
+        "changeTimestamp": 1757150371
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -23528,7 +23589,7 @@
       },
       "slug": "lady-jills-muk-sparks",
       "startTimestamp": 1757149200,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
