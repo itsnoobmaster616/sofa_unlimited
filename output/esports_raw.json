@@ -3817,10 +3817,11 @@
       },
       "customId": "yIZdsmKue",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 1001,
+        "description": "First game",
+        "type": "inprogress"
       },
+      "winnerCode": 3,
       "homeTeam": {
         "name": "The Huns Esports",
         "slug": "the-huns-esports",
@@ -3887,12 +3888,30 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
       "coverage": 90,
-      "time": {},
+      "time": {
+        "currentPeriodStartTimestamp": 1757129306
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.display",
+          "awayScore.display",
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "awayScore.current",
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1757129346
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
@@ -3901,7 +3920,7 @@
       "eventType": "best_of",
       "roundsInAHalf": 12,
       "slug": "nomads-the-huns-esports",
-      "startTimestamp": 1757127600,
+      "startTimestamp": 1757128200,
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
