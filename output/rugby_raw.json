@@ -83,9 +83,9 @@
       },
       "customId": "gKbskaLd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Dolphins",
@@ -158,17 +158,35 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 6,
+        "display": 6,
+        "period1": 6
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "time": {
+        "played": 1309,
+        "periodLength": 2400,
+        "overtimeLength": 600,
+        "totalPeriodCount": 2,
+        "currentPeriodStartTimestamp": 1757217691
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.played"
+        ],
+        "changeTimestamp": 1757219163
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 13911394,
       "slug": "dolphins-canberra-raiders",
       "startTimestamp": 1757217600,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -858,7 +876,7 @@
       "id": 14589316,
       "slug": "sunshine-coast-falcons-ipswich-jets",
       "startTimestamp": 1757218200,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -3845,7 +3863,7 @@
         ],
         "changeTimestamp": 1757216763
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 13242002,
       "slug": "new-zealand-warriors-brisbane-broncos",
@@ -4000,7 +4018,7 @@
       "id": 13242003,
       "slug": "newcastle-knights-gold-coast-titans",
       "startTimestamp": 1757216700,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -9667,9 +9685,9 @@
       },
       "customId": "tersAer",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
       "winnerCode": 2,
       "homeTeam": {
@@ -9741,26 +9759,28 @@
         "current": 17,
         "display": 17,
         "period1": 3,
-        "period2": 14
+        "period2": 14,
+        "normaltime": 17
       },
       "awayScore": {
-        "current": 38,
-        "display": 38,
+        "current": 43,
+        "display": 43,
         "period1": 26,
-        "period2": 7
+        "period2": 17,
+        "normaltime": 43
       },
       "time": {
-        "played": 7037,
+        "played": 2407,
         "periodLength": 2400,
         "overtimeLength": 600,
         "totalPeriodCount": 2,
-        "currentPeriodStartTimestamp": 1757214537
+        "currentPeriodStartTimestamp": 1757217327
       },
       "changes": {
         "changes": [
-          "time.played"
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1757216882
+        "changeTimestamp": 1757217332
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -9768,7 +9788,6 @@
       "id": 13660907,
       "slug": "bay-of-plenty-taranaki",
       "startTimestamp": 1757210700,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -19916,12 +19935,490 @@
       "roundInfo": {
         "round": 16
       },
+      "customId": "gnVisinVi",
+      "status": {
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
+      },
+      "winnerCode": 1,
+      "homeTeam": {
+        "name": "COBS",
+        "slug": "cobs",
+        "shortName": "COBS",
+        "gender": "M",
+        "sport": {
+          "name": "Rugby",
+          "slug": "rugby",
+          "id": 12
+        },
+        "userCount": 2,
+        "nameCode": "COB",
+        "national": false,
+        "type": 0,
+        "id": 1113156,
+        "country": {
+          "alpha2": "CL",
+          "alpha3": "CHL",
+          "name": "Chile",
+          "slug": "chile"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "awayTeam": {
+        "name": "Sporting RC",
+        "slug": "sporting-rc",
+        "shortName": "Sporting RC",
+        "gender": "M",
+        "sport": {
+          "name": "Rugby",
+          "slug": "rugby",
+          "id": 12
+        },
+        "userCount": 1,
+        "nameCode": "SRC",
+        "national": false,
+        "type": 0,
+        "id": 1113158,
+        "country": {
+          "alpha2": "CL",
+          "alpha3": "CHL",
+          "name": "Chile",
+          "slug": "chile"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "homeScore": {
+        "current": 78,
+        "display": 78
+      },
+      "awayScore": {
+        "current": 5,
+        "display": 5
+      },
+      "coverage": -1,
+      "time": {},
+      "changes": {
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "awayScore.current",
+          "awayScore.display"
+        ],
+        "changeTimestamp": 1757217821
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 14346998,
+      "slug": "sporting-rc-cobs",
+      "startTimestamp": 1757178000,
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "isEditor": false
+    },
+    {
+      "tournament": {
+        "name": "ARUSA Top 10, Fase regular",
+        "slug": "arusa-top-10-fase-regular",
+        "category": {
+          "id": 82,
+          "country": {},
+          "name": "Rugby Union",
+          "slug": "rugby-union",
+          "sport": {
+            "name": "Rugby",
+            "slug": "rugby",
+            "id": 12
+          },
+          "flag": "rugby-union",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "العالم",
+              "hi": "रग्बी यूनियन",
+              "bn": "রাগবি ইউনিয়ন"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "ARUSA Top 10",
+          "slug": "arusa-top-10",
+          "category": {
+            "id": 82,
+            "country": {},
+            "name": "Rugby Union",
+            "slug": "rugby-union",
+            "sport": {
+              "name": "Rugby",
+              "slug": "rugby",
+              "id": 12
+            },
+            "flag": "rugby-union",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "العالم",
+                "hi": "रग्बी यूनियन",
+                "bn": "রাগবি ইউনিয়ন"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 4,
+          "hasPerformanceGraphFeature": false,
+          "id": 28474,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false
+        },
+        "priority": 0,
+        "id": 159960
+      },
+      "season": {
+        "name": "2025",
+        "year": "2025",
+        "editor": false,
+        "id": 79754
+      },
+      "roundInfo": {
+        "round": 16
+      },
+      "customId": "dnVishnVi",
+      "status": {
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
+      },
+      "winnerCode": 2,
+      "homeTeam": {
+        "name": "Stade Français",
+        "slug": "stada-francaise",
+        "shortName": "Stade Français",
+        "gender": "M",
+        "sport": {
+          "name": "Rugby",
+          "slug": "rugby",
+          "id": 12
+        },
+        "userCount": 0,
+        "nameCode": "SFR",
+        "national": false,
+        "type": 0,
+        "id": 1113153,
+        "country": {
+          "alpha2": "CL",
+          "alpha3": "CHL",
+          "name": "Chile",
+          "slug": "chile"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "awayTeam": {
+        "name": "Old Johns",
+        "slug": "old-johns",
+        "shortName": "Old Johns",
+        "gender": "M",
+        "sport": {
+          "name": "Rugby",
+          "slug": "rugby",
+          "id": 12
+        },
+        "userCount": 0,
+        "nameCode": "OJO",
+        "national": false,
+        "type": 0,
+        "id": 1113157,
+        "country": {
+          "alpha2": "CL",
+          "alpha3": "CHL",
+          "name": "Chile",
+          "slug": "chile"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "homeScore": {
+        "current": 32,
+        "display": 32
+      },
+      "awayScore": {
+        "current": 45,
+        "display": 45
+      },
+      "coverage": -1,
+      "time": {},
+      "changes": {
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "awayScore.current",
+          "awayScore.display"
+        ],
+        "changeTimestamp": 1757218383
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 14346996,
+      "slug": "old-johns-stade-francais",
+      "startTimestamp": 1757187000,
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "isEditor": false
+    },
+    {
+      "tournament": {
+        "name": "ARUSA Top 10, Fase regular",
+        "slug": "arusa-top-10-fase-regular",
+        "category": {
+          "id": 82,
+          "country": {},
+          "name": "Rugby Union",
+          "slug": "rugby-union",
+          "sport": {
+            "name": "Rugby",
+            "slug": "rugby",
+            "id": 12
+          },
+          "flag": "rugby-union",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "العالم",
+              "hi": "रग्बी यूनियन",
+              "bn": "রাগবি ইউনিয়ন"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "ARUSA Top 10",
+          "slug": "arusa-top-10",
+          "category": {
+            "id": 82,
+            "country": {},
+            "name": "Rugby Union",
+            "slug": "rugby-union",
+            "sport": {
+              "name": "Rugby",
+              "slug": "rugby",
+              "id": 12
+            },
+            "flag": "rugby-union",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "العالم",
+                "hi": "रग्बी यूनियन",
+                "bn": "রাগবি ইউনিয়ন"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 4,
+          "hasPerformanceGraphFeature": false,
+          "id": 28474,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false
+        },
+        "priority": 0,
+        "id": 159960
+      },
+      "season": {
+        "name": "2025",
+        "year": "2025",
+        "editor": false,
+        "id": 79754
+      },
+      "roundInfo": {
+        "round": 16
+      },
+      "customId": "cnVisfnVi",
+      "status": {
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
+      },
+      "winnerCode": 1,
+      "homeTeam": {
+        "name": "Universidad Católica",
+        "slug": "universidad-catolica",
+        "shortName": "Universidad Católica",
+        "gender": "M",
+        "sport": {
+          "name": "Rugby",
+          "slug": "rugby",
+          "id": 12
+        },
+        "userCount": 1,
+        "nameCode": "UCA",
+        "national": false,
+        "type": 0,
+        "id": 1113152,
+        "country": {
+          "alpha2": "CL",
+          "alpha3": "CHL",
+          "name": "Chile",
+          "slug": "chile"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "awayTeam": {
+        "name": "CD Alumni",
+        "slug": "cda",
+        "shortName": "CDA",
+        "gender": "M",
+        "sport": {
+          "name": "Rugby",
+          "slug": "rugby",
+          "id": 12
+        },
+        "userCount": 1,
+        "nameCode": "CDA",
+        "national": false,
+        "type": 0,
+        "id": 1113155,
+        "country": {
+          "alpha2": "CL",
+          "alpha3": "CHL",
+          "name": "Chile",
+          "slug": "chile"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "homeScore": {
+        "current": 49,
+        "display": 49
+      },
+      "awayScore": {
+        "current": 12,
+        "display": 12
+      },
+      "coverage": -1,
+      "time": {},
+      "changes": {
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "awayScore.current",
+          "awayScore.display"
+        ],
+        "changeTimestamp": 1757218321
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 14346997,
+      "slug": "cd-alumni-universidad-catolica",
+      "startTimestamp": 1757187000,
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "isEditor": false
+    },
+    {
+      "tournament": {
+        "name": "ARUSA Top 10, Fase regular",
+        "slug": "arusa-top-10-fase-regular",
+        "category": {
+          "id": 82,
+          "country": {},
+          "name": "Rugby Union",
+          "slug": "rugby-union",
+          "sport": {
+            "name": "Rugby",
+            "slug": "rugby",
+            "id": 12
+          },
+          "flag": "rugby-union",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "العالم",
+              "hi": "रग्बी यूनियन",
+              "bn": "রাগবি ইউনিয়ন"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "ARUSA Top 10",
+          "slug": "arusa-top-10",
+          "category": {
+            "id": 82,
+            "country": {},
+            "name": "Rugby Union",
+            "slug": "rugby-union",
+            "sport": {
+              "name": "Rugby",
+              "slug": "rugby",
+              "id": 12
+            },
+            "flag": "rugby-union",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "العالم",
+                "hi": "रग्बी यूनियन",
+                "bn": "রাগবি ইউনিয়ন"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 4,
+          "hasPerformanceGraphFeature": false,
+          "id": 28474,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false
+        },
+        "priority": 0,
+        "id": 159960
+      },
+      "season": {
+        "name": "2025",
+        "year": "2025",
+        "editor": false,
+        "id": 79754
+      },
+      "roundInfo": {
+        "round": 16
+      },
       "customId": "anVisenVi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Old Macks",
         "slug": "old-macks",
@@ -19978,19 +20475,34 @@
           "text": "#ffffff"
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 38,
+        "display": 38
+      },
+      "awayScore": {
+        "current": 20,
+        "display": 20
+      },
       "coverage": -1,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "awayScore.current",
+          "awayScore.display"
+        ],
+        "changeTimestamp": 1757218139
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14346992,
       "slug": "old-macks-old-reds",
       "startTimestamp": 1757187033,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -20132,436 +20644,7 @@
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14346995,
       "slug": "old-boys-pwcc",
-      "startTimestamp": 1757188824,
-      "finalResultOnly": true,
-      "feedLocked": false,
-      "isEditor": false
-    },
-    {
-      "tournament": {
-        "name": "ARUSA Top 10, Fase regular",
-        "slug": "arusa-top-10-fase-regular",
-        "category": {
-          "id": 82,
-          "country": {},
-          "name": "Rugby Union",
-          "slug": "rugby-union",
-          "sport": {
-            "name": "Rugby",
-            "slug": "rugby",
-            "id": 12
-          },
-          "flag": "rugby-union",
-          "fieldTranslations": {
-            "nameTranslation": {
-              "ar": "العالم",
-              "hi": "रग्बी यूनियन",
-              "bn": "রাগবি ইউনিয়ন"
-            },
-            "shortNameTranslation": {}
-          }
-        },
-        "uniqueTournament": {
-          "name": "ARUSA Top 10",
-          "slug": "arusa-top-10",
-          "category": {
-            "id": 82,
-            "country": {},
-            "name": "Rugby Union",
-            "slug": "rugby-union",
-            "sport": {
-              "name": "Rugby",
-              "slug": "rugby",
-              "id": 12
-            },
-            "flag": "rugby-union",
-            "fieldTranslations": {
-              "nameTranslation": {
-                "ar": "العالم",
-                "hi": "रग्बी यूनियन",
-                "bn": "রাগবি ইউনিয়ন"
-              },
-              "shortNameTranslation": {}
-            }
-          },
-          "userCount": 4,
-          "hasPerformanceGraphFeature": false,
-          "id": 28474,
-          "hasEventPlayerStatistics": false,
-          "displayInverseHomeAwayTeams": false
-        },
-        "priority": 0,
-        "id": 159960
-      },
-      "season": {
-        "name": "2025",
-        "year": "2025",
-        "editor": false,
-        "id": 79754
-      },
-      "roundInfo": {
-        "round": 16
-      },
-      "customId": "cnVisfnVi",
-      "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
-      },
-      "homeTeam": {
-        "name": "Universidad Católica",
-        "slug": "universidad-catolica",
-        "shortName": "Universidad Católica",
-        "gender": "M",
-        "sport": {
-          "name": "Rugby",
-          "slug": "rugby",
-          "id": 12
-        },
-        "userCount": 1,
-        "nameCode": "UCA",
-        "national": false,
-        "type": 0,
-        "id": 1113152,
-        "country": {
-          "alpha2": "CL",
-          "alpha3": "CHL",
-          "name": "Chile",
-          "slug": "chile"
-        },
-        "subTeams": [],
-        "teamColors": {
-          "primary": "#374df5",
-          "secondary": "#374df5",
-          "text": "#ffffff"
-        }
-      },
-      "awayTeam": {
-        "name": "CD Alumni",
-        "slug": "cda",
-        "shortName": "CDA",
-        "gender": "M",
-        "sport": {
-          "name": "Rugby",
-          "slug": "rugby",
-          "id": 12
-        },
-        "userCount": 1,
-        "nameCode": "CDA",
-        "national": false,
-        "type": 0,
-        "id": 1113155,
-        "country": {
-          "alpha2": "CL",
-          "alpha3": "CHL",
-          "name": "Chile",
-          "slug": "chile"
-        },
-        "subTeams": [],
-        "teamColors": {
-          "primary": "#374df5",
-          "secondary": "#374df5",
-          "text": "#ffffff"
-        }
-      },
-      "homeScore": {},
-      "awayScore": {},
-      "coverage": -1,
-      "time": {},
-      "changes": {
-        "changeTimestamp": 0
-      },
-      "hasGlobalHighlights": false,
-      "crowdsourcingDataDisplayEnabled": false,
-      "id": 14346997,
-      "slug": "cd-alumni-universidad-catolica",
-      "startTimestamp": 1757188829,
-      "finalResultOnly": true,
-      "feedLocked": false,
-      "isEditor": false
-    },
-    {
-      "tournament": {
-        "name": "ARUSA Top 10, Fase regular",
-        "slug": "arusa-top-10-fase-regular",
-        "category": {
-          "id": 82,
-          "country": {},
-          "name": "Rugby Union",
-          "slug": "rugby-union",
-          "sport": {
-            "name": "Rugby",
-            "slug": "rugby",
-            "id": 12
-          },
-          "flag": "rugby-union",
-          "fieldTranslations": {
-            "nameTranslation": {
-              "ar": "العالم",
-              "hi": "रग्बी यूनियन",
-              "bn": "রাগবি ইউনিয়ন"
-            },
-            "shortNameTranslation": {}
-          }
-        },
-        "uniqueTournament": {
-          "name": "ARUSA Top 10",
-          "slug": "arusa-top-10",
-          "category": {
-            "id": 82,
-            "country": {},
-            "name": "Rugby Union",
-            "slug": "rugby-union",
-            "sport": {
-              "name": "Rugby",
-              "slug": "rugby",
-              "id": 12
-            },
-            "flag": "rugby-union",
-            "fieldTranslations": {
-              "nameTranslation": {
-                "ar": "العالم",
-                "hi": "रग्बी यूनियन",
-                "bn": "রাগবি ইউনিয়ন"
-              },
-              "shortNameTranslation": {}
-            }
-          },
-          "userCount": 4,
-          "hasPerformanceGraphFeature": false,
-          "id": 28474,
-          "hasEventPlayerStatistics": false,
-          "displayInverseHomeAwayTeams": false
-        },
-        "priority": 0,
-        "id": 159960
-      },
-      "season": {
-        "name": "2025",
-        "year": "2025",
-        "editor": false,
-        "id": 79754
-      },
-      "roundInfo": {
-        "round": 16
-      },
-      "customId": "dnVishnVi",
-      "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
-      },
-      "homeTeam": {
-        "name": "Stade Français",
-        "slug": "stada-francaise",
-        "shortName": "Stade Français",
-        "gender": "M",
-        "sport": {
-          "name": "Rugby",
-          "slug": "rugby",
-          "id": 12
-        },
-        "userCount": 0,
-        "nameCode": "SFR",
-        "national": false,
-        "type": 0,
-        "id": 1113153,
-        "country": {
-          "alpha2": "CL",
-          "alpha3": "CHL",
-          "name": "Chile",
-          "slug": "chile"
-        },
-        "subTeams": [],
-        "teamColors": {
-          "primary": "#374df5",
-          "secondary": "#374df5",
-          "text": "#ffffff"
-        }
-      },
-      "awayTeam": {
-        "name": "Old Johns",
-        "slug": "old-johns",
-        "shortName": "Old Johns",
-        "gender": "M",
-        "sport": {
-          "name": "Rugby",
-          "slug": "rugby",
-          "id": 12
-        },
-        "userCount": 0,
-        "nameCode": "OJO",
-        "national": false,
-        "type": 0,
-        "id": 1113157,
-        "country": {
-          "alpha2": "CL",
-          "alpha3": "CHL",
-          "name": "Chile",
-          "slug": "chile"
-        },
-        "subTeams": [],
-        "teamColors": {
-          "primary": "#374df5",
-          "secondary": "#374df5",
-          "text": "#ffffff"
-        }
-      },
-      "homeScore": {},
-      "awayScore": {},
-      "coverage": -1,
-      "time": {},
-      "changes": {
-        "changeTimestamp": 0
-      },
-      "hasGlobalHighlights": false,
-      "crowdsourcingDataDisplayEnabled": false,
-      "id": 14346996,
-      "slug": "old-johns-stade-francais",
-      "startTimestamp": 1757188852,
-      "finalResultOnly": true,
-      "feedLocked": false,
-      "isEditor": false
-    },
-    {
-      "tournament": {
-        "name": "ARUSA Top 10, Fase regular",
-        "slug": "arusa-top-10-fase-regular",
-        "category": {
-          "id": 82,
-          "country": {},
-          "name": "Rugby Union",
-          "slug": "rugby-union",
-          "sport": {
-            "name": "Rugby",
-            "slug": "rugby",
-            "id": 12
-          },
-          "flag": "rugby-union",
-          "fieldTranslations": {
-            "nameTranslation": {
-              "ar": "العالم",
-              "hi": "रग्बी यूनियन",
-              "bn": "রাগবি ইউনিয়ন"
-            },
-            "shortNameTranslation": {}
-          }
-        },
-        "uniqueTournament": {
-          "name": "ARUSA Top 10",
-          "slug": "arusa-top-10",
-          "category": {
-            "id": 82,
-            "country": {},
-            "name": "Rugby Union",
-            "slug": "rugby-union",
-            "sport": {
-              "name": "Rugby",
-              "slug": "rugby",
-              "id": 12
-            },
-            "flag": "rugby-union",
-            "fieldTranslations": {
-              "nameTranslation": {
-                "ar": "العالم",
-                "hi": "रग्बी यूनियन",
-                "bn": "রাগবি ইউনিয়ন"
-              },
-              "shortNameTranslation": {}
-            }
-          },
-          "userCount": 4,
-          "hasPerformanceGraphFeature": false,
-          "id": 28474,
-          "hasEventPlayerStatistics": false,
-          "displayInverseHomeAwayTeams": false
-        },
-        "priority": 0,
-        "id": 159960
-      },
-      "season": {
-        "name": "2025",
-        "year": "2025",
-        "editor": false,
-        "id": 79754
-      },
-      "roundInfo": {
-        "round": 16
-      },
-      "customId": "gnVisinVi",
-      "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
-      },
-      "homeTeam": {
-        "name": "COBS",
-        "slug": "cobs",
-        "shortName": "COBS",
-        "gender": "M",
-        "sport": {
-          "name": "Rugby",
-          "slug": "rugby",
-          "id": 12
-        },
-        "userCount": 2,
-        "nameCode": "COB",
-        "national": false,
-        "type": 0,
-        "id": 1113156,
-        "country": {
-          "alpha2": "CL",
-          "alpha3": "CHL",
-          "name": "Chile",
-          "slug": "chile"
-        },
-        "subTeams": [],
-        "teamColors": {
-          "primary": "#374df5",
-          "secondary": "#374df5",
-          "text": "#ffffff"
-        }
-      },
-      "awayTeam": {
-        "name": "Sporting RC",
-        "slug": "sporting-rc",
-        "shortName": "Sporting RC",
-        "gender": "M",
-        "sport": {
-          "name": "Rugby",
-          "slug": "rugby",
-          "id": 12
-        },
-        "userCount": 1,
-        "nameCode": "SRC",
-        "national": false,
-        "type": 0,
-        "id": 1113158,
-        "country": {
-          "alpha2": "CL",
-          "alpha3": "CHL",
-          "name": "Chile",
-          "slug": "chile"
-        },
-        "subTeams": [],
-        "teamColors": {
-          "primary": "#374df5",
-          "secondary": "#374df5",
-          "text": "#ffffff"
-        }
-      },
-      "homeScore": {},
-      "awayScore": {},
-      "coverage": -1,
-      "time": {},
-      "changes": {
-        "changeTimestamp": 0
-      },
-      "hasGlobalHighlights": false,
-      "crowdsourcingDataDisplayEnabled": false,
-      "id": 14346998,
-      "slug": "sporting-rc-cobs",
-      "startTimestamp": 1757269833,
+      "startTimestamp": 1757269800,
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
