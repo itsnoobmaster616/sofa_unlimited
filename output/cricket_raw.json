@@ -368,7 +368,6 @@
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14284478,
       "note": "Afghanistan beat Hong Kong, China by 94 runs",
-      "currentBattingTeamId": 187774,
       "endTimestamp": 1757442360,
       "slug": "hong-kong-afghanistan",
       "startTimestamp": 1757428200,
@@ -3855,9 +3854,9 @@
       },
       "customId": "gmKbsjmKb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 21,
+        "description": "1st Inning",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "West Indies Under-19",
@@ -3928,12 +3927,38 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "innings": {
+          "inning1": {
+            "score": 0,
+            "wickets": 0,
+            "overs": 0,
+            "runRate": 0
+          }
+        }
+      },
       "coverage": 3,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status",
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.innings",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.innings"
+        ],
+        "changeTimestamp": 1757450131
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -3948,6 +3973,7 @@
         "inning3": "3rd Inning",
         "inning4": "4th Inning"
       },
+      "lastPeriod": "inning1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
