@@ -1250,9 +1250,9 @@
       },
       "customId": "ODbsOvU",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 1,
+        "description": "1st period",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Sibir Novosibirsk",
@@ -1332,11 +1332,28 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "time": {
+        "played": 540,
+        "periodLength": 1200,
+        "overtimeLength": 300,
+        "totalPeriodCount": 3,
+        "currentPeriodStartTimestamp": 1757680300
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.played"
+        ],
+        "changeTimestamp": 1757680982
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -1351,6 +1368,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -9534,7 +9552,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -24407,7 +24425,9 @@
         "period1": 1,
         "period2": 0,
         "period3": 1,
-        "period4": 0
+        "period4": 0,
+        "normaltime": 2,
+        "overtime": 0
       },
       "awayScore": {
         "current": 3,
@@ -24415,19 +24435,19 @@
         "period1": 0,
         "period2": 2,
         "period3": 0,
-        "period4": 1
+        "period4": 1,
+        "normaltime": 2,
+        "overtime": 1
       },
       "time": {},
       "changes": {
         "changes": [
-          "status.code",
-          "status.description",
-          "status.type",
-          "awayScore.current",
-          "awayScore.display",
-          "awayScore.period4"
+          "homeScore.normaltime",
+          "homeScore.overtime",
+          "awayScore.normaltime",
+          "awayScore.overtime"
         ],
-        "changeTimestamp": 1757673378
+        "changeTimestamp": 1757677218
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -31011,7 +31031,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -31213,7 +31233,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
