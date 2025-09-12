@@ -1,6 +1,7 @@
 {
   "events": [
     {
+      "firstToServe": 1,
       "tournament": {
         "name": "Davis Cup Single Matches",
         "slug": "davis-cup-single-matches",
@@ -77,9 +78,9 @@
       },
       "customId": "QCtsGKy",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 8,
+        "description": "1st set",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Yoshihito Nishioka",
@@ -165,11 +166,26 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "point": "40"
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 1,
+        "point": "40"
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1757654123
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "awayScore.point"
+        ],
+        "changeTimestamp": 1757654429
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -186,6 +202,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -4423,7 +4440,7 @@
       "isEditor": false
     },
     {
-      "firstToServe": 1,
+      "firstToServe": 2,
       "tournament": {
         "name": "Guadalajara, Mexico",
         "slug": "guadalajara-mexico",
@@ -4495,9 +4512,9 @@
       },
       "customId": "aADsPrmb",
       "status": {
-        "code": 80,
-        "description": "Interrupted",
-        "type": "interrupted"
+        "code": 9,
+        "description": "2nd set",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Lucrezia Stefanini",
@@ -4586,26 +4603,24 @@
         "current": 0,
         "display": 0,
         "period1": 1,
-        "period2": 1,
-        "point": "0"
+        "period2": 4,
+        "point": "30"
       },
       "awayScore": {
         "current": 1,
         "display": 1,
         "period1": 6,
-        "period2": 2,
-        "point": "0"
+        "period2": 4,
+        "point": "40"
       },
       "time": {
         "currentPeriodStartTimestamp": 1757649540
       },
       "changes": {
         "changes": [
-          "status.code",
-          "status.description",
-          "status.type"
+          "awayScore.point"
         ],
-        "changeTimestamp": 1757651614
+        "changeTimestamp": 1757654456
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -4621,6 +4636,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
@@ -6531,8 +6547,8 @@
       },
       "customId": "loIsULfc",
       "status": {
-        "code": 8,
-        "description": "1st set",
+        "code": 9,
+        "description": "2nd set",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -6620,23 +6636,27 @@
       "homeScore": {
         "current": 0,
         "display": 0,
-        "period1": 2,
+        "period1": 4,
+        "period2": 1,
         "point": "0"
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 2,
-        "point": "15"
+        "current": 1,
+        "display": 1,
+        "period1": 6,
+        "period2": 1,
+        "point": "0"
       },
       "time": {
-        "currentPeriodStartTimestamp": 1757650783
+        "currentPeriodStartTimestamp": 1757653793
       },
       "changes": {
         "changes": [
-          "awayScore.point"
+          "homeScore.period2",
+          "homeScore.point",
+          "firstToServe"
         ],
-        "changeTimestamp": 1757652112
+        "changeTimestamp": 1757654445
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -6653,7 +6673,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -34096,10 +34116,11 @@
       },
       "customId": "MzNszmcb",
       "status": {
-        "code": 9,
-        "description": "2nd set",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Jessica Pieri",
         "slug": "pieri-jessica",
@@ -34186,30 +34207,37 @@
         "current": 0,
         "display": 0,
         "period1": 6,
-        "period2": 1,
+        "period2": 2,
         "period1TieBreak": 6,
-        "point": "0"
+        "point": "0",
+        "normaltime": 0
       },
       "awayScore": {
-        "current": 1,
-        "display": 1,
+        "current": 2,
+        "display": 2,
         "period1": 7,
-        "period2": 2,
+        "period2": 6,
         "period1TieBreak": 8,
-        "point": "0"
+        "point": "40",
+        "normaltime": 2
       },
       "time": {
         "currentPeriodStartTimestamp": 1757650992
       },
       "changes": {
         "changes": [
-          "homeScore.period2",
-          "homeScore.point",
-          "firstToServe",
+          "time.currentPeriodStart",
+          "time.period2",
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
           "awayScore.period2",
-          "awayScore.point"
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1757652097
+        "changeTimestamp": 1757653152
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -34225,7 +34253,193 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period2",
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "groundType": "Red clay",
+      "isEditor": false
+    },
+    {
+      "firstToServe": 1,
+      "tournament": {
+        "name": "Huzhou, China",
+        "slug": "huzhou-china",
+        "category": {
+          "id": 871,
+          "country": {},
+          "name": "WTA 125",
+          "slug": "wta-125",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "flag": "wta-125",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "رابطة محترفات التنس 125"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "WTA 125K Huzhou, China Women Singles",
+          "slug": "wta-125k-huzhou-china-women-singles",
+          "category": {
+            "id": 871,
+            "country": {},
+            "name": "WTA 125",
+            "slug": "wta-125",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "flag": "wta-125",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "رابطة محترفات التنس 125"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 84,
+          "groundType": "Red clay",
+          "tennisPoints": 125,
+          "hasPerformanceGraphFeature": false,
+          "id": 29214,
+          "country": {},
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false
+        },
+        "priority": 0,
+        "id": 162565
+      },
+      "season": {
+        "name": "WTA 125K Huzhou, China Women Singles 2025",
+        "year": "2025",
+        "editor": false,
+        "id": 81956
+      },
+      "roundInfo": {
+        "round": 27,
+        "name": "Quarterfinals",
+        "cupRoundType": 4
+      },
+      "customId": "Pncbsdyfc",
+      "status": {
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
+      },
+      "winnerCode": 1,
+      "homeTeam": {
+        "name": "Veronika Erjavec",
+        "slug": "erjavec-veronika",
+        "shortName": "V. Erjavec",
+        "gender": "F",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 1208,
+        "playerTeamInfo": {
+          "id": 3592
+        },
+        "nameCode": "ERJ",
+        "national": false,
+        "type": 1,
+        "id": 263653,
+        "country": {
+          "alpha2": "SI",
+          "alpha3": "SVN",
+          "name": "Slovenia",
+          "slug": "slovenia"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "awayTeam": {
+        "name": "Kyoka Okamura",
+        "slug": "okamura-kyoka",
+        "shortName": "K. Okamura",
+        "gender": "F",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 572,
+        "playerTeamInfo": {
+          "id": 883
+        },
+        "nameCode": "OKA",
+        "national": false,
+        "type": 1,
+        "id": 130690,
+        "country": {
+          "alpha2": "JP",
+          "alpha3": "JPN",
+          "name": "Japan",
+          "slug": "japan"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ru": "Окамура, Киока"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "homeScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 6,
+        "period2": 6,
+        "point": "40",
+        "normaltime": 2
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "period2": 2,
+        "point": "15",
+        "normaltime": 0
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1757651611
+      },
+      "changes": {
+        "changes": [
+          "time.currentPeriodStart",
+          "time.period2"
+        ],
+        "changeTimestamp": 1757654260
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 14601592,
+      "slug": "veronika-erjavec-kyoka-okamura",
+      "startTimestamp": 1757649600,
+      "periods": {
+        "point": "Game",
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set"
+      },
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Red clay",
@@ -34298,194 +34512,11 @@
         "name": "Quarterfinals",
         "cupRoundType": 4
       },
-      "customId": "Pncbsdyfc",
-      "status": {
-        "code": 9,
-        "description": "2nd set",
-        "type": "inprogress"
-      },
-      "homeTeam": {
-        "name": "Veronika Erjavec",
-        "slug": "erjavec-veronika",
-        "shortName": "V. Erjavec",
-        "gender": "F",
-        "sport": {
-          "name": "Tennis",
-          "slug": "tennis",
-          "id": 5
-        },
-        "userCount": 1208,
-        "playerTeamInfo": {
-          "id": 3592
-        },
-        "nameCode": "ERJ",
-        "national": false,
-        "type": 1,
-        "id": 263653,
-        "country": {
-          "alpha2": "SI",
-          "alpha3": "SVN",
-          "name": "Slovenia",
-          "slug": "slovenia"
-        },
-        "subTeams": [],
-        "teamColors": {
-          "primary": "#374df5",
-          "secondary": "#374df5",
-          "text": "#ffffff"
-        }
-      },
-      "awayTeam": {
-        "name": "Kyoka Okamura",
-        "slug": "okamura-kyoka",
-        "shortName": "K. Okamura",
-        "gender": "F",
-        "sport": {
-          "name": "Tennis",
-          "slug": "tennis",
-          "id": 5
-        },
-        "userCount": 572,
-        "playerTeamInfo": {
-          "id": 883
-        },
-        "nameCode": "OKA",
-        "national": false,
-        "type": 1,
-        "id": 130690,
-        "country": {
-          "alpha2": "JP",
-          "alpha3": "JPN",
-          "name": "Japan",
-          "slug": "japan"
-        },
-        "subTeams": [],
-        "teamColors": {
-          "primary": "#374df5",
-          "secondary": "#374df5",
-          "text": "#ffffff"
-        },
-        "fieldTranslations": {
-          "nameTranslation": {
-            "ru": "Окамура, Киока"
-          },
-          "shortNameTranslation": {}
-        }
-      },
-      "homeScore": {
-        "current": 1,
-        "display": 1,
-        "period1": 6,
-        "period2": 0,
-        "point": "15"
-      },
-      "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0,
-        "period2": 0,
-        "point": "15"
-      },
-      "time": {
-        "currentPeriodStartTimestamp": 1757651611
-      },
-      "changes": {
-        "changes": [
-          "homeScore.point"
-        ],
-        "changeTimestamp": 1757652105
-      },
-      "hasGlobalHighlights": false,
-      "crowdsourcingDataDisplayEnabled": false,
-      "id": 14601592,
-      "slug": "veronika-erjavec-kyoka-okamura",
-      "startTimestamp": 1757649600,
-      "periods": {
-        "point": "Game",
-        "current": "Match",
-        "period1": "1st set",
-        "period2": "2nd set",
-        "period3": "3rd set",
-        "period4": "4th set",
-        "period5": "5th set"
-      },
-      "lastPeriod": "period2",
-      "finalResultOnly": false,
-      "feedLocked": false,
-      "groundType": "Red clay",
-      "isEditor": false
-    },
-    {
-      "tournament": {
-        "name": "Huzhou, China",
-        "slug": "huzhou-china",
-        "category": {
-          "id": 871,
-          "country": {},
-          "name": "WTA 125",
-          "slug": "wta-125",
-          "sport": {
-            "name": "Tennis",
-            "slug": "tennis",
-            "id": 5
-          },
-          "flag": "wta-125",
-          "fieldTranslations": {
-            "nameTranslation": {
-              "ar": "رابطة محترفات التنس 125"
-            },
-            "shortNameTranslation": {}
-          }
-        },
-        "uniqueTournament": {
-          "name": "WTA 125K Huzhou, China Women Singles",
-          "slug": "wta-125k-huzhou-china-women-singles",
-          "category": {
-            "id": 871,
-            "country": {},
-            "name": "WTA 125",
-            "slug": "wta-125",
-            "sport": {
-              "name": "Tennis",
-              "slug": "tennis",
-              "id": 5
-            },
-            "flag": "wta-125",
-            "fieldTranslations": {
-              "nameTranslation": {
-                "ar": "رابطة محترفات التنس 125"
-              },
-              "shortNameTranslation": {}
-            }
-          },
-          "userCount": 84,
-          "groundType": "Red clay",
-          "tennisPoints": 125,
-          "hasPerformanceGraphFeature": false,
-          "id": 29214,
-          "country": {},
-          "hasEventPlayerStatistics": false,
-          "displayInverseHomeAwayTeams": false
-        },
-        "priority": 0,
-        "id": 162565
-      },
-      "season": {
-        "name": "WTA 125K Huzhou, China Women Singles 2025",
-        "year": "2025",
-        "editor": false,
-        "id": 81956
-      },
-      "roundInfo": {
-        "round": 27,
-        "name": "Quarterfinals",
-        "cupRoundType": 4
-      },
       "customId": "fnvsmCNb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 8,
+        "description": "1st set",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Anna-Lena Friedsam",
@@ -34569,17 +34600,32 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "point": "30"
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 1,
+        "point": "40"
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1757654054
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.point"
+        ],
+        "changeTimestamp": 1757654438
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14601589,
       "slug": "carole-monnet-anna-lena-friedsam",
-      "startTimestamp": 1757652600,
+      "startTimestamp": 1757653500,
       "periods": {
         "point": "Game",
         "current": "Match",
@@ -34589,6 +34635,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Red clay",
@@ -34753,7 +34800,7 @@
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14601619,
       "slug": "alina-charaeva-mai-hontama",
-      "startTimestamp": 1757653800,
+      "startTimestamp": 1757655000,
       "periods": {
         "point": "Game",
         "current": "Match",
@@ -38052,7 +38099,7 @@
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14601625,
       "slug": "cho-i-h-chot-kobori-shimizu",
-      "startTimestamp": 1757656800,
+      "startTimestamp": 1757658000,
       "periods": {
         "point": "Game",
         "current": "Match",
@@ -38330,7 +38377,7 @@
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14601597,
       "slug": "bhatia-monnet-erjavec-kulambayeva",
-      "startTimestamp": 1757658000,
+      "startTimestamp": 1757658900,
       "periods": {
         "point": "Game",
         "current": "Match",
@@ -68111,7 +68158,7 @@
       "isEditor": false
     },
     {
-      "firstToServe": 2,
+      "firstToServe": 1,
       "tournament": {
         "name": "ITF W35 Wagga Wagga Women",
         "slug": "itf-w35-wagga-wagga-women",
@@ -68178,10 +68225,11 @@
       },
       "customId": "YwmbsRvQc",
       "status": {
-        "code": 10,
-        "description": "3rd set",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Haruna Arakawa",
         "slug": "arakawa-haruna",
@@ -68255,24 +68303,26 @@
         "display": 1,
         "period1": 6,
         "period2": 4,
-        "period3": 0,
-        "point": "40"
+        "period3": 1,
+        "point": "0"
       },
       "awayScore": {
-        "current": 1,
-        "display": 1,
+        "current": 2,
+        "display": 2,
         "period1": 2,
         "period2": 6,
-        "period3": 2,
-        "point": "40"
+        "period3": 6,
+        "point": "0"
       },
       "coverage": -1,
       "time": {},
       "changes": {
         "changes": [
-          "awayScore.point"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1757652097
+        "changeTimestamp": 1757653407
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -68288,7 +68338,6 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
@@ -68431,24 +68480,22 @@
       "homeScore": {
         "current": 0,
         "display": 0,
-        "period1": 4,
-        "point": "0"
+        "period1": 6,
+        "point": "6"
       },
       "awayScore": {
         "current": 0,
         "display": 0,
-        "period1": 3,
-        "point": "0"
+        "period1": 6,
+        "point": "6"
       },
       "coverage": -1,
       "time": {},
       "changes": {
         "changes": [
-          "homeScore.point",
-          "awayScore.period1",
           "awayScore.point"
         ],
-        "changeTimestamp": 1757652018
+        "changeTimestamp": 1757654395
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -70885,8 +70932,8 @@
       },
       "customId": "JltsNYXd",
       "status": {
-        "code": 8,
-        "description": "1st set",
+        "code": 9,
+        "description": "2nd set",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -70965,13 +71012,15 @@
       "homeScore": {
         "current": 0,
         "display": 0,
-        "period1": 0,
+        "period1": 1,
+        "period2": 0,
         "point": "0"
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0,
+        "current": 1,
+        "display": 1,
+        "period1": 6,
+        "period2": 0,
         "point": "0"
       },
       "coverage": -1,
@@ -70980,17 +71029,10 @@
         "changes": [
           "status.code",
           "status.description",
-          "status.type",
-          "homeScore.current",
-          "homeScore.display",
-          "homeScore.period1",
-          "homeScore.point",
-          "awayScore.current",
-          "awayScore.display",
-          "awayScore.period1",
-          "awayScore.point"
+          "homeScore.period2",
+          "awayScore.period2"
         ],
-        "changeTimestamp": 1757652116
+        "changeTimestamp": 1757654346
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -71006,8 +71048,8 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period1",
-      "finalResultOnly": true,
+      "lastPeriod": "period2",
+      "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
       "isEditor": false
@@ -76202,7 +76244,7 @@
       "isEditor": false
     },
     {
-      "firstToServe": 2,
+      "firstToServe": 1,
       "tournament": {
         "name": "ITF M15 Maanshan 9 Men Doubles",
         "slug": "itf-m15-maanshan-9-men-doubles",
@@ -76269,8 +76311,8 @@
       },
       "customId": "ZUTisyDVi",
       "status": {
-        "code": 8,
-        "description": "1st set",
+        "code": 9,
+        "description": "2nd set",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -76454,14 +76496,16 @@
       "homeScore": {
         "current": 0,
         "display": 0,
-        "period1": 0,
-        "point": "40"
+        "period1": 3,
+        "period2": 0,
+        "point": "30"
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0,
-        "point": "15"
+        "current": 1,
+        "display": 1,
+        "period1": 6,
+        "period2": 0,
+        "point": "40"
       },
       "coverage": -1,
       "time": {},
@@ -76469,7 +76513,7 @@
         "changes": [
           "awayScore.point"
         ],
-        "changeTimestamp": 1757652084
+        "changeTimestamp": 1757654439
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -76485,7 +76529,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt indoor",
@@ -79289,7 +79333,7 @@
       "isEditor": false
     },
     {
-      "firstToServe": 2,
+      "firstToServe": 1,
       "tournament": {
         "name": "ITF M25 Bali 5 Men Doubles",
         "slug": "itf-m25-bali-5-men-doubles",
@@ -79356,10 +79400,11 @@
       },
       "customId": "euZisiDaj",
       "status": {
-        "code": 9,
-        "description": "2nd set",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Heisnam S / Singh D",
         "slug": "heisnam-s-singh-d",
@@ -79532,25 +79577,28 @@
         "current": 0,
         "display": 0,
         "period1": 6,
-        "period2": 1,
+        "period2": 4,
         "period1TieBreak": 5,
-        "point": "15"
+        "point": "0"
       },
       "awayScore": {
-        "current": 1,
-        "display": 1,
+        "current": 2,
+        "display": 2,
         "period1": 7,
-        "period2": 0,
+        "period2": 6,
         "period1TieBreak": 7,
-        "point": "15"
+        "point": "0"
       },
       "coverage": -1,
       "time": {},
       "changes": {
         "changes": [
-          "awayScore.point"
+          "status.code",
+          "status.description",
+          "status.type",
+          "firstToServe"
         ],
-        "changeTimestamp": 1757652081
+        "changeTimestamp": 1757653617
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -79566,7 +79614,6 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
@@ -83517,10 +83564,11 @@
       },
       "customId": "frpdsBpwh",
       "status": {
-        "code": 10,
-        "description": "3rd set",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Honda N / Matsuoka H",
         "slug": "honda-n-matsuoka-h",
@@ -83686,28 +83734,32 @@
         }
       },
       "homeScore": {
-        "current": 1,
-        "display": 1,
+        "current": 2,
+        "display": 2,
         "period1": 6,
         "period2": 4,
-        "period3": 0,
-        "point": "2"
+        "period3": 10,
+        "point": "0"
       },
       "awayScore": {
         "current": 1,
         "display": 1,
         "period1": 4,
         "period2": 6,
-        "period3": 0,
+        "period3": 1,
         "point": "0"
       },
       "coverage": -1,
       "time": {},
       "changes": {
         "changes": [
-          "homeScore.point"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display"
         ],
-        "changeTimestamp": 1757652111
+        "changeTimestamp": 1757653058
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -83723,7 +83775,6 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
@@ -83797,10 +83848,11 @@
       },
       "customId": "eaCbsAqEd",
       "status": {
-        "code": 10,
-        "description": "3rd set",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Imamura M / Tajima N",
         "slug": "imamura-m-tajima-n",
@@ -83988,8 +84040,8 @@
         }
       },
       "homeScore": {
-        "current": 1,
-        "display": 1,
+        "current": 2,
+        "display": 2,
         "period1": 4,
         "period2": 6,
         "period3": 10,
@@ -84007,12 +84059,11 @@
       "time": {},
       "changes": {
         "changes": [
-          "homeScore.point",
-          "awayScore.point",
-          "homeScore.period3",
-          "awayScore.period3"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1757652043
+        "changeTimestamp": 1757652263
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -84028,7 +84079,6 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
@@ -85456,22 +85506,23 @@
       "homeScore": {
         "current": 0,
         "display": 0,
-        "period1": 0,
+        "period1": 5,
         "point": "0"
       },
       "awayScore": {
         "current": 0,
         "display": 0,
-        "period1": 0,
-        "point": "40"
+        "period1": 6,
+        "point": "0"
       },
       "coverage": -1,
       "time": {},
       "changes": {
         "changes": [
+          "awayScore.period1",
           "awayScore.point"
         ],
-        "changeTimestamp": 1757652103
+        "changeTimestamp": 1757654361
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -85488,7 +85539,7 @@
         "period5": "5th set"
       },
       "lastPeriod": "period1",
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
       "isEditor": false
@@ -85561,8 +85612,8 @@
       },
       "customId": "vkeesXlaj",
       "status": {
-        "code": 8,
-        "description": "1st set",
+        "code": 9,
+        "description": "2nd set",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -85726,24 +85777,29 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0,
+        "current": 1,
+        "display": 1,
+        "period1": 6,
+        "period2": 0,
         "point": "0"
       },
       "awayScore": {
         "current": 0,
         "display": 0,
-        "period1": 0,
-        "point": "30"
+        "period1": 2,
+        "period2": 2,
+        "point": "0"
       },
       "coverage": -1,
       "time": {},
       "changes": {
         "changes": [
-          "awayScore.point"
+          "homeScore.point",
+          "awayScore.period2",
+          "awayScore.point",
+          "firstToServe"
         ],
-        "changeTimestamp": 1757652111
+        "changeTimestamp": 1757654444
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -85759,8 +85815,8 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period1",
-      "finalResultOnly": true,
+      "lastPeriod": "period2",
+      "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
       "isEditor": false
@@ -97883,6 +97939,7 @@
       "isEditor": false
     },
     {
+      "firstToServe": 1,
       "tournament": {
         "name": "ITF W15 Yeongwol 2 Women Doubles",
         "slug": "itf-w15-yeongwol-2-women-doubles",
@@ -97949,9 +98006,9 @@
       },
       "customId": "Iowhsmzaj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 8,
+        "description": "1st set",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Higashitani N / Kawagishi N",
@@ -98130,12 +98187,28 @@
           "text": "#ffffff"
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 3,
+        "point": "0"
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 5,
+        "point": "0"
+      },
       "coverage": -1,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.point",
+          "awayScore.period1",
+          "awayScore.point",
+          "firstToServe"
+        ],
+        "changeTimestamp": 1757654444
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -98151,7 +98224,8 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "finalResultOnly": true,
+      "lastPeriod": "period1",
+      "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
       "isEditor": false
@@ -99839,6 +99913,7 @@
       "isEditor": false
     },
     {
+      "firstToServe": 1,
       "tournament": {
         "name": "ITF W35 Wagga Wagga Women Doubles",
         "slug": "itf-w35-wagga-wagga-women-doubles",
@@ -99905,9 +99980,9 @@
       },
       "customId": "OIVisaoaj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 9,
+        "description": "2nd set",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Lopez P / Rokusek S",
@@ -100084,12 +100159,30 @@
           "text": "#ffffff"
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 1,
+        "period2": 0,
+        "point": "0"
+      },
+      "awayScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 6,
+        "period2": 1,
+        "point": "0"
+      },
       "coverage": -1,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.point",
+          "awayScore.period2",
+          "awayScore.point",
+          "firstToServe"
+        ],
+        "changeTimestamp": 1757654421
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -100105,7 +100198,8 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "finalResultOnly": true,
+      "lastPeriod": "period2",
+      "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
       "isEditor": false
@@ -102401,8 +102495,8 @@
       },
       "customId": "hnqisooaj",
       "status": {
-        "code": 9,
-        "description": "2nd set",
+        "code": 10,
+        "description": "3rd set",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -102576,25 +102670,25 @@
         "current": 1,
         "display": 1,
         "period1": 6,
-        "period2": 0,
-        "point": "0"
+        "period2": 3,
+        "period3": 0,
+        "point": "2"
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
+        "current": 1,
+        "display": 1,
         "period1": 3,
-        "period2": 2,
-        "point": "0"
+        "period2": 6,
+        "period3": 0,
+        "point": "5"
       },
       "coverage": -1,
       "time": {},
       "changes": {
         "changes": [
-          "homeScore.point",
-          "awayScore.period2",
           "awayScore.point"
         ],
-        "changeTimestamp": 1757652069
+        "changeTimestamp": 1757654450
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -102610,7 +102704,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period2",
+      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
@@ -115872,6 +115966,7 @@
       "isEditor": false
     },
     {
+      "firstToServe": 1,
       "tournament": {
         "name": "UTR PTT Gunma Women 01, Group A",
         "slug": "utr-ptt-gunma-women-01-group-a",
@@ -115936,9 +116031,9 @@
       },
       "customId": "UAFiszFTi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 8,
+        "description": "1st set",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Misaki Yamagishi",
@@ -115996,17 +116091,35 @@
           "text": "#ffffff"
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 3,
+        "point": "0"
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 3,
+        "point": "0"
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1757652715
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.period1",
+          "homeScore.point",
+          "awayScore.point",
+          "firstToServe"
+        ],
+        "changeTimestamp": 1757654444
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14631394,
       "slug": "misaki-yamagishi-aoi-yoshida",
-      "startTimestamp": 1757649600,
+      "startTimestamp": 1757652600,
       "periods": {
         "point": "Game",
         "current": "Match",
@@ -116016,6 +116129,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
@@ -116553,8 +116667,8 @@
       },
       "customId": "DeWisKfaj",
       "status": {
-        "code": 8,
-        "description": "1st set",
+        "code": 9,
+        "description": "2nd set",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -116616,23 +116730,30 @@
       "homeScore": {
         "current": 0,
         "display": 0,
-        "period1": 5,
-        "point": "30"
+        "period1": 6,
+        "period2": 0,
+        "period1TieBreak": 5,
+        "point": "0"
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 5,
-        "point": "30"
+        "current": 1,
+        "display": 1,
+        "period1": 7,
+        "period2": 1,
+        "period1TieBreak": 7,
+        "point": "0"
       },
       "time": {
-        "currentPeriodStartTimestamp": 1757572311
+        "currentPeriodStartTimestamp": 1757576960
       },
       "changes": {
         "changes": [
-          "homeScore.point"
+          "homeScore.point",
+          "awayScore.period2",
+          "awayScore.point",
+          "firstToServe"
         ],
-        "changeTimestamp": 1757652093
+        "changeTimestamp": 1757654401
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -116648,7 +116769,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
@@ -116792,7 +116913,7 @@
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14630916,
       "slug": "yui-ohwaki-ksenia-meshcheryakova",
-      "startTimestamp": 1757652900,
+      "startTimestamp": 1757652000,
       "periods": {
         "point": "Game",
         "current": "Match",
@@ -116951,7 +117072,7 @@
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14639405,
       "slug": "tohko-takino-michiru-furuya",
-      "startTimestamp": 1757657100,
+      "startTimestamp": 1757656200,
       "periods": {
         "point": "Game",
         "current": "Match",
@@ -117032,8 +117153,8 @@
       },
       "customId": "Liccslwie",
       "status": {
-        "code": 9,
-        "description": "2nd set",
+        "code": 10,
+        "description": "3rd set",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -117096,26 +117217,31 @@
         "current": 1,
         "display": 1,
         "period1": 7,
-        "period2": 2,
+        "period2": 5,
+        "period3": 2,
         "period1TieBreak": 8,
-        "point": "30"
+        "point": "0"
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
+        "current": 1,
+        "display": 1,
         "period1": 6,
-        "period2": 5,
+        "period2": 7,
+        "period3": 1,
         "period1TieBreak": 6,
         "point": "0"
       },
       "time": {
-        "currentPeriodStartTimestamp": 1757574726
+        "currentPeriodStartTimestamp": 1757653666
       },
       "changes": {
         "changes": [
-          "homeScore.point"
+          "homeScore.period3",
+          "homeScore.point",
+          "awayScore.point",
+          "firstToServe"
         ],
-        "changeTimestamp": 1757652102
+        "changeTimestamp": 1757654401
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -117131,7 +117257,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period2",
+      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
