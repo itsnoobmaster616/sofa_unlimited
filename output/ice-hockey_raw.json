@@ -9655,9 +9655,9 @@
       },
       "customId": "zwRbsPxVc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 60,
+        "description": "Postponed",
+        "type": "postponed"
       },
       "homeTeam": {
         "name": "Icehawks Hockey Club U20",
@@ -9736,7 +9736,12 @@
       "awayScore": {},
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type"
+        ],
+        "changeTimestamp": 1757803044
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -22032,10 +22037,11 @@
       },
       "customId": "RQXsUQX",
       "status": {
-        "code": 3,
-        "description": "3rd period",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Mississauga Steelheads",
         "slug": "mississauga-steelheads",
@@ -22121,27 +22127,34 @@
         "display": 4,
         "period1": 3,
         "period2": 1,
-        "period3": 0
+        "period3": 0,
+        "normaltime": 4
       },
       "awayScore": {
         "current": 3,
         "display": 3,
         "period1": 1,
         "period2": 1,
-        "period3": 1
+        "period3": 1,
+        "normaltime": 3
       },
       "time": {
-        "played": 3428,
+        "played": 3596,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3,
-        "currentPeriodStartTimestamp": 1757800372
+        "currentPeriodStartTimestamp": 1757802071
       },
       "changes": {
         "changes": [
-          "time.played"
+          "time.currentPeriodStart",
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1757801891
+        "changeTimestamp": 1757802075
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -22156,7 +22169,6 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
