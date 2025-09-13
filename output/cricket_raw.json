@@ -1426,9 +1426,9 @@
       },
       "customId": "wgAbsGgAb",
       "status": {
-        "code": 61,
-        "description": "Start delayed",
-        "type": "delayed"
+        "code": 21,
+        "description": "1st Inning",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Northamptonshire",
@@ -1504,17 +1504,38 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 1,
+        "display": 1,
+        "innings": {
+          "inning1": {
+            "score": 1,
+            "wickets": 0,
+            "overs": 0.1,
+            "runRate": 6
+          }
+        }
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
       "coverage": 2,
       "time": {},
       "changes": {
         "changes": [
+          "status",
           "status.code",
           "status.description",
-          "status.type"
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.innings",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.innings"
         ],
-        "changeTimestamp": 1757768596
+        "changeTimestamp": 1757773042
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -1529,6 +1550,7 @@
         "inning3": "3rd Inning",
         "inning4": "4th Inning"
       },
+      "lastPeriod": "inning1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -1610,9 +1632,9 @@
       },
       "customId": "LwHisNwHi",
       "status": {
-        "code": 45,
-        "description": "Inn break",
-        "type": "inprogress"
+        "code": 80,
+        "description": "Interrupted",
+        "type": "interrupted"
       },
       "homeTeam": {
         "name": "Durham Women",
@@ -1699,14 +1721,14 @@
       "changes": {
         "changes": [
           "status.code",
-          "status.description"
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1757769022
+        "changeTimestamp": 1757770811
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 13628255,
-      "currentBattingTeamId": 1081088,
       "endTimestamp": 1757784600,
       "slug": "surrey-women-durham-women",
       "startTimestamp": 1757755800,
@@ -1798,9 +1820,9 @@
       },
       "customId": "MwHisPwHi",
       "status": {
-        "code": 21,
-        "description": "1st Inning",
-        "type": "inprogress"
+        "code": 80,
+        "description": "Interrupted",
+        "type": "interrupted"
       },
       "homeTeam": {
         "name": "Essex Women",
@@ -1879,14 +1901,14 @@
         }
       },
       "awayScore": {
-        "current": 38,
-        "display": 38,
+        "current": 59,
+        "display": 59,
         "innings": {
           "inning1": {
-            "score": 38,
+            "score": 59,
             "wickets": 0,
-            "overs": 8,
-            "runRate": 4.75,
+            "overs": 11.2,
+            "runRate": 5.21,
             "targetRunRate": 4.24
           }
         }
@@ -1895,11 +1917,14 @@
       "time": {},
       "changes": {
         "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
           "awayScore.current",
           "awayScore.display",
           "awayScore.innings"
         ],
-        "changeTimestamp": 1757770520
+        "changeTimestamp": 1757772074
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -1915,7 +1940,6 @@
         "inning3": "3rd Inning",
         "inning4": "4th Inning"
       },
-      "lastPeriod": "inning1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -2251,14 +2275,14 @@
         }
       },
       "homeScore": {
-        "current": 96,
-        "display": 96,
+        "current": 172,
+        "display": 172,
         "innings": {
           "inning1": {
-            "score": 96,
-            "wickets": 3,
-            "overs": 16,
-            "runRate": 6,
+            "score": 172,
+            "wickets": 5,
+            "overs": 25.4,
+            "runRate": 6.7,
             "targetRunRate": 3.52
           }
         }
@@ -2283,7 +2307,7 @@
           "homeScore.display",
           "homeScore.innings"
         ],
-        "changeTimestamp": 1757770690
+        "changeTimestamp": 1757772971
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -5515,10 +5539,11 @@
       },
       "customId": "tQqdsywVd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Austria Women",
         "slug": "austria-women",
@@ -5588,16 +5613,45 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 151,
+        "display": 151,
+        "innings": {
+          "inning1": {
+            "score": 151,
+            "wickets": 1,
+            "overs": 20,
+            "runRate": 7.55
+          }
+        }
+      },
+      "awayScore": {
+        "current": 86,
+        "display": 86,
+        "innings": {
+          "inning1": {
+            "score": 86,
+            "wickets": 8,
+            "overs": 18,
+            "runRate": 4.78,
+            "targetRunRate": 7.83
+          }
+        }
+      },
       "coverage": 3,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type"
+        ],
+        "changeTimestamp": 1757772249
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14548423,
+      "note": "Austria Women beat Luxembourg Women by 54 runs (DLS method)",
       "endTimestamp": 1757766600,
       "slug": "luxembourg-women-austria-women",
       "startTimestamp": 1757752200,
@@ -5608,7 +5662,7 @@
         "inning3": "3rd Inning",
         "inning4": "4th Inning"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
