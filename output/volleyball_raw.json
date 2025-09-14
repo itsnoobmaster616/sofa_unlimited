@@ -1156,9 +1156,9 @@
       },
       "customId": "vLcsGLc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 30,
+        "description": "Pause",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "France",
@@ -1236,13 +1236,32 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 25
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 12
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1757845112
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.currentPeriodStart",
+          "status.code",
+          "status.description",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1"
+        ],
+        "changeTimestamp": 1757845116
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 13226620,
       "slug": "south-korea-france",
@@ -2903,8 +2922,8 @@
       },
       "customId": "tLcsFLc",
       "status": {
-        "code": 8,
-        "description": "1st set",
+        "code": 9,
+        "description": "2nd set",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -2986,21 +3005,23 @@
       "homeScore": {
         "current": 0,
         "display": 0,
-        "period1": 9
+        "period1": 22,
+        "period2": 14
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 10
+        "current": 1,
+        "display": 1,
+        "period1": 25,
+        "period2": 17
       },
       "time": {
-        "currentPeriodStartTimestamp": 1757842250
+        "currentPeriodStartTimestamp": 1757844264
       },
       "changes": {
         "changes": [
-          "homeScore.period1"
+          "homeScore.period2"
         ],
-        "changeTimestamp": 1757842757
+        "changeTimestamp": 1757845218
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -3019,7 +3040,7 @@
         "period7": "7th set",
         "overtime": "Overtime"
       },
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -7633,7 +7654,7 @@
         "period7": "7th set",
         "overtime": "Overtime"
       },
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
