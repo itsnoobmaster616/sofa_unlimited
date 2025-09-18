@@ -574,8 +574,8 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
+        "current": 1,
+        "display": 1,
         "period1": 0,
         "normaltime": 0
       },
@@ -594,10 +594,10 @@
       },
       "changes": {
         "changes": [
-          "awayScore.period1",
-          "awayScore.normaltime"
+          "homeScore.current",
+          "homeScore.display"
         ],
-        "changeTimestamp": 1758222717
+        "changeTimestamp": 1758224255
       },
       "hasGlobalHighlights": false,
       "hasXg": true,
@@ -804,12 +804,9 @@
       },
       "changes": {
         "changes": [
-          "homeScore.period1",
-          "homeScore.normaltime",
-          "awayScore.period1",
-          "awayScore.normaltime"
+          "cardsCode"
         ],
-        "changeTimestamp": 1758222264
+        "changeTimestamp": 1758223250
       },
       "hasGlobalHighlights": false,
       "hasXg": true,
@@ -818,6 +815,7 @@
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14566664,
+      "awayRedCards": 1,
       "varInProgress": {
         "homeTeam": false,
         "awayTeam": false
@@ -8030,10 +8028,11 @@
       },
       "customId": "OMsEhG",
       "status": {
-        "code": 41,
-        "description": "1st extra",
-        "type": "inprogress"
+        "code": 110,
+        "description": "AET",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "aggregatedWinnerCode": 1,
       "homeTeam": {
         "name": "Club Atlético de Madrid",
@@ -8115,6 +8114,7 @@
         "period1": 0,
         "period2": 1,
         "normaltime": 1,
+        "overtime": 1,
         "aggregated": 3
       },
       "awayScore": {
@@ -8123,21 +8123,25 @@
         "period1": 1,
         "period2": 0,
         "normaltime": 1,
+        "overtime": 0,
         "aggregated": 2
       },
       "time": {
         "injuryTime1": 3,
         "injuryTime2": 7,
-        "initial": 5400,
-        "max": 6300,
-        "extra": 540,
-        "currentPeriodStartTimestamp": 1758222235
+        "injuryTime3": 1,
+        "currentPeriodStartTimestamp": 1758224335
       },
       "changes": {
         "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.overtime",
+          "awayScore.overtime",
           "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1758222569
+        "changeTimestamp": 1758224340
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -8146,17 +8150,9 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "ET-",
-        "initial": 5400,
-        "max": 6300,
-        "timestamp": 1758222235,
-        "extra": 540
-      },
       "slug": "club-atletico-de-madrid-bk-hacken-ff",
       "previousLegEventId": 14585175,
       "startTimestamp": 1758214800,
-      "lastPeriod": "extra1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -8456,10 +8452,11 @@
       },
       "customId": "lYQbsoZfc",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "aggregatedWinnerCode": 1,
       "homeTeam": {
         "name": "Austria Wien",
@@ -8546,23 +8543,22 @@
         "current": 2,
         "display": 2,
         "period1": 0,
-        "period2": 0,
-        "normaltime": 0,
+        "period2": 2,
+        "normaltime": 2,
         "aggregated": 2
       },
       "time": {
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
         "currentPeriodStartTimestamp": 1758221210
       },
       "changes": {
         "changes": [
-          "awayScore.current",
-          "awayScore.display",
-          "awayScore.aggregated"
+          "status.code",
+          "status.description",
+          "status.type",
+          "awayScore.period2",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1758222855
+        "changeTimestamp": 1758224138
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -8571,17 +8567,9 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1758221210,
-        "extra": 540
-      },
       "slug": "paris-fc-austria-wien",
       "previousLegEventId": 14585179,
       "startTimestamp": 1758217500,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -8766,13 +8754,13 @@
         "initial": 2700,
         "max": 5400,
         "extra": 540,
-        "currentPeriodStartTimestamp": 1758221993
+        "currentPeriodStartTimestamp": 1758221994
       },
       "changes": {
         "changes": [
           "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1758223131
+        "changeTimestamp": 1758224309
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -8785,7 +8773,7 @@
         "prefix": "",
         "initial": 2700,
         "max": 5400,
-        "timestamp": 1758221993,
+        "timestamp": 1758221994,
         "extra": 540
       },
       "slug": "manchester-united-sk-brann-kvinner",
@@ -8977,7 +8965,7 @@
         "changes": [
           "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1758223068
+        "changeTimestamp": 1758224185
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -9169,7 +9157,7 @@
         "current": 3,
         "display": 3,
         "period1": 2,
-        "aggregated": 4
+        "aggregated": 5
       },
       "awayScore": {
         "current": 0,
@@ -9182,14 +9170,13 @@
         "initial": 2700,
         "max": 5400,
         "extra": 540,
-        "currentPeriodStartTimestamp": 1758222250
+        "currentPeriodStartTimestamp": 1758222251
       },
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display"
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1758223137
+        "changeTimestamp": 1758224247
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -9202,7 +9189,7 @@
         "prefix": "",
         "initial": 2700,
         "max": 5400,
-        "timestamp": 1758222250,
+        "timestamp": 1758222251,
         "extra": 540
       },
       "slug": "real-madrid-eintracht-frankfurt",
@@ -18087,10 +18074,10 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0,
-        "normaltime": 0
+        "current": 2,
+        "display": 2,
+        "period1": 1,
+        "normaltime": 1
       },
       "awayScore": {
         "current": 0,
@@ -18106,12 +18093,10 @@
       },
       "changes": {
         "changes": [
-          "homeScore.period1",
-          "homeScore.normaltime",
-          "awayScore.period1",
-          "awayScore.normaltime"
+          "homeScore.current",
+          "homeScore.display"
         ],
-        "changeTimestamp": 1758222095
+        "changeTimestamp": 1758224177
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -23004,6 +22989,7 @@
         "changeTimestamp": 0
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerHeatMap": true,
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14558499,
