@@ -1147,10 +1147,11 @@
       },
       "customId": "myWcsAFKd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 1001,
+        "description": "First game",
+        "type": "inprogress"
       },
+      "winnerCode": 3,
       "homeTeam": {
         "name": "RED Canids",
         "slug": "red-canids",
@@ -1217,12 +1218,30 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
       "coverage": 91,
-      "time": {},
+      "time": {
+        "currentPeriodStartTimestamp": 1758316112
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "awayScore.current",
+          "awayScore.display",
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1758316147
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
@@ -7908,11 +7927,11 @@
       },
       "customId": "WFjdsgbde",
       "status": {
-        "code": 1001,
-        "description": "First game",
+        "code": 1002,
+        "description": "Second game",
         "type": "inprogress"
       },
-      "winnerCode": 3,
+      "winnerCode": 2,
       "homeTeam": {
         "name": "ODDIK Academy",
         "slug": "oddik-academy",
@@ -7979,28 +7998,25 @@
       },
       "homeScore": {
         "current": 0,
-        "display": 0
+        "display": 0,
+        "period1": 0
       },
       "awayScore": {
-        "current": 0,
-        "display": 0
+        "current": 1,
+        "display": 1,
+        "period1": 1
       },
       "coverage": 90,
       "time": {
-        "currentPeriodStartTimestamp": 1758312837
+        "currentPeriodStartTimestamp": 1758316389
       },
       "changes": {
         "changes": [
-          "homeScore.display",
-          "awayScore.display",
           "status.code",
           "status.description",
-          "status.type",
-          "homeScore.current",
-          "awayScore.current",
           "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1758312848
+        "changeTimestamp": 1758316448
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
@@ -9297,9 +9313,9 @@
       },
       "customId": "COVcsqVnd",
       "status": {
-        "code": 1002,
-        "description": "Second game",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
       "winnerCode": 1,
       "homeTeam": {
@@ -9371,10 +9387,10 @@
         }
       },
       "homeScore": {
-        "current": 1,
-        "display": 1,
+        "current": 2,
+        "display": 2,
         "period1": 13,
-        "period2": 9
+        "period2": 13
       },
       "awayScore": {
         "current": 0,
@@ -9383,14 +9399,17 @@
         "period2": 6
       },
       "coverage": 92,
-      "time": {
-        "currentPeriodStartTimestamp": 1758312104
-      },
+      "time": {},
       "changes": {
         "changes": [
-          "awayScore.period2"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1758314270
+        "changeTimestamp": 1758314826
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
@@ -9556,6 +9575,165 @@
       "roundsInAHalf": 12,
       "slug": "themongolz-liquid",
       "startTimestamp": 1758369600,
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "isEditor": false
+    },
+    {
+      "tournament": {
+        "name": "FISSURE PLAYGROUND Playoffs",
+        "slug": "fissure-playground-playoffs",
+        "category": {
+          "id": 1572,
+          "country": {},
+          "name": "Counter Strike",
+          "slug": "csgo",
+          "sport": {
+            "name": "E-sports",
+            "slug": "esports",
+            "id": 72
+          },
+          "flag": "counter-strike",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "كاونتر سترايك",
+              "hi": "काउंटर स्ट्राइक",
+              "bn": "কাউন্টার স্ট্রাইক"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "FISSURE PLAYGROUND",
+          "slug": "fissure-playground",
+          "category": {
+            "id": 1572,
+            "country": {},
+            "name": "Counter Strike",
+            "slug": "csgo",
+            "sport": {
+              "name": "E-sports",
+              "slug": "esports",
+              "id": 72
+            },
+            "flag": "counter-strike",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "كاونتر سترايك",
+                "hi": "काउंटर स्ट्राइक",
+                "bn": "কাউন্টার স্ট্রাইক"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 281,
+          "hasPerformanceGraphFeature": false,
+          "id": 27581,
+          "country": {},
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false
+        },
+        "priority": 0,
+        "id": 157134
+      },
+      "season": {
+        "name": "Season 2 2025",
+        "year": "2025",
+        "editor": false,
+        "id": 82201
+      },
+      "customId": "cKVcsqVnd",
+      "status": {
+        "code": 0,
+        "description": "Not started",
+        "type": "notstarted"
+      },
+      "homeTeam": {
+        "name": "FURIA",
+        "slug": "furia",
+        "shortName": "FURIA",
+        "gender": "M",
+        "sport": {
+          "name": "E-sports",
+          "slug": "esports",
+          "id": 72
+        },
+        "userCount": 8647,
+        "nameCode": "FUR",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "id": 364252,
+        "country": {
+          "alpha2": "BR",
+          "alpha3": "BRA",
+          "name": "Brazil",
+          "slug": "brazil"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "فيوريا",
+            "hi": "फुरिया",
+            "bn": "ফুরিয়া"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "awayTeam": {
+        "name": "Team Falcons",
+        "slug": "team-falcons",
+        "sport": {
+          "name": "E-sports",
+          "slug": "esports",
+          "id": 72
+        },
+        "userCount": 2883,
+        "nameCode": "TFA",
+        "national": false,
+        "type": 0,
+        "id": 409766,
+        "country": {
+          "alpha2": "SA",
+          "alpha3": "SAU",
+          "name": "Saudi Arabia",
+          "slug": "saudi-arabia"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "فالكونز للرياضات الإلكترونية",
+            "hi": "फाल्कन्स ईस्पोर्ट्स",
+            "bn": "ফেকলনস ইস্পোর্টস"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "homeScore": {},
+      "awayScore": {},
+      "coverage": 92,
+      "time": {},
+      "changes": {
+        "changeTimestamp": 0
+      },
+      "hasGlobalHighlights": true,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 14725187,
+      "bestOf": 3,
+      "eventType": "best_of",
+      "roundsInAHalf": 12,
+      "slug": "team-falcons-furia",
+      "startTimestamp": 1758384000,
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -11904,11 +12082,11 @@
       },
       "customId": "BhxisatHi",
       "status": {
-        "code": 1001,
-        "description": "First game",
+        "code": 1002,
+        "description": "Second game",
         "type": "inprogress"
       },
-      "winnerCode": 3,
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Team ALLSTARS",
         "slug": "team-allstars",
@@ -11974,29 +12152,26 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0
+        "current": 1,
+        "display": 1,
+        "period1": 1
       },
       "awayScore": {
         "current": 0,
-        "display": 0
+        "display": 0,
+        "period1": 0
       },
       "coverage": 91,
       "time": {
-        "currentPeriodStartTimestamp": 1758312750
+        "currentPeriodStartTimestamp": 1758316446
       },
       "changes": {
         "changes": [
-          "homeScore.display",
-          "awayScore.display",
           "status.code",
           "status.description",
-          "status.type",
-          "homeScore.current",
-          "awayScore.current",
           "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1758312790
+        "changeTimestamp": 1758316519
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
@@ -12074,11 +12249,11 @@
       },
       "customId": "iBKdsBEbj",
       "status": {
-        "code": 1001,
-        "description": "First game",
+        "code": 1002,
+        "description": "Second game",
         "type": "inprogress"
       },
-      "winnerCode": 3,
+      "winnerCode": 2,
       "homeTeam": {
         "name": "x5 Gaming",
         "slug": "x5-gaming",
@@ -12134,28 +12309,25 @@
       },
       "homeScore": {
         "current": 0,
-        "display": 0
+        "display": 0,
+        "period1": 0
       },
       "awayScore": {
-        "current": 0,
-        "display": 0
+        "current": 1,
+        "display": 1,
+        "period1": 1
       },
       "coverage": 91,
       "time": {
-        "currentPeriodStartTimestamp": 1758312791
+        "currentPeriodStartTimestamp": 1758316743
       },
       "changes": {
         "changes": [
-          "homeScore.display",
-          "awayScore.display",
           "status.code",
           "status.description",
-          "status.type",
-          "homeScore.current",
-          "awayScore.current",
           "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1758312849
+        "changeTimestamp": 1758316749
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
