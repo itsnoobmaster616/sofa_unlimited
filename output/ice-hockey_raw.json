@@ -8600,10 +8600,11 @@
       },
       "customId": "Hybsxjme",
       "status": {
-        "code": 3,
-        "description": "3rd period",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Colorado Avalanche",
         "slug": "colorado-avalanche",
@@ -8687,26 +8688,37 @@
         "display": 3,
         "period1": 1,
         "period2": 1,
-        "period3": 1
+        "period3": 1,
+        "normaltime": 3
       },
       "awayScore": {
         "current": 2,
         "display": 2,
         "period1": 0,
         "period2": 1,
-        "period3": 1
+        "period3": 1,
+        "normaltime": 2
       },
       "time": {
+        "played": 3600,
+        "periodLength": 1200,
+        "overtimeLength": 300,
+        "totalPeriodCount": 3,
         "currentPeriodStartTimestamp": 1758514295
       },
       "changes": {
         "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime",
           "time.played",
           "time.periodLength",
           "time.overtimeLength",
           "time.totalPeriodCount"
         ],
-        "changeTimestamp": 1758516247
+        "changeTimestamp": 1758517220
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -8722,7 +8734,6 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
