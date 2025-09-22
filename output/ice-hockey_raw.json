@@ -1476,8 +1476,8 @@
       },
       "customId": "ODbsTDb",
       "status": {
-        "code": 2,
-        "description": "2nd period",
+        "code": 3,
+        "description": "3rd period",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -1559,29 +1559,31 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
+        "current": 2,
+        "display": 2,
         "period1": 0,
-        "period2": 0
+        "period2": 1,
+        "period3": 1
       },
       "awayScore": {
         "current": 3,
         "display": 3,
         "period1": 3,
-        "period2": 0
+        "period2": 0,
+        "period3": 0
       },
       "time": {
-        "played": 1591,
+        "played": 2977,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3,
-        "currentPeriodStartTimestamp": 1758547214
+        "currentPeriodStartTimestamp": 1758550043
       },
       "changes": {
         "changes": [
           "time.played"
         ],
-        "changeTimestamp": 1758547862
+        "changeTimestamp": 1758551045
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -1597,7 +1599,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "lastPeriod": "period2",
+      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -8067,20 +8069,23 @@
         "normaltime": 3
       },
       "time": {
+        "played": 3600,
+        "periodLength": 1200,
+        "overtimeLength": 300,
+        "totalPeriodCount": 3,
         "currentPeriodStartTimestamp": 1758508761
       },
       "changes": {
         "changes": [
-          "status.code",
-          "status.description",
-          "status.type",
-          "homeScore.normaltime",
-          "awayScore.normaltime",
-          "time.currentPeriodStart"
+          "time.played",
+          "time.periodLength",
+          "time.overtimeLength",
+          "time.totalPeriodCount"
         ],
-        "changeTimestamp": 1758508763
+        "changeTimestamp": 1758548750
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14147153,
       "slug": "edmonton-oilers-calgary-flames",
@@ -8190,8 +8195,8 @@
       },
       "customId": "EybsLyb",
       "status": {
-        "code": 100,
-        "description": "Ended",
+        "code": 110,
+        "description": "AET",
         "type": "finished"
       },
       "winnerCode": 2,
@@ -8276,19 +8281,22 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
+        "current": 2,
+        "display": 2,
         "period1": 0,
-        "period2": 0,
-        "normaltime": 0
+        "period2": 2,
+        "period3": 0,
+        "normaltime": 2,
+        "overtime": 0
       },
       "awayScore": {
         "current": 3,
         "display": 3,
-        "period1": 1,
-        "period2": 0,
-        "period3": 2,
-        "normaltime": 3
+        "period1": 0,
+        "period2": 2,
+        "period3": 0,
+        "normaltime": 2,
+        "overtime": 1
       },
       "time": {
         "played": 4800,
@@ -8302,9 +8310,18 @@
           "status.code",
           "status.description",
           "homeScore.current",
-          "homeScore.display"
+          "homeScore.display",
+          "homeScore.period2",
+          "homeScore.period3",
+          "homeScore.normaltime",
+          "homeScore.overtime",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.period3",
+          "awayScore.normaltime",
+          "awayScore.overtime"
         ],
-        "changeTimestamp": 1758513558
+        "changeTimestamp": 1758549440
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -22809,7 +22826,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -22988,7 +23005,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -26169,7 +26186,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -28807,10 +28824,11 @@
       },
       "customId": "dVhcskWic",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Biryusa Krasnoyarsk",
         "slug": "biryusa-krasnoyarsk",
@@ -28881,11 +28899,42 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 7,
+        "display": 7,
+        "period1": 2,
+        "period2": 1,
+        "period3": 4,
+        "normaltime": 7
+      },
+      "awayScore": {
+        "current": 4,
+        "display": 4,
+        "period1": 1,
+        "period2": 2,
+        "period3": 1,
+        "normaltime": 4
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.period3",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.period3",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1758550059
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -28900,7 +28949,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
