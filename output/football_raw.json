@@ -3712,6 +3712,7 @@
         },
         "userCount": 10496,
         "nameCode": "LIC",
+        "disabled": false,
         "national": false,
         "type": 0,
         "id": 92,
@@ -6991,6 +6992,7 @@
         },
         "userCount": 4462,
         "nameCode": "JED",
+        "disabled": false,
         "national": false,
         "type": 0,
         "id": 265323,
@@ -18387,8 +18389,8 @@
       },
       "customId": "LmbsDcc",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -18469,28 +18471,32 @@
         "current": 0,
         "display": 0,
         "period1": 0,
+        "period2": 0,
         "normaltime": 0
       },
       "awayScore": {
         "current": 0,
         "display": 0,
         "period1": 0,
+        "period2": 0,
         "normaltime": 0
       },
       "time": {
-        "initial": 0,
-        "max": 2700,
+        "injuryTime1": 1,
+        "initial": 2700,
+        "max": 5400,
         "extra": 540,
-        "currentPeriodStartTimestamp": 1758603796
+        "currentPeriodStartTimestamp": 1758607498
       },
       "changes": {
         "changes": [
-          "homeScore.period1",
-          "homeScore.normaltime",
-          "awayScore.period1",
-          "awayScore.normaltime"
+          "homeScore.period2",
+          "awayScore.period2",
+          "status.code",
+          "status.description",
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1758603862
+        "changeTimestamp": 1758607503
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -18504,14 +18510,14 @@
       },
       "statusTime": {
         "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1758603796,
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1758607498,
         "extra": 540
       },
       "slug": "albirex-niigata-nagoya-grampus",
       "startTimestamp": 1758603600,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -25704,26 +25710,27 @@
         "current": 4,
         "display": 4,
         "period1": 1,
-        "normaltime": 0
+        "period2": 3,
+        "normaltime": 4
       },
       "awayScore": {
         "current": 0,
         "display": 0,
         "period1": 0,
+        "period2": 0,
         "normaltime": 0
       },
       "time": {
-        "injuryTime2": 3,
         "currentPeriodStartTimestamp": 1758577761
       },
       "changes": {
         "changes": [
-          "status.code",
-          "status.description",
-          "status.type",
-          "time.currentPeriodStart"
+          "homeScore.period2",
+          "homeScore.normaltime",
+          "awayScore.period2",
+          "time.injuryTime2"
         ],
-        "changeTimestamp": 1758577763
+        "changeTimestamp": 1758606970
       },
       "hasGlobalHighlights": true,
       "detailId": 6,
@@ -41503,7 +41510,7 @@
         ],
         "changeTimestamp": 1758567266
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasXg": true,
       "hasEventPlayerStatistics": true,
       "hasEventPlayerHeatMap": true,
