@@ -1034,8 +1034,8 @@
       },
       "customId": "WDbsOvU",
       "status": {
-        "code": 2,
-        "description": "2nd period",
+        "code": 3,
+        "description": "3rd period",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -1121,26 +1121,33 @@
         "current": 2,
         "display": 2,
         "period1": 1,
-        "period2": 1
+        "period2": 1,
+        "period3": 0
       },
       "awayScore": {
         "current": 3,
         "display": 3,
         "period1": 2,
-        "period2": 1
+        "period2": 1,
+        "period3": 0
       },
       "time": {
-        "played": 1818,
+        "played": 2401,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3,
-        "currentPeriodStartTimestamp": 1758623083
+        "currentPeriodStartTimestamp": 1758626277
       },
       "changes": {
         "changes": [
-          "time.played"
+          "time.played",
+          "status.code",
+          "status.description",
+          "homeScore.period3",
+          "awayScore.period3",
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1758624242
+        "changeTimestamp": 1758626282
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -1156,7 +1163,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "lastPeriod": "period2",
+      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -11261,10 +11268,11 @@
       },
       "customId": "AUGsdVG",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Amurskie Tigry U20",
         "slug": "amurskie-tigry-u20",
@@ -11340,11 +11348,42 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "period2": 0,
+        "period3": 0,
+        "normaltime": 0
+      },
+      "awayScore": {
+        "current": 4,
+        "display": 4,
+        "period1": 0,
+        "period2": 2,
+        "period3": 2,
+        "normaltime": 4
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.period3",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.period3",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1758625851
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -11359,7 +11398,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
