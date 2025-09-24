@@ -558,8 +558,8 @@
       },
       "customId": "ODbsUDb",
       "status": {
-        "code": 2,
-        "description": "2nd period",
+        "code": 3,
+        "description": "3rd period",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -641,29 +641,31 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
+        "current": 2,
+        "display": 2,
         "period1": 0,
-        "period2": 0
+        "period2": 0,
+        "period3": 2
       },
       "awayScore": {
-        "current": 1,
-        "display": 1,
+        "current": 2,
+        "display": 2,
         "period1": 1,
-        "period2": 0
+        "period2": 1,
+        "period3": 0
       },
       "time": {
-        "played": 1755,
+        "played": 2678,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3,
-        "currentPeriodStartTimestamp": 1758719899
+        "currentPeriodStartTimestamp": 1758722824
       },
       "changes": {
         "changes": [
           "time.played"
         ],
-        "changeTimestamp": 1758720722
+        "changeTimestamp": 1758723602
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -679,7 +681,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "lastPeriod": "period2",
+      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -9283,7 +9285,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -9977,7 +9979,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -10146,7 +10148,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -10319,7 +10321,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -21537,7 +21539,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -23738,7 +23740,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -24428,10 +24430,11 @@
       },
       "customId": "eVhcsPohd",
       "status": {
-        "code": 3,
-        "description": "3rd period",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Beliye Medveditsy Chelyabinsk",
         "slug": "beliye-medveditsy-chelyabinsk",
@@ -24507,26 +24510,32 @@
         "display": 4,
         "period1": 0,
         "period2": 4,
-        "period3": 0
+        "period3": 0,
+        "normaltime": 4
       },
       "awayScore": {
         "current": 2,
         "display": 2,
         "period1": 1,
         "period2": 1,
-        "period3": 0
+        "period3": 0,
+        "normaltime": 2
       },
       "time": {
-        "played": 2473,
+        "played": 3600,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3
       },
       "changes": {
         "changes": [
-          "time.played"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1758720722
+        "changeTimestamp": 1758722537
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -24541,7 +24550,6 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
