@@ -4696,10 +4696,11 @@
       },
       "customId": "ipHgsoWXi",
       "status": {
-        "code": 80,
-        "description": "Interrupted",
-        "type": "interrupted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Our Team",
         "slug": "our-team",
@@ -4792,11 +4793,9 @@
         "changes": [
           "status.code",
           "status.description",
-          "status.type",
-          "homeScore.normaltime",
-          "awayScore.normaltime"
+          "status.type"
         ],
-        "changeTimestamp": 1758687241
+        "changeTimestamp": 1758693631
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -15318,9 +15317,9 @@
       },
       "customId": "XWZisZWZi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 14,
+        "description": "2nd quarter",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "South Korea U16",
@@ -15378,13 +15377,35 @@
           "text": "#ffffff"
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 26,
+        "display": 26,
+        "period1": 15,
+        "period2": 11
+      },
+      "awayScore": {
+        "current": 30,
+        "display": 30,
+        "period1": 17,
+        "period2": 13
+      },
+      "time": {
+        "played": 887,
+        "periodLength": 600,
+        "overtimeLength": 300,
+        "totalPeriodCount": 4
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.current",
+          "homeScore.display",
+          "time.played",
+          "homeScore.period2"
+        ],
+        "changeTimestamp": 1758695599
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14623650,
       "periods": {
@@ -15397,6 +15418,7 @@
       },
       "slug": "philippines-u16-south-korea-u16",
       "startTimestamp": 1758693600,
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
