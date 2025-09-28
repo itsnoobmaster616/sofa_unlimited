@@ -969,9 +969,9 @@
       },
       "customId": "FiksoJTb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 13,
+        "description": "1st quarter",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Petkim Spor",
@@ -1048,13 +1048,30 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 24,
+        "display": 24,
+        "period1": 24
+      },
+      "awayScore": {
+        "current": 15,
+        "display": 15,
+        "period1": 15
+      },
+      "time": {
+        "periodLength": 600,
+        "overtimeLength": 300,
+        "totalPeriodCount": 4,
+        "currentPeriodStartTimestamp": 1759053690
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.played"
+        ],
+        "changeTimestamp": 1759054747
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14500631,
       "periods": {
@@ -1067,6 +1084,7 @@
       },
       "slug": "petkim-spor-karsiyaka",
       "startTimestamp": 1759053600,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -23283,10 +23301,11 @@
       },
       "customId": "JUYsRqZ",
       "status": {
-        "code": 15,
-        "description": "3rd quarter",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "SBŠ Ostrava",
         "slug": "sbs-ostrava",
@@ -23360,30 +23379,38 @@
         }
       },
       "homeScore": {
-        "current": 48,
-        "display": 48,
+        "current": 78,
+        "display": 78,
         "period1": 18,
         "period2": 17,
-        "period3": 13
+        "period3": 21,
+        "period4": 22,
+        "normaltime": 78
       },
       "awayScore": {
-        "current": 46,
-        "display": 46,
+        "current": 71,
+        "display": 71,
         "period1": 16,
         "period2": 23,
-        "period3": 7
+        "period3": 13,
+        "period4": 19,
+        "normaltime": 71
       },
       "time": {
-        "played": 1616,
+        "played": 2400,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
       },
       "changes": {
         "changes": [
-          "time.played"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1759052334
+        "changeTimestamp": 1759054735
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -23399,7 +23426,6 @@
       },
       "slug": "sbs-ostrava-dsk-basketball",
       "startTimestamp": 1759048200,
-      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -49496,8 +49522,8 @@
       },
       "customId": "QYjcsbbLc",
       "status": {
-        "code": 14,
-        "description": "2nd quarter",
+        "code": 15,
+        "description": "3rd quarter",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -49571,19 +49597,21 @@
         }
       },
       "homeScore": {
-        "current": 30,
-        "display": 30,
+        "current": 57,
+        "display": 57,
         "period1": 21,
-        "period2": 9
+        "period2": 15,
+        "period3": 21
       },
       "awayScore": {
-        "current": 53,
-        "display": 53,
+        "current": 90,
+        "display": 90,
         "period1": 34,
-        "period2": 19
+        "period2": 28,
+        "period3": 28
       },
       "time": {
-        "played": 1009,
+        "played": 1759,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
@@ -49592,7 +49620,7 @@
         "changes": [
           "time.played"
         ],
-        "changeTimestamp": 1759052342
+        "changeTimestamp": 1759054863
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -49608,7 +49636,7 @@
       },
       "slug": "bc-orbi-kavkasia",
       "startTimestamp": 1759050000,
-      "lastPeriod": "period2",
+      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -62605,6 +62633,554 @@
     },
     {
       "tournament": {
+        "name": "Club Friendlies",
+        "slug": "club-friendlies",
+        "category": {
+          "id": 103,
+          "country": {},
+          "name": "International",
+          "slug": "international",
+          "sport": {
+            "name": "Basketball",
+            "slug": "basketball",
+            "id": 2
+          },
+          "flag": "international",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "دولي",
+              "hi": "अंतर्राष्ट्रीय",
+              "bn": "আন্তর্জাতিক"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "Club Friendly Games",
+          "slug": "club-friendly-games",
+          "category": {
+            "id": 103,
+            "country": {},
+            "name": "International",
+            "slug": "international",
+            "sport": {
+              "name": "Basketball",
+              "slug": "basketball",
+              "id": 2
+            },
+            "flag": "international",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "دولي",
+                "hi": "अंतर्राष्ट्रीय",
+                "bn": "আন্তর্জাতিক"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 673,
+          "id": 1195,
+          "country": {},
+          "hasPerformanceGraphFeature": false,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "مباريات ودية للأندية",
+              "hi": "क्लब फ्रेंडली गेम्स",
+              "bn": "ক্লাব ফ্রেন্ডলি গেমস"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "id": 4788,
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "مباريات ودية للأندية",
+            "hi": "क्लब फ्रेंडलीज",
+            "bn": "ক্লাব ফ্রেন্ডলিনেস"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "season": {
+        "name": "Club Friendly Games 2025",
+        "year": "2025",
+        "editor": false,
+        "id": 69515
+      },
+      "customId": "fxjcsiGHg",
+      "status": {
+        "code": 0,
+        "description": "Not started",
+        "type": "notstarted"
+      },
+      "homeTeam": {
+        "name": "OS Belenenses",
+        "slug": "os-belenenses",
+        "shortName": "OS Belenenses",
+        "gender": "M",
+        "sport": {
+          "name": "Basketball",
+          "slug": "basketball",
+          "id": 2
+        },
+        "userCount": 82,
+        "nameCode": "BEL",
+        "national": false,
+        "type": 0,
+        "id": 273605,
+        "country": {
+          "alpha2": "PT",
+          "alpha3": "PRT",
+          "name": "Portugal",
+          "slug": "portugal"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "أو أس بيلينينسيس",
+            "hi": "ओएस बेलेनेन्सेस",
+            "bn": "ওএস বেলেনেন্সেস"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "awayTeam": {
+        "name": "Estoril Basket Clube",
+        "slug": "estoril-basket-clube",
+        "shortName": "Estoril",
+        "gender": "M",
+        "sport": {
+          "name": "Basketball",
+          "slug": "basketball",
+          "id": 2
+        },
+        "userCount": 10,
+        "nameCode": "EBC",
+        "national": false,
+        "type": 0,
+        "id": 831558,
+        "country": {
+          "alpha2": "PT",
+          "alpha3": "PRT",
+          "name": "Portugal",
+          "slug": "portugal"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "إستوريل باسكت كلوب"
+          },
+          "shortNameTranslation": {
+            "ar": "إستوريل"
+          }
+        }
+      },
+      "homeScore": {},
+      "awayScore": {},
+      "coverage": -1,
+      "time": {},
+      "changes": {
+        "changeTimestamp": 0
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 14788342,
+      "periods": {
+        "current": "Score",
+        "period1": "1st quarter",
+        "period2": "2nd quarter",
+        "period3": "3rd quarter",
+        "period4": "4th quarter",
+        "overtime": "Overtime"
+      },
+      "slug": "estoril-basket-clube-os-belenenses",
+      "startTimestamp": 1759061700,
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "isEditor": false
+    },
+    {
+      "tournament": {
+        "name": "Club Friendlies",
+        "slug": "club-friendlies",
+        "category": {
+          "id": 103,
+          "country": {},
+          "name": "International",
+          "slug": "international",
+          "sport": {
+            "name": "Basketball",
+            "slug": "basketball",
+            "id": 2
+          },
+          "flag": "international",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "دولي",
+              "hi": "अंतर्राष्ट्रीय",
+              "bn": "আন্তর্জাতিক"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "Club Friendly Games",
+          "slug": "club-friendly-games",
+          "category": {
+            "id": 103,
+            "country": {},
+            "name": "International",
+            "slug": "international",
+            "sport": {
+              "name": "Basketball",
+              "slug": "basketball",
+              "id": 2
+            },
+            "flag": "international",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "دولي",
+                "hi": "अंतर्राष्ट्रीय",
+                "bn": "আন্তর্জাতিক"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 673,
+          "id": 1195,
+          "country": {},
+          "hasPerformanceGraphFeature": false,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "مباريات ودية للأندية",
+              "hi": "क्लब फ्रेंडली गेम्स",
+              "bn": "ক্লাব ফ্রেন্ডলি গেমস"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "id": 4788,
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "مباريات ودية للأندية",
+            "hi": "क्लब फ्रेंडलीज",
+            "bn": "ক্লাব ফ্রেন্ডলিনেস"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "season": {
+        "name": "Club Friendly Games 2025",
+        "year": "2025",
+        "editor": false,
+        "id": 69515
+      },
+      "customId": "pIcsgNuc",
+      "status": {
+        "code": 0,
+        "description": "Not started",
+        "type": "notstarted"
+      },
+      "homeTeam": {
+        "name": "Arka Gdynia",
+        "slug": "arka-gdynia",
+        "shortName": "Arka",
+        "gender": "M",
+        "sport": {
+          "name": "Basketball",
+          "slug": "basketball",
+          "id": 2
+        },
+        "userCount": 513,
+        "nameCode": "GDY",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "id": 6665,
+        "country": {
+          "alpha2": "PL",
+          "alpha3": "POL",
+          "name": "Poland",
+          "slug": "poland"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "أركا غدينيا"
+          },
+          "shortNameTranslation": {
+            "ar": "أركا",
+            "hi": "अर्का",
+            "bn": "আরকা"
+          }
+        }
+      },
+      "awayTeam": {
+        "name": "STK Czarni Słupsk",
+        "slug": "stk-czarni-slupsk",
+        "shortName": "Czarni Słupsk",
+        "gender": "M",
+        "sport": {
+          "name": "Basketball",
+          "slug": "basketball",
+          "id": 2
+        },
+        "userCount": 399,
+        "nameCode": "CZA",
+        "national": false,
+        "type": 0,
+        "id": 299406,
+        "country": {
+          "alpha2": "PL",
+          "alpha3": "POL",
+          "name": "Poland",
+          "slug": "poland"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "إس تي كيه تشارني سلوبيسك",
+            "ru": "Энерга Чарни Шлупск"
+          },
+          "shortNameTranslation": {
+            "ar": "تشارني سلوبيسك",
+            "hi": "ज़ार्नी स्लुपस्क",
+            "bn": "স্লুপস্ক"
+          }
+        }
+      },
+      "homeScore": {},
+      "awayScore": {},
+      "coverage": -1,
+      "time": {},
+      "changes": {
+        "changeTimestamp": 0
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 14788345,
+      "periods": {
+        "current": "Score",
+        "period1": "1st quarter",
+        "period2": "2nd quarter",
+        "period3": "3rd quarter",
+        "period4": "4th quarter",
+        "overtime": "Overtime"
+      },
+      "slug": "stk-czarni-slupsk-arka-gdynia",
+      "startTimestamp": 1759068000,
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "isEditor": false
+    },
+    {
+      "tournament": {
+        "name": "Club Friendlies",
+        "slug": "club-friendlies",
+        "category": {
+          "id": 103,
+          "country": {},
+          "name": "International",
+          "slug": "international",
+          "sport": {
+            "name": "Basketball",
+            "slug": "basketball",
+            "id": 2
+          },
+          "flag": "international",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "دولي",
+              "hi": "अंतर्राष्ट्रीय",
+              "bn": "আন্তর্জাতিক"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "Club Friendly Games",
+          "slug": "club-friendly-games",
+          "category": {
+            "id": 103,
+            "country": {},
+            "name": "International",
+            "slug": "international",
+            "sport": {
+              "name": "Basketball",
+              "slug": "basketball",
+              "id": 2
+            },
+            "flag": "international",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "دولي",
+                "hi": "अंतर्राष्ट्रीय",
+                "bn": "আন্তর্জাতিক"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 673,
+          "id": 1195,
+          "country": {},
+          "hasPerformanceGraphFeature": false,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "مباريات ودية للأندية",
+              "hi": "क्लब फ्रेंडली गेम्स",
+              "bn": "ক্লাব ফ্রেন্ডলি গেমস"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "id": 4788,
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "مباريات ودية للأندية",
+            "hi": "क्लब फ्रेंडलीज",
+            "bn": "ক্লাব ফ্রেন্ডলিনেস"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "season": {
+        "name": "Club Friendly Games 2025",
+        "year": "2025",
+        "editor": false,
+        "id": 69515
+      },
+      "customId": "XzocsUHFc",
+      "status": {
+        "code": 0,
+        "description": "Not started",
+        "type": "notstarted"
+      },
+      "homeTeam": {
+        "name": "Sporting CP",
+        "slug": "sporting-cp",
+        "gender": "M",
+        "sport": {
+          "name": "Basketball",
+          "slug": "basketball",
+          "id": 2
+        },
+        "userCount": 5271,
+        "nameCode": "SPO",
+        "national": false,
+        "type": 0,
+        "id": 326644,
+        "country": {
+          "alpha2": "PT",
+          "alpha3": "PRT",
+          "name": "Portugal",
+          "slug": "portugal"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "سبورتنج سي بي",
+            "ru": "Спортинг",
+            "hi": "स्पोर्टिंग सीपी",
+            "bn": "স্পোর্টিং সিপি"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "awayTeam": {
+        "name": "Imortal BC",
+        "slug": "imortal-bc",
+        "gender": "M",
+        "sport": {
+          "name": "Basketball",
+          "slug": "basketball",
+          "id": 2
+        },
+        "userCount": 435,
+        "nameCode": "IMO",
+        "national": false,
+        "type": 0,
+        "id": 286247,
+        "country": {
+          "alpha2": "PT",
+          "alpha3": "PRT",
+          "name": "Portugal",
+          "slug": "portugal"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "إيمورتال بي سي",
+            "hi": "इमोर्टल बीसी",
+            "bn": "ইমমরটাল বিসি"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "homeScore": {},
+      "awayScore": {},
+      "coverage": -1,
+      "time": {},
+      "changes": {
+        "changeTimestamp": 0
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 14788349,
+      "periods": {
+        "current": "Score",
+        "period1": "1st quarter",
+        "period2": "2nd quarter",
+        "period3": "3rd quarter",
+        "period4": "4th quarter",
+        "overtime": "Overtime"
+      },
+      "slug": "sporting-cp-imortal-bc",
+      "startTimestamp": 1759075200,
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "isEditor": false
+    },
+    {
+      "tournament": {
         "name": "BNXT League",
         "slug": "bnxt-league",
         "category": {
@@ -64926,9 +65502,9 @@
       },
       "customId": "TWZisYWZi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 13,
+        "description": "1st quarter",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Australia U16",
@@ -64986,13 +65562,30 @@
           "text": "#ffffff"
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 22,
+        "display": 22,
+        "period1": 22
+      },
+      "awayScore": {
+        "current": 12,
+        "display": 12,
+        "period1": 12
+      },
+      "time": {
+        "played": 579,
+        "periodLength": 600,
+        "overtimeLength": 300,
+        "totalPeriodCount": 4
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.played"
+        ],
+        "changeTimestamp": 1759054853
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14785432,
       "periods": {
@@ -65005,6 +65598,7 @@
       },
       "slug": "new-zealand-u16-australia-u16",
       "startTimestamp": 1759053600,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -65252,10 +65846,11 @@
       },
       "customId": "vaJbsoUbj",
       "status": {
-        "code": 16,
-        "description": "4th quarter",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Busan BNK Sum",
         "slug": "busan-bnk-sum",
@@ -65322,34 +65917,38 @@
         }
       },
       "homeScore": {
-        "current": 77,
-        "display": 77,
+        "current": 79,
+        "display": 79,
         "period1": 15,
         "period2": 20,
         "period3": 22,
-        "period4": 20
+        "period4": 22,
+        "normaltime": 79
       },
       "awayScore": {
-        "current": 72,
-        "display": 72,
+        "current": 74,
+        "display": 74,
         "period1": 26,
         "period2": 16,
         "period3": 21,
-        "period4": 9
+        "period4": 11,
+        "normaltime": 74
       },
       "time": {
-        "played": 2282,
+        "played": 2400,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
       },
       "changes": {
         "changes": [
-          "awayScore.current",
-          "awayScore.display",
-          "awayScore.period4"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1759052344
+        "changeTimestamp": 1759052504
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -65365,7 +65964,6 @@
       },
       "slug": "ulaanbaatar-amazons-busan-bnk-sum",
       "startTimestamp": 1759046400,
-      "lastPeriod": "period4",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -66573,9 +67171,9 @@
       },
       "customId": "eUmcspLnd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 14,
+        "description": "2nd quarter",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "KK Podgorica",
@@ -66651,13 +67249,34 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 8,
+        "display": 8,
+        "period1": 8,
+        "period2": 0
+      },
+      "awayScore": {
+        "current": 12,
+        "display": 12,
+        "period1": 12,
+        "period2": 0
+      },
+      "time": {
+        "played": 618,
+        "periodLength": 600,
+        "overtimeLength": 300,
+        "totalPeriodCount": 4
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.played",
+          "homeScore.period2",
+          "awayScore.period2"
+        ],
+        "changeTimestamp": 1759054874
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14751240,
       "periods": {
@@ -66670,6 +67289,7 @@
       },
       "slug": "kk-podgorica-zkd-ilirija",
       "startTimestamp": 1759053600,
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -68466,8 +69086,8 @@
       },
       "customId": "HjcjsUjcj",
       "status": {
-        "code": 13,
-        "description": "1st quarter",
+        "code": 15,
+        "description": "3rd quarter",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -68527,28 +69147,30 @@
         }
       },
       "homeScore": {
-        "current": 15,
-        "display": 15,
-        "period1": 15
+        "current": 59,
+        "display": 59,
+        "period1": 20,
+        "period2": 17,
+        "period3": 22
       },
       "awayScore": {
-        "current": 8,
-        "display": 8,
-        "period1": 8
+        "current": 28,
+        "display": 28,
+        "period1": 12,
+        "period2": 7,
+        "period3": 9
       },
       "time": {
-        "played": 342,
+        "played": 1755,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
       },
       "changes": {
         "changes": [
-          "awayScore.current",
-          "awayScore.display",
-          "awayScore.period1"
+          "time.played"
         ],
-        "changeTimestamp": 1759052339
+        "changeTimestamp": 1759054879
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -68564,7 +69186,7 @@
       },
       "slug": "zalgiris-2-u16-bs-jugla-u16",
       "startTimestamp": 1759051800,
-      "lastPeriod": "period1",
+      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -69844,9 +70466,9 @@
       },
       "customId": "akcjsckcj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 15,
+        "description": "3rd quarter",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Horsholm 79ers U15",
@@ -69905,13 +70527,34 @@
           "text": "#ffffff"
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 93,
+        "display": 93,
+        "period1": 47,
+        "period2": 40,
+        "period3": 6
+      },
+      "awayScore": {
+        "current": 6,
+        "display": 6,
+        "period1": 6,
+        "period2": 0,
+        "period3": 0
+      },
+      "time": {
+        "played": 1339,
+        "periodLength": 600,
+        "overtimeLength": 300,
+        "totalPeriodCount": 4
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.played"
+        ],
+        "changeTimestamp": 1759054879
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14760641,
       "periods": {
@@ -69924,6 +70567,7 @@
       },
       "slug": "horsholm-79ers-u15-cs-sport-star-timisoara-u15",
       "startTimestamp": 1759051800,
+      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -70887,8 +71531,8 @@
       },
       "customId": "mkcjstkcj",
       "status": {
-        "code": 13,
-        "description": "1st quarter",
+        "code": 30,
+        "description": "Pause",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -70948,29 +71592,29 @@
         }
       },
       "homeScore": {
-        "current": 9,
-        "display": 9,
-        "period1": 9
+        "current": 42,
+        "display": 42,
+        "period1": 15,
+        "period2": 27
       },
       "awayScore": {
-        "current": 3,
-        "display": 3,
-        "period1": 3
+        "current": 19,
+        "display": 19,
+        "period1": 3,
+        "period2": 16
       },
       "time": {
-        "played": 196,
+        "played": 1200,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
       },
       "changes": {
         "changes": [
-          "awayScore.current",
-          "awayScore.display",
-          "time.played",
-          "awayScore.period1"
+          "status.code",
+          "status.description"
         ],
-        "changeTimestamp": 1759052339
+        "changeTimestamp": 1759054299
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -70986,7 +71630,6 @@
       },
       "slug": "zalgiris-u14-marupes-nss-u14",
       "startTimestamp": 1759051800,
-      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -76920,7 +77563,7 @@
         ],
         "changeTimestamp": 1758991949
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14620941,
@@ -77129,7 +77772,7 @@
         ],
         "changeTimestamp": 1759000724
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14621044,
@@ -98856,9 +99499,9 @@
       },
       "customId": "yNucsJQuc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 14,
+        "description": "2nd quarter",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Mks Znicz Basket Pruszkow",
@@ -98931,13 +99574,34 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 15,
+        "display": 15,
+        "period1": 12,
+        "period2": 3
+      },
+      "awayScore": {
+        "current": 22,
+        "display": 22,
+        "period1": 18,
+        "period2": 4
+      },
+      "time": {
+        "played": 675,
+        "periodLength": 600,
+        "overtimeLength": 300,
+        "totalPeriodCount": 4
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period2"
+        ],
+        "changeTimestamp": 1759054874
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14763952,
       "periods": {
@@ -98950,6 +99614,7 @@
       },
       "slug": "mks-znicz-basket-pruszkow-ks-ksiezak-lowicz",
       "startTimestamp": 1759053600,
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -112744,7 +113409,7 @@
       },
       "slug": "club-baloncesto-valle-de-egues-cb-clavijo",
       "startTimestamp": 1759053600,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -112920,7 +113585,7 @@
       },
       "slug": "coto-cordoba-cb-moron",
       "startTimestamp": 1759053600,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -113081,7 +113746,7 @@
       },
       "slug": "lbc-cocinas-isb-biele",
       "startTimestamp": 1759053600,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -123489,6 +124154,207 @@
       },
       "slug": "watoto-ladies-ymca-lady-hamstars",
       "startTimestamp": 1758967200,
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "isEditor": false
+    },
+    {
+      "tournament": {
+        "name": "DIV I Women 2025, Regular Season",
+        "slug": "div-i-women-2025-regular-season",
+        "category": {
+          "id": 1509,
+          "country": {
+            "alpha2": "UG",
+            "alpha3": "UGA",
+            "name": "Uganda",
+            "slug": "uganda"
+          },
+          "name": "Uganda",
+          "slug": "uganda",
+          "sport": {
+            "name": "Basketball",
+            "slug": "basketball",
+            "id": 2
+          },
+          "flag": "uganda",
+          "alpha2": "UG",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "أوغندا"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "DIV I Women ",
+          "slug": "div-i-women-2025",
+          "category": {
+            "id": 1509,
+            "country": {
+              "alpha2": "UG",
+              "alpha3": "UGA",
+              "name": "Uganda",
+              "slug": "uganda"
+            },
+            "name": "Uganda",
+            "slug": "uganda",
+            "sport": {
+              "name": "Basketball",
+              "slug": "basketball",
+              "id": 2
+            },
+            "flag": "uganda",
+            "alpha2": "UG",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "أوغندا"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 23,
+          "id": 27041,
+          "country": {},
+          "hasPerformanceGraphFeature": false,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false
+        },
+        "priority": 0,
+        "id": 153973
+      },
+      "season": {
+        "name": "2025",
+        "year": "2025",
+        "editor": false,
+        "id": 76254
+      },
+      "customId": "ZRAcsiINi",
+      "status": {
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
+      },
+      "winnerCode": 2,
+      "homeTeam": {
+        "name": "MUK Sparks",
+        "slug": "muk-sparks",
+        "gender": "F",
+        "sport": {
+          "name": "Basketball",
+          "slug": "basketball",
+          "id": 2
+        },
+        "userCount": 15,
+        "nameCode": "SPA",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "id": 314649,
+        "country": {
+          "alpha2": "UG",
+          "alpha3": "UGA",
+          "name": "Uganda",
+          "slug": "uganda"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "موك سباركس"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "awayTeam": {
+        "name": "Kibuli",
+        "slug": "kibuli",
+        "gender": "F",
+        "sport": {
+          "name": "Basketball",
+          "slug": "basketball",
+          "id": 2
+        },
+        "userCount": 14,
+        "nameCode": "KIB",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "id": 1096658,
+        "country": {
+          "alpha2": "UG",
+          "alpha3": "UGA",
+          "name": "Uganda",
+          "slug": "uganda"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كيبولي"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "homeScore": {
+        "current": 57,
+        "display": 57,
+        "period1": 8,
+        "period2": 10,
+        "period3": 17,
+        "period4": 12,
+        "normaltime": 47,
+        "overtime": 10
+      },
+      "awayScore": {
+        "current": 58,
+        "display": 58,
+        "period1": 8,
+        "period2": 13,
+        "period3": 12,
+        "period4": 14,
+        "normaltime": 47,
+        "overtime": 11
+      },
+      "time": {
+        "played": 3000,
+        "periodLength": 600,
+        "overtimeLength": 300,
+        "totalPeriodCount": 4
+      },
+      "changes": {
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime",
+          "time.played"
+        ],
+        "changeTimestamp": 1759051283
+      },
+      "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 14787094,
+      "periods": {
+        "current": "Score",
+        "period1": "1st quarter",
+        "period2": "2nd quarter",
+        "period3": "3rd quarter",
+        "period4": "4th quarter",
+        "overtime": "Overtime"
+      },
+      "slug": "kibuli-muk-sparks",
+      "startTimestamp": 1759042800,
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
