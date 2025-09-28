@@ -322,9 +322,9 @@
       },
       "customId": "TEbsVEb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "SG Flensburg Handewitt",
@@ -405,17 +405,34 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 10,
+        "display": 10
+      },
+      "awayScore": {
+        "current": 8,
+        "display": 8
+      },
+      "time": {
+        "played": 1193,
+        "periodLength": 1800,
+        "overtimeLength": 300,
+        "totalPeriodCount": 2,
+        "currentPeriodStartTimestamp": 1759064403
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.played"
+        ],
+        "changeTimestamp": 1759065848
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14211138,
       "slug": "frisch-auf-goppingen-sg-flensburg-handewitt",
       "startTimestamp": 1759064400,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -4044,8 +4061,8 @@
       },
       "customId": "AFbsfMc",
       "status": {
-        "code": 31,
-        "description": "Halftime",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -4122,31 +4139,28 @@
         }
       },
       "homeScore": {
-        "current": 17,
-        "display": 17,
+        "current": 27,
+        "display": 27,
         "period1": 17
       },
       "awayScore": {
-        "current": 17,
-        "display": 17,
+        "current": 25,
+        "display": 25,
         "period1": 17
       },
       "time": {
-        "played": 1796,
+        "played": 3309,
         "periodLength": 1800,
         "overtimeLength": 300,
         "totalPeriodCount": 2,
-        "currentPeriodStartTimestamp": 1759063051
+        "currentPeriodStartTimestamp": 1759063934
       },
       "changes": {
         "changes": [
-          "time.currentPeriodStart",
-          "status.code",
-          "status.description",
-          "homeScore.period1",
-          "awayScore.period1"
+          "homeScore.current",
+          "homeScore.display"
         ],
-        "changeTimestamp": 1759063054
+        "changeTimestamp": 1759065873
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -4154,6 +4168,7 @@
       "id": 14168153,
       "slug": "dvsc-schaeffler-borussia-dortmund",
       "startTimestamp": 1759060800,
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -5400,8 +5415,8 @@
       },
       "customId": "uGbseOc",
       "status": {
-        "code": 31,
-        "description": "Halftime",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -5477,27 +5492,27 @@
         }
       },
       "homeScore": {
-        "current": 12,
-        "display": 12,
+        "current": 25,
+        "display": 25,
         "period1": 12
       },
       "awayScore": {
-        "current": 8,
-        "display": 8,
+        "current": 21,
+        "display": 21,
         "period1": 8
       },
       "time": {
-        "played": 1799,
+        "played": 3345,
         "periodLength": 1800,
         "overtimeLength": 300,
         "totalPeriodCount": 2,
-        "currentPeriodStartTimestamp": 1759062919
+        "currentPeriodStartTimestamp": 1759063823
       },
       "changes": {
         "changes": [
           "time.played"
         ],
-        "changeTimestamp": 1759062966
+        "changeTimestamp": 1759065848
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -5505,6 +5520,7 @@
       "id": 14168194,
       "slug": "rk-krim-ljubljana-ikast-handbold",
       "startTimestamp": 1759060800,
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -15577,10 +15593,11 @@
       },
       "customId": "eHHisJKRi",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Zagorica",
         "slug": "zagorica",
@@ -15654,38 +15671,42 @@
         }
       },
       "homeScore": {
-        "current": 16,
-        "display": 16,
+        "current": 34,
+        "display": 34,
         "period1": 13,
-        "period2": 3
+        "period2": 21,
+        "normaltime": 34
       },
       "awayScore": {
-        "current": 13,
-        "display": 13,
+        "current": 25,
+        "display": 25,
         "period1": 13,
-        "period2": 0
+        "period2": 12,
+        "normaltime": 25
       },
       "coverage": -1,
       "time": {
-        "played": 1920,
+        "played": 3600,
         "periodLength": 1800,
         "overtimeLength": 300,
         "totalPeriodCount": 2
       },
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display",
-          "homeScore.period2"
+          "providerLock.status",
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1759063368
+        "changeTimestamp": 1759065196
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14225169,
       "slug": "zagorica-sesvete-2",
       "startTimestamp": 1759060800,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -19877,12 +19898,187 @@
       "roundInfo": {
         "round": 2
       },
+      "customId": "dFYcsWnbj",
+      "status": {
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
+      },
+      "winnerCode": 1,
+      "homeTeam": {
+        "name": "RK Maksimir Pastela",
+        "slug": "rk-maksimir-pastela",
+        "gender": "M",
+        "sport": {
+          "name": "Handball",
+          "slug": "handball",
+          "id": 6
+        },
+        "userCount": 32,
+        "nameCode": "RMP",
+        "national": false,
+        "type": 0,
+        "id": 371503,
+        "country": {
+          "alpha2": "HR",
+          "alpha3": "HRV",
+          "name": "Croatia",
+          "slug": "croatia"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "آر كيه ماكسيمير باستلا"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "awayTeam": {
+        "name": "RK Jaska",
+        "slug": "rk-jaska",
+        "shortName": "Jaska",
+        "gender": "M",
+        "sport": {
+          "name": "Handball",
+          "slug": "handball",
+          "id": 6
+        },
+        "userCount": 2,
+        "nameCode": "RJA",
+        "national": false,
+        "type": 0,
+        "id": 1128196,
+        "country": {
+          "alpha2": "HR",
+          "alpha3": "HRV",
+          "name": "Croatia",
+          "slug": "croatia"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "homeScore": {
+        "current": 39,
+        "display": 39
+      },
+      "awayScore": {
+        "current": 24,
+        "display": 24
+      },
+      "coverage": -1,
+      "time": {},
+      "changes": {
+        "changes": [
+          "status",
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "awayScore.current",
+          "awayScore.display"
+        ],
+        "changeTimestamp": 1759063378
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 14788766,
+      "slug": "rk-jaska-rk-maksimir-pastela",
+      "startTimestamp": 1759055400,
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "isEditor": false
+    },
+    {
+      "tournament": {
+        "name": "3. HRL Središte - Muški, Group A",
+        "slug": "3-hrl-srediste-muski-group-a",
+        "category": {
+          "id": 214,
+          "country": {
+            "alpha2": "HR",
+            "alpha3": "HRV",
+            "name": "Croatia",
+            "slug": "croatia"
+          },
+          "name": "Croatia",
+          "slug": "croatia",
+          "sport": {
+            "name": "Handball",
+            "slug": "handball",
+            "id": 6
+          },
+          "flag": "croatia",
+          "alpha2": "HR",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "كرواتيا"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "3. HRL Središte - Muški",
+          "slug": "3-hrl-srediste-muski",
+          "category": {
+            "id": 214,
+            "country": {
+              "alpha2": "HR",
+              "alpha3": "HRV",
+              "name": "Croatia",
+              "slug": "croatia"
+            },
+            "name": "Croatia",
+            "slug": "croatia",
+            "sport": {
+              "name": "Handball",
+              "slug": "handball",
+              "id": 6
+            },
+            "flag": "croatia",
+            "alpha2": "HR",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "كرواتيا"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 3,
+          "id": 28872,
+          "country": {},
+          "hasPerformanceGraphFeature": false,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false
+        },
+        "priority": 0,
+        "id": 161366
+      },
+      "season": {
+        "name": "25/26",
+        "year": "25/26",
+        "editor": false,
+        "id": 81002
+      },
+      "roundInfo": {
+        "round": 2
+      },
       "customId": "nOXisxOXi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Ivanić Grad 2",
         "slug": "ivanic-grad-2",
@@ -19939,19 +20135,34 @@
           "text": "#ffffff"
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 49,
+        "display": 49
+      },
+      "awayScore": {
+        "current": 38,
+        "display": 38
+      },
       "coverage": -1,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "awayScore.current",
+          "awayScore.display"
+        ],
+        "changeTimestamp": 1759063512
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14499180,
       "slug": "zg-dubrava-ivanic-grad-2",
       "startTimestamp": 1759057200,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -21471,10 +21682,11 @@
       },
       "customId": "MlajsRlaj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "RK Zadar 2013",
         "slug": "rk-zadar-2013",
@@ -21531,19 +21743,34 @@
           "text": "#ffffff"
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 45,
+        "display": 45
+      },
+      "awayScore": {
+        "current": 29,
+        "display": 29
+      },
       "coverage": -1,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "awayScore.current",
+          "awayScore.display"
+        ],
+        "changeTimestamp": 1759065790
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14642990,
       "slug": "rk-zadar-2013-kamicak",
       "startTimestamp": 1758987000,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -26322,8 +26549,8 @@
       },
       "customId": "egosNdX",
       "status": {
-        "code": 31,
-        "description": "Halftime",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -26401,33 +26628,34 @@
         }
       },
       "homeScore": {
-        "current": 14,
-        "display": 14,
+        "current": 24,
+        "display": 24,
         "period1": 14
       },
       "awayScore": {
-        "current": 15,
-        "display": 15,
+        "current": 26,
+        "display": 26,
         "period1": 15
       },
       "time": {
-        "played": 1768,
+        "played": 3229,
         "periodLength": 1800,
         "overtimeLength": 300,
         "totalPeriodCount": 2,
-        "currentPeriodStartTimestamp": 1759063131
+        "currentPeriodStartTimestamp": 1759064033
       },
       "changes": {
         "changes": [
           "time.played"
         ],
-        "changeTimestamp": 1759063145
+        "changeTimestamp": 1759065848
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14045316,
       "slug": "skanderborg-handbold-ringkobing-handbold",
       "startTimestamp": 1759060800,
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -26904,9 +27132,9 @@
       },
       "customId": "elosHxQc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "TM Tønder Håndbold",
@@ -26976,17 +27204,36 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 5,
+        "display": 5,
+        "period1": 5,
+        "normaltime": 5
+      },
+      "awayScore": {
+        "current": 11,
+        "display": 11,
+        "period1": 11,
+        "normaltime": 11
+      },
+      "time": {
+        "played": 1157,
+        "periodLength": 1800,
+        "overtimeLength": 300,
+        "totalPeriodCount": 2
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.played"
+        ],
+        "changeTimestamp": 1759065848
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14050038,
       "slug": "elitesport-vendsyssel-tm-tonder-handbold",
       "startTimestamp": 1759064400,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -28278,7 +28525,7 @@
       "id": 14197674,
       "slug": "kyndil-torshavn-stjornan-klaksvik",
       "startTimestamp": 1759064400,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -28446,7 +28693,7 @@
       "id": 14197675,
       "slug": "vestmanna-if-stranda-if",
       "startTimestamp": 1759064400,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -42223,8 +42470,8 @@
       },
       "customId": "xKcskLuc",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 31,
+        "description": "Halftime",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -42298,26 +42545,32 @@
         }
       },
       "homeScore": {
-        "current": 2,
-        "display": 2
+        "current": 13,
+        "display": 13,
+        "period1": 13
       },
       "awayScore": {
-        "current": 2,
-        "display": 2
+        "current": 12,
+        "display": 12,
+        "period1": 12
       },
       "time": {
-        "played": 247,
+        "played": 1794,
         "periodLength": 1800,
         "overtimeLength": 300,
         "totalPeriodCount": 2,
-        "currentPeriodStartTimestamp": 1759062568
+        "currentPeriodStartTimestamp": 1759065301
       },
       "changes": {
         "changes": [
-          "awayScore.current",
-          "awayScore.display"
+          "time.played",
+          "time.currentPeriodStart",
+          "status.code",
+          "status.description",
+          "homeScore.period1",
+          "awayScore.period1"
         ],
-        "changeTimestamp": 1759063347
+        "changeTimestamp": 1759065316
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -42325,7 +42578,6 @@
       "id": 14195155,
       "slug": "sl-benfica-feminino-ik-savehof",
       "startTimestamp": 1759062600,
-      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -46200,8 +46452,8 @@
       },
       "customId": "HEbsKQZb",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -46281,17 +46533,19 @@
         }
       },
       "homeScore": {
-        "current": 5,
-        "display": 5,
-        "period1": 5
+        "current": 18,
+        "display": 18,
+        "period1": 16,
+        "period2": 2
       },
       "awayScore": {
-        "current": 7,
-        "display": 7,
-        "period1": 7
+        "current": 13,
+        "display": 13,
+        "period1": 13,
+        "period2": 0
       },
       "time": {
-        "played": 627,
+        "played": 2104,
         "periodLength": 1800,
         "overtimeLength": 300,
         "totalPeriodCount": 2,
@@ -46299,12 +46553,12 @@
       },
       "changes": {
         "changes": [
+          "time.played",
           "homeScore.current",
           "homeScore.display",
-          "homeScore.period1",
-          "time.played"
+          "homeScore.period2"
         ],
-        "changeTimestamp": 1759063368
+        "changeTimestamp": 1759065853
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -46312,7 +46566,7 @@
       "id": 14563446,
       "slug": "al-sharjah-sc-magdeburg",
       "startTimestamp": 1759062600,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -61309,7 +61563,7 @@
       "id": 14187987,
       "slug": "uks-dziewiatka-legnica-pogon-szczecin",
       "startTimestamp": 1759064400,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -63270,10 +63524,11 @@
       },
       "customId": "IYnsMync",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "CD Gil Eanes-Lagos",
         "slug": "cd-gil-eanes-lagos",
@@ -63337,35 +63592,41 @@
         }
       },
       "homeScore": {
-        "current": 23,
-        "display": 23,
+        "current": 35,
+        "display": 35,
         "period1": 15,
-        "period2": 8,
-        "normaltime": 23
+        "period2": 20,
+        "normaltime": 35
       },
       "awayScore": {
-        "current": 12,
-        "display": 12,
+        "current": 16,
+        "display": 16,
         "period1": 8,
-        "period2": 4,
-        "normaltime": 12
+        "period2": 8,
+        "normaltime": 16
       },
       "time": {},
       "changes": {
         "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period2",
+          "homeScore.normaltime",
           "awayScore.current",
           "awayScore.display",
           "awayScore.period2",
           "awayScore.normaltime"
         ],
-        "changeTimestamp": 1759062903
+        "changeTimestamp": 1759064766
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14282996,
       "slug": "cs-madeira-cd-gil-eanes-lagos",
       "startTimestamp": 1759057200,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -65796,9 +66057,9 @@
       },
       "customId": "edXsZjEb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "CS Universitatea Cluj-Napoca",
@@ -65874,17 +66135,37 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 8,
+        "display": 8,
+        "period1": 8
+      },
+      "awayScore": {
+        "current": 8,
+        "display": 8,
+        "period1": 8
+      },
+      "time": {
+        "played": 1200,
+        "periodLength": 1800,
+        "overtimeLength": 300,
+        "totalPeriodCount": 2
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1"
+        ],
+        "changeTimestamp": 1759065888
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14149359,
       "slug": "cs-universitatea-cluj-napoca-csm-bucuresti",
       "startTimestamp": 1759064400,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -69761,7 +70042,7 @@
       "id": 14667726,
       "slug": "csm-targu-mures-csu-oradea",
       "startTimestamp": 1759064400,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -73937,7 +74218,7 @@
       "id": 14697279,
       "slug": "csm-corona-brasov-j2-css-sighisoara-j2",
       "startTimestamp": 1759064400,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -74817,7 +75098,7 @@
       "id": 14696770,
       "slug": "acs-muntenia-pitesti-j2-csm-slatina-j2",
       "startTimestamp": 1759064400,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -78138,7 +78419,7 @@
       "id": 14706960,
       "slug": "acs-hercules-baile-herculane-j3-csc-millenium-giarmata-j3",
       "startTimestamp": 1759064400,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -78599,8 +78880,8 @@
       },
       "customId": "yhosgQUc",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -78679,37 +78960,39 @@
         }
       },
       "homeScore": {
-        "current": 12,
-        "display": 12,
-        "period1": 12,
-        "normaltime": 12
+        "current": 24,
+        "display": 24,
+        "period1": 13,
+        "period2": 11,
+        "normaltime": 24
       },
       "awayScore": {
-        "current": 12,
-        "display": 12,
-        "period1": 12,
-        "normaltime": 12
+        "current": 18,
+        "display": 18,
+        "period1": 13,
+        "period2": 5,
+        "normaltime": 18
       },
       "time": {},
       "changes": {
         "changes": [
           "homeScore.current",
           "homeScore.display",
-          "homeScore.period1",
+          "homeScore.period2",
           "homeScore.normaltime",
           "awayScore.current",
           "awayScore.display",
-          "awayScore.period1",
+          "awayScore.period2",
           "awayScore.normaltime"
         ],
-        "changeTimestamp": 1759062871
+        "changeTimestamp": 1759065874
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14326316,
       "slug": "mssuor-no-2-akademiya-moscow-dinamo-sungul-snezhinsk",
       "startTimestamp": 1759060800,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
