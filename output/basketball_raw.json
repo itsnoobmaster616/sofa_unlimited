@@ -2255,9 +2255,9 @@
       },
       "customId": "qvbsDvb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 60,
+        "description": "Postponed",
+        "type": "postponed"
       },
       "homeTeam": {
         "name": "Alba Berlin",
@@ -2342,7 +2342,12 @@
       "awayScore": {},
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type"
+        ],
+        "changeTimestamp": 1759050462
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -7459,7 +7464,7 @@
         ],
         "changeTimestamp": 1759047710
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14714434,
@@ -23278,8 +23283,8 @@
       },
       "customId": "JUYsRqZ",
       "status": {
-        "code": 13,
-        "description": "1st quarter",
+        "code": 31,
+        "description": "Halftime",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -23355,26 +23360,29 @@
         }
       },
       "homeScore": {
-        "current": 15,
-        "display": 15,
-        "period1": 15
+        "current": 35,
+        "display": 35,
+        "period1": 18,
+        "period2": 17
       },
       "awayScore": {
-        "current": 11,
-        "display": 11,
-        "period1": 11
+        "current": 39,
+        "display": 39,
+        "period1": 16,
+        "period2": 23
       },
       "time": {
-        "played": 373,
+        "played": 1200,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
       },
       "changes": {
         "changes": [
-          "time.played"
+          "status.code",
+          "status.description"
         ],
-        "changeTimestamp": 1759048928
+        "changeTimestamp": 1759050773
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -23390,7 +23398,6 @@
       },
       "slug": "sbs-ostrava-dsk-basketball",
       "startTimestamp": 1759048200,
-      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -49487,9 +49494,9 @@
       },
       "customId": "QYjcsbbLc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 13,
+        "description": "1st quarter",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Kavkasia",
@@ -49561,13 +49568,33 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 20,
+        "display": 20,
+        "period1": 20
+      },
+      "awayScore": {
+        "current": 34,
+        "display": 34,
+        "period1": 34
+      },
+      "time": {
+        "played": 564,
+        "periodLength": 600,
+        "overtimeLength": 300,
+        "totalPeriodCount": 4
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.current",
+          "homeScore.display",
+          "time.played",
+          "homeScore.period1"
+        ],
+        "changeTimestamp": 1759051243
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14751712,
       "periods": {
@@ -49580,6 +49607,7 @@
       },
       "slug": "bc-orbi-kavkasia",
       "startTimestamp": 1759050000,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -62440,10 +62468,11 @@
       },
       "customId": "DAabsHAab",
       "status": {
-        "code": 15,
-        "description": "3rd quarter",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Seoul Samsung Thunders",
         "slug": "seoul-samsung-thunders",
@@ -62521,31 +62550,40 @@
         }
       },
       "homeScore": {
-        "current": 44,
-        "display": 44,
+        "current": 71,
+        "display": 71,
         "period1": 11,
         "period2": 22,
-        "period3": 11
+        "period3": 18,
+        "period4": 20,
+        "normaltime": 71
       },
       "awayScore": {
-        "current": 52,
-        "display": 52,
+        "current": 77,
+        "display": 77,
         "period1": 16,
         "period2": 14,
-        "period3": 22
+        "period3": 27,
+        "period4": 20,
+        "normaltime": 77
       },
       "time": {
-        "played": 1662,
+        "played": 2375,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4,
-        "currentPeriodStartTimestamp": 1759048135
+        "currentPeriodStartTimestamp": 1759050797
       },
       "changes": {
         "changes": [
-          "time.played"
+          "time.currentPeriodStart",
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1759048922
+        "changeTimestamp": 1759050801
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -62560,7 +62598,6 @@
       },
       "slug": "seoul-samsung-thunders-wonju-db-promy",
       "startTimestamp": 1759044600,
-      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -64710,10 +64747,11 @@
       },
       "customId": "UWZisWWZi",
       "status": {
-        "code": 15,
-        "description": "3rd quarter",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "China U16",
         "slug": "china-u16",
@@ -64771,32 +64809,38 @@
         }
       },
       "homeScore": {
-        "current": 43,
-        "display": 43,
+        "current": 58,
+        "display": 58,
         "period1": 17,
         "period2": 17,
-        "period3": 9
+        "period3": 12,
+        "period4": 12,
+        "normaltime": 58
       },
       "awayScore": {
-        "current": 47,
-        "display": 47,
+        "current": 71,
+        "display": 71,
         "period1": 19,
         "period2": 13,
-        "period3": 15
+        "period3": 15,
+        "period4": 24,
+        "normaltime": 71
       },
       "time": {
-        "played": 1709,
+        "played": 2400,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
       },
       "changes": {
         "changes": [
-          "awayScore.current",
-          "awayScore.display",
-          "awayScore.period3"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1759048915
+        "changeTimestamp": 1759050753
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -64812,7 +64856,6 @@
       },
       "slug": "japan-u16-china-u16",
       "startTimestamp": 1759044600,
-      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -65208,8 +65251,8 @@
       },
       "customId": "vaJbsoUbj",
       "status": {
-        "code": 14,
-        "description": "2nd quarter",
+        "code": 30,
+        "description": "Pause",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -65278,30 +65321,31 @@
         }
       },
       "homeScore": {
-        "current": 32,
-        "display": 32,
+        "current": 57,
+        "display": 57,
         "period1": 15,
-        "period2": 17
+        "period2": 20,
+        "period3": 22
       },
       "awayScore": {
-        "current": 40,
-        "display": 40,
+        "current": 63,
+        "display": 63,
         "period1": 26,
-        "period2": 14
+        "period2": 16,
+        "period3": 21
       },
       "time": {
-        "played": 1167,
+        "played": 1800,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
       },
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display",
-          "homeScore.period2"
+          "status.code",
+          "status.description"
         ],
-        "changeTimestamp": 1759048931
+        "changeTimestamp": 1759051243
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -65317,7 +65361,6 @@
       },
       "slug": "ulaanbaatar-amazons-busan-bnk-sum",
       "startTimestamp": 1759046400,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -68239,10 +68282,11 @@
       },
       "customId": "JjcjsRjcj",
       "status": {
-        "code": 16,
-        "description": "4th quarter",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Enea Basket Poznan U16",
         "slug": "enea-basket-poznan-u16",
@@ -68305,27 +68349,34 @@
         "period1": 26,
         "period2": 25,
         "period3": 19,
-        "period4": 17
+        "period4": 17,
+        "normaltime": 87
       },
       "awayScore": {
-        "current": 40,
-        "display": 40,
+        "current": 42,
+        "display": 42,
         "period1": 7,
         "period2": 7,
         "period3": 21,
-        "period4": 5
+        "period4": 7,
+        "normaltime": 42
       },
       "time": {
-        "played": 2382,
+        "played": 2400,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
       },
       "changes": {
         "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime",
           "time.played"
         ],
-        "changeTimestamp": 1759048921
+        "changeTimestamp": 1759049002
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -68341,7 +68392,6 @@
       },
       "slug": "taltech-basketball-u16-enea-basket-poznan-u16",
       "startTimestamp": 1759045500,
-      "lastPeriod": "period4",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -68962,19 +69012,21 @@
         }
       },
       "homeScore": {
-        "current": 34,
-        "display": 34,
+        "current": 58,
+        "display": 58,
         "period1": 20,
-        "period2": 14
+        "period2": 14,
+        "period3": 24
       },
       "awayScore": {
-        "current": 18,
-        "display": 18,
+        "current": 31,
+        "display": 31,
         "period1": 5,
-        "period2": 13
+        "period2": 13,
+        "period3": 13
       },
       "time": {
-        "played": 1200,
+        "played": 1800,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
@@ -68982,9 +69034,13 @@
       "changes": {
         "changes": [
           "status.code",
-          "status.description"
+          "status.description",
+          "awayScore.current",
+          "awayScore.display",
+          "time.played",
+          "awayScore.period3"
         ],
-        "changeTimestamp": 1759048932
+        "changeTimestamp": 1759051153
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -69585,8 +69641,8 @@
       },
       "customId": "dkcjsgkcj",
       "status": {
-        "code": 30,
-        "description": "Pause",
+        "code": 16,
+        "description": "4th quarter",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -69641,30 +69697,32 @@
         }
       },
       "homeScore": {
-        "current": 38,
-        "display": 38,
+        "current": 69,
+        "display": 69,
         "period1": 21,
-        "period2": 17
+        "period2": 17,
+        "period3": 22,
+        "period4": 9
       },
       "awayScore": {
-        "current": 28,
-        "display": 28,
+        "current": 59,
+        "display": 59,
         "period1": 16,
-        "period2": 12
+        "period2": 12,
+        "period3": 16,
+        "period4": 15
       },
       "time": {
-        "played": 1200,
+        "played": 2295,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
       },
       "changes": {
         "changes": [
-          "status.code",
-          "status.description",
           "time.played"
         ],
-        "changeTimestamp": 1759048316
+        "changeTimestamp": 1759051237
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -69680,6 +69738,7 @@
       },
       "slug": "team-9-u15-kyiv-united-u15",
       "startTimestamp": 1759044600,
+      "lastPeriod": "period4",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -70613,10 +70672,11 @@
       },
       "customId": "okcjspkcj",
       "status": {
-        "code": 15,
-        "description": "3rd quarter",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Pomerania U14",
         "slug": "pomerania-u14",
@@ -70674,30 +70734,39 @@
         }
       },
       "homeScore": {
-        "current": 61,
-        "display": 61,
+        "current": 102,
+        "display": 102,
         "period1": 26,
         "period2": 35,
-        "period3": 0
+        "period3": 19,
+        "period4": 22,
+        "normaltime": 102
       },
       "awayScore": {
-        "current": 19,
-        "display": 19,
+        "current": 49,
+        "display": 49,
         "period1": 7,
         "period2": 12,
-        "period3": 0
+        "period3": 9,
+        "period4": 21,
+        "normaltime": 49
       },
       "time": {
-        "played": 1238,
+        "played": 2400,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
       },
       "changes": {
         "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime",
           "time.played"
         ],
-        "changeTimestamp": 1759048921
+        "changeTimestamp": 1759051215
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -70713,7 +70782,6 @@
       },
       "slug": "rbs-centrs-u14-pomerania-u14",
       "startTimestamp": 1759045500,
-      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -101301,8 +101369,8 @@
       },
       "customId": "FalbsLZyc",
       "status": {
-        "code": 14,
-        "description": "2nd quarter",
+        "code": 16,
+        "description": "4th quarter",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -101376,28 +101444,31 @@
         }
       },
       "homeScore": {
-        "current": 22,
-        "display": 22,
+        "current": 33,
+        "display": 33,
         "period1": 11,
-        "period2": 11
+        "period2": 11,
+        "period3": 11
       },
       "awayScore": {
-        "current": 44,
-        "display": 44,
+        "current": 77,
+        "display": 77,
         "period1": 24,
-        "period2": 20
+        "period2": 24,
+        "period3": 29
       },
       "time": {
-        "played": 1177,
+        "played": 1800,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
       },
       "changes": {
         "changes": [
-          "time.played"
+          "status.code",
+          "status.description"
         ],
-        "changeTimestamp": 1759048932
+        "changeTimestamp": 1759051233
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -101414,7 +101485,7 @@
       "slug": "cs-agronomia-bucuresti-fcc-uav-basketball-arad",
       "previousLegEventId": 14583891,
       "startTimestamp": 1759046400,
-      "lastPeriod": "period2",
+      "lastPeriod": "period4",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -120391,10 +120462,11 @@
       },
       "customId": "nJxcskOxc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Js Kairouanaise",
         "slug": "js-kairouanaise",
@@ -120466,11 +120538,30 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 95,
+        "display": 95,
+        "normaltime": 95
+      },
+      "awayScore": {
+        "current": 58,
+        "display": 58,
+        "normaltime": 58
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1759049343
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -120565,10 +120656,11 @@
       },
       "customId": "RixcsXgKc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "US Ansar",
         "slug": "us-ansar",
@@ -120637,11 +120729,30 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 48,
+        "display": 48,
+        "normaltime": 48
+      },
+      "awayScore": {
+        "current": 63,
+        "display": 63,
+        "normaltime": 63
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1759049343
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -120736,10 +120847,11 @@
       },
       "customId": "CCjcsIyHc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "US Monastirienne",
         "slug": "us-monastirienne",
@@ -120811,11 +120923,30 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 81,
+        "display": 81,
+        "normaltime": 81
+      },
+      "awayScore": {
+        "current": 54,
+        "display": 54,
+        "normaltime": 54
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1759049342
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
