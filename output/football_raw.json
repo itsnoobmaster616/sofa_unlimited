@@ -8685,6 +8685,7 @@
         "changeTimestamp": 0
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerHeatMap": true,
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 13638713,
@@ -13788,7 +13789,7 @@
         ],
         "changeTimestamp": 1759177493
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
       "hasEventPlayerHeatMap": true,
       "detailId": 1,
@@ -14610,7 +14611,7 @@
         ],
         "changeTimestamp": 1759179643
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
       "hasEventPlayerHeatMap": true,
       "detailId": 1,
@@ -14718,9 +14719,9 @@
       },
       "customId": "IlhcsLnud",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Club Always Ready",
@@ -14796,14 +14797,32 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "time": {
+        "initial": 0,
+        "max": 2700,
+        "extra": 540,
+        "currentPeriodStartTimestamp": 1759181340
+      },
       "changes": {
         "changes": [
-          "cardsCode"
+          "homeScore.period1",
+          "homeScore.normaltime",
+          "awayScore.period1",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1759179292
+        "changeTimestamp": 1759181406
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -14815,8 +14834,16 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1759181340,
+        "extra": 540
+      },
       "slug": "cd-totora-real-oruro-club-always-ready",
       "startTimestamp": 1759181400,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -15178,8 +15205,8 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
+        "current": 1,
+        "display": 1,
         "period1": 0,
         "period2": 0,
         "normaltime": 0
@@ -15200,10 +15227,10 @@
       },
       "changes": {
         "changes": [
-          "awayScore.period2",
-          "awayScore.normaltime"
+          "homeScore.current",
+          "homeScore.display"
         ],
-        "changeTimestamp": 1759180669
+        "changeTimestamp": 1759181813
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -16581,8 +16608,8 @@
       },
       "customId": "cWsUCn",
       "status": {
-        "code": 31,
-        "description": "Halftime",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -16663,24 +16690,31 @@
         "current": 3,
         "display": 3,
         "period1": 3,
+        "period2": 0,
         "normaltime": 3
       },
       "awayScore": {
         "current": 0,
         "display": 0,
         "period1": 0,
+        "period2": 0,
         "normaltime": 0
       },
       "time": {
         "injuryTime1": 3,
-        "currentPeriodStartTimestamp": 1759176844
+        "initial": 2700,
+        "max": 5400,
+        "extra": 540,
+        "currentPeriodStartTimestamp": 1759180824
       },
       "changes": {
         "changes": [
           "status.code",
-          "status.description"
+          "status.description",
+          "awayScore.period2",
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1759179823
+        "changeTimestamp": 1759180828
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -16692,8 +16726,16 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1759180824,
+        "extra": 540
+      },
       "slug": "ayacucho-club-sporting-cristal",
       "startTimestamp": 1759176900,
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -19212,8 +19254,8 @@
         }
       },
       "homeScore": {
-        "current": 1,
-        "display": 1,
+        "current": 2,
+        "display": 2,
         "period1": 1,
         "period2": 0,
         "normaltime": 1
@@ -19234,13 +19276,10 @@
       },
       "changes": {
         "changes": [
-          "homeScore.period2",
-          "awayScore.period2",
-          "status.code",
-          "status.description",
-          "time.currentPeriodStart"
+          "homeScore.current",
+          "homeScore.display"
         ],
-        "changeTimestamp": 1759179932
+        "changeTimestamp": 1759181934
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -25501,9 +25540,14 @@
       "awayScore": {},
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "cardsCode"
+        ],
+        "changeTimestamp": 1759181253
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14597817,
@@ -35474,7 +35518,7 @@
         ],
         "changeTimestamp": 1759171917
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14039348,
       "varInProgress": {
