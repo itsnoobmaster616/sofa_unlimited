@@ -14829,7 +14829,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -22590,9 +22590,9 @@
       },
       "customId": "DIBsVbtc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 1,
+        "description": "1st period",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "HK Martin",
@@ -22666,17 +22666,36 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 2
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "time": {
+        "played": 975,
+        "periodLength": 1200,
+        "overtimeLength": 300,
+        "totalPeriodCount": 3,
+        "currentPeriodStartTimestamp": 1759395662
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1"
+        ],
+        "changeTimestamp": 1759396999
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14621168,
       "slug": "hk-martin-slovakia-u18",
-      "startTimestamp": 1759399200,
+      "startTimestamp": 1759395600,
       "periods": {
         "current": "Score",
         "period1": "1st period",
@@ -22685,6 +22704,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
