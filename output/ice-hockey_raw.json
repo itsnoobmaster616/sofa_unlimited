@@ -8473,8 +8473,8 @@
       },
       "customId": "AybsNyb",
       "status": {
-        "code": 3,
-        "description": "3rd period",
+        "code": 40,
+        "description": "Overtime",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -8562,27 +8562,33 @@
         "display": 4,
         "period1": 3,
         "period2": 0,
-        "period3": 1
+        "period3": 1,
+        "overtime": 0
       },
       "awayScore": {
-        "current": 2,
-        "display": 2,
+        "current": 4,
+        "display": 4,
         "period1": 0,
         "period2": 0,
-        "period3": 2
+        "period3": 4,
+        "overtime": 0
       },
       "time": {
-        "played": 3151,
+        "played": 3600,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3,
-        "currentPeriodStartTimestamp": 1759615007
+        "currentPeriodStartTimestamp": 1759617495
       },
       "changes": {
         "changes": [
+          "status.code",
+          "status.description",
+          "homeScore.overtime",
+          "awayScore.overtime",
           "time.played"
         ],
-        "changeTimestamp": 1759616345
+        "changeTimestamp": 1759617549
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -8598,7 +8604,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "lastPeriod": "period3",
+      "lastPeriod": "overtime",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -8696,10 +8702,11 @@
       },
       "customId": "Fybsfzb",
       "status": {
-        "code": 3,
-        "description": "3rd period",
-        "type": "inprogress"
+        "code": 110,
+        "description": "AET",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Nashville Predators",
         "slug": "nashville-predators",
@@ -8781,31 +8788,35 @@
         }
       },
       "homeScore": {
-        "current": 2,
-        "display": 2,
+        "current": 3,
+        "display": 3,
         "period1": 1,
         "period2": 1,
-        "period3": 0
+        "period3": 0,
+        "normaltime": 2,
+        "overtime": 1
       },
       "awayScore": {
         "current": 2,
         "display": 2,
         "period1": 1,
         "period2": 0,
-        "period3": 1
+        "period3": 1,
+        "normaltime": 2,
+        "overtime": 0
       },
       "time": {
-        "played": 0,
+        "played": 4800,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3,
-        "currentPeriodStartTimestamp": 1759614869
+        "currentPeriodStartTimestamp": 1759617495
       },
       "changes": {
         "changes": [
-          "time.played"
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1759616344
+        "changeTimestamp": 1759617499
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -8821,7 +8832,6 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -9014,7 +9024,7 @@
         "period1": 0
       },
       "time": {
-        "played": 405,
+        "played": 1124,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3,
@@ -9024,7 +9034,7 @@
         "changes": [
           "time.played"
         ],
-        "changeTimestamp": 1759616345
+        "changeTimestamp": 1759617549
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -15215,10 +15225,11 @@
       },
       "customId": "JQXsPQX",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 110,
+        "description": "AET",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Guelph Storm",
         "slug": "guelph-storm",
@@ -15296,11 +15307,46 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 1,
+        "period2": 0,
+        "period3": 1,
+        "normaltime": 2,
+        "overtime": 0
+      },
+      "awayScore": {
+        "current": 3,
+        "display": 3,
+        "period1": 1,
+        "period2": 0,
+        "period3": 1,
+        "normaltime": 2,
+        "overtime": 1
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.period3",
+          "homeScore.normaltime",
+          "homeScore.overtime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.period3",
+          "awayScore.normaltime",
+          "awayScore.overtime"
+        ],
+        "changeTimestamp": 1759617479
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -15315,7 +15361,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -41387,7 +41433,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -41467,10 +41513,11 @@
       },
       "customId": "eZjsIQXi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Valdifiemme HC",
         "slug": "valdifiemme-hc",
@@ -41535,11 +41582,42 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 0,
+        "period2": 1,
+        "period3": 1,
+        "normaltime": 2
+      },
+      "awayScore": {
+        "current": 11,
+        "display": 11,
+        "period1": 3,
+        "period2": 5,
+        "period3": 3,
+        "normaltime": 11
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.period3",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.period3",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1759616366
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -41554,7 +41632,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -69452,10 +69530,11 @@
       },
       "customId": "ldtsDdt",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 120,
+        "description": "AP",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Toronto Marlies",
         "slug": "toronto-marlies",
@@ -69528,11 +69607,50 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 1,
+        "period2": 0,
+        "period3": 0,
+        "normaltime": 1,
+        "overtime": 0,
+        "penalties": 0
+      },
+      "awayScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 1,
+        "period2": 0,
+        "period3": 0,
+        "normaltime": 1,
+        "overtime": 0,
+        "penalties": 1
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.period3",
+          "homeScore.normaltime",
+          "homeScore.overtime",
+          "homeScore.penalties",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.period3",
+          "awayScore.normaltime",
+          "awayScore.overtime",
+          "awayScore.penalties"
+        ],
+        "changeTimestamp": 1759616428
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -69547,7 +69665,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
