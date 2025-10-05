@@ -94,9 +94,9 @@
       },
       "customId": "ttbsFtb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 13,
+        "description": "1st quarter",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Charlotte Hornets",
@@ -178,13 +178,31 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 12,
+        "display": 12,
+        "period1": 12
+      },
+      "awayScore": {
+        "current": 20,
+        "display": 20,
+        "period1": 20
+      },
+      "time": {
+        "played": 351,
+        "periodLength": 720,
+        "overtimeLength": 300,
+        "totalPeriodCount": 4,
+        "currentPeriodStartTimestamp": 1759698651
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.played"
+        ],
+        "changeTimestamp": 1759699078
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14417138,
       "periods": {
@@ -195,8 +213,25 @@
         "period4": "4th quarter",
         "overtime": "Overtime"
       },
+      "bonusInfo": {
+        "hasHomeBonus": false,
+        "hasAwayBonus": false
+      },
+      "timeouts": {
+        "homeTimeoutsRemaining": 6,
+        "awayTimeoutsRemaining": 7,
+        "activeTimeout": {
+          "type": "teamTimeout",
+          "duration": 60,
+          "description": "Hornets 60 second timeout",
+          "clock": "6:09",
+          "teamId": 3430
+        },
+        "totalTimeouts": 7
+      },
       "slug": "charlotte-hornets-oklahoma-city-thunder",
       "startTimestamp": 1759698000,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -8448,10 +8483,11 @@
       },
       "customId": "Utbsalo",
       "status": {
-        "code": 16,
-        "description": "4th quarter",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Las Vegas Aces",
         "slug": "las-vegas-aces",
@@ -8532,36 +8568,40 @@
         }
       },
       "homeScore": {
-        "current": 79,
-        "display": 79,
+        "current": 91,
+        "display": 91,
         "period1": 24,
         "period2": 22,
         "period3": 30,
-        "period4": 3
+        "period4": 15,
+        "normaltime": 91
       },
       "awayScore": {
-        "current": 61,
-        "display": 61,
+        "current": 78,
+        "display": 78,
         "period1": 27,
         "period2": 10,
         "period3": 24,
-        "period4": 0
+        "period4": 17,
+        "normaltime": 78
       },
       "time": {
-        "played": 1827,
+        "played": 2393,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4,
-        "currentPeriodStartTimestamp": 1759696762
+        "currentPeriodStartTimestamp": 1759698488
       },
       "changes": {
         "changes": [
-          "time.played",
-          "homeScore.current",
-          "homeScore.display",
-          "homeScore.period4"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime",
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1759696789
+        "changeTimestamp": 1759698490
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -8577,7 +8617,6 @@
       },
       "slug": "las-vegas-aces-phoenix-mercury",
       "startTimestamp": 1759690800,
-      "lastPeriod": "period4",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -10656,7 +10695,7 @@
       },
       "slug": "ca-riachuelo-de-la-rioja-club-gorriones",
       "startTimestamp": 1759698000,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -33318,16 +33357,22 @@
         }
       },
       "homeScore": {
-        "current": 8,
-        "display": 8,
+        "current": 47,
+        "display": 47,
         "period1": 8,
-        "normaltime": 8
+        "period2": 19,
+        "period3": 13,
+        "period4": 7,
+        "normaltime": 47
       },
       "awayScore": {
-        "current": 20,
-        "display": 20,
+        "current": 73,
+        "display": 73,
         "period1": 20,
-        "normaltime": 20
+        "period2": 17,
+        "period3": 19,
+        "period4": 17,
+        "normaltime": 73
       },
       "coverage": -1,
       "time": {},
@@ -33335,14 +33380,18 @@
         "changes": [
           "homeScore.current",
           "homeScore.display",
-          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.period3",
+          "homeScore.period4",
           "homeScore.normaltime",
           "awayScore.current",
           "awayScore.display",
-          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.period3",
+          "awayScore.period4",
           "awayScore.normaltime"
         ],
-        "changeTimestamp": 1759696743
+        "changeTimestamp": 1759696813
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -42429,7 +42478,7 @@
         "overtime": "Overtime"
       },
       "slug": "cd-jorge-guzman-obera-tenis-club",
-      "startTimestamp": 1759723200,
+      "startTimestamp": 1759711200,
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -58618,9 +58667,9 @@
       },
       "customId": "mFNcswddj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 13,
+        "description": "1st quarter",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Leonas",
@@ -58684,13 +58733,30 @@
           "text": "#ffffff"
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 14,
+        "display": 14,
+        "period1": 14
+      },
+      "awayScore": {
+        "current": 28,
+        "display": 28,
+        "period1": 28
+      },
+      "time": {
+        "played": 536,
+        "periodLength": 600,
+        "overtimeLength": 300,
+        "totalPeriodCount": 4
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.played"
+        ],
+        "changeTimestamp": 1759699095
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14813062,
       "periods": {
@@ -58703,6 +58769,7 @@
       },
       "slug": "jaguares-uam-leonas",
       "startTimestamp": 1759698000,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
