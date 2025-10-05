@@ -3451,8 +3451,8 @@
       },
       "customId": "bCbszic",
       "status": {
-        "code": 30,
-        "description": "Pause",
+        "code": 3,
+        "description": "3rd period",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -3536,26 +3536,28 @@
         "current": 0,
         "display": 0,
         "period1": 0,
-        "period2": 0
+        "period2": 0,
+        "period3": 0
       },
       "awayScore": {
         "current": 3,
         "display": 3,
         "period1": 1,
-        "period2": 2
+        "period2": 2,
+        "period3": 0
       },
       "time": {
-        "played": 2400,
+        "played": 2537,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3,
-        "currentPeriodStartTimestamp": 1759688670
+        "currentPeriodStartTimestamp": 1759689746
       },
       "changes": {
         "changes": [
           "time.played"
         ],
-        "changeTimestamp": 1759688703
+        "changeTimestamp": 1759689965
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -3570,6 +3572,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
+      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -15009,24 +15012,22 @@
         "period3": 0
       },
       "awayScore": {
-        "current": 5,
-        "display": 5,
+        "current": 7,
+        "display": 7,
         "period1": 2,
         "period2": 3,
-        "period3": 0
+        "period3": 2
       },
       "time": {
         "currentPeriodStartTimestamp": 1759688474
       },
       "changes": {
         "changes": [
-          "status.code",
-          "status.description",
-          "homeScore.period3",
-          "awayScore.period3",
-          "time.currentPeriodStart"
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period3"
         ],
-        "changeTimestamp": 1759688476
+        "changeTimestamp": 1759689916
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -34651,10 +34652,11 @@
       },
       "customId": "FGWsYDX",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Cardiff Devils",
         "slug": "cardiff-devils",
@@ -34734,11 +34736,42 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "period2": 0,
+        "period3": 0,
+        "normaltime": 0
+      },
+      "awayScore": {
+        "current": 5,
+        "display": 5,
+        "period1": 0,
+        "period2": 1,
+        "period3": 4,
+        "normaltime": 5
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.period3",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.period3",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1759689468
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -34753,7 +34786,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
