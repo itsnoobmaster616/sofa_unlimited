@@ -96,8 +96,8 @@
       },
       "customId": "Ygbsthb",
       "status": {
-        "code": 31,
-        "description": "Halftime",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -174,23 +174,29 @@
         "current": 0,
         "display": 0,
         "period1": 0,
+        "period2": 0,
         "normaltime": 0
       },
       "awayScore": {
         "current": 0,
         "display": 0,
         "period1": 0,
+        "period2": 0,
         "normaltime": 0
       },
       "time": {
         "injuryTime1": 1,
-        "currentPeriodStartTimestamp": 1759775402
+        "initial": 2700,
+        "max": 5400,
+        "extra": 540,
+        "currentPeriodStartTimestamp": 1759779074
       },
       "changes": {
         "changes": [
-          "time.injuryTime1"
+          "homeScore.period2",
+          "awayScore.period2"
         ],
-        "changeTimestamp": 1759778170
+        "changeTimestamp": 1759779161
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -202,8 +208,16 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1759779074,
+        "extra": 540
+      },
       "slug": "cultural-leonesa-albacete-balompie",
       "startTimestamp": 1759775400,
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -1561,10 +1575,10 @@
         "normaltime": 1
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0,
-        "normaltime": 0
+        "current": 1,
+        "display": 1,
+        "period1": 1,
+        "normaltime": 1
       },
       "time": {
         "initial": 0,
@@ -1574,12 +1588,12 @@
       },
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display",
-          "homeScore.period1",
-          "homeScore.normaltime"
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1759777522
+        "changeTimestamp": 1759778972
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -2101,10 +2115,11 @@
       },
       "customId": "YVjshTGb",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "FC Botoșani",
         "slug": "fc-botosani",
@@ -2196,17 +2211,16 @@
       },
       "time": {
         "injuryTime1": 2,
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
+        "injuryTime2": 3,
         "currentPeriodStartTimestamp": 1759775880
       },
       "changes": {
         "changes": [
-          "homeScore.period2",
-          "homeScore.normaltime"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1759777695
+        "changeTimestamp": 1759778894
       },
       "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
@@ -2218,16 +2232,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1759775880,
-        "extra": 540
-      },
       "slug": "uta-arad-fc-botosani",
       "startTimestamp": 1759771800,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
