@@ -561,10 +561,11 @@
       },
       "customId": "HybsNyb",
       "status": {
-        "code": 3,
-        "description": "3rd period",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Los Angeles Kings",
         "slug": "los-angeles-kings",
@@ -650,27 +651,35 @@
         "display": 1,
         "period1": 0,
         "period2": 0,
-        "period3": 1
+        "period3": 1,
+        "normaltime": 1
       },
       "awayScore": {
         "current": 4,
         "display": 4,
         "period1": 0,
         "period2": 3,
-        "period3": 1
+        "period3": 1,
+        "normaltime": 4
       },
       "time": {
-        "played": 3430,
+        "played": 3600,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3,
-        "currentPeriodStartTimestamp": 1759898887
+        "currentPeriodStartTimestamp": 1759901332
       },
       "changes": {
         "changes": [
-          "time.played"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime",
+          "time.played",
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1759900871
+        "changeTimestamp": 1759901351
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -686,7 +695,6 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -6161,7 +6169,7 @@
         ],
         "changeTimestamp": 1759894524
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14072203,
       "slug": "vancouver-giants-saskatoon-blades",
