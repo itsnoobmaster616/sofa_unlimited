@@ -88,9 +88,9 @@
       },
       "customId": "KxbsNxb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 21,
+        "description": "1st Inning",
+        "type": "inprogress"
       },
       "homeTeam": {
         "id": 3638,
@@ -170,13 +170,38 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "innings": {
+          "inning1": {
+            "run": 0
+          }
+        }
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "innings": {
+          "inning1": {
+            "run": 0
+          }
+        }
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1760047690
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.innings",
+          "awayScore.innings"
+        ],
+        "changeTimestamp": 1760048416
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14799645,
       "slug": "los-angeles-dodgers-philadelphia-phillies",
@@ -195,6 +220,7 @@
         "inning9": "9th Inning",
         "extra1": "10th Inning"
       },
+      "lastPeriod": "inning1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -2999,7 +3025,7 @@
         "inning9": "9th Inning",
         "extra1": "10th Inning"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -3363,9 +3389,9 @@
       },
       "customId": "orHisuNbj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 60,
+        "description": "Postponed",
+        "type": "postponed"
       },
       "homeTeam": {
         "id": 1080864,
@@ -3432,7 +3458,12 @@
       "awayScore": {},
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type"
+        ],
+        "changeTimestamp": 1760046141
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
