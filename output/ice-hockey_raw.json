@@ -4320,8 +4320,8 @@
       },
       "customId": "VDbsWBo",
       "status": {
-        "code": 1,
-        "description": "1st period",
+        "code": 30,
+        "description": "Pause",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -4404,9 +4404,9 @@
         }
       },
       "homeScore": {
-        "current": 1,
-        "display": 1,
-        "period1": 1
+        "current": 2,
+        "display": 2,
+        "period1": 2
       },
       "awayScore": {
         "current": 0,
@@ -4414,17 +4414,20 @@
         "period1": 0
       },
       "time": {
-        "played": 738,
+        "played": 1200,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3,
-        "currentPeriodStartTimestamp": 1760104869
+        "currentPeriodStartTimestamp": 1760107023
       },
       "changes": {
         "changes": [
+          "time.currentPeriodStart",
+          "status.code",
+          "status.description",
           "time.played"
         ],
-        "changeTimestamp": 1760106182
+        "changeTimestamp": 1760107028
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -4440,7 +4443,6 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -4541,8 +4543,8 @@
       },
       "customId": "NDbshhd",
       "status": {
-        "code": 1,
-        "description": "1st period",
+        "code": 30,
+        "description": "Pause",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -4630,22 +4632,24 @@
         "period1": 0
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0
+        "current": 1,
+        "display": 1,
+        "period1": 1
       },
       "time": {
-        "played": 843,
+        "played": 1200,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3,
-        "currentPeriodStartTimestamp": 1760104886
+        "currentPeriodStartTimestamp": 1760106851
       },
       "changes": {
         "changes": [
-          "time.played"
+          "time.currentPeriodStart",
+          "status.code",
+          "status.description"
         ],
-        "changeTimestamp": 1760106183
+        "changeTimestamp": 1760106854
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -4661,7 +4665,6 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -23781,10 +23784,11 @@
       },
       "customId": "oVfcsMVjc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Tappara Tampere U20",
         "slug": "tappara-tampere-u20",
@@ -23855,11 +23859,42 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 1,
+        "period2": 0,
+        "period3": 0,
+        "normaltime": 1
+      },
+      "awayScore": {
+        "current": 4,
+        "display": 4,
+        "period1": 0,
+        "period2": 0,
+        "period3": 4,
+        "normaltime": 4
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.period3",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.period3",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1760107119
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
