@@ -6864,9 +6864,9 @@
       },
       "customId": "exjdsgxjd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 21,
+        "description": "1st Inning",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Western Province",
@@ -6933,12 +6933,38 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "innings": {
+          "inning1": {
+            "score": 0,
+            "wickets": 0,
+            "overs": 0,
+            "runRate": 0
+          }
+        }
+      },
       "coverage": 3,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status",
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.innings",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.innings"
+        ],
+        "changeTimestamp": 1760460384
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -6953,7 +6979,8 @@
         "inning3": "3rd Inning",
         "inning4": "4th Inning"
       },
-      "finalResultOnly": true,
+      "lastPeriod": "inning1",
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -7501,14 +7528,14 @@
         }
       },
       "awayScore": {
-        "current": 15,
-        "display": 15,
+        "current": 27,
+        "display": 27,
         "innings": {
           "inning1": {
-            "score": 15,
+            "score": 27,
             "wickets": 0,
-            "overs": 2.5,
-            "runRate": 5.29,
+            "overs": 7,
+            "runRate": 3.86,
             "targetRunRate": 5.88
           }
         }
@@ -7517,11 +7544,9 @@
       "time": {},
       "changes": {
         "changes": [
-          "awayScore.current",
-          "awayScore.display",
           "awayScore.innings"
         ],
-        "changeTimestamp": 1760459335
+        "changeTimestamp": 1760460554
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
