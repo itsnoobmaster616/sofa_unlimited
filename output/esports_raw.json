@@ -558,10 +558,11 @@
       },
       "customId": "nqKdsCNZd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 1001,
+        "description": "First game",
+        "type": "inprogress"
       },
+      "winnerCode": 3,
       "homeTeam": {
         "name": "BOSS",
         "slug": "boss",
@@ -626,12 +627,30 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
       "coverage": 91,
-      "time": {},
+      "time": {
+        "currentPeriodStartTimestamp": 1760736205
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "awayScore.current",
+          "awayScore.display",
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1760736247
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
@@ -640,7 +659,7 @@
       "eventType": "best_of",
       "roundsInAHalf": 12,
       "slug": "boss-shimmer",
-      "startTimestamp": 1760734800,
+      "startTimestamp": 1760736300,
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
