@@ -3321,6 +3321,7 @@
       "id": 14901529,
       "bestOf": 1,
       "eventType": "best_of",
+      "roundsInAHalf": 12,
       "slug": "back2thegame-rustec",
       "startTimestamp": 1760716800,
       "finalResultOnly": false,
@@ -3477,6 +3478,7 @@
       "id": 14901527,
       "bestOf": 1,
       "eventType": "best_of",
+      "roundsInAHalf": 12,
       "slug": "foreverorgless-lfo",
       "startTimestamp": 1760724000,
       "finalResultOnly": false,
@@ -3622,6 +3624,7 @@
       "id": 14901528,
       "bestOf": 1,
       "eventType": "best_of",
+      "roundsInAHalf": 12,
       "slug": "2garins-washington",
       "startTimestamp": 1760724000,
       "finalResultOnly": false,
@@ -9730,10 +9733,11 @@
       },
       "customId": "aNVcsqDWc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 1001,
+        "description": "First game",
+        "type": "inprogress"
       },
+      "winnerCode": 3,
       "homeTeam": {
         "name": "fnatic",
         "slug": "fnatic",
@@ -9805,12 +9809,30 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
       "coverage": 91,
-      "time": {},
+      "time": {
+        "currentPeriodStartTimestamp": 1760677197
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "awayScore.current",
+          "awayScore.display",
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1760677214
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
@@ -14431,11 +14453,11 @@
       },
       "customId": "FQLdsTDNi",
       "status": {
-        "code": 1002,
-        "description": "Second game",
+        "code": 30,
+        "description": "Pause",
         "type": "inprogress"
       },
-      "winnerCode": 1,
+      "winnerCode": 3,
       "homeTeam": {
         "name": "Carstensz",
         "slug": "carstensz",
@@ -14503,24 +14525,22 @@
       "homeScore": {
         "current": 1,
         "display": 1,
-        "period1": 1
+        "period1": 1,
+        "period2": 0
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0
+        "current": 1,
+        "display": 1,
+        "period1": 0,
+        "period2": 1
       },
       "coverage": 91,
-      "time": {
-        "currentPeriodStartTimestamp": 1760674445
-      },
+      "time": {},
       "changes": {
         "changes": [
-          "status.code",
-          "status.description",
-          "time.currentPeriodStart"
+          "awayScore.display"
         ],
-        "changeTimestamp": 1760674455
+        "changeTimestamp": 1760677392
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
