@@ -88,9 +88,9 @@
       },
       "customId": "QxbsRxb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 21,
+        "description": "1st Inning",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Seattle Mariners",
@@ -169,15 +169,56 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "innings": {
+          "inning1": {
+            "run": 0
+          }
+        },
+        "inningsBaseball": {
+          "hits": 0,
+          "errors": 0
+        }
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "innings": {
+          "inning1": {
+            "run": 0
+          }
+        },
+        "inningsBaseball": {
+          "hits": 1,
+          "errors": 0
+        }
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1760739020
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.innings",
+          "awayScore.innings"
+        ],
+        "changeTimestamp": 1760739518
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14799676,
+      "currentInningStatus": {
+        "basesCovered": [],
+        "ballCount": 0,
+        "strikeCount": 0,
+        "inning": 1,
+        "inningHalf": "B",
+        "outCount": 0
+      },
       "slug": "toronto-blue-jays-seattle-mariners",
       "previousLegEventId": 14799678,
       "startTimestamp": 1760738880,
@@ -194,6 +235,7 @@
         "inning9": "9th Inning",
         "extra1": "10th Inning"
       },
+      "lastPeriod": "inning1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -6611,7 +6653,7 @@
         "inning9": "9th Inning",
         "extra1": "10th Inning"
       },
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -6789,7 +6831,7 @@
         "inning9": "9th Inning",
         "extra1": "10th Inning"
       },
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
