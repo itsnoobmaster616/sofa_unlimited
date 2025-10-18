@@ -178,7 +178,7 @@
         "changes": [
           "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1760756164
+        "changeTimestamp": 1760756759
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -273,8 +273,8 @@
       },
       "customId": "JNbsPNb",
       "status": {
-        "code": 13,
-        "description": "1st quarter",
+        "code": 14,
+        "description": "2nd quarter",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -352,32 +352,28 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0
+        "current": 2,
+        "display": 2,
+        "period1": 2,
+        "period2": 0
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0
+        "current": 7,
+        "display": 7,
+        "period1": 0,
+        "period2": 7
       },
       "time": {
-        "currentPeriodStartTimestamp": 1760755131
+        "currentPeriodStartTimestamp": 1760757256
       },
       "changes": {
         "changes": [
-          "status.code",
-          "status.description",
-          "status.type",
-          "homeScore.current",
-          "homeScore.display",
-          "homeScore.period1",
+          "time.currentPeriodStart",
           "awayScore.current",
           "awayScore.display",
-          "awayScore.period1",
-          "time.currentPeriodStart"
+          "awayScore.period2"
         ],
-        "changeTimestamp": 1760755178
+        "changeTimestamp": 1760757943
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -392,7 +388,7 @@
         "period4": "4th quarter",
         "overtime": "Overtime"
       },
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -1669,10 +1665,11 @@
       },
       "customId": "HKbsGMb",
       "status": {
-        "code": 16,
-        "description": "4th quarter",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Minnesota Golden Gophers",
         "slug": "minnesota-golden-gophers",
@@ -1747,7 +1744,8 @@
         "period1": 0,
         "period2": 7,
         "period3": 7,
-        "period4": 10
+        "period4": 10,
+        "normaltime": 24
       },
       "awayScore": {
         "current": 6,
@@ -1755,21 +1753,25 @@
         "period1": 3,
         "period2": 3,
         "period3": 0,
-        "period4": 0
+        "period4": 0,
+        "normaltime": 6
       },
       "time": {
-        "played": 3286,
+        "played": 3600,
         "periodLength": 900,
         "overtimeLength": 600,
         "totalPeriodCount": 4
       },
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display",
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime",
           "time.played"
         ],
-        "changeTimestamp": 1760756223
+        "changeTimestamp": 1760757365
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -1785,7 +1787,6 @@
         "period4": "4th quarter",
         "overtime": "Overtime"
       },
-      "lastPeriod": "period4",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -1879,10 +1880,11 @@
       },
       "customId": "FCGdsfGGd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "UW-Whitewater Warhawks",
         "slug": "uw-whitewater-warhawks",
@@ -1949,11 +1951,46 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 34,
+        "display": 34,
+        "period1": 0,
+        "period2": 3,
+        "period3": 14,
+        "period4": 17,
+        "normaltime": 34
+      },
+      "awayScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 0,
+        "period2": 0,
+        "period3": 2,
+        "period4": 0,
+        "normaltime": 2
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.period3",
+          "homeScore.period4",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.period3",
+          "awayScore.period4",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1760757694
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -1968,7 +2005,7 @@
         "period4": "4th quarter",
         "overtime": "Overtime"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -2134,21 +2171,21 @@
         }
       },
       "homeScore": {
-        "current": 10,
-        "display": 10,
+        "current": 24,
+        "display": 24,
         "period1": 7,
         "period2": 3,
-        "period3": 0
+        "period3": 14
       },
       "awayScore": {
-        "current": 9,
-        "display": 9,
+        "current": 19,
+        "display": 19,
         "period1": 3,
         "period2": 6,
-        "period3": 0
+        "period3": 10
       },
       "time": {
-        "played": 1811,
+        "played": 2654,
         "periodLength": 900,
         "overtimeLength": 600,
         "totalPeriodCount": 4
@@ -2157,7 +2194,7 @@
         "changes": [
           "time.played"
         ],
-        "changeTimestamp": 1760756224
+        "changeTimestamp": 1760758326
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -2340,17 +2377,17 @@
         }
       },
       "homeScore": {
+        "current": 14,
+        "display": 14,
+        "period1": 14
+      },
+      "awayScore": {
         "current": 7,
         "display": 7,
         "period1": 7
       },
-      "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0
-      },
       "time": {
-        "played": 307,
+        "played": 900,
         "periodLength": 900,
         "overtimeLength": 600,
         "totalPeriodCount": 4
@@ -2359,7 +2396,7 @@
         "changes": [
           "time.played"
         ],
-        "changeTimestamp": 1760756225
+        "changeTimestamp": 1760758327
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,

@@ -386,10 +386,11 @@
       },
       "customId": "FxbsNxb",
       "status": {
-        "code": 28,
-        "description": "8th Inning",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Los Angeles Dodgers",
         "slug": "los-angeles-dodgers",
@@ -478,7 +479,9 @@
         "period6": 0,
         "period7": 1,
         "period8": 0,
-        "series": 3,
+        "period9": 0,
+        "normaltime": 5,
+        "series": 4,
         "innings": {
           "inning1": {
             "run": 3
@@ -503,12 +506,19 @@
           },
           "inning8": {
             "run": 0
+          },
+          "inning9": {
+            "run": -1
           }
+        },
+        "inningsBaseball": {
+          "hits": 9,
+          "errors": 0
         }
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
+        "current": 1,
+        "display": 1,
         "period1": 0,
         "period2": 0,
         "period3": 0,
@@ -516,7 +526,9 @@
         "period5": 0,
         "period6": 0,
         "period7": 0,
-        "period8": 0,
+        "period8": 1,
+        "period9": 0,
+        "normaltime": 1,
         "series": 0,
         "innings": {
           "inning1": {
@@ -541,32 +553,31 @@
             "run": 0
           },
           "inning8": {
+            "run": 1
+          },
+          "inning9": {
             "run": 0
           }
+        },
+        "inningsBaseball": {
+          "hits": 5,
+          "errors": 0
         }
       },
       "time": {
-        "currentPeriodStartTimestamp": 1760755834
+        "currentPeriodStartTimestamp": 1760757643
       },
       "changes": {
         "changes": [
           "homeScore.innings",
           "awayScore.innings"
         ],
-        "changeTimestamp": 1760756259
+        "changeTimestamp": 1760757784
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14799661,
-      "currentInningStatus": {
-        "basesCovered": [],
-        "ballCount": 0,
-        "strikeCount": 0,
-        "inning": 8,
-        "inningHalf": "B",
-        "outCount": 0
-      },
       "slug": "los-angeles-dodgers-milwaukee-brewers",
       "previousLegEventId": 14799667,
       "startTimestamp": 1760747880,
@@ -583,7 +594,6 @@
         "inning9": "9th Inning",
         "extra1": "10th Inning"
       },
-      "lastPeriod": "inning8",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -2997,10 +3007,11 @@
       },
       "customId": "etAbszOwc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Estrellas Orientales",
         "slug": "estrellas-orientales",
@@ -3078,11 +3089,30 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 8,
+        "display": 8,
+        "normaltime": 8
+      },
+      "awayScore": {
+        "current": 7,
+        "display": 7,
+        "normaltime": 7
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1760758345
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
