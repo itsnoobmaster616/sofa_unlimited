@@ -3610,7 +3610,7 @@
       "eventType": "best_of",
       "roundsInAHalf": 12,
       "slug": "mousquetaires-unity-esports",
-      "startTimestamp": 1761058800,
+      "startTimestamp": 1761060600,
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -5662,10 +5662,11 @@
       },
       "customId": "prudsCcJd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 1001,
+        "description": "First game",
+        "type": "inprogress"
       },
+      "winnerCode": 3,
       "homeTeam": {
         "name": "ENCE Academy",
         "slug": "ence-academy",
@@ -5733,12 +5734,30 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
       "coverage": 90,
-      "time": {},
+      "time": {
+        "currentPeriodStartTimestamp": 1761057078
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.display",
+          "awayScore.display",
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "awayScore.current",
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1761057129
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
@@ -8381,11 +8400,11 @@
       },
       "customId": "YQidsWvdj",
       "status": {
-        "code": 1001,
-        "description": "First game",
+        "code": 30,
+        "description": "Pause",
         "type": "inprogress"
       },
-      "winnerCode": 3,
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Zero Tenacity",
         "slug": "zero-tenacity",
@@ -8442,29 +8461,28 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0
+        "current": 1,
+        "display": 1,
+        "period1": 1
       },
       "awayScore": {
         "current": 0,
-        "display": 0
+        "display": 0,
+        "period1": 0
       },
       "coverage": 91,
-      "time": {
-        "currentPeriodStartTimestamp": 1761055377
-      },
+      "time": {},
       "changes": {
         "changes": [
-          "homeScore.display",
-          "awayScore.display",
           "status.code",
           "status.description",
-          "status.type",
           "homeScore.current",
-          "awayScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "awayScore.period1",
           "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1761055389
+        "changeTimestamp": 1761057186
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
@@ -12639,11 +12657,11 @@
       },
       "customId": "uflesKVFi",
       "status": {
-        "code": 1002,
-        "description": "Second game",
+        "code": 30,
+        "description": "Pause",
         "type": "inprogress"
       },
-      "winnerCode": 1,
+      "winnerCode": 3,
       "homeTeam": {
         "name": "BC.Game Esports",
         "slug": "bcgame-esports",
@@ -12706,24 +12724,28 @@
       "homeScore": {
         "current": 1,
         "display": 1,
-        "period1": 1
+        "period1": 1,
+        "period2": 0
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0
+        "current": 1,
+        "display": 1,
+        "period1": 0,
+        "period2": 1
       },
       "coverage": 91,
-      "time": {
-        "currentPeriodStartTimestamp": 1761052949
-      },
+      "time": {},
       "changes": {
         "changes": [
+          "awayScore.display",
           "status.code",
           "status.description",
+          "homeScore.period2",
+          "awayScore.current",
+          "awayScore.period2",
           "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1761052985
+        "changeTimestamp": 1761057308
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
@@ -13141,11 +13163,11 @@
       },
       "customId": "TPKisIVMi",
       "status": {
-        "code": 1002,
-        "description": "Second game",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
-      "winnerCode": 1,
+      "winnerCode": 2,
       "homeTeam": {
         "name": "FUT Esports",
         "slug": "fut-esports",
@@ -13214,24 +13236,33 @@
       "homeScore": {
         "current": 1,
         "display": 1,
-        "period1": 1
+        "period1": 1,
+        "period2": 0,
+        "period3": 0
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0
+        "current": 2,
+        "display": 2,
+        "period1": 0,
+        "period2": 1,
+        "period3": 1
       },
       "coverage": 91,
-      "time": {
-        "currentPeriodStartTimestamp": 1761051617
-      },
+      "time": {},
       "changes": {
         "changes": [
           "status.code",
           "status.description",
-          "time.currentPeriodStart"
+          "status.type",
+          "homeScore.period3",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period3",
+          "time.currentPeriodStart",
+          "homeScore.period2",
+          "awayScore.period2"
         ],
-        "changeTimestamp": 1761051664
+        "changeTimestamp": 1761057019
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
@@ -13241,6 +13272,147 @@
       "roundsInAHalf": 12,
       "slug": "fut-esports-mousquetaires",
       "startTimestamp": 1761049200,
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "isEditor": false
+    },
+    {
+      "tournament": {
+        "name": "Chennai Esports Global Championship Playoffs",
+        "slug": "chennai-esports-global-championship-playoffs",
+        "category": {
+          "id": 1572,
+          "country": {},
+          "name": "Counter Strike",
+          "slug": "csgo",
+          "sport": {
+            "name": "E-sports",
+            "slug": "esports",
+            "id": 72
+          },
+          "flag": "counter-strike",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "كاونتر سترايك",
+              "hi": "काउंटर स्ट्राइक",
+              "bn": "কাউন্টার স্ট্রাইক"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "Chennai Esports Global Championship",
+          "slug": "chennai-esports-global-championship",
+          "category": {
+            "id": 1572,
+            "country": {},
+            "name": "Counter Strike",
+            "slug": "csgo",
+            "sport": {
+              "name": "E-sports",
+              "slug": "esports",
+              "id": 72
+            },
+            "flag": "counter-strike",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "كاونتر سترايك",
+                "hi": "काउंटर स्ट्राइक",
+                "bn": "কাউন্টার স্ট্রাইক"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 0,
+          "hasPerformanceGraphFeature": false,
+          "id": 30355,
+          "country": {},
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false
+        },
+        "priority": 0,
+        "id": 166860
+      },
+      "season": {
+        "name": "Europe Open Qualifier 2025",
+        "year": "2025",
+        "editor": false,
+        "id": 85002
+      },
+      "customId": "TPKisbkfj",
+      "status": {
+        "code": 0,
+        "description": "Not started",
+        "type": "notstarted"
+      },
+      "homeTeam": {
+        "name": "MOLO",
+        "slug": "molo",
+        "sport": {
+          "name": "E-sports",
+          "slug": "esports",
+          "id": 72
+        },
+        "userCount": 1,
+        "nameCode": "MOL",
+        "national": false,
+        "type": 0,
+        "id": 1138001,
+        "country": {},
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "awayTeam": {
+        "name": "Mousquetaires",
+        "slug": "mousquetaires",
+        "sport": {
+          "name": "E-sports",
+          "slug": "esports",
+          "id": 72
+        },
+        "userCount": 21,
+        "nameCode": "MOU",
+        "national": false,
+        "type": 0,
+        "id": 1089543,
+        "country": {
+          "alpha2": "FR",
+          "alpha3": "FRA",
+          "name": "France",
+          "slug": "france"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "موسكيتير"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "homeScore": {},
+      "awayScore": {},
+      "coverage": 91,
+      "time": {},
+      "changes": {
+        "changeTimestamp": 0
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 14928216,
+      "bestOf": 3,
+      "eventType": "best_of",
+      "roundsInAHalf": 12,
+      "slug": "molo-mousquetaires",
+      "startTimestamp": 1761127200,
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false

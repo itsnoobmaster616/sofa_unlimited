@@ -4737,10 +4737,11 @@
       },
       "customId": "pZqsPcL",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 3,
       "homeTeam": {
         "name": "PSV Eindhoven U19",
         "slug": "psv-eindhoven-u19",
@@ -4830,16 +4831,15 @@
         "normaltime": 0
       },
       "time": {
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
         "currentPeriodStartTimestamp": 1761053706
       },
       "changes": {
         "changes": [
-          "cardsCode"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1761055750
+        "changeTimestamp": 1761056679
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": false,
@@ -4851,16 +4851,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1761053706,
-        "extra": 540
-      },
       "slug": "psv-eindhoven-u19-napoli-u19",
       "startTimestamp": 1761049800,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -4952,9 +4944,9 @@
       },
       "customId": "DersLCZi",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
       "homeTeam": {
         "name": "Union Saint Gilloise U19",
@@ -5024,24 +5016,24 @@
         "normaltime": 1
       },
       "awayScore": {
-        "current": 1,
-        "display": 1,
+        "current": 2,
+        "display": 2,
         "period1": 0,
-        "period2": 0,
-        "normaltime": 0
+        "period2": 2,
+        "normaltime": 2
       },
       "time": {
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
         "currentPeriodStartTimestamp": 1761053616
       },
       "changes": {
         "changes": [
-          "awayScore.current",
-          "awayScore.display"
+          "status.code",
+          "status.description",
+          "status.type",
+          "awayScore.period2",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1761056407
+        "changeTimestamp": 1761056743
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": false,
@@ -5052,16 +5044,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1761053616,
-        "extra": 540
-      },
       "slug": "union-saint-gilloise-u19-inter-u19",
       "startTimestamp": 1761049800,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -5240,11 +5224,11 @@
         "normaltime": 0
       },
       "awayScore": {
-        "current": 2,
-        "display": 2,
+        "current": 4,
+        "display": 4,
         "period1": 1,
-        "period2": 0,
-        "normaltime": 1
+        "period2": 3,
+        "normaltime": 4
       },
       "time": {
         "initial": 2700,
@@ -5254,10 +5238,10 @@
       },
       "changes": {
         "changes": [
-          "awayScore.current",
-          "awayScore.display"
+          "awayScore.period2",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1761056323
+        "changeTimestamp": 1761057721
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": false,
@@ -5450,7 +5434,8 @@
       "homeScore": {
         "current": 0,
         "display": 0,
-        "period1": 0
+        "period1": 0,
+        "normaltime": 0
       },
       "awayScore": {
         "current": 0,
@@ -5465,18 +5450,9 @@
       },
       "changes": {
         "changes": [
-          "status.code",
-          "status.description",
-          "status.type",
-          "homeScore.current",
-          "homeScore.display",
-          "homeScore.period1",
-          "awayScore.current",
-          "awayScore.display",
-          "awayScore.period1",
-          "time.currentPeriodStart"
+          "homeScore.normaltime"
         ],
-        "changeTimestamp": 1761055310
+        "changeTimestamp": 1761057285
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": false,
@@ -6024,15 +6000,16 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0,
-        "normaltime": 0
+        "current": 1,
+        "display": 1,
+        "period1": 1,
+        "normaltime": 1
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0
+        "current": 1,
+        "display": 1,
+        "period1": 1,
+        "normaltime": 1
       },
       "time": {
         "initial": 0,
@@ -6042,9 +6019,12 @@
       },
       "changes": {
         "changes": [
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
           "homeScore.normaltime"
         ],
-        "changeTimestamp": 1761056282
+        "changeTimestamp": 1761057647
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": false,
@@ -13856,10 +13836,10 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0,
-        "normaltime": 0
+        "current": 2,
+        "display": 2,
+        "period1": 1,
+        "normaltime": 1
       },
       "awayScore": {
         "current": 0,
@@ -13875,22 +13855,12 @@
       },
       "changes": {
         "changes": [
-          "homeScore.period1",
-          "homeScore.normaltime",
-          "awayScore.period1",
-          "awayScore.normaltime",
-          "time.currentPeriodStart",
-          "status.code",
-          "status.description",
-          "status.type",
           "homeScore.current",
-          "homeScore.display",
-          "awayScore.current",
-          "awayScore.display"
+          "homeScore.display"
         ],
-        "changeTimestamp": 1761055313
+        "changeTimestamp": 1761057732
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
       "hasEventPlayerHeatMap": true,
       "detailId": 1,
@@ -19874,8 +19844,8 @@
       },
       "customId": "tkdsCKzb",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 31,
+        "description": "Halftime",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -19967,19 +19937,15 @@
         "normaltime": 0
       },
       "time": {
-        "initial": 0,
-        "max": 2700,
-        "extra": 540,
+        "injuryTime1": 2,
         "currentPeriodStartTimestamp": 1761054316
       },
       "changes": {
         "changes": [
-          "homeScore.period1",
-          "homeScore.normaltime",
-          "awayScore.period1",
-          "awayScore.normaltime"
+          "status.code",
+          "status.description"
         ],
-        "changeTimestamp": 1761054407
+        "changeTimestamp": 1761057158
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -19991,16 +19957,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1761054316,
-        "extra": 540
-      },
       "slug": "ahal-fk-sepahanc",
       "startTimestamp": 1761054300,
-      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -27492,9 +27450,9 @@
       },
       "customId": "LGosGmUi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Inter U23",
@@ -27563,11 +27521,25 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 1,
+        "display": 1
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
+      "time": {
+        "initial": 0,
+        "max": 2700,
+        "extra": 540,
+        "currentPeriodStartTimestamp": 1761057060
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1761057436
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -27576,8 +27548,16 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1761057060,
+        "extra": 540
+      },
       "slug": "inter-u23-renate",
       "startTimestamp": 1761057000,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -29462,14 +29442,14 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0
+        "current": 1,
+        "display": 1,
+        "period1": 1
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0
+        "current": 2,
+        "display": 2,
+        "period1": 2
       },
       "time": {
         "periodLength": 2700,
@@ -29482,9 +29462,11 @@
       },
       "changes": {
         "changes": [
-          "time.currentPeriodStart"
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1"
         ],
-        "changeTimestamp": 1761055275
+        "changeTimestamp": 1761057332
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -32438,8 +32420,8 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0
+        "current": 1,
+        "display": 1
       },
       "awayScore": {
         "current": 0,
@@ -32453,9 +32435,10 @@
       },
       "changes": {
         "changes": [
-          "cardsCode"
+          "homeScore.current",
+          "homeScore.display"
         ],
-        "changeTimestamp": 1761055730
+        "changeTimestamp": 1761057887
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -34263,10 +34246,10 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
+        "current": 1,
+        "display": 1,
         "period1": 0,
-        "period2": 0
+        "period2": 1
       },
       "awayScore": {
         "current": 1,
@@ -34285,14 +34268,11 @@
       },
       "changes": {
         "changes": [
-          "status.code",
-          "status.description",
-          "homeScore.period2",
-          "awayScore.period2",
-          "time.currentPeriodStart",
-          "time.period2Start"
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period2"
         ],
-        "changeTimestamp": 1761055788
+        "changeTimestamp": 1761057558
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
