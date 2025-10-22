@@ -404,10 +404,11 @@
       },
       "customId": "rUXcsnqKd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 1001,
+        "description": "First game",
+        "type": "inprogress"
       },
+      "winnerCode": 3,
       "homeTeam": {
         "name": "shimmer",
         "slug": "shimmer",
@@ -468,12 +469,30 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
       "coverage": 91,
-      "time": {},
+      "time": {
+        "currentPeriodStartTimestamp": 1761103578
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.display",
+          "awayScore.display",
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "awayScore.current",
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1761103628
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
@@ -482,7 +501,7 @@
       "eventType": "best_of",
       "roundsInAHalf": 12,
       "slug": "shimmer-overknight",
-      "startTimestamp": 1761102000,
+      "startTimestamp": 1761103500,
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
