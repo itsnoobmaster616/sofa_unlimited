@@ -3439,7 +3439,7 @@
         ],
         "changeTimestamp": 1761337656
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasXg": true,
       "hasEventPlayerStatistics": true,
       "hasEventPlayerHeatMap": true,
@@ -16833,7 +16833,7 @@
         ],
         "changeTimestamp": 1761339507
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasXg": true,
       "hasEventPlayerStatistics": true,
       "hasEventPlayerHeatMap": true,
@@ -21730,9 +21730,9 @@
       },
       "customId": "EOsokeb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Grêmio Novorizontino",
@@ -21809,14 +21809,29 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "time": {
+        "initial": 0,
+        "max": 2700,
+        "extra": 540,
+        "currentPeriodStartTimestamp": 1761343238
+      },
       "changes": {
         "changes": [
-          "cardsCode"
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1761340358
+        "changeTimestamp": 1761344506
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -21828,8 +21843,16 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1761343238,
+        "extra": 540
+      },
       "slug": "gremio-novorizontino-botafogo-sp",
       "startTimestamp": 1761343200,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -33539,10 +33562,11 @@
       },
       "customId": "hnbsHac",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Palestino",
         "slug": "palestino",
@@ -33635,16 +33659,16 @@
       },
       "time": {
         "injuryTime1": 3,
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
-        "currentPeriodStartTimestamp": 1761339988
+        "injuryTime2": 7,
+        "currentPeriodStartTimestamp": 1761339986
       },
       "changes": {
         "changes": [
-          "time.currentPeriodStart"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1761341965
+        "changeTimestamp": 1761343115
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -33656,16 +33680,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1761339988,
-        "extra": 540
-      },
       "slug": "everton-de-vina-del-mar-palestino",
       "startTimestamp": 1761336000,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -34138,8 +34154,8 @@
       },
       "customId": "AOcsZXbe",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -34217,30 +34233,33 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0,
-        "normaltime": 0
+        "current": 2,
+        "display": 2,
+        "period1": 1,
+        "period2": 1,
+        "normaltime": 2
       },
       "awayScore": {
         "current": 0,
         "display": 0,
         "period1": 0,
+        "period2": 0,
         "normaltime": 0
       },
       "time": {
-        "initial": 0,
-        "max": 2700,
+        "injuryTime1": 3,
+        "initial": 2700,
+        "max": 5400,
         "extra": 540,
-        "currentPeriodStartTimestamp": 1761339625
+        "currentPeriodStartTimestamp": 1761343527
       },
       "changes": {
         "changes": [
           "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1761341975
+        "changeTimestamp": 1761344506
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
       "hasEventPlayerHeatMap": true,
       "detailId": 1,
@@ -34252,14 +34271,14 @@
       },
       "statusTime": {
         "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1761339625,
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1761343527,
         "extra": 540
       },
       "slug": "alianza-valledupar-fc-deportivo-la-equidad",
       "startTimestamp": 1761339600,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -34438,9 +34457,14 @@
       "awayScore": {},
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "cardsCode"
+        ],
+        "changeTimestamp": 1761344243
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14115395,
@@ -44179,7 +44203,7 @@
         ],
         "changeTimestamp": 1761338516
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "detailId": 6,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14914960,
@@ -44389,7 +44413,7 @@
         ],
         "changeTimestamp": 1761338707
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "detailId": 6,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14914961,
@@ -46765,10 +46789,11 @@
       },
       "customId": "jxKbsgzee",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "ADC Juan Pablo II",
         "slug": "adc-juan-pablo-ii",
@@ -46851,16 +46876,16 @@
       },
       "time": {
         "injuryTime1": 3,
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
+        "injuryTime2": 6,
         "currentPeriodStartTimestamp": 1761340098
       },
       "changes": {
         "changes": [
-          "time.currentPeriodStart"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1761341973
+        "changeTimestamp": 1761343187
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -46872,16 +46897,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1761340098,
-        "extra": 540
-      },
       "slug": "adc-juan-pablo-ii-comerciantes-unidos",
       "startTimestamp": 1761336000,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -64730,8 +64747,8 @@
       },
       "customId": "jobsMLo",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -64813,25 +64830,28 @@
         "current": 1,
         "display": 1,
         "period1": 1,
+        "period2": 0,
         "normaltime": 1
       },
       "awayScore": {
         "current": 0,
         "display": 0,
         "period1": 0,
+        "period2": 0,
         "normaltime": 0
       },
       "time": {
-        "initial": 0,
-        "max": 2700,
+        "injuryTime1": 4,
+        "initial": 2700,
+        "max": 5400,
         "extra": 540,
-        "currentPeriodStartTimestamp": 1761339555
+        "currentPeriodStartTimestamp": 1761343671
       },
       "changes": {
         "changes": [
           "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1761341979
+        "changeTimestamp": 1761344444
       },
       "hasGlobalHighlights": false,
       "hasXg": true,
@@ -64846,14 +64866,14 @@
       },
       "statusTime": {
         "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1761339555,
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1761343671,
         "extra": 540
       },
       "slug": "platense-ca-independiente",
       "startTimestamp": 1761339600,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -77452,10 +77472,11 @@
       },
       "customId": "eFzsxMK",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Atlético Cali",
         "slug": "atletico-cali",
@@ -77539,24 +77560,25 @@
         "normaltime": 1
       },
       "awayScore": {
-        "current": 2,
-        "display": 2,
+        "current": 3,
+        "display": 3,
         "period1": 1,
-        "period2": 0,
-        "normaltime": 1
+        "period2": 2,
+        "normaltime": 3
       },
       "time": {
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
-        "currentPeriodStartTimestamp": 1761339900
+        "currentPeriodStartTimestamp": 1761342840
       },
       "changes": {
         "changes": [
-          "awayScore.current",
-          "awayScore.display"
+          "status.code",
+          "status.description",
+          "status.type",
+          "awayScore.period2",
+          "awayScore.normaltime",
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1761341070
+        "changeTimestamp": 1761342862
       },
       "hasGlobalHighlights": false,
       "detailId": 6,
@@ -77566,16 +77588,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1761339900,
-        "extra": 540
-      },
       "slug": "atletico-cali-patriotas-boyaca",
       "startTimestamp": 1761336000,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -99380,28 +99394,28 @@
       "roundInfo": {
         "round": 5
       },
-      "customId": "YMsoN",
+      "customId": "VMseN",
       "status": {
         "code": 0,
         "description": "Not started",
         "type": "notstarted"
       },
       "homeTeam": {
-        "name": "ÍA Akranes",
-        "slug": "ia-akranes",
-        "shortName": "ÍA",
+        "name": "ÍBV Vestmannaeyjar",
+        "slug": "ibv-vestmannaeyjar",
+        "shortName": "Vestmannaeyjar",
         "gender": "M",
         "sport": {
           "name": "Football",
           "slug": "football",
           "id": 1
         },
-        "userCount": 7857,
-        "nameCode": "AKR",
+        "userCount": 5048,
+        "nameCode": "VES",
         "disabled": false,
         "national": false,
         "type": 0,
-        "id": 1898,
+        "id": 1895,
         "country": {
           "alpha2": "IS",
           "alpha3": "ISL",
@@ -99416,28 +99430,28 @@
         },
         "fieldTranslations": {
           "nameTranslation": {
-            "ar": "إي آي أكرانيس",
-            "ru": "ИА Акранес"
+            "ar": "آي . بي . في فيستمانيجار",
+            "ru": "ИБВ Вестманнаяр"
           },
-          "shortNameTranslation": {
-            "ar": "إي آي"
-          }
+          "shortNameTranslation": {}
         }
       },
       "awayTeam": {
-        "name": "Afturelding",
-        "slug": "afturelding",
+        "name": "KA Akureyri",
+        "slug": "ka-akureyri",
+        "shortName": "KA Akureyri",
         "gender": "M",
         "sport": {
           "name": "Football",
           "slug": "football",
           "id": 1
         },
-        "userCount": 5758,
-        "nameCode": "AFR",
+        "userCount": 6293,
+        "nameCode": "AKU",
+        "disabled": false,
         "national": false,
         "type": 0,
-        "id": 1914,
+        "id": 1904,
         "country": {
           "alpha2": "IS",
           "alpha3": "ISL",
@@ -99452,9 +99466,8 @@
         },
         "fieldTranslations": {
           "nameTranslation": {
-            "ar": "أفتوريلدينغ",
-            "ru": "Афтурелдинг",
-            "hi": "आफ्टूरीलिंग"
+            "ar": "كيه . ايه اكيورياري",
+            "ru": "КА Акюрейри"
           },
           "shortNameTranslation": {}
         }
@@ -99468,13 +99481,13 @@
       "hasGlobalHighlights": false,
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
-      "id": 14700951,
+      "id": 14700952,
       "varInProgress": {
         "homeTeam": false,
         "awayTeam": false
       },
-      "slug": "afturelding-ia-akranes",
-      "startTimestamp": 1761400800,
+      "slug": "ka-akureyri-ibv-vestmannaeyjar",
+      "startTimestamp": 1761393600,
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -99569,28 +99582,28 @@
       "roundInfo": {
         "round": 5
       },
-      "customId": "VMseN",
+      "customId": "YMsoN",
       "status": {
         "code": 0,
         "description": "Not started",
         "type": "notstarted"
       },
       "homeTeam": {
-        "name": "ÍBV Vestmannaeyjar",
-        "slug": "ibv-vestmannaeyjar",
-        "shortName": "Vestmannaeyjar",
+        "name": "ÍA Akranes",
+        "slug": "ia-akranes",
+        "shortName": "ÍA",
         "gender": "M",
         "sport": {
           "name": "Football",
           "slug": "football",
           "id": 1
         },
-        "userCount": 5048,
-        "nameCode": "VES",
+        "userCount": 7857,
+        "nameCode": "AKR",
         "disabled": false,
         "national": false,
         "type": 0,
-        "id": 1895,
+        "id": 1898,
         "country": {
           "alpha2": "IS",
           "alpha3": "ISL",
@@ -99605,28 +99618,28 @@
         },
         "fieldTranslations": {
           "nameTranslation": {
-            "ar": "آي . بي . في فيستمانيجار",
-            "ru": "ИБВ Вестманнаяр"
+            "ar": "إي آي أكرانيس",
+            "ru": "ИА Акранес"
           },
-          "shortNameTranslation": {}
+          "shortNameTranslation": {
+            "ar": "إي آي"
+          }
         }
       },
       "awayTeam": {
-        "name": "KA Akureyri",
-        "slug": "ka-akureyri",
-        "shortName": "KA Akureyri",
+        "name": "Afturelding",
+        "slug": "afturelding",
         "gender": "M",
         "sport": {
           "name": "Football",
           "slug": "football",
           "id": 1
         },
-        "userCount": 6293,
-        "nameCode": "AKU",
-        "disabled": false,
+        "userCount": 5758,
+        "nameCode": "AFR",
         "national": false,
         "type": 0,
-        "id": 1904,
+        "id": 1914,
         "country": {
           "alpha2": "IS",
           "alpha3": "ISL",
@@ -99641,8 +99654,9 @@
         },
         "fieldTranslations": {
           "nameTranslation": {
-            "ar": "كيه . ايه اكيورياري",
-            "ru": "КА Акюрейри"
+            "ar": "أفتوريلدينغ",
+            "ru": "Афтурелдинг",
+            "hi": "आफ्टूरीलिंग"
           },
           "shortNameTranslation": {}
         }
@@ -99656,12 +99670,12 @@
       "hasGlobalHighlights": false,
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
-      "id": 14700952,
+      "id": 14700951,
       "varInProgress": {
         "homeTeam": false,
         "awayTeam": false
       },
-      "slug": "ka-akureyri-ibv-vestmannaeyjar",
+      "slug": "afturelding-ia-akranes",
       "startTimestamp": 1761400800,
       "finalResultOnly": false,
       "feedLocked": false,
@@ -123530,10 +123544,11 @@
       },
       "customId": "FkbsLcc",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 3,
       "homeTeam": {
         "name": "Vizela",
         "slug": "vizela",
@@ -123606,45 +123621,38 @@
       "homeScore": {
         "current": 2,
         "display": 2,
-        "period1": 0
+        "period1": 0,
+        "period2": 2,
+        "normaltime": 2
       },
       "awayScore": {
         "current": 2,
         "display": 2,
-        "period1": 0
+        "period1": 0,
+        "period2": 2,
+        "normaltime": 2
       },
       "time": {
         "injuryTime1": 5,
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
-        "currentPeriodStartTimestamp": 1761339059
+        "injuryTime2": 7,
+        "currentPeriodStartTimestamp": 1761342187
       },
       "changes": {
         "changes": [
-          "time.currentPeriodStart"
+          "cardsCode"
         ],
-        "changeTimestamp": 1761341903
+        "changeTimestamp": 1761342565
       },
       "hasGlobalHighlights": false,
       "detailId": 5,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14132139,
-      "awayRedCards": 1,
       "varInProgress": {
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1761339059,
-        "extra": 540
-      },
       "slug": "vizela-felgueiras",
       "startTimestamp": 1761335100,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -129029,7 +129037,7 @@
         ],
         "changeTimestamp": 1761330376
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14857940,
       "varInProgress": {
@@ -133071,6 +133079,169 @@
       },
       "slug": "nk-maribor-nd-primorje",
       "startTimestamp": 1761406200,
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "isEditor": false
+    },
+    {
+      "tournament": {
+        "name": "CONMEBOL Nations League Women",
+        "slug": "conmebol-nations-league-women",
+        "category": {
+          "id": 1470,
+          "country": {},
+          "name": "South America",
+          "slug": "south-america",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "flag": "south-america",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "أمريكا الجنوبية"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "CONMEBOL Nations League Women",
+          "slug": "conmebol-nations-league-women",
+          "category": {
+            "id": 1470,
+            "country": {},
+            "name": "South America",
+            "slug": "south-america",
+            "sport": {
+              "name": "Football",
+              "slug": "football",
+              "id": 1
+            },
+            "flag": "south-america",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "أمريكا الجنوبية"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 55,
+          "id": 30396,
+          "country": {},
+          "hasPerformanceGraphFeature": false,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false
+        },
+        "priority": 0,
+        "id": 167012
+      },
+      "season": {
+        "name": "25/26",
+        "year": "25/26",
+        "editor": false,
+        "seasonCoverageInfo": {
+          "editorCoverageLevel": 5
+        },
+        "id": 85095
+      },
+      "roundInfo": {
+        "round": 1
+      },
+      "customId": "GHtsMAEc",
+      "status": {
+        "code": 0,
+        "description": "Not started",
+        "type": "notstarted"
+      },
+      "homeTeam": {
+        "name": "Colombia",
+        "slug": "colombia",
+        "shortName": "Colombia",
+        "gender": "F",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 29658,
+        "nameCode": "COL",
+        "disabled": false,
+        "national": true,
+        "type": 0,
+        "id": 46631,
+        "country": {
+          "alpha2": "CO",
+          "alpha3": "COL",
+          "name": "Colombia",
+          "slug": "colombia"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كولومبيا",
+            "ru": "Колумбия",
+            "hi": "कोलंबिया"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "awayTeam": {
+        "name": "Peru",
+        "slug": "peru",
+        "gender": "F",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 2461,
+        "nameCode": "PER",
+        "disabled": false,
+        "national": true,
+        "type": 0,
+        "id": 323787,
+        "country": {
+          "alpha2": "PE",
+          "alpha3": "PER",
+          "name": "Peru",
+          "slug": "peru"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "البيرو",
+            "ru": "Перу",
+            "hi": "पेरू"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "homeScore": {},
+      "awayScore": {},
+      "time": {},
+      "changes": {
+        "changeTimestamp": 0
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 14945171,
+      "varInProgress": {
+        "homeTeam": false,
+        "awayTeam": false
+      },
+      "slug": "peru-colombia",
+      "startTimestamp": 1761346800,
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
