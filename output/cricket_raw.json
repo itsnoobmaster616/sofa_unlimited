@@ -6484,9 +6484,9 @@
       },
       "customId": "hgAbsQjWd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 21,
+        "description": "1st Inning",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Federally Administered Tribal Areas",
@@ -6556,15 +6556,38 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 191,
+        "display": 191,
+        "innings": {
+          "inning1": {
+            "score": 191,
+            "wickets": 10,
+            "overs": 52.2,
+            "runRate": 3.65
+          }
+        }
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "innings": {
+          "inning1": {
+            "score": 0,
+            "wickets": 0,
+            "overs": 0,
+            "runRate": 0
+          }
+        }
+      },
       "coverage": 3,
       "time": {},
       "changes": {
         "changes": [
-          "status"
+          "status.code",
+          "status.description"
         ],
-        "changeTimestamp": 1761327011
+        "changeTimestamp": 1761333552
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -6579,7 +6602,8 @@
         "inning3": "3rd Inning",
         "inning4": "4th Inning"
       },
-      "finalResultOnly": true,
+      "lastPeriod": "inning1",
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -8355,10 +8379,11 @@
       },
       "customId": "NeAbsDxjd",
       "status": {
-        "code": 45,
-        "description": "Inn break",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Northern Cape",
         "slug": "northern-cape",
@@ -8429,8 +8454,17 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0
+        "current": 130,
+        "display": 130,
+        "innings": {
+          "inning1": {
+            "score": 130,
+            "wickets": 10,
+            "overs": 18.5,
+            "runRate": 6.9,
+            "targetRunRate": 11.2
+          }
+        }
       },
       "awayScore": {
         "current": 223,
@@ -8448,17 +8482,19 @@
       "time": {},
       "changes": {
         "changes": [
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.innings",
           "status.code",
           "status.description",
-          "awayScore.current",
-          "awayScore.display",
-          "awayScore.innings"
+          "status.type"
         ],
-        "changeTimestamp": 1761329538
+        "changeTimestamp": 1761332235
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14614655,
+      "note": "Knights beat Northern Cape by 93 runs",
       "endTimestamp": 1761318000,
       "slug": "northern-cape-knights",
       "startTimestamp": 1761303600,
