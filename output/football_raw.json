@@ -768,9 +768,9 @@
       },
       "customId": "Usab",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Brentford",
@@ -848,14 +848,29 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 1,
+        "normaltime": 1
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "time": {
+        "initial": 0,
+        "max": 2700,
+        "extra": 540,
+        "currentPeriodStartTimestamp": 1761418802
+      },
       "changes": {
         "changes": [
-          "cardsCode"
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1761414911
+        "changeTimestamp": 1761419810
       },
       "hasGlobalHighlights": false,
       "hasXg": true,
@@ -868,8 +883,16 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1761418802,
+        "extra": 540
+      },
       "slug": "brentford-liverpool",
       "startTimestamp": 1761418800,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -2511,7 +2534,7 @@
         ],
         "changeTimestamp": 1761415265
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasXg": true,
       "hasEventPlayerStatistics": true,
       "hasEventPlayerHeatMap": true,
@@ -2722,13 +2745,13 @@
         "initial": 0,
         "max": 2700,
         "extra": 540,
-        "currentPeriodStartTimestamp": 1761417934
+        "currentPeriodStartTimestamp": 1761417937
       },
       "changes": {
         "changes": [
           "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1761418083
+        "changeTimestamp": 1761419850
       },
       "hasGlobalHighlights": false,
       "hasXg": true,
@@ -2745,7 +2768,7 @@
         "prefix": "",
         "initial": 0,
         "max": 2700,
-        "timestamp": 1761417934,
+        "timestamp": 1761417937,
         "extra": 540
       },
       "slug": "cremonese-atalanta",
@@ -4394,7 +4417,7 @@
         ],
         "changeTimestamp": 1761416818
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasXg": true,
       "hasEventPlayerStatistics": true,
       "hasEventPlayerHeatMap": true,
@@ -4508,9 +4531,9 @@
       },
       "customId": "ugbsDgb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Valencia",
@@ -4588,14 +4611,29 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "time": {
+        "initial": 0,
+        "max": 2700,
+        "extra": 540,
+        "currentPeriodStartTimestamp": 1761418939
+      },
       "changes": {
         "changes": [
-          "cardsCode"
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1761415028
+        "changeTimestamp": 1761419774
       },
       "hasGlobalHighlights": false,
       "hasXg": true,
@@ -4608,8 +4646,16 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1761418939,
+        "extra": 540
+      },
       "slug": "valencia-villarreal",
       "startTimestamp": 1761418800,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -6751,7 +6797,7 @@
         ],
         "changeTimestamp": 1761416860
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasXg": true,
       "hasEventPlayerStatistics": true,
       "hasEventPlayerHeatMap": true,
@@ -7494,10 +7540,11 @@
       },
       "customId": "dIsGI",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "AS Monaco",
         "slug": "as-monaco",
@@ -7592,16 +7639,16 @@
       },
       "time": {
         "injuryTime1": 3,
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
+        "injuryTime2": 6,
         "currentPeriodStartTimestamp": 1761415457
       },
       "changes": {
         "changes": [
-          "awayScore.period2"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1761415529
+        "changeTimestamp": 1761418584
       },
       "hasGlobalHighlights": false,
       "hasXg": true,
@@ -7614,16 +7661,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1761415457,
-        "extra": 540
-      },
       "slug": "toulouse-as-monaco",
       "startTimestamp": 1761411600,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -7724,9 +7763,9 @@
       },
       "customId": "QHsYH",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "RC Lens",
@@ -7806,14 +7845,29 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "time": {
+        "initial": 0,
+        "max": 2700,
+        "extra": 540,
+        "currentPeriodStartTimestamp": 1761419110
+      },
       "changes": {
         "changes": [
-          "cardsCode"
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1761416300
+        "changeTimestamp": 1761419467
       },
       "hasGlobalHighlights": false,
       "hasXg": true,
@@ -7826,8 +7880,16 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1761419110,
+        "extra": 540
+      },
       "slug": "rc-lens-olympique-de-marseille",
       "startTimestamp": 1761419100,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -8910,10 +8972,11 @@
       },
       "customId": "lkbsNlTd",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Santa Clara",
         "slug": "santa-clara",
@@ -9005,19 +9068,18 @@
       },
       "time": {
         "injuryTime1": 1,
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
+        "injuryTime2": 4,
         "currentPeriodStartTimestamp": 1761415448
       },
       "changes": {
         "changes": [
-          "homeScore.period2",
-          "homeScore.normaltime"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1761417599
+        "changeTimestamp": 1761418394
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasXg": true,
       "hasEventPlayerStatistics": true,
       "hasEventPlayerHeatMap": true,
@@ -9028,16 +9090,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1761415448,
-        "extra": 540
-      },
       "slug": "avs-futebol-sad-santa-clara",
       "startTimestamp": 1761411600,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -10732,8 +10786,8 @@
       },
       "customId": "tjbsCjb",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -10814,29 +10868,32 @@
         }
       },
       "homeScore": {
-        "current": 1,
-        "display": 1,
-        "period1": 0,
-        "normaltime": 0
+        "current": 2,
+        "display": 2,
+        "period1": 1,
+        "period2": 0,
+        "normaltime": 1
       },
       "awayScore": {
         "current": 0,
         "display": 0,
         "period1": 0,
+        "period2": 0,
         "normaltime": 0
       },
       "time": {
-        "initial": 0,
-        "max": 2700,
+        "injuryTime1": 0,
+        "initial": 2700,
+        "max": 5400,
         "extra": 540,
-        "currentPeriodStartTimestamp": 1761415486
+        "currentPeriodStartTimestamp": 1761419270
       },
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display"
+          "awayScore.current",
+          "awayScore.display"
         ],
-        "changeTimestamp": 1761417965
+        "changeTimestamp": 1761419727
       },
       "hasGlobalHighlights": false,
       "hasXg": true,
@@ -10851,14 +10908,14 @@
       },
       "statusTime": {
         "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1761415486,
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1761419270,
         "extra": 540
       },
       "slug": "heracles-almelo-fc-volendam",
       "startTimestamp": 1761415200,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -10955,9 +11012,9 @@
       },
       "customId": "mjbswjb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "PEC Zwolle",
@@ -11032,14 +11089,29 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "awayScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 1,
+        "normaltime": 1
+      },
+      "time": {
+        "initial": 0,
+        "max": 2700,
+        "extra": 540,
+        "currentPeriodStartTimestamp": 1761418876
+      },
       "changes": {
         "changes": [
-          "cardsCode"
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1761416010
+        "changeTimestamp": 1761419810
       },
       "hasGlobalHighlights": false,
       "hasXg": true,
@@ -11052,8 +11124,16 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1761418876,
+        "extra": 540
+      },
       "slug": "pec-zwolle-nec-nijmegen",
       "startTimestamp": 1761418800,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -11925,9 +12005,9 @@
       },
       "customId": "COsbP",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Atlético Mineiro",
@@ -12005,14 +12085,29 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 1,
+        "normaltime": 1
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "time": {
+        "initial": 0,
+        "max": 2700,
+        "extra": 540,
+        "currentPeriodStartTimestamp": 1761418812
+      },
       "changes": {
         "changes": [
-          "cardsCode"
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1761416299
+        "changeTimestamp": 1761419789
       },
       "hasGlobalHighlights": false,
       "hasXg": true,
@@ -12025,8 +12120,16 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1761418812,
+        "extra": 540
+      },
       "slug": "ceara-atletico-mineiro",
       "startTimestamp": 1761418800,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -12123,9 +12226,9 @@
       },
       "customId": "hOsmO",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Vitória",
@@ -12203,14 +12306,29 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "time": {
+        "initial": 0,
+        "max": 2700,
+        "extra": 540,
+        "currentPeriodStartTimestamp": 1761418876
+      },
       "changes": {
         "changes": [
-          "cardsCode"
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1761415751
+        "changeTimestamp": 1761419728
       },
       "hasGlobalHighlights": false,
       "hasXg": true,
@@ -12223,8 +12341,16 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1761418876,
+        "extra": 540
+      },
       "slug": "vitoria-corinthians",
       "startTimestamp": 1761418800,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -14070,10 +14196,11 @@
       },
       "customId": "blbsPPc",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Trabzonspor",
         "slug": "trabzonspor",
@@ -14166,17 +14293,16 @@
       },
       "time": {
         "injuryTime1": 5,
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
+        "injuryTime2": 4,
         "currentPeriodStartTimestamp": 1761415783
       },
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1761417050
+        "changeTimestamp": 1761418730
       },
       "hasGlobalHighlights": false,
       "hasXg": true,
@@ -14189,16 +14315,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1761415783,
-        "extra": 540
-      },
       "slug": "eyupspor-trabzonspor",
       "startTimestamp": 1761411600,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -15581,24 +15699,28 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0
+        "current": 2,
+        "display": 2,
+        "period1": 2,
+        "normaltime": 2
       },
       "awayScore": {
         "current": 0,
-        "display": 0
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
       },
       "time": {
         "initial": 0,
         "max": 2700,
         "extra": 540,
-        "currentPeriodStartTimestamp": 1761418012
+        "currentPeriodStartTimestamp": 1761418011
       },
       "changes": {
         "changes": [
           "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1761418051
+        "changeTimestamp": 1761419801
       },
       "hasGlobalHighlights": false,
       "hasXg": true,
@@ -15615,7 +15737,7 @@
         "prefix": "",
         "initial": 0,
         "max": 2700,
-        "timestamp": 1761418012,
+        "timestamp": 1761418011,
         "extra": 540
       },
       "slug": "kaa-gent-standard-liege",
@@ -16921,10 +17043,11 @@
       },
       "customId": "Qobsmbc",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "OFI Crete",
         "slug": "ofi-crete",
@@ -17014,29 +17137,26 @@
         "normaltime": 1
       },
       "awayScore": {
-        "current": 2,
-        "display": 2,
+        "current": 3,
+        "display": 3,
         "period1": 1,
-        "period2": 1,
-        "normaltime": 2
+        "period2": 2,
+        "normaltime": 3
       },
       "time": {
         "injuryTime1": 2,
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
+        "injuryTime2": 10,
         "currentPeriodStartTimestamp": 1761415606
       },
       "changes": {
         "changes": [
-          "awayScore.current",
-          "awayScore.display",
-          "awayScore.period2",
-          "awayScore.normaltime"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1761417532
+        "changeTimestamp": 1761418973
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
       "hasEventPlayerHeatMap": true,
       "detailId": 1,
@@ -17046,16 +17166,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1761415606,
-        "extra": 540
-      },
       "slug": "aps-atromitos-athinon-ofi-crete",
       "startTimestamp": 1761411600,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -21237,7 +21349,7 @@
         ],
         "changeTimestamp": 1761404231
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
       "hasEventPlayerHeatMap": true,
       "detailId": 1,
@@ -22781,10 +22893,12 @@
       },
       "customId": "kNcsUAic",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
+      "aggregatedWinnerCode": 1,
       "homeTeam": {
         "name": "Al Ahly FC",
         "slug": "al-ahly-fc",
@@ -22862,28 +22976,27 @@
         "current": 1,
         "display": 1,
         "period1": 0,
-        "period2": 0,
-        "normaltime": 0
+        "period2": 1,
+        "normaltime": 1,
+        "aggregated": 2
       },
       "awayScore": {
         "current": 0,
         "display": 0,
         "period1": 0,
         "period2": 0,
-        "normaltime": 0
+        "normaltime": 0,
+        "aggregated": 0
       },
       "time": {
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
         "currentPeriodStartTimestamp": 1761415800
       },
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display"
+          "homeScore.aggregated",
+          "awayScore.aggregated"
         ],
-        "changeTimestamp": 1761416493
+        "changeTimestamp": 1761418648
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -22893,17 +23006,9 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1761415800,
-        "extra": 540
-      },
       "slug": "aigle-noir-cs-al-ahly-fc",
       "previousLegEventId": 14844964,
       "startTimestamp": 1761411600,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -22991,8 +23096,8 @@
       },
       "customId": "cUqsNRy",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -23074,27 +23179,33 @@
       "homeScore": {
         "current": 1,
         "display": 1,
-        "period1": 0,
-        "normaltime": 0
+        "period1": 1,
+        "period2": 0,
+        "normaltime": 1
       },
       "awayScore": {
         "current": 1,
         "display": 1,
-        "period1": 0,
-        "normaltime": 0
+        "period1": 1,
+        "period2": 0,
+        "normaltime": 1
       },
       "time": {
-        "initial": 0,
-        "max": 2700,
+        "initial": 2700,
+        "max": 5400,
         "extra": 540,
-        "currentPeriodStartTimestamp": 1761415080
+        "currentPeriodStartTimestamp": 1761418980
       },
       "changes": {
         "changes": [
-          "awayScore.current",
-          "awayScore.display"
+          "status.code",
+          "status.description",
+          "homeScore.period2",
+          "awayScore.period2",
+          "time.currentPeriodStart",
+          "time.period2Start"
         ],
-        "changeTimestamp": 1761416405
+        "changeTimestamp": 1761419026
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -23105,15 +23216,15 @@
       },
       "statusTime": {
         "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1761415080,
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1761418980,
         "extra": 540
       },
       "slug": "us-monastir-js-kabylie",
       "previousLegEventId": 14844966,
       "startTimestamp": 1761415200,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -23201,9 +23312,9 @@
       },
       "customId": "UMjsxLdb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "AS FAR Rabat",
@@ -23280,18 +23391,42 @@
         }
       },
       "homeScore": {
-        "aggregated": 1
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
       },
       "awayScore": {
-        "aggregated": 1
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
       },
-      "time": {},
+      "time": {
+        "initial": 0,
+        "max": 2700,
+        "extra": 540,
+        "currentPeriodStartTimestamp": 1761418800
+      },
       "changes": {
         "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.normaltime",
           "homeScore.aggregated",
-          "awayScore.aggregated"
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.normaltime",
+          "awayScore.aggregated",
+          "time.currentPeriodStart",
+          "time.period1Start"
         ],
-        "changeTimestamp": 1760937366
+        "changeTimestamp": 1761419433
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -23300,9 +23435,17 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1761418800,
+        "extra": 540
+      },
       "slug": "horoya-as-far-rabat",
       "previousLegEventId": 14844969,
       "startTimestamp": 1761418800,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -28789,9 +28932,9 @@
       },
       "customId": "KgbsRbo",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Mirandés",
@@ -28867,14 +29010,29 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "time": {
+        "initial": 0,
+        "max": 2700,
+        "extra": 540,
+        "currentPeriodStartTimestamp": 1761418796
+      },
       "changes": {
         "changes": [
-          "cardsCode"
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1761415353
+        "changeTimestamp": 1761419789
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -28886,8 +29044,16 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1761418796,
+        "extra": 540
+      },
       "slug": "mirandes-real-racing-club",
       "startTimestamp": 1761418800,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -30438,8 +30604,8 @@
       },
       "customId": "DabsNbb",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 31,
+        "description": "Halftime",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -30536,16 +30702,14 @@
         "normaltime": 0
       },
       "time": {
-        "initial": 0,
-        "max": 2700,
-        "extra": 540,
-        "currentPeriodStartTimestamp": 1761417043
+        "injuryTime1": 1,
+        "currentPeriodStartTimestamp": 1761417056
       },
       "changes": {
         "changes": [
-          "time.currentPeriodStart"
+          "time.injuryTime1"
         ],
-        "changeTimestamp": 1761418051
+        "changeTimestamp": 1761419819
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -30557,16 +30721,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1761417043,
-        "extra": 540
-      },
       "slug": "fortuna-dusseldorf-hertha-bsc",
       "startTimestamp": 1761417000,
-      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -31242,9 +31398,9 @@
       },
       "customId": "yOsAfMc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Athletic Club",
@@ -31321,14 +31477,29 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "time": {
+        "initial": 0,
+        "max": 2700,
+        "extra": 540,
+        "currentPeriodStartTimestamp": 1761418941
+      },
       "changes": {
         "changes": [
-          "cardsCode"
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1761416540
+        "changeTimestamp": 1761419798
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -31340,8 +31511,16 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1761418941,
+        "extra": 540
+      },
       "slug": "athletic-club-america-mineiro",
       "startTimestamp": 1761418800,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -31438,9 +31617,9 @@
       },
       "customId": "HOsHOc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Volta Redonda Futebol Clube",
@@ -31518,14 +31697,29 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "time": {
+        "initial": 0,
+        "max": 2700,
+        "extra": 540,
+        "currentPeriodStartTimestamp": 1761418839
+      },
       "changes": {
         "changes": [
-          "cardsCode"
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1761416183
+        "changeTimestamp": 1761419850
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -31537,8 +31731,16 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1761418839,
+        "extra": 540
+      },
       "slug": "volta-redonda-futebol-clube-coritiba",
       "startTimestamp": 1761418800,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -33829,13 +34031,13 @@
         "initial": 2700,
         "max": 5400,
         "extra": 540,
-        "currentPeriodStartTimestamp": 1761417415
+        "currentPeriodStartTimestamp": 1761417413
       },
       "changes": {
         "changes": [
           "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1761418051
+        "changeTimestamp": 1761419805
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -33851,7 +34053,7 @@
         "prefix": "",
         "initial": 2700,
         "max": 5400,
-        "timestamp": 1761417415,
+        "timestamp": 1761417413,
         "extra": 540
       },
       "slug": "catanzaro-palermo",
@@ -34782,8 +34984,8 @@
       },
       "customId": "DIsUrJb",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -34863,26 +35065,28 @@
         "current": 1,
         "display": 1,
         "period1": 1,
+        "period2": 0,
         "normaltime": 1
       },
       "awayScore": {
         "current": 0,
         "display": 0,
         "period1": 0,
+        "period2": 0,
         "normaltime": 0
       },
       "time": {
         "injuryTime1": 3,
-        "initial": 0,
-        "max": 2700,
-        "extra": 720,
-        "currentPeriodStartTimestamp": 1761415219
+        "initial": 2700,
+        "max": 5400,
+        "extra": 540,
+        "currentPeriodStartTimestamp": 1761419072
       },
       "changes": {
         "changes": [
           "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1761418051
+        "changeTimestamp": 1761419787
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -34897,14 +35101,14 @@
       },
       "statusTime": {
         "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1761415219,
-        "extra": 720
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1761419072,
+        "extra": 540
       },
       "slug": "annecy-fc-saint-etienne",
       "startTimestamp": 1761415200,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -39532,10 +39736,11 @@
       },
       "customId": "VhcsWhc",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Maccabi Netanya",
         "slug": "maccabi-netanya",
@@ -39611,11 +39816,11 @@
         }
       },
       "homeScore": {
-        "current": 1,
-        "display": 1,
+        "current": 2,
+        "display": 2,
         "period1": 0,
-        "period2": 1,
-        "normaltime": 1
+        "period2": 2,
+        "normaltime": 2
       },
       "awayScore": {
         "current": 0,
@@ -39626,17 +39831,16 @@
       },
       "time": {
         "injuryTime1": 3,
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
+        "injuryTime2": 6,
         "currentPeriodStartTimestamp": 1761415481
       },
       "changes": {
         "changes": [
-          "homeScore.period2",
-          "homeScore.normaltime"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1761417222
+        "changeTimestamp": 1761418551
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -39649,16 +39853,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1761415481,
-        "extra": 540
-      },
       "slug": "hapoel-tel-aviv-maccabi-netanya",
       "startTimestamp": 1761411600,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -40934,8 +41130,8 @@
       },
       "customId": "mnbsGac",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -41012,29 +41208,31 @@
         }
       },
       "homeScore": {
-        "current": 1,
-        "display": 1,
-        "period1": 0,
-        "normaltime": 0
+        "current": 2,
+        "display": 2,
+        "period1": 1,
+        "period2": 0,
+        "normaltime": 1
       },
       "awayScore": {
         "current": 0,
         "display": 0,
         "period1": 0,
+        "period2": 0,
         "normaltime": 0
       },
       "time": {
-        "initial": 0,
-        "max": 2700,
+        "injuryTime1": 3,
+        "initial": 2700,
+        "max": 5400,
         "extra": 540,
-        "currentPeriodStartTimestamp": 1761415180
+        "currentPeriodStartTimestamp": 1761419135
       },
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display"
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1761418025
+        "changeTimestamp": 1761419725
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -41048,14 +41246,14 @@
       },
       "statusTime": {
         "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1761415180,
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1761419135,
         "extra": 540
       },
       "slug": "deportes-la-serena-audax-italiano",
       "startTimestamp": 1761415200,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -42098,9 +42296,9 @@
       },
       "customId": "hxcsoxc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Envigado FC",
@@ -42176,14 +42374,40 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "time": {
+        "initial": 0,
+        "max": 2700,
+        "extra": 540,
+        "currentPeriodStartTimestamp": 1761418827
+      },
       "changes": {
         "changes": [
-          "cardsCode"
+          "homeScore.period1",
+          "homeScore.normaltime",
+          "awayScore.period1",
+          "awayScore.normaltime",
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "awayScore.current",
+          "awayScore.display",
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1761416744
+        "changeTimestamp": 1761418833
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -42195,8 +42419,16 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1761418827,
+        "extra": 540
+      },
       "slug": "envigado-fc-boyaca-chico-fc",
       "startTimestamp": 1761418800,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -42377,9 +42609,14 @@
       "awayScore": {},
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "cardsCode"
+        ],
+        "changeTimestamp": 1761419775
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14115401,
@@ -45332,8 +45569,8 @@
       },
       "customId": "mmbspbc",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 31,
+        "description": "Halftime",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -45422,16 +45659,15 @@
         "normaltime": 0
       },
       "time": {
-        "initial": 0,
-        "max": 2700,
-        "extra": 540,
+        "injuryTime1": 5,
         "currentPeriodStartTimestamp": 1761416115
       },
       "changes": {
         "changes": [
-          "time.currentPeriodStart"
+          "status.code",
+          "status.description"
         ],
-        "changeTimestamp": 1761416277
+        "changeTimestamp": 1761419125
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -45443,16 +45679,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1761416115,
-        "extra": 540
-      },
       "slug": "mks-korona-kielce-gks-katowice",
       "startTimestamp": 1761416100,
-      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -52867,10 +53095,11 @@
       },
       "customId": "pXqsFqgc",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Modern Sport FC",
         "slug": "modern-future-fc",
@@ -52958,22 +53187,21 @@
         "current": 2,
         "display": 2,
         "period1": 0,
-        "period2": 1,
-        "normaltime": 1
+        "period2": 2,
+        "normaltime": 2
       },
       "time": {
         "injuryTime1": 6,
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
+        "injuryTime2": 7,
         "currentPeriodStartTimestamp": 1761415517
       },
       "changes": {
         "changes": [
-          "awayScore.current",
-          "awayScore.display"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1761417989
+        "changeTimestamp": 1761418742
       },
       "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
@@ -52987,16 +53215,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1761415517,
-        "extra": 540
-      },
       "slug": "modern-sport-fc-arab-contractors-fc",
       "startTimestamp": 1761411600,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -56230,8 +56450,8 @@
       },
       "customId": "UCnsJwId",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -56310,25 +56530,28 @@
         "current": 2,
         "display": 2,
         "period1": 2,
+        "period2": 0,
         "normaltime": 2
       },
       "awayScore": {
         "current": 0,
         "display": 0,
         "period1": 0,
+        "period2": 0,
         "normaltime": 0
       },
       "time": {
-        "initial": 0,
-        "max": 2700,
+        "injuryTime1": 6,
+        "initial": 2700,
+        "max": 5400,
         "extra": 540,
-        "currentPeriodStartTimestamp": 1761415286
+        "currentPeriodStartTimestamp": 1761419228
       },
       "changes": {
         "changes": [
           "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1761418083
+        "changeTimestamp": 1761419788
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -56344,14 +56567,14 @@
       },
       "statusTime": {
         "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1761415286,
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1761419228,
         "extra": 540
       },
       "slug": "deportivo-garcilaso-ayacucho",
       "startTimestamp": 1761415200,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -58028,8 +58251,8 @@
       },
       "customId": "atjsLlrb",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -58114,26 +58337,31 @@
         "current": 0,
         "display": 0,
         "period1": 0,
+        "period2": 0,
         "normaltime": 0
       },
       "awayScore": {
         "current": 1,
         "display": 1,
         "period1": 1,
+        "period2": 0,
         "normaltime": 1
       },
       "time": {
         "injuryTime1": 3,
-        "initial": 0,
-        "max": 2700,
-        "extra": 720,
-        "currentPeriodStartTimestamp": 1761415216
+        "initial": 2700,
+        "max": 5400,
+        "extra": 540,
+        "currentPeriodStartTimestamp": 1761419192
       },
       "changes": {
         "changes": [
+          "status.code",
+          "status.description",
+          "awayScore.period2",
           "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1761418056
+        "changeTimestamp": 1761419195
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -58147,14 +58375,14 @@
       },
       "statusTime": {
         "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1761415216,
-        "extra": 720
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1761419192,
+        "extra": 540
       },
       "slug": "al-hazem-al-nassr",
       "startTimestamp": 1761415200,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -58465,8 +58693,8 @@
       },
       "customId": "UpbsMfc",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 31,
+        "description": "Halftime",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -58562,17 +58790,15 @@
         "normaltime": 2
       },
       "time": {
-        "initial": 0,
-        "max": 2700,
-        "extra": 540,
+        "injuryTime1": 4,
         "currentPeriodStartTimestamp": 1761415598
       },
       "changes": {
         "changes": [
-          "awayScore.period1",
-          "awayScore.normaltime"
+          "status.code",
+          "status.description"
         ],
-        "changeTimestamp": 1761416923
+        "changeTimestamp": 1761418836
       },
       "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
@@ -58584,16 +58810,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1761415598,
-        "extra": 540
-      },
       "slug": "cfr-1907-cluj-fc-farul-constanta",
       "startTimestamp": 1761415200,
-      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -60708,8 +60926,8 @@
       },
       "customId": "dZsiZ",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 31,
+        "description": "Halftime",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -60790,10 +61008,10 @@
         }
       },
       "homeScore": {
-        "current": 1,
-        "display": 1,
-        "period1": 1,
-        "normaltime": 1
+        "current": 2,
+        "display": 2,
+        "period1": 2,
+        "normaltime": 2
       },
       "awayScore": {
         "current": 0,
@@ -60802,16 +61020,16 @@
         "normaltime": 0
       },
       "time": {
-        "initial": 0,
-        "max": 2700,
-        "extra": 540,
-        "currentPeriodStartTimestamp": 1761417015
+        "injuryTime1": 1,
+        "currentPeriodStartTimestamp": 1761417008
       },
       "changes": {
         "changes": [
+          "status.code",
+          "status.description",
           "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1761418053
+        "changeTimestamp": 1761419804
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -60823,16 +61041,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1761417015,
-        "extra": 540
-      },
       "slug": "fc-winterthur-fc-luzern",
       "startTimestamp": 1761417000,
-      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -70421,8 +70631,8 @@
       },
       "customId": "Bibszxtd",
       "status": {
-        "code": 31,
-        "description": "Halftime",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -70505,24 +70715,29 @@
         "current": 1,
         "display": 1,
         "period1": 1,
+        "period2": 0,
         "normaltime": 1
       },
       "awayScore": {
         "current": 0,
         "display": 0,
         "period1": 0,
+        "period2": 0,
         "normaltime": 0
       },
       "time": {
         "injuryTime1": 0,
-        "currentPeriodStartTimestamp": 1761415222
+        "initial": 2700,
+        "max": 5400,
+        "extra": 540,
+        "currentPeriodStartTimestamp": 1761418872
       },
       "changes": {
         "changes": [
-          "status.code",
-          "status.description"
+          "homeScore.period2",
+          "awayScore.period2"
         ],
-        "changeTimestamp": 1761417932
+        "changeTimestamp": 1761419000
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -70534,8 +70749,16 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1761418872,
+        "extra": 540
+      },
       "slug": "jong-krc-genk-u23-kas-eupen",
       "startTimestamp": 1761415200,
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -70632,8 +70855,8 @@
       },
       "customId": "uJGbsBJfd",
       "status": {
-        "code": 31,
-        "description": "Halftime",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -70715,25 +70938,28 @@
         "current": 3,
         "display": 3,
         "period1": 3,
+        "period2": 0,
         "normaltime": 3
       },
       "awayScore": {
         "current": 2,
         "display": 2,
         "period1": 2,
+        "period2": 0,
         "normaltime": 2
       },
       "time": {
         "injuryTime1": 2,
-        "currentPeriodStartTimestamp": 1761415226
+        "initial": 2700,
+        "max": 5400,
+        "extra": 540,
+        "currentPeriodStartTimestamp": 1761418985
       },
       "changes": {
         "changes": [
-          "time.injuryTime1",
-          "status.code",
-          "status.description"
+          "cardsCode"
         ],
-        "changeTimestamp": 1761418091
+        "changeTimestamp": 1761419711
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -70741,12 +70967,21 @@
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14117677,
+      "awayRedCards": 1,
       "varInProgress": {
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1761418985,
+        "extra": 540
+      },
       "slug": "rfc-liege-rwdm-brussels",
       "startTimestamp": 1761415200,
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -70843,8 +71078,8 @@
       },
       "customId": "jXbsBbo",
       "status": {
-        "code": 31,
-        "description": "Halftime",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -70921,26 +71156,32 @@
         }
       },
       "homeScore": {
-        "current": 1,
-        "display": 1,
+        "current": 2,
+        "display": 2,
         "period1": 1,
-        "normaltime": 1
+        "period2": 1,
+        "normaltime": 2
       },
       "awayScore": {
         "current": 1,
         "display": 1,
         "period1": 1,
+        "period2": 0,
         "normaltime": 1
       },
       "time": {
         "injuryTime1": 2,
-        "currentPeriodStartTimestamp": 1761415211
+        "initial": 2700,
+        "max": 5400,
+        "extra": 540,
+        "currentPeriodStartTimestamp": 1761418962
       },
       "changes": {
         "changes": [
-          "time.injuryTime1"
+          "homeScore.period2",
+          "homeScore.normaltime"
         ],
-        "changeTimestamp": 1761418038
+        "changeTimestamp": 1761419789
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -70952,8 +71193,16 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1761418962,
+        "extra": 540
+      },
       "slug": "patro-eisden-maasmechelen-sk-beveren",
       "startTimestamp": 1761415200,
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -71970,7 +72219,7 @@
         "changes": [
           "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1761418069
+        "changeTimestamp": 1761419844
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -76712,10 +76961,11 @@
       },
       "customId": "UtdbsIrVb",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 3,
       "homeTeam": {
         "name": "MB Rouissat",
         "slug": "mb-rouisset",
@@ -76805,21 +77055,15 @@
         "normaltime": 0
       },
       "time": {
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
         "currentPeriodStartTimestamp": 1761415380
       },
       "changes": {
         "changes": [
           "status.code",
           "status.description",
-          "homeScore.period2",
-          "awayScore.period2",
-          "time.currentPeriodStart",
-          "time.period2Start"
+          "status.type"
         ],
-        "changeTimestamp": 1761415620
+        "changeTimestamp": 1761418429
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -76828,16 +77072,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1761415380,
-        "extra": 540
-      },
       "slug": "mb-rouissat-es-ben-aknoun",
       "startTimestamp": 1761411600,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -79033,8 +79269,8 @@
       },
       "customId": "mQsRQ",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -79113,45 +79349,48 @@
         "current": 1,
         "display": 1,
         "period1": 1,
+        "period2": 0,
         "normaltime": 1
       },
       "awayScore": {
         "current": 0,
         "display": 0,
         "period1": 0,
+        "period2": 0,
         "normaltime": 0
       },
       "time": {
-        "initial": 0,
-        "max": 2700,
+        "initial": 2700,
+        "max": 5400,
         "extra": 540,
-        "currentPeriodStartTimestamp": 1761415230
+        "currentPeriodStartTimestamp": 1761418877
       },
       "changes": {
         "changes": [
           "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1761417865
+        "changeTimestamp": 1761419664
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": false,
       "detailId": 4,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14079230,
+      "homeRedCards": 1,
       "varInProgress": {
         "homeTeam": false,
         "awayTeam": false
       },
       "statusTime": {
         "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1761415230,
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1761418877,
         "extra": 540
       },
       "slug": "rapid-wien-ii-sc-austria-lustenau",
       "startTimestamp": 1761415200,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -81545,10 +81784,11 @@
       },
       "customId": "arbsjrb",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "BATE Borisov",
         "slug": "bate-borisov",
@@ -81626,28 +81866,36 @@
       "homeScore": {
         "current": 1,
         "display": 1,
-        "period1": 0
+        "period1": 0,
+        "period2": 1,
+        "normaltime": 1
       },
       "awayScore": {
         "current": 0,
         "display": 0,
-        "period1": 0
+        "period1": 0,
+        "period2": 0,
+        "normaltime": 0
       },
       "time": {
         "injuryTime1": 1,
         "injuryTime2": 4,
-        "initial": 2700,
-        "max": 5400,
-        "extra": 780,
-        "currentPeriodStartTimestamp": 1761415322
+        "currentPeriodStartTimestamp": 1761418232
       },
       "changes": {
         "changes": [
-          "time.injuryTime2"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.period2",
+          "homeScore.normaltime",
+          "awayScore.period2",
+          "awayScore.normaltime",
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1761417972
+        "changeTimestamp": 1761418236
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 13619002,
       "awayRedCards": 1,
@@ -81655,16 +81903,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1761415322,
-        "extra": 780
-      },
       "slug": "torpedo-belaz-zhodino-bate-borisov",
       "startTimestamp": 1761411600,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -83087,9 +83327,9 @@
       },
       "customId": "HlhcsNnud",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Academia de Balompié Boliviano",
@@ -83163,14 +83403,32 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "time": {
+        "initial": 0,
+        "max": 2700,
+        "extra": 540,
+        "currentPeriodStartTimestamp": 1761418773
+      },
       "changes": {
         "changes": [
-          "cardsCode"
+          "homeScore.period1",
+          "homeScore.normaltime",
+          "awayScore.period1",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1761417807
+        "changeTimestamp": 1761418848
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -83182,8 +83440,16 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1761418773,
+        "extra": 540
+      },
       "slug": "academia-de-balompie-boliviano-club-fc-universitario",
       "startTimestamp": 1761418800,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -83775,8 +84041,8 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0
+        "current": 1,
+        "display": 1
       },
       "awayScore": {
         "current": 0,
@@ -83786,20 +84052,13 @@
         "initial": 0,
         "max": 2700,
         "extra": 540,
-        "currentPeriodStartTimestamp": 1761417940
+        "currentPeriodStartTimestamp": 1761417946
       },
       "changes": {
         "changes": [
-          "status.code",
-          "status.description",
-          "status.type",
-          "homeScore.current",
-          "homeScore.display",
-          "awayScore.current",
-          "awayScore.display",
           "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1761417945
+        "changeTimestamp": 1761418794
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -83812,7 +84071,7 @@
         "prefix": "",
         "initial": 0,
         "max": 2700,
-        "timestamp": 1761417940,
+        "timestamp": 1761417946,
         "extra": 540
       },
       "slug": "fk-velez-mostar-nk-siroki-brijeg",
@@ -93945,9 +94204,9 @@
       },
       "customId": "lwnsBZdb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Mushuc Runa SC",
@@ -94021,14 +94280,29 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "time": {
+        "initial": 0,
+        "max": 2700,
+        "extra": 540,
+        "currentPeriodStartTimestamp": 1761418777
+      },
       "changes": {
         "changes": [
-          "cardsCode"
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1761416424
+        "changeTimestamp": 1761419837
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -94040,8 +94314,16 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1761418777,
+        "extra": 540
+      },
       "slug": "mushuc-runa-sc-manta-fc",
       "startTimestamp": 1761418800,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -119688,17 +119970,17 @@
         "display": 1
       },
       "time": {
+        "injuryTime1": 4,
         "initial": 0,
         "max": 2700,
-        "extra": 540,
-        "currentPeriodStartTimestamp": 1761417095
+        "extra": 780,
+        "currentPeriodStartTimestamp": 1761417094
       },
       "changes": {
         "changes": [
-          "awayScore.current",
-          "awayScore.display"
+          "time.injuryTime1"
         ],
-        "changeTimestamp": 1761417817
+        "changeTimestamp": 1761419804
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -119711,8 +119993,8 @@
         "prefix": "",
         "initial": 0,
         "max": 2700,
-        "timestamp": 1761417095,
-        "extra": 540
+        "timestamp": 1761417094,
+        "extra": 780
       },
       "slug": "pineto-forli",
       "startTimestamp": 1761417000,
@@ -129138,10 +129420,11 @@
       },
       "customId": "FgcsJwn",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Floriana FC",
         "slug": "floriana-fc",
@@ -129219,27 +129502,36 @@
         }
       },
       "homeScore": {
-        "current": 1,
-        "display": 1,
-        "period1": 1
+        "current": 2,
+        "display": 2,
+        "period1": 1,
+        "period2": 1,
+        "normaltime": 2
       },
       "awayScore": {
         "current": 0,
         "display": 0,
-        "period1": 0
+        "period1": 0,
+        "period2": 0,
+        "normaltime": 0
       },
       "time": {
         "injuryTime1": 4,
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
-        "currentPeriodStartTimestamp": 1761415790
+        "injuryTime2": 5,
+        "currentPeriodStartTimestamp": 1761418797
       },
       "changes": {
         "changes": [
-          "cardsCode"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.period2",
+          "homeScore.normaltime",
+          "awayScore.period2",
+          "awayScore.normaltime",
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1761416525
+        "changeTimestamp": 1761418799
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -129248,16 +129540,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1761415790,
-        "extra": 540
-      },
       "slug": "floriana-fc-birkirkara-fc",
       "startTimestamp": 1761411600,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -131524,10 +131808,11 @@
       },
       "customId": "hKqsZKGb",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Raja Club Athletic",
         "slug": "raja-club-athletic",
@@ -131606,31 +131891,27 @@
         "current": 1,
         "display": 1,
         "period1": 1,
-        "period2": 0
+        "period2": 0,
+        "normaltime": 1
       },
       "awayScore": {
         "current": 0,
         "display": 0,
         "period1": 0,
-        "period2": 0
+        "period2": 0,
+        "normaltime": 0
       },
       "time": {
         "periodLength": 2700,
         "overtimeLength": 900,
         "totalPeriodCount": 2,
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540,
-        "currentPeriodStartTimestamp": 1761415785
+        "currentPeriodStartTimestamp": 1761416451
       },
       "changes": {
         "changes": [
-          "homeScore.period2",
-          "awayScore.period2",
-          "time.currentPeriodStart",
-          "time.period2Start"
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1761415785
+        "changeTimestamp": 1761419151
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -131639,16 +131920,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1761415785,
-        "extra": 540
-      },
       "slug": "olympique-dcheira-raja-club-athletic",
       "startTimestamp": 1761411600,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -140761,8 +141034,8 @@
         }
       },
       "homeScore": {
-        "current": 1,
-        "display": 1,
+        "current": 3,
+        "display": 3,
         "period1": 1
       },
       "awayScore": {
@@ -140781,7 +141054,7 @@
         "changes": [
           "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1761417620
+        "changeTimestamp": 1761419725
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -140969,8 +141242,8 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
+        "current": 2,
+        "display": 2,
         "period1": 0
       },
       "awayScore": {
@@ -140989,7 +141262,7 @@
           "homeScore.current",
           "homeScore.display"
         ],
-        "changeTimestamp": 1761417861
+        "changeTimestamp": 1761418353
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -141183,27 +141456,29 @@
         }
       },
       "homeScore": {
-        "current": 2,
-        "display": 2,
+        "current": 3,
+        "display": 3,
         "period1": 1
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
+        "current": 1,
+        "display": 1,
         "period1": 0
       },
       "time": {
         "injuryTime1": 1,
+        "injuryTime2": 2,
         "initial": 2700,
         "max": 5400,
-        "extra": 540,
-        "currentPeriodStartTimestamp": 1761417088
+        "extra": 660,
+        "currentPeriodStartTimestamp": 1761417087
       },
       "changes": {
         "changes": [
-          "time.currentPeriodStart"
+          "awayScore.current",
+          "awayScore.display"
         ],
-        "changeTimestamp": 1761418051
+        "changeTimestamp": 1761419820
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -141216,8 +141491,8 @@
         "prefix": "",
         "initial": 2700,
         "max": 5400,
-        "timestamp": 1761417088,
-        "extra": 540
+        "timestamp": 1761417087,
+        "extra": 660
       },
       "slug": "gornik-leczna-slask-wroclaw",
       "startTimestamp": 1761413400,
@@ -143463,18 +143738,13 @@
         "initial": 2700,
         "max": 5400,
         "extra": 540,
-        "currentPeriodStartTimestamp": 1761417711
+        "currentPeriodStartTimestamp": 1761417770
       },
       "changes": {
         "changes": [
-          "status.code",
-          "status.description",
-          "homeScore.period2",
-          "awayScore.period2",
-          "time.currentPeriodStart",
-          "time.period2Start"
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1761417712
+        "changeTimestamp": 1761419630
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -143487,7 +143757,7 @@
         "prefix": "",
         "initial": 2700,
         "max": 5400,
-        "timestamp": 1761417711,
+        "timestamp": 1761417770,
         "extra": 540
       },
       "slug": "ad-marco-09-cd-trofense",
@@ -143593,9 +143863,9 @@
       },
       "customId": "WctsAOE",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "AD Fafe",
@@ -143671,11 +143941,30 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "time": {
+        "periodLength": 2700,
+        "overtimeLength": 900,
+        "totalPeriodCount": 2,
+        "initial": 0,
+        "max": 2700,
+        "extra": 540,
+        "currentPeriodStartTimestamp": 1761418790
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "cardsCode"
+        ],
+        "changeTimestamp": 1761419825
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -143684,8 +143973,16 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1761418790,
+        "extra": 540
+      },
       "slug": "vitoria-sc-ad-fafe",
       "startTimestamp": 1761418800,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -163084,9 +163381,9 @@
       },
       "customId": "CobslPi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Cerro",
@@ -163162,11 +163459,25 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
+      "time": {
+        "initial": 0,
+        "max": 2700,
+        "extra": 540,
+        "currentPeriodStartTimestamp": 1761418764
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1761419414
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -163175,8 +163486,16 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1761418764,
+        "extra": 540
+      },
       "slug": "cerro-penarol",
       "startTimestamp": 1761418800,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -169588,9 +169907,9 @@
       },
       "customId": "lQrsJIdb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "New Zealand U17",
@@ -169666,11 +169985,30 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "time": {
+        "initial": 0,
+        "max": 2700,
+        "extra": 540,
+        "currentPeriodStartTimestamp": 1761418860
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.currentPeriodStart",
+          "time.period1Start"
+        ],
+        "changeTimestamp": 1761418918
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -169679,8 +170017,16 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1761418860,
+        "extra": 540
+      },
       "slug": "zambia-u17-new-zealand-u17",
       "startTimestamp": 1761418800,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -169771,9 +170117,9 @@
       },
       "customId": "nNosuEu",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Paraguay U17",
@@ -169849,11 +170195,32 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
+      "time": {
+        "initial": 0,
+        "max": 2700,
+        "extra": 540,
+        "currentPeriodStartTimestamp": 1761418941
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "awayScore.current",
+          "awayScore.display",
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1761418944
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -169862,8 +170229,16 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1761418941,
+        "extra": 540
+      },
       "slug": "paraguay-u17-japan-u17",
       "startTimestamp": 1761418800,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
