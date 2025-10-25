@@ -8680,9 +8680,9 @@
       },
       "customId": "jnYdsnnYd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 21,
+        "description": "1st Inning",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Dolphins Women",
@@ -8747,12 +8747,38 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "innings": {
+          "inning1": {
+            "score": 0,
+            "wickets": 0,
+            "overs": 0,
+            "runRate": 0
+          }
+        }
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
       "coverage": 3,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status",
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.innings",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.innings"
+        ],
+        "changeTimestamp": 1761423630
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -8767,6 +8793,7 @@
         "inning3": "3rd Inning",
         "inning4": "4th Inning"
       },
+      "lastPeriod": "inning1",
       "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
@@ -8848,10 +8875,11 @@
       },
       "customId": "knYdsonYd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Western Province Women",
         "slug": "western-province-women",
@@ -8915,19 +8943,46 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 256,
+        "display": 256,
+        "innings": {
+          "inning1": {
+            "score": 256,
+            "wickets": 7,
+            "overs": 50,
+            "runRate": 5.12
+          }
+        }
+      },
+      "awayScore": {
+        "current": 164,
+        "display": 164,
+        "innings": {
+          "inning1": {
+            "score": 164,
+            "wickets": 10,
+            "overs": 45.2,
+            "runRate": 3.62,
+            "targetRunRate": 5.14
+          }
+        }
+      },
       "coverage": 3,
       "time": {},
       "changes": {
         "changes": [
-          "status"
+          "awayScore.innings",
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1761421107
+        "changeTimestamp": 1761422851
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14905430,
+      "note": "Western Province Women beat Titans Women by 92 runs",
       "endTimestamp": 1761408000,
       "slug": "titans-women-western-province-women",
       "startTimestamp": 1761379200,
@@ -8938,7 +8993,7 @@
         "inning3": "3rd Inning",
         "inning4": "4th Inning"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
