@@ -544,8 +544,8 @@
       },
       "customId": "eFbsxAc",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 31,
+        "description": "Halftime",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -627,26 +627,31 @@
         }
       },
       "homeScore": {
-        "current": 11,
-        "display": 11
+        "current": 20,
+        "display": 20,
+        "period1": 20
       },
       "awayScore": {
-        "current": 12,
-        "display": 12
+        "current": 20,
+        "display": 20,
+        "period1": 20
       },
       "time": {
-        "played": 849,
+        "played": 1775,
         "periodLength": 1800,
         "overtimeLength": 300,
         "totalPeriodCount": 2,
-        "currentPeriodStartTimestamp": 1761487237
+        "currentPeriodStartTimestamp": 1761489653
       },
       "changes": {
         "changes": [
-          "awayScore.current",
-          "awayScore.display"
+          "time.currentPeriodStart",
+          "status.code",
+          "status.description",
+          "homeScore.period1",
+          "awayScore.period1"
         ],
-        "changeTimestamp": 1761488412
+        "changeTimestamp": 1761489657
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -654,7 +659,6 @@
       "id": 14211167,
       "slug": "tvb-1898-stuttgart-rhein-neckar-lowen",
       "startTimestamp": 1761487200,
-      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -5845,10 +5849,11 @@
       },
       "customId": "bGbsTdp",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Odense Håndbold",
         "slug": "odense-handbold",
@@ -5923,28 +5928,38 @@
         }
       },
       "homeScore": {
-        "current": 31,
-        "display": 31,
-        "period1": 17
+        "current": 32,
+        "display": 32,
+        "period1": 17,
+        "period2": 15,
+        "normaltime": 32
       },
       "awayScore": {
-        "current": 24,
-        "display": 24,
-        "period1": 7
+        "current": 27,
+        "display": 27,
+        "period1": 7,
+        "period2": 20,
+        "normaltime": 27
       },
       "time": {
-        "played": 3279,
+        "played": 3572,
         "periodLength": 1800,
         "overtimeLength": 300,
         "totalPeriodCount": 2,
-        "currentPeriodStartTimestamp": 1761486682
+        "currentPeriodStartTimestamp": 1761488679
       },
       "changes": {
         "changes": [
-          "awayScore.current",
-          "awayScore.display"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.period2",
+          "homeScore.normaltime",
+          "awayScore.period2",
+          "awayScore.normaltime",
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1761488375
+        "changeTimestamp": 1761488681
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -5952,7 +5967,6 @@
       "id": 14444131,
       "slug": "odense-handbold-sola",
       "startTimestamp": 1761483600,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -8155,8 +8169,8 @@
       },
       "customId": "wHbsilgd",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 31,
+        "description": "Halftime",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -8233,31 +8247,37 @@
         }
       },
       "homeScore": {
-        "current": 10,
-        "display": 10
+        "current": 16,
+        "display": 16,
+        "period1": 16
       },
       "awayScore": {
-        "current": 10,
-        "display": 10
+        "current": 15,
+        "display": 15,
+        "period1": 15
       },
       "time": {
-        "currentPeriodStartTimestamp": 1761487283
+        "currentPeriodStartTimestamp": 1761489376
       },
       "changes": {
         "changes": [
+          "status.code",
+          "status.description",
+          "homeScore.period1",
+          "awayScore.period1",
+          "time.currentPeriodStart",
           "homeScore.current",
           "homeScore.display",
           "awayScore.current",
           "awayScore.display"
         ],
-        "changeTimestamp": 1761488408
+        "changeTimestamp": 1761489380
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14262246,
       "slug": "sg-krems-langenlois-sg-insignis-westwien",
       "startTimestamp": 1761487200,
-      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -13677,7 +13697,7 @@
       "id": 14918432,
       "slug": "rk-brijesce-rk-velez-mostar",
       "startTimestamp": 1761489000,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -21381,9 +21401,9 @@
       },
       "customId": "cHHisLKRi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Koprivnica",
@@ -21457,18 +21477,40 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 7,
+        "display": 7,
+        "period1": 7
+      },
+      "awayScore": {
+        "current": 5,
+        "display": 5,
+        "period1": 5
+      },
       "coverage": -1,
-      "time": {},
+      "time": {
+        "played": 660,
+        "periodLength": 1800,
+        "overtimeLength": 300,
+        "totalPeriodCount": 2
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1"
+        ],
+        "changeTimestamp": 1761489672
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14225197,
       "slug": "metalac-2-koprivnica",
       "startTimestamp": 1761489000,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -25099,9 +25141,9 @@
       },
       "customId": "uuQiswmUi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "ŽRK Donat Zadar",
@@ -25168,29 +25210,34 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0
+        "current": 4,
+        "display": 4,
+        "period1": 4
       },
       "awayScore": {
-        "current": 0,
-        "display": 0
+        "current": 5,
+        "display": 5,
+        "period1": 5
       },
       "coverage": -1,
-      "time": {},
+      "time": {
+        "played": 720,
+        "periodLength": 1800,
+        "overtimeLength": 300,
+        "totalPeriodCount": 2
+      },
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display",
-          "awayScore.current",
-          "awayScore.display"
+          "time.played"
         ],
-        "changeTimestamp": 1761488405
+        "changeTimestamp": 1761489626
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14931907,
       "slug": "zrk-donat-zadar-zrk-petason-vranjic",
       "startTimestamp": 1761489000,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -28086,7 +28133,7 @@
       "id": 14643067,
       "slug": "rk-hvar-kamicak",
       "startTimestamp": 1761483600,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -29297,10 +29344,11 @@
       },
       "customId": "gIbjshIbj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "RK Viro Virovitica 2",
         "slug": "viro-virovitica-2",
@@ -29357,19 +29405,34 @@
           "text": "#ffffff"
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 31,
+        "display": 31
+      },
+      "awayScore": {
+        "current": 25,
+        "display": 25
+      },
       "coverage": -1,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "awayScore.current",
+          "awayScore.display"
+        ],
+        "changeTimestamp": 1761488528
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14724059,
       "slug": "mikanovci-rk-viro-virovitica-2",
       "startTimestamp": 1761483600,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -36456,9 +36519,9 @@
       },
       "customId": "DJKisEJKi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 31,
+        "description": "Halftime",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Stranda ÍF",
@@ -36532,19 +36595,44 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 13,
+        "display": 13,
+        "period1": 13,
+        "normaltime": 13
+      },
+      "awayScore": {
+        "current": 12,
+        "display": 12,
+        "period1": 12,
+        "normaltime": 12
+      },
       "coverage": -1,
-      "time": {},
+      "time": {
+        "currentPeriodStartTimestamp": 1761489187
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "time.currentPeriodStart",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.normaltime",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.normaltime"
+        ],
+        "changeTimestamp": 1761489187
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14197687,
       "slug": "vb-vagur-stranda-if",
       "startTimestamp": 1761487200,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -73291,8 +73379,8 @@
       },
       "customId": "IYnskLuc",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 31,
+        "description": "Halftime",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -73363,25 +73451,27 @@
         }
       },
       "homeScore": {
+        "current": 18,
+        "display": 18,
+        "period1": 18,
+        "normaltime": 18
+      },
+      "awayScore": {
         "current": 9,
         "display": 9,
         "period1": 9,
         "normaltime": 9
       },
-      "awayScore": {
-        "current": 5,
-        "display": 5,
-        "period1": 5,
-        "normaltime": 5
-      },
       "time": {
-        "played": 826,
+        "played": 1793,
         "periodLength": 1800,
         "overtimeLength": 300,
         "totalPeriodCount": 2
       },
       "changes": {
         "changes": [
+          "status.code",
+          "status.description",
           "awayScore.current",
           "awayScore.display",
           "awayScore.period1",
@@ -73389,17 +73479,15 @@
           "homeScore.current",
           "homeScore.display",
           "homeScore.period1",
-          "homeScore.normaltime",
-          "time.played"
+          "homeScore.normaltime"
         ],
-        "changeTimestamp": 1761488353
+        "changeTimestamp": 1761489617
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14283013,
       "slug": "sl-benfica-feminino-cd-gil-eanes-lagos",
       "startTimestamp": 1761487200,
-      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -75715,10 +75803,11 @@
       },
       "customId": "cdXsqnRb",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "AHC Potaissa Turda",
         "slug": "ahc-potaissa-turda",
@@ -75792,28 +75881,34 @@
         }
       },
       "homeScore": {
-        "current": 24,
-        "display": 24,
+        "current": 31,
+        "display": 31,
         "period1": 15,
-        "period2": 9
+        "period2": 16,
+        "normaltime": 31
       },
       "awayScore": {
-        "current": 20,
-        "display": 20,
+        "current": 26,
+        "display": 26,
         "period1": 11,
-        "period2": 9
+        "period2": 15,
+        "normaltime": 26
       },
       "time": {
-        "played": 3059,
+        "played": 3600,
         "periodLength": 1800,
         "overtimeLength": 300,
         "totalPeriodCount": 2
       },
       "changes": {
         "changes": [
-          "time.played"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1761488415
+        "changeTimestamp": 1761489281
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -75821,7 +75916,6 @@
       "id": 14149386,
       "slug": "csm-constanta-ahc-potaissa-turda",
       "startTimestamp": 1761483600,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -77028,7 +77122,7 @@
       "id": 14667833,
       "slug": "cs-judetean-prahova-csm-roman",
       "startTimestamp": 1761489000,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -79645,7 +79739,7 @@
       "id": 14697828,
       "slug": "cs-concordia-chiajna-j2-acso-viitorul-pantelimon-j2",
       "startTimestamp": 1761489000,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -82759,7 +82853,7 @@
       "id": 14696537,
       "slug": "csm-deva-j2-csc-millenium-giarmata-j2",
       "startTimestamp": 1761489000,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -85247,10 +85341,11 @@
       },
       "customId": "HHcsCTr",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 3,
       "homeTeam": {
         "name": "Chekhovskie Medvedi Chekhov",
         "slug": "chekhovskiye-medvedi",
@@ -85331,37 +85426,42 @@
         }
       },
       "homeScore": {
-        "current": 22,
-        "display": 22,
+        "current": 27,
+        "display": 27,
         "period1": 14,
-        "period2": 8,
-        "normaltime": 22
+        "period2": 13,
+        "normaltime": 27
       },
       "awayScore": {
-        "current": 24,
-        "display": 24,
+        "current": 27,
+        "display": 27,
         "period1": 13,
-        "period2": 11,
-        "normaltime": 24
+        "period2": 14,
+        "normaltime": 27
       },
       "time": {
-        "played": 3214,
+        "played": 3600,
         "periodLength": 1800,
         "overtimeLength": 300,
         "totalPeriodCount": 2
       },
       "changes": {
         "changes": [
-          "time.played"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period2",
+          "homeScore.normaltime"
         ],
-        "changeTimestamp": 1761488345
+        "changeTimestamp": 1761489626
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14326355,
       "slug": "zenit-st-petersburg-chekhovskie-medvedi-chekhov",
       "startTimestamp": 1761483600,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -97100,10 +97200,11 @@
       },
       "customId": "wfajsCfaj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Elgoibar Eskubaloia",
         "slug": "elgoibar-eskubaloia",
@@ -97160,19 +97261,46 @@
           "text": "#ffffff"
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 32,
+        "display": 32,
+        "period1": 18,
+        "period2": 14,
+        "normaltime": 32
+      },
+      "awayScore": {
+        "current": 21,
+        "display": 21,
+        "period1": 11,
+        "period2": 10,
+        "normaltime": 21
+      },
       "coverage": -1,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1761489064
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14776058,
       "slug": "cdb-leizaran-ekk-elgoibar-eskubaloia",
       "startTimestamp": 1761480000,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -110241,10 +110369,11 @@
       },
       "customId": "xKcsGKLb",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Boden Handboll IF",
         "slug": "boden-handboll-if",
@@ -110319,34 +110448,44 @@
         }
       },
       "homeScore": {
-        "current": 24,
-        "display": 24,
-        "period1": 14
+        "current": 26,
+        "display": 26,
+        "period1": 14,
+        "period2": 12,
+        "normaltime": 26
       },
       "awayScore": {
-        "current": 29,
-        "display": 29,
-        "period1": 17
+        "current": 32,
+        "display": 32,
+        "period1": 17,
+        "period2": 15,
+        "normaltime": 32
       },
       "time": {
-        "played": 3109,
+        "played": 3566,
         "periodLength": 1800,
         "overtimeLength": 300,
         "totalPeriodCount": 2,
-        "currentPeriodStartTimestamp": 1761486587
+        "currentPeriodStartTimestamp": 1761488988
       },
       "changes": {
         "changes": [
-          "time.played"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.period2",
+          "homeScore.normaltime",
+          "awayScore.period2",
+          "awayScore.normaltime",
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1761488345
+        "changeTimestamp": 1761488990
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14117109,
       "slug": "boden-handboll-if-ik-savehof",
       "startTimestamp": 1761483600,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -111599,10 +111738,11 @@
       },
       "customId": "OYnswrLi",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Huddinge HK",
         "slug": "huddinge-hk",
@@ -111676,36 +111816,37 @@
         }
       },
       "homeScore": {
-        "current": 24,
-        "display": 24,
+        "current": 26,
+        "display": 26,
         "period1": 10,
-        "period2": 14,
-        "normaltime": 24
+        "period2": 16,
+        "normaltime": 26
       },
       "awayScore": {
-        "current": 28,
-        "display": 28,
+        "current": 32,
+        "display": 32,
         "period1": 17,
-        "period2": 11,
-        "normaltime": 28
+        "period2": 15,
+        "normaltime": 32
       },
       "coverage": -1,
-      "time": {},
+      "time": {
+        "currentPeriodStartTimestamp": 1761488852
+      },
       "changes": {
         "changes": [
-          "awayScore.current",
-          "awayScore.display",
-          "awayScore.period2",
-          "awayScore.normaltime"
+          "status.code",
+          "status.description",
+          "status.type",
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1761488343
+        "changeTimestamp": 1761488852
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14118817,
       "slug": "huddinge-hk-tyreso-handboll",
       "startTimestamp": 1761483614,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -112330,10 +112471,11 @@
       },
       "customId": "eBosyrLi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Tumba HBK",
         "slug": "ifk-tumba-hk",
@@ -112406,19 +112548,34 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 37,
+        "display": 37
+      },
+      "awayScore": {
+        "current": 11,
+        "display": 11
+      },
       "coverage": -1,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "awayScore.current",
+          "awayScore.display"
+        ],
+        "changeTimestamp": 1761488650
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14121597,
       "slug": "kungsangens-sk-tumba-hbk",
       "startTimestamp": 1761483609,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -113569,10 +113726,11 @@
       },
       "customId": "tAjsZyKi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "GF Kroppskultur Uddevalla",
         "slug": "hf-kroppskultur-dam",
@@ -113645,19 +113803,34 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 22,
+        "display": 22
+      },
+      "awayScore": {
+        "current": 17,
+        "display": 17
+      },
       "coverage": -1,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "awayScore.current",
+          "awayScore.display"
+        ],
+        "changeTimestamp": 1761488805
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14121722,
       "slug": "ifk-orebro-gf-kroppskultur-uddevalla",
       "startTimestamp": 1761483623,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -113737,10 +113910,11 @@
       },
       "customId": "prLiszCQi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Kvinnliga IK Sport Göteborg",
         "slug": "kvik-sport",
@@ -113813,19 +113987,34 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 25,
+        "display": 25
+      },
+      "awayScore": {
+        "current": 32,
+        "display": 32
+      },
       "coverage": -1,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "awayScore.current",
+          "awayScore.display"
+        ],
+        "changeTimestamp": 1761488671
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14121721,
       "slug": "fjaras-hk-kvinnliga-ik-sport-goteborg",
       "startTimestamp": 1761483623,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
