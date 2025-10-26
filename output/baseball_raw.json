@@ -494,7 +494,7 @@
         "inning9": "9th Inning",
         "extra1": "10th Inning"
       },
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -5472,9 +5472,9 @@
       },
       "customId": "iRisxRB",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 21,
+        "description": "1st Inning",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Fukuoka SoftBank Hawks",
@@ -5553,15 +5553,50 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "innings": {
+          "inning1": {
+            "run": 0
+          }
+        }
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "innings": {
+          "inning1": {
+            "run": 0
+          }
+        }
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1761471240
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.innings",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.innings",
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1761471242
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14921225,
+      "currentInningStatus": {},
       "slug": "fukuoka-softbank-hawks-hanshin-tigers",
       "previousLegEventId": 14921224,
       "startTimestamp": 1761471000,
@@ -5578,6 +5613,7 @@
         "inning9": "9th Inning",
         "extra1": "10th Inning"
       },
+      "lastPeriod": "inning1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
