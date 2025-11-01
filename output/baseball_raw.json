@@ -218,6 +218,10 @@
           "inning9": {
             "run": 0
           }
+        },
+        "inningsBaseball": {
+          "hits": 8,
+          "errors": 0
         }
       },
       "awayScore": {
@@ -261,6 +265,10 @@
           "inning9": {
             "run": 0
           }
+        },
+        "inningsBaseball": {
+          "hits": 4,
+          "errors": 1
         }
       },
       "time": {
@@ -271,9 +279,9 @@
           "homeScore.innings",
           "awayScore.innings"
         ],
-        "changeTimestamp": 1761966918
+        "changeTimestamp": 1761967712
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14799648,
@@ -6062,10 +6070,11 @@
       },
       "customId": "GyKbsOytc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Tiburones de La Guaira",
         "slug": "tiburones-de-la-guaira",
@@ -6141,11 +6150,30 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 3,
+        "display": 3,
+        "normaltime": 2
+      },
+      "awayScore": {
+        "current": 5,
+        "display": 5,
+        "normaltime": 2
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1761967717
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -6165,7 +6193,7 @@
         "inning9": "9th Inning",
         "extra1": "10th Inning"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
