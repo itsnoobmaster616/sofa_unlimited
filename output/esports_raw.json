@@ -2381,10 +2381,11 @@
       },
       "customId": "yZndshVdj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 1001,
+        "description": "First game",
+        "type": "inprogress"
       },
+      "winnerCode": 3,
       "homeTeam": {
         "name": "ex-Storm",
         "slug": "ex-storm",
@@ -2444,17 +2445,30 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
       "coverage": 90,
-      "time": {},
+      "time": {
+        "currentPeriodStartTimestamp": 1762104765
+      },
       "changes": {
         "changes": [
+          "homeScore.display",
+          "awayScore.display",
           "status.code",
           "status.description",
-          "status.type"
+          "status.type",
+          "homeScore.current",
+          "awayScore.current",
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1761202267
+        "changeTimestamp": 1762104792
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -2463,7 +2477,7 @@
       "eventType": "best_of",
       "roundsInAHalf": 12,
       "slug": "ex-storm-quazar",
-      "startTimestamp": 1762103700,
+      "startTimestamp": 1762104600,
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -2549,10 +2563,11 @@
       },
       "customId": "PzMdsLrQd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 1001,
+        "description": "First game",
+        "type": "inprogress"
       },
+      "winnerCode": 3,
       "homeTeam": {
         "name": "UNiTY esports",
         "slug": "unity-esports",
@@ -2622,12 +2637,30 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
       "coverage": 90,
-      "time": {},
+      "time": {
+        "currentPeriodStartTimestamp": 1762104767
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.display",
+          "awayScore.display",
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "awayScore.current",
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1762104792
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -2636,7 +2669,7 @@
       "eventType": "best_of",
       "roundsInAHalf": 12,
       "slug": "leo-team-unity-esports",
-      "startTimestamp": 1762103700,
+      "startTimestamp": 1762104600,
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -6961,9 +6994,9 @@
       },
       "customId": "DkVdsItHi",
       "status": {
-        "code": 1002,
-        "description": "Second game",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
       "winnerCode": 1,
       "homeTeam": {
@@ -7033,26 +7066,31 @@
         }
       },
       "homeScore": {
-        "current": 1,
-        "display": 1,
-        "period1": 1
+        "current": 2,
+        "display": 2,
+        "period1": 1,
+        "period2": 1
       },
       "awayScore": {
         "current": 0,
         "display": 0,
-        "period1": 0
+        "period1": 0,
+        "period2": 0
       },
       "coverage": 91,
-      "time": {
-        "currentPeriodStartTimestamp": 1762101662
-      },
+      "time": {},
       "changes": {
         "changes": [
           "status.code",
           "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period2",
+          "awayScore.period2",
           "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1762101666
+        "changeTimestamp": 1762104127
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
@@ -10051,11 +10089,11 @@
       },
       "customId": "zpTgswLej",
       "status": {
-        "code": 1001,
-        "description": "First game",
+        "code": 30,
+        "description": "Pause",
         "type": "inprogress"
       },
-      "winnerCode": 3,
+      "winnerCode": 1,
       "homeTeam": {
         "name": "WW Team",
         "slug": "ww",
@@ -10116,29 +10154,28 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0
+        "current": 1,
+        "display": 1,
+        "period1": 1
       },
       "awayScore": {
         "current": 0,
-        "display": 0
+        "display": 0,
+        "period1": 0
       },
       "coverage": 90,
-      "time": {
-        "currentPeriodStartTimestamp": 1762101697
-      },
+      "time": {},
       "changes": {
         "changes": [
           "homeScore.display",
-          "awayScore.display",
           "status.code",
           "status.description",
-          "status.type",
           "homeScore.current",
-          "awayScore.current",
+          "homeScore.period1",
+          "awayScore.period1",
           "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1762101734
+        "changeTimestamp": 1762104546
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
@@ -16199,12 +16236,14 @@
       "homeScore": {
         "current": 1,
         "display": 1,
-        "period1": 17
+        "period1": 17,
+        "period2": 3
       },
       "awayScore": {
         "current": 0,
         "display": 0,
-        "period1": 14
+        "period1": 14,
+        "period2": 3
       },
       "coverage": 92,
       "time": {
@@ -16212,11 +16251,9 @@
       },
       "changes": {
         "changes": [
-          "status.code",
-          "status.description",
-          "time.currentPeriodStart"
+          "awayScore.period2"
         ],
-        "changeTimestamp": 1762103044
+        "changeTimestamp": 1762105175
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
