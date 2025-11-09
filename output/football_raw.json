@@ -21189,12 +21189,16 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0
+        "current": 2,
+        "display": 2,
+        "period1": 2,
+        "normaltime": 2
       },
       "awayScore": {
-        "current": 0,
-        "display": 0
+        "current": 1,
+        "display": 1,
+        "period1": 1,
+        "normaltime": 1
       },
       "time": {
         "currentPeriodStartTimestamp": 1762658182,
@@ -21204,9 +21208,10 @@
       },
       "changes": {
         "changes": [
-          "time.currentPeriodStart"
+          "homeScore.period1",
+          "homeScore.normaltime"
         ],
-        "changeTimestamp": 1762658184
+        "changeTimestamp": 1762659465
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -24508,7 +24513,7 @@
         ],
         "changeTimestamp": 1762658152
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasXg": true,
       "hasEventPlayerStatistics": true,
       "hasEventPlayerHeatMap": true,
@@ -44502,10 +44507,11 @@
       },
       "customId": "dxcsAOc",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Atlético Bucaramanga",
         "slug": "atletico-bucaramanga",
@@ -44597,17 +44603,16 @@
       },
       "time": {
         "injuryTime1": 3,
-        "currentPeriodStartTimestamp": 1762655748,
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540
+        "injuryTime2": 4,
+        "currentPeriodStartTimestamp": 1762655748
       },
       "changes": {
         "changes": [
-          "homeScore.period2",
-          "awayScore.period2"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1762655816
+        "changeTimestamp": 1762658731
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -44619,16 +44624,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1762655748,
-        "extra": 540
-      },
       "slug": "deportivo-la-equidad-atletico-bucaramanga",
       "startTimestamp": 1762651800,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -55345,6 +55342,7 @@
         "changeTimestamp": 0
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerHeatMap": true,
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 13378991,
@@ -63632,10 +63630,11 @@
       },
       "customId": "KxjsRmoc",
       "status": {
-        "code": 50,
-        "description": "Penalties",
-        "type": "inprogress"
+        "code": 120,
+        "description": "AP",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Pittsburgh Riverhounds",
         "slug": "pittsburgh-riverhounds",
@@ -63705,24 +63704,26 @@
         }
       },
       "homeScore": {
-        "current": 2,
-        "display": 2,
+        "current": 4,
+        "display": 0,
         "period1": 0,
         "period2": 0,
         "normaltime": 0,
         "extra1": 0,
         "extra2": 0,
-        "overtime": 0
+        "overtime": 0,
+        "penalties": 4
       },
       "awayScore": {
-        "current": 2,
-        "display": 2,
+        "current": 3,
+        "display": 0,
         "period1": 0,
         "period2": 0,
         "normaltime": 0,
         "extra1": 0,
         "extra2": 0,
-        "overtime": 0
+        "overtime": 0,
+        "penalties": 3
       },
       "time": {
         "injuryTime1": 3,
@@ -63733,10 +63734,16 @@
       },
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.display",
+          "homeScore.penalties",
+          "awayScore.display",
+          "awayScore.penalties",
+          "homeScore.current"
         ],
-        "changeTimestamp": 1762658252
+        "changeTimestamp": 1762658556
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -63750,7 +63757,6 @@
       },
       "slug": "detroit-city-fc-pittsburgh-riverhounds",
       "startTimestamp": 1762648200,
-      "lastPeriod": "penalties",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -63844,10 +63850,11 @@
       },
       "customId": "tFlbswQDb",
       "status": {
-        "code": 41,
-        "description": "1st extra",
-        "type": "inprogress"
+        "code": 110,
+        "description": "AET",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "FC Tulsa",
         "slug": "fc-tulsa",
@@ -63924,13 +63931,14 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
+        "current": 1,
+        "display": 1,
         "period1": 0,
         "period2": 0,
         "normaltime": 0,
         "extra1": 0,
-        "overtime": 0
+        "extra2": 1,
+        "overtime": 1
       },
       "awayScore": {
         "current": 0,
@@ -63939,27 +63947,21 @@
         "period2": 0,
         "normaltime": 0,
         "extra1": 0,
+        "extra2": 0,
         "overtime": 0
       },
       "time": {
         "injuryTime1": 4,
         "injuryTime2": 0,
-        "currentPeriodStartTimestamp": 1762657485,
-        "initial": 5400,
-        "max": 6300,
-        "extra": 540
+        "injuryTime3": 0,
+        "injuryTime4": 0,
+        "currentPeriodStartTimestamp": 1762658626
       },
       "changes": {
         "changes": [
-          "homeScore.extra1",
-          "homeScore.overtime",
-          "awayScore.extra1",
-          "awayScore.overtime",
-          "status.code",
-          "status.description",
-          "time.currentPeriodStart"
+          "time.injuryTime4"
         ],
-        "changeTimestamp": 1762657491
+        "changeTimestamp": 1762659767
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -63971,16 +63973,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "ET-",
-        "initial": 5400,
-        "max": 6300,
-        "timestamp": 1762657485,
-        "extra": 540
-      },
       "slug": "fc-tulsa-phoenix-rising-fc",
       "startTimestamp": 1762650000,
-      "lastPeriod": "extra1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -64160,11 +64154,11 @@
         "normaltime": 1
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
+        "current": 1,
+        "display": 1,
         "period1": 0,
-        "period2": 0,
-        "normaltime": 0
+        "period2": 1,
+        "normaltime": 1
       },
       "time": {
         "injuryTime1": 0,
@@ -64175,10 +64169,10 @@
       },
       "changes": {
         "changes": [
-          "homeScore.period2",
-          "homeScore.normaltime"
+          "awayScore.period2",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1762658260
+        "changeTimestamp": 1762659375
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -114860,8 +114854,8 @@
       },
       "customId": "BPcsGuuc",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 31,
+        "description": "Halftime",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -114949,16 +114943,15 @@
         "periodLength": 2700,
         "overtimeLength": 900,
         "totalPeriodCount": 2,
-        "currentPeriodStartTimestamp": 1762657516,
-        "initial": 0,
-        "max": 2700,
-        "extra": 540
+        "currentPeriodStartTimestamp": 1762657583
       },
       "changes": {
         "changes": [
-          "cardsCode"
+          "status.code",
+          "status.description",
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1762657663
+        "changeTimestamp": 1762660283
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -114967,16 +114960,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1762657516,
-        "extra": 540
-      },
       "slug": "deportivo-achuapa-csd-xelaju-mc",
       "startTimestamp": 1762657200,
-      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -127656,8 +127641,8 @@
       },
       "customId": "EFosoTPb",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 31,
+        "description": "Halftime",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -127744,19 +127729,18 @@
       "awayScore": {
         "current": 0,
         "display": 0,
-        "period1": 0
+        "period1": 0,
+        "normaltime": 0
       },
       "time": {
-        "currentPeriodStartTimestamp": 1762657199,
-        "initial": 0,
-        "max": 2700,
-        "extra": 540
+        "currentPeriodStartTimestamp": 1762657199
       },
       "changes": {
         "changes": [
-          "homeScore.normaltime"
+          "status.code",
+          "status.description"
         ],
-        "changeTimestamp": 1762658217
+        "changeTimestamp": 1762660101
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": false,
@@ -127767,16 +127751,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1762657199,
-        "extra": 540
-      },
       "slug": "cds-tampico-madero-club-atletico-morelia",
       "startTimestamp": 1762657200,
-      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
