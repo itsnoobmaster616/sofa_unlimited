@@ -39838,6 +39838,7 @@
         "normaltime": 0
       },
       "time": {
+        "injuryTime1": 2,
         "currentPeriodStartTimestamp": 1762671927,
         "initial": 2700,
         "max": 5400,
@@ -39845,21 +39846,13 @@
       },
       "changes": {
         "changes": [
-          "status.code",
-          "status.description",
-          "homeScore.current",
-          "homeScore.display",
-          "homeScore.period1",
-          "homeScore.period2",
-          "homeScore.normaltime",
-          "awayScore.period1",
-          "awayScore.period2",
-          "awayScore.normaltime",
-          "time.currentPeriodStart"
+          "time.injuryTime1"
         ],
-        "changeTimestamp": 1762672870
+        "changeTimestamp": 1762672874
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14954360,
@@ -55868,7 +55861,7 @@
       "crowdsourcingDataDisplayEnabled": false,
       "id": 13378987,
       "varInProgress": {
-        "homeTeam": false,
+        "homeTeam": true,
         "awayTeam": false
       },
       "statusTime": {
@@ -67349,9 +67342,9 @@
       },
       "customId": "dddslAq",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Ulsan HD",
@@ -67428,14 +67421,32 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1762673444,
+        "initial": 0,
+        "max": 2700,
+        "extra": 540
+      },
       "changes": {
         "changes": [
-          "cardsCode"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.period1",
+          "awayScore.period1",
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1762670091
+        "changeTimestamp": 1762673447
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": false,
@@ -67445,6 +67456,13 @@
       "varInProgress": {
         "homeTeam": false,
         "awayTeam": false
+      },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1762673444,
+        "extra": 540
       },
       "streamContentId": 2028680,
       "streamContentGeoRestrictions": [
@@ -67457,6 +67475,7 @@
       ],
       "slug": "suwon-fc-ulsan-hd",
       "startTimestamp": 1762673400,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -67980,9 +67999,9 @@
       },
       "customId": "OaMsxdDb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Gimpo FC",
@@ -68055,11 +68074,32 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1762673420,
+        "initial": 0,
+        "max": 2700,
+        "extra": 540
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "awayScore.current",
+          "awayScore.display",
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1762673422
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -68068,8 +68108,16 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1762673420,
+        "extra": 540
+      },
       "slug": "gimpo-fc-bucheon-fc-1995",
       "startTimestamp": 1762673400,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -135454,6 +135502,199 @@
     },
     {
       "tournament": {
+        "name": "1st Division, Relegation / Promotion Playoffs",
+        "slug": "1st-division-relegation-promotion-playoffs",
+        "category": {
+          "name": "Norway",
+          "slug": "norway",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "id": 5,
+          "country": {
+            "alpha2": "NO",
+            "alpha3": "NOR",
+            "name": "Norway",
+            "slug": "norway"
+          },
+          "flag": "norway",
+          "alpha2": "NO",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "النرويج"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "Norwegian 1st Division",
+          "slug": "1st-division",
+          "category": {
+            "name": "Norway",
+            "slug": "norway",
+            "sport": {
+              "name": "Football",
+              "slug": "football",
+              "id": 1
+            },
+            "id": 5,
+            "country": {
+              "alpha2": "NO",
+              "alpha3": "NOR",
+              "name": "Norway",
+              "slug": "norway"
+            },
+            "flag": "norway",
+            "alpha2": "NO",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "النرويج"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 6690,
+          "hasPerformanceGraphFeature": false,
+          "id": 22,
+          "country": {},
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "دوري النرويجي الدرجة الأولى",
+              "hi": "नॉर्वेजियन फर्स्ट डिवीज़न",
+              "bn": "নরওয়েজিয়ান 1st ডিভিশন"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "isGroup": false,
+        "isLive": false,
+        "id": 63068,
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "الدوري الأول، تصفيات الهبوط / الصعود",
+            "hi": "फर्स्ट डिवीज़न, रीलेगेशन / प्रमोशन प्लेऑफ्स",
+            "bn": "1st ডিভিশন, রেলিগেশন / প্রমোশন প্লেঅফ"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "season": {
+        "name": "1st Division 2025",
+        "year": "2025",
+        "editor": false,
+        "id": 70186
+      },
+      "roundInfo": {
+        "round": 1,
+        "name": "Qualification Round 1"
+      },
+      "customId": "eusvWc",
+      "status": {
+        "code": 0,
+        "description": "Not started",
+        "type": "notstarted"
+      },
+      "homeTeam": {
+        "name": "Grorud",
+        "slug": "grorud",
+        "shortName": "Grorud",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 2289,
+        "nameCode": "GIL",
+        "national": false,
+        "type": 0,
+        "id": 7320,
+        "country": {
+          "alpha2": "NO",
+          "alpha3": "NOR",
+          "name": "Norway",
+          "slug": "norway"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#f8e763",
+          "secondary": "#024997",
+          "text": "#024997"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "غورود",
+            "ru": "ФК Гроруд"
+          },
+          "shortNameTranslation": {
+            "ar": "غورود"
+          }
+        }
+      },
+      "awayTeam": {
+        "name": "Brattvåg",
+        "slug": "brattvag",
+        "shortName": "Brattvåg",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 2854,
+        "nameCode": "BRA",
+        "national": false,
+        "type": 0,
+        "id": 954,
+        "country": {
+          "alpha2": "NO",
+          "alpha3": "NOR",
+          "name": "Norway",
+          "slug": "norway"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#ffde00",
+          "secondary": "#0000ff",
+          "text": "#0000ff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "براتفاغ",
+            "ru": "ФК Браттваг"
+          },
+          "shortNameTranslation": {
+            "ar": "براتفاغ"
+          }
+        }
+      },
+      "homeScore": {},
+      "awayScore": {},
+      "time": {},
+      "changes": {
+        "changeTimestamp": 0
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 15024655,
+      "varInProgress": {
+        "homeTeam": false,
+        "awayTeam": false
+      },
+      "slug": "grorud-brattvag",
+      "previousLegEventId": 15024652,
+      "startTimestamp": 1762689600,
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "isEditor": false
+    },
+    {
+      "tournament": {
         "name": "Philippines Football League",
         "slug": "philippines-football-league",
         "category": {
@@ -147989,6 +148230,9 @@
         "changeTimestamp": 1762605571
       },
       "hasGlobalHighlights": true,
+      "hasXg": true,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14260819,
       "awayRedCards": 1,
@@ -154304,6 +154548,9 @@
         "changeTimestamp": 1762617460
       },
       "hasGlobalHighlights": true,
+      "hasXg": true,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 13265708,
       "varInProgress": {
