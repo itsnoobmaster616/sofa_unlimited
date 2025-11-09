@@ -544,9 +544,9 @@
       },
       "customId": "NnIcsbcWd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 8,
+        "description": "1st set",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Teh J.",
@@ -614,17 +614,30 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 11
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 9
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1762661719
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "awayScore.period1"
+        ],
+        "changeTimestamp": 1762662561
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15021981,
       "slug": "okimoto-teh",
-      "startTimestamp": 1762660800,
+      "startTimestamp": 1762661100,
       "periods": {
         "current": "Match",
         "period1": "1st set",
@@ -633,6 +646,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -1305,10 +1319,11 @@
       },
       "customId": "uHKisMMhj",
       "status": {
-        "code": 9,
-        "description": "2nd set",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Wong J / Lai P J",
         "slug": "wong-j-lai-p-j",
@@ -1498,22 +1513,32 @@
         "current": 0,
         "display": 0,
         "period1": 22,
-        "period2": 14
+        "period2": 18,
+        "normaltime": 0
       },
       "awayScore": {
-        "current": 1,
-        "display": 1,
+        "current": 2,
+        "display": 2,
         "period1": 24,
-        "period2": 18
+        "period2": 21,
+        "normaltime": 2
       },
       "time": {
-        "currentPeriodStartTimestamp": 1762659437
+        "currentPeriodStartTimestamp": 1762660860
       },
       "changes": {
         "changes": [
-          "homeScore.period2"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime",
+          "time.currentPeriodStart",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period2"
         ],
-        "changeTimestamp": 1762660566
+        "changeTimestamp": 1762660864
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -1528,7 +1553,6 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
