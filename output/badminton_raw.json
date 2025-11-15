@@ -5336,9 +5336,9 @@
       },
       "customId": "fZdesjqbj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 8,
+        "description": "1st set",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Lopez P / Rodriguez L",
@@ -5528,17 +5528,30 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 6
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 3
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1763223850
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.period1"
+        ],
+        "changeTimestamp": 1763224037
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15105244,
       "slug": "kimj-leen-lopez-rodriguez",
-      "startTimestamp": 1763219700,
+      "startTimestamp": 1763223000,
       "periods": {
         "current": "Match",
         "period1": "1st set",
@@ -5547,6 +5560,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -11314,10 +11328,11 @@
       },
       "customId": "gYKisOfdj",
       "status": {
-        "code": 8,
-        "description": "1st set",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Green A / Russ Z",
         "slug": "green-a-russ-z",
@@ -11505,23 +11520,35 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 17
+        "current": 2,
+        "display": 2,
+        "period1": 21,
+        "period2": 21,
+        "normaltime": 2
       },
       "awayScore": {
         "current": 0,
         "display": 0,
-        "period1": 16
+        "period1": 19,
+        "period2": 13,
+        "normaltime": 0
       },
       "time": {
-        "currentPeriodStartTimestamp": 1763220122
+        "currentPeriodStartTimestamp": 1763222903
       },
       "changes": {
         "changes": [
-          "homeScore.period1"
+          "time.currentPeriodStart",
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period2",
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1763221220
+        "changeTimestamp": 1763222910
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -11536,7 +11563,6 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
