@@ -1095,9 +1095,9 @@
       },
       "customId": "zEbshHc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 31,
+        "description": "Halftime",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Paris Saint-Germain Handball",
@@ -1179,13 +1179,31 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 13,
+        "display": 13,
+        "period1": 13
+      },
+      "awayScore": {
+        "current": 19,
+        "display": 19,
+        "period1": 19
+      },
+      "time": {
+        "played": 1787,
+        "periodLength": 1800,
+        "overtimeLength": 300,
+        "totalPeriodCount": 2,
+        "currentPeriodStartTimestamp": 1763583652
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.played"
+        ],
+        "changeTimestamp": 1763583725
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14168113,
       "slug": "paris-saint-germain-handball-fc-barcelona-hb",
@@ -2824,10 +2842,11 @@
       },
       "customId": "bHHisJKRi",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Zagorica",
         "slug": "zagorica",
@@ -2901,39 +2920,42 @@
         }
       },
       "homeScore": {
-        "current": 22,
-        "display": 22,
+        "current": 29,
+        "display": 29,
         "period1": 13,
-        "period2": 9
+        "period2": 16,
+        "normaltime": 29
       },
       "awayScore": {
-        "current": 25,
-        "display": 25,
+        "current": 34,
+        "display": 34,
         "period1": 20,
-        "period2": 5
+        "period2": 14,
+        "normaltime": 34
       },
       "coverage": -1,
       "time": {
-        "played": 2520,
+        "played": 3600,
         "periodLength": 1800,
         "overtimeLength": 300,
         "totalPeriodCount": 2
       },
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display",
-          "homeScore.period2",
-          "time.played"
+          "providerLock.status",
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1763581149
+        "changeTimestamp": 1763582692
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14225267,
       "slug": "zagorica-odema",
       "startTimestamp": 1763577900,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -4427,8 +4449,8 @@
       },
       "customId": "RpwsMVfc",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -4504,19 +4526,21 @@
         }
       },
       "homeScore": {
-        "current": 11,
-        "display": 11,
-        "period1": 11,
-        "normaltime": 11
+        "current": 21,
+        "display": 21,
+        "period1": 12,
+        "period2": 9,
+        "normaltime": 21
       },
       "awayScore": {
-        "current": 16,
-        "display": 16,
+        "current": 28,
+        "display": 28,
         "period1": 16,
-        "normaltime": 16
+        "period2": 12,
+        "normaltime": 28
       },
       "time": {
-        "played": 1798,
+        "played": 3243,
         "periodLength": 1800,
         "overtimeLength": 300,
         "totalPeriodCount": 2
@@ -4525,14 +4549,14 @@
         "changes": [
           "time.played"
         ],
-        "changeTimestamp": 1763581149
+        "changeTimestamp": 1763583844
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14211691,
       "slug": "ir-reykjavik-fh-hafnarfjordur",
       "startTimestamp": 1763578800,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -6042,10 +6066,11 @@
       },
       "customId": "eIcsCTr",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Meshkov Brest",
         "slug": "hc-meshkov-brest",
@@ -6124,19 +6149,46 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 31,
+        "display": 31,
+        "period1": 19,
+        "period2": 12,
+        "normaltime": 31
+      },
+      "awayScore": {
+        "current": 28,
+        "display": 28,
+        "period1": 12,
+        "period2": 16,
+        "normaltime": 28
+      },
       "coverage": -1,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1763583230
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15030371,
       "slug": "zenit-st-petersburg-meshkov-brest",
       "startTimestamp": 1763566200,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -6220,10 +6272,11 @@
       },
       "customId": "HHcsdYn",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Chekhovskie Medvedi Chekhov",
         "slug": "chekhovskiye-medvedi",
@@ -6301,19 +6354,46 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 33,
+        "display": 33,
+        "period1": 18,
+        "period2": 15,
+        "normaltime": 33
+      },
+      "awayScore": {
+        "current": 34,
+        "display": 34,
+        "period1": 13,
+        "period2": 21,
+        "normaltime": 34
+      },
       "coverage": -1,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1763583310
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15030373,
       "slug": "ska-minsk-chekhovskie-medvedi-chekhov",
       "startTimestamp": 1763568000,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -6397,10 +6477,11 @@
       },
       "customId": "AyGsdzhc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Viktor Stavropol",
         "slug": "viktor-stavropol",
@@ -6475,19 +6556,46 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 26,
+        "display": 26,
+        "period1": 9,
+        "period2": 17,
+        "normaltime": 26
+      },
+      "awayScore": {
+        "current": 23,
+        "display": 23,
+        "period1": 9,
+        "period2": 14,
+        "normaltime": 23
+      },
       "coverage": -1,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1763583265
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15030374,
       "slug": "masheka-mogilev-viktor-stavropol",
       "startTimestamp": 1763568000,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -8795,7 +8903,7 @@
       "id": 14307630,
       "slug": "pressano-alperia-black-devils",
       "startTimestamp": 1763580600,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -11219,8 +11327,8 @@
       },
       "customId": "HtbbsBEfc",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -11295,38 +11403,37 @@
         }
       },
       "homeScore": {
-        "current": 11,
-        "display": 11,
+        "current": 25,
+        "display": 25,
         "period1": 11,
-        "normaltime": 11
+        "period2": 14,
+        "normaltime": 25
       },
       "awayScore": {
-        "current": 13,
-        "display": 13,
+        "current": 22,
+        "display": 22,
         "period1": 13,
-        "normaltime": 13
+        "period2": 9,
+        "normaltime": 22
       },
       "time": {
-        "played": 1800,
+        "played": 3368,
         "periodLength": 1800,
         "overtimeLength": 300,
         "totalPeriodCount": 2
       },
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display",
-          "homeScore.period1",
-          "homeScore.normaltime"
+          "time.played"
         ],
-        "changeTimestamp": 1763581093
+        "changeTimestamp": 1763583844
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14141208,
       "slug": "cd-agustinos-alicante-bm-benidorm",
       "startTimestamp": 1763578800,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -12179,10 +12286,11 @@
       },
       "customId": "gncsjnc",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "HSC Suhr Aarau",
         "slug": "hsc-suhr-aarau",
@@ -12260,35 +12368,33 @@
         }
       },
       "homeScore": {
-        "current": 24,
-        "display": 24,
-        "period1": 16,
-        "period2": 8,
-        "normaltime": 24
-      },
-      "awayScore": {
         "current": 29,
         "display": 29,
         "period1": 16,
         "period2": 13,
         "normaltime": 29
       },
+      "awayScore": {
+        "current": 33,
+        "display": 33,
+        "period1": 16,
+        "period2": 17,
+        "normaltime": 33
+      },
       "time": {},
       "changes": {
         "changes": [
-          "awayScore.current",
-          "awayScore.display",
-          "awayScore.period2",
-          "awayScore.normaltime"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1763581085
+        "changeTimestamp": 1763582294
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14109518,
       "slug": "hsc-suhr-aarau-pfadi-winterthur",
       "startTimestamp": 1763576100,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
