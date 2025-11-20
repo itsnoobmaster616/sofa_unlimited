@@ -11339,9 +11339,9 @@
       },
       "customId": "lKhdsQmKi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 60,
+        "description": "Postponed",
+        "type": "postponed"
       },
       "homeTeam": {
         "name": "Borisfen Mogilev Youth Youth",
@@ -11413,7 +11413,12 @@
       "awayScore": {},
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type"
+        ],
+        "changeTimestamp": 1763646433
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -15149,7 +15154,7 @@
         ],
         "changeTimestamp": 1763579372
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14695352,
       "periods": {
@@ -26585,10 +26590,11 @@
       },
       "customId": "vJXcsHFZi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "AS Aprovleptoi",
         "slug": "as-aprovleptoi",
@@ -26659,12 +26665,27 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 42,
+        "display": 42
+      },
+      "awayScore": {
+        "current": 66,
+        "display": 66
+      },
       "coverage": -1,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "awayScore.current",
+          "awayScore.display"
+        ],
+        "changeTimestamp": 1763646250
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -26679,7 +26700,7 @@
       },
       "slug": "aetos-kallitheas-as-aprovleptoi",
       "startTimestamp": 1763580600,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -36047,9 +36068,9 @@
       },
       "customId": "JdljsMdlj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 14,
+        "description": "2nd quarter",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Zalgiris Kaunas U15",
@@ -36107,13 +36128,35 @@
           "text": "#ffffff"
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 43,
+        "display": 43,
+        "period1": 29,
+        "period2": 14
+      },
+      "awayScore": {
+        "current": 23,
+        "display": 23,
+        "period1": 10,
+        "period2": 13
+      },
+      "time": {
+        "played": 842,
+        "periodLength": 600,
+        "overtimeLength": 300,
+        "totalPeriodCount": 4
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.current",
+          "homeScore.display",
+          "time.played",
+          "homeScore.period2"
+        ],
+        "changeTimestamp": 1763648719
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15124174,
       "periods": {
@@ -36126,6 +36169,7 @@
       },
       "slug": "zalgiris-kaunas-u15-tunmky-u15",
       "startTimestamp": 1763647200,
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -41019,10 +41063,11 @@
       },
       "customId": "VAjcsbyKi",
       "status": {
-        "code": 31,
-        "description": "Halftime",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Dar City Basketball Team",
         "slug": "dar-city-bbc",
@@ -41087,19 +41132,25 @@
         }
       },
       "homeScore": {
-        "current": 41,
-        "display": 41,
+        "current": 87,
+        "display": 87,
         "period1": 25,
-        "period2": 16
+        "period2": 16,
+        "period3": 24,
+        "period4": 22,
+        "normaltime": 87
       },
       "awayScore": {
-        "current": 34,
-        "display": 34,
+        "current": 78,
+        "display": 78,
         "period1": 11,
-        "period2": 23
+        "period2": 23,
+        "period3": 16,
+        "period4": 28,
+        "normaltime": 78
       },
       "time": {
-        "played": 1200,
+        "played": 2400,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
@@ -41107,9 +41158,12 @@
       "changes": {
         "changes": [
           "status.code",
-          "status.description"
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1763645027
+        "changeTimestamp": 1763648390
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -43762,7 +43816,7 @@
       },
       "slug": "al-qadsia-al-sulaibikhat",
       "startTimestamp": 1763647238,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -54684,8 +54738,8 @@
       },
       "customId": "YlxhsZlxh",
       "status": {
-        "code": 14,
-        "description": "2nd quarter",
+        "code": 16,
+        "description": "4th quarter",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -54761,28 +54815,38 @@
         }
       },
       "homeScore": {
-        "current": 39,
-        "display": 39,
+        "current": 65,
+        "display": 65,
         "period1": 18,
-        "period2": 21
+        "period2": 21,
+        "period3": 11,
+        "period4": 15
       },
       "awayScore": {
-        "current": 44,
-        "display": 44,
+        "current": 79,
+        "display": 79,
         "period1": 30,
-        "period2": 14
+        "period2": 16,
+        "period3": 22,
+        "period4": 11
       },
       "time": {
-        "played": 1172,
+        "played": 2105,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
       },
       "changes": {
         "changes": [
-          "time.played"
+          "homeScore.current",
+          "homeScore.display",
+          "awayScore.current",
+          "awayScore.display",
+          "time.played",
+          "homeScore.period4",
+          "awayScore.period4"
         ],
-        "changeTimestamp": 1763645630
+        "changeTimestamp": 1763648720
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -54798,7 +54862,7 @@
       },
       "slug": "abc-leii-bucuresti-cs-universitar-targoviste",
       "startTimestamp": 1763641800,
-      "lastPeriod": "period2",
+      "lastPeriod": "period4",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -56174,8 +56238,8 @@
       },
       "customId": "NWhcskpXd",
       "status": {
-        "code": 14,
-        "description": "2nd quarter",
+        "code": 15,
+        "description": "3rd quarter",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -56251,24 +56315,27 @@
         }
       },
       "homeScore": {
-        "current": 34,
-        "display": 34,
-        "period1": 25
+        "current": 62,
+        "display": 62,
+        "period1": 25,
+        "period2": 24,
+        "period3": 13
       },
       "awayScore": {
-        "current": 32,
-        "display": 32,
-        "period1": 22
+        "current": 59,
+        "display": 59,
+        "period1": 22,
+        "period2": 22,
+        "period3": 15
       },
       "time": {},
       "changes": {
         "changes": [
           "homeScore.current",
           "homeScore.display",
-          "awayScore.current",
-          "awayScore.display"
+          "homeScore.period3"
         ],
-        "changeTimestamp": 1763645509
+        "changeTimestamp": 1763648719
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -56284,7 +56351,7 @@
       },
       "slug": "dynamo-grozny-temp-sumz-revda",
       "startTimestamp": 1763643600,
-      "lastPeriod": "period2",
+      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
