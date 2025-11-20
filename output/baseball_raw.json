@@ -88,9 +88,9 @@
       },
       "customId": "hlGdsklGd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 22,
+        "description": "2nd Inning",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Sydney Blue Sox",
@@ -153,15 +153,53 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "period2": 0,
+        "innings": {
+          "inning1": {
+            "run": 0
+          },
+          "inning2": {
+            "run": 0
+          }
+        }
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "period2": 0,
+        "innings": {
+          "inning1": {
+            "run": 0
+          },
+          "inning2": {
+            "run": 0
+          }
+        }
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1763623379
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "homeScore.period2",
+          "homeScore.innings",
+          "awayScore.period2",
+          "awayScore.innings",
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1763623421
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15018708,
+      "currentInningStatus": {},
       "slug": "sydney-blue-sox-brisbane-bandits",
       "startTimestamp": 1763622000,
       "periods": {
@@ -177,6 +215,7 @@
         "inning9": "9th Inning",
         "extra1": "10th Inning"
       },
+      "lastPeriod": "inning2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -6021,10 +6060,11 @@
       },
       "customId": "BeYbsnwdj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Tucson Baseball Club",
         "slug": "tucson-baseball-club",
@@ -6097,13 +6137,32 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 1,
+        "display": 1,
+        "normaltime": 1
+      },
+      "awayScore": {
+        "current": 9,
+        "display": 9,
+        "normaltime": 9
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1763621823
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15042736,
       "slug": "tucson-baseball-club-aguilas-de-mexicali",
@@ -6121,7 +6180,7 @@
         "inning9": "9th Inning",
         "extra1": "10th Inning"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
