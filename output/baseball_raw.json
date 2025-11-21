@@ -1037,7 +1037,7 @@
         "inning9": "9th Inning",
         "extra1": "10th Inning"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -2747,7 +2747,7 @@
         "inning9": "9th Inning",
         "extra1": "10th Inning"
       },
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -5862,10 +5862,11 @@
       },
       "customId": "opAbsNXYd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Leones de Ponce",
         "slug": "leones-de-ponce",
@@ -5935,11 +5936,30 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "normaltime": 0
+      },
+      "awayScore": {
+        "current": 5,
+        "display": 5,
+        "normaltime": 5
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1763765685
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
