@@ -88,10 +88,11 @@
       },
       "customId": "lTTstixh",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "RC Massy Essonne",
         "slug": "rugby-club-massy-essonne",
@@ -164,12 +165,27 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 26,
+        "display": 26
+      },
+      "awayScore": {
+        "current": 19,
+        "display": 19
+      },
       "coverage": -1,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "awayScore.current",
+          "awayScore.display"
+        ],
+        "changeTimestamp": 1763763153
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -2833,9 +2849,9 @@
       },
       "customId": "ngwyEG",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
       "winnerCode": 2,
       "homeTeam": {
@@ -2920,26 +2936,33 @@
         "current": 33,
         "display": 33,
         "period1": 19,
-        "period2": 14
+        "period2": 14,
+        "normaltime": 33
       },
       "awayScore": {
         "current": 34,
         "display": 34,
         "period1": 23,
-        "period2": 11
+        "period2": 11,
+        "normaltime": 34
       },
       "time": {
-        "played": 6617,
+        "played": 2424,
         "periodLength": 2400,
         "overtimeLength": 600,
         "totalPeriodCount": 2,
-        "currentPeriodStartTimestamp": 1763758882
+        "currentPeriodStartTimestamp": 1763761772
       },
       "changes": {
         "changes": [
-          "time.played"
+          "time.currentPeriodStart",
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1763761143
+        "changeTimestamp": 1763761776
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -2947,7 +2970,6 @@
       "id": 14290305,
       "slug": "section-paloise-union-bordeaux-begles",
       "startTimestamp": 1763755200,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
