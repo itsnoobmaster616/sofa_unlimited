@@ -97,9 +97,9 @@
       },
       "customId": "JybsLyb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 2,
+        "description": "2nd period",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Edmonton Oilers",
@@ -181,24 +181,33 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 0,
+        "period2": 1
+      },
+      "awayScore": {
+        "current": 4,
+        "display": 4,
+        "period1": 4,
+        "period2": 0
+      },
       "time": {
-        "played": 0,
+        "played": 1748,
         "periodLength": 1200,
         "overtimeLength": 300,
-        "totalPeriodCount": 3
+        "totalPeriodCount": 3,
+        "currentPeriodStartTimestamp": 1764126254
       },
       "changes": {
         "changes": [
-          "time.played",
-          "time.periodLength",
-          "time.overtimeLength",
-          "time.totalPeriodCount"
+          "time.played"
         ],
-        "changeTimestamp": 1764121834
+        "changeTimestamp": 1764127085
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14198214,
       "slug": "edmonton-oilers-dallas-stars",
@@ -211,6 +220,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -5142,7 +5152,7 @@
         ],
         "changeTimestamp": 1764104055
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14077291,
       "slug": "straubing-tigers-ehc-red-bull-munchen",
@@ -5369,7 +5379,7 @@
         ],
         "changeTimestamp": 1764105245
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14077288,
       "slug": "adler-mannheim-kolner-haie",
@@ -5598,7 +5608,7 @@
         ],
         "changeTimestamp": 1764103770
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14077293,
       "slug": "lowen-frankfurt-augsburger-panther",
@@ -5826,7 +5836,7 @@
         ],
         "changeTimestamp": 1764105246
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14077299,
       "slug": "nurnberg-ice-tigers-schwenningen-wild-wings",
@@ -38053,8 +38063,8 @@
       },
       "customId": "kdtsKdt",
       "status": {
-        "code": 30,
-        "description": "Pause",
+        "code": 3,
+        "description": "3rd period",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -38129,30 +38139,31 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0
+        "current": 1,
+        "display": 1,
+        "period1": 0,
+        "period2": 0,
+        "period3": 1
       },
       "awayScore": {
-        "current": 4,
-        "display": 4,
-        "period1": 4
+        "current": 9,
+        "display": 9,
+        "period1": 4,
+        "period2": 3,
+        "period3": 2
       },
       "time": {
-        "played": 1200,
+        "played": 3199,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3,
-        "currentPeriodStartTimestamp": 1764121309
+        "currentPeriodStartTimestamp": 1764125689
       },
       "changes": {
         "changes": [
-          "time.played",
-          "time.currentPeriodStart",
-          "status.code",
-          "status.description"
+          "time.played"
         ],
-        "changeTimestamp": 1764121325
+        "changeTimestamp": 1764127085
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -38167,6 +38178,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
+      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -43187,10 +43199,11 @@
       },
       "customId": "fchcsUFFd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 110,
+        "description": "AET",
+        "type": "finished"
       },
+      "winnerCode": 3,
       "homeTeam": {
         "name": "Connecticut Huskies",
         "slug": "connecticut-huskies",
@@ -43261,11 +43274,46 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 3,
+        "display": 3,
+        "period1": 1,
+        "period2": 1,
+        "period3": 1,
+        "normaltime": 3,
+        "overtime": 0
+      },
+      "awayScore": {
+        "current": 3,
+        "display": 3,
+        "period1": 0,
+        "period2": 3,
+        "period3": 0,
+        "normaltime": 3,
+        "overtime": 0
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.period3",
+          "homeScore.normaltime",
+          "homeScore.overtime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.period3",
+          "awayScore.normaltime",
+          "awayScore.overtime"
+        ],
+        "changeTimestamp": 1764125756
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -43280,7 +43328,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -44347,10 +44395,11 @@
       },
       "customId": "alwcsmlxc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 110,
+        "description": "AET",
+        "type": "finished"
       },
+      "winnerCode": 3,
       "homeTeam": {
         "name": "Syracuse Orange",
         "slug": "syracuse-orange",
@@ -44417,11 +44466,46 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 0,
+        "period2": 1,
+        "period3": 1,
+        "normaltime": 2,
+        "overtime": 0
+      },
+      "awayScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 0,
+        "period2": 1,
+        "period3": 1,
+        "normaltime": 2,
+        "overtime": 0
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.period3",
+          "homeScore.normaltime",
+          "homeScore.overtime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.period3",
+          "awayScore.normaltime",
+          "awayScore.overtime"
+        ],
+        "changeTimestamp": 1764123222
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -44436,7 +44520,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -44532,10 +44616,11 @@
       },
       "customId": "GEaesHEae",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Montreal PWHL",
         "slug": "montreal-pwhl",
@@ -44610,11 +44695,42 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 4,
+        "display": 4,
+        "period1": 0,
+        "period2": 2,
+        "period3": 2,
+        "normaltime": 4
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "period2": 0,
+        "period3": 0,
+        "normaltime": 0
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.period3",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.period3",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1764125879
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -44629,7 +44745,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
