@@ -2604,10 +2604,11 @@
       },
       "customId": "cAcsUBJ",
       "status": {
-        "code": 30,
-        "description": "Pause",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Denmark",
         "slug": "denmark",
@@ -2689,7 +2690,8 @@
         "period1": 23,
         "period2": 10,
         "period3": 14,
-        "period4": 17
+        "period4": 17,
+        "normaltime": 64
       },
       "awayScore": {
         "current": 74,
@@ -2697,7 +2699,8 @@
         "period1": 25,
         "period2": 20,
         "period3": 15,
-        "period4": 14
+        "period4": 14,
+        "normaltime": 74
       },
       "time": {
         "played": 2400,
@@ -2709,9 +2712,11 @@
         "changes": [
           "status.code",
           "status.description",
-          "time.played"
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1764271121
+        "changeTimestamp": 1764271161
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -2932,7 +2937,7 @@
         ],
         "changeTimestamp": 1764268116
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14508831,
@@ -3256,8 +3261,8 @@
       },
       "customId": "OxcsJGz",
       "status": {
-        "code": 15,
-        "description": "3rd quarter",
+        "code": 16,
+        "description": "4th quarter",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -3336,21 +3341,23 @@
         }
       },
       "homeScore": {
-        "current": 47,
-        "display": 47,
+        "current": 64,
+        "display": 64,
         "period1": 20,
         "period2": 14,
-        "period3": 13
+        "period3": 25,
+        "period4": 5
       },
       "awayScore": {
-        "current": 61,
-        "display": 61,
+        "current": 72,
+        "display": 72,
         "period1": 30,
         "period2": 27,
-        "period3": 4
+        "period3": 13,
+        "period4": 2
       },
       "time": {
-        "played": 1505,
+        "played": 1888,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4,
@@ -3360,7 +3367,7 @@
         "changes": [
           "time.played"
         ],
-        "changeTimestamp": 1764271142
+        "changeTimestamp": 1764272323
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -3376,7 +3383,7 @@
       },
       "slug": "switzerland-serbia",
       "startTimestamp": 1764266400,
-      "lastPeriod": "period3",
+      "lastPeriod": "period4",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -3467,8 +3474,8 @@
       },
       "customId": "dAcsvhk",
       "status": {
-        "code": 15,
-        "description": "3rd quarter",
+        "code": 16,
+        "description": "4th quarter",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -3548,21 +3555,23 @@
         }
       },
       "homeScore": {
-        "current": 67,
-        "display": 67,
+        "current": 84,
+        "display": 84,
         "period1": 29,
         "period2": 17,
-        "period3": 21
+        "period3": 21,
+        "period4": 17
       },
       "awayScore": {
-        "current": 57,
-        "display": 57,
+        "current": 65,
+        "display": 65,
         "period1": 20,
         "period2": 25,
-        "period3": 12
+        "period3": 13,
+        "period4": 7
       },
       "time": {
-        "played": 1777,
+        "played": 2164,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4,
@@ -3570,9 +3579,12 @@
       },
       "changes": {
         "changes": [
-          "time.played"
+          "homeScore.current",
+          "homeScore.display",
+          "time.played",
+          "homeScore.period4"
         ],
-        "changeTimestamp": 1764271144
+        "changeTimestamp": 1764272286
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -3588,7 +3600,7 @@
       },
       "slug": "bosnia-and-herzegovina-turkiye",
       "startTimestamp": 1764266400,
-      "lastPeriod": "period3",
+      "lastPeriod": "period4",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -3679,8 +3691,8 @@
       },
       "customId": "ExcszGz",
       "status": {
-        "code": 13,
-        "description": "1st quarter",
+        "code": 14,
+        "description": "2nd quarter",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -3760,17 +3772,19 @@
         }
       },
       "homeScore": {
-        "current": 21,
-        "display": 21,
-        "period1": 21
+        "current": 25,
+        "display": 25,
+        "period1": 21,
+        "period2": 4
       },
       "awayScore": {
-        "current": 21,
-        "display": 21,
-        "period1": 21
+        "current": 32,
+        "display": 32,
+        "period1": 21,
+        "period2": 11
       },
       "time": {
-        "played": 527,
+        "played": 950,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4,
@@ -3778,15 +3792,9 @@
       },
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display",
-          "awayScore.current",
-          "awayScore.display",
-          "time.played",
-          "homeScore.period1",
-          "awayScore.period1"
+          "time.played"
         ],
-        "changeTimestamp": 1764271109
+        "changeTimestamp": 1764272349
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -3802,7 +3810,7 @@
       },
       "slug": "iceland-italy",
       "startTimestamp": 1764270000,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -3893,9 +3901,9 @@
       },
       "customId": "Hxcsxhk",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 13,
+        "description": "1st quarter",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Great Britain",
@@ -3971,13 +3979,33 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 11,
+        "display": 11,
+        "period1": 11
+      },
+      "awayScore": {
+        "current": 6,
+        "display": 6,
+        "period1": 6
+      },
+      "time": {
+        "played": 238,
+        "periodLength": 600,
+        "overtimeLength": 300,
+        "totalPeriodCount": 4,
+        "currentPeriodStartTimestamp": 1764271855
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1"
+        ],
+        "changeTimestamp": 1764272342
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14498200,
       "periods": {
@@ -3990,6 +4018,7 @@
       },
       "slug": "great-britain-lithuania",
       "startTimestamp": 1764271800,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -12343,23 +12372,23 @@
         }
       },
       "homeScore": {
-        "current": 35,
-        "display": 35,
+        "current": 39,
+        "display": 39,
         "period1": 6,
         "period2": 10,
         "period3": 17,
-        "period4": 2
+        "period4": 6
       },
       "awayScore": {
-        "current": 30,
-        "display": 30,
+        "current": 38,
+        "display": 38,
         "period1": 7,
         "period2": 14,
         "period3": 7,
-        "period4": 2
+        "period4": 10
       },
       "time": {
-        "played": 1965,
+        "played": 2390,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
@@ -12368,7 +12397,7 @@
         "changes": [
           "time.played"
         ],
-        "changeTimestamp": 1764271143
+        "changeTimestamp": 1764272323
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -14983,8 +15012,8 @@
       },
       "customId": "LVudseCwh",
       "status": {
-        "code": 31,
-        "description": "Halftime",
+        "code": 15,
+        "description": "3rd quarter",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -15058,29 +15087,30 @@
         }
       },
       "homeScore": {
-        "current": 55,
-        "display": 55,
+        "current": 70,
+        "display": 70,
         "period1": 29,
-        "period2": 26
+        "period2": 26,
+        "period3": 15
       },
       "awayScore": {
-        "current": 43,
-        "display": 43,
+        "current": 53,
+        "display": 53,
         "period1": 24,
-        "period2": 19
+        "period2": 19,
+        "period3": 10
       },
       "time": {
-        "played": 1200,
+        "played": 1533,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
       },
       "changes": {
         "changes": [
-          "status.code",
-          "status.description"
+          "time.played"
         ],
-        "changeTimestamp": 1764271120
+        "changeTimestamp": 1764272341
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -15096,6 +15126,7 @@
       },
       "slug": "czacademy-ba-lynx-liberec",
       "startTimestamp": 1764268200,
+      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -15190,8 +15221,8 @@
       },
       "customId": "lgIdsUeAh",
       "status": {
-        "code": 31,
-        "description": "Halftime",
+        "code": 15,
+        "description": "3rd quarter",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -15265,33 +15296,30 @@
         }
       },
       "homeScore": {
-        "current": 40,
-        "display": 40,
+        "current": 42,
+        "display": 42,
         "period1": 23,
-        "period2": 17
+        "period2": 17,
+        "period3": 2
       },
       "awayScore": {
-        "current": 34,
-        "display": 34,
+        "current": 40,
+        "display": 40,
         "period1": 18,
-        "period2": 16
+        "period2": 16,
+        "period3": 6
       },
       "time": {
-        "played": 1200,
+        "played": 1393,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
       },
       "changes": {
         "changes": [
-          "status.code",
-          "status.description",
-          "awayScore.current",
-          "awayScore.display",
-          "time.played",
-          "awayScore.period2"
+          "time.played"
         ],
-        "changeTimestamp": 1764271101
+        "changeTimestamp": 1764272340
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -15307,6 +15335,7 @@
       },
       "slug": "valecnici-decin-sokol-prazsky",
       "startTimestamp": 1764268200,
+      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -22138,7 +22167,7 @@
       },
       "slug": "platon-school-as-ktisifon-peanias",
       "startTimestamp": 1764270900,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -33299,10 +33328,11 @@
       },
       "customId": "vtabstMhc",
       "status": {
-        "code": 16,
-        "description": "4th quarter",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Gernika Bizkaia",
         "slug": "gernika-bizkaia",
@@ -33373,12 +33403,13 @@
         }
       },
       "homeScore": {
-        "current": 59,
-        "display": 59,
+        "current": 62,
+        "display": 62,
         "period1": 16,
         "period2": 17,
         "period3": 9,
-        "period4": 17
+        "period4": 20,
+        "normaltime": 62
       },
       "awayScore": {
         "current": 64,
@@ -33386,19 +33417,24 @@
         "period1": 21,
         "period2": 11,
         "period3": 23,
-        "period4": 9
+        "period4": 9,
+        "normaltime": 64
       },
       "time": {
-        "played": 2399,
+        "played": 2400,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
       },
       "changes": {
         "changes": [
-          "time.played"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1764271138
+        "changeTimestamp": 1764271378
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -33414,7 +33450,6 @@
       },
       "slug": "elizur-ramla-gernika-bizkaia",
       "startTimestamp": 1764264600,
-      "lastPeriod": "period4",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -34134,10 +34169,11 @@
       },
       "customId": "RQHbsdoUi",
       "status": {
-        "code": 16,
-        "description": "4th quarter",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Peja 03",
         "slug": "peja-03",
@@ -34207,32 +34243,38 @@
         }
       },
       "homeScore": {
-        "current": 50,
-        "display": 50,
+        "current": 60,
+        "display": 60,
         "period1": 17,
         "period2": 14,
         "period3": 19,
-        "period4": 0
+        "period4": 10,
+        "normaltime": 60
       },
       "awayScore": {
-        "current": 70,
-        "display": 70,
+        "current": 83,
+        "display": 83,
         "period1": 18,
         "period2": 21,
         "period3": 31,
-        "period4": 0
+        "period4": 13,
+        "normaltime": 83
       },
       "time": {
-        "played": 1910,
+        "played": 2400,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
       },
       "changes": {
         "changes": [
-          "time.played"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1764271142
+        "changeTimestamp": 1764272323
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -34248,7 +34290,6 @@
       },
       "slug": "peja-03-rutronik-stars-keltern",
       "startTimestamp": 1764266400,
-      "lastPeriod": "period4",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -34335,8 +34376,8 @@
       },
       "customId": "NJUbszwid",
       "status": {
-        "code": 30,
-        "description": "Pause",
+        "code": 16,
+        "description": "4th quarter",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -34414,35 +34455,32 @@
         }
       },
       "homeScore": {
-        "current": 56,
-        "display": 56,
+        "current": 79,
+        "display": 79,
         "period1": 29,
         "period2": 13,
-        "period3": 14
+        "period3": 14,
+        "period4": 23
       },
       "awayScore": {
-        "current": 64,
-        "display": 64,
+        "current": 85,
+        "display": 85,
         "period1": 25,
         "period2": 16,
-        "period3": 23
+        "period3": 23,
+        "period4": 21
       },
       "time": {
-        "played": 1800,
+        "played": 2358,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
       },
       "changes": {
         "changes": [
-          "status.code",
-          "status.description",
-          "homeScore.current",
-          "homeScore.display",
-          "time.played",
-          "homeScore.period3"
+          "time.played"
         ],
-        "changeTimestamp": 1764271083
+        "changeTimestamp": 1764272343
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -34458,6 +34496,7 @@
       },
       "slug": "nyon-basket-feminin-panathinaikos-athens",
       "startTimestamp": 1764266400,
+      "lastPeriod": "period4",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -34544,8 +34583,8 @@
       },
       "customId": "YAksraT",
       "status": {
-        "code": 13,
-        "description": "1st quarter",
+        "code": 14,
+        "description": "2nd quarter",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -34621,17 +34660,19 @@
         }
       },
       "homeScore": {
-        "current": 21,
-        "display": 21,
-        "period1": 21
+        "current": 46,
+        "display": 46,
+        "period1": 21,
+        "period2": 25
       },
       "awayScore": {
-        "current": 12,
-        "display": 12,
-        "period1": 12
+        "current": 30,
+        "display": 30,
+        "period1": 12,
+        "period2": 18
       },
       "time": {
-        "played": 563,
+        "played": 1096,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
@@ -34641,9 +34682,9 @@
           "awayScore.current",
           "awayScore.display",
           "time.played",
-          "awayScore.period1"
+          "awayScore.period2"
         ],
-        "changeTimestamp": 1764271129
+        "changeTimestamp": 1764272349
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -34659,7 +34700,7 @@
       },
       "slug": "basket-lattes-montpellier-zkk-ragusa-dubrovnik",
       "startTimestamp": 1764270000,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -34746,9 +34787,9 @@
       },
       "customId": "NUYsdiVc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 13,
+        "description": "1st quarter",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Dinamo Sassari",
@@ -34823,13 +34864,30 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 13,
+        "display": 13,
+        "period1": 13
+      },
+      "awayScore": {
+        "current": 9,
+        "display": 9,
+        "period1": 9
+      },
+      "time": {
+        "played": 322,
+        "periodLength": 600,
+        "overtimeLength": 300,
+        "totalPeriodCount": 4
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.played"
+        ],
+        "changeTimestamp": 1764272339
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14772535,
       "periods": {
@@ -34842,6 +34900,7 @@
       },
       "slug": "dinamo-sassari-kp-brno",
       "startTimestamp": 1764271800,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -35137,10 +35196,11 @@
       },
       "customId": "itvbsOJUb",
       "status": {
-        "code": 16,
-        "description": "4th quarter",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "AZS AJP Gorzów Wielkopolski",
         "slug": "azs-ajp-gorzow",
@@ -35213,32 +35273,38 @@
         }
       },
       "homeScore": {
-        "current": 66,
-        "display": 66,
+        "current": 69,
+        "display": 69,
         "period1": 22,
         "period2": 13,
         "period3": 21,
-        "period4": 10
+        "period4": 13,
+        "normaltime": 69
       },
       "awayScore": {
-        "current": 69,
-        "display": 69,
+        "current": 77,
+        "display": 77,
         "period1": 27,
         "period2": 24,
         "period3": 14,
-        "period4": 4
+        "period4": 12,
+        "normaltime": 77
       },
       "time": {
-        "played": 2088,
+        "played": 2400,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
       },
       "changes": {
         "changes": [
-          "time.played"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1764271142
+        "changeTimestamp": 1764271742
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -35254,7 +35320,6 @@
       },
       "slug": "athinaikos-azs-ajp-gorzow-wielkopolski",
       "startTimestamp": 1764266400,
-      "lastPeriod": "period4",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -37355,30 +37420,28 @@
         }
       },
       "homeScore": {
-        "current": 18,
-        "display": 18,
+        "current": 28,
+        "display": 28,
         "period1": 18,
-        "period2": 0
+        "period2": 10
       },
       "awayScore": {
-        "current": 18,
-        "display": 18,
+        "current": 44,
+        "display": 44,
         "period1": 18,
-        "period2": 0
+        "period2": 26
       },
       "time": {
-        "played": 622,
+        "played": 1163,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
       },
       "changes": {
         "changes": [
-          "time.played",
-          "homeScore.period2",
-          "awayScore.period2"
+          "time.played"
         ],
-        "changeTimestamp": 1764271130
+        "changeTimestamp": 1764272350
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -38543,7 +38606,7 @@
         ],
         "changeTimestamp": 1764267496
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14140645,
@@ -38756,7 +38819,7 @@
         ],
         "changeTimestamp": 1764266667
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14140655,
@@ -38969,7 +39032,7 @@
         ],
         "changeTimestamp": 1764265285
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14140648,
@@ -39073,8 +39136,8 @@
       },
       "customId": "AhksNGz",
       "status": {
-        "code": 15,
-        "description": "3rd quarter",
+        "code": 16,
+        "description": "4th quarter",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -39150,21 +39213,23 @@
         }
       },
       "homeScore": {
-        "current": 56,
-        "display": 56,
+        "current": 76,
+        "display": 76,
         "period1": 22,
         "period2": 18,
-        "period3": 16
+        "period3": 23,
+        "period4": 13
       },
       "awayScore": {
-        "current": 36,
-        "display": 36,
+        "current": 49,
+        "display": 49,
         "period1": 13,
         "period2": 8,
-        "period3": 15
+        "period3": 16,
+        "period4": 12
       },
       "time": {
-        "played": 1661,
+        "played": 2119,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
@@ -39173,7 +39238,7 @@
         "changes": [
           "time.played"
         ],
-        "changeTimestamp": 1764271143
+        "changeTimestamp": 1764272327
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -39189,7 +39254,7 @@
       },
       "slug": "azerbaijan-north-macedonia",
       "startTimestamp": 1764266400,
-      "lastPeriod": "period3",
+      "lastPeriod": "period4",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -39280,8 +39345,8 @@
       },
       "customId": "LGzsnzFb",
       "status": {
-        "code": 31,
-        "description": "Halftime",
+        "code": 15,
+        "description": "3rd quarter",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -39355,29 +39420,33 @@
         }
       },
       "homeScore": {
-        "current": 47,
-        "display": 47,
+        "current": 56,
+        "display": 56,
         "period1": 26,
-        "period2": 21
+        "period2": 21,
+        "period3": 9
       },
       "awayScore": {
-        "current": 37,
-        "display": 37,
+        "current": 46,
+        "display": 46,
         "period1": 11,
-        "period2": 26
+        "period2": 26,
+        "period3": 9
       },
       "time": {
-        "played": 1200,
+        "played": 1487,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
       },
       "changes": {
         "changes": [
-          "status.code",
-          "status.description"
+          "awayScore.current",
+          "awayScore.display",
+          "time.played",
+          "awayScore.period3"
         ],
-        "changeTimestamp": 1764270939
+        "changeTimestamp": 1764272341
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -39393,6 +39462,7 @@
       },
       "slug": "ireland-luxembourg",
       "startTimestamp": 1764268200,
+      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -42731,10 +42801,11 @@
       },
       "customId": "gAljskAlj",
       "status": {
-        "code": 16,
-        "description": "4th quarter",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Akademia Mlodych Dzikow U16",
         "slug": "akademia-mlodych-dzikow-u16",
@@ -42792,32 +42863,39 @@
         }
       },
       "homeScore": {
-        "current": 48,
-        "display": 48,
+        "current": 55,
+        "display": 55,
         "period1": 10,
         "period2": 15,
         "period3": 13,
-        "period4": 10
+        "period4": 17,
+        "normaltime": 55
       },
       "awayScore": {
-        "current": 43,
-        "display": 43,
+        "current": 47,
+        "display": 47,
         "period1": 14,
         "period2": 14,
         "period3": 10,
-        "period4": 5
+        "period4": 9,
+        "normaltime": 47
       },
       "time": {
-        "played": 2120,
+        "played": 2400,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
       },
       "changes": {
         "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime",
           "time.played"
         ],
-        "changeTimestamp": 1764271144
+        "changeTimestamp": 1764271884
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -42833,7 +42911,6 @@
       },
       "slug": "bahcesehir-u16-akademia-mlodych-dzikow-u16",
       "startTimestamp": 1764265800,
-      "lastPeriod": "period4",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -44741,8 +44818,8 @@
       },
       "customId": "CjdjsFJlj",
       "status": {
-        "code": 14,
-        "description": "2nd quarter",
+        "code": 30,
+        "description": "Pause",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -44808,30 +44885,30 @@
         }
       },
       "homeScore": {
-        "current": 25,
-        "display": 25,
-        "period1": 15,
-        "period2": 10
-      },
-      "awayScore": {
         "current": 30,
         "display": 30,
+        "period1": 15,
+        "period2": 15
+      },
+      "awayScore": {
+        "current": 41,
+        "display": 41,
         "period1": 25,
-        "period2": 5
+        "period2": 16
       },
       "time": {
-        "played": 911,
+        "played": 1200,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
       },
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display",
-          "homeScore.period2"
+          "status",
+          "status.code",
+          "status.description"
         ],
-        "changeTimestamp": 1764271136
+        "changeTimestamp": 1764271815
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -44847,7 +44924,6 @@
       },
       "slug": "sportunion-traiskirchen-lions-u16-vodno-suns-skopje-u16",
       "startTimestamp": 1764269100,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -46008,35 +46084,32 @@
         }
       },
       "homeScore": {
-        "current": 63,
-        "display": 63,
+        "current": 69,
+        "display": 69,
         "period1": 16,
         "period2": 19,
         "period3": 19,
-        "period4": 9
+        "period4": 15
       },
       "awayScore": {
-        "current": 44,
-        "display": 44,
+        "current": 48,
+        "display": 48,
         "period1": 21,
         "period2": 12,
         "period3": 7,
-        "period4": 4
+        "period4": 8
       },
       "time": {
-        "played": 2141,
+        "played": 2400,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
       },
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display",
-          "time.played",
-          "homeScore.period4"
+          "time.played"
         ],
-        "changeTimestamp": 1764271145
+        "changeTimestamp": 1764271584
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -48273,8 +48346,8 @@
       },
       "customId": "CWljsEWlj",
       "status": {
-        "code": 13,
-        "description": "1st quarter",
+        "code": 14,
+        "description": "2nd quarter",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -48334,17 +48407,19 @@
         }
       },
       "homeScore": {
-        "current": 11,
-        "display": 11,
-        "period1": 11
+        "current": 22,
+        "display": 22,
+        "period1": 20,
+        "period2": 2
       },
       "awayScore": {
-        "current": 14,
-        "display": 14,
-        "period1": 14
+        "current": 36,
+        "display": 36,
+        "period1": 22,
+        "period2": 14
       },
       "time": {
-        "played": 394,
+        "played": 859,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
@@ -48353,7 +48428,7 @@
         "changes": [
           "time.played"
         ],
-        "changeTimestamp": 1764271070
+        "changeTimestamp": 1764272350
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -48369,7 +48444,7 @@
       },
       "slug": "kickz-ibam-u17-inter-bratislava-u17",
       "startTimestamp": 1764270000,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -51118,8 +51193,8 @@
       },
       "customId": "AWljsBWlj",
       "status": {
-        "code": 13,
-        "description": "1st quarter",
+        "code": 14,
+        "description": "2nd quarter",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -51179,29 +51254,28 @@
         }
       },
       "homeScore": {
-        "current": 7,
-        "display": 7,
-        "period1": 7
+        "current": 38,
+        "display": 38,
+        "period1": 13,
+        "period2": 25
       },
       "awayScore": {
-        "current": 19,
-        "display": 19,
-        "period1": 19
+        "current": 37,
+        "display": 37,
+        "period1": 21,
+        "period2": 16
       },
       "time": {
-        "played": 444,
+        "played": 1084,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
       },
       "changes": {
         "changes": [
-          "awayScore.current",
-          "awayScore.display",
-          "time.played",
-          "awayScore.period1"
+          "time.played"
         ],
-        "changeTimestamp": 1764271111
+        "changeTimestamp": 1764272351
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -51217,7 +51291,7 @@
       },
       "slug": "fredrikstad-uxtreme-u17-cbacpss-u17",
       "startTimestamp": 1764270000,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -52981,8 +53055,8 @@
       },
       "customId": "oJljspJlj",
       "status": {
-        "code": 15,
-        "description": "3rd quarter",
+        "code": 16,
+        "description": "4th quarter",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -53042,21 +53116,23 @@
         }
       },
       "homeScore": {
-        "current": 44,
-        "display": 44,
+        "current": 52,
+        "display": 52,
         "period1": 17,
         "period2": 21,
-        "period3": 6
+        "period3": 12,
+        "period4": 2
       },
       "awayScore": {
-        "current": 32,
-        "display": 32,
+        "current": 53,
+        "display": 53,
         "period1": 17,
         "period2": 11,
-        "period3": 4
+        "period3": 22,
+        "period4": 3
       },
       "time": {
-        "played": 1365,
+        "played": 1869,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
@@ -53065,7 +53141,7 @@
         "changes": [
           "time.played"
         ],
-        "changeTimestamp": 1764271083
+        "changeTimestamp": 1764272343
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -53081,7 +53157,7 @@
       },
       "slug": "hot-pepper-heat-u17-hoopstarz-academy-u17",
       "startTimestamp": 1764266400,
-      "lastPeriod": "period3",
+      "lastPeriod": "period4",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -60846,10 +60922,11 @@
       },
       "customId": "HYljsJYlj",
       "status": {
-        "code": 20,
-        "description": "Started",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Uruguay 3x3",
         "slug": "uruguay-3x3",
@@ -60907,21 +60984,22 @@
         }
       },
       "homeScore": {
-        "current": 11,
-        "display": 11
+        "current": 17,
+        "display": 17
       },
       "awayScore": {
-        "current": 14,
-        "display": 14
+        "current": 18,
+        "display": 18
       },
       "coverage": -1,
       "time": {},
       "changes": {
         "changes": [
-          "awayScore.current",
-          "awayScore.display"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1764270994
+        "changeTimestamp": 1764271636
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -66510,10 +66588,11 @@
       },
       "customId": "qAbdsFEXd",
       "status": {
-        "code": 30,
-        "description": "Pause",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "KB KEKU",
         "slug": "kb-keku",
@@ -66586,21 +66665,25 @@
         }
       },
       "homeScore": {
-        "current": 78,
-        "display": 78,
+        "current": 103,
+        "display": 103,
         "period1": 34,
         "period2": 22,
-        "period3": 22
+        "period3": 22,
+        "period4": 25,
+        "normaltime": 103
       },
       "awayScore": {
-        "current": 31,
-        "display": 31,
+        "current": 42,
+        "display": 42,
         "period1": 15,
         "period2": 12,
-        "period3": 4
+        "period3": 4,
+        "period4": 11,
+        "normaltime": 42
       },
       "time": {
-        "played": 1800,
+        "played": 2400,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
@@ -66608,9 +66691,13 @@
       "changes": {
         "changes": [
           "status.code",
-          "status.description"
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime",
+          "time.played"
         ],
-        "changeTimestamp": 1764271123
+        "changeTimestamp": 1764272063
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -67311,10 +67398,11 @@
       },
       "customId": "BJhdsIZzh",
       "status": {
-        "code": 16,
-        "description": "4th quarter",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "BK Bauska",
         "slug": "bauska",
@@ -67382,35 +67470,40 @@
         }
       },
       "homeScore": {
-        "current": 62,
-        "display": 62,
+        "current": 79,
+        "display": 79,
         "period1": 16,
         "period2": 19,
         "period3": 23,
-        "period4": 4
+        "period4": 21,
+        "normaltime": 79
       },
       "awayScore": {
-        "current": 49,
-        "display": 49,
+        "current": 67,
+        "display": 67,
         "period1": 19,
         "period2": 11,
         "period3": 14,
-        "period4": 5
+        "period4": 23,
+        "normaltime": 67
       },
       "time": {
-        "played": 1940,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
       },
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display",
-          "homeScore.period4",
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.normaltime",
           "time.played"
         ],
-        "changeTimestamp": 1764271118
+        "changeTimestamp": 1764272037
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -67426,7 +67519,6 @@
       },
       "slug": "bk-marupelu-bk-bauska",
       "startTimestamp": 1764266400,
-      "lastPeriod": "period4",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -68094,10 +68186,11 @@
       },
       "customId": "CGhdsHGhd",
       "status": {
-        "code": 16,
-        "description": "4th quarter",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "BK Ogre/Bs Ogre",
         "slug": "bk-ogrebs-ogre",
@@ -68165,38 +68258,41 @@
         }
       },
       "homeScore": {
-        "current": 83,
-        "display": 83,
+        "current": 88,
+        "display": 88,
         "period1": 23,
         "period2": 27,
         "period3": 23,
-        "period4": 10
+        "period4": 15,
+        "normaltime": 88
       },
       "awayScore": {
-        "current": 77,
-        "display": 77,
+        "current": 84,
+        "display": 84,
         "period1": 22,
         "period2": 24,
         "period3": 13,
-        "period4": 18
+        "period4": 25,
+        "normaltime": 84
       },
       "time": {
-        "played": 2181,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
       },
       "changes": {
         "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
           "homeScore.current",
           "homeScore.display",
           "homeScore.period4",
-          "awayScore.current",
-          "awayScore.display",
-          "awayScore.period4",
+          "homeScore.normaltime",
+          "awayScore.normaltime",
           "time.played"
         ],
-        "changeTimestamp": 1764271135
+        "changeTimestamp": 1764271976
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -68212,7 +68308,6 @@
       },
       "slug": "oc-limbazi-bk-ogrebs-ogre",
       "startTimestamp": 1764265500,
-      "lastPeriod": "period4",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -68306,10 +68401,11 @@
       },
       "customId": "pXhdsLZzh",
       "status": {
-        "code": 16,
-        "description": "4th quarter",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Rigas Zelli B",
         "slug": "rigas-zelli-b",
@@ -68381,35 +68477,37 @@
         }
       },
       "homeScore": {
-        "current": 67,
-        "display": 67,
+        "current": 73,
+        "display": 73,
         "period1": 21,
         "period2": 18,
         "period3": 15,
-        "period4": 13
+        "period4": 19,
+        "normaltime": 73
       },
       "awayScore": {
-        "current": 105,
-        "display": 105,
+        "current": 108,
+        "display": 108,
         "period1": 29,
         "period2": 28,
         "period3": 31,
-        "period4": 17
+        "period4": 20,
+        "normaltime": 108
       },
       "time": {
-        "played": 2246,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
       },
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display",
-          "homeScore.period4",
-          "time.played"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1764271115
+        "changeTimestamp": 1764271435
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -68425,7 +68523,6 @@
       },
       "slug": "rigas-zelli-gulbenes-buki",
       "startTimestamp": 1764266400,
-      "lastPeriod": "period4",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -71393,8 +71490,8 @@
       },
       "customId": "Emajsipaj",
       "status": {
-        "code": 30,
-        "description": "Pause",
+        "code": 16,
+        "description": "4th quarter",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -71470,33 +71567,33 @@
         }
       },
       "homeScore": {
-        "current": 54,
-        "display": 54,
+        "current": 68,
+        "display": 68,
         "period1": 19,
         "period2": 15,
-        "period3": 20
+        "period3": 20,
+        "period4": 14
       },
       "awayScore": {
-        "current": 50,
-        "display": 50,
+        "current": 68,
+        "display": 68,
         "period1": 18,
         "period2": 19,
-        "period3": 13
+        "period3": 13,
+        "period4": 18
       },
       "coverage": -1,
       "time": {
-        "played": 1800,
+        "played": 2341,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
       },
       "changes": {
         "changes": [
-          "status.code",
-          "status.description",
           "time.played"
         ],
-        "changeTimestamp": 1764271124
+        "changeTimestamp": 1764272324
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -71512,6 +71609,7 @@
       },
       "slug": "gargzdu-sc-2-raseiniu-raseiniai",
       "startTimestamp": 1764266400,
+      "lastPeriod": "period4",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -76640,8 +76738,8 @@
       },
       "customId": "yNucsufId",
       "status": {
-        "code": 13,
-        "description": "1st quarter",
+        "code": 14,
+        "description": "2nd quarter",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -76721,17 +76819,19 @@
         }
       },
       "homeScore": {
-        "current": 13,
-        "display": 13,
-        "period1": 13
+        "current": 31,
+        "display": 31,
+        "period1": 13,
+        "period2": 18
       },
       "awayScore": {
-        "current": 21,
-        "display": 21,
-        "period1": 21
+        "current": 41,
+        "display": 41,
+        "period1": 24,
+        "period2": 17
       },
       "time": {
-        "played": 571,
+        "played": 1055,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
@@ -76740,10 +76840,9 @@
         "changes": [
           "awayScore.current",
           "awayScore.display",
-          "time.played",
-          "awayScore.period1"
+          "awayScore.period2"
         ],
-        "changeTimestamp": 1764271130
+        "changeTimestamp": 1764272350
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -76759,7 +76858,7 @@
       },
       "slug": "profbud-legia-ii-warszawa-ks-ksiezak-lowicz",
       "startTimestamp": 1764270000,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -87319,15 +87418,14 @@
         "played": 2400,
         "periodLength": 1200,
         "overtimeLength": 300,
-        "totalPeriodCount": 2
+        "totalPeriodCount": 2,
+        "currentPeriodStartTimestamp": 1764270775
       },
       "changes": {
         "changes": [
-          "status.code",
-          "status.description",
-          "status.type"
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1764271027
+        "changeTimestamp": 1764271928
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -87438,10 +87536,11 @@
       },
       "customId": "CRnsazq",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "VCU Rams",
         "slug": "vcu-rams",
@@ -87514,28 +87613,32 @@
         }
       },
       "homeScore": {
-        "current": 67,
-        "display": 67,
+        "current": 74,
+        "display": 74,
         "period1": 41,
-        "period2": 26
+        "period2": 33,
+        "normaltime": 74
       },
       "awayScore": {
-        "current": 85,
-        "display": 85,
+        "current": 89,
+        "display": 89,
         "period1": 43,
-        "period2": 42
+        "period2": 46,
+        "normaltime": 89
       },
       "time": {
-        "played": 2253,
+        "played": 2400,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 2
       },
       "changes": {
         "changes": [
-          "time.played"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1764271087
+        "changeTimestamp": 1764271568
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -87549,7 +87652,6 @@
       },
       "slug": "vanderbilt-commodores-vcu-rams",
       "startTimestamp": 1764262800,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -87647,8 +87749,8 @@
       },
       "customId": "FKJszgK",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -87722,27 +87824,32 @@
         }
       },
       "homeScore": {
-        "current": 41,
-        "display": 41,
-        "period1": 41
+        "current": 43,
+        "display": 43,
+        "period1": 43,
+        "period2": 0
       },
       "awayScore": {
-        "current": 31,
-        "display": 31,
-        "period1": 31
+        "current": 34,
+        "display": 34,
+        "period1": 34,
+        "period2": 0
       },
       "time": {
-        "played": 1111,
+        "played": 1222,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 2
       },
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display"
+          "status.code",
+          "status.description",
+          "homeScore.period2",
+          "awayScore.period2",
+          "time.played"
         ],
-        "changeTimestamp": 1764271088
+        "changeTimestamp": 1764272350
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -87755,7 +87862,7 @@
       },
       "slug": "charlotte-49ers-illinois-state-redbirds",
       "startTimestamp": 1764268200,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -87928,17 +88035,17 @@
         }
       },
       "homeScore": {
-        "current": 15,
-        "display": 15,
-        "period1": 15
+        "current": 34,
+        "display": 34,
+        "period1": 34
       },
       "awayScore": {
-        "current": 14,
-        "display": 14,
-        "period1": 14
+        "current": 24,
+        "display": 24,
+        "period1": 24
       },
       "time": {
-        "played": 369,
+        "played": 857,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 2
@@ -87946,14 +88053,9 @@
       "changes": {
         "changes": [
           "homeScore.current",
-          "homeScore.display",
-          "homeScore.period1",
-          "awayScore.current",
-          "awayScore.display",
-          "awayScore.period1",
-          "time.played"
+          "homeScore.display"
         ],
-        "changeTimestamp": 1764271088
+        "changeTimestamp": 1764272350
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -88139,17 +88241,17 @@
         }
       },
       "homeScore": {
-        "current": 11,
-        "display": 11,
-        "period1": 11
+        "current": 31,
+        "display": 31,
+        "period1": 31
       },
       "awayScore": {
-        "current": 16,
-        "display": 16,
-        "period1": 16
+        "current": 30,
+        "display": 30,
+        "period1": 30
       },
       "time": {
-        "played": 386,
+        "played": 970,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 2
@@ -88161,7 +88263,7 @@
           "awayScore.period1",
           "time.played"
         ],
-        "changeTimestamp": 1764271087
+        "changeTimestamp": 1764272290
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -107333,7 +107435,7 @@
         ],
         "changeTimestamp": 1764262011
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14655865,
@@ -107969,6 +108071,7 @@
         "changeTimestamp": 1764269287
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14612076,
       "periods": {
@@ -108284,10 +108387,11 @@
       },
       "customId": "qGZbsjwic",
       "status": {
-        "code": 16,
-        "description": "4th quarter",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Tulane Green Wave",
         "slug": "tulane-green-wave",
@@ -108355,32 +108459,38 @@
         }
       },
       "homeScore": {
-        "current": 58,
-        "display": 58,
+        "current": 64,
+        "display": 64,
         "period1": 19,
         "period2": 8,
         "period3": 29,
-        "period4": 2
+        "period4": 8,
+        "normaltime": 64
       },
       "awayScore": {
-        "current": 57,
-        "display": 57,
+        "current": 61,
+        "display": 61,
         "period1": 18,
         "period2": 17,
         "period3": 9,
-        "period4": 13
+        "period4": 17,
+        "normaltime": 61
       },
       "time": {
-        "played": 2117,
+        "played": 2400,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
       },
       "changes": {
         "changes": [
-          "time.played"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1764270972
+        "changeTimestamp": 1764271875
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -108395,7 +108505,6 @@
       },
       "slug": "tulane-green-wave-elon-phoenix",
       "startTimestamp": 1764264600,
-      "lastPeriod": "period4",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -108489,10 +108598,11 @@
       },
       "customId": "Bvicsfwic",
       "status": {
-        "code": 40,
-        "description": "Overtime",
-        "type": "inprogress"
+        "code": 110,
+        "description": "AET",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "UCF Knights",
         "slug": "ucf-knights",
@@ -108566,40 +108676,38 @@
         }
       },
       "homeScore": {
-        "current": 58,
-        "display": 58,
+        "current": 60,
+        "display": 60,
         "period1": 9,
         "period2": 16,
         "period3": 16,
         "period4": 14,
-        "overtime": 3
+        "normaltime": 55,
+        "overtime": 5
       },
       "awayScore": {
-        "current": 60,
-        "display": 60,
+        "current": 65,
+        "display": 65,
         "period1": 14,
         "period2": 11,
         "period3": 15,
         "period4": 15,
-        "overtime": 5
+        "normaltime": 55,
+        "overtime": 10
       },
       "time": {
-        "played": 2611,
+        "played": 3000,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
       },
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display",
-          "homeScore.overtime",
-          "awayScore.current",
-          "awayScore.display",
-          "awayScore.overtime",
-          "time.played"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1764271092
+        "changeTimestamp": 1764271754
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -108614,7 +108722,6 @@
       },
       "slug": "ucf-knights-wake-forest-demon-deacons",
       "startTimestamp": 1764264600,
-      "lastPeriod": "overtime",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -108708,8 +108815,8 @@
       },
       "customId": "XCLbswvic",
       "status": {
-        "code": 31,
-        "description": "Halftime",
+        "code": 15,
+        "description": "3rd quarter",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -108779,30 +108886,36 @@
         }
       },
       "homeScore": {
-        "current": 41,
-        "display": 41,
+        "current": 55,
+        "display": 55,
         "period1": 20,
-        "period2": 21
+        "period2": 21,
+        "period3": 14
       },
       "awayScore": {
-        "current": 48,
-        "display": 48,
+        "current": 57,
+        "display": 57,
         "period1": 27,
-        "period2": 21
+        "period2": 21,
+        "period3": 9
       },
       "time": {
-        "played": 1200,
+        "played": 1503,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
       },
       "changes": {
         "changes": [
-          "status.code",
-          "status.description",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period3",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period3",
           "time.played"
         ],
-        "changeTimestamp": 1764270851
+        "changeTimestamp": 1764272296
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -108817,6 +108930,7 @@
       },
       "slug": "columbia-lions-kansas-state-wildcats",
       "startTimestamp": 1764268200,
+      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -108910,8 +109024,8 @@
       },
       "customId": "cDLbsOuic",
       "status": {
-        "code": 13,
-        "description": "1st quarter",
+        "code": 31,
+        "description": "Halftime",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -108984,26 +109098,30 @@
         }
       },
       "homeScore": {
-        "current": 9,
-        "display": 9,
-        "period1": 9
+        "current": 18,
+        "display": 18,
+        "period1": 9,
+        "period2": 9
       },
       "awayScore": {
-        "current": 20,
-        "display": 20,
-        "period1": 20
+        "current": 41,
+        "display": 41,
+        "period1": 22,
+        "period2": 19
       },
       "time": {
-        "played": 600,
+        "played": 1200,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
       },
       "changes": {
         "changes": [
+          "status.code",
+          "status.description",
           "time.played"
         ],
-        "changeTimestamp": 1764271092
+        "changeTimestamp": 1764272236
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -109018,7 +109136,6 @@
       },
       "slug": "charleston-cougars-new-mexico-state-aggies",
       "startTimestamp": 1764270000,
-      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -126680,8 +126797,8 @@
         "overtime": "Overtime"
       },
       "slug": "lm-kasper-vilnius",
-      "startTimestamp": 1764270000,
-      "finalResultOnly": true,
+      "startTimestamp": 1764273600,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
