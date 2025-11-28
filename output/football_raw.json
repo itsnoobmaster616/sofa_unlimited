@@ -10351,6 +10351,7 @@
         "changeTimestamp": 0
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerHeatMap": true,
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14969542,
@@ -14609,10 +14610,10 @@
         "normaltime": 0
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0,
-        "normaltime": 0
+        "current": 1,
+        "display": 1,
+        "period1": 1,
+        "normaltime": 1
       },
       "time": {
         "currentPeriodStartTimestamp": 1764338501,
@@ -14622,10 +14623,10 @@
       },
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display"
+          "awayScore.period1",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1764339575
+        "changeTimestamp": 1764340983
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -21482,11 +21483,11 @@
         "normaltime": 1
       },
       "awayScore": {
-        "current": 2,
-        "display": 2,
+        "current": 3,
+        "display": 3,
         "period1": 2,
-        "period2": 0,
-        "normaltime": 2
+        "period2": 1,
+        "normaltime": 3
       },
       "time": {
         "injuryTime1": 2,
@@ -21497,9 +21498,10 @@
       },
       "changes": {
         "changes": [
-          "awayScore.period2"
+          "awayScore.period2",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1764338768
+        "changeTimestamp": 1764340265
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -23793,9 +23795,9 @@
       },
       "customId": "pecsbOo",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Turan Tovuz",
@@ -23873,11 +23875,32 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1764340247,
+        "initial": 0,
+        "max": 2700,
+        "extra": 540
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "awayScore.current",
+          "awayScore.display",
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1764340251
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -23886,8 +23909,16 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1764340247,
+        "extra": 540
+      },
       "slug": "turan-tovuz-neftci-baku-pfk",
       "startTimestamp": 1764340200,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -25622,7 +25653,7 @@
         "changes": [
           "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1764339779
+        "changeTimestamp": 1764340827
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -32000,10 +32031,11 @@
       },
       "customId": "oLnslnad",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Shams Azar Qazvin",
         "slug": "shams-azar-qazvin",
@@ -32086,24 +32118,24 @@
         "normaltime": 1
       },
       "awayScore": {
-        "current": 3,
-        "display": 3,
+        "current": 2,
+        "display": 2,
         "period1": 1,
-        "period2": 0,
-        "normaltime": 1
+        "period2": 1,
+        "normaltime": 2
       },
       "time": {
-        "currentPeriodStartTimestamp": 1764337200,
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540
+        "currentPeriodStartTimestamp": 1764337200
       },
       "changes": {
         "changes": [
-          "awayScore.current",
-          "awayScore.display"
+          "status.code",
+          "status.description",
+          "status.type",
+          "awayScore.period2",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1764339524
+        "changeTimestamp": 1764340727
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
@@ -32112,16 +32144,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1764337200,
-        "extra": 540
-      },
       "slug": "shams-azar-qazvin-persepolis-fc",
       "startTimestamp": 1764333000,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -32306,13 +32330,13 @@
         "period1": 0
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
+        "current": 1,
+        "display": 1,
         "period1": 0
       },
       "time": {
         "injuryTime1": 10,
-        "currentPeriodStartTimestamp": 1764339228,
+        "currentPeriodStartTimestamp": 1764339224,
         "initial": 2700,
         "max": 5400,
         "extra": 540
@@ -32321,9 +32345,9 @@
         "changes": [
           "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1764339656
+        "changeTimestamp": 1764340392
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14932316,
       "varInProgress": {
@@ -32334,7 +32358,7 @@
         "prefix": "",
         "initial": 2700,
         "max": 5400,
-        "timestamp": 1764339228,
+        "timestamp": 1764339224,
         "extra": 540
       },
       "slug": "kheybar-khorramabad-fc-zob-ahan",
@@ -32439,9 +32463,9 @@
       },
       "customId": "yQTsAkkc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Esteghlal Khuzestan",
@@ -32518,11 +32542,32 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1764340129,
+        "initial": 0,
+        "max": 2700,
+        "extra": 540
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "awayScore.current",
+          "awayScore.display",
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1764340131
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -32531,8 +32576,16 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1764340129,
+        "extra": 540
+      },
       "slug": "gol-gohar-sirjan-esteghlal-khuzestan",
       "startTimestamp": 1764340200,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
