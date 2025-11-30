@@ -8159,6 +8159,7 @@
       "isEditor": false
     },
     {
+      "firstToServe": 1,
       "tournament": {
         "name": "Buenos Aires, Argentina",
         "slug": "buenos-aires-argentina",
@@ -8232,9 +8233,9 @@
       },
       "customId": "uDhsXqMb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 8,
+        "description": "1st set",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Varvara Lepchenko",
@@ -8320,11 +8321,29 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "point": "0"
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 2,
+        "point": "0"
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1764520920
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.point",
+          "awayScore.period1",
+          "awayScore.point",
+          "firstToServe"
+        ],
+        "changeTimestamp": 1764521253
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -8340,6 +8359,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Red clay",
@@ -9742,10 +9762,11 @@
       },
       "customId": "oiicszZkd",
       "status": {
-        "code": 9,
-        "description": "2nd set",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Joao Vitor Scramin Do Lago",
         "slug": "scramin-do-lago-joao-vitor",
@@ -9842,14 +9863,11 @@
       "time": {},
       "changes": {
         "changes": [
-          "homeScore.point",
-          "awayScore.current",
-          "awayScore.display",
-          "awayScore.period2",
-          "awayScore.point",
-          "firstToServe"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1764518070
+        "changeTimestamp": 1764520247
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -9865,7 +9883,6 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Clay",
@@ -26625,7 +26642,7 @@
       "isEditor": false
     },
     {
-      "firstToServe": 2,
+      "firstToServe": 1,
       "tournament": {
         "name": "UTR PTT Buenos Aires Men 01, 5-8 Playoffs",
         "slug": "utr-ptt-buenos-aires-men-01-5-8-playoffs",
@@ -26692,10 +26709,11 @@
       },
       "customId": "zWDsUqHb",
       "status": {
-        "code": 9,
-        "description": "2nd set",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Luciano Doria",
         "slug": "doria-luciano",
@@ -26781,23 +26799,26 @@
         "display": 0,
         "period1": 3,
         "period2": 0,
-        "point": "0"
+        "point": "0",
+        "normaltime": 0
       },
       "awayScore": {
-        "current": 1,
-        "display": 1,
+        "current": 2,
+        "display": 2,
         "period1": 6,
-        "period2": 0,
-        "point": "0"
+        "period2": 6,
+        "point": "40",
+        "normaltime": 2
       },
       "time": {
-        "currentPeriodStartTimestamp": 1764519723
+        "currentPeriodStartTimestamp": 1764519924
       },
       "changes": {
         "changes": [
-          "time.period1"
+          "time.currentPeriodStart",
+          "time.period2"
         ],
-        "changeTimestamp": 1764519738
+        "changeTimestamp": 1764521099
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -26813,7 +26834,6 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Red clay",
@@ -27195,6 +27215,181 @@
       "id": 15160834,
       "slug": "valentin-guadagno-juan-ignacio-centurion-delvalle",
       "startTimestamp": 1764513600,
+      "periods": {
+        "point": "Game",
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "groundType": "Red clay",
+      "isEditor": false
+    },
+    {
+      "tournament": {
+        "name": "UTR PTT Buenos Aires Men 01, 9-12 Playoffs",
+        "slug": "utr-ptt-buenos-aires-men-01-9-12-playoffs",
+        "category": {
+          "name": "UTR Men",
+          "slug": "utr-men",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "id": 1843,
+          "country": {},
+          "flag": "utr-men",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "التصنيف العالمي للتنس (رجال)"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "UTR PTT Buenos Aires Men 01",
+          "slug": "utr-ptt-buenos-aires-men-01",
+          "category": {
+            "name": "UTR Men",
+            "slug": "utr-men",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "id": 1843,
+            "country": {},
+            "flag": "utr-men",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "التصنيف العالمي للتنس (رجال)"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 8,
+          "groundType": "Red clay",
+          "hasPerformanceGraphFeature": false,
+          "id": 31154,
+          "country": {},
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false
+        },
+        "priority": 0,
+        "id": 170265
+      },
+      "season": {
+        "name": "UTR PTT Montpellier Men 01 2025",
+        "year": "2025",
+        "editor": false,
+        "id": 86639
+      },
+      "roundInfo": {
+        "round": 29,
+        "name": "Final",
+        "cupRoundType": 1
+      },
+      "customId": "GhDbsAihe",
+      "status": {
+        "code": 0,
+        "description": "Not started",
+        "type": "notstarted"
+      },
+      "homeTeam": {
+        "name": "Valentin Guadagno",
+        "slug": "guadagno-valentin",
+        "shortName": "V. Guadagno",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 79,
+        "playerTeamInfo": {
+          "id": 30357
+        },
+        "nameCode": "GUA",
+        "national": false,
+        "type": 1,
+        "id": 517925,
+        "country": {
+          "alpha2": "AR",
+          "alpha3": "ARG",
+          "name": "Argentina",
+          "slug": "argentina"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "فالنتين غواداغنو"
+          },
+          "shortNameTranslation": {
+            "ar": "ف. غواداغنو"
+          }
+        }
+      },
+      "awayTeam": {
+        "name": "Nicolas Bianchi",
+        "slug": "bianchi-nicolas",
+        "shortName": "N. Bianchi",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 56,
+        "playerTeamInfo": {
+          "id": 2599
+        },
+        "nameCode": "BIA",
+        "national": false,
+        "type": 1,
+        "id": 195381,
+        "country": {
+          "alpha2": "IT",
+          "alpha3": "ITA",
+          "name": "Italy",
+          "slug": "italy"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "نيكولاس بيانكي",
+            "ru": "Бьянки, Николас"
+          },
+          "shortNameTranslation": {
+            "ar": "ن. بيانكي"
+          }
+        }
+      },
+      "homeScore": {},
+      "awayScore": {},
+      "time": {},
+      "changes": {
+        "changeTimestamp": 0
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 15166308,
+      "slug": "valentin-guadagno-nicolas-bianchi",
+      "startTimestamp": 1764525600,
       "periods": {
         "point": "Game",
         "current": "Match",
@@ -27752,7 +27947,7 @@
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15166030,
       "slug": "alvaro-ariel-frutos-alonso-bruno-vietri",
-      "startTimestamp": 1764520500,
+      "startTimestamp": 1764521400,
       "periods": {
         "point": "Game",
         "current": "Match",
@@ -27762,6 +27957,187 @@
         "period4": "4th set",
         "period5": "5th set"
       },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "groundType": "Red clay",
+      "isEditor": false
+    },
+    {
+      "firstToServe": 2,
+      "tournament": {
+        "name": "UTR PTT Buenos Aires Men 01, 17-20 Playoffs",
+        "slug": "utr-ptt-buenos-aires-men-01-17-20-playoffs",
+        "category": {
+          "name": "UTR Men",
+          "slug": "utr-men",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "id": 1843,
+          "country": {},
+          "flag": "utr-men",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "التصنيف العالمي للتنس (رجال)"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "UTR PTT Buenos Aires Men 01",
+          "slug": "utr-ptt-buenos-aires-men-01",
+          "category": {
+            "name": "UTR Men",
+            "slug": "utr-men",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "id": 1843,
+            "country": {},
+            "flag": "utr-men",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "التصنيف العالمي للتنس (رجال)"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 8,
+          "groundType": "Red clay",
+          "hasPerformanceGraphFeature": false,
+          "id": 31154,
+          "country": {},
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false
+        },
+        "priority": 0,
+        "id": 170262
+      },
+      "season": {
+        "name": "UTR PTT Montpellier Men 01 2025",
+        "year": "2025",
+        "editor": false,
+        "id": 86639
+      },
+      "roundInfo": {
+        "round": 28,
+        "name": "Semifinals",
+        "cupRoundType": 2
+      },
+      "customId": "FmljsbWlj",
+      "status": {
+        "code": 9,
+        "description": "2nd set",
+        "type": "inprogress"
+      },
+      "homeTeam": {
+        "name": "Tomas Luna",
+        "slug": "luna-tomas",
+        "shortName": "T. Luna",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 10,
+        "nameCode": "LUN",
+        "national": false,
+        "type": 1,
+        "id": 1154801,
+        "country": {
+          "alpha2": "AR",
+          "alpha3": "ARG",
+          "name": "Argentina",
+          "slug": "argentina"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "awayTeam": {
+        "name": "Eliseo Alcalde Sango",
+        "slug": "alcalde-sango-eliseo",
+        "shortName": "E. A. Sango",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 13,
+        "nameCode": "ALC",
+        "national": false,
+        "type": 1,
+        "id": 1153130,
+        "country": {
+          "alpha2": "AR",
+          "alpha3": "ARG",
+          "name": "Argentina",
+          "slug": "argentina"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "homeScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 6,
+        "period2": 0,
+        "point": "0"
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 1,
+        "period2": 0,
+        "point": "0"
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1764521295
+      },
+      "changes": {
+        "changes": [
+          "time.currentPeriodStart",
+          "status.code",
+          "status.description",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.point",
+          "awayScore.period2",
+          "awayScore.point",
+          "firstToServe"
+        ],
+        "changeTimestamp": 1764521299
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 15160827,
+      "slug": "tomas-luna-eliseo-alcalde-sango",
+      "startTimestamp": 1764519300,
+      "periods": {
+        "point": "Game",
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set"
+      },
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Red clay",
@@ -27833,182 +28209,11 @@
         "name": "Semifinals",
         "cupRoundType": 2
       },
-      "customId": "FmljsbWlj",
+      "customId": "ODYcsDoHd",
       "status": {
         "code": 8,
         "description": "1st set",
         "type": "inprogress"
-      },
-      "homeTeam": {
-        "name": "Tomas Luna",
-        "slug": "luna-tomas",
-        "shortName": "T. Luna",
-        "gender": "M",
-        "sport": {
-          "name": "Tennis",
-          "slug": "tennis",
-          "id": 5
-        },
-        "userCount": 10,
-        "nameCode": "LUN",
-        "national": false,
-        "type": 1,
-        "id": 1154801,
-        "country": {
-          "alpha2": "AR",
-          "alpha3": "ARG",
-          "name": "Argentina",
-          "slug": "argentina"
-        },
-        "subTeams": [],
-        "teamColors": {
-          "primary": "#374df5",
-          "secondary": "#374df5",
-          "text": "#ffffff"
-        }
-      },
-      "awayTeam": {
-        "name": "Eliseo Alcalde Sango",
-        "slug": "alcalde-sango-eliseo",
-        "shortName": "E. A. Sango",
-        "gender": "M",
-        "sport": {
-          "name": "Tennis",
-          "slug": "tennis",
-          "id": 5
-        },
-        "userCount": 13,
-        "nameCode": "ALC",
-        "national": false,
-        "type": 1,
-        "id": 1153130,
-        "country": {
-          "alpha2": "AR",
-          "alpha3": "ARG",
-          "name": "Argentina",
-          "slug": "argentina"
-        },
-        "subTeams": [],
-        "teamColors": {
-          "primary": "#374df5",
-          "secondary": "#374df5",
-          "text": "#ffffff"
-        }
-      },
-      "homeScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 2,
-        "point": "0"
-      },
-      "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0,
-        "point": "0"
-      },
-      "time": {
-        "currentPeriodStartTimestamp": 1764519746
-      },
-      "changes": {
-        "changes": [
-          "homeScore.period1",
-          "homeScore.point",
-          "awayScore.point",
-          "firstToServe"
-        ],
-        "changeTimestamp": 1764520131
-      },
-      "hasGlobalHighlights": false,
-      "crowdsourcingDataDisplayEnabled": false,
-      "id": 15160827,
-      "slug": "tomas-luna-eliseo-alcalde-sango",
-      "startTimestamp": 1764519300,
-      "periods": {
-        "point": "Game",
-        "current": "Match",
-        "period1": "1st set",
-        "period2": "2nd set",
-        "period3": "3rd set",
-        "period4": "4th set",
-        "period5": "5th set"
-      },
-      "lastPeriod": "period1",
-      "finalResultOnly": false,
-      "feedLocked": false,
-      "groundType": "Red clay",
-      "isEditor": false
-    },
-    {
-      "tournament": {
-        "name": "UTR PTT Buenos Aires Men 01, 17-20 Playoffs",
-        "slug": "utr-ptt-buenos-aires-men-01-17-20-playoffs",
-        "category": {
-          "name": "UTR Men",
-          "slug": "utr-men",
-          "sport": {
-            "name": "Tennis",
-            "slug": "tennis",
-            "id": 5
-          },
-          "id": 1843,
-          "country": {},
-          "flag": "utr-men",
-          "fieldTranslations": {
-            "nameTranslation": {
-              "ar": "التصنيف العالمي للتنس (رجال)"
-            },
-            "shortNameTranslation": {}
-          }
-        },
-        "uniqueTournament": {
-          "name": "UTR PTT Buenos Aires Men 01",
-          "slug": "utr-ptt-buenos-aires-men-01",
-          "category": {
-            "name": "UTR Men",
-            "slug": "utr-men",
-            "sport": {
-              "name": "Tennis",
-              "slug": "tennis",
-              "id": 5
-            },
-            "id": 1843,
-            "country": {},
-            "flag": "utr-men",
-            "fieldTranslations": {
-              "nameTranslation": {
-                "ar": "التصنيف العالمي للتنس (رجال)"
-              },
-              "shortNameTranslation": {}
-            }
-          },
-          "userCount": 8,
-          "groundType": "Red clay",
-          "hasPerformanceGraphFeature": false,
-          "id": 31154,
-          "country": {},
-          "hasEventPlayerStatistics": false,
-          "displayInverseHomeAwayTeams": false
-        },
-        "priority": 0,
-        "id": 170262
-      },
-      "season": {
-        "name": "UTR PTT Montpellier Men 01 2025",
-        "year": "2025",
-        "editor": false,
-        "id": 86639
-      },
-      "roundInfo": {
-        "round": 28,
-        "name": "Semifinals",
-        "cupRoundType": 2
-      },
-      "customId": "ODYcsDoHd",
-      "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
       },
       "homeTeam": {
         "name": "Alberto Puello",
@@ -28082,11 +28287,26 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 3,
+        "point": "30"
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 1,
+        "point": "0"
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1764520407
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.point"
+        ],
+        "changeTimestamp": 1764521217
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -28102,6 +28322,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Red clay",
@@ -35159,8 +35380,8 @@
       },
       "customId": "vMFbsVYKd",
       "status": {
-        "code": 8,
-        "description": "1st set",
+        "code": 9,
+        "description": "2nd set",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -35239,25 +35460,27 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 3,
-        "point": "15"
+        "current": 1,
+        "display": 1,
+        "period1": 6,
+        "period2": 0,
+        "point": "40"
       },
       "awayScore": {
         "current": 0,
         "display": 0,
-        "period1": 2,
-        "point": "15"
+        "period1": 3,
+        "period2": 0,
+        "point": "40"
       },
       "time": {
-        "currentPeriodStartTimestamp": 1764518960
+        "currentPeriodStartTimestamp": 1764521074
       },
       "changes": {
         "changes": [
-          "awayScore.point"
+          "homeScore.point"
         ],
-        "changeTimestamp": 1764520128
+        "changeTimestamp": 1764521292
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -35273,7 +35496,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt indoor",
@@ -35417,13 +35640,13 @@
       "homeScore": {
         "current": 0,
         "display": 0,
-        "period1": 3,
+        "period1": 4,
         "point": "0"
       },
       "awayScore": {
         "current": 0,
         "display": 0,
-        "period1": 2,
+        "period1": 5,
         "point": "0"
       },
       "time": {
@@ -35431,11 +35654,12 @@
       },
       "changes": {
         "changes": [
-          "awayScore.period1",
+          "homeScore.period1",
+          "homeScore.point",
           "awayScore.point",
           "firstToServe"
         ],
-        "changeTimestamp": 1764520056
+        "changeTimestamp": 1764521286
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -35784,7 +36008,7 @@
       "isEditor": false
     },
     {
-      "firstToServe": 1,
+      "firstToServe": 2,
       "tournament": {
         "name": "UTR PTT Dallas Women 02, Group C",
         "slug": "utr-ptt-dallas-women-02-group-c",
@@ -35929,13 +36153,13 @@
       "homeScore": {
         "current": 0,
         "display": 0,
-        "period1": 1,
-        "point": "30"
+        "period1": 2,
+        "point": "0"
       },
       "awayScore": {
         "current": 0,
         "display": 0,
-        "period1": 3,
+        "period1": 5,
         "point": "0"
       },
       "time": {
@@ -35943,9 +36167,12 @@
       },
       "changes": {
         "changes": [
-          "homeScore.point"
+          "homeScore.point",
+          "awayScore.period1",
+          "awayScore.point",
+          "firstToServe"
         ],
-        "changeTimestamp": 1764520092
+        "changeTimestamp": 1764521202
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -35968,7 +36195,7 @@
       "isEditor": false
     },
     {
-      "firstToServe": 1,
+      "firstToServe": 2,
       "tournament": {
         "name": "UTR PTT Dallas Women 02, Group C",
         "slug": "utr-ptt-dallas-women-02-group-c",
@@ -36113,23 +36340,23 @@
       "homeScore": {
         "current": 0,
         "display": 0,
-        "period1": 2,
-        "point": "0"
+        "period1": 4,
+        "point": "30"
       },
       "awayScore": {
         "current": 0,
         "display": 0,
-        "period1": 1,
-        "point": "15"
+        "period1": 2,
+        "point": "0"
       },
       "time": {
         "currentPeriodStartTimestamp": 1764518926
       },
       "changes": {
         "changes": [
-          "awayScore.point"
+          "homeScore.point"
         ],
-        "changeTimestamp": 1764520119
+        "changeTimestamp": 1764521253
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
