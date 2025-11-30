@@ -439,7 +439,7 @@
         ],
         "changeTimestamp": 1764522615
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14203121,
@@ -661,7 +661,7 @@
         ],
         "changeTimestamp": 1764522732
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14211190,
@@ -3106,7 +3106,7 @@
         ],
         "changeTimestamp": 1764527587
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 13940286,
@@ -3815,9 +3815,9 @@
       },
       "customId": "wMcsrnQb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Egypt",
@@ -3888,17 +3888,38 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 4,
+        "display": 4,
+        "period1": 4
+      },
+      "awayScore": {
+        "current": 6,
+        "display": 6,
+        "period1": 6
+      },
+      "time": {
+        "played": 558,
+        "periodLength": 1800,
+        "overtimeLength": 300,
+        "totalPeriodCount": 2
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "time.played"
+        ],
+        "changeTimestamp": 1764531579
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 13940259,
       "slug": "egypt-netherlands",
       "startTimestamp": 1764531000,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -25709,8 +25730,8 @@
       },
       "customId": "ddRbswwDd",
       "status": {
-        "code": 31,
-        "description": "Halftime",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -25783,17 +25804,19 @@
         }
       },
       "homeScore": {
-        "current": 17,
-        "display": 17,
-        "period1": 17
+        "current": 23,
+        "display": 23,
+        "period1": 17,
+        "period2": 6
       },
       "awayScore": {
-        "current": 13,
-        "display": 13,
-        "period1": 13
+        "current": 16,
+        "display": 16,
+        "period1": 13,
+        "period2": 3
       },
       "time": {
-        "played": 1800,
+        "played": 2580,
         "periodLength": 1800,
         "overtimeLength": 300,
         "totalPeriodCount": 2
@@ -25802,7 +25825,7 @@
         "changes": [
           "time.played"
         ],
-        "changeTimestamp": 1764530286
+        "changeTimestamp": 1764531584
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -25810,6 +25833,7 @@
       "id": 14603432,
       "slug": "rk-alkaloid-rk-eurofarm-pelister",
       "startTimestamp": 1764527400,
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -28293,8 +28317,8 @@
       },
       "customId": "VKcszdX",
       "status": {
-        "code": 31,
-        "description": "Halftime",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -28372,34 +28396,39 @@
         }
       },
       "homeScore": {
-        "current": 29,
-        "display": 29,
+        "current": 49,
+        "display": 49,
         "period1": 29,
-        "normaltime": 29
+        "period2": 20,
+        "normaltime": 49
       },
       "awayScore": {
-        "current": 11,
-        "display": 11,
+        "current": 22,
+        "display": 22,
         "period1": 11,
-        "normaltime": 11
+        "period2": 11,
+        "normaltime": 22
       },
       "time": {},
       "changes": {
         "changes": [
-          "status.code",
-          "status.description",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period2",
+          "awayScore.normaltime",
           "homeScore.current",
           "homeScore.display",
-          "homeScore.period1",
+          "homeScore.period2",
           "homeScore.normaltime"
         ],
-        "changeTimestamp": 1764529607
+        "changeTimestamp": 1764531585
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15118391,
       "slug": "associacao-artistica-de-avanca-sporting",
       "startTimestamp": 1764527400,
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -45436,9 +45465,9 @@
       },
       "customId": "BdZdsgWbj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 60,
+        "description": "Postponed",
+        "type": "postponed"
       },
       "homeTeam": {
         "name": "SG Yellow/Pfadi Espoirs",
@@ -45514,7 +45543,12 @@
       "coverage": -1,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type"
+        ],
+        "changeTimestamp": 1764531102
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
