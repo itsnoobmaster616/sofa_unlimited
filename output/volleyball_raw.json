@@ -712,9 +712,9 @@
       },
       "customId": "KYecswHjd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 8,
+        "description": "1st set",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Vôlei Renata",
@@ -789,11 +789,24 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 8
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 7
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1764624644
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.period1"
+        ],
+        "changeTimestamp": 1764625143
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -811,6 +824,7 @@
         "period7": "7th set",
         "overtime": "Overtime"
       },
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -6868,10 +6882,11 @@
       },
       "customId": "ZnGbsJTVb",
       "status": {
-        "code": 12,
-        "description": "5th set",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "AONS Milonas W",
         "slug": "aons-milonas-w",
@@ -6946,13 +6961,14 @@
         }
       },
       "homeScore": {
-        "current": 2,
-        "display": 2,
+        "current": 3,
+        "display": 3,
         "period1": 23,
         "period2": 29,
         "period3": 19,
         "period4": 25,
-        "period5": 13
+        "period5": 15,
+        "normaltime": 3
       },
       "awayScore": {
         "current": 2,
@@ -6961,16 +6977,25 @@
         "period2": 27,
         "period3": 25,
         "period4": 17,
-        "period5": 12
+        "period5": 13,
+        "normaltime": 2
       },
       "time": {
-        "currentPeriodStartTimestamp": 1764622679
+        "currentPeriodStartTimestamp": 1764624212
       },
       "changes": {
         "changes": [
-          "awayScore.period5"
+          "time.currentPeriodStart",
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period5",
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1764623973
+        "changeTimestamp": 1764624217
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -6988,7 +7013,6 @@
         "period7": "7th set",
         "overtime": "Overtime"
       },
-      "lastPeriod": "period5",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
