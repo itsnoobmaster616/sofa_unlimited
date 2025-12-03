@@ -3827,9 +3827,9 @@
       },
       "customId": "MDbsODb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 1,
+        "description": "1st period",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Sibir Novosibirsk",
@@ -3909,13 +3909,31 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 3,
+        "display": 3,
+        "period1": 3
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "time": {
+        "played": 836,
+        "periodLength": 1200,
+        "overtimeLength": 300,
+        "totalPeriodCount": 3,
+        "currentPeriodStartTimestamp": 1764765099
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.played"
+        ],
+        "changeTimestamp": 1764766502
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14142034,
       "slug": "sibir-novosibirsk-spartak-moscow",
@@ -3928,6 +3946,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -14161,9 +14180,9 @@
       },
       "customId": "CahcsDahc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 2,
+        "description": "2nd period",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "HC Slavia Prague U20",
@@ -14237,11 +14256,32 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "period2": 0
+      },
+      "awayScore": {
+        "current": 3,
+        "display": 3,
+        "period1": 3,
+        "period2": 0
+      },
+      "time": {
+        "played": 1200,
+        "periodLength": 1200,
+        "overtimeLength": 300,
+        "totalPeriodCount": 3
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "homeScore.period2",
+          "awayScore.period2"
+        ],
+        "changeTimestamp": 1764765971
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -14256,6 +14296,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -25487,10 +25528,11 @@
       },
       "customId": "fVGsMFid",
       "status": {
-        "code": 3,
-        "description": "3rd period",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "AKM-Junior Novomoskovsk U20",
         "slug": "akm-junior-novomoskovsk-u20",
@@ -25570,30 +25612,33 @@
         }
       },
       "homeScore": {
-        "current": 2,
-        "display": 2,
+        "current": 3,
+        "display": 3,
         "period1": 0,
         "period2": 2,
-        "period3": 0
+        "period3": 1,
+        "normaltime": 3
       },
       "awayScore": {
         "current": 4,
         "display": 4,
         "period1": 0,
         "period2": 2,
-        "period3": 2
+        "period3": 2,
+        "normaltime": 4
       },
       "time": {
-        "played": 2695,
+        "played": 3595,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3
       },
       "changes": {
         "changes": [
-          "time.played"
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1764762130
+        "changeTimestamp": 1764764490
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -25608,7 +25653,6 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -25709,8 +25753,8 @@
       },
       "customId": "FivdsGbFg",
       "status": {
-        "code": 1,
-        "description": "1st period",
+        "code": 3,
+        "description": "3rd period",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -25788,23 +25832,36 @@
       },
       "homeScore": {
         "current": 0,
-        "display": 0
+        "display": 0,
+        "period1": 0,
+        "period2": 0,
+        "period3": 0
       },
       "awayScore": {
-        "current": 0,
-        "display": 0
+        "current": 2,
+        "display": 2,
+        "period1": 0,
+        "period2": 2,
+        "period3": 0
       },
       "time": {
-        "played": 431,
+        "played": 2400,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3
       },
       "changes": {
         "changes": [
-          "time.played"
+          "time.played",
+          "status.code",
+          "status.description",
+          "homeScore.period3",
+          "awayScore.period3",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period2"
         ],
-        "changeTimestamp": 1764762130
+        "changeTimestamp": 1764766205
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -25819,7 +25876,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "lastPeriod": "period1",
+      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -29905,10 +29962,11 @@
       },
       "customId": "dVhcskMXc",
       "status": {
-        "code": 3,
-        "description": "3rd period",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Dinamo-Neva St. Petersburg",
         "slug": "dinamo-neva-st-petersburg",
@@ -29980,11 +30038,11 @@
         }
       },
       "homeScore": {
-        "current": 2,
-        "display": 2,
+        "current": 3,
+        "display": 3,
         "period1": 1,
         "period2": 1,
-        "period3": 0
+        "period3": 1
       },
       "awayScore": {
         "current": 0,
@@ -29994,16 +30052,17 @@
         "period3": 0
       },
       "time": {
-        "played": 2752,
+        "played": 3600,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3
       },
       "changes": {
         "changes": [
-          "time.played"
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1764762130
+        "changeTimestamp": 1764763433
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -30018,7 +30077,6 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
