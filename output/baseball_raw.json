@@ -627,8 +627,8 @@
       },
       "customId": "klGdsnlGd",
       "status": {
-        "code": 22,
-        "description": "2nd Inning",
+        "code": 23,
+        "description": "3rd Inning",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -697,11 +697,15 @@
         "display": 0,
         "period1": 0,
         "period2": 0,
+        "period3": 0,
         "innings": {
           "inning1": {
             "run": 0
           },
           "inning2": {
+            "run": 0
+          },
+          "inning3": {
             "run": 0
           }
         }
@@ -711,26 +715,33 @@
         "display": 3,
         "period1": 0,
         "period2": 3,
+        "period3": 0,
         "innings": {
           "inning1": {
             "run": 0
           },
           "inning2": {
             "run": 3
+          },
+          "inning3": {
+            "run": 0
           }
         }
       },
       "time": {
-        "currentPeriodStartTimestamp": 1765009101
+        "currentPeriodStartTimestamp": 1765010733
       },
       "changes": {
         "changes": [
-          "awayScore.current",
-          "awayScore.display",
-          "awayScore.period2",
-          "awayScore.innings"
+          "status.code",
+          "status.description",
+          "homeScore.period3",
+          "homeScore.innings",
+          "awayScore.period3",
+          "awayScore.innings",
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1765009751
+        "changeTimestamp": 1765010734
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -750,7 +761,7 @@
         "inning9": "9th Inning",
         "extra1": "10th Inning"
       },
-      "lastPeriod": "inning2",
+      "lastPeriod": "inning3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -843,9 +854,9 @@
       },
       "customId": "hlGdsolGd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 21,
+        "description": "1st Inning",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Adelaide Giants",
@@ -913,11 +924,45 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "innings": {
+          "inning1": {
+            "run": 0
+          }
+        }
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "innings": {
+          "inning1": {
+            "run": 0
+          }
+        }
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1765010403
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.innings",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.innings",
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1765010427
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -937,6 +982,7 @@
         "inning9": "9th Inning",
         "extra1": "10th Inning"
       },
+      "lastPeriod": "inning1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false

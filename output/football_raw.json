@@ -14895,7 +14895,7 @@
         ],
         "changeTimestamp": 1764960484
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
       "hasEventPlayerHeatMap": true,
       "detailId": 1,
@@ -24943,9 +24943,9 @@
       },
       "customId": "qucswuc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 61,
+        "description": "Start delayed",
+        "type": "delayed"
       },
       "homeTeam": {
         "name": "Central Coast Mariners",
@@ -25026,9 +25026,11 @@
       "time": {},
       "changes": {
         "changes": [
-          "cardsCode"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1765007555
+        "changeTimestamp": 1765010474
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -79355,11 +79357,36 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "time": {
+        "periodLength": 2700,
+        "overtimeLength": 900,
+        "totalPeriodCount": 2,
+        "currentPeriodStartTimestamp": 1765011005
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "time.currentPeriodStart",
+          "time.periodLength",
+          "time.overtimeLength",
+          "time.totalPeriodCount"
+        ],
+        "changeTimestamp": 1765011005
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
