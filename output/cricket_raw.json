@@ -1203,9 +1203,9 @@
       },
       "customId": "IXjcsNXjc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 21,
+        "description": "1st Inning",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Sydney Sixers Women",
@@ -1281,12 +1281,38 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "innings": {
+          "inning1": {
+            "score": 0,
+            "wickets": 0,
+            "overs": 0,
+            "runRate": 0
+          }
+        }
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
       "coverage": 2,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status",
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.innings",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.innings"
+        ],
+        "changeTimestamp": 1765064433
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -1301,6 +1327,7 @@
         "inning3": "3rd Inning",
         "inning4": "4th Inning"
       },
+      "lastPeriod": "inning1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
