@@ -2204,10 +2204,11 @@
       },
       "customId": "CUVcsQyrd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 1001,
+        "description": "First game",
+        "type": "inprogress"
       },
+      "winnerCode": 3,
       "homeTeam": {
         "name": "EYEBALLERS",
         "slug": "eyeballers",
@@ -2277,12 +2278,24 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
       "coverage": 91,
-      "time": {},
+      "time": {
+        "currentPeriodStartTimestamp": 1765107329
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.display",
+          "awayScore.display"
+        ],
+        "changeTimestamp": 1765107375
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
@@ -2540,8 +2553,8 @@
       },
       "customId": "ZFPisfYcj",
       "status": {
-        "code": 30,
-        "description": "Pause",
+        "code": 1003,
+        "description": "Third game",
         "type": "inprogress"
       },
       "winnerCode": 3,
@@ -2622,18 +2635,16 @@
         "period2": 0
       },
       "coverage": 90,
-      "time": {},
+      "time": {
+        "currentPeriodStartTimestamp": 1765106987
+      },
       "changes": {
         "changes": [
-          "homeScore.display",
           "status.code",
           "status.description",
-          "homeScore.current",
-          "homeScore.period2",
-          "awayScore.period2",
           "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1765105687
+        "changeTimestamp": 1765107008
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
@@ -12136,9 +12147,9 @@
       },
       "customId": "zVZcswAPi",
       "status": {
-        "code": 1003,
-        "description": "Third game",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
       "winnerCode": 2,
       "homeTeam": {
@@ -12212,20 +12223,21 @@
         "display": 0
       },
       "awayScore": {
-        "current": 2,
-        "display": 2
+        "current": 3,
+        "display": 3
       },
       "coverage": 92,
-      "time": {
-        "currentPeriodStartTimestamp": 1765103584
-      },
+      "time": {},
       "changes": {
         "changes": [
           "status.code",
           "status.description",
+          "status.type",
+          "awayScore.current",
+          "awayScore.display",
           "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1765103597
+        "changeTimestamp": 1765107252
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
