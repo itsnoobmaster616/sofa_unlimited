@@ -9445,7 +9445,7 @@
         "inning3": "3rd Inning",
         "inning4": "4th Inning"
       },
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -9934,9 +9934,9 @@
       },
       "customId": "cepdsCfrd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 21,
+        "description": "1st Inning",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Spain",
@@ -10011,19 +10011,36 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 2,
+        "display": 2,
+        "innings": {
+          "inning1": {
+            "score": 2,
+            "wickets": 0,
+            "overs": 1,
+            "runRate": 2
+          }
+        }
+      },
       "coverage": 1,
       "time": {},
       "changes": {
         "changes": [
-          "status"
+          "awayScore.innings",
+          "awayScore.current",
+          "awayScore.display"
         ],
-        "changeTimestamp": 1765112410
+        "changeTimestamp": 1765114475
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15184771,
+      "currentBattingTeamId": 417777,
       "endTimestamp": 1765126800,
       "slug": "croatia-spain",
       "startTimestamp": 1765112400,
@@ -10034,6 +10051,7 @@
         "inning3": "3rd Inning",
         "inning4": "4th Inning"
       },
+      "lastPeriod": "inning1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -10117,8 +10135,8 @@
       },
       "customId": "qmKbstmKb",
       "status": {
-        "code": 21,
-        "description": "1st Inning",
+        "code": 45,
+        "description": "Inn break",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -10198,14 +10216,14 @@
         }
       },
       "homeScore": {
-        "current": 188,
-        "display": 188,
+        "current": 201,
+        "display": 201,
         "innings": {
           "inning1": {
-            "score": 188,
+            "score": 201,
             "wickets": 5,
-            "overs": 18.5,
-            "runRate": 9.98
+            "overs": 20,
+            "runRate": 10.05
           }
         }
       },
@@ -10217,11 +10235,13 @@
       "time": {},
       "changes": {
         "changes": [
+          "status.code",
+          "status.description",
           "homeScore.current",
           "homeScore.display",
           "homeScore.innings"
         ],
-        "changeTimestamp": 1765114159
+        "changeTimestamp": 1765114461
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -10237,7 +10257,6 @@
         "inning3": "3rd Inning",
         "inning4": "4th Inning"
       },
-      "lastPeriod": "inning1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
