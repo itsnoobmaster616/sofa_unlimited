@@ -4838,10 +4838,11 @@
       },
       "customId": "FiRcsKigj",
       "status": {
-        "code": 3,
-        "description": "3rd period",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Black Dogs Budweis",
         "slug": "black-dogs-budweis",
@@ -4893,8 +4894,8 @@
         }
       },
       "homeScore": {
-        "current": 4,
-        "display": 4,
+        "current": 5,
+        "display": 5,
         "period1": 0,
         "period2": 1,
         "period3": 3
@@ -4907,18 +4908,18 @@
         "period3": 0
       },
       "time": {
-        "played": 3052,
+        "played": 3600,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3
       },
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display",
-          "homeScore.period3"
+          "homeScore.period3",
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1765225694
+        "changeTimestamp": 1765226855
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -4933,7 +4934,6 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -7351,8 +7351,8 @@
       },
       "customId": "aGzstGz",
       "status": {
-        "code": 3,
-        "description": "3rd period",
+        "code": 34,
+        "description": "Awaiting penalties",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -7430,27 +7430,35 @@
         "display": 4,
         "period1": 0,
         "period2": 1,
-        "period3": 3
+        "period3": 3,
+        "normaltime": 4,
+        "overtime": 0
       },
       "awayScore": {
         "current": 4,
         "display": 4,
         "period1": 2,
         "period2": 1,
-        "period3": 1
+        "period3": 1,
+        "normaltime": 4,
+        "overtime": 0
       },
       "time": {
-        "played": 3215,
+        "played": 3889,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3,
-        "currentPeriodStartTimestamp": 1765224195
+        "currentPeriodStartTimestamp": 1765226835
       },
       "changes": {
         "changes": [
-          "time.played"
+          "status.code",
+          "status.description",
+          "homeScore.normaltime",
+          "awayScore.normaltime",
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1765225622
+        "changeTimestamp": 1765226839
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -7465,7 +7473,6 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -8135,8 +8142,8 @@
       },
       "customId": "kGzsmGz",
       "status": {
-        "code": 30,
-        "description": "Pause",
+        "code": 3,
+        "description": "3rd period",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -8213,24 +8220,28 @@
         "current": 0,
         "display": 0,
         "period1": 0,
-        "period2": 0
+        "period2": 0,
+        "period3": 0
       },
       "awayScore": {
         "current": 3,
         "display": 3,
         "period1": 1,
-        "period2": 2
+        "period2": 2,
+        "period3": 0
       },
       "time": {
-        "currentPeriodStartTimestamp": 1765225556
+        "currentPeriodStartTimestamp": 1765226609
       },
       "changes": {
         "changes": [
+          "time.currentPeriodStart",
           "status.code",
           "status.description",
-          "time.currentPeriodStart"
+          "homeScore.period3",
+          "awayScore.period3"
         ],
-        "changeTimestamp": 1765225558
+        "changeTimestamp": 1765226612
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -8245,6 +8256,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
+      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
