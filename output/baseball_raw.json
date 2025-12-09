@@ -2582,7 +2582,7 @@
         "inning9": "9th Inning",
         "extra1": "10th Inning"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -2666,10 +2666,11 @@
       },
       "customId": "bDmjsgDmj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Laos",
         "slug": "laos",
@@ -2724,11 +2725,30 @@
           "text": "#ffffff"
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 9,
+        "display": 9,
+        "normaltime": 9
+      },
+      "awayScore": {
+        "current": 5,
+        "display": 5,
+        "normaltime": 5
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1765261067
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
