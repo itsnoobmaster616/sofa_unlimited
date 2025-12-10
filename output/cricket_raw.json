@@ -3717,9 +3717,9 @@
       },
       "customId": "qmKbstmKb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 61,
+        "description": "Start delayed",
+        "type": "delayed"
       },
       "homeTeam": {
         "name": "South Africa Women",
@@ -3802,7 +3802,12 @@
       "coverage": 1,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type"
+        ],
+        "changeTimestamp": 1765380986
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -5414,9 +5419,9 @@
       },
       "customId": "vfAbsVgAb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 21,
+        "description": "1st Inning",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Mountaineers",
@@ -5492,12 +5497,29 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 49,
+        "display": 49,
+        "innings": {
+          "inning1": {
+            "score": 49,
+            "wickets": 4,
+            "overs": 8.5,
+            "runRate": 5.55
+          }
+        }
+      },
       "coverage": 3,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "awayScore.innings"
+        ],
+        "changeTimestamp": 1765381511
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -5512,6 +5534,7 @@
         "inning3": "3rd Inning",
         "inning4": "4th Inning"
       },
+      "lastPeriod": "inning1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
