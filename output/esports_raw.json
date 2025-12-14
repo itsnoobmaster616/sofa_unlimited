@@ -1153,10 +1153,11 @@
       },
       "customId": "NCmjsOCmj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 1001,
+        "description": "First game",
+        "type": "inprogress"
       },
+      "winnerCode": 3,
       "homeTeam": {
         "name": "TNT",
         "slug": "tnt",
@@ -1199,12 +1200,30 @@
           "text": "#ffffff"
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
       "coverage": 91,
-      "time": {},
+      "time": {
+        "currentPeriodStartTimestamp": 1765725408
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.display",
+          "awayScore.display",
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "awayScore.current",
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1765725431
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -2503,11 +2522,11 @@
       },
       "customId": "LWVcsZkDd",
       "status": {
-        "code": 1001,
-        "description": "First game",
+        "code": 30,
+        "description": "Pause",
         "type": "inprogress"
       },
-      "winnerCode": 3,
+      "winnerCode": 1,
       "homeTeam": {
         "name": "XI Esport",
         "slug": "xi-esport",
@@ -2575,29 +2594,28 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0
+        "current": 1,
+        "display": 1,
+        "period1": 1
       },
       "awayScore": {
         "current": 0,
-        "display": 0
+        "display": 0,
+        "period1": 0
       },
       "coverage": 90,
-      "time": {
-        "currentPeriodStartTimestamp": 1765722974
-      },
+      "time": {},
       "changes": {
         "changes": [
           "homeScore.display",
-          "awayScore.display",
           "status.code",
           "status.description",
-          "status.type",
           "homeScore.current",
-          "awayScore.current",
+          "homeScore.period1",
+          "awayScore.period1",
           "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1765723030
+        "changeTimestamp": 1765725431
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
@@ -4159,11 +4177,11 @@
       },
       "customId": "UMVcswWVc",
       "status": {
-        "code": 1001,
-        "description": "First game",
+        "code": 1002,
+        "description": "Second game",
         "type": "inprogress"
       },
-      "winnerCode": 3,
+      "winnerCode": 1,
       "homeTeam": {
         "name": "9INE",
         "slug": "9ine",
@@ -4238,16 +4256,18 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0
+        "current": 1,
+        "display": 1,
+        "period1": 1
       },
       "awayScore": {
         "current": 0,
-        "display": 0
+        "display": 0,
+        "period1": 0
       },
       "coverage": 91,
       "time": {
-        "currentPeriodStartTimestamp": 1765722417
+        "currentPeriodStartTimestamp": 1765725839
       },
       "changes": {
         "changes": [
@@ -4255,7 +4275,7 @@
           "status.description",
           "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1765722484
+        "changeTimestamp": 1765725843
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
@@ -5199,8 +5219,8 @@
       },
       "customId": "mJbeswLej",
       "status": {
-        "code": 30,
-        "description": "Pause",
+        "code": 1002,
+        "description": "Second game",
         "type": "inprogress"
       },
       "winnerCode": 1,
@@ -5274,18 +5294,16 @@
         "period1": 0
       },
       "coverage": 90,
-      "time": {},
+      "time": {
+        "currentPeriodStartTimestamp": 1765723401
+      },
       "changes": {
         "changes": [
-          "homeScore.display",
           "status.code",
           "status.description",
-          "homeScore.current",
-          "homeScore.period1",
-          "awayScore.period1",
           "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1765722067
+        "changeTimestamp": 1765723444
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
@@ -7573,10 +7591,11 @@
       },
       "customId": "GtWismfnj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 91,
+        "description": "Walkover",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Bebop",
         "slug": "bebop",
@@ -7640,7 +7659,12 @@
       "coverage": 90,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type"
+        ],
+        "changeTimestamp": 1765724648
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
@@ -10820,11 +10844,13 @@
       },
       "homeScore": {
         "current": 0,
-        "display": 0
+        "display": 0,
+        "period1": 6
       },
       "awayScore": {
         "current": 0,
-        "display": 0
+        "display": 0,
+        "period1": 19
       },
       "coverage": 92,
       "time": {
@@ -10832,16 +10858,9 @@
       },
       "changes": {
         "changes": [
-          "homeScore.display",
-          "awayScore.display",
-          "status.code",
-          "status.description",
-          "status.type",
-          "homeScore.current",
-          "awayScore.current",
-          "time.currentPeriodStart"
+          "awayScore.period1"
         ],
-        "changeTimestamp": 1765722849
+        "changeTimestamp": 1765725789
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
@@ -10932,10 +10951,11 @@
       },
       "customId": "UWceshjde",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 1001,
+        "description": "First game",
+        "type": "inprogress"
       },
+      "winnerCode": 3,
       "homeTeam": {
         "name": "Passion UA",
         "slug": "passion-ua",
@@ -11000,12 +11020,24 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
       "coverage": 92,
-      "time": {},
+      "time": {
+        "currentPeriodStartTimestamp": 1765723496
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.period1"
+        ],
+        "changeTimestamp": 1765724482
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
@@ -11171,11 +11203,13 @@
       },
       "homeScore": {
         "current": 0,
-        "display": 0
+        "display": 0,
+        "period1": 13
       },
       "awayScore": {
         "current": 0,
-        "display": 0
+        "display": 0,
+        "period1": 17
       },
       "coverage": 92,
       "time": {
@@ -11183,16 +11217,10 @@
       },
       "changes": {
         "changes": [
-          "homeScore.display",
-          "awayScore.display",
-          "status.code",
-          "status.description",
-          "status.type",
-          "homeScore.current",
-          "awayScore.current",
-          "time.currentPeriodStart"
+          "awayScore.period1",
+          "homeScore.period1"
         ],
-        "changeTimestamp": 1765722790
+        "changeTimestamp": 1765725812
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
@@ -11283,10 +11311,11 @@
       },
       "customId": "iNVcsIrZd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 1001,
+        "description": "First game",
+        "type": "inprogress"
       },
+      "winnerCode": 3,
       "homeTeam": {
         "name": "OG",
         "slug": "og",
@@ -11348,12 +11377,30 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
       "coverage": 92,
-      "time": {},
+      "time": {
+        "currentPeriodStartTimestamp": 1765724323
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.display",
+          "awayScore.display",
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "awayScore.current",
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1765724352
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
@@ -12271,11 +12318,11 @@
       },
       "customId": "rtnjsttnj",
       "status": {
-        "code": 1001,
-        "description": "First game",
+        "code": 30,
+        "description": "Pause",
         "type": "inprogress"
       },
-      "winnerCode": 3,
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Win",
         "slug": "win",
@@ -12319,29 +12366,22 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0
+        "current": 1,
+        "display": 1,
+        "period1": 1
       },
       "awayScore": {
         "current": 0,
-        "display": 0
+        "display": 0,
+        "period1": 0
       },
       "coverage": 91,
-      "time": {
-        "currentPeriodStartTimestamp": 1765723057
-      },
+      "time": {},
       "changes": {
         "changes": [
-          "homeScore.display",
-          "awayScore.display",
-          "status.code",
-          "status.description",
-          "status.type",
-          "homeScore.current",
-          "awayScore.current",
-          "time.currentPeriodStart"
+          "homeScore.display"
         ],
-        "changeTimestamp": 1765723090
+        "changeTimestamp": 1765724718
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
@@ -13857,10 +13897,11 @@
       },
       "customId": "KMVcsAQej",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 1001,
+        "description": "First game",
+        "type": "inprogress"
       },
+      "winnerCode": 3,
       "homeTeam": {
         "name": "Yellow Submarine",
         "slug": "yellow-submarine",
@@ -13920,12 +13961,30 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
       "coverage": 91,
-      "time": {},
+      "time": {
+        "currentPeriodStartTimestamp": 1765725447
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.display",
+          "awayScore.display",
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "awayScore.current",
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1765725492
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
@@ -13933,7 +13992,7 @@
       "bestOf": 3,
       "eventType": "best_of",
       "slug": "most-wanted-yellow-submarine",
-      "startTimestamp": 1765724400,
+      "startTimestamp": 1765725300,
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -14656,8 +14715,8 @@
       },
       "customId": "xuaesiqmj",
       "status": {
-        "code": 30,
-        "description": "Pause",
+        "code": 1002,
+        "description": "Second game",
         "type": "inprogress"
       },
       "winnerCode": 1,
@@ -14730,18 +14789,16 @@
         "period1": 0
       },
       "coverage": 91,
-      "time": {},
+      "time": {
+        "currentPeriodStartTimestamp": 1765723634
+      },
       "changes": {
         "changes": [
-          "homeScore.display",
           "status.code",
           "status.description",
-          "homeScore.current",
-          "homeScore.period1",
-          "awayScore.period1",
           "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1765722486
+        "changeTimestamp": 1765723685
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
