@@ -1066,9 +1066,9 @@
       },
       "customId": "RIbsWIb",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
       "winnerCode": 2,
       "homeTeam": {
@@ -1145,26 +1145,31 @@
         "current": 14,
         "display": 14,
         "period1": 14,
-        "period2": 0
+        "period2": 0,
+        "normaltime": 14
       },
       "awayScore": {
-        "current": 33,
-        "display": 33,
+        "current": 50,
+        "display": 50,
         "period1": 19,
-        "period2": 14
+        "period2": 31,
+        "normaltime": 50
       },
       "time": {
-        "played": 6219,
+        "played": 2415,
         "periodLength": 2400,
         "overtimeLength": 600,
         "totalPeriodCount": 2,
-        "currentPeriodStartTimestamp": 1766332721
+        "currentPeriodStartTimestamp": 1766335691
       },
       "changes": {
         "changes": [
-          "time.played"
+          "time.played",
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1766334576
+        "changeTimestamp": 1766335747
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -1172,7 +1177,6 @@
       "id": 14295720,
       "slug": "bath-rugby-newcastle-red-bulls",
       "startTimestamp": 1766329200,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -5715,21 +5719,16 @@
         "normaltime": 10
       },
       "time": {
-        "played": 2401,
+        "played": 2402,
         "periodLength": 2400,
         "overtimeLength": 600,
         "totalPeriodCount": 2
       },
       "changes": {
         "changes": [
-          "homeScore.period1",
-          "homeScore.period2",
-          "homeScore.normaltime",
-          "awayScore.period1",
-          "awayScore.period2",
-          "awayScore.normaltime"
+          "time.played"
         ],
-        "changeTimestamp": 1766298785
+        "changeTimestamp": 1766334750
       },
       "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
@@ -12034,10 +12033,11 @@
       },
       "customId": "xXXiszXXi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Sale Sharks",
         "slug": "sale-sharks",
@@ -12094,18 +12094,45 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 17,
+        "display": 17,
+        "period1": 5,
+        "period2": 12,
+        "normaltime": 17
+      },
+      "awayScore": {
+        "current": 36,
+        "display": 36,
+        "period1": 21,
+        "period2": 15,
+        "normaltime": 36
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1766334923
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14531655,
       "slug": "saracens-sale-sharks",
       "startTimestamp": 1766322000,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
