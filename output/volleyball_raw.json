@@ -1848,9 +1848,9 @@
       },
       "customId": "NLXsjzbe",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 8,
+        "description": "1st set",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Vôlei América/SSC",
@@ -1923,11 +1923,22 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 20
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 18
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.period1"
+        ],
+        "changeTimestamp": 1766445845
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -1945,6 +1956,7 @@
         "period7": "7th set",
         "overtime": "Overtime"
       },
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -2041,10 +2053,11 @@
       },
       "customId": "cwYsrzbe",
       "status": {
-        "code": 10,
-        "description": "3rd set",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Tijuca Tênis Clube",
         "slug": "tijuca-tenis-clube",
@@ -2121,23 +2134,33 @@
         "display": 0,
         "period1": 21,
         "period2": 19,
-        "period3": 7
+        "period3": 17,
+        "normaltime": 0
       },
       "awayScore": {
-        "current": 2,
-        "display": 2,
+        "current": 3,
+        "display": 3,
         "period1": 25,
         "period2": 25,
-        "period3": 8
+        "period3": 25,
+        "normaltime": 3
       },
       "time": {
-        "currentPeriodStartTimestamp": 1766443054
+        "currentPeriodStartTimestamp": 1766444535
       },
       "changes": {
         "changes": [
-          "awayScore.period3"
+          "time.currentPeriodStart",
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period3",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1766443557
+        "changeTimestamp": 1766444542
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -2155,7 +2178,6 @@
         "period7": "7th set",
         "overtime": "Overtime"
       },
-      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
