@@ -1401,10 +1401,10 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0,
-        "normaltime": 0
+        "current": 1,
+        "display": 1,
+        "period1": 1,
+        "normaltime": 1
       },
       "awayScore": {
         "current": 0,
@@ -1421,11 +1421,9 @@
       "changes": {
         "changes": [
           "homeScore.period1",
-          "homeScore.normaltime",
-          "awayScore.period1",
-          "awayScore.normaltime"
+          "homeScore.normaltime"
         ],
-        "changeTimestamp": 1766502127
+        "changeTimestamp": 1766504618
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -4005,8 +4003,8 @@
       },
       "customId": "glbsKlb",
       "status": {
-        "code": 31,
-        "description": "Halftime",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -4088,23 +4086,31 @@
         "current": 1,
         "display": 1,
         "period1": 1,
+        "period2": 0,
         "normaltime": 1
       },
       "awayScore": {
         "current": 0,
         "display": 0,
         "period1": 0,
+        "period2": 0,
         "normaltime": 0
       },
       "time": {
-        "currentPeriodStartTimestamp": 1766500266
+        "currentPeriodStartTimestamp": 1766503987,
+        "initial": 2700,
+        "max": 5400,
+        "extra": 540
       },
       "changes": {
         "changes": [
           "status.code",
-          "status.description"
+          "status.description",
+          "homeScore.period2",
+          "awayScore.period2",
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1766502981
+        "changeTimestamp": 1766503989
       },
       "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": false,
@@ -4115,8 +4121,16 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1766503987,
+        "extra": 540
+      },
       "slug": "konyaspor-antalyaspor",
       "startTimestamp": 1766500200,
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -9308,10 +9322,11 @@
       },
       "customId": "eUWsCKzb",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Al Hussein Irbid",
         "slug": "al-hussein-irbid",
@@ -9401,17 +9416,17 @@
       },
       "time": {
         "injuryTime1": 1,
-        "currentPeriodStartTimestamp": 1766501269,
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540
+        "injuryTime2": 4,
+        "currentPeriodStartTimestamp": 1766501269
       },
       "changes": {
         "changes": [
-          "homeScore.period2",
-          "homeScore.normaltime"
+          "time.injuryTime2",
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1766503545
+        "changeTimestamp": 1766504253
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -9419,20 +9434,8 @@
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14461760,
-      "varInProgress": {
-        "homeTeam": false,
-        "awayTeam": false
-      },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1766501269,
-        "extra": 540
-      },
       "slug": "ahal-fk-al-hussein-irbid",
       "startTimestamp": 1766497500,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -11196,7 +11199,7 @@
         ],
         "changeTimestamp": 1766502632
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15206583,
       "awayRedCards": 1,
@@ -13651,7 +13654,7 @@
         ],
         "changeTimestamp": 1766498266
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14214823,
       "slug": "persijap-jepara-psim-yogyakarta",
@@ -15012,7 +15015,7 @@
         ],
         "changeTimestamp": 1766501659
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14271730,
       "slug": "pdrm-fc-selangor-football-club",
