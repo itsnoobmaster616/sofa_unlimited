@@ -1838,7 +1838,7 @@
         ],
         "changeTimestamp": 1766764613
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14142102,
@@ -2185,9 +2185,9 @@
       },
       "customId": "bEbsnjQb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 1,
+        "description": "1st period",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Shanghai Dragons",
@@ -2269,11 +2269,28 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "time": {
+        "played": 569,
+        "periodLength": 1200,
+        "overtimeLength": 300,
+        "totalPeriodCount": 3,
+        "currentPeriodStartTimestamp": 1766766754
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.played"
+        ],
+        "changeTimestamp": 1766767812
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -2288,6 +2305,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -2817,8 +2835,8 @@
       },
       "customId": "dCbsnCb",
       "status": {
-        "code": 30,
-        "description": "Pause",
+        "code": 2,
+        "description": "2nd period",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -2900,25 +2918,38 @@
       "homeScore": {
         "current": 0,
         "display": 0,
-        "period1": 0
+        "period1": 0,
+        "period2": 0
       },
       "awayScore": {
         "current": 2,
         "display": 2,
-        "period1": 2
+        "period1": 2,
+        "period2": 0
       },
       "time": {
-        "played": 1200,
+        "played": 1294,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3,
-        "currentPeriodStartTimestamp": 1766765018
+        "currentPeriodStartTimestamp": 1766766796
       },
       "changes": {
         "changes": [
-          "time.played"
+          "time.played",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.period2",
+          "awayScore.period2"
         ],
-        "changeTimestamp": 1766765101
+        "changeTimestamp": 1766767812
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -2933,6 +2964,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -3121,13 +3153,13 @@
         "period2": 0
       },
       "awayScore": {
-        "current": 1,
-        "display": 1,
+        "current": 2,
+        "display": 2,
         "period1": 1,
-        "period2": 0
+        "period2": 1
       },
       "time": {
-        "played": 1630,
+        "played": 2320,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3,
@@ -3137,7 +3169,7 @@
         "changes": [
           "time.played"
         ],
-        "changeTimestamp": 1766766620
+        "changeTimestamp": 1766767812
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -3253,8 +3285,8 @@
       },
       "customId": "iCbsJic",
       "status": {
-        "code": 2,
-        "description": "2nd period",
+        "code": 30,
+        "description": "Pause",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -3348,17 +3380,17 @@
         "period2": 0
       },
       "time": {
-        "played": 1748,
+        "played": 2400,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3,
-        "currentPeriodStartTimestamp": 1766765807
+        "currentPeriodStartTimestamp": 1766767635
       },
       "changes": {
         "changes": [
           "time.played"
         ],
-        "changeTimestamp": 1766766620
+        "changeTimestamp": 1766767681
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -3373,7 +3405,6 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -4073,10 +4104,11 @@
       },
       "customId": "DzbsMzb",
       "status": {
-        "code": 3,
-        "description": "3rd period",
-        "type": "inprogress"
+        "code": 120,
+        "description": "AP",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Färjestad BK",
         "slug": "farjestad-bk",
@@ -4157,31 +4189,36 @@
         }
       },
       "homeScore": {
-        "current": 2,
-        "display": 2,
+        "current": 3,
+        "display": 3,
         "period1": 1,
         "period2": 0,
-        "period3": 1
+        "period3": 1,
+        "normaltime": 2,
+        "overtime": 0
       },
       "awayScore": {
         "current": 2,
         "display": 2,
         "period1": 0,
         "period2": 0,
-        "period3": 2
+        "period3": 2,
+        "normaltime": 2,
+        "overtime": 0
       },
       "time": {
-        "played": 3553,
+        "played": 3901,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3,
-        "currentPeriodStartTimestamp": 1766764345
+        "currentPeriodStartTimestamp": 1766767425
       },
       "changes": {
         "changes": [
-          "time.played"
+          "homeScore.current",
+          "homeScore.display"
         ],
-        "changeTimestamp": 1766766620
+        "changeTimestamp": 1766767552
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -4197,7 +4234,6 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -5806,9 +5842,9 @@
       },
       "customId": "MBbsQBb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 1,
+        "description": "1st period",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "HPK Hämeenlinna",
@@ -5889,11 +5925,28 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "time": {
+        "played": 735,
+        "periodLength": 1200,
+        "overtimeLength": 300,
+        "totalPeriodCount": 3,
+        "currentPeriodStartTimestamp": 1766766699
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.played"
+        ],
+        "changeTimestamp": 1766767812
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -5908,6 +5961,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -6008,9 +6062,9 @@
       },
       "customId": "KBbsRBb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 1,
+        "description": "1st period",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "JYP Jyväskylä",
@@ -6090,11 +6144,28 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "time": {
+        "played": 484,
+        "periodLength": 1200,
+        "overtimeLength": 300,
+        "totalPeriodCount": 3,
+        "currentPeriodStartTimestamp": 1766767018
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.played"
+        ],
+        "changeTimestamp": 1766767812
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -6109,6 +6180,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -6209,9 +6281,9 @@
       },
       "customId": "yBbsTBb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 1,
+        "description": "1st period",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Rauman Lukko",
@@ -6290,11 +6362,28 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "time": {
+        "played": 741,
+        "periodLength": 1200,
+        "overtimeLength": 300,
+        "totalPeriodCount": 3,
+        "currentPeriodStartTimestamp": 1766766689
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.played"
+        ],
+        "changeTimestamp": 1766767812
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -6309,6 +6398,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -6497,12 +6587,12 @@
         "period1": 0
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0
+        "current": 1,
+        "display": 1,
+        "period1": 1
       },
       "time": {
-        "played": 1,
+        "played": 763,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3,
@@ -6510,22 +6600,9 @@
       },
       "changes": {
         "changes": [
-          "time.played",
-          "time.periodLength",
-          "time.overtimeLength",
-          "time.totalPeriodCount",
-          "status.code",
-          "status.description",
-          "status.type",
-          "homeScore.current",
-          "homeScore.display",
-          "homeScore.period1",
-          "awayScore.current",
-          "awayScore.display",
-          "awayScore.period1",
-          "time.currentPeriodStart"
+          "time.played"
         ],
-        "changeTimestamp": 1766766620
+        "changeTimestamp": 1766767741
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -6730,22 +6807,17 @@
         "period1": 0
       },
       "time": {
+        "played": 801,
+        "periodLength": 1200,
+        "overtimeLength": 300,
+        "totalPeriodCount": 3,
         "currentPeriodStartTimestamp": 1766766631
       },
       "changes": {
         "changes": [
-          "status.code",
-          "status.description",
-          "status.type",
-          "homeScore.current",
-          "homeScore.display",
-          "homeScore.period1",
-          "awayScore.current",
-          "awayScore.display",
-          "awayScore.period1",
-          "time.currentPeriodStart"
+          "time.played"
         ],
-        "changeTimestamp": 1766766634
+        "changeTimestamp": 1766767812
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -6861,8 +6933,8 @@
       },
       "customId": "zCbsECb",
       "status": {
-        "code": 30,
-        "description": "Pause",
+        "code": 3,
+        "description": "3rd period",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -6948,26 +7020,28 @@
         "current": 2,
         "display": 2,
         "period1": 1,
-        "period2": 1
+        "period2": 1,
+        "period3": 0
       },
       "awayScore": {
         "current": 3,
         "display": 3,
         "period1": 1,
-        "period2": 2
+        "period2": 2,
+        "period3": 0
       },
       "time": {
-        "played": 2400,
+        "played": 2539,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3,
-        "currentPeriodStartTimestamp": 1766766512
+        "currentPeriodStartTimestamp": 1766767632
       },
       "changes": {
         "changes": [
           "time.played"
         ],
-        "changeTimestamp": 1766766544
+        "changeTimestamp": 1766767812
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -6983,6 +7057,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
+      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -7291,8 +7366,8 @@
       },
       "customId": "pCbsCCb",
       "status": {
-        "code": 2,
-        "description": "2nd period",
+        "code": 30,
+        "description": "Pause",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -7384,17 +7459,17 @@
         "period2": 2
       },
       "time": {
-        "played": 2332,
+        "played": 2400,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3,
-        "currentPeriodStartTimestamp": 1766764540
+        "currentPeriodStartTimestamp": 1766766777
       },
       "changes": {
         "changes": [
           "time.played"
         ],
-        "changeTimestamp": 1766766620
+        "changeTimestamp": 1766766841
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -7410,7 +7485,6 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -7606,7 +7680,7 @@
         "period2": 0
       },
       "time": {
-        "played": 1600,
+        "played": 2299,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3,
@@ -7616,7 +7690,7 @@
         "changes": [
           "time.played"
         ],
-        "changeTimestamp": 1766766620
+        "changeTimestamp": 1766767812
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -7733,8 +7807,8 @@
       },
       "customId": "vCbsACb",
       "status": {
-        "code": 1,
-        "description": "1st period",
+        "code": 30,
+        "description": "Pause",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -7826,17 +7900,17 @@
         "period1": 0
       },
       "time": {
-        "played": 897,
+        "played": 1200,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3,
-        "currentPeriodStartTimestamp": 1766764838
+        "currentPeriodStartTimestamp": 1766767031
       },
       "changes": {
         "changes": [
           "time.played"
         ],
-        "changeTimestamp": 1766766620
+        "changeTimestamp": 1766767087
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -7852,7 +7926,6 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -7953,8 +8026,8 @@
       },
       "customId": "JBosXbW",
       "status": {
-        "code": 1,
-        "description": "1st period",
+        "code": 30,
+        "description": "Pause",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -8046,17 +8119,17 @@
         "period1": 0
       },
       "time": {
-        "played": 1060,
+        "played": 1200,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3,
-        "currentPeriodStartTimestamp": 1766764895
+        "currentPeriodStartTimestamp": 1766766850
       },
       "changes": {
         "changes": [
           "time.played"
         ],
-        "changeTimestamp": 1766766620
+        "changeTimestamp": 1766766913
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -8072,7 +8145,6 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -8173,8 +8245,8 @@
       },
       "customId": "qCbsOgp",
       "status": {
-        "code": 1,
-        "description": "1st period",
+        "code": 30,
+        "description": "Pause",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -8266,20 +8338,17 @@
         "period1": 2
       },
       "time": {
-        "played": 1165,
+        "played": 1200,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3,
-        "currentPeriodStartTimestamp": 1766764909
+        "currentPeriodStartTimestamp": 1766766755
       },
       "changes": {
         "changes": [
-          "awayScore.current",
-          "awayScore.display",
-          "awayScore.period1",
           "time.played"
         ],
-        "changeTimestamp": 1766766625
+        "changeTimestamp": 1766766841
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -8295,7 +8364,6 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -8483,22 +8551,17 @@
         "period1": 0
       },
       "time": {
+        "played": 909,
+        "periodLength": 1200,
+        "overtimeLength": 300,
+        "totalPeriodCount": 3,
         "currentPeriodStartTimestamp": 1766766620
       },
       "changes": {
         "changes": [
-          "status.code",
-          "status.description",
-          "status.type",
-          "homeScore.current",
-          "homeScore.display",
-          "homeScore.period1",
-          "awayScore.current",
-          "awayScore.display",
-          "awayScore.period1",
-          "time.currentPeriodStart"
+          "time.played"
         ],
-        "changeTimestamp": 1766766622
+        "changeTimestamp": 1766767811
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -8606,9 +8669,9 @@
       },
       "customId": "pDbsuDb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 1,
+        "description": "1st period",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Graz 99ers",
@@ -8687,11 +8750,28 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 2
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "time": {
+        "played": 725,
+        "periodLength": 1200,
+        "overtimeLength": 300,
+        "totalPeriodCount": 3,
+        "currentPeriodStartTimestamp": 1766766678
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.played"
+        ],
+        "changeTimestamp": 1766767812
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -8706,6 +8786,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -8886,27 +8967,22 @@
         "period1": 0
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0
+        "current": 1,
+        "display": 1,
+        "period1": 1
       },
       "time": {
+        "played": 834,
+        "periodLength": 1200,
+        "overtimeLength": 300,
+        "totalPeriodCount": 3,
         "currentPeriodStartTimestamp": 1766766618
       },
       "changes": {
         "changes": [
-          "status.code",
-          "status.description",
-          "status.type",
-          "homeScore.current",
-          "homeScore.display",
-          "homeScore.period1",
-          "awayScore.current",
-          "awayScore.display",
-          "awayScore.period1",
-          "time.currentPeriodStart"
+          "time.played"
         ],
-        "changeTimestamp": 1766766622
+        "changeTimestamp": 1766767812
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -9401,8 +9477,8 @@
       },
       "customId": "HicsDAc",
       "status": {
-        "code": 1,
-        "description": "1st period",
+        "code": 30,
+        "description": "Pause",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -9489,20 +9565,20 @@
         "period1": 0
       },
       "awayScore": {
-        "current": 2,
-        "display": 2,
-        "period1": 2
+        "current": 3,
+        "display": 3,
+        "period1": 3
       },
       "time": {
-        "currentPeriodStartTimestamp": 1766764994
+        "currentPeriodStartTimestamp": 1766766794
       },
       "changes": {
         "changes": [
-          "awayScore.current",
-          "awayScore.display",
-          "awayScore.period1"
+          "time.currentPeriodStart",
+          "status.code",
+          "status.description"
         ],
-        "changeTimestamp": 1766766436
+        "changeTimestamp": 1766766797
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -9517,7 +9593,6 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -9614,8 +9689,8 @@
       },
       "customId": "ZBbsmCb",
       "status": {
-        "code": 1,
-        "description": "1st period",
+        "code": 2,
+        "description": "2nd period",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -9698,23 +9773,27 @@
       "homeScore": {
         "current": 1,
         "display": 1,
-        "period1": 1
+        "period1": 1,
+        "period2": 0
       },
       "awayScore": {
         "current": 0,
         "display": 0,
-        "period1": 0
+        "period1": 0,
+        "period2": 0
       },
       "time": {
-        "currentPeriodStartTimestamp": 1766764933
+        "currentPeriodStartTimestamp": 1766767813
       },
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display",
-          "homeScore.period1"
+          "status.code",
+          "status.description",
+          "homeScore.period2",
+          "awayScore.period2",
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1766765896
+        "changeTimestamp": 1766767816
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -9729,7 +9808,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -9826,8 +9905,8 @@
       },
       "customId": "BAcsYCn",
       "status": {
-        "code": 1,
-        "description": "1st period",
+        "code": 30,
+        "description": "Pause",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -9919,17 +9998,17 @@
         "period1": 0
       },
       "time": {
-        "played": 847,
+        "played": 1200,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3,
-        "currentPeriodStartTimestamp": 1766765552
+        "currentPeriodStartTimestamp": 1766767101
       },
       "changes": {
         "changes": [
           "time.played"
         ],
-        "changeTimestamp": 1766766620
+        "changeTimestamp": 1766767149
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -9944,7 +10023,6 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -10041,8 +10119,8 @@
       },
       "customId": "CicsDic",
       "status": {
-        "code": 1,
-        "description": "1st period",
+        "code": 30,
+        "description": "Pause",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -10123,32 +10201,25 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0
+        "current": 1,
+        "display": 1,
+        "period1": 1
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0
+        "current": 1,
+        "display": 1,
+        "period1": 1
       },
       "time": {
-        "currentPeriodStartTimestamp": 1766764994
+        "currentPeriodStartTimestamp": 1766767154
       },
       "changes": {
         "changes": [
           "status.code",
           "status.description",
-          "status.type",
-          "homeScore.current",
-          "homeScore.display",
-          "homeScore.period1",
-          "awayScore.current",
-          "awayScore.display",
-          "awayScore.period1",
           "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1766764996
+        "changeTimestamp": 1766767156
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -10163,7 +10234,6 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -10260,8 +10330,8 @@
       },
       "customId": "cCbshfd",
       "status": {
-        "code": 1,
-        "description": "1st period",
+        "code": 30,
+        "description": "Pause",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -10354,17 +10424,17 @@
         "period1": 1
       },
       "time": {
-        "played": 1106,
+        "played": 1200,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3,
-        "currentPeriodStartTimestamp": 1766764965
+        "currentPeriodStartTimestamp": 1766766796
       },
       "changes": {
         "changes": [
           "time.played"
         ],
-        "changeTimestamp": 1766766620
+        "changeTimestamp": 1766766842
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -10379,7 +10449,6 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -14742,7 +14811,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -15364,10 +15433,11 @@
       },
       "customId": "BCbsUCb",
       "status": {
-        "code": 3,
-        "description": "3rd period",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Fribourg-Gottéron",
         "slug": "fribourg-gotteron",
@@ -15449,31 +15519,38 @@
         }
       },
       "homeScore": {
-        "current": 4,
-        "display": 4,
+        "current": 5,
+        "display": 5,
         "period1": 1,
         "period2": 1,
-        "period3": 2
+        "period3": 3,
+        "normaltime": 5
       },
       "awayScore": {
-        "current": 1,
-        "display": 1,
+        "current": 2,
+        "display": 2,
         "period1": 0,
         "period2": 0,
-        "period3": 1
+        "period3": 2,
+        "normaltime": 2
       },
       "time": {
-        "played": 3400,
+        "played": 3593,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3,
-        "currentPeriodStartTimestamp": 1766764817
+        "currentPeriodStartTimestamp": 1766767176
       },
       "changes": {
         "changes": [
-          "time.played"
+          "time.currentPeriodStart",
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1766766620
+        "changeTimestamp": 1766767181
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -15488,7 +15565,6 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -23405,8 +23481,8 @@
       },
       "customId": "CDbsIDb",
       "status": {
-        "code": 2,
-        "description": "2nd period",
+        "code": 30,
+        "description": "Pause",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -23489,10 +23565,10 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
+        "current": 1,
+        "display": 1,
         "period1": 0,
-        "period2": 0
+        "period2": 1
       },
       "awayScore": {
         "current": 0,
@@ -23501,17 +23577,17 @@
         "period2": 0
       },
       "time": {
-        "played": 1752,
+        "played": 2400,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3,
-        "currentPeriodStartTimestamp": 1766765498
+        "currentPeriodStartTimestamp": 1766767653
       },
       "changes": {
         "changes": [
           "time.played"
         ],
-        "changeTimestamp": 1766766362
+        "changeTimestamp": 1766767681
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -23527,7 +23603,6 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -23620,8 +23695,8 @@
       },
       "customId": "zDbsiak",
       "status": {
-        "code": 30,
-        "description": "Pause",
+        "code": 3,
+        "description": "3rd period",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -23707,26 +23782,28 @@
         "current": 2,
         "display": 2,
         "period1": 1,
-        "period2": 1
+        "period2": 1,
+        "period3": 0
       },
       "awayScore": {
         "current": 4,
         "display": 4,
         "period1": 2,
-        "period2": 2
+        "period2": 2,
+        "period3": 0
       },
       "time": {
-        "played": 2400,
+        "played": 2623,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3,
-        "currentPeriodStartTimestamp": 1766766460
+        "currentPeriodStartTimestamp": 1766767504
       },
       "changes": {
         "changes": [
           "time.played"
         ],
-        "changeTimestamp": 1766766481
+        "changeTimestamp": 1766767812
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -23742,6 +23819,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
+      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -23834,8 +23912,8 @@
       },
       "customId": "EDbshmc",
       "status": {
-        "code": 30,
-        "description": "Pause",
+        "code": 3,
+        "description": "3rd period",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -23920,26 +23998,28 @@
         "current": 1,
         "display": 1,
         "period1": 1,
-        "period2": 0
+        "period2": 0,
+        "period3": 0
       },
       "awayScore": {
         "current": 1,
         "display": 1,
         "period1": 1,
-        "period2": 0
+        "period2": 0,
+        "period3": 0
       },
       "time": {
-        "played": 2400,
+        "played": 2705,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3,
-        "currentPeriodStartTimestamp": 1766766213
+        "currentPeriodStartTimestamp": 1766767280
       },
       "changes": {
         "changes": [
           "time.played"
         ],
-        "changeTimestamp": 1766766243
+        "changeTimestamp": 1766767812
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -23955,6 +24035,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
+      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -24047,9 +24128,9 @@
       },
       "customId": "FDbstjZ",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 1,
+        "description": "1st period",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "HC Košice",
@@ -24129,11 +24210,28 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "time": {
+        "played": 782,
+        "periodLength": 1200,
+        "overtimeLength": 300,
+        "totalPeriodCount": 3,
+        "currentPeriodStartTimestamp": 1766766740
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.played"
+        ],
+        "changeTimestamp": 1766767812
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -24148,6 +24246,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -24240,9 +24339,9 @@
       },
       "customId": "ADbsBDb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 1,
+        "description": "1st period",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Spišská Nová Ves",
@@ -24322,11 +24421,28 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "time": {
+        "played": 732,
+        "periodLength": 1200,
+        "overtimeLength": 300,
+        "totalPeriodCount": 3,
+        "currentPeriodStartTimestamp": 1766766719
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.played"
+        ],
+        "changeTimestamp": 1766767812
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -24341,6 +24457,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
