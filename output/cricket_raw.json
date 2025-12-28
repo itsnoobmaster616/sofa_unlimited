@@ -4566,9 +4566,9 @@
       },
       "customId": "cJAbsWLWb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 21,
+        "description": "1st Inning",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Otago Volts",
@@ -4640,16 +4640,34 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 75,
+        "display": 75,
+        "innings": {
+          "inning1": {
+            "score": 75,
+            "wickets": 0,
+            "overs": 8.1,
+            "runRate": 9.18
+          }
+        }
+      },
       "coverage": 2,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "awayScore.innings"
+        ],
+        "changeTimestamp": 1766894295
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14468796,
+      "currentBattingTeamId": 241846,
       "endTimestamp": 1766906700,
       "slug": "canterbury-otago-volts",
       "startTimestamp": 1766892300,
@@ -4660,6 +4678,7 @@
         "inning3": "3rd Inning",
         "inning4": "4th Inning"
       },
+      "lastPeriod": "inning1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -4946,10 +4965,11 @@
       },
       "customId": "jFpdsYiEd",
       "status": {
-        "code": 21,
-        "description": "1st Inning",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Otago Sparks",
         "slug": "otago-sparks",
@@ -5013,14 +5033,14 @@
         }
       },
       "homeScore": {
-        "current": 137,
-        "display": 137,
+        "current": 146,
+        "display": 146,
         "innings": {
           "inning1": {
-            "score": 137,
+            "score": 146,
             "wickets": 4,
-            "overs": 13.1,
-            "runRate": 10.41,
+            "overs": 14.5,
+            "runRate": 9.84,
             "targetRunRate": 7.3
           }
         }
@@ -5043,15 +5063,19 @@
         "changes": [
           "homeScore.current",
           "homeScore.display",
-          "homeScore.innings"
+          "homeScore.innings",
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1766887941
+        "changeTimestamp": 1766888420
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14468795,
+      "note": "Otago Sparks beat Canterbury Magicians by 6 wickets",
       "currentBattingTeamId": 414009,
-      "endTimestamp": 1766893200,
+      "endTimestamp": 1766888340,
       "slug": "canterbury-magicians-otago-sparks",
       "startTimestamp": 1766878800,
       "periods": {
@@ -5061,7 +5085,6 @@
         "inning3": "3rd Inning",
         "inning4": "4th Inning"
       },
-      "lastPeriod": "inning1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
