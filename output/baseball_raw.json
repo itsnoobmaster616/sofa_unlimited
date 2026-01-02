@@ -364,10 +364,11 @@
       },
       "customId": "hlGdsnlGd",
       "status": {
-        "code": 28,
-        "description": "8th Inning",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Perth Heat",
         "slug": "perth-heat",
@@ -445,6 +446,8 @@
         "period6": 0,
         "period7": 0,
         "period8": 0,
+        "period9": 0,
+        "normaltime": 3,
         "innings": {
           "inning1": {
             "run": 0
@@ -469,6 +472,9 @@
           },
           "inning8": {
             "run": 0
+          },
+          "inning9": {
+            "run": -1
           }
         }
       },
@@ -483,6 +489,8 @@
         "period6": 1,
         "period7": 0,
         "period8": 1,
+        "period9": 0,
+        "normaltime": 2,
         "innings": {
           "inning1": {
             "run": 0
@@ -507,20 +515,25 @@
           },
           "inning8": {
             "run": 1
+          },
+          "inning9": {
+            "run": 0
           }
         }
       },
       "time": {
-        "currentPeriodStartTimestamp": 1767360429
+        "currentPeriodStartTimestamp": 1767361971
       },
       "changes": {
         "changes": [
-          "awayScore.current",
-          "awayScore.display",
-          "awayScore.period8",
-          "awayScore.innings"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime",
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1767360695
+        "changeTimestamp": 1767361984
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -540,7 +553,6 @@
         "inning9": "9th Inning",
         "extra1": "10th Inning"
       },
-      "lastPeriod": "inning8",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
