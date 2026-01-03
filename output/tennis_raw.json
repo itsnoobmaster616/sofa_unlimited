@@ -460,6 +460,7 @@
       }
     },
     {
+      "firstToServe": 2,
       "tournament": {
         "name": "United Cup, Singles",
         "slug": "united-cup-singles",
@@ -537,9 +538,9 @@
       },
       "customId": "jPEbsypLb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 8,
+        "description": "1st set",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Eva Lys",
@@ -625,11 +626,29 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 1,
+        "point": "0"
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "point": "0"
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1767483535
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.period1",
+          "homeScore.point",
+          "awayScore.point",
+          "firstToServe"
+        ],
+        "changeTimestamp": 1767483739
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -646,6 +665,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
@@ -29725,10 +29745,11 @@
       },
       "customId": "QBRsovJb",
       "status": {
-        "code": 9,
-        "description": "2nd set",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Gabriela Knutson",
         "slug": "knutson-gabriela-andrea",
@@ -29811,27 +29832,37 @@
         }
       },
       "homeScore": {
-        "current": 1,
-        "display": 1,
+        "current": 2,
+        "display": 2,
         "period1": 6,
-        "period2": 3,
-        "point": "40"
+        "period2": 6,
+        "point": "A",
+        "normaltime": 2
       },
       "awayScore": {
         "current": 0,
         "display": 0,
         "period1": 3,
         "period2": 2,
-        "point": "A"
+        "point": "40",
+        "normaltime": 0
       },
       "time": {
-        "currentPeriodStartTimestamp": 1767480390
+        "currentPeriodStartTimestamp": 1767483733
       },
       "changes": {
         "changes": [
-          "awayScore.point"
+          "time.currentPeriodStart",
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period2",
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1767482644
+        "changeTimestamp": 1767483737
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -29847,7 +29878,6 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
@@ -30023,15 +30053,15 @@
         "current": 1,
         "display": 1,
         "period1": 7,
-        "period2": 2,
-        "point": "30"
+        "period2": 5,
+        "point": "40"
       },
       "awayScore": {
         "current": 0,
         "display": 0,
         "period1": 5,
-        "period2": 4,
-        "point": "15"
+        "period2": 5,
+        "point": "40"
       },
       "time": {
         "currentPeriodStartTimestamp": 1767480997
@@ -30040,7 +30070,7 @@
         "changes": [
           "awayScore.point"
         ],
-        "changeTimestamp": 1767482608
+        "changeTimestamp": 1767483740
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -30063,7 +30093,7 @@
       "isEditor": false
     },
     {
-      "firstToServe": 1,
+      "firstToServe": 2,
       "tournament": {
         "name": "Auckland, New Zealand, Qualifying",
         "slug": "auckland-new-zealand-qualifying",
@@ -30226,14 +30256,14 @@
         "current": 0,
         "display": 0,
         "period1": 3,
-        "period2": 2,
-        "point": "30"
+        "period2": 5,
+        "point": "15"
       },
       "awayScore": {
         "current": 1,
         "display": 1,
         "period1": 6,
-        "period2": 2,
+        "period2": 4,
         "point": "15"
       },
       "time": {
@@ -30243,7 +30273,7 @@
         "changes": [
           "awayScore.point"
         ],
-        "changeTimestamp": 1767482627
+        "changeTimestamp": 1767483715
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -55381,6 +55411,7 @@
       "isEditor": false
     },
     {
+      "firstToServe": 1,
       "tournament": {
         "name": "Canberra, Australia, Qualifying",
         "slug": "canberra-australia-qualifying",
@@ -55452,9 +55483,9 @@
       },
       "customId": "OKDcsBQbe",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 8,
+        "description": "1st set",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Daniel Jovanovski",
@@ -55533,11 +55564,26 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "point": "30"
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "point": "15"
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1767483625
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "awayScore.point"
+        ],
+        "changeTimestamp": 1767483727
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -55553,12 +55599,14 @@
         "period4": "4th set",
         "period5": "5th set"
       },
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
       "isEditor": false
     },
     {
+      "firstToServe": 2,
       "tournament": {
         "name": "Canberra, Australia, Qualifying",
         "slug": "canberra-australia-qualifying",
@@ -55630,9 +55678,9 @@
       },
       "customId": "iMfcsQoLc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 8,
+        "description": "1st set",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Pablo Llamas Ruiz",
@@ -55717,11 +55765,26 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "point": "30"
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "point": "40"
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1767483581
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "awayScore.point"
+        ],
+        "changeTimestamp": 1767483736
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -55737,12 +55800,14 @@
         "period4": "4th set",
         "period5": "5th set"
       },
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
       "isEditor": false
     },
     {
+      "firstToServe": 2,
       "tournament": {
         "name": "Canberra, Australia, Qualifying",
         "slug": "canberra-australia-qualifying",
@@ -55814,9 +55879,9 @@
       },
       "customId": "FlfdsJBId",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 8,
+        "description": "1st set",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Rafael Jodar",
@@ -55897,11 +55962,26 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "point": "15"
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "point": "15"
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1767483680
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "awayScore.point"
+        ],
+        "changeTimestamp": 1767483739
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -55917,6 +55997,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
@@ -62006,6 +62087,7 @@
       "isEditor": false
     },
     {
+      "firstToServe": 2,
       "tournament": {
         "name": "Noumea, New Caledonia, Qualifying",
         "slug": "noumea-new-caledonia-qualifying",
@@ -62077,9 +62159,9 @@
       },
       "customId": "mZLbsiJId",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 8,
+        "description": "1st set",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "James Watt",
@@ -62161,11 +62243,29 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 1,
+        "point": "0"
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "point": "0"
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1767483503
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.period1",
+          "homeScore.point",
+          "awayScore.point",
+          "firstToServe"
+        ],
+        "changeTimestamp": 1767483667
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -62181,12 +62281,14 @@
         "period4": "4th set",
         "period5": "5th set"
       },
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
       "isEditor": false
     },
     {
+      "firstToServe": 2,
       "tournament": {
         "name": "Noumea, New Caledonia, Qualifying",
         "slug": "noumea-new-caledonia-qualifying",
@@ -62258,9 +62360,9 @@
       },
       "customId": "UlrdsOLri",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 8,
+        "description": "1st set",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Leo Vithoontien",
@@ -62337,11 +62439,26 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "point": "30"
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "point": "40"
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1767483630
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "awayScore.point"
+        ],
+        "changeTimestamp": 1767483736
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -62357,12 +62474,14 @@
         "period4": "4th set",
         "period5": "5th set"
       },
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
       "isEditor": false
     },
     {
+      "firstToServe": 1,
       "tournament": {
         "name": "Noumea, New Caledonia, Qualifying",
         "slug": "noumea-new-caledonia-qualifying",
@@ -62434,9 +62553,9 @@
       },
       "customId": "cuXbstxid",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 8,
+        "description": "1st set",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Preston Brown",
@@ -62516,11 +62635,26 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "point": "30"
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "point": "15"
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1767483571
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.point"
+        ],
+        "changeTimestamp": 1767483721
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -62536,6 +62670,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
@@ -65995,6 +66130,7 @@
       "isEditor": false
     },
     {
+      "firstToServe": 1,
       "tournament": {
         "name": "Canberra, Australia, Qualifying",
         "slug": "canberra-australia-qualifying",
@@ -66067,9 +66203,9 @@
       },
       "customId": "KaEbsEgLb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 8,
+        "description": "1st set",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Mai Hontama",
@@ -66152,11 +66288,26 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "point": "40"
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "point": "15"
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1767483615
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "awayScore.point"
+        ],
+        "changeTimestamp": 1767483722
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -66172,12 +66323,14 @@
         "period4": "4th set",
         "period5": "5th set"
       },
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
       "isEditor": false
     },
     {
+      "firstToServe": 2,
       "tournament": {
         "name": "Canberra, Australia, Qualifying",
         "slug": "canberra-australia-qualifying",
@@ -66250,9 +66403,9 @@
       },
       "customId": "RdebsRkLc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 8,
+        "description": "1st set",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Mary Stoiana",
@@ -66335,11 +66488,26 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "point": "40"
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "point": "30"
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1767483567
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.point"
+        ],
+        "changeTimestamp": 1767483740
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -66355,6 +66523,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
@@ -80601,6 +80770,181 @@
       "id": 15305999,
       "slug": "aadarsh-tripathi-emon-van-loben-sels",
       "startTimestamp": 1767477600,
+      "periods": {
+        "point": "Game",
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "groundType": "Hardcourt outdoor",
+      "isEditor": false
+    },
+    {
+      "tournament": {
+        "name": "UTR PTT Newport Beach Men 19, 1-4 Playoffs",
+        "slug": "utr-ptt-newport-beach-men-19-1-4-playoffs",
+        "category": {
+          "name": "UTR Men",
+          "slug": "utr-men",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "id": 1843,
+          "country": {},
+          "flag": "utr-men",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "التصنيف العالمي للتنس (رجال)"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "UTR PTT Newport Beach Men 19",
+          "slug": "utr-ptt-newport-beach-men-19",
+          "category": {
+            "name": "UTR Men",
+            "slug": "utr-men",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "id": 1843,
+            "country": {},
+            "flag": "utr-men",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "التصنيف العالمي للتنس (رجال)"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 17,
+          "groundType": "Hardcourt outdoor",
+          "hasPerformanceGraphFeature": false,
+          "id": 31656,
+          "country": {},
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false
+        },
+        "priority": 0,
+        "id": 172238
+      },
+      "season": {
+        "name": "UTR PTT Newport Beach Men 18 2025",
+        "year": "2025",
+        "editor": false,
+        "id": 87922
+      },
+      "roundInfo": {
+        "round": 29,
+        "name": "Final",
+        "cupRoundType": 1
+      },
+      "customId": "FdTdsTxie",
+      "status": {
+        "code": 0,
+        "description": "Not started",
+        "type": "notstarted"
+      },
+      "homeTeam": {
+        "name": "Emon van Loben Sels",
+        "slug": "van-loben-sels-emon",
+        "shortName": "E. van Loben Sels",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 134,
+        "playerTeamInfo": {
+          "id": 23201
+        },
+        "nameCode": "VAN",
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "id": 482680,
+        "country": {
+          "alpha2": "US",
+          "alpha3": "USA",
+          "name": "USA",
+          "slug": "usa"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "إيمون فان لوبي سيلس"
+          },
+          "shortNameTranslation": {
+            "ar": "إ. سيلس"
+          }
+        }
+      },
+      "awayTeam": {
+        "name": "Spencer Johnson",
+        "slug": "johnson-spencer",
+        "shortName": "S. Johnson",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 151,
+        "playerTeamInfo": {
+          "id": 18019
+        },
+        "nameCode": "JOH",
+        "national": false,
+        "type": 1,
+        "id": 521143,
+        "country": {
+          "alpha2": "US",
+          "alpha3": "USA",
+          "name": "USA",
+          "slug": "usa"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "سبنسر جونسون"
+          },
+          "shortNameTranslation": {
+            "ar": "س. جونسون"
+          }
+        }
+      },
+      "homeScore": {},
+      "awayScore": {},
+      "time": {},
+      "changes": {
+        "changeTimestamp": 0
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 15312694,
+      "slug": "spencer-johnson-emon-van-loben-sels",
+      "startTimestamp": 1767563100,
       "periods": {
         "point": "Game",
         "current": "Match",
@@ -98986,7 +99330,7 @@
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15306498,
       "slug": "anne-christine-lutkemeyer-obregon-hanna-chang",
-      "startTimestamp": 1767492000,
+      "startTimestamp": 1767564000,
       "periods": {
         "point": "Game",
         "current": "Match",
