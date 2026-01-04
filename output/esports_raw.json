@@ -14192,11 +14192,11 @@
       },
       "customId": "zZndsqrUd",
       "status": {
-        "code": 1001,
-        "description": "First game",
+        "code": 30,
+        "description": "Pause",
         "type": "inprogress"
       },
-      "winnerCode": 3,
+      "winnerCode": 1,
       "homeTeam": {
         "name": "BetBoom Team",
         "slug": "betboom-team",
@@ -14268,23 +14268,28 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0
+        "current": 1,
+        "display": 1,
+        "period1": 1
       },
       "awayScore": {
         "current": 0,
-        "display": 0
+        "display": 0,
+        "period1": 0
       },
       "coverage": 91,
-      "time": {
-        "currentPeriodStartTimestamp": 1767538456
-      },
+      "time": {},
       "changes": {
         "changes": [
           "homeScore.display",
-          "awayScore.display"
+          "status.code",
+          "status.description",
+          "homeScore.current",
+          "homeScore.period1",
+          "awayScore.period1",
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1767538515
+        "changeTimestamp": 1767541213
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
@@ -18729,10 +18734,11 @@
       },
       "customId": "YvWcsUWce",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 1001,
+        "description": "First game",
+        "type": "inprogress"
       },
+      "winnerCode": 3,
       "homeTeam": {
         "name": "Virtus.pro",
         "slug": "virtuspro",
@@ -18799,12 +18805,30 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
       "coverage": 91,
-      "time": {},
+      "time": {
+        "currentPeriodStartTimestamp": 1767541001
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.display",
+          "awayScore.display",
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "awayScore.current",
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1767541032
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
@@ -18812,7 +18836,7 @@
       "bestOf": 3,
       "eventType": "best_of",
       "slug": "1win-virtuspro",
-      "startTimestamp": 1767541500,
+      "startTimestamp": 1767540600,
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
