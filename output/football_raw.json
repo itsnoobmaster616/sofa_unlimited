@@ -1394,8 +1394,8 @@
       },
       "customId": "Odbsceb",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 31,
+        "description": "Halftime",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -1487,17 +1487,15 @@
         "normaltime": 1
       },
       "time": {
-        "currentPeriodStartTimestamp": 1767718977,
-        "initial": 0,
-        "max": 2700,
-        "extra": 540
+        "injuryTime1": 1,
+        "currentPeriodStartTimestamp": 1767718977
       },
       "changes": {
         "changes": [
-          "awayScore.period1",
-          "awayScore.normaltime"
+          "status.code",
+          "status.description"
         ],
-        "changeTimestamp": 1767720035
+        "changeTimestamp": 1767721740
       },
       "hasGlobalHighlights": false,
       "hasXg": true,
@@ -1510,16 +1508,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1767718977,
-        "extra": 540
-      },
       "slug": "roma-lecce",
       "startTimestamp": 1767718800,
-      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -3584,8 +3574,8 @@
       },
       "customId": "knqsONr",
       "status": {
-        "code": 31,
-        "description": "Halftime",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -3666,23 +3656,31 @@
         "current": 0,
         "display": 0,
         "period1": 0,
+        "period2": 0,
         "normaltime": 0
       },
       "awayScore": {
         "current": 2,
         "display": 2,
         "period1": 2,
+        "period2": 0,
         "normaltime": 2
       },
       "time": {
         "injuryTime1": 7,
-        "currentPeriodStartTimestamp": 1767717015
+        "currentPeriodStartTimestamp": 1767721096,
+        "initial": 2700,
+        "max": 5400,
+        "extra": 540
       },
       "changes": {
         "changes": [
-          "time.injuryTime1"
+          "status.code",
+          "status.description",
+          "homeScore.period2",
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1767720156
+        "changeTimestamp": 1767721101
       },
       "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
@@ -3694,8 +3692,16 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1767721096,
+        "extra": 540
+      },
       "slug": "al-sailiya-al-rayyan",
       "startTimestamp": 1767717000,
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -4022,10 +4028,11 @@
       },
       "customId": "OyyspHfc",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Al-Wahda FC",
         "slug": "al-wahda-fc",
@@ -4116,16 +4123,17 @@
       },
       "time": {
         "injuryTime1": 0,
-        "currentPeriodStartTimestamp": 1767718346,
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540
+        "injuryTime2": 3,
+        "currentPeriodStartTimestamp": 1767718346
       },
       "changes": {
         "changes": [
-          "homeScore.period2"
+          "time.injuryTime2",
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1767718486
+        "changeTimestamp": 1767721254
       },
       "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
@@ -4133,20 +4141,8 @@
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15010562,
-      "varInProgress": {
-        "homeTeam": false,
-        "awayTeam": false
-      },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1767718346,
-        "extra": 540
-      },
       "slug": "al-wahda-fc-baniyas",
       "startTimestamp": 1767714300,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -7606,11 +7602,36 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "time": {
+        "periodLength": 2700,
+        "overtimeLength": 900,
+        "totalPeriodCount": 2,
+        "currentPeriodStartTimestamp": 1767721546
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "time.currentPeriodStart",
+          "time.periodLength",
+          "time.overtimeLength",
+          "time.totalPeriodCount"
+        ],
+        "changeTimestamp": 1767721546
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -9075,9 +9096,9 @@
       },
       "customId": "GgcsCqy",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Hibernians",
@@ -9158,17 +9179,50 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1767720782,
+        "initial": 0,
+        "max": 2700,
+        "extra": 540
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "awayScore.current",
+          "awayScore.display",
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1767720784
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15033083,
+      "varInProgress": {
+        "homeTeam": false,
+        "awayTeam": false
+      },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1767720782,
+        "extra": 540
+      },
       "slug": "gzira-united-fc-hibernians",
       "startTimestamp": 1767720600,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -11259,9 +11313,9 @@
         }
       },
       "homeScore": {
-        "current": 2,
-        "display": 2,
-        "period1": 2
+        "current": 3,
+        "display": 3,
+        "period1": 3
       },
       "awayScore": {
         "current": 0,
@@ -11283,7 +11337,7 @@
           "homeScore.display",
           "homeScore.period1"
         ],
-        "changeTimestamp": 1767719647
+        "changeTimestamp": 1767721042
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -12547,196 +12601,6 @@
         "name": "Round of 16",
         "cupRoundType": 8
       },
-      "customId": "YWspX",
-      "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
-      },
-      "homeTeam": {
-        "name": "St. Johnstone",
-        "slug": "st-johnstone",
-        "shortName": "St. Johnstone",
-        "gender": "M",
-        "sport": {
-          "name": "Football",
-          "slug": "football",
-          "id": 1
-        },
-        "userCount": 8693,
-        "nameCode": "JOH",
-        "disabled": false,
-        "national": false,
-        "type": 0,
-        "id": 2348,
-        "country": {
-          "alpha2": "SX",
-          "alpha3": "SCO",
-          "name": "Scotland",
-          "slug": "scotland"
-        },
-        "subTeams": [],
-        "teamColors": {
-          "primary": "#374df5",
-          "secondary": "#374df5",
-          "text": "#ffffff"
-        },
-        "fieldTranslations": {
-          "nameTranslation": {
-            "ar": "سانت جونستون",
-            "ru": "Сент-Джонстон",
-            "bn": "সেন্ট জনস্টোন"
-          },
-          "shortNameTranslation": {
-            "hi": "सेंट जॉनस्टोन"
-          }
-        }
-      },
-      "awayTeam": {
-        "name": "Ross County",
-        "slug": "ross-county",
-        "gender": "M",
-        "sport": {
-          "name": "Football",
-          "slug": "football",
-          "id": 1
-        },
-        "userCount": 7117,
-        "nameCode": "ROS",
-        "national": false,
-        "type": 0,
-        "id": 2365,
-        "country": {
-          "alpha2": "SX",
-          "alpha3": "SCO",
-          "name": "Scotland",
-          "slug": "scotland"
-        },
-        "subTeams": [],
-        "teamColors": {
-          "primary": "#374df5",
-          "secondary": "#374df5",
-          "text": "#ffffff"
-        },
-        "fieldTranslations": {
-          "nameTranslation": {
-            "ar": "روس كاونتي",
-            "ru": "Росс Каунти"
-          },
-          "shortNameTranslation": {}
-        }
-      },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
-      "changes": {
-        "changeTimestamp": 0
-      },
-      "hasGlobalHighlights": false,
-      "crowdsourcingDataDisplayEnabled": false,
-      "id": 15233603,
-      "slug": "ross-county-st-johnstone",
-      "startTimestamp": 1767728700,
-      "finalResultOnly": false,
-      "feedLocked": false,
-      "isEditor": false,
-      "eventFilters": {
-        "category": [
-          "club"
-        ],
-        "level": [
-          "pro"
-        ],
-        "gender": [
-          "M"
-        ]
-      }
-    },
-    {
-      "tournament": {
-        "name": "Challenge Cup, Playoffs",
-        "slug": "challenge-cup-playoffs",
-        "category": {
-          "name": "Scotland",
-          "slug": "scotland",
-          "sport": {
-            "name": "Football",
-            "slug": "football",
-            "id": 1
-          },
-          "id": 22,
-          "country": {
-            "alpha2": "SX",
-            "alpha3": "SCO",
-            "name": "Scotland",
-            "slug": "scotland"
-          },
-          "flag": "scotland",
-          "alpha2": "SX",
-          "fieldTranslations": {
-            "nameTranslation": {
-              "ar": "اسكتلندا"
-            },
-            "shortNameTranslation": {}
-          }
-        },
-        "uniqueTournament": {
-          "name": "Scottish Challenge Cup",
-          "slug": "challenge-cup",
-          "category": {
-            "name": "Scotland",
-            "slug": "scotland",
-            "sport": {
-              "name": "Football",
-              "slug": "football",
-              "id": 1
-            },
-            "id": 22,
-            "country": {
-              "alpha2": "SX",
-              "alpha3": "SCO",
-              "name": "Scotland",
-              "slug": "scotland"
-            },
-            "flag": "scotland",
-            "alpha2": "SX",
-            "fieldTranslations": {
-              "nameTranslation": {
-                "ar": "اسكتلندا"
-              },
-              "shortNameTranslation": {}
-            }
-          },
-          "userCount": 1063,
-          "hasPerformanceGraphFeature": false,
-          "id": 331,
-          "country": {},
-          "hasEventPlayerStatistics": false,
-          "displayInverseHomeAwayTeams": false,
-          "fieldTranslations": {
-            "nameTranslation": {
-              "ar": "كأس التحدي الاسكتلندي"
-            },
-            "shortNameTranslation": {}
-          }
-        },
-        "priority": 0,
-        "id": 169776
-      },
-      "season": {
-        "name": "Challenge Cup 25/26",
-        "year": "25/26",
-        "editor": false,
-        "seasonCoverageInfo": {
-          "editorCoverageLevel": 5
-        },
-        "id": 78643
-      },
-      "roundInfo": {
-        "round": 5,
-        "name": "Round of 16",
-        "cupRoundType": 8
-      },
       "customId": "oXswX",
       "status": {
         "code": 60,
@@ -13165,9 +13029,9 @@
       },
       "customId": "clbsdlb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Fenerbahçe",
@@ -13244,23 +13108,51 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 1,
+        "normaltime": 1
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1767720606,
+        "initial": 0,
+        "max": 2700,
+        "extra": 540
+      },
       "changes": {
         "changes": [
-          "cardsCode"
+          "homeScore.period1",
+          "homeScore.normaltime"
         ],
-        "changeTimestamp": 1767717650
+        "changeTimestamp": 1767721150
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
       "hasEventPlayerHeatMap": true,
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15138460,
+      "varInProgress": {
+        "homeTeam": false,
+        "awayTeam": false
+      },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1767720606,
+        "extra": 540
+      },
       "slug": "samsunspor-fenerbahce",
       "startTimestamp": 1767720600,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
