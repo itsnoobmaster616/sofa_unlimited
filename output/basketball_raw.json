@@ -1334,9 +1334,9 @@
       },
       "customId": "ltbsntb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 30,
+        "description": "Pause",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Sacramento Kings",
@@ -1418,13 +1418,31 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
-      "changes": {
-        "changeTimestamp": 0
+      "homeScore": {
+        "current": 35,
+        "display": 35,
+        "period1": 35
       },
-      "hasGlobalHighlights": false,
+      "awayScore": {
+        "current": 25,
+        "display": 25,
+        "period1": 25
+      },
+      "time": {
+        "played": 721,
+        "periodLength": 720,
+        "overtimeLength": 300,
+        "totalPeriodCount": 4,
+        "currentPeriodStartTimestamp": 1767761012
+      },
+      "changes": {
+        "changes": [
+          "time.played"
+        ],
+        "changeTimestamp": 1767761091
+      },
+      "hasGlobalHighlights": true,
+      "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14442029,
       "periods": {
@@ -1434,6 +1452,15 @@
         "period3": "3rd quarter",
         "period4": "4th quarter",
         "overtime": "Overtime"
+      },
+      "bonusInfo": {
+        "hasHomeBonus": false,
+        "hasAwayBonus": false
+      },
+      "timeouts": {
+        "homeTimeoutsRemaining": 6,
+        "awayTimeoutsRemaining": 5,
+        "totalTimeouts": 7
       },
       "slug": "sacramento-kings-dallas-mavericks",
       "startTimestamp": 1767758400,
@@ -61057,10 +61084,11 @@
       },
       "customId": "mDcbscuhc",
       "status": {
-        "code": 16,
-        "description": "4th quarter",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Capitanes de Ciudad de México",
         "slug": "capitanes-de-ciudad-de-mexico",
@@ -61134,34 +61162,40 @@
         }
       },
       "homeScore": {
-        "current": 102,
-        "display": 102,
+        "current": 122,
+        "display": 122,
         "period1": 21,
         "period2": 35,
         "period3": 33,
-        "period4": 13
+        "period4": 33,
+        "normaltime": 122
       },
       "awayScore": {
-        "current": 87,
-        "display": 87,
+        "current": 109,
+        "display": 109,
         "period1": 26,
         "period2": 33,
         "period3": 20,
-        "period4": 8
+        "period4": 30,
+        "normaltime": 109
       },
       "time": {
-        "played": 2432,
+        "played": 2880,
         "periodLength": 720,
         "overtimeLength": 300,
         "totalPeriodCount": 4
       },
       "changes": {
         "changes": [
-          "time.played"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1767757850
+        "changeTimestamp": 1767758815
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14635540,
@@ -61175,7 +61209,6 @@
       },
       "slug": "capitanes-de-ciudad-de-mexico-texas-legends",
       "startTimestamp": 1767751200,
-      "lastPeriod": "period4",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -61288,10 +61321,11 @@
       },
       "customId": "oDcbsEzuh",
       "status": {
-        "code": 16,
-        "description": "4th quarter",
-        "type": "inprogress"
+        "code": 110,
+        "description": "AET",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Valley Suns",
         "slug": "valley-suns",
@@ -61361,32 +61395,44 @@
         }
       },
       "homeScore": {
-        "current": 96,
-        "display": 96,
+        "current": 109,
+        "display": 109,
         "period1": 27,
         "period2": 21,
         "period3": 34,
-        "period4": 14
+        "period4": 25,
+        "normaltime": 107,
+        "overtime": 2
       },
       "awayScore": {
-        "current": 98,
-        "display": 98,
+        "current": 114,
+        "display": 114,
         "period1": 23,
         "period2": 22,
         "period3": 24,
-        "period4": 29
+        "period4": 38,
+        "normaltime": 107,
+        "overtime": 7
       },
       "time": {
-        "played": 2596,
+        "played": 3600,
         "periodLength": 720,
         "overtimeLength": 300,
         "totalPeriodCount": 4
       },
       "changes": {
         "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.normaltime",
+          "awayScore.overtime",
           "time.played"
         ],
-        "changeTimestamp": 1767757850
+        "changeTimestamp": 1767759116
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -61402,7 +61448,6 @@
       },
       "slug": "valley-suns-oklahoma-city-blue",
       "startTimestamp": 1767751200,
-      "lastPeriod": "period4",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -61515,8 +61560,8 @@
       },
       "customId": "vDcbsqcic",
       "status": {
-        "code": 14,
-        "description": "2nd quarter",
+        "code": 16,
+        "description": "4th quarter",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -61589,31 +61634,32 @@
         }
       },
       "homeScore": {
-        "current": 56,
-        "display": 56,
+        "current": 87,
+        "display": 87,
         "period1": 33,
-        "period2": 23
+        "period2": 26,
+        "period3": 25,
+        "period4": 3
       },
       "awayScore": {
-        "current": 47,
-        "display": 47,
+        "current": 76,
+        "display": 76,
         "period1": 21,
-        "period2": 26
+        "period2": 29,
+        "period3": 22,
+        "period4": 4
       },
       "time": {
-        "played": 1314,
+        "played": 2290,
         "periodLength": 720,
         "overtimeLength": 300,
         "totalPeriodCount": 4
       },
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display",
-          "awayScore.current",
-          "awayScore.display"
+          "time.played"
         ],
-        "changeTimestamp": 1767757850
+        "changeTimestamp": 1767761104
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -61629,7 +61675,7 @@
       },
       "slug": "memphis-hustle-south-bay-lakers",
       "startTimestamp": 1767754800,
-      "lastPeriod": "period2",
+      "lastPeriod": "period4",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -67625,10 +67671,11 @@
       },
       "customId": "NMUbsBgWb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Austin Kangaroos",
         "slug": "austin-kangaroos",
@@ -67702,11 +67749,38 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 78,
+        "display": 78,
+        "period1": 39,
+        "period2": 39,
+        "normaltime": 78
+      },
+      "awayScore": {
+        "current": 77,
+        "display": 77,
+        "period1": 45,
+        "period2": 32,
+        "normaltime": 77
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1767757921
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -73795,10 +73869,11 @@
       },
       "customId": "Krwcsdtwc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Jefferson Rams",
         "slug": "jefferson-rams",
@@ -73866,11 +73941,38 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 73,
+        "display": 73,
+        "period1": 23,
+        "period2": 50,
+        "normaltime": 73
+      },
+      "awayScore": {
+        "current": 64,
+        "display": 64,
+        "period1": 31,
+        "period2": 33,
+        "normaltime": 64
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1767760785
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -74661,10 +74763,11 @@
       },
       "customId": "Trwcsrtwc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Shaw Bears",
         "slug": "shaw-bears",
@@ -74733,11 +74836,38 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 61,
+        "display": 61,
+        "period1": 26,
+        "period2": 35,
+        "normaltime": 61
+      },
+      "awayScore": {
+        "current": 75,
+        "display": 75,
+        "period1": 35,
+        "period2": 40,
+        "normaltime": 75
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1767760848
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -75456,10 +75586,11 @@
       },
       "customId": "ctWbsDpwc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Nebraska–Kearney Lopers",
         "slug": "nebraska-kearney-lopers",
@@ -75526,11 +75657,38 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 68,
+        "display": 68,
+        "period1": 37,
+        "period2": 31,
+        "normaltime": 68
+      },
+      "awayScore": {
+        "current": 67,
+        "display": 67,
+        "period1": 32,
+        "period2": 35,
+        "normaltime": 67
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1767760474
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -75873,10 +76031,11 @@
       },
       "customId": "MRnsDgK",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Air Force Falcons",
         "slug": "air-force-falcons",
@@ -75948,31 +76107,34 @@
         }
       },
       "homeScore": {
-        "current": 56,
-        "display": 56,
+        "current": 62,
+        "display": 62,
         "period1": 31,
-        "period2": 25
+        "period2": 31,
+        "normaltime": 62
       },
       "awayScore": {
-        "current": 96,
-        "display": 96,
+        "current": 99,
+        "display": 99,
         "period1": 45,
-        "period2": 51
+        "period2": 54,
+        "normaltime": 99
       },
       "time": {
-        "played": 2341,
+        "played": 2400,
         "periodLength": 1200,
         "overtimeLength": 300,
-        "totalPeriodCount": 2
+        "totalPeriodCount": 2,
+        "currentPeriodStartTimestamp": 1767757918
       },
       "changes": {
         "changes": [
-          "awayScore.current",
-          "awayScore.display"
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1767757860
+        "changeTimestamp": 1767759003
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
+      "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14862512,
       "periods": {
@@ -75983,7 +76145,6 @@
       },
       "slug": "air-force-falcons-utah-state-aggies",
       "startTimestamp": 1767751200,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -76093,10 +76254,11 @@
       },
       "customId": "fRnsxHJ",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Auburn Tigers",
         "slug": "auburn-tigers",
@@ -76168,30 +76330,37 @@
         }
       },
       "homeScore": {
-        "current": 67,
-        "display": 67,
+        "current": 88,
+        "display": 88,
         "period1": 47,
-        "period2": 20
+        "period2": 41,
+        "normaltime": 88
       },
       "awayScore": {
-        "current": 72,
-        "display": 72,
+        "current": 90,
+        "display": 90,
         "period1": 37,
-        "period2": 35
+        "period2": 53,
+        "normaltime": 90
       },
       "time": {
-        "played": 1936,
+        "played": 2400,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 2
       },
       "changes": {
         "changes": [
-          "time.played"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1767757861
+        "changeTimestamp": 1767760394
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14979030,
       "periods": {
@@ -76202,7 +76371,6 @@
       },
       "slug": "auburn-tigers-texas-a-and-m-aggies",
       "startTimestamp": 1767751200,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -76312,10 +76480,11 @@
       },
       "customId": "WRnsvCB",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Boston College Eagles",
         "slug": "boston-college-eagles",
@@ -76387,30 +76556,34 @@
         }
       },
       "homeScore": {
-        "current": 59,
-        "display": 59,
+        "current": 71,
+        "display": 71,
         "period1": 32,
-        "period2": 27
+        "period2": 39,
+        "normaltime": 71
       },
       "awayScore": {
-        "current": 70,
-        "display": 70,
+        "current": 79,
+        "display": 79,
         "period1": 40,
-        "period2": 30
+        "period2": 39,
+        "normaltime": 79
       },
       "time": {
-        "played": 2162,
+        "played": 2400,
         "periodLength": 1200,
         "overtimeLength": 300,
-        "totalPeriodCount": 2
+        "totalPeriodCount": 2,
+        "currentPeriodStartTimestamp": 1767758468
       },
       "changes": {
         "changes": [
-          "time.played"
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1767757860
+        "changeTimestamp": 1767759543
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14664795,
       "periods": {
@@ -76421,7 +76594,6 @@
       },
       "slug": "north-carolina-state-wolfpack-boston-college-eagles",
       "startTimestamp": 1767751200,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -76728,10 +76900,11 @@
       },
       "customId": "ozqsxCB",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Colorado State Rams",
         "slug": "colorado-state-rams",
@@ -76807,30 +76980,31 @@
         "current": 70,
         "display": 70,
         "period1": 30,
-        "period2": 40
+        "period2": 40,
+        "normaltime": 70
       },
       "awayScore": {
-        "current": 78,
-        "display": 78,
+        "current": 80,
+        "display": 80,
         "period1": 39,
-        "period2": 39
+        "period2": 41,
+        "normaltime": 80
       },
       "time": {
-        "played": 2357,
+        "played": 2400,
         "periodLength": 1200,
         "overtimeLength": 300,
-        "totalPeriodCount": 2
+        "totalPeriodCount": 2,
+        "currentPeriodStartTimestamp": 1767758052
       },
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display",
-          "awayScore.current",
-          "awayScore.display"
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1767757858
+        "changeTimestamp": 1767759184
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
+      "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14862601,
       "periods": {
@@ -76841,7 +77015,6 @@
       },
       "slug": "colorado-state-rams-new-mexico-lobos",
       "startTimestamp": 1767751200,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -76951,10 +77124,11 @@
       },
       "customId": "yzqsmLJ",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Houston Cougars",
         "slug": "houston-cougars",
@@ -77026,28 +77200,31 @@
         }
       },
       "homeScore": {
-        "current": 41,
-        "display": 41,
+        "current": 69,
+        "display": 69,
         "period1": 31,
-        "period2": 10
+        "period2": 38,
+        "normaltime": 69
       },
       "awayScore": {
-        "current": 44,
-        "display": 44,
+        "current": 65,
+        "display": 65,
         "period1": 31,
-        "period2": 13
+        "period2": 34,
+        "normaltime": 65
       },
       "time": {
-        "played": 1680,
+        "played": 2400,
         "periodLength": 1200,
         "overtimeLength": 300,
-        "totalPeriodCount": 2
+        "totalPeriodCount": 2,
+        "currentPeriodStartTimestamp": 1767760092
       },
       "changes": {
         "changes": [
-          "time.played"
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1767757798
+        "changeTimestamp": 1767761052
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -77061,7 +77238,6 @@
       },
       "slug": "texas-tech-red-raiders-houston-cougars",
       "startTimestamp": 1767751200,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -77171,8 +77347,8 @@
       },
       "customId": "JRnsWWJ",
       "status": {
-        "code": 7,
-        "description": "2nd half",
+        "code": 40,
+        "description": "Overtime",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -77246,19 +77422,21 @@
         }
       },
       "homeScore": {
-        "current": 56,
-        "display": 56,
+        "current": 95,
+        "display": 95,
         "period1": 41,
-        "period2": 15
+        "period2": 46,
+        "overtime": 8
       },
       "awayScore": {
-        "current": 69,
-        "display": 69,
+        "current": 91,
+        "display": 91,
         "period1": 36,
-        "period2": 33
+        "period2": 51,
+        "overtime": 4
       },
       "time": {
-        "played": 1797,
+        "played": 2615,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 2
@@ -77266,14 +77444,9 @@
       "changes": {
         "changes": [
           "homeScore.current",
-          "homeScore.display",
-          "homeScore.period2",
-          "awayScore.current",
-          "awayScore.display",
-          "awayScore.period2",
-          "time.played"
+          "homeScore.display"
         ],
-        "changeTimestamp": 1767757861
+        "changeTimestamp": 1767761057
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -77287,7 +77460,7 @@
       },
       "slug": "tcu-horned-frogs-kansas-jayhawks",
       "startTimestamp": 1767751200,
-      "lastPeriod": "period2",
+      "lastPeriod": "overtime",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -77397,10 +77570,11 @@
       },
       "customId": "qRnsIRn",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Tennessee Volunteers",
         "slug": "tennessee-volunteers",
@@ -77472,28 +77646,31 @@
         }
       },
       "homeScore": {
-        "current": 61,
-        "display": 61,
+        "current": 85,
+        "display": 85,
         "period1": 48,
-        "period2": 13
+        "period2": 37,
+        "normaltime": 85
       },
       "awayScore": {
-        "current": 45,
-        "display": 45,
+        "current": 71,
+        "display": 71,
         "period1": 33,
-        "period2": 12
+        "period2": 38,
+        "normaltime": 71
       },
       "time": {
-        "played": 1696,
+        "played": 2400,
         "periodLength": 1200,
         "overtimeLength": 300,
-        "totalPeriodCount": 2
+        "totalPeriodCount": 2,
+        "currentPeriodStartTimestamp": 1767760072
       },
       "changes": {
         "changes": [
-          "time.played"
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1767757678
+        "changeTimestamp": 1767761054
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -77507,7 +77684,6 @@
       },
       "slug": "tennessee-volunteers-texas-longhorns",
       "startTimestamp": 1767751200,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -77617,10 +77793,11 @@
       },
       "customId": "BRnsjTn",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Wisconsin Badgers",
         "slug": "wisconsin-badgers",
@@ -77693,36 +77870,34 @@
         }
       },
       "homeScore": {
-        "current": 74,
-        "display": 74,
+        "current": 80,
+        "display": 80,
         "period1": 45,
-        "period2": 29
+        "period2": 35,
+        "normaltime": 80
       },
       "awayScore": {
-        "current": 61,
-        "display": 61,
+        "current": 72,
+        "display": 72,
         "period1": 31,
-        "period2": 30
+        "period2": 41,
+        "normaltime": 72
       },
       "time": {
-        "played": 2195,
+        "played": 2400,
         "periodLength": 1200,
         "overtimeLength": 300,
-        "totalPeriodCount": 2
+        "totalPeriodCount": 2,
+        "currentPeriodStartTimestamp": 1767759007
       },
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display",
-          "homeScore.period2",
-          "awayScore.current",
-          "awayScore.display",
-          "awayScore.period2",
-          "time.played"
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1767757859
+        "changeTimestamp": 1767760088
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
+      "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14756999,
       "periods": {
@@ -77733,7 +77908,6 @@
       },
       "slug": "wisconsin-badgers-ucla-bruins",
       "startTimestamp": 1767751200,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -77843,8 +78017,8 @@
       },
       "customId": "kIJsRTJ",
       "status": {
-        "code": 31,
-        "description": "Halftime",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -77918,28 +78092,28 @@
         }
       },
       "homeScore": {
-        "current": 24,
-        "display": 24,
-        "period1": 24
+        "current": 55,
+        "display": 55,
+        "period1": 24,
+        "period2": 31
       },
       "awayScore": {
-        "current": 37,
-        "display": 37,
-        "period1": 37
+        "current": 70,
+        "display": 70,
+        "period1": 37,
+        "period2": 33
       },
       "time": {
-        "played": 1200,
+        "played": 2238,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 2
       },
       "changes": {
         "changes": [
-          "status.code",
-          "status.description",
           "time.played"
         ],
-        "changeTimestamp": 1767757378
+        "changeTimestamp": 1767761058
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -77952,6 +78126,7 @@
       },
       "slug": "san-jose-state-spartans-fresno-state-bulldogs",
       "startTimestamp": 1767754800,
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -78061,8 +78236,8 @@
       },
       "customId": "jzqsvKJ",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -78136,27 +78311,29 @@
         }
       },
       "homeScore": {
-        "current": 33,
-        "display": 33,
-        "period1": 33
+        "current": 63,
+        "display": 63,
+        "period1": 48,
+        "period2": 15
       },
       "awayScore": {
-        "current": 17,
-        "display": 17,
-        "period1": 17
+        "current": 41,
+        "display": 41,
+        "period1": 26,
+        "period2": 15
       },
       "time": {
-        "played": 800,
+        "played": 1587,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 2
       },
       "changes": {
         "changes": [
-          "awayScore.current",
-          "awayScore.display"
+          "homeScore.current",
+          "homeScore.display"
         ],
-        "changeTimestamp": 1767757862
+        "changeTimestamp": 1767761058
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -78169,7 +78346,7 @@
       },
       "slug": "wyoming-cowboys-unlv-runnin-rebels",
       "startTimestamp": 1767754800,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -78873,9 +79050,9 @@
       },
       "customId": "qzqsgHJ",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Nevada Wolf Pack",
@@ -78948,11 +79125,28 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 26,
+        "display": 26,
+        "period1": 26
+      },
+      "awayScore": {
+        "current": 21,
+        "display": 21,
+        "period1": 21
+      },
+      "time": {
+        "played": 760,
+        "periodLength": 1200,
+        "overtimeLength": 300,
+        "totalPeriodCount": 2
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.current",
+          "homeScore.display"
+        ],
+        "changeTimestamp": 1767761059
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -78965,6 +79159,7 @@
       },
       "slug": "nevada-wolf-pack-san-diego-state-aztecs",
       "startTimestamp": 1767758400,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -124294,8 +124489,8 @@
       },
       "customId": "IGZbsGxic",
       "status": {
-        "code": 31,
-        "description": "Halftime",
+        "code": 16,
+        "description": "4th quarter",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -124371,30 +124566,33 @@
         }
       },
       "homeScore": {
-        "current": 37,
-        "display": 37,
+        "current": 66,
+        "display": 66,
         "period1": 23,
-        "period2": 14
+        "period2": 14,
+        "period3": 21,
+        "period4": 8
       },
       "awayScore": {
-        "current": 21,
-        "display": 21,
+        "current": 60,
+        "display": 60,
         "period1": 9,
-        "period2": 12
+        "period2": 12,
+        "period3": 24,
+        "period4": 15
       },
       "time": {
-        "played": 1200,
+        "played": 2183,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
       },
       "changes": {
         "changes": [
-          "status.code",
-          "status.description",
-          "time.played"
+          "awayScore.current",
+          "awayScore.display"
         ],
-        "changeTimestamp": 1767757538
+        "changeTimestamp": 1767761094
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -124409,6 +124607,7 @@
       },
       "slug": "usc-trojans-oregon-ducks",
       "startTimestamp": 1767754800,
+      "lastPeriod": "period4",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -127541,10 +127740,11 @@
       },
       "customId": "NywcsbWIc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Endicott Gulls",
         "slug": "endicott-gulls",
@@ -127612,11 +127812,38 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 73,
+        "display": 73,
+        "period1": 35,
+        "period2": 38,
+        "normaltime": 73
+      },
+      "awayScore": {
+        "current": 58,
+        "display": 58,
+        "period1": 30,
+        "period2": 28,
+        "normaltime": 58
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1767757921
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
