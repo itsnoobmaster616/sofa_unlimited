@@ -4765,7 +4765,7 @@
         ],
         "changeTimestamp": 1767906378
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14210669,
@@ -7131,7 +7131,7 @@
         ],
         "changeTimestamp": 1767906837
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14698256,
@@ -12675,9 +12675,9 @@
       },
       "customId": "tYKspBzc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 30,
+        "description": "Pause",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Unifacisa",
@@ -12749,13 +12749,31 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 27,
+        "display": 27,
+        "period1": 27
+      },
+      "awayScore": {
+        "current": 17,
+        "display": 17,
+        "period1": 17
+      },
+      "time": {
+        "played": 600,
+        "periodLength": 600,
+        "overtimeLength": 300,
+        "totalPeriodCount": 4
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description"
+        ],
+        "changeTimestamp": 1767911184
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15204140,
       "periods": {
@@ -35661,7 +35679,7 @@
         ],
         "changeTimestamp": 1767905497
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15253273,
@@ -39969,10 +39987,11 @@
       },
       "customId": "KzijsaTmj",
       "status": {
-        "code": 30,
-        "description": "Pause",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "TalTech U14",
         "slug": "taltech-u14",
@@ -40054,9 +40073,10 @@
       "changes": {
         "changes": [
           "status.code",
-          "status.description"
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1767888512
+        "changeTimestamp": 1767908991
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -42866,8 +42886,8 @@
       },
       "customId": "RRmjsknpj",
       "status": {
-        "code": 14,
-        "description": "2nd quarter",
+        "code": 15,
+        "description": "3rd quarter",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -42922,29 +42942,34 @@
         }
       },
       "homeScore": {
-        "current": 32,
-        "display": 32,
+        "current": 45,
+        "display": 45,
         "period1": 21,
-        "period2": 11
+        "period2": 19,
+        "period3": 5
       },
       "awayScore": {
-        "current": 28,
-        "display": 28,
+        "current": 55,
+        "display": 55,
         "period1": 18,
-        "period2": 10
+        "period2": 26,
+        "period3": 11
       },
       "coverage": -1,
       "time": {
-        "played": 860,
+        "played": 1472,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
       },
       "changes": {
         "changes": [
-          "time.played"
+          "awayScore.current",
+          "awayScore.display",
+          "time.played",
+          "awayScore.period3"
         ],
-        "changeTimestamp": 1767908745
+        "changeTimestamp": 1767911187
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -42960,7 +42985,7 @@
       },
       "slug": "international-mvp-academy-u20-the-sheffield-college-u20",
       "startTimestamp": 1767902400,
-      "lastPeriod": "period2",
+      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -46238,10 +46263,11 @@
       },
       "customId": "bwkjsdwkj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Ecofan Cerignola",
         "slug": "ecofan-cerignola",
@@ -46298,12 +46324,47 @@
           "text": "#ffffff"
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 59,
+        "display": 59,
+        "period1": 18,
+        "period2": 13,
+        "period3": 17,
+        "period4": 11,
+        "normaltime": 59
+      },
+      "awayScore": {
+        "current": 54,
+        "display": 54,
+        "period1": 13,
+        "period2": 18,
+        "period3": 12,
+        "period4": 11,
+        "normaltime": 54
+      },
       "coverage": -1,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.period3",
+          "homeScore.period4",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.period3",
+          "awayScore.period4",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1767910616
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -46318,7 +46379,7 @@
       },
       "slug": "ecofan-cerignola-sunshine-vieste",
       "startTimestamp": 1767902400,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
       "eventFilters": {
@@ -122531,9 +122592,9 @@
       },
       "customId": "UTJsMkLb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Fairleigh Dickinson Knights",
@@ -122606,11 +122667,30 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 14,
+        "display": 14,
+        "period1": 14
+      },
+      "awayScore": {
+        "current": 7,
+        "display": 7,
+        "period1": 7
+      },
+      "time": {
+        "played": 609,
+        "periodLength": 1200,
+        "overtimeLength": 300,
+        "totalPeriodCount": 2
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "time.played"
+        ],
+        "changeTimestamp": 1767911167
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -122623,6 +122703,7 @@
       },
       "slug": "fairleigh-dickinson-knights-chicago-state-cougars",
       "startTimestamp": 1767909600,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -152460,10 +152541,11 @@
       },
       "customId": "xwicsKzjc",
       "status": {
-        "code": 15,
-        "description": "3rd quarter",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Texas A&M-Commerce Lions",
         "slug": "texas-a-and-m-commerce-lions",
@@ -152538,33 +152620,38 @@
         }
       },
       "homeScore": {
-        "current": 45,
-        "display": 45,
+        "current": 65,
+        "display": 65,
         "period1": 16,
         "period2": 18,
-        "period3": 11
+        "period3": 13,
+        "period4": 18,
+        "normaltime": 65
       },
       "awayScore": {
-        "current": 41,
-        "display": 41,
+        "current": 60,
+        "display": 60,
         "period1": 10,
         "period2": 19,
-        "period3": 12
+        "period3": 12,
+        "period4": 19,
+        "normaltime": 60
       },
       "time": {
-        "played": 1661,
+        "played": 2400,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
       },
       "changes": {
         "changes": [
-          "awayScore.current",
-          "awayScore.display",
-          "awayScore.period3",
-          "time.played"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1767908774
+        "changeTimestamp": 1767911118
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -152579,7 +152666,6 @@
       },
       "slug": "texas-a-and-m-commerce-lions-texas-a-and-m-corpus-christi-islanders",
       "startTimestamp": 1767904200,
-      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -152684,9 +152770,9 @@
       },
       "customId": "JuicsFvic",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 14,
+        "description": "2nd quarter",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Liberty Lady Flames",
@@ -152760,11 +152846,37 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 11,
+        "display": 11,
+        "period1": 8,
+        "period2": 3
+      },
+      "awayScore": {
+        "current": 15,
+        "display": 15,
+        "period1": 13,
+        "period2": 2
+      },
+      "time": {
+        "played": 661,
+        "periodLength": 600,
+        "overtimeLength": 300,
+        "totalPeriodCount": 4
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period2",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period2",
+          "time.played"
+        ],
+        "changeTimestamp": 1767911177
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -152779,6 +152891,7 @@
       },
       "slug": "liberty-lady-flames-sam-houston-state-bearkats",
       "startTimestamp": 1767909600,
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -152883,9 +152996,9 @@
       },
       "customId": "NwicsWzic",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 14,
+        "description": "2nd quarter",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Morehead State Eagles",
@@ -152956,11 +153069,35 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 31,
+        "display": 31,
+        "period1": 25,
+        "period2": 6
+      },
+      "awayScore": {
+        "current": 16,
+        "display": 16,
+        "period1": 12,
+        "period2": 4
+      },
+      "time": {
+        "played": 689,
+        "periodLength": 600,
+        "overtimeLength": 300,
+        "totalPeriodCount": 4
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period2",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period2",
+          "time.played"
+        ],
+        "changeTimestamp": 1767911177
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -152975,6 +153112,7 @@
       },
       "slug": "morehead-state-eagles-tennessee-martin-skyhawks",
       "startTimestamp": 1767909600,
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -171390,10 +171528,11 @@
       },
       "customId": "JCLbsxDLb",
       "status": {
-        "code": 16,
-        "description": "4th quarter",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Miami Florida Hurricanes",
         "slug": "miami-florida-hurricanes",
@@ -171463,34 +171602,39 @@
         }
       },
       "homeScore": {
-        "current": 61,
-        "display": 61,
+        "current": 68,
+        "display": 68,
         "period1": 14,
         "period2": 21,
         "period3": 12,
-        "period4": 14
+        "period4": 21,
+        "normaltime": 68
       },
       "awayScore": {
-        "current": 73,
-        "display": 73,
+        "current": 77,
+        "display": 77,
         "period1": 17,
         "period2": 16,
         "period3": 27,
-        "period4": 13
+        "period4": 17,
+        "normaltime": 77
       },
       "time": {
-        "played": 2159,
+        "played": 2400,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
       },
       "changes": {
         "changes": [
-          "time.played"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1767908775
+        "changeTimestamp": 1767909375
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
+      "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14619741,
       "periods": {
@@ -171503,7 +171647,6 @@
       },
       "slug": "miami-florida-hurricanes-louisville-cardinals",
       "startTimestamp": 1767902400,
-      "lastPeriod": "period4",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
