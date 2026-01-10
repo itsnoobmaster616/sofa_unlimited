@@ -4242,10 +4242,11 @@
       },
       "customId": "uBaeswkxi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 1001,
+        "description": "First game",
+        "type": "inprogress"
       },
+      "winnerCode": 3,
       "homeTeam": {
         "name": "regain",
         "slug": "regain",
@@ -4312,12 +4313,30 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
       "coverage": 91,
-      "time": {},
+      "time": {
+        "currentPeriodStartTimestamp": 1768080960
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "homeScore.display",
+          "awayScore.display",
+          "time.currentPeriodStart",
+          "status.type",
+          "homeScore.current",
+          "awayScore.current"
+        ],
+        "changeTimestamp": 1768080968
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
@@ -4326,7 +4345,7 @@
       "eventType": "best_of",
       "roundsInAHalf": 12,
       "slug": "marsborne-regain",
-      "startTimestamp": 1768080000,
+      "startTimestamp": 1768080600,
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
