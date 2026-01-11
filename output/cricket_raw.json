@@ -2599,9 +2599,9 @@
       },
       "customId": "hFpdsjFpd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 21,
+        "description": "1st Inning",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Otago Sparks",
@@ -2665,12 +2665,38 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 4,
+        "display": 4,
+        "innings": {
+          "inning1": {
+            "score": 4,
+            "wickets": 0,
+            "overs": 0.2,
+            "runRate": 12
+          }
+        }
+      },
       "coverage": 2,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status",
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.innings",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.innings"
+        ],
+        "changeTimestamp": 1768174934
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -2685,6 +2711,7 @@
         "inning3": "3rd Inning",
         "inning4": "4th Inning"
       },
+      "lastPeriod": "inning1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -7689,7 +7716,6 @@
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15153274,
       "note": "Sri Lanka beat Pakistan by 14 runs",
-      "currentBattingTeamId": 187754,
       "endTimestamp": 1768155600,
       "slug": "sri-lanka-pakistan",
       "startTimestamp": 1768138200,
