@@ -643,9 +643,9 @@
       },
       "customId": "jfAbsofAb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 80,
+        "description": "Interrupted",
+        "type": "interrupted"
       },
       "homeTeam": {
         "name": "Sydney Sixers",
@@ -722,12 +722,31 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 32,
+        "display": 32,
+        "innings": {
+          "inning1": {
+            "score": 32,
+            "wickets": 0,
+            "overs": 5,
+            "runRate": 6.4
+          }
+        }
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
       "coverage": 1,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type"
+        ],
+        "changeTimestamp": 1768102274
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -2005,9 +2024,9 @@
       },
       "customId": "DfAbsXLWb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 21,
+        "description": "1st Inning",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Wellington Firebirds",
@@ -2079,16 +2098,36 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 71,
+        "display": 71,
+        "innings": {
+          "inning1": {
+            "score": 71,
+            "wickets": 1,
+            "overs": 7.3,
+            "runRate": 9.47
+          }
+        }
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
       "coverage": 2,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.innings"
+        ],
+        "changeTimestamp": 1768104074
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14468830,
+      "currentBattingTeamId": 241847,
       "endTimestamp": 1768116300,
       "slug": "wellington-firebirds-northern-districts",
       "startTimestamp": 1768101900,
@@ -2099,6 +2138,7 @@
         "inning3": "3rd Inning",
         "inning4": "4th Inning"
       },
+      "lastPeriod": "inning1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -2380,10 +2420,11 @@
       },
       "customId": "gFpdsiFpd",
       "status": {
-        "code": 21,
-        "description": "1st Inning",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Wellington Blaze",
         "slug": "wellington-blaze",
@@ -2459,14 +2500,14 @@
         }
       },
       "awayScore": {
-        "current": 119,
-        "display": 119,
+        "current": 162,
+        "display": 162,
         "innings": {
           "inning1": {
-            "score": 119,
-            "wickets": 3,
-            "overs": 16.1,
-            "runRate": 7.36,
+            "score": 162,
+            "wickets": 8,
+            "overs": 20,
+            "runRate": 8.1,
             "targetRunRate": 8.3
           }
         }
@@ -2475,17 +2516,18 @@
       "time": {},
       "changes": {
         "changes": [
-          "awayScore.current",
-          "awayScore.display",
-          "awayScore.innings"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1768098015
+        "changeTimestamp": 1768099458
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14468829,
+      "note": "Wellington Blaze beat Northern Brave Women by 3 runs",
       "currentBattingTeamId": 414006,
-      "endTimestamp": 1768102800,
+      "endTimestamp": 1768099380,
       "slug": "wellington-blaze-northern-brave-women",
       "startTimestamp": 1768088400,
       "periods": {
@@ -2495,7 +2537,6 @@
         "inning3": "3rd Inning",
         "inning4": "4th Inning"
       },
-      "lastPeriod": "inning1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
