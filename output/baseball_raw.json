@@ -819,7 +819,7 @@
         "inning9": "9th Inning",
         "extra1": "10th Inning"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -1124,10 +1124,11 @@
       },
       "customId": "NXYdsPXYd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Cangrejeros de Santurce",
         "slug": "cangrejeros-de-santurce",
@@ -1196,11 +1197,30 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 5,
+        "display": 5,
+        "normaltime": 5
+      },
+      "awayScore": {
+        "current": 4,
+        "display": 4,
+        "normaltime": 4
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1768280329
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
