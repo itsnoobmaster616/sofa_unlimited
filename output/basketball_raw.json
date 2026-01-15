@@ -12695,11 +12695,23 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.current",
+          "homeScore.display",
+          "awayScore.current",
+          "awayScore.display"
+        ],
+        "changeTimestamp": 1768472955
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -13031,10 +13043,11 @@
       },
       "customId": "UQYsiRY",
       "status": {
-        "code": 16,
-        "description": "4th quarter",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Perth Lynx",
         "slug": "perth-lynx",
@@ -13106,35 +13119,37 @@
         }
       },
       "homeScore": {
-        "current": 74,
-        "display": 74,
+        "current": 85,
+        "display": 85,
         "period1": 22,
         "period2": 18,
         "period3": 26,
-        "period4": 8
+        "period4": 19,
+        "normaltime": 85
       },
       "awayScore": {
-        "current": 75,
-        "display": 75,
+        "current": 81,
+        "display": 81,
         "period1": 30,
         "period2": 22,
         "period3": 17,
-        "period4": 6
+        "period4": 12,
+        "normaltime": 81
       },
       "time": {
-        "played": 2079,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
       },
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display",
-          "homeScore.period4",
-          "time.played"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1768469555
+        "changeTimestamp": 1768470795
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -13150,7 +13165,6 @@
       },
       "slug": "perth-lynx-bendigo-spirit",
       "startTimestamp": 1768464000,
-      "lastPeriod": "period4",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -20941,8 +20955,8 @@
       },
       "customId": "BZwcsmDoj",
       "status": {
-        "code": 13,
-        "description": "1st quarter",
+        "code": 15,
+        "description": "3rd quarter",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -21008,26 +21022,34 @@
         }
       },
       "homeScore": {
-        "current": 14,
-        "display": 14,
-        "period1": 14,
-        "normaltime": 14
+        "current": 48,
+        "display": 48,
+        "period1": 24,
+        "period2": 15,
+        "period3": 9,
+        "normaltime": 48
       },
       "awayScore": {
-        "current": 11,
-        "display": 11,
-        "period1": 11,
-        "normaltime": 11
+        "current": 42,
+        "display": 42,
+        "period1": 12,
+        "period2": 22,
+        "period3": 8,
+        "normaltime": 42
       },
       "time": {},
       "changes": {
         "changes": [
           "awayScore.current",
           "awayScore.display",
-          "awayScore.period1",
-          "awayScore.normaltime"
+          "awayScore.period3",
+          "awayScore.normaltime",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period3",
+          "homeScore.normaltime"
         ],
-        "changeTimestamp": 1768469586
+        "changeTimestamp": 1768472914
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -21042,7 +21064,7 @@
       },
       "slug": "keelung-black-kites-bank-of-taiwan",
       "startTimestamp": 1768467600,
-      "lastPeriod": "period1",
+      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -23108,13 +23130,215 @@
         "id": 77489
       },
       "roundInfo": {
-        "round": 16
+        "round": 7
       },
       "customId": "kUYseCwh",
       "status": {
         "code": 0,
         "description": "Not started",
         "type": "notstarted"
+      },
+      "homeTeam": {
+        "name": "CZ.Academy",
+        "slug": "czacademy",
+        "shortName": "CZ.Academy",
+        "gender": "M",
+        "sport": {
+          "name": "Basketball",
+          "slug": "basketball",
+          "id": 2
+        },
+        "userCount": 36,
+        "nameCode": "CZ.",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "id": 928854,
+        "country": {
+          "alpha2": "CZ",
+          "alpha3": "CZE",
+          "name": "Czechia",
+          "slug": "czechia"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "سي زد أكاديمية"
+          },
+          "shortNameTranslation": {
+            "ar": "سي زد أكاديمية"
+          }
+        }
+      },
+      "awayTeam": {
+        "name": "Slavoj BK Litoměřice",
+        "slug": "slavoj-bk-litomerice",
+        "shortName": "Slavoj Litoměřice",
+        "gender": "M",
+        "sport": {
+          "name": "Basketball",
+          "slug": "basketball",
+          "id": 2
+        },
+        "userCount": 46,
+        "nameCode": "LIT",
+        "national": false,
+        "type": 0,
+        "id": 122210,
+        "country": {
+          "alpha2": "CZ",
+          "alpha3": "CZE",
+          "name": "Czechia",
+          "slug": "czechia"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "سلافوي بي كيه ليتوميريتسه",
+            "ru": "Славой БК Литомержице"
+          },
+          "shortNameTranslation": {
+            "ar": "سلافوي ليتوميريتسه"
+          }
+        }
+      },
+      "homeScore": {},
+      "awayScore": {},
+      "time": {},
+      "changes": {
+        "changeTimestamp": 0
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 15374378,
+      "periods": {
+        "current": "Score",
+        "period1": "1st quarter",
+        "period2": "2nd quarter",
+        "period3": "3rd quarter",
+        "period4": "4th quarter",
+        "overtime": "Overtime"
+      },
+      "slug": "czacademy-slavoj-bk-litomerice",
+      "startTimestamp": 1768501800,
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "isEditor": false,
+      "eventFilters": {
+        "category": [
+          "club"
+        ],
+        "level": [
+          "pro"
+        ],
+        "gender": [
+          "M"
+        ]
+      }
+    },
+    {
+      "tournament": {
+        "name": "1. Liga, Group West",
+        "slug": "1-liga-group-west",
+        "category": {
+          "name": "Czech Republic",
+          "slug": "czech-republic",
+          "sport": {
+            "name": "Basketball",
+            "slug": "basketball",
+            "id": 2
+          },
+          "id": 154,
+          "country": {
+            "alpha2": "CZ",
+            "alpha3": "CZE",
+            "name": "Czechia",
+            "slug": "czechia"
+          },
+          "flag": "czech-republic",
+          "alpha2": "CZ",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "التشيك"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "1. Liga",
+          "slug": "1-liga",
+          "category": {
+            "name": "Czech Republic",
+            "slug": "czech-republic",
+            "sport": {
+              "name": "Basketball",
+              "slug": "basketball",
+              "id": 2
+            },
+            "id": 154,
+            "country": {
+              "alpha2": "CZ",
+              "alpha3": "CZE",
+              "name": "Czechia",
+              "slug": "czechia"
+            },
+            "flag": "czech-republic",
+            "alpha2": "CZ",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "التشيك"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 89,
+          "hasPerformanceGraphFeature": false,
+          "id": 1482,
+          "country": {},
+          "hasEventPlayerStatistics": false,
+          "hasBoxScore": true,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "الدوري التشيكي الدرجة الأولى لكرة السلة"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "groupName": "Group West",
+        "id": 38778,
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "الدوري 1، المجموعة الغربية"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "season": {
+        "name": "1. Liga 25/26",
+        "year": "25/26",
+        "editor": false,
+        "id": 77489
+      },
+      "roundInfo": {
+        "round": 16
+      },
+      "customId": "kUYseCwh",
+      "status": {
+        "code": 60,
+        "description": "Postponed",
+        "type": "postponed"
       },
       "homeTeam": {
         "name": "Slavoj BK Litoměřice",
@@ -23194,7 +23418,12 @@
       "awayScore": {},
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type"
+        ],
+        "changeTimestamp": 1768469654
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -58932,7 +59161,7 @@
       },
       "slug": "san-miguel-beermen-barangay-ginebra-san-miguel",
       "previousLegEventId": 15328829,
-      "startTimestamp": 1768554900,
+      "startTimestamp": 1768563000,
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -72550,9 +72779,9 @@
       },
       "customId": "DAabsNAab",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 14,
+        "description": "2nd quarter",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Goyang Sono Skygunners",
@@ -72630,11 +72859,33 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 35,
+        "display": 35,
+        "period1": 32,
+        "period2": 3
+      },
+      "awayScore": {
+        "current": 19,
+        "display": 19,
+        "period1": 14,
+        "period2": 5
+      },
+      "time": {
+        "played": 691,
+        "periodLength": 600,
+        "overtimeLength": 300,
+        "totalPeriodCount": 4,
+        "currentPeriodStartTimestamp": 1768472869
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period2",
+          "time.played"
+        ],
+        "changeTimestamp": 1768473027
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -72649,6 +72900,7 @@
       },
       "slug": "goyang-sono-skygunners-wonju-db-promy",
       "startTimestamp": 1768471200,
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -72752,9 +73004,9 @@
       },
       "customId": "JAabsLAab",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 14,
+        "description": "2nd quarter",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Seoul SK Knights",
@@ -72835,11 +73087,33 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 30,
+        "display": 30,
+        "period1": 20,
+        "period2": 10
+      },
+      "awayScore": {
+        "current": 22,
+        "display": 22,
+        "period1": 16,
+        "period2": 6
+      },
+      "time": {
+        "played": 825,
+        "periodLength": 600,
+        "overtimeLength": 300,
+        "totalPeriodCount": 4,
+        "currentPeriodStartTimestamp": 1768472557
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period2",
+          "time.played"
+        ],
+        "changeTimestamp": 1768473027
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -72854,6 +73128,7 @@
       },
       "slug": "changwon-lg-sakers-seoul-sk-knights",
       "startTimestamp": 1768471200,
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
