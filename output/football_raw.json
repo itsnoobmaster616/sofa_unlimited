@@ -1335,7 +1335,7 @@
         ],
         "changeTimestamp": 1768513365
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasXg": true,
       "hasEventPlayerStatistics": true,
       "hasEventPlayerHeatMap": true,
@@ -8184,7 +8184,7 @@
         ],
         "changeTimestamp": 1768514211
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
       "hasEventPlayerHeatMap": true,
       "detailId": 1,
@@ -10291,9 +10291,9 @@
       },
       "customId": "hOsZO",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Red Bull Bragantino",
@@ -10371,14 +10371,32 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1768516255,
+        "initial": 0,
+        "max": 2700,
+        "extra": 540
+      },
       "changes": {
         "changes": [
-          "cardsCode"
+          "homeScore.period1",
+          "homeScore.normaltime",
+          "awayScore.period1",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1768513500
+        "changeTimestamp": 1768516320
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -10386,8 +10404,20 @@
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15176519,
+      "varInProgress": {
+        "homeTeam": false,
+        "awayTeam": false
+      },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1768516255,
+        "extra": 540
+      },
       "slug": "red-bull-bragantino-corinthians",
       "startTimestamp": 1768516200,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -18220,8 +18250,8 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
+        "current": 1,
+        "display": 1,
         "period1": 0,
         "normaltime": 0
       },
@@ -18239,10 +18269,10 @@
       },
       "changes": {
         "changes": [
-          "awayScore.current",
-          "awayScore.display"
+          "homeScore.current",
+          "homeScore.display"
         ],
-        "changeTimestamp": 1768515620
+        "changeTimestamp": 1768517302
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -19542,25 +19572,23 @@
         "normaltime": 0
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0,
-        "normaltime": 0
+        "current": 1,
+        "display": 1,
+        "period1": 1,
+        "normaltime": 1
       },
       "time": {
+        "injuryTime1": 4,
         "currentPeriodStartTimestamp": 1768514412,
         "initial": 0,
         "max": 2700,
-        "extra": 540
+        "extra": 780
       },
       "changes": {
         "changes": [
-          "homeScore.period1",
-          "homeScore.normaltime",
-          "awayScore.period1",
-          "awayScore.normaltime"
+          "time.injuryTime1"
         ],
-        "changeTimestamp": 1768514493
+        "changeTimestamp": 1768517168
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -19577,7 +19605,7 @@
         "initial": 0,
         "max": 2700,
         "timestamp": 1768514412,
-        "extra": 540
+        "extra": 780
       },
       "slug": "monsoon-internacional",
       "startTimestamp": 1768514400,
@@ -19788,20 +19816,9 @@
       },
       "changes": {
         "changes": [
-          "homeScore.period1",
-          "homeScore.normaltime",
-          "awayScore.period1",
-          "awayScore.normaltime",
-          "status.code",
-          "status.description",
-          "status.type",
-          "homeScore.current",
-          "homeScore.display",
-          "awayScore.current",
-          "awayScore.display",
-          "time.currentPeriodStart"
+          "eventState.statusIndicator"
         ],
-        "changeTimestamp": 1768514448
+        "changeTimestamp": 1768516569
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -24604,6 +24621,414 @@
     },
     {
       "tournament": {
+        "name": "Pro League",
+        "slug": "persian-gulf-pro-league",
+        "category": {
+          "name": "Iran",
+          "slug": "iran",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "id": 301,
+          "country": {
+            "alpha2": "IR",
+            "alpha3": "IRN",
+            "name": "Iran",
+            "slug": "iran"
+          },
+          "flag": "iran",
+          "alpha2": "IR",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "إيران"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "Persian Gulf Pro League",
+          "slug": "persian-gulf-pro-league",
+          "category": {
+            "name": "Iran",
+            "slug": "iran",
+            "sport": {
+              "name": "Football",
+              "slug": "football",
+              "id": 1
+            },
+            "id": 301,
+            "country": {
+              "alpha2": "IR",
+              "alpha3": "IRN",
+              "name": "Iran",
+              "slug": "iran"
+            },
+            "flag": "iran",
+            "alpha2": "IR",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "إيران"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 9777,
+          "hasPerformanceGraphFeature": false,
+          "id": 915,
+          "country": {},
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "دوري الخليج الفارسي للمحترفين",
+              "hi": "पर्शियन गल्फ प्रो लीग",
+              "bn": "পার্সিয়ান গাল্ফ প্রো লীগ"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "id": 3625,
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "دوري المحترفين",
+            "hi": "प्रो लीग",
+            "bn": "প্রো লীগ"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "season": {
+        "name": "Pro League 25/26",
+        "year": "25/26",
+        "editor": false,
+        "seasonCoverageInfo": {
+          "editorCoverageLevel": 5
+        },
+        "id": 79503
+      },
+      "roundInfo": {
+        "round": 16
+      },
+      "customId": "dzwsKADd",
+      "status": {
+        "code": 0,
+        "description": "Not started",
+        "type": "notstarted"
+      },
+      "homeTeam": {
+        "name": "Foolad Khuzestan",
+        "slug": "foolad-khuzestan",
+        "shortName": "Foolad",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 4342,
+        "nameCode": "FOO",
+        "national": false,
+        "type": 0,
+        "id": 53703,
+        "country": {
+          "alpha2": "IR",
+          "alpha3": "IRN",
+          "name": "Iran",
+          "slug": "iran"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "فولاد خوزستان",
+            "ru": "Фулад Хузестан ФК"
+          },
+          "shortNameTranslation": {
+            "ar": "فولاد"
+          }
+        }
+      },
+      "awayTeam": {
+        "name": "Chador Malu Yazd",
+        "slug": "chador-malu-yazd",
+        "shortName": "Chador Malu Yazd",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 3613,
+        "nameCode": "CMY",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "id": 446285,
+        "country": {
+          "alpha2": "IR",
+          "alpha3": "IRN",
+          "name": "Iran",
+          "slug": "iran"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "تشادور مالو يزد"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "homeScore": {},
+      "awayScore": {},
+      "time": {},
+      "changes": {
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type"
+        ],
+        "changeTimestamp": 1768517209
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 15166700,
+      "slug": "chador-malu-yazd-foolad-khuzestan",
+      "startTimestamp": 1768559400,
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "isEditor": false,
+      "eventFilters": {
+        "category": [
+          "club"
+        ],
+        "level": [
+          "pro"
+        ],
+        "gender": [
+          "M"
+        ]
+      }
+    },
+    {
+      "tournament": {
+        "name": "Pro League",
+        "slug": "persian-gulf-pro-league",
+        "category": {
+          "name": "Iran",
+          "slug": "iran",
+          "sport": {
+            "name": "Football",
+            "slug": "football",
+            "id": 1
+          },
+          "id": 301,
+          "country": {
+            "alpha2": "IR",
+            "alpha3": "IRN",
+            "name": "Iran",
+            "slug": "iran"
+          },
+          "flag": "iran",
+          "alpha2": "IR",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "إيران"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "Persian Gulf Pro League",
+          "slug": "persian-gulf-pro-league",
+          "category": {
+            "name": "Iran",
+            "slug": "iran",
+            "sport": {
+              "name": "Football",
+              "slug": "football",
+              "id": 1
+            },
+            "id": 301,
+            "country": {
+              "alpha2": "IR",
+              "alpha3": "IRN",
+              "name": "Iran",
+              "slug": "iran"
+            },
+            "flag": "iran",
+            "alpha2": "IR",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "إيران"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 9777,
+          "hasPerformanceGraphFeature": false,
+          "id": 915,
+          "country": {},
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "دوري الخليج الفارسي للمحترفين",
+              "hi": "पर्शियन गल्फ प्रो लीग",
+              "bn": "পার্সিয়ান গাল্ফ প্রো লীগ"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "id": 3625,
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "دوري المحترفين",
+            "hi": "प्रो लीग",
+            "bn": "প্রো লীগ"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "season": {
+        "name": "Pro League 25/26",
+        "year": "25/26",
+        "editor": false,
+        "seasonCoverageInfo": {
+          "editorCoverageLevel": 5
+        },
+        "id": 79503
+      },
+      "roundInfo": {
+        "round": 16
+      },
+      "customId": "DLpstyE",
+      "status": {
+        "code": 0,
+        "description": "Not started",
+        "type": "notstarted"
+      },
+      "homeTeam": {
+        "name": "Paykan",
+        "slug": "paykan",
+        "shortName": "Paykan",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 3857,
+        "nameCode": "PEY",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "id": 73668,
+        "country": {
+          "alpha2": "IR",
+          "alpha3": "IRN",
+          "name": "Iran",
+          "slug": "iran"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "بايكان",
+            "ru": "Пейкан"
+          },
+          "shortNameTranslation": {
+            "ar": "بايكان"
+          }
+        }
+      },
+      "awayTeam": {
+        "name": "Zob Ahan",
+        "slug": "zob-ahan",
+        "shortName": "Zob Ahan",
+        "gender": "M",
+        "sport": {
+          "name": "Football",
+          "slug": "football",
+          "id": 1
+        },
+        "userCount": 3847,
+        "nameCode": "ZAI",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "id": 39328,
+        "country": {
+          "alpha2": "IR",
+          "alpha3": "IRN",
+          "name": "Iran",
+          "slug": "iran"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "زوب أهان",
+            "ru": "Зоб Ахан"
+          },
+          "shortNameTranslation": {
+            "ar": "زوب أهان"
+          }
+        }
+      },
+      "homeScore": {},
+      "awayScore": {},
+      "time": {},
+      "changes": {
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type"
+        ],
+        "changeTimestamp": 1768517209
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 15166702,
+      "slug": "paykan-zob-ahan",
+      "startTimestamp": 1768563000,
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "isEditor": false,
+      "eventFilters": {
+        "category": [
+          "club"
+        ],
+        "level": [
+          "pro"
+        ],
+        "gender": [
+          "M"
+        ]
+      }
+    },
+    {
+      "tournament": {
         "name": "Coppa Italia Serie C, Knockout stage",
         "slug": "coppa-italia-serie-c-knockout-stage",
         "category": {
@@ -28077,7 +28502,7 @@
         ],
         "changeTimestamp": 1768489092
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15332921,
       "slug": "as-soliman-js-kairouanaise",
