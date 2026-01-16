@@ -22863,7 +22863,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -25093,9 +25093,9 @@
       },
       "customId": "znfdsCnfd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 60,
+        "description": "Postponed",
+        "type": "postponed"
       },
       "homeTeam": {
         "name": "HIFK Helsinki",
@@ -25175,7 +25175,12 @@
       "awayScore": {},
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type"
+        ],
+        "changeTimestamp": 1768567732
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -43892,9 +43897,9 @@
       },
       "customId": "unGsBlUd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 2,
+        "description": "2nd period",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Norilsk",
@@ -43972,11 +43977,25 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "awayScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 2
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "homeScore.period1",
+          "awayScore.period1"
+        ],
+        "changeTimestamp": 1768567919
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -43991,6 +44010,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
