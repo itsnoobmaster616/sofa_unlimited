@@ -309,9 +309,9 @@
       },
       "customId": "aJAbsJUId",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 21,
+        "description": "1st Inning",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Rangpur Riders",
@@ -381,16 +381,36 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 20,
+        "display": 20,
+        "innings": {
+          "inning1": {
+            "score": 20,
+            "wickets": 0,
+            "overs": 4.1,
+            "runRate": 4.8
+          }
+        }
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
       "coverage": 1,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.innings"
+        ],
+        "changeTimestamp": 1768634656
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15181227,
+      "currentBattingTeamId": 189200,
       "endTimestamp": 1768647600,
       "slug": "dhaka-capitals-rangpur-riders",
       "startTimestamp": 1768633200,
@@ -401,6 +421,7 @@
         "inning3": "3rd Inning",
         "inning4": "4th Inning"
       },
+      "lastPeriod": "inning1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -862,8 +883,8 @@
       },
       "customId": "lfAbsnfAb",
       "status": {
-        "code": 21,
-        "description": "1st Inning",
+        "code": 45,
+        "description": "Inn break",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -945,14 +966,14 @@
         "display": 0
       },
       "awayScore": {
-        "current": 51,
-        "display": 51,
+        "current": 99,
+        "display": 99,
         "innings": {
           "inning1": {
-            "score": 51,
-            "wickets": 5,
-            "overs": 7.5,
-            "runRate": 6.51
+            "score": 99,
+            "wickets": 10,
+            "overs": 16.5,
+            "runRate": 5.88
           }
         }
       },
@@ -960,9 +981,10 @@
       "time": {},
       "changes": {
         "changes": [
-          "awayScore.innings"
+          "status.code",
+          "status.description"
         ],
-        "changeTimestamp": 1768631835
+        "changeTimestamp": 1768634354
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -978,7 +1000,6 @@
         "inning3": "3rd Inning",
         "inning4": "4th Inning"
       },
-      "lastPeriod": "inning1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -3999,9 +4020,9 @@
       },
       "customId": "NeAbsFxjd",
       "status": {
-        "code": 141,
-        "description": "End of day 1",
-        "type": "willcontinue"
+        "code": 21,
+        "description": "1st Inning",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Knights",
@@ -4073,13 +4094,13 @@
         }
       },
       "homeScore": {
-        "current": 35,
-        "display": 35,
+        "current": 41,
+        "display": 41,
         "innings": {
           "inning1": {
-            "score": 35,
+            "score": 41,
             "wickets": 2,
-            "overs": 16,
+            "overs": 57.1,
             "runRate": 2.19
           }
         }
@@ -4100,14 +4121,11 @@
       "time": {},
       "changes": {
         "changes": [
-          "status.code",
-          "status.description",
-          "status.type",
           "homeScore.current",
           "homeScore.display",
           "homeScore.innings"
         ],
-        "changeTimestamp": 1768498510
+        "changeTimestamp": 1768634530
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -4122,7 +4140,8 @@
         "inning3": "3rd Inning",
         "inning4": "4th Inning"
       },
-      "finalResultOnly": true,
+      "lastPeriod": "inning1",
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -6328,7 +6347,12 @@
       "coverage": 1,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type"
+        ],
+        "changeTimestamp": 1768634304
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,

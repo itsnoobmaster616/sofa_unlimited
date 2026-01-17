@@ -88,9 +88,9 @@
       },
       "customId": "hlGdsklGd",
       "status": {
-        "code": 23,
-        "description": "3rd Inning",
-        "type": "inprogress"
+        "code": 80,
+        "description": "Interrupted",
+        "type": "interrupted"
       },
       "homeTeam": {
         "name": "Sydney Blue Sox",
@@ -159,6 +159,8 @@
         "period1": 0,
         "period2": 0,
         "period3": 0,
+        "period4": 0,
+        "period5": 0,
         "innings": {
           "inning1": {
             "run": 0
@@ -167,6 +169,12 @@
             "run": 0
           },
           "inning3": {
+            "run": 0
+          },
+          "inning4": {
+            "run": 0
+          },
+          "inning5": {
             "run": 0
           }
         }
@@ -177,6 +185,8 @@
         "period1": 0,
         "period2": 0,
         "period3": 1,
+        "period4": 0,
+        "period5": 0,
         "innings": {
           "inning1": {
             "run": 0
@@ -186,20 +196,26 @@
           },
           "inning3": {
             "run": 1
+          },
+          "inning4": {
+            "run": 0
+          },
+          "inning5": {
+            "run": 0
           }
         }
       },
       "time": {
-        "currentPeriodStartTimestamp": 1768631262
+        "currentPeriodStartTimestamp": 1768633791
       },
       "changes": {
         "changes": [
-          "awayScore.current",
-          "awayScore.display",
-          "awayScore.period3",
-          "awayScore.innings"
+          "status.code",
+          "status.description",
+          "status.type",
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1768631445
+        "changeTimestamp": 1768633842
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -219,7 +235,6 @@
         "inning9": "9th Inning",
         "extra1": "10th Inning"
       },
-      "lastPeriod": "inning3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -312,8 +327,8 @@
       },
       "customId": "nlGdsolGd",
       "status": {
-        "code": 21,
-        "description": "1st Inning",
+        "code": 24,
+        "description": "4th Inning",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -386,33 +401,60 @@
         "current": 0,
         "display": 0,
         "period1": 0,
+        "period2": 0,
+        "period3": 0,
+        "period4": 0,
         "innings": {
           "inning1": {
+            "run": 0
+          },
+          "inning2": {
+            "run": 0
+          },
+          "inning3": {
+            "run": 0
+          },
+          "inning4": {
             "run": 0
           }
         }
       },
       "awayScore": {
-        "current": 1,
-        "display": 1,
+        "current": 2,
+        "display": 2,
         "period1": 1,
+        "period2": 0,
+        "period3": 1,
+        "period4": 0,
         "innings": {
           "inning1": {
             "run": 1
+          },
+          "inning2": {
+            "run": 0
+          },
+          "inning3": {
+            "run": 1
+          },
+          "inning4": {
+            "run": 0
           }
         }
       },
       "time": {
-        "currentPeriodStartTimestamp": 1768631475
+        "currentPeriodStartTimestamp": 1768634275
       },
       "changes": {
         "changes": [
-          "awayScore.current",
-          "awayScore.display",
-          "awayScore.period1",
-          "awayScore.innings"
+          "status.code",
+          "status.description",
+          "homeScore.period4",
+          "homeScore.innings",
+          "awayScore.period4",
+          "awayScore.innings",
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1768631629
+        "changeTimestamp": 1768634334
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -432,7 +474,7 @@
         "inning9": "9th Inning",
         "extra1": "10th Inning"
       },
-      "lastPeriod": "inning1",
+      "lastPeriod": "inning4",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -2114,10 +2156,11 @@
       },
       "customId": "BeYbsVUmd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Águilas de Mexicali",
         "slug": "aguilas-de-mexicali",
@@ -2196,11 +2239,30 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 2,
+        "display": 2,
+        "normaltime": 2
+      },
+      "awayScore": {
+        "current": 3,
+        "display": 3,
+        "normaltime": 3
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1768633657
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -2221,7 +2283,7 @@
         "inning9": "9th Inning",
         "extra1": "10th Inning"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
