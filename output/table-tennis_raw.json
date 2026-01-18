@@ -1180,6 +1180,7 @@
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15391485,
       "slug": "truls-moregardh-vladimir-sidorenko",
+      "parentEventId": 15306333,
       "startTimestamp": 1768760400,
       "periods": {
         "current": "Match",
@@ -1386,7 +1387,7 @@
         ],
         "changeTimestamp": 1768765893
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15391523,
       "slug": "gauzy-fan-zhendong",
@@ -1482,9 +1483,9 @@
       },
       "customId": "wpOsWqRb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 70,
+        "description": "Canceled",
+        "type": "canceled"
       },
       "homeTeam": {
         "name": "Vladimir Sidorenko",
@@ -1568,7 +1569,12 @@
       "awayScore": {},
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type"
+        ],
+        "changeTimestamp": 1768773665
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -1666,9 +1672,9 @@
       },
       "customId": "vzabsyiWb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 70,
+        "description": "Canceled",
+        "type": "canceled"
       },
       "homeTeam": {
         "name": "Gauzy S.",
@@ -1754,7 +1760,12 @@
       "awayScore": {},
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type"
+        ],
+        "changeTimestamp": 1768773664
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -2260,14 +2271,16 @@
       "roundInfo": {
         "round": 27,
         "name": "Quarterfinals",
+        "slug": "quarterfinals",
         "cupRoundType": 4
       },
       "customId": "RptbsyJGb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "GV Hennebont TT",
         "slug": "gv-hennebont-tt",
@@ -2342,11 +2355,30 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "normaltime": 0
+      },
+      "awayScore": {
+        "current": 3,
+        "display": 3,
+        "normaltime": 3
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1768772926
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -81014,9 +81046,9 @@
       },
       "customId": "HWndsGNDi",
       "status": {
-        "code": 10,
-        "description": "3rd set",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
       "winnerCode": 2,
       "homeTeam": {
@@ -81095,24 +81127,33 @@
         "display": 0,
         "period1": 2,
         "period2": 9,
-        "period3": 7
+        "period3": 7,
+        "normaltime": 0
       },
       "awayScore": {
-        "current": 2,
-        "display": 2,
+        "current": 3,
+        "display": 3,
         "period1": 11,
         "period2": 11,
-        "period3": 10
+        "period3": 11,
+        "normaltime": 3
       },
       "time": {
-        "currentPeriodStartTimestamp": 1768772224
+        "currentPeriodStartTimestamp": 1768772475
       },
       "changes": {
         "changes": [
-          "homeScore.period3",
-          "awayScore.period3"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period3",
+          "awayScore.normaltime",
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1768772469
+        "changeTimestamp": 1768772535
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -81129,7 +81170,6 @@
         "period6": "6th set",
         "period7": "7th set"
       },
-      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false
     },
@@ -81212,9 +81252,9 @@
       },
       "customId": "CWRdsWKYi",
       "status": {
-        "code": 10,
-        "description": "3rd set",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
       "winnerCode": 2,
       "homeTeam": {
@@ -81292,28 +81332,41 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 4,
-        "period2": 9,
-        "period3": 4
-      },
-      "awayScore": {
         "current": 2,
         "display": 2,
+        "period1": 4,
+        "period2": 9,
+        "period3": 12,
+        "period4": 11,
+        "period5": 3,
+        "normaltime": 2
+      },
+      "awayScore": {
+        "current": 3,
+        "display": 3,
         "period1": 11,
         "period2": 11,
-        "period3": 6
+        "period3": 10,
+        "period4": 8,
+        "period5": 11,
+        "normaltime": 3
       },
       "time": {
-        "currentPeriodStartTimestamp": 1768772301
+        "currentPeriodStartTimestamp": 1768773210
       },
       "changes": {
         "changes": [
-          "homeScore.period3",
-          "awayScore.period3"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period5",
+          "awayScore.normaltime",
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1768772470
+        "changeTimestamp": 1768773252
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -81330,7 +81383,6 @@
         "period6": "6th set",
         "period7": "7th set"
       },
-      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false
     },
@@ -81413,9 +81465,9 @@
       },
       "customId": "XZodsyFFd",
       "status": {
-        "code": 10,
-        "description": "3rd set",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
       "winnerCode": 1,
       "homeTeam": {
@@ -81484,31 +81536,37 @@
         }
       },
       "homeScore": {
-        "current": 2,
-        "display": 2,
+        "current": 3,
+        "display": 3,
         "period1": 11,
-        "period2": 11
+        "period2": 11,
+        "period3": 11,
+        "normaltime": 3
       },
       "awayScore": {
         "current": 0,
         "display": 0,
         "period1": 9,
-        "period2": 9
+        "period2": 9,
+        "period3": 9,
+        "normaltime": 0
       },
       "time": {
-        "currentPeriodStartTimestamp": 1768772441
+        "currentPeriodStartTimestamp": 1768772917
       },
       "changes": {
         "changes": [
           "status.code",
           "status.description",
+          "status.type",
           "homeScore.current",
           "homeScore.display",
-          "homeScore.period2",
-          "awayScore.period2",
+          "homeScore.period3",
+          "homeScore.normaltime",
+          "awayScore.normaltime",
           "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1768772470
+        "changeTimestamp": 1768772946
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -81525,7 +81583,6 @@
         "period6": "6th set",
         "period7": "7th set"
       },
-      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false
     },
@@ -81815,9 +81872,9 @@
       },
       "customId": "TrIdspJri",
       "status": {
-        "code": 10,
-        "description": "3rd set",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
       "winnerCode": 2,
       "homeTeam": {
@@ -81895,24 +81952,33 @@
         "display": 0,
         "period1": 10,
         "period2": 8,
-        "period3": 7
+        "period3": 7,
+        "normaltime": 0
       },
       "awayScore": {
-        "current": 2,
-        "display": 2,
+        "current": 3,
+        "display": 3,
         "period1": 12,
         "period2": 11,
-        "period3": 6
+        "period3": 11,
+        "normaltime": 3
       },
       "time": {
-        "currentPeriodStartTimestamp": 1768772264
+        "currentPeriodStartTimestamp": 1768772525
       },
       "changes": {
         "changes": [
-          "homeScore.period3",
-          "awayScore.period3"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period3",
+          "awayScore.normaltime",
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1768772470
+        "changeTimestamp": 1768772536
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -81929,7 +81995,6 @@
         "period6": "6th set",
         "period7": "7th set"
       },
-      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false
     },
@@ -127908,11 +127973,11 @@
       },
       "customId": "ZlEdsKqxe",
       "status": {
-        "code": 9,
-        "description": "2nd set",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
-      "winnerCode": 2,
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Hons D.",
         "slug": "hons-david",
@@ -127983,26 +128048,36 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
+        "current": 3,
+        "display": 3,
         "period1": 3,
-        "period2": 8
+        "period2": 11,
+        "period3": 11,
+        "period4": 11,
+        "normaltime": 3
       },
       "awayScore": {
         "current": 1,
         "display": 1,
         "period1": 11,
-        "period2": 4
+        "period2": 5,
+        "period3": 9,
+        "period4": 9,
+        "normaltime": 1
       },
       "time": {
-        "currentPeriodStartTimestamp": 1768772351
+        "currentPeriodStartTimestamp": 1768773031
       },
       "changes": {
         "changes": [
-          "homeScore.period2",
-          "awayScore.period2"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime",
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1768772472
+        "changeTimestamp": 1768773068
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -128019,7 +128094,6 @@
         "period6": "6th set",
         "period7": "7th set"
       },
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false
     },
@@ -128102,10 +128176,11 @@
       },
       "customId": "JhRcsDoRi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Sykora D.",
         "slug": "sykora-david",
@@ -128176,11 +128251,35 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 6,
+        "period2": 5,
+        "period3": 9,
+        "normaltime": 0
+      },
+      "awayScore": {
+        "current": 3,
+        "display": 3,
+        "period1": 11,
+        "period2": 11,
+        "period3": 11,
+        "normaltime": 3
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1768773786
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime",
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1768773851
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -128279,10 +128378,11 @@
       },
       "customId": "yyKdsPPnj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Rek L.",
         "slug": "rek-lukas-dominik",
@@ -128350,11 +128450,38 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 3,
+        "display": 3,
+        "period1": 11,
+        "period2": 11,
+        "period3": 11,
+        "normaltime": 3
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 8,
+        "period2": 6,
+        "period3": 8,
+        "normaltime": 0
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1768774048
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period3",
+          "homeScore.normaltime",
+          "awayScore.normaltime",
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1768774087
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -223965,9 +224092,9 @@
       },
       "customId": "ZlodsWgGd",
       "status": {
-        "code": 9,
-        "description": "2nd set",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
       "winnerCode": 1,
       "homeTeam": {
@@ -224045,26 +224172,40 @@
         }
       },
       "homeScore": {
-        "current": 1,
-        "display": 1,
+        "current": 3,
+        "display": 3,
         "period1": 14,
-        "period2": 6
+        "period2": 9,
+        "period3": 11,
+        "period4": 13,
+        "normaltime": 3
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
+        "current": 1,
+        "display": 1,
         "period1": 12,
-        "period2": 6
+        "period2": 11,
+        "period3": 6,
+        "period4": 11,
+        "normaltime": 1
       },
       "time": {
-        "currentPeriodStartTimestamp": 1768772347
+        "currentPeriodStartTimestamp": 1768773108
       },
       "changes": {
         "changes": [
-          "homeScore.period2",
-          "awayScore.period2"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period4",
+          "homeScore.normaltime",
+          "awayScore.period4",
+          "awayScore.normaltime",
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1768772473
+        "changeTimestamp": 1768773127
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -224081,7 +224222,6 @@
         "period6": "6th set",
         "period7": "7th set"
       },
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false
     },
@@ -224164,11 +224304,11 @@
       },
       "customId": "pHpdseAri",
       "status": {
-        "code": 8,
-        "description": "1st set",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
-      "winnerCode": 3,
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Misiak M.",
         "slug": "misiak-mateusz",
@@ -224244,24 +224384,39 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 10
+        "current": 3,
+        "display": 3,
+        "period1": 12,
+        "period2": 11,
+        "period3": 12,
+        "period4": 11,
+        "normaltime": 3
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 10
+        "current": 1,
+        "display": 1,
+        "period1": 14,
+        "period2": 4,
+        "period3": 10,
+        "period4": 7,
+        "normaltime": 1
       },
       "time": {
-        "currentPeriodStartTimestamp": 1768772264
+        "currentPeriodStartTimestamp": 1768773160
       },
       "changes": {
         "changes": [
-          "homeScore.period1",
-          "awayScore.period1"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period4",
+          "homeScore.normaltime",
+          "awayScore.normaltime",
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1768772473
+        "changeTimestamp": 1768773190
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -224278,7 +224433,6 @@
         "period6": "6th set",
         "period7": "7th set"
       },
-      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false
     },
@@ -224361,11 +224515,11 @@
       },
       "customId": "UOQbswLZd",
       "status": {
-        "code": 8,
-        "description": "1st set",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
-      "winnerCode": 3,
+      "winnerCode": 1,
       "homeTeam": {
         "name": "David P.",
         "slug": "david-petr",
@@ -224436,15 +224590,23 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0
+        "current": 3,
+        "display": 3,
+        "period1": 11,
+        "period2": 11,
+        "period3": 11,
+        "normaltime": 3
       },
       "awayScore": {
         "current": 0,
-        "display": 0
+        "display": 0,
+        "period1": 6,
+        "period2": 6,
+        "period3": 5,
+        "normaltime": 0
       },
       "time": {
-        "currentPeriodStartTimestamp": 1768772456
+        "currentPeriodStartTimestamp": 1768772982
       },
       "changes": {
         "changes": [
@@ -224453,11 +224615,13 @@
           "status.type",
           "homeScore.current",
           "homeScore.display",
-          "awayScore.current",
-          "awayScore.display",
+          "homeScore.period3",
+          "homeScore.normaltime",
+          "awayScore.period3",
+          "awayScore.normaltime",
           "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1768772474
+        "changeTimestamp": 1768773014
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -224474,7 +224638,6 @@
         "period6": "6th set",
         "period7": "7th set"
       },
-      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false
     },
@@ -224557,10 +224720,11 @@
       },
       "customId": "WAZdsIQke",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Gumulinski P.",
         "slug": "gumulinski-piotr",
@@ -224633,11 +224797,38 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 11,
+        "period2": 8,
+        "period3": 4,
+        "normaltime": 0
+      },
+      "awayScore": {
+        "current": 3,
+        "display": 3,
+        "period1": 13,
+        "period2": 11,
+        "period3": 11,
+        "normaltime": 3
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1768773453
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period3",
+          "awayScore.normaltime",
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1768773491
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -224736,10 +224927,11 @@
       },
       "customId": "YHZdskCMi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Slosarczyk P.",
         "slug": "slosarczyk-pawel",
@@ -224813,11 +225005,40 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 3,
+        "display": 3,
+        "period1": 11,
+        "period2": 11,
+        "period3": 9,
+        "period4": 11,
+        "normaltime": 3
+      },
+      "awayScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 7,
+        "period2": 8,
+        "period3": 11,
+        "period4": 6,
+        "normaltime": 1
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1768773651
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period4",
+          "homeScore.normaltime",
+          "awayScore.normaltime",
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1768773667
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -224916,10 +225137,11 @@
       },
       "customId": "DEodsWgGd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Piecowski M.",
         "slug": "piecowski-miroslaw",
@@ -224994,11 +225216,39 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 3,
+        "display": 3,
+        "period1": 11,
+        "period2": 11,
+        "period3": 11,
+        "normaltime": 3
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 6,
+        "period2": 8,
+        "period3": 7,
+        "normaltime": 0
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1768774296
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period3",
+          "homeScore.normaltime",
+          "awayScore.period3",
+          "awayScore.normaltime",
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1768774327
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -225097,10 +225347,11 @@
       },
       "customId": "njqdsNdZd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Baron M.",
         "slug": "baron-mariusz",
@@ -225174,11 +225425,40 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 3,
+        "display": 3,
+        "period1": 10,
+        "period2": 11,
+        "period3": 13,
+        "period4": 11,
+        "normaltime": 3
+      },
+      "awayScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 12,
+        "period2": 4,
+        "period3": 11,
+        "period4": 5,
+        "normaltime": 1
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1768774788
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period4",
+          "homeScore.normaltime",
+          "awayScore.normaltime",
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1768774821
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -225277,10 +225557,11 @@
       },
       "customId": "pHpdsLIpd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Misiak M.",
         "slug": "misiak-mateusz",
@@ -225355,11 +225636,39 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 3,
+        "display": 3,
+        "period1": 11,
+        "period2": 11,
+        "period3": 11,
+        "normaltime": 3
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 5,
+        "period2": 3,
+        "period3": 4,
+        "normaltime": 0
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1768774506
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period3",
+          "homeScore.normaltime",
+          "awayScore.period3",
+          "awayScore.normaltime",
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1768774518
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -225458,10 +225767,11 @@
       },
       "customId": "Quodsrjqd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 11,
+        "description": "4th set",
+        "type": "inprogress"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Daniel A.",
         "slug": "daniel-artur",
@@ -225536,11 +225846,31 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 7,
+        "period2": 11,
+        "period3": 11,
+        "period4": 9
+      },
+      "awayScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 11,
+        "period2": 5,
+        "period3": 9,
+        "period4": 8
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1768774838
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.period4",
+          "awayScore.period4"
+        ],
+        "changeTimestamp": 1768775050
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -225557,6 +225887,7 @@
         "period6": "6th set",
         "period7": "7th set"
       },
+      "lastPeriod": "period4",
       "finalResultOnly": false,
       "feedLocked": false
     },
@@ -225639,10 +225970,11 @@
       },
       "customId": "zofjsdCmj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 11,
+        "description": "4th set",
+        "type": "inprogress"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Jesiek J.",
         "slug": "jesiek-jakub",
@@ -225712,11 +226044,34 @@
           "text": "#ffffff"
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 11,
+        "period2": 10,
+        "period3": 11,
+        "period4": 4
+      },
+      "awayScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 13,
+        "period2": 12,
+        "period3": 8,
+        "period4": 1
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1768774997
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "homeScore.period4",
+          "awayScore.period4",
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1768775050
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -225733,6 +226088,7 @@
         "period6": "6th set",
         "period7": "7th set"
       },
+      "lastPeriod": "period4",
       "finalResultOnly": false,
       "feedLocked": false
     },
@@ -225815,10 +226171,11 @@
       },
       "customId": "ZlodsCNge",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 8,
+        "description": "1st set",
+        "type": "inprogress"
       },
+      "winnerCode": 3,
       "homeTeam": {
         "name": "Kasperski A.",
         "slug": "kasperski-adam",
@@ -225893,11 +226250,25 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 3
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 3
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1768774977
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.period1",
+          "awayScore.period1"
+        ],
+        "changeTimestamp": 1768775050
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -225914,6 +226285,7 @@
         "period6": "6th set",
         "period7": "7th set"
       },
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false
     },
@@ -280038,10 +280410,11 @@
       },
       "customId": "tvQcsnfnj",
       "status": {
-        "code": 11,
-        "description": "4th set",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Damir Nuriev",
         "slug": "damir-nuriev",
@@ -280108,27 +280481,31 @@
         }
       },
       "homeScore": {
-        "current": 1,
-        "display": 1,
+        "current": 2,
+        "display": 2,
         "period1": 7,
         "period2": 11,
         "period3": 8,
-        "period4": 7
+        "period4": 11,
+        "period5": 8
       },
       "awayScore": {
-        "current": 2,
-        "display": 2,
+        "current": 3,
+        "display": 3,
         "period1": 11,
         "period2": 7,
         "period3": 11,
-        "period4": 3
+        "period4": 7,
+        "period5": 11
       },
       "time": {},
       "changes": {
         "changes": [
-          "awayScore.period4"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1768772502
+        "changeTimestamp": 1768773111
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -280145,7 +280522,6 @@
         "period6": "6th set",
         "period7": "7th set"
       },
-      "lastPeriod": "period4",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -280235,10 +280611,11 @@
       },
       "customId": "BBfdsYAmd",
       "status": {
-        "code": 12,
-        "description": "5th set",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Rudenko V.",
         "slug": "rudenko-vasiliy",
@@ -280312,23 +280689,25 @@
         "period2": 8,
         "period3": 9,
         "period4": 12,
-        "period5": 4
+        "period5": 9
       },
       "awayScore": {
-        "current": 2,
-        "display": 2,
+        "current": 3,
+        "display": 3,
         "period1": 8,
         "period2": 11,
         "period3": 11,
         "period4": 10,
-        "period5": 6
+        "period5": 11
       },
       "time": {},
       "changes": {
         "changes": [
-          "awayScore.period5"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1768772513
+        "changeTimestamp": 1768772704
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -280345,7 +280724,6 @@
         "period6": "6th set",
         "period7": "7th set"
       },
-      "lastPeriod": "period5",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -280435,10 +280813,11 @@
       },
       "customId": "TgpdscHpd",
       "status": {
-        "code": 10,
-        "description": "3rd set",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Lopatin S.",
         "slug": "lopatin-sergei",
@@ -280506,25 +280885,29 @@
         }
       },
       "homeScore": {
-        "current": 2,
-        "display": 2,
+        "current": 3,
+        "display": 3,
         "period1": 11,
         "period2": 11,
-        "period3": 3
+        "period3": 8,
+        "period4": 11
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
+        "current": 1,
+        "display": 1,
         "period1": 5,
         "period2": 5,
-        "period3": 6
+        "period3": 11,
+        "period4": 2
       },
       "time": {},
       "changes": {
         "changes": [
-          "homeScore.period3"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1768772506
+        "changeTimestamp": 1768772846
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -280541,7 +280924,6 @@
         "period6": "6th set",
         "period7": "7th set"
       },
-      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -280625,10 +281007,11 @@
       },
       "customId": "kgRcsRenj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Kalashnikov E.",
         "slug": "kalashnikov-evgeny",
@@ -280698,11 +281081,30 @@
           "text": "#ffffff"
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 11,
+        "period2": 9,
+        "period3": 3,
+        "period4": 8
+      },
+      "awayScore": {
+        "current": 3,
+        "display": 3,
+        "period1": 7,
+        "period2": 11,
+        "period3": 11,
+        "period4": 11
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type"
+        ],
+        "changeTimestamp": 1768774305
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -280801,10 +281203,11 @@
       },
       "customId": "PWMcsnrnj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Manushin A.",
         "slug": "alexey-manushin",
@@ -280875,6 +281278,770 @@
           "shortNameTranslation": {}
         }
       },
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 5,
+        "period2": 10,
+        "period3": 7
+      },
+      "awayScore": {
+        "current": 3,
+        "display": 3,
+        "period1": 11,
+        "period2": 12,
+        "period3": 11
+      },
+      "time": {},
+      "changes": {
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type"
+        ],
+        "changeTimestamp": 1768773971
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 15391761,
+      "slug": "manushin-mikhaylov",
+      "startTimestamp": 1768772700,
+      "periods": {
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set",
+        "period6": "6th set",
+        "period7": "7th set"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false
+    },
+    {
+      "tournament": {
+        "name": "Liga Pro",
+        "slug": "liga-pro",
+        "category": {
+          "name": "Russia",
+          "slug": "russia",
+          "sport": {
+            "name": "Table tennis",
+            "slug": "table-tennis",
+            "id": 20
+          },
+          "id": 1554,
+          "country": {
+            "alpha2": "RU",
+            "alpha3": "RUS",
+            "name": "Russia",
+            "slug": "russia"
+          },
+          "flag": "russia",
+          "alpha2": "RU",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "روسيا"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "Liga Pro",
+          "slug": "liga-pro",
+          "category": {
+            "name": "Russia",
+            "slug": "russia",
+            "sport": {
+              "name": "Table tennis",
+              "slug": "table-tennis",
+              "id": 20
+            },
+            "id": 1554,
+            "country": {
+              "alpha2": "RU",
+              "alpha3": "RUS",
+              "name": "Russia",
+              "slug": "russia"
+            },
+            "flag": "russia",
+            "alpha2": "RU",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "روسيا"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 578,
+          "hasPerformanceGraphFeature": false,
+          "id": 15006,
+          "country": {},
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "دوري المحترفين"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "id": 78895,
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "دوري المحترفين"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "customId": "zzMcscOud",
+      "status": {
+        "code": 12,
+        "description": "5th set",
+        "type": "inprogress"
+      },
+      "homeTeam": {
+        "name": "Shirshov V.",
+        "slug": "shirshov-vasily",
+        "shortName": "Shirshov V.",
+        "sport": {
+          "name": "Table tennis",
+          "slug": "table-tennis",
+          "id": 20
+        },
+        "userCount": 1,
+        "playerTeamInfo": {
+          "id": 33731
+        },
+        "nameCode": "SVA",
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "id": 424452,
+        "country": {
+          "alpha2": "RU",
+          "alpha3": "RUS",
+          "name": "Russia",
+          "slug": "russia"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "شيرشوف، فاسيلي"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "awayTeam": {
+        "name": "Lyfenko N.",
+        "slug": "lyfenko-nikita",
+        "gender": "M",
+        "sport": {
+          "name": "Table tennis",
+          "slug": "table-tennis",
+          "id": 20
+        },
+        "userCount": 88,
+        "nameCode": "LYF",
+        "national": false,
+        "type": 1,
+        "id": 343724,
+        "country": {
+          "alpha2": "RU",
+          "alpha3": "RUS",
+          "name": "Russia",
+          "slug": "russia"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "ليفينكو، نيكيتا"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "homeScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 11,
+        "period2": 7,
+        "period3": 11,
+        "period4": 3,
+        "period5": 8
+      },
+      "awayScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 9,
+        "period2": 11,
+        "period3": 7,
+        "period4": 11,
+        "period5": 6
+      },
+      "time": {},
+      "changes": {
+        "changes": [
+          "awayScore.period5",
+          "homeScore.period5"
+        ],
+        "changeTimestamp": 1768775099
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 15391769,
+      "slug": "shirshov-lyfenko",
+      "startTimestamp": 1768773600,
+      "periods": {
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set",
+        "period6": "6th set",
+        "period7": "7th set"
+      },
+      "lastPeriod": "period5",
+      "finalResultOnly": false,
+      "feedLocked": false
+    },
+    {
+      "tournament": {
+        "name": "Liga Pro",
+        "slug": "liga-pro",
+        "category": {
+          "name": "Russia",
+          "slug": "russia",
+          "sport": {
+            "name": "Table tennis",
+            "slug": "table-tennis",
+            "id": 20
+          },
+          "id": 1554,
+          "country": {
+            "alpha2": "RU",
+            "alpha3": "RUS",
+            "name": "Russia",
+            "slug": "russia"
+          },
+          "flag": "russia",
+          "alpha2": "RU",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "روسيا"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "Liga Pro",
+          "slug": "liga-pro",
+          "category": {
+            "name": "Russia",
+            "slug": "russia",
+            "sport": {
+              "name": "Table tennis",
+              "slug": "table-tennis",
+              "id": 20
+            },
+            "id": 1554,
+            "country": {
+              "alpha2": "RU",
+              "alpha3": "RUS",
+              "name": "Russia",
+              "slug": "russia"
+            },
+            "flag": "russia",
+            "alpha2": "RU",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "روسيا"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 578,
+          "hasPerformanceGraphFeature": false,
+          "id": 15006,
+          "country": {},
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "دوري المحترفين"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "id": 78895,
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "دوري المحترفين"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "customId": "vwMcsnfnj",
+      "status": {
+        "code": 9,
+        "description": "2nd set",
+        "type": "inprogress"
+      },
+      "homeTeam": {
+        "name": "Klavdenkov A.",
+        "slug": "klavdenkov-alexander",
+        "gender": "M",
+        "sport": {
+          "name": "Table tennis",
+          "slug": "table-tennis",
+          "id": 20
+        },
+        "userCount": 81,
+        "nameCode": "KLA",
+        "national": false,
+        "type": 1,
+        "id": 343570,
+        "country": {
+          "alpha2": "RU",
+          "alpha3": "RUS",
+          "name": "Russia",
+          "slug": "russia"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كلافدينكوف، ألكسندر"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "awayTeam": {
+        "name": "Damir Nuriev",
+        "slug": "damir-nuriev",
+        "shortName": "Nuriev D.",
+        "gender": "M",
+        "sport": {
+          "name": "Table tennis",
+          "slug": "table-tennis",
+          "id": 20
+        },
+        "userCount": 2,
+        "playerTeamInfo": {
+          "id": 32861
+        },
+        "nameCode": "NUR",
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "id": 1157763,
+        "country": {
+          "alpha2": "RU",
+          "alpha3": "RUS",
+          "name": "Russia",
+          "slug": "russia"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 5,
+        "period2": 5
+      },
+      "awayScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 11,
+        "period2": 5
+      },
+      "time": {},
+      "changes": {
+        "changes": [
+          "awayScore.period2"
+        ],
+        "changeTimestamp": 1768775091
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 15391774,
+      "slug": "damir-nuriev-klavdenkov",
+      "startTimestamp": 1768774500,
+      "periods": {
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set",
+        "period6": "6th set",
+        "period7": "7th set"
+      },
+      "lastPeriod": "period2",
+      "finalResultOnly": false,
+      "feedLocked": false
+    },
+    {
+      "tournament": {
+        "name": "Liga Pro",
+        "slug": "liga-pro",
+        "category": {
+          "name": "Russia",
+          "slug": "russia",
+          "sport": {
+            "name": "Table tennis",
+            "slug": "table-tennis",
+            "id": 20
+          },
+          "id": 1554,
+          "country": {
+            "alpha2": "RU",
+            "alpha3": "RUS",
+            "name": "Russia",
+            "slug": "russia"
+          },
+          "flag": "russia",
+          "alpha2": "RU",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "روسيا"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "Liga Pro",
+          "slug": "liga-pro",
+          "category": {
+            "name": "Russia",
+            "slug": "russia",
+            "sport": {
+              "name": "Table tennis",
+              "slug": "table-tennis",
+              "id": 20
+            },
+            "id": 1554,
+            "country": {
+              "alpha2": "RU",
+              "alpha3": "RUS",
+              "name": "Russia",
+              "slug": "russia"
+            },
+            "flag": "russia",
+            "alpha2": "RU",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "روسيا"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 578,
+          "hasPerformanceGraphFeature": false,
+          "id": 15006,
+          "country": {},
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "دوري المحترفين"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "id": 78895,
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "دوري المحترفين"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "customId": "BBfdsfOud",
+      "status": {
+        "code": 9,
+        "description": "2nd set",
+        "type": "inprogress"
+      },
+      "homeTeam": {
+        "name": "Kutin V.",
+        "slug": "kutin-valery-vjacheslavovich",
+        "sport": {
+          "name": "Table tennis",
+          "slug": "table-tennis",
+          "id": 20
+        },
+        "userCount": 1,
+        "playerTeamInfo": {
+          "id": 33079
+        },
+        "nameCode": "KVV",
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "id": 424455,
+        "country": {
+          "alpha2": "RU",
+          "alpha3": "RUS",
+          "name": "Russia",
+          "slug": "russia"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كوتين، فاليري فياتشيسلافوفيتش"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "awayTeam": {
+        "name": "Rudenko V.",
+        "slug": "rudenko-vasiliy",
+        "gender": "M",
+        "sport": {
+          "name": "Table tennis",
+          "slug": "table-tennis",
+          "id": 20
+        },
+        "userCount": 17,
+        "nameCode": "RUD",
+        "national": false,
+        "type": 1,
+        "id": 388826,
+        "country": {
+          "alpha2": "RU",
+          "alpha3": "RUS",
+          "name": "Russia",
+          "slug": "russia"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "رودينكو، فاسيلي"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 9,
+        "period2": 7
+      },
+      "awayScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 11,
+        "period2": 3
+      },
+      "time": {},
+      "changes": {
+        "changes": [
+          "awayScore.period2"
+        ],
+        "changeTimestamp": 1768775093
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 15391773,
+      "slug": "kutin-rudenko",
+      "startTimestamp": 1768774500,
+      "periods": {
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set",
+        "period6": "6th set",
+        "period7": "7th set"
+      },
+      "lastPeriod": "period2",
+      "finalResultOnly": false,
+      "feedLocked": false
+    },
+    {
+      "tournament": {
+        "name": "Liga Pro",
+        "slug": "liga-pro",
+        "category": {
+          "name": "Russia",
+          "slug": "russia",
+          "sport": {
+            "name": "Table tennis",
+            "slug": "table-tennis",
+            "id": 20
+          },
+          "id": 1554,
+          "country": {
+            "alpha2": "RU",
+            "alpha3": "RUS",
+            "name": "Russia",
+            "slug": "russia"
+          },
+          "flag": "russia",
+          "alpha2": "RU",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "روسيا"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "Liga Pro",
+          "slug": "liga-pro",
+          "category": {
+            "name": "Russia",
+            "slug": "russia",
+            "sport": {
+              "name": "Table tennis",
+              "slug": "table-tennis",
+              "id": 20
+            },
+            "id": 1554,
+            "country": {
+              "alpha2": "RU",
+              "alpha3": "RUS",
+              "name": "Russia",
+              "slug": "russia"
+            },
+            "flag": "russia",
+            "alpha2": "RU",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "روسيا"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 578,
+          "hasPerformanceGraphFeature": false,
+          "id": 15006,
+          "country": {},
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "دوري المحترفين"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "id": 78895,
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "دوري المحترفين"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "customId": "xvddsTgpd",
+      "status": {
+        "code": 0,
+        "description": "Not started",
+        "type": "notstarted"
+      },
+      "homeTeam": {
+        "name": "Zyuganov O.",
+        "slug": "zyuganov-oleg",
+        "gender": "M",
+        "sport": {
+          "name": "Table tennis",
+          "slug": "table-tennis",
+          "id": 20
+        },
+        "userCount": 9,
+        "nameCode": "ZYU",
+        "national": false,
+        "type": 1,
+        "id": 412843,
+        "country": {
+          "alpha2": "RU",
+          "alpha3": "RUS",
+          "name": "Russia",
+          "slug": "russia"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "زيوغانوف، أوليغ"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "awayTeam": {
+        "name": "Bystrushkin K.",
+        "slug": "bystrushkin-konstantin",
+        "gender": "M",
+        "sport": {
+          "name": "Table tennis",
+          "slug": "table-tennis",
+          "id": 20
+        },
+        "userCount": 21,
+        "nameCode": "BYS",
+        "national": false,
+        "type": 1,
+        "id": 383522,
+        "country": {
+          "alpha2": "RU",
+          "alpha3": "RUS",
+          "name": "Russia",
+          "slug": "russia"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "بيستروشكن، كونستانتين"
+          },
+          "shortNameTranslation": {}
+        }
+      },
       "homeScore": {},
       "awayScore": {},
       "time": {},
@@ -280883,9 +282050,9 @@
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
-      "id": 15391761,
-      "slug": "manushin-mikhaylov",
-      "startTimestamp": 1768772700,
+      "id": 15391781,
+      "slug": "zyuganov-bystrushkin",
+      "startTimestamp": 1768775400,
       "periods": {
         "current": "Match",
         "period1": "1st set",
@@ -391029,10 +392196,11 @@
       },
       "customId": "ENodsrxmj",
       "status": {
-        "code": 11,
-        "description": "4th set",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Wasik P.",
         "slug": "wasik-petr",
@@ -391103,27 +392271,31 @@
         }
       },
       "homeScore": {
-        "current": 2,
-        "display": 2,
+        "current": 3,
+        "display": 3,
         "period1": 8,
         "period2": 11,
         "period3": 11,
-        "period4": 10
+        "period4": 11,
+        "period5": 11
       },
       "awayScore": {
-        "current": 1,
-        "display": 1,
+        "current": 2,
+        "display": 2,
         "period1": 11,
         "period2": 9,
         "period3": 7,
-        "period4": 10
+        "period4": 13,
+        "period5": 8
       },
       "time": {},
       "changes": {
         "changes": [
-          "homeScore.period4"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1768772499
+        "changeTimestamp": 1768773030
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -391140,7 +392312,6 @@
         "period6": "6th set",
         "period7": "7th set"
       },
-      "lastPeriod": "period4",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -391230,10 +392401,11 @@
       },
       "customId": "uNNcsyiOc",
       "status": {
-        "code": 8,
-        "description": "1st set",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Masko Y.",
         "slug": "masko-yevhen",
@@ -391311,12 +392483,16 @@
       "homeScore": {
         "current": 0,
         "display": 0,
-        "period1": 0
+        "period1": 8,
+        "period2": 6,
+        "period3": 5
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0
+        "current": 3,
+        "display": 3,
+        "period1": 11,
+        "period2": 11,
+        "period3": 11
       },
       "time": {},
       "changes": {
@@ -391325,7 +392501,7 @@
           "status.description",
           "status.type"
         ],
-        "changeTimestamp": 1768771518
+        "changeTimestamp": 1768774331
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -391342,7 +392518,6 @@
         "period6": "6th set",
         "period7": "7th set"
       },
-      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -391432,10 +392607,11 @@
       },
       "customId": "RxmjsDMmj",
       "status": {
-        "code": 10,
-        "description": "3rd set",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Iurcenco I.",
         "slug": "iuri-iurcenco",
@@ -391499,25 +392675,31 @@
         }
       },
       "homeScore": {
-        "current": 1,
-        "display": 1,
+        "current": 2,
+        "display": 2,
         "period1": 11,
         "period2": 8,
-        "period3": 1
+        "period3": 12,
+        "period4": 11,
+        "period5": 3
       },
       "awayScore": {
-        "current": 1,
-        "display": 1,
+        "current": 3,
+        "display": 3,
         "period1": 6,
         "period2": 11,
-        "period3": 0
+        "period3": 10,
+        "period4": 13,
+        "period5": 11
       },
       "time": {},
       "changes": {
         "changes": [
-          "homeScore.period3"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1768772507
+        "changeTimestamp": 1768773748
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -391534,7 +392716,6 @@
         "period6": "6th set",
         "period7": "7th set"
       },
-      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -391624,10 +392805,11 @@
       },
       "customId": "RxMcsgUNc",
       "status": {
-        "code": 8,
-        "description": "1st set",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Zeniuk D.",
         "slug": "zenyuk-dmitry",
@@ -391704,21 +392886,29 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 10
+        "current": 1,
+        "display": 1,
+        "period1": 14,
+        "period2": 10,
+        "period3": 8,
+        "period4": 5
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 10
+        "current": 3,
+        "display": 3,
+        "period1": 12,
+        "period2": 12,
+        "period3": 11,
+        "period4": 11
       },
       "time": {},
       "changes": {
         "changes": [
-          "homeScore.period1"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1768772511
+        "changeTimestamp": 1768773984
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -391735,7 +392925,6 @@
         "period6": "6th set",
         "period7": "7th set"
       },
-      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -391819,10 +393008,11 @@
       },
       "customId": "QYndsrmod",
       "status": {
-        "code": 9,
-        "description": "2nd set",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Hondlik J.",
         "slug": "hondlik-josef",
@@ -391898,29 +393088,29 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
+        "current": 3,
+        "display": 3,
         "period1": 5,
-        "period2": 0
+        "period2": 11,
+        "period3": 11,
+        "period4": 11
       },
       "awayScore": {
         "current": 1,
         "display": 1,
         "period1": 11,
-        "period2": 0
+        "period2": 3,
+        "period3": 8,
+        "period4": 7
       },
       "time": {},
       "changes": {
         "changes": [
           "status.code",
           "status.description",
-          "homeScore.period2",
-          "awayScore.current",
-          "awayScore.display",
-          "awayScore.period1",
-          "awayScore.period2"
+          "status.type"
         ],
-        "changeTimestamp": 1768772399
+        "changeTimestamp": 1768773599
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -391937,7 +393127,6 @@
         "period6": "6th set",
         "period7": "7th set"
       },
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false
     },
@@ -392026,10 +393215,11 @@
       },
       "customId": "jBmjscGmj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Iskander C.",
         "slug": "iskander-christopher",
@@ -392092,11 +393282,32 @@
           "text": "#ffffff"
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 11,
+        "period2": 11,
+        "period3": 9,
+        "period4": 9,
+        "period5": 8
+      },
+      "awayScore": {
+        "current": 3,
+        "display": 3,
+        "period1": 4,
+        "period2": 3,
+        "period3": 11,
+        "period4": 11,
+        "period5": 11
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type"
+        ],
+        "changeTimestamp": 1768774107
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -392202,10 +393413,11 @@
       },
       "customId": "DDMcsjINc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Yakimenko S.",
         "slug": "yakimenko-stefan",
@@ -392280,11 +393492,28 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 3,
+        "display": 3,
+        "period1": 11,
+        "period2": 13,
+        "period3": 11
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 8,
+        "period2": 11,
+        "period3": 6
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type"
+        ],
+        "changeTimestamp": 1768774015
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -392384,10 +393613,11 @@
       },
       "customId": "WDmjsHMnj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Zelinka M.",
         "slug": "zelinka-matus",
@@ -392451,11 +393681,32 @@
           "text": "#ffffff"
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 3,
+        "display": 3,
+        "period1": 7,
+        "period2": 11,
+        "period3": 11,
+        "period4": 5,
+        "period5": 11
+      },
+      "awayScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 11,
+        "period2": 9,
+        "period3": 8,
+        "period4": 11,
+        "period5": 9
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type"
+        ],
+        "changeTimestamp": 1768774734
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -392560,10 +393811,11 @@
       },
       "customId": "RxmjsxJmj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Turcanu M.",
         "slug": "turcanu-maxim",
@@ -392626,11 +393878,32 @@
           "text": "#ffffff"
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 3,
+        "display": 3,
+        "period1": 11,
+        "period2": 4,
+        "period3": 5,
+        "period4": 11,
+        "period5": 11
+      },
+      "awayScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 5,
+        "period2": 11,
+        "period3": 11,
+        "period4": 8,
+        "period5": 4
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type"
+        ],
+        "changeTimestamp": 1768775021
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -392736,9 +394009,9 @@
       },
       "customId": "lvMcsoJMc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 11,
+        "description": "4th set",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Verbianyi V.",
@@ -392816,11 +394089,28 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 11,
+        "period2": 9,
+        "period3": 8,
+        "period4": 1
+      },
+      "awayScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 9,
+        "period2": 11,
+        "period3": 11,
+        "period4": 1
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.period4"
+        ],
+        "changeTimestamp": 1768775092
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -392837,9 +394127,198 @@
         "period6": "6th set",
         "period7": "7th set"
       },
+      "lastPeriod": "period4",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
+    },
+    {
+      "tournament": {
+        "name": "Setka Cup",
+        "slug": "setka-cup",
+        "category": {
+          "name": "Ukraine",
+          "slug": "ukraine",
+          "sport": {
+            "name": "Table tennis",
+            "slug": "table-tennis",
+            "id": 20
+          },
+          "id": 1713,
+          "country": {
+            "alpha2": "UA",
+            "alpha3": "UKR",
+            "name": "Ukraine",
+            "slug": "ukraine"
+          },
+          "flag": "ukraine",
+          "alpha2": "UA",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "أوكرانيا"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "Setka Cup",
+          "slug": "setka-cup",
+          "category": {
+            "name": "Ukraine",
+            "slug": "ukraine",
+            "sport": {
+              "name": "Table tennis",
+              "slug": "table-tennis",
+              "id": 20
+            },
+            "id": 1713,
+            "country": {
+              "alpha2": "UA",
+              "alpha3": "UKR",
+              "name": "Ukraine",
+              "slug": "ukraine"
+            },
+            "flag": "ukraine",
+            "alpha2": "UA",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "أوكرانيا"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 185,
+          "hasPerformanceGraphFeature": false,
+          "id": 15004,
+          "country": {},
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "كأس سيتكا"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "id": 78914,
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كأس سيتكا"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "customId": "dymjslGmj",
+      "status": {
+        "code": 11,
+        "description": "4th set",
+        "type": "inprogress"
+      },
+      "homeTeam": {
+        "name": "Bertho T.",
+        "slug": "tadeas-bertho",
+        "gender": "M",
+        "sport": {
+          "name": "Table tennis",
+          "slug": "table-tennis",
+          "id": 20
+        },
+        "userCount": 1,
+        "playerTeamInfo": {
+          "id": 32301
+        },
+        "nameCode": "BER",
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "id": 1156153,
+        "country": {
+          "alpha2": "CZ",
+          "alpha3": "CZE",
+          "name": "Czechia",
+          "slug": "czechia"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "awayTeam": {
+        "name": "Kalensky S.",
+        "slug": "kalensky-stepan",
+        "shortName": "Kalensky S.",
+        "gender": "M",
+        "sport": {
+          "name": "Table tennis",
+          "slug": "table-tennis",
+          "id": 20
+        },
+        "userCount": 2,
+        "playerTeamInfo": {
+          "id": 32489
+        },
+        "nameCode": "STE",
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "id": 1156561,
+        "country": {
+          "alpha2": "CZ",
+          "alpha3": "CZE",
+          "name": "Czechia",
+          "slug": "czechia"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "homeScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 11,
+        "period2": 11,
+        "period3": 9,
+        "period4": 10
+      },
+      "awayScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 7,
+        "period2": 9,
+        "period3": 11,
+        "period4": 8
+      },
+      "time": {},
+      "changes": {
+        "changes": [
+          "homeScore.period4"
+        ],
+        "changeTimestamp": 1768775099
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 15391768,
+      "slug": "kalensky-bertho",
+      "startTimestamp": 1768773900,
+      "periods": {
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set",
+        "period6": "6th set",
+        "period7": "7th set"
+      },
+      "lastPeriod": "period4",
+      "finalResultOnly": false,
+      "feedLocked": false
     },
     {
       "tournament": {
@@ -392926,9 +394405,9 @@
       },
       "customId": "XAMcsKNMc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 12,
+        "description": "5th set",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Sokoltsov Y.",
@@ -393004,11 +394483,36 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 11,
+        "period2": 11,
+        "period3": 10,
+        "period4": 7,
+        "period5": 0
+      },
+      "awayScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 5,
+        "period2": 8,
+        "period3": 12,
+        "period4": 11,
+        "period5": 0
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "homeScore.period5",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period4",
+          "awayScore.period5"
+        ],
+        "changeTimestamp": 1768775095
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -393025,6 +394529,7 @@
         "period6": "6th set",
         "period7": "7th set"
       },
+      "lastPeriod": "period5",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -393114,9 +394619,9 @@
       },
       "customId": "cGmjseGmj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 9,
+        "description": "2nd set",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Paniivan H.",
@@ -393180,11 +394685,24 @@
           "text": "#ffffff"
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 12,
+        "period2": 4
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 10,
+        "period2": 9
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "awayScore.period2"
+        ],
+        "changeTimestamp": 1768775090
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -393201,6 +394719,7 @@
         "period6": "6th set",
         "period7": "7th set"
       },
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -393290,9 +394809,9 @@
       },
       "customId": "TAMcsyDMc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 9,
+        "description": "2nd set",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Leonenko O.",
@@ -393369,11 +394888,30 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 8,
+        "period2": 0
+      },
+      "awayScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 11,
+        "period2": 0
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "homeScore.period2",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2"
+        ],
+        "changeTimestamp": 1768775025
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -393390,6 +394928,7 @@
         "period6": "6th set",
         "period7": "7th set"
       },
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -393552,11 +395091,27 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1"
+        ],
+        "changeTimestamp": 1768774794
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -398731,6 +400286,177 @@
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
+    },
+    {
+      "tournament": {
+        "name": "Setka Cup",
+        "slug": "setka-cup",
+        "category": {
+          "name": "Ukraine",
+          "slug": "ukraine",
+          "sport": {
+            "name": "Table tennis",
+            "slug": "table-tennis",
+            "id": 20
+          },
+          "id": 1713,
+          "country": {
+            "alpha2": "UA",
+            "alpha3": "UKR",
+            "name": "Ukraine",
+            "slug": "ukraine"
+          },
+          "flag": "ukraine",
+          "alpha2": "UA",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "أوكرانيا"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "Setka Cup",
+          "slug": "setka-cup",
+          "category": {
+            "name": "Ukraine",
+            "slug": "ukraine",
+            "sport": {
+              "name": "Table tennis",
+              "slug": "table-tennis",
+              "id": 20
+            },
+            "id": 1713,
+            "country": {
+              "alpha2": "UA",
+              "alpha3": "UKR",
+              "name": "Ukraine",
+              "slug": "ukraine"
+            },
+            "flag": "ukraine",
+            "alpha2": "UA",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "أوكرانيا"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 185,
+          "hasPerformanceGraphFeature": false,
+          "id": 15004,
+          "country": {},
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "كأس سيتكا"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "id": 78914,
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كأس سيتكا"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "customId": "qCmjswGmj",
+      "status": {
+        "code": 0,
+        "description": "Not started",
+        "type": "notstarted"
+      },
+      "homeTeam": {
+        "name": "Kosogolov A.",
+        "slug": "alexandr-kosogolov",
+        "shortName": "Kosogolov A.",
+        "gender": "M",
+        "sport": {
+          "name": "Table tennis",
+          "slug": "table-tennis",
+          "id": 20
+        },
+        "userCount": 3,
+        "playerTeamInfo": {
+          "id": 32490
+        },
+        "nameCode": "KOS",
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "id": 1156571,
+        "country": {
+          "alpha2": "MD",
+          "alpha3": "MDA",
+          "name": "Moldova",
+          "slug": "moldova"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "awayTeam": {
+        "name": "Ghimp F.",
+        "slug": "fiodor-ghimp",
+        "shortName": "Ghimp F.",
+        "gender": "M",
+        "sport": {
+          "name": "Table tennis",
+          "slug": "table-tennis",
+          "id": 20
+        },
+        "userCount": 3,
+        "playerTeamInfo": {
+          "id": 32396
+        },
+        "nameCode": "GHI",
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "id": 1156366,
+        "country": {
+          "alpha2": "MD",
+          "alpha3": "MDA",
+          "name": "Moldova",
+          "slug": "moldova"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "homeScore": {},
+      "awayScore": {},
+      "time": {},
+      "changes": {
+        "changeTimestamp": 0
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 15391770,
+      "slug": "kosogolov-ghimp",
+      "startTimestamp": 1768787880,
+      "periods": {
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set",
+        "period6": "6th set",
+        "period7": "7th set"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false
     },
     {
       "tournament": {
