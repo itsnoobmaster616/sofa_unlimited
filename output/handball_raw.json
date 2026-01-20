@@ -3646,10 +3646,11 @@
       },
       "customId": "UNcsVNc",
       "status": {
-        "code": 31,
-        "description": "Halftime",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Qatar",
         "slug": "qatar",
@@ -3725,26 +3726,37 @@
         }
       },
       "homeScore": {
-        "current": 16,
-        "display": 16,
-        "period1": 16
+        "current": 31,
+        "display": 31,
+        "period1": 16,
+        "period2": 15,
+        "normaltime": 31
       },
       "awayScore": {
-        "current": 14,
-        "display": 14,
-        "period1": 14
+        "current": 32,
+        "display": 32,
+        "period1": 14,
+        "period2": 18,
+        "normaltime": 32
       },
       "time": {
-        "played": 1800,
+        "played": 3600,
         "periodLength": 1800,
         "overtimeLength": 300,
         "totalPeriodCount": 2
       },
       "changes": {
         "changes": [
-          "time.played"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period2",
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1768923606
+        "changeTimestamp": 1768926746
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -7530,10 +7542,11 @@
       },
       "customId": "HHcsLTtb",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "SGAU-Saratov",
         "slug": "sgau-saratov",
@@ -7611,31 +7624,32 @@
         }
       },
       "homeScore": {
-        "current": 24,
-        "display": 24,
+        "current": 32,
+        "display": 32,
         "period1": 17,
-        "period2": 7
+        "period2": 15,
+        "normaltime": 32
       },
       "awayScore": {
-        "current": 24,
-        "display": 24,
+        "current": 39,
+        "display": 39,
         "period1": 15,
-        "period2": 9
+        "period2": 24,
+        "normaltime": 39
       },
       "time": {
-        "played": 2640,
+        "played": 1800,
         "periodLength": 1800,
         "overtimeLength": 300,
         "totalPeriodCount": 2
       },
       "changes": {
         "changes": [
-          "time.played",
-          "awayScore.current",
-          "awayScore.display",
-          "awayScore.period2"
+          "homeScore.normaltime",
+          "awayScore.normaltime",
+          "time.played"
         ],
-        "changeTimestamp": 1768923616
+        "changeTimestamp": 1768925067
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -7643,7 +7657,6 @@
       "id": 14326423,
       "slug": "sgau-saratov-chekhovskie-medvedi-chekhov",
       "startTimestamp": 1768919400,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
