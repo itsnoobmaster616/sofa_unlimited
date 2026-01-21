@@ -1047,7 +1047,7 @@
         ],
         "changeTimestamp": 1769020266
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 13907811,
@@ -1143,9 +1143,9 @@
       },
       "customId": "KlcsDbd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Sweden",
@@ -1223,17 +1223,35 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 2,
+        "display": 2
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
+      "time": {
+        "played": 80,
+        "periodLength": 1800,
+        "overtimeLength": 300,
+        "totalPeriodCount": 2,
+        "currentPeriodStartTimestamp": 1769023833
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.current",
+          "homeScore.display"
+        ],
+        "changeTimestamp": 1769023956
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 13907808,
       "slug": "sweden-croatia",
       "startTimestamp": 1769023800,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -1950,8 +1968,8 @@
       },
       "customId": "pgGcsXlbe",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -2022,17 +2040,19 @@
         }
       },
       "homeScore": {
-        "current": 17,
-        "display": 17,
-        "period1": 17
+        "current": 30,
+        "display": 30,
+        "period1": 17,
+        "period2": 13
       },
       "awayScore": {
-        "current": 8,
-        "display": 8,
-        "period1": 8
+        "current": 19,
+        "display": 19,
+        "period1": 8,
+        "period2": 11
       },
       "time": {
-        "played": 1800,
+        "played": 3600,
         "periodLength": 1800,
         "overtimeLength": 300,
         "totalPeriodCount": 2
@@ -2041,7 +2061,7 @@
         "changes": [
           "time.played"
         ],
-        "changeTimestamp": 1769021767
+        "changeTimestamp": 1769023997
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -2049,7 +2069,7 @@
       "id": 15340971,
       "slug": "rwanda-zambia",
       "startTimestamp": 1769018400,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -4386,8 +4406,8 @@
       },
       "customId": "KNcsdtr",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -4464,27 +4484,31 @@
         }
       },
       "homeScore": {
-        "current": 12,
-        "display": 12,
-        "period1": 12
+        "current": 21,
+        "display": 21,
+        "period1": 16,
+        "period2": 5
       },
       "awayScore": {
-        "current": 9,
-        "display": 9,
-        "period1": 9
+        "current": 12,
+        "display": 12,
+        "period1": 10,
+        "period2": 2
       },
       "coverage": -1,
       "time": {
-        "played": 1260,
+        "played": 2100,
         "periodLength": 1800,
         "overtimeLength": 300,
         "totalPeriodCount": 2
       },
       "changes": {
         "changes": [
-          "time.played"
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period2"
         ],
-        "changeTimestamp": 1769021772
+        "changeTimestamp": 1769023987
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -4492,7 +4516,7 @@
       "id": 15395831,
       "slug": "chile-brazil",
       "startTimestamp": 1769020200,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -6197,10 +6221,11 @@
       },
       "customId": "dOcsqkk",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "RK Podravka",
         "slug": "podravka-vegeta",
@@ -6276,28 +6301,35 @@
         }
       },
       "homeScore": {
-        "current": 18,
-        "display": 18,
+        "current": 29,
+        "display": 29,
         "period1": 11,
-        "period2": 7
+        "period2": 18,
+        "normaltime": 29
       },
       "awayScore": {
-        "current": 11,
-        "display": 11,
+        "current": 14,
+        "display": 14,
         "period1": 9,
-        "period2": 2
+        "period2": 5,
+        "normaltime": 14
       },
       "time": {
-        "played": 2520,
+        "played": 3600,
         "periodLength": 1800,
         "overtimeLength": 300,
         "totalPeriodCount": 2
       },
       "changes": {
         "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime",
           "time.played"
         ],
-        "changeTimestamp": 1769021767
+        "changeTimestamp": 1769022941
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -6305,7 +6337,6 @@
       "id": 14195252,
       "slug": "zrk-zamet-rijeka-rk-podravka",
       "startTimestamp": 1769018400,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -6398,10 +6429,11 @@
       },
       "customId": "GKcsAYJd",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "ZRK Rudar Labin",
         "slug": "zrk-rudar-labin",
@@ -6477,28 +6509,34 @@
         }
       },
       "homeScore": {
-        "current": 14,
-        "display": 14,
+        "current": 21,
+        "display": 21,
         "period1": 9,
-        "period2": 5
+        "period2": 12,
+        "normaltime": 21
       },
       "awayScore": {
-        "current": 18,
-        "display": 18,
+        "current": 27,
+        "display": 27,
         "period1": 12,
-        "period2": 6
+        "period2": 15,
+        "normaltime": 27
       },
       "time": {
-        "played": 2438,
+        "played": 3600,
         "periodLength": 1800,
         "overtimeLength": 300,
         "totalPeriodCount": 2
       },
       "changes": {
         "changes": [
-          "time.played"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1769021767
+        "changeTimestamp": 1769023241
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -6506,7 +6544,6 @@
       "id": 14195258,
       "slug": "zrk-rudar-labin-rk-lokomotiva-zagreb",
       "startTimestamp": 1769018400,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -6603,10 +6640,11 @@
       },
       "customId": "uGbsrhqc",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Ikast Håndbold",
         "slug": "ikast-handbold",
@@ -6682,34 +6720,45 @@
         }
       },
       "homeScore": {
-        "current": 29,
-        "display": 29,
-        "period1": 20
+        "current": 30,
+        "display": 30,
+        "period1": 20,
+        "period2": 10,
+        "normaltime": 30
       },
       "awayScore": {
         "current": 29,
         "display": 29,
-        "period1": 16
+        "period1": 16,
+        "period2": 13,
+        "normaltime": 29
       },
       "time": {
-        "played": 3487,
+        "played": 3589,
         "periodLength": 1800,
         "overtimeLength": 300,
         "totalPeriodCount": 2,
-        "currentPeriodStartTimestamp": 1769019700
+        "currentPeriodStartTimestamp": 1769021951
       },
       "changes": {
         "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.period2",
+          "homeScore.normaltime",
+          "awayScore.period2",
+          "awayScore.normaltime",
+          "time.currentPeriodStart",
           "time.played"
         ],
-        "changeTimestamp": 1769021766
+        "changeTimestamp": 1769021955
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14045431,
       "slug": "eh-aalborg-ikast-handbold",
       "startTimestamp": 1769016600,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -7019,10 +7068,11 @@
       },
       "customId": "yGbshJV",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Nykøbing Falster HK",
         "slug": "nykobing-falster-hk",
@@ -7097,34 +7147,44 @@
         }
       },
       "homeScore": {
-        "current": 14,
-        "display": 14,
-        "period1": 13
+        "current": 22,
+        "display": 22,
+        "period1": 13,
+        "period2": 9,
+        "normaltime": 22
       },
       "awayScore": {
-        "current": 20,
-        "display": 20,
-        "period1": 15
+        "current": 35,
+        "display": 35,
+        "period1": 15,
+        "period2": 20,
+        "normaltime": 35
       },
       "time": {
-        "played": 2156,
+        "played": 3489,
         "periodLength": 1800,
         "overtimeLength": 300,
         "totalPeriodCount": 2,
-        "currentPeriodStartTimestamp": 1769021395
+        "currentPeriodStartTimestamp": 1769023479
       },
       "changes": {
         "changes": [
-          "time.played"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.period2",
+          "homeScore.normaltime",
+          "awayScore.period2",
+          "awayScore.normaltime",
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1769021766
+        "changeTimestamp": 1769023482
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14045437,
       "slug": "nykobing-falster-hk-team-esbjerg",
       "startTimestamp": 1769018400,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -7221,10 +7281,11 @@
       },
       "customId": "rGbsuUT",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Viborg HK",
         "slug": "viborg-hk",
@@ -7299,36 +7360,44 @@
         }
       },
       "homeScore": {
-        "current": 18,
-        "display": 18,
-        "period1": 15
+        "current": 31,
+        "display": 31,
+        "period1": 15,
+        "period2": 16,
+        "normaltime": 31
       },
       "awayScore": {
-        "current": 23,
-        "display": 23,
-        "period1": 20
+        "current": 37,
+        "display": 37,
+        "period1": 20,
+        "period2": 17,
+        "normaltime": 37
       },
       "time": {
-        "played": 2069,
+        "played": 3508,
         "periodLength": 1800,
         "overtimeLength": 300,
         "totalPeriodCount": 2,
-        "currentPeriodStartTimestamp": 1769021465
+        "currentPeriodStartTimestamp": 1769023674
       },
       "changes": {
         "changes": [
-          "awayScore.current",
-          "awayScore.display",
-          "time.played"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.period2",
+          "homeScore.normaltime",
+          "awayScore.period2",
+          "awayScore.normaltime",
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1769021773
+        "changeTimestamp": 1769023678
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14045441,
       "slug": "kobenhavn-handbold-viborg-hk",
       "startTimestamp": 1769018400,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -7508,32 +7577,34 @@
         }
       },
       "homeScore": {
-        "current": 18,
-        "display": 18,
+        "current": 29,
+        "display": 29,
         "period1": 15,
-        "period2": 3
+        "period2": 14
       },
       "awayScore": {
-        "current": 11,
-        "display": 11,
+        "current": 22,
+        "display": 22,
         "period1": 9,
-        "period2": 2
+        "period2": 13
       },
-      "time": {},
+      "time": {
+        "played": 3600,
+        "periodLength": 1800,
+        "overtimeLength": 300,
+        "totalPeriodCount": 2
+      },
       "changes": {
         "changes": [
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period2",
           "time.played",
           "time.periodLength",
           "time.overtimeLength",
-          "time.totalPeriodCount",
-          "homeScore.current",
-          "homeScore.display",
-          "homeScore.period2",
-          "awayScore.current",
-          "awayScore.display",
-          "awayScore.period2"
+          "time.totalPeriodCount"
         ],
-        "changeTimestamp": 1769021767
+        "changeTimestamp": 1769023925
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -8811,10 +8882,11 @@
       },
       "customId": "tFbsVDc",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "HSG Bensheim/Auerbach Flames",
         "slug": "hsg-bensheimauerbach-flames",
@@ -8888,27 +8960,38 @@
         }
       },
       "homeScore": {
-        "current": 16,
-        "display": 16,
-        "period1": 13
+        "current": 29,
+        "display": 29,
+        "period1": 13,
+        "period2": 16,
+        "normaltime": 29
       },
       "awayScore": {
-        "current": 26,
-        "display": 26,
-        "period1": 24
+        "current": 41,
+        "display": 41,
+        "period1": 24,
+        "period2": 17,
+        "normaltime": 41
       },
       "time": {
-        "played": 2003,
+        "played": 3567,
         "periodLength": 1800,
         "overtimeLength": 300,
         "totalPeriodCount": 2,
-        "currentPeriodStartTimestamp": 1769021547
+        "currentPeriodStartTimestamp": 1769023974
       },
       "changes": {
         "changes": [
-          "time.played"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.period2",
+          "homeScore.normaltime",
+          "awayScore.period2",
+          "awayScore.normaltime",
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1769021766
+        "changeTimestamp": 1769023977
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -8916,7 +8999,6 @@
       "id": 14200587,
       "slug": "hsg-bensheimauerbach-flames-vfl-oldenburg",
       "startTimestamp": 1769018400,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -9013,8 +9095,8 @@
       },
       "customId": "GlcseMc",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -9090,29 +9172,28 @@
         }
       },
       "homeScore": {
-        "current": 11,
-        "display": 11
+        "current": 18,
+        "display": 18,
+        "period1": 14
       },
       "awayScore": {
-        "current": 8,
-        "display": 8
+        "current": 16,
+        "display": 16,
+        "period1": 13
       },
       "time": {
-        "played": 1314,
+        "played": 2322,
         "periodLength": 1800,
         "overtimeLength": 300,
         "totalPeriodCount": 2,
-        "currentPeriodStartTimestamp": 1769020229
+        "currentPeriodStartTimestamp": 1769023271
       },
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display",
-          "time.played",
           "awayScore.current",
           "awayScore.display"
         ],
-        "changeTimestamp": 1769021769
+        "changeTimestamp": 1769023995
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -9120,7 +9201,7 @@
       "id": 14200586,
       "slug": "hsg-blomberg-lippe-thuringer-hc",
       "startTimestamp": 1769020200,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -10033,9 +10114,9 @@
       },
       "customId": "dZnsapBb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "UMF Stjarnan",
@@ -10108,17 +10189,34 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "awayScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 2
+      },
+      "time": {
+        "played": 169,
+        "periodLength": 1800,
+        "overtimeLength": 300,
+        "totalPeriodCount": 2
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.played"
+        ],
+        "changeTimestamp": 1769024000
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14224822,
       "slug": "haukar-hafnarfjordur-umf-stjarnan",
       "startTimestamp": 1769023800,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -13782,9 +13880,9 @@
       },
       "customId": "JZvbszUcd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "BM Porriño",
@@ -13855,17 +13953,34 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "time": {
+        "played": 240,
+        "periodLength": 1800,
+        "overtimeLength": 300,
+        "totalPeriodCount": 2
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.played"
+        ],
+        "changeTimestamp": 1769023964
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14141076,
       "slug": "beti-onak-bm-porrino",
       "startTimestamp": 1769023800,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -13962,9 +14077,9 @@
       },
       "customId": "aubbsadCc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Mecalia Atletico Guardes",
@@ -14035,17 +14150,34 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "time": {
+        "played": 51,
+        "periodLength": 1800,
+        "overtimeLength": 300,
+        "totalPeriodCount": 2
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.played"
+        ],
+        "changeTimestamp": 1769024006
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14141079,
       "slug": "logrono-sporting-la-rioja-mecalia-atletico-guardes",
       "startTimestamp": 1769023800,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
