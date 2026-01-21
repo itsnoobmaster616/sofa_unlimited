@@ -1258,7 +1258,7 @@
         ],
         "changeTimestamp": 1769029588
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 13907808,
@@ -4611,10 +4611,11 @@
       },
       "customId": "eyObsNVoc",
       "status": {
-        "code": 31,
-        "description": "Halftime",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Paraguay",
         "slug": "paraguay",
@@ -4690,18 +4691,22 @@
         }
       },
       "homeScore": {
-        "current": 21,
-        "display": 21,
-        "period1": 21
+        "current": 45,
+        "display": 45,
+        "period1": 21,
+        "period2": 24,
+        "normaltime": 45
       },
       "awayScore": {
-        "current": 15,
-        "display": 15,
-        "period1": 15
+        "current": 30,
+        "display": 30,
+        "period1": 15,
+        "period2": 15,
+        "normaltime": 30
       },
       "coverage": -1,
       "time": {
-        "played": 1800,
+        "played": 3600,
         "periodLength": 1800,
         "overtimeLength": 300,
         "totalPeriodCount": 2
@@ -4710,9 +4715,15 @@
         "changes": [
           "status.code",
           "status.description",
-          "time.played"
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime",
+          "time.played",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period2"
         ],
-        "changeTimestamp": 1769031180
+        "changeTimestamp": 1769034110
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -12478,7 +12489,7 @@
       "id": 15132323,
       "slug": "aeiscte-nova",
       "startTimestamp": 1769031900,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
