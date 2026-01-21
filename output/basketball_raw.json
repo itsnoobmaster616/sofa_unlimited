@@ -13097,7 +13097,7 @@
         ],
         "changeTimestamp": 1768984150
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14714548,
@@ -13221,9 +13221,9 @@
       },
       "customId": "PQYsEmFc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 15,
+        "description": "3rd quarter",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "South East Melbourne Phoenix",
@@ -13305,24 +13305,33 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0
+        "current": 79,
+        "display": 79,
+        "period1": 38,
+        "period2": 36,
+        "period3": 5
       },
       "awayScore": {
-        "current": 0,
-        "display": 0
+        "current": 59,
+        "display": 59,
+        "period1": 28,
+        "period2": 26,
+        "period3": 5
       },
-      "time": {},
+      "time": {
+        "played": 1289,
+        "periodLength": 600,
+        "overtimeLength": 300,
+        "totalPeriodCount": 4
+      },
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display",
-          "awayScore.current",
-          "awayScore.display"
+          "time.played"
         ],
-        "changeTimestamp": 1768984151
+        "changeTimestamp": 1768988261
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14714549,
       "periods": {
@@ -13335,6 +13344,7 @@
       },
       "slug": "south-east-melbourne-phoenix-new-zealand-breakers",
       "startTimestamp": 1768984200,
+      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -14092,10 +14102,11 @@
       },
       "customId": "UQYsHmFc",
       "status": {
-        "code": 16,
-        "description": "4th quarter",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Bendigo Spirit",
         "slug": "bendigo-spirit",
@@ -14166,35 +14177,35 @@
         }
       },
       "homeScore": {
-        "current": 84,
-        "display": 84,
+        "current": 98,
+        "display": 98,
         "period1": 20,
         "period2": 26,
         "period3": 25,
-        "period4": 13
+        "period4": 27,
+        "normaltime": 98
       },
       "awayScore": {
-        "current": 79,
-        "display": 79,
+        "current": 88,
+        "display": 88,
         "period1": 18,
         "period2": 27,
         "period3": 20,
-        "period4": 14
+        "period4": 23,
+        "normaltime": 88
       },
       "time": {
-        "played": 2151,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
       },
       "changes": {
         "changes": [
-          "awayScore.current",
-          "awayScore.display",
-          "awayScore.period4",
-          "time.played"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1768984679
+        "changeTimestamp": 1768985798
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -14210,7 +14221,6 @@
       },
       "slug": "southside-flyers-bendigo-spirit",
       "startTimestamp": 1768978800,
-      "lastPeriod": "period4",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -55516,10 +55526,11 @@
       },
       "customId": "YPcjsbQcj",
       "status": {
-        "code": 31,
-        "description": "Halftime",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Stars",
         "slug": "stars",
@@ -55589,19 +55600,25 @@
         }
       },
       "homeScore": {
-        "current": 48,
-        "display": 48,
+        "current": 65,
+        "display": 65,
         "period1": 22,
-        "period2": 26
+        "period2": 26,
+        "period3": 11,
+        "period4": 6,
+        "normaltime": 65
       },
       "awayScore": {
-        "current": 39,
-        "display": 39,
+        "current": 75,
+        "display": 75,
         "period1": 15,
-        "period2": 24
+        "period2": 24,
+        "period3": 24,
+        "period4": 12,
+        "normaltime": 75
       },
       "time": {
-        "played": 1200,
+        "played": 2400,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
@@ -55610,9 +55627,11 @@
         "changes": [
           "status.code",
           "status.description",
-          "time.played"
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1768983978
+        "changeTimestamp": 1768987677
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -69256,6 +69275,717 @@
         ],
         "gender": [
           "M"
+        ]
+      }
+    },
+    {
+      "tournament": {
+        "name": "Saudi Arabia Basketball Women's League",
+        "slug": "saudi-arabia-basketball-womens-league-womens-league",
+        "category": {
+          "name": "Saudi Arabia",
+          "slug": "saudi-arabia",
+          "sport": {
+            "name": "Basketball",
+            "slug": "basketball",
+            "id": 2
+          },
+          "id": 1206,
+          "country": {
+            "alpha2": "SA",
+            "alpha3": "SAU",
+            "name": "Saudi Arabia",
+            "slug": "saudi-arabia"
+          },
+          "flag": "saudi-arabia",
+          "alpha2": "SA",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "المملكة العربية السعودية"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "Saudi Arabia Basketball Women's League",
+          "slug": "saudi-arabia-womens-league",
+          "category": {
+            "name": "Saudi Arabia",
+            "slug": "saudi-arabia",
+            "sport": {
+              "name": "Basketball",
+              "slug": "basketball",
+              "id": 2
+            },
+            "id": 1206,
+            "country": {
+              "alpha2": "SA",
+              "alpha3": "SAU",
+              "name": "Saudi Arabia",
+              "slug": "saudi-arabia"
+            },
+            "flag": "saudi-arabia",
+            "alpha2": "SA",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "المملكة العربية السعودية"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 64,
+          "hasPerformanceGraphFeature": false,
+          "id": 24271,
+          "country": {},
+          "hasEventPlayerStatistics": false,
+          "hasBoxScore": true,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "دوري كرة السلة النسائية في المملكة العربية السعودية"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "id": 173533
+      },
+      "season": {
+        "name": "2026",
+        "year": "2026",
+        "editor": false,
+        "id": 88840
+      },
+      "customId": "alBhsPqmj",
+      "status": {
+        "code": 0,
+        "description": "Not started",
+        "type": "notstarted"
+      },
+      "homeTeam": {
+        "name": "Jeddah SC",
+        "slug": "jeddah-sc",
+        "gender": "F",
+        "sport": {
+          "name": "Basketball",
+          "slug": "basketball",
+          "id": 2
+        },
+        "userCount": 19,
+        "nameCode": "JSC",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "id": 1155840,
+        "country": {
+          "alpha2": "SA",
+          "alpha3": "SAU",
+          "name": "Saudi Arabia",
+          "slug": "saudi-arabia"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "awayTeam": {
+        "name": "Al-Ula",
+        "slug": "al-ula",
+        "shortName": "Al-Ula",
+        "gender": "F",
+        "sport": {
+          "name": "Basketball",
+          "slug": "basketball",
+          "id": 2
+        },
+        "userCount": 123,
+        "nameCode": "ALU",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "id": 940550,
+        "country": {
+          "alpha2": "SA",
+          "alpha3": "SAU",
+          "name": "Saudi Arabia",
+          "slug": "saudi-arabia"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "العلا"
+          },
+          "shortNameTranslation": {
+            "ar": "العلا"
+          }
+        }
+      },
+      "homeScore": {},
+      "awayScore": {},
+      "time": {},
+      "changes": {
+        "changeTimestamp": 0
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 15404289,
+      "periods": {
+        "current": "Score",
+        "period1": "1st quarter",
+        "period2": "2nd quarter",
+        "period3": "3rd quarter",
+        "period4": "4th quarter",
+        "overtime": "Overtime"
+      },
+      "slug": "jeddah-sc-al-ula",
+      "startTimestamp": 1768993200,
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "isEditor": false,
+      "eventFilters": {
+        "category": [
+          "club"
+        ],
+        "level": [
+          "pro"
+        ]
+      }
+    },
+    {
+      "tournament": {
+        "name": "Saudi Arabia Basketball Women's League",
+        "slug": "saudi-arabia-basketball-womens-league-womens-league",
+        "category": {
+          "name": "Saudi Arabia",
+          "slug": "saudi-arabia",
+          "sport": {
+            "name": "Basketball",
+            "slug": "basketball",
+            "id": 2
+          },
+          "id": 1206,
+          "country": {
+            "alpha2": "SA",
+            "alpha3": "SAU",
+            "name": "Saudi Arabia",
+            "slug": "saudi-arabia"
+          },
+          "flag": "saudi-arabia",
+          "alpha2": "SA",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "المملكة العربية السعودية"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "Saudi Arabia Basketball Women's League",
+          "slug": "saudi-arabia-womens-league",
+          "category": {
+            "name": "Saudi Arabia",
+            "slug": "saudi-arabia",
+            "sport": {
+              "name": "Basketball",
+              "slug": "basketball",
+              "id": 2
+            },
+            "id": 1206,
+            "country": {
+              "alpha2": "SA",
+              "alpha3": "SAU",
+              "name": "Saudi Arabia",
+              "slug": "saudi-arabia"
+            },
+            "flag": "saudi-arabia",
+            "alpha2": "SA",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "المملكة العربية السعودية"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 64,
+          "hasPerformanceGraphFeature": false,
+          "id": 24271,
+          "country": {},
+          "hasEventPlayerStatistics": false,
+          "hasBoxScore": true,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "دوري كرة السلة النسائية في المملكة العربية السعودية"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "id": 173533
+      },
+      "season": {
+        "name": "2026",
+        "year": "2026",
+        "editor": false,
+        "id": 88840
+      },
+      "customId": "YkBhsOqmj",
+      "status": {
+        "code": 0,
+        "description": "Not started",
+        "type": "notstarted"
+      },
+      "homeTeam": {
+        "name": "Jeddah Athletes",
+        "slug": "jeddah-athletes",
+        "gender": "F",
+        "sport": {
+          "name": "Basketball",
+          "slug": "basketball",
+          "id": 2
+        },
+        "userCount": 7,
+        "nameCode": "JAT",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "id": 1155839,
+        "country": {
+          "alpha2": "SA",
+          "alpha3": "SAU",
+          "name": "Saudi Arabia",
+          "slug": "saudi-arabia"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "awayTeam": {
+        "name": "Al-Qadsiah",
+        "slug": "al-qadisiyah",
+        "shortName": "Al-Qadsiah",
+        "gender": "F",
+        "sport": {
+          "name": "Basketball",
+          "slug": "basketball",
+          "id": 2
+        },
+        "userCount": 37,
+        "nameCode": "ALQ",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "id": 940548,
+        "country": {
+          "alpha2": "SA",
+          "alpha3": "SAU",
+          "name": "Saudi Arabia",
+          "slug": "saudi-arabia"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "القادسية"
+          },
+          "shortNameTranslation": {
+            "ar": "القادسية"
+          }
+        }
+      },
+      "homeScore": {},
+      "awayScore": {},
+      "time": {},
+      "changes": {
+        "changeTimestamp": 0
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 15404291,
+      "periods": {
+        "current": "Score",
+        "period1": "1st quarter",
+        "period2": "2nd quarter",
+        "period3": "3rd quarter",
+        "period4": "4th quarter",
+        "overtime": "Overtime"
+      },
+      "slug": "jeddah-athletes-al-qadsiah",
+      "startTimestamp": 1769000400,
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "isEditor": false,
+      "eventFilters": {
+        "category": [
+          "club"
+        ],
+        "level": [
+          "pro"
+        ]
+      }
+    },
+    {
+      "tournament": {
+        "name": "Saudi Arabia Basketball Women's League",
+        "slug": "saudi-arabia-basketball-womens-league-womens-league",
+        "category": {
+          "name": "Saudi Arabia",
+          "slug": "saudi-arabia",
+          "sport": {
+            "name": "Basketball",
+            "slug": "basketball",
+            "id": 2
+          },
+          "id": 1206,
+          "country": {
+            "alpha2": "SA",
+            "alpha3": "SAU",
+            "name": "Saudi Arabia",
+            "slug": "saudi-arabia"
+          },
+          "flag": "saudi-arabia",
+          "alpha2": "SA",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "المملكة العربية السعودية"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "Saudi Arabia Basketball Women's League",
+          "slug": "saudi-arabia-womens-league",
+          "category": {
+            "name": "Saudi Arabia",
+            "slug": "saudi-arabia",
+            "sport": {
+              "name": "Basketball",
+              "slug": "basketball",
+              "id": 2
+            },
+            "id": 1206,
+            "country": {
+              "alpha2": "SA",
+              "alpha3": "SAU",
+              "name": "Saudi Arabia",
+              "slug": "saudi-arabia"
+            },
+            "flag": "saudi-arabia",
+            "alpha2": "SA",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "المملكة العربية السعودية"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 64,
+          "hasPerformanceGraphFeature": false,
+          "id": 24271,
+          "country": {},
+          "hasEventPlayerStatistics": false,
+          "hasBoxScore": true,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "دوري كرة السلة النسائية في المملكة العربية السعودية"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "id": 173533
+      },
+      "season": {
+        "name": "2026",
+        "year": "2026",
+        "editor": false,
+        "id": 88840
+      },
+      "customId": "MqmjsQqmj",
+      "status": {
+        "code": 0,
+        "description": "Not started",
+        "type": "notstarted"
+      },
+      "homeTeam": {
+        "name": "Jeddah United",
+        "slug": "jeddah-united",
+        "gender": "F",
+        "sport": {
+          "name": "Basketball",
+          "slug": "basketball",
+          "id": 2
+        },
+        "userCount": 12,
+        "nameCode": "JUN",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "id": 1155841,
+        "country": {
+          "alpha2": "SA",
+          "alpha3": "SAU",
+          "name": "Saudi Arabia",
+          "slug": "saudi-arabia"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "awayTeam": {
+        "name": "Game Master",
+        "slug": "game-master",
+        "gender": "F",
+        "sport": {
+          "name": "Basketball",
+          "slug": "basketball",
+          "id": 2
+        },
+        "userCount": 12,
+        "nameCode": "GMA",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "id": 1155837,
+        "country": {
+          "alpha2": "SA",
+          "alpha3": "SAU",
+          "name": "Saudi Arabia",
+          "slug": "saudi-arabia"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "homeScore": {},
+      "awayScore": {},
+      "time": {},
+      "changes": {
+        "changeTimestamp": 0
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 15404284,
+      "periods": {
+        "current": "Score",
+        "period1": "1st quarter",
+        "period2": "2nd quarter",
+        "period3": "3rd quarter",
+        "period4": "4th quarter",
+        "overtime": "Overtime"
+      },
+      "slug": "jeddah-united-game-master",
+      "startTimestamp": 1769007600,
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "isEditor": false,
+      "eventFilters": {
+        "category": [
+          "club"
+        ],
+        "level": [
+          "pro"
+        ]
+      }
+    },
+    {
+      "tournament": {
+        "name": "Saudi Arabia Basketball Women's League",
+        "slug": "saudi-arabia-basketball-womens-league-womens-league",
+        "category": {
+          "name": "Saudi Arabia",
+          "slug": "saudi-arabia",
+          "sport": {
+            "name": "Basketball",
+            "slug": "basketball",
+            "id": 2
+          },
+          "id": 1206,
+          "country": {
+            "alpha2": "SA",
+            "alpha3": "SAU",
+            "name": "Saudi Arabia",
+            "slug": "saudi-arabia"
+          },
+          "flag": "saudi-arabia",
+          "alpha2": "SA",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "المملكة العربية السعودية"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "Saudi Arabia Basketball Women's League",
+          "slug": "saudi-arabia-womens-league",
+          "category": {
+            "name": "Saudi Arabia",
+            "slug": "saudi-arabia",
+            "sport": {
+              "name": "Basketball",
+              "slug": "basketball",
+              "id": 2
+            },
+            "id": 1206,
+            "country": {
+              "alpha2": "SA",
+              "alpha3": "SAU",
+              "name": "Saudi Arabia",
+              "slug": "saudi-arabia"
+            },
+            "flag": "saudi-arabia",
+            "alpha2": "SA",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "المملكة العربية السعودية"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 64,
+          "hasPerformanceGraphFeature": false,
+          "id": 24271,
+          "country": {},
+          "hasEventPlayerStatistics": false,
+          "hasBoxScore": true,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "دوري كرة السلة النسائية في المملكة العربية السعودية"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "id": 173533
+      },
+      "season": {
+        "name": "2026",
+        "year": "2026",
+        "editor": false,
+        "id": 88840
+      },
+      "customId": "YkBhsPqmj",
+      "status": {
+        "code": 0,
+        "description": "Not started",
+        "type": "notstarted"
+      },
+      "homeTeam": {
+        "name": "Jeddah SC",
+        "slug": "jeddah-sc",
+        "gender": "F",
+        "sport": {
+          "name": "Basketball",
+          "slug": "basketball",
+          "id": 2
+        },
+        "userCount": 19,
+        "nameCode": "JSC",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "id": 1155840,
+        "country": {
+          "alpha2": "SA",
+          "alpha3": "SAU",
+          "name": "Saudi Arabia",
+          "slug": "saudi-arabia"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "awayTeam": {
+        "name": "Al-Qadsiah",
+        "slug": "al-qadisiyah",
+        "shortName": "Al-Qadsiah",
+        "gender": "F",
+        "sport": {
+          "name": "Basketball",
+          "slug": "basketball",
+          "id": 2
+        },
+        "userCount": 37,
+        "nameCode": "ALQ",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "id": 940548,
+        "country": {
+          "alpha2": "SA",
+          "alpha3": "SAU",
+          "name": "Saudi Arabia",
+          "slug": "saudi-arabia"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "القادسية"
+          },
+          "shortNameTranslation": {
+            "ar": "القادسية"
+          }
+        }
+      },
+      "homeScore": {},
+      "awayScore": {},
+      "time": {},
+      "changes": {
+        "changeTimestamp": 0
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 15404270,
+      "periods": {
+        "current": "Score",
+        "period1": "1st quarter",
+        "period2": "2nd quarter",
+        "period3": "3rd quarter",
+        "period4": "4th quarter",
+        "overtime": "Overtime"
+      },
+      "slug": "jeddah-sc-al-qadsiah",
+      "startTimestamp": 1769079600,
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "isEditor": false,
+      "eventFilters": {
+        "category": [
+          "club"
+        ],
+        "level": [
+          "pro"
         ]
       }
     },
