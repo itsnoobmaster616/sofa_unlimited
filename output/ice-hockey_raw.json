@@ -2364,9 +2364,20 @@
       },
       "homeScore": {},
       "awayScore": {},
-      "time": {},
+      "time": {
+        "played": 0,
+        "periodLength": 1200,
+        "overtimeLength": 300,
+        "totalPeriodCount": 3
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.played",
+          "time.periodLength",
+          "time.overtimeLength",
+          "time.totalPeriodCount"
+        ],
+        "changeTimestamp": 1769365244
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -5533,7 +5544,7 @@
         ],
         "changeTimestamp": 1769355150
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14077435,
       "slug": "ehc-red-bull-munchen-adler-mannheim",
@@ -5761,7 +5772,7 @@
         ],
         "changeTimestamp": 1769353852
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14077438,
       "slug": "pinguins-bremerhaven-augsburger-panther",
@@ -5991,7 +6002,7 @@
         ],
         "changeTimestamp": 1769353990
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14077439,
       "slug": "straubing-tigers-iserlohn-roosters",
@@ -6332,10 +6343,11 @@
       },
       "customId": "XBbsiCb",
       "status": {
-        "code": 3,
-        "description": "3rd period",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Kölner Haie",
         "slug": "kolner-haie",
@@ -6412,31 +6424,38 @@
         }
       },
       "homeScore": {
-        "current": 3,
-        "display": 3,
+        "current": 5,
+        "display": 5,
         "period1": 1,
         "period2": 2,
-        "period3": 0
+        "period3": 2,
+        "normaltime": 5
       },
       "awayScore": {
         "current": 2,
         "display": 2,
         "period1": 1,
         "period2": 1,
-        "period3": 0
+        "period3": 0,
+        "normaltime": 2
       },
       "time": {
-        "played": 3413,
+        "played": 3554,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3,
-        "currentPeriodStartTimestamp": 1769361417
+        "currentPeriodStartTimestamp": 1769363390
       },
       "changes": {
         "changes": [
-          "time.played"
+          "time.currentPeriodStart",
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1769362987
+        "changeTimestamp": 1769363395
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -6451,7 +6470,6 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -6552,10 +6570,11 @@
       },
       "customId": "gCbsrkw",
       "status": {
-        "code": 3,
-        "description": "3rd period",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Löwen Frankfurt",
         "slug": "lowen-frankfurt",
@@ -6638,27 +6657,34 @@
         "display": 4,
         "period1": 1,
         "period2": 2,
-        "period3": 1
+        "period3": 1,
+        "normaltime": 4
       },
       "awayScore": {
         "current": 1,
         "display": 1,
         "period1": 0,
         "period2": 0,
-        "period3": 1
+        "period3": 1,
+        "normaltime": 1
       },
       "time": {
-        "played": 3418,
+        "played": 3583,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3,
-        "currentPeriodStartTimestamp": 1769361080
+        "currentPeriodStartTimestamp": 1769363242
       },
       "changes": {
         "changes": [
-          "time.played"
+          "time.currentPeriodStart",
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1769362987
+        "changeTimestamp": 1769363245
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -6673,7 +6699,6 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -6774,9 +6799,9 @@
       },
       "customId": "zicsFic",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 30,
+        "description": "Pause",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Grizzlys Wolfsburg",
@@ -6856,11 +6881,30 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 1
+      },
+      "awayScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 1
+      },
+      "time": {
+        "played": 1016,
+        "periodLength": 1200,
+        "overtimeLength": 300,
+        "totalPeriodCount": 3,
+        "currentPeriodStartTimestamp": 1769366152
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1769366154
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -11376,8 +11420,8 @@
       },
       "customId": "rCbsACb",
       "status": {
-        "code": 30,
-        "description": "Pause",
+        "code": 32,
+        "description": "Awaiting extra time",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -11459,29 +11503,33 @@
         }
       },
       "homeScore": {
-        "current": 1,
-        "display": 1,
+        "current": 3,
+        "display": 3,
         "period1": 0,
-        "period2": 1
+        "period2": 1,
+        "period3": 2
       },
       "awayScore": {
-        "current": 2,
-        "display": 2,
+        "current": 3,
+        "display": 3,
         "period1": 1,
-        "period2": 1
+        "period2": 1,
+        "period3": 1
       },
       "time": {
-        "played": 2400,
+        "played": 3577,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3,
-        "currentPeriodStartTimestamp": 1769362657
+        "currentPeriodStartTimestamp": 1769366146
       },
       "changes": {
         "changes": [
-          "time.played"
+          "time.currentPeriodStart",
+          "status.code",
+          "status.description"
         ],
-        "changeTimestamp": 1769362682
+        "changeTimestamp": 1769366149
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -11597,8 +11645,8 @@
       },
       "customId": "CCbsJBo",
       "status": {
-        "code": 30,
-        "description": "Pause",
+        "code": 3,
+        "description": "3rd period",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -11678,29 +11726,31 @@
         }
       },
       "homeScore": {
-        "current": 3,
-        "display": 3,
+        "current": 4,
+        "display": 4,
         "period1": 0,
-        "period2": 3
+        "period2": 3,
+        "period3": 1
       },
       "awayScore": {
         "current": 3,
         "display": 3,
         "period1": 1,
-        "period2": 2
+        "period2": 2,
+        "period3": 0
       },
       "time": {
-        "played": 2400,
+        "played": 3513,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3,
-        "currentPeriodStartTimestamp": 1769362841
+        "currentPeriodStartTimestamp": 1769363974
       },
       "changes": {
         "changes": [
           "time.played"
         ],
-        "changeTimestamp": 1769362925
+        "changeTimestamp": 1769366104
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -11716,6 +11766,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
+      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -12472,10 +12523,11 @@
       },
       "customId": "xDbsulc",
       "status": {
-        "code": 2,
-        "description": "2nd period",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "EC KAC",
         "slug": "kac-klagenfurt",
@@ -12556,29 +12608,39 @@
         }
       },
       "homeScore": {
-        "current": 2,
-        "display": 2,
+        "current": 3,
+        "display": 3,
         "period1": 2,
-        "period2": 0
+        "period2": 0,
+        "period3": 1,
+        "normaltime": 3
       },
       "awayScore": {
         "current": 4,
         "display": 4,
         "period1": 3,
-        "period2": 1
+        "period2": 1,
+        "period3": 0,
+        "normaltime": 4
       },
       "time": {
-        "played": 2241,
+        "played": 3599,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3,
-        "currentPeriodStartTimestamp": 1769361797
+        "currentPeriodStartTimestamp": 1769366046
       },
       "changes": {
         "changes": [
+          "time.currentPeriodStart",
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime",
           "time.played"
         ],
-        "changeTimestamp": 1769362987
+        "changeTimestamp": 1769366050
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -12593,7 +12655,6 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -12686,10 +12747,11 @@
       },
       "customId": "pDbstDb",
       "status": {
-        "code": 2,
-        "description": "2nd period",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "HC Innsbruck",
         "slug": "hc-twk-innsbruck",
@@ -12771,29 +12833,38 @@
         }
       },
       "homeScore": {
-        "current": 1,
-        "display": 1,
-        "period1": 0,
-        "period2": 1
-      },
-      "awayScore": {
         "current": 2,
         "display": 2,
+        "period1": 0,
+        "period2": 1,
+        "period3": 1,
+        "normaltime": 2
+      },
+      "awayScore": {
+        "current": 3,
+        "display": 3,
         "period1": 2,
-        "period2": 0
+        "period2": 0,
+        "period3": 1,
+        "normaltime": 3
       },
       "time": {
-        "played": 2259,
+        "played": 3571,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3,
-        "currentPeriodStartTimestamp": 1769361293
+        "currentPeriodStartTimestamp": 1769365973
       },
       "changes": {
         "changes": [
-          "time.played"
+          "time.currentPeriodStart",
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1769362987
+        "changeTimestamp": 1769365978
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -12808,7 +12879,6 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -12901,10 +12971,11 @@
       },
       "customId": "oDbsZYj",
       "status": {
-        "code": 2,
-        "description": "2nd period",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Vienna Capitals",
         "slug": "vienna-capitals",
@@ -12985,29 +13056,38 @@
         }
       },
       "homeScore": {
-        "current": 2,
-        "display": 2,
+        "current": 3,
+        "display": 3,
         "period1": 1,
-        "period2": 1
+        "period2": 1,
+        "period3": 1,
+        "normaltime": 3
       },
       "awayScore": {
         "current": 0,
         "display": 0,
         "period1": 0,
-        "period2": 0
+        "period2": 0,
+        "period3": 0,
+        "normaltime": 0
       },
       "time": {
-        "played": 2313,
+        "played": 3562,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3,
-        "currentPeriodStartTimestamp": 1769361472
+        "currentPeriodStartTimestamp": 1769365670
       },
       "changes": {
         "changes": [
-          "time.played"
+          "time.currentPeriodStart",
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1769362987
+        "changeTimestamp": 1769365675
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -13022,7 +13102,6 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -25715,10 +25794,11 @@
       },
       "customId": "uCbsbhp",
       "status": {
-        "code": 30,
-        "description": "Pause",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Hockey Club Tabor",
         "slug": "hockey-club-tabor",
@@ -25800,29 +25880,35 @@
         "current": 0,
         "display": 0,
         "period1": 0,
-        "period2": 0
+        "period2": 0,
+        "period3": 0,
+        "normaltime": 0
       },
       "awayScore": {
-        "current": 3,
-        "display": 3,
+        "current": 4,
+        "display": 4,
         "period1": 1,
-        "period2": 2
+        "period2": 2,
+        "period3": 1,
+        "normaltime": 4
       },
       "time": {
-        "played": 2400,
+        "played": 3597,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3,
-        "currentPeriodStartTimestamp": 1769362450
+        "currentPeriodStartTimestamp": 1769365581
       },
       "changes": {
         "changes": [
           "time.currentPeriodStart",
           "status.code",
           "status.description",
-          "time.played"
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1769362453
+        "changeTimestamp": 1769365585
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -25933,8 +26019,8 @@
       },
       "customId": "FCbsgLib",
       "status": {
-        "code": 2,
-        "description": "2nd period",
+        "code": 3,
+        "description": "3rd period",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -26015,29 +26101,31 @@
         }
       },
       "homeScore": {
-        "current": 2,
-        "display": 2,
+        "current": 3,
+        "display": 3,
         "period1": 0,
-        "period2": 2
+        "period2": 2,
+        "period3": 1
       },
       "awayScore": {
         "current": 1,
         "display": 1,
         "period1": 0,
-        "period2": 1
+        "period2": 1,
+        "period3": 0
       },
       "time": {
-        "played": 1827,
+        "played": 2740,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3,
-        "currentPeriodStartTimestamp": 1769361440
+        "currentPeriodStartTimestamp": 1769365559
       },
       "changes": {
         "changes": [
           "time.played"
         ],
-        "changeTimestamp": 1769362987
+        "changeTimestamp": 1769366104
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -26052,7 +26140,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "lastPeriod": "period2",
+      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -36074,10 +36162,11 @@
       },
       "customId": "DdYcsRrid",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 110,
+        "description": "AET",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Haukat",
         "slug": "haukat",
@@ -36151,11 +36240,46 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 0,
+        "period2": 2,
+        "period3": 0,
+        "normaltime": 2,
+        "overtime": 0
+      },
+      "awayScore": {
+        "current": 3,
+        "display": 3,
+        "period1": 1,
+        "period2": 0,
+        "period3": 1,
+        "normaltime": 2,
+        "overtime": 1
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.period3",
+          "homeScore.normaltime",
+          "homeScore.overtime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.period3",
+          "awayScore.normaltime",
+          "awayScore.overtime"
+        ],
+        "changeTimestamp": 1769363816
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -36170,7 +36294,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -40378,10 +40502,11 @@
       },
       "customId": "cCbsHic",
       "status": {
-        "code": 3,
-        "description": "3rd period",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Bietigheim Steelers",
         "slug": "bietigheim-steelers",
@@ -40461,29 +40586,30 @@
         }
       },
       "homeScore": {
-        "current": 2,
-        "display": 2,
+        "current": 3,
+        "display": 3,
         "period1": 0,
         "period2": 2,
-        "period3": 0
+        "period3": 1,
+        "normaltime": 3
       },
       "awayScore": {
-        "current": 4,
-        "display": 4,
+        "current": 5,
+        "display": 5,
         "period1": 2,
         "period2": 1,
-        "period3": 1
+        "period3": 2,
+        "normaltime": 5
       },
       "time": {
-        "currentPeriodStartTimestamp": 1769362812
+        "currentPeriodStartTimestamp": 1769364794
       },
       "changes": {
         "changes": [
-          "awayScore.current",
-          "awayScore.display",
+          "homeScore.period3",
           "awayScore.period3"
         ],
-        "changeTimestamp": 1769362995
+        "changeTimestamp": 1769364934
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -40498,7 +40624,6 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -40595,10 +40720,11 @@
       },
       "customId": "mCbsAic",
       "status": {
-        "code": 3,
-        "description": "3rd period",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Düsseldorfer EG",
         "slug": "dusseldorfer-eg",
@@ -40680,27 +40806,26 @@
         "display": 2,
         "period1": 2,
         "period2": 0,
-        "period3": 0
+        "period3": 0,
+        "normaltime": 2
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
+        "current": 4,
+        "display": 4,
         "period1": 0,
         "period2": 0,
-        "period3": 0
+        "period3": 4,
+        "normaltime": 4
       },
       "time": {
-        "currentPeriodStartTimestamp": 1769362932
+        "currentPeriodStartTimestamp": 1769365213
       },
       "changes": {
         "changes": [
-          "time.currentPeriodStart",
-          "status.code",
-          "status.description",
           "homeScore.period3",
           "awayScore.period3"
         ],
-        "changeTimestamp": 1769362936
+        "changeTimestamp": 1769365236
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -40715,7 +40840,6 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -40812,10 +40936,11 @@
       },
       "customId": "CicsDAc",
       "status": {
-        "code": 30,
-        "description": "Pause",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Eisbären Regensburg",
         "slug": "eisbaren-regensburg",
@@ -40895,27 +41020,30 @@
         }
       },
       "homeScore": {
-        "current": 1,
-        "display": 1,
+        "current": 5,
+        "display": 5,
         "period1": 1,
-        "period2": 0
+        "period2": 0,
+        "period3": 4,
+        "normaltime": 5
       },
       "awayScore": {
         "current": 2,
         "display": 2,
         "period1": 1,
-        "period2": 1
+        "period2": 1,
+        "period3": 0,
+        "normaltime": 2
       },
       "time": {
-        "currentPeriodStartTimestamp": 1769362393
+        "currentPeriodStartTimestamp": 1769365634
       },
       "changes": {
         "changes": [
-          "time.currentPeriodStart",
-          "status.code",
-          "status.description"
+          "homeScore.period3",
+          "awayScore.period3"
         ],
-        "changeTimestamp": 1769362396
+        "changeTimestamp": 1769365809
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -41026,10 +41154,11 @@
       },
       "customId": "IicsBAc",
       "status": {
-        "code": 3,
-        "description": "3rd period",
-        "type": "inprogress"
+        "code": 110,
+        "description": "AET",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Eispiraten Crimmitschau",
         "slug": "eispiraten-crimmitschau",
@@ -41109,36 +41238,260 @@
         }
       },
       "homeScore": {
-        "current": 1,
-        "display": 1,
+        "current": 2,
+        "display": 2,
         "period1": 1,
         "period2": 0,
-        "period3": 0
+        "period3": 0,
+        "normaltime": 1,
+        "overtime": 1
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
+        "current": 1,
+        "display": 1,
         "period1": 0,
         "period2": 0,
-        "period3": 0
+        "period3": 1,
+        "normaltime": 1,
+        "overtime": 0
       },
       "time": {
-        "currentPeriodStartTimestamp": 1769362992
+        "currentPeriodStartTimestamp": 1769365393
       },
       "changes": {
         "changes": [
-          "time.currentPeriodStart",
           "status.code",
           "status.description",
-          "homeScore.period3",
-          "awayScore.period3"
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.normaltime",
+          "homeScore.overtime",
+          "awayScore.normaltime",
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1769362996
+        "changeTimestamp": 1769365395
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14077774,
       "slug": "eispiraten-crimmitschau-ehc-freiburg",
+      "startTimestamp": 1769356800,
+      "periods": {
+        "current": "Score",
+        "period1": "1st period",
+        "period2": "2nd period",
+        "period3": "3rd period",
+        "overtime": "Overtime",
+        "penalties": "Penalty"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "isEditor": false
+    },
+    {
+      "tournament": {
+        "name": "DEL 2",
+        "slug": "del-2",
+        "category": {
+          "name": "Germany",
+          "slug": "germany",
+          "sport": {
+            "name": "Ice hockey",
+            "slug": "ice-hockey",
+            "id": 4
+          },
+          "id": 41,
+          "country": {
+            "alpha2": "DE",
+            "alpha3": "DEU",
+            "name": "Germany",
+            "slug": "germany"
+          },
+          "flag": "germany",
+          "alpha2": "DE",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "ألمانيا",
+              "hi": "जर्मनी",
+              "bn": "জার্মানি"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "DEL 2",
+          "slug": "del-2",
+          "category": {
+            "name": "Germany",
+            "slug": "germany",
+            "sport": {
+              "name": "Ice hockey",
+              "slug": "ice-hockey",
+              "id": 4
+            },
+            "id": 41,
+            "country": {
+              "alpha2": "DE",
+              "alpha3": "DEU",
+              "name": "Germany",
+              "slug": "germany"
+            },
+            "flag": "germany",
+            "alpha2": "DE",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "ألمانيا",
+                "hi": "जर्मनी",
+                "bn": "জার্মানি"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 622,
+          "hasPerformanceGraphFeature": false,
+          "id": 267,
+          "country": {},
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "الدوري الألماني 2"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "id": 790,
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "الدوري الألماني 2"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "season": {
+        "name": "DEL 2 25/26",
+        "year": "25/26",
+        "editor": false,
+        "id": 77523
+      },
+      "roundInfo": {
+        "round": 39
+      },
+      "customId": "ZBbsDic",
+      "status": {
+        "code": 3,
+        "description": "3rd period",
+        "type": "inprogress"
+      },
+      "homeTeam": {
+        "name": "EV Landshut",
+        "slug": "ev-landshut",
+        "shortName": "Landshut",
+        "gender": "M",
+        "sport": {
+          "name": "Ice hockey",
+          "slug": "ice-hockey",
+          "id": 4
+        },
+        "userCount": 391,
+        "nameCode": "LAH",
+        "national": false,
+        "type": 0,
+        "id": 5428,
+        "country": {
+          "alpha2": "DE",
+          "alpha3": "DEU",
+          "name": "Germany",
+          "slug": "germany"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "نادي لاندسهوت",
+            "ru": "Ландсхут Каннибалс"
+          },
+          "shortNameTranslation": {
+            "ar": "لاندشوت",
+            "hi": "लैंडशट",
+            "bn": "ল্যান্ডশুট"
+          }
+        }
+      },
+      "awayTeam": {
+        "name": "EC Kassel Huskies",
+        "slug": "ec-kassel-huskies",
+        "shortName": "Kassel",
+        "gender": "M",
+        "sport": {
+          "name": "Ice hockey",
+          "slug": "ice-hockey",
+          "id": 4
+        },
+        "userCount": 899,
+        "nameCode": "KAS",
+        "national": false,
+        "type": 0,
+        "id": 3849,
+        "country": {
+          "alpha2": "DE",
+          "alpha3": "DEU",
+          "name": "Germany",
+          "slug": "germany"
+        },
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كاسل هوسكيز",
+            "ru": "Кассель Хаскис"
+          },
+          "shortNameTranslation": {
+            "ar": "كاسل",
+            "hi": "कासेल",
+            "bn": "ক্যাসেল"
+          }
+        }
+      },
+      "homeScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 0,
+        "period2": 1,
+        "period3": 1
+      },
+      "awayScore": {
+        "current": 5,
+        "display": 5,
+        "period1": 2,
+        "period2": 2,
+        "period3": 1
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1769363293
+      },
+      "changes": {
+        "changes": [
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period3"
+        ],
+        "changeTimestamp": 1769365395
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 14077777,
+      "slug": "ev-landshut-ec-kassel-huskies",
       "startTimestamp": 1769356800,
       "periods": {
         "current": "Score",
@@ -41243,224 +41596,10 @@
       "roundInfo": {
         "round": 39
       },
-      "customId": "ZBbsDic",
-      "status": {
-        "code": 30,
-        "description": "Pause",
-        "type": "inprogress"
-      },
-      "homeTeam": {
-        "name": "EV Landshut",
-        "slug": "ev-landshut",
-        "shortName": "Landshut",
-        "gender": "M",
-        "sport": {
-          "name": "Ice hockey",
-          "slug": "ice-hockey",
-          "id": 4
-        },
-        "userCount": 391,
-        "nameCode": "LAH",
-        "national": false,
-        "type": 0,
-        "id": 5428,
-        "country": {
-          "alpha2": "DE",
-          "alpha3": "DEU",
-          "name": "Germany",
-          "slug": "germany"
-        },
-        "subTeams": [],
-        "teamColors": {
-          "primary": "#374df5",
-          "secondary": "#374df5",
-          "text": "#ffffff"
-        },
-        "fieldTranslations": {
-          "nameTranslation": {
-            "ar": "نادي لاندسهوت",
-            "ru": "Ландсхут Каннибалс"
-          },
-          "shortNameTranslation": {
-            "ar": "لاندشوت",
-            "hi": "लैंडशट",
-            "bn": "ল্যান্ডশুট"
-          }
-        }
-      },
-      "awayTeam": {
-        "name": "EC Kassel Huskies",
-        "slug": "ec-kassel-huskies",
-        "shortName": "Kassel",
-        "gender": "M",
-        "sport": {
-          "name": "Ice hockey",
-          "slug": "ice-hockey",
-          "id": 4
-        },
-        "userCount": 899,
-        "nameCode": "KAS",
-        "national": false,
-        "type": 0,
-        "id": 3849,
-        "country": {
-          "alpha2": "DE",
-          "alpha3": "DEU",
-          "name": "Germany",
-          "slug": "germany"
-        },
-        "subTeams": [],
-        "teamColors": {
-          "primary": "#374df5",
-          "secondary": "#374df5",
-          "text": "#ffffff"
-        },
-        "fieldTranslations": {
-          "nameTranslation": {
-            "ar": "كاسل هوسكيز",
-            "ru": "Кассель Хаскис"
-          },
-          "shortNameTranslation": {
-            "ar": "كاسل",
-            "hi": "कासेल",
-            "bn": "ক্যাসেল"
-          }
-        }
-      },
-      "homeScore": {
-        "current": 1,
-        "display": 1,
-        "period1": 0,
-        "period2": 1
-      },
-      "awayScore": {
-        "current": 4,
-        "display": 4,
-        "period1": 2,
-        "period2": 2
-      },
-      "time": {
-        "currentPeriodStartTimestamp": 1769362093
-      },
-      "changes": {
-        "changes": [
-          "time.currentPeriodStart",
-          "status.code",
-          "status.description"
-        ],
-        "changeTimestamp": 1769362096
-      },
-      "hasGlobalHighlights": false,
-      "crowdsourcingDataDisplayEnabled": false,
-      "id": 14077777,
-      "slug": "ev-landshut-ec-kassel-huskies",
-      "startTimestamp": 1769356800,
-      "periods": {
-        "current": "Score",
-        "period1": "1st period",
-        "period2": "2nd period",
-        "period3": "3rd period",
-        "overtime": "Overtime",
-        "penalties": "Penalty"
-      },
-      "finalResultOnly": false,
-      "feedLocked": false,
-      "isEditor": false
-    },
-    {
-      "tournament": {
-        "name": "DEL 2",
-        "slug": "del-2",
-        "category": {
-          "name": "Germany",
-          "slug": "germany",
-          "sport": {
-            "name": "Ice hockey",
-            "slug": "ice-hockey",
-            "id": 4
-          },
-          "id": 41,
-          "country": {
-            "alpha2": "DE",
-            "alpha3": "DEU",
-            "name": "Germany",
-            "slug": "germany"
-          },
-          "flag": "germany",
-          "alpha2": "DE",
-          "fieldTranslations": {
-            "nameTranslation": {
-              "ar": "ألمانيا",
-              "hi": "जर्मनी",
-              "bn": "জার্মানি"
-            },
-            "shortNameTranslation": {}
-          }
-        },
-        "uniqueTournament": {
-          "name": "DEL 2",
-          "slug": "del-2",
-          "category": {
-            "name": "Germany",
-            "slug": "germany",
-            "sport": {
-              "name": "Ice hockey",
-              "slug": "ice-hockey",
-              "id": 4
-            },
-            "id": 41,
-            "country": {
-              "alpha2": "DE",
-              "alpha3": "DEU",
-              "name": "Germany",
-              "slug": "germany"
-            },
-            "flag": "germany",
-            "alpha2": "DE",
-            "fieldTranslations": {
-              "nameTranslation": {
-                "ar": "ألمانيا",
-                "hi": "जर्मनी",
-                "bn": "জার্মানি"
-              },
-              "shortNameTranslation": {}
-            }
-          },
-          "userCount": 622,
-          "hasPerformanceGraphFeature": false,
-          "id": 267,
-          "country": {},
-          "hasEventPlayerStatistics": false,
-          "displayInverseHomeAwayTeams": false,
-          "fieldTranslations": {
-            "nameTranslation": {
-              "ar": "الدوري الألماني 2"
-            },
-            "shortNameTranslation": {}
-          }
-        },
-        "priority": 0,
-        "id": 790,
-        "fieldTranslations": {
-          "nameTranslation": {
-            "ar": "الدوري الألماني 2"
-          },
-          "shortNameTranslation": {}
-        }
-      },
-      "season": {
-        "name": "DEL 2 25/26",
-        "year": "25/26",
-        "editor": false,
-        "id": 77523
-      },
-      "roundInfo": {
-        "round": 39
-      },
       "customId": "hfdscho",
       "status": {
-        "code": 1,
-        "description": "1st period",
+        "code": 2,
+        "description": "2nd period",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -41543,30 +41682,27 @@
       "homeScore": {
         "current": 0,
         "display": 0,
-        "period1": 0
+        "period1": 0,
+        "period2": 0
       },
       "awayScore": {
         "current": 0,
         "display": 0,
-        "period1": 0
+        "period1": 0,
+        "period2": 0
       },
       "time": {
-        "currentPeriodStartTimestamp": 1769362273
+        "currentPeriodStartTimestamp": 1769365154
       },
       "changes": {
         "changes": [
           "time.currentPeriodStart",
           "status.code",
           "status.description",
-          "status.type",
-          "homeScore.current",
-          "homeScore.display",
-          "homeScore.period1",
-          "awayScore.current",
-          "awayScore.display",
-          "awayScore.period1"
+          "homeScore.period2",
+          "awayScore.period2"
         ],
-        "changeTimestamp": 1769362277
+        "changeTimestamp": 1769365159
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -41581,7 +41717,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -41678,8 +41814,8 @@
       },
       "customId": "xicsYCn",
       "status": {
-        "code": 1,
-        "description": "1st period",
+        "code": 2,
+        "description": "2nd period",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -41763,30 +41899,25 @@
       "homeScore": {
         "current": 0,
         "display": 0,
-        "period1": 0
+        "period1": 0,
+        "period2": 0
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0
+        "current": 1,
+        "display": 1,
+        "period1": 0,
+        "period2": 1
       },
       "time": {
-        "currentPeriodStartTimestamp": 1769362273
+        "currentPeriodStartTimestamp": 1769365093
       },
       "changes": {
         "changes": [
-          "time.currentPeriodStart",
-          "status.code",
-          "status.description",
-          "status.type",
-          "homeScore.current",
-          "homeScore.display",
-          "homeScore.period1",
           "awayScore.current",
           "awayScore.display",
-          "awayScore.period1"
+          "awayScore.period2"
         ],
-        "changeTimestamp": 1769362276
+        "changeTimestamp": 1769365458
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -41801,7 +41932,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -42091,10 +42222,11 @@
       },
       "customId": "gfdscXUi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "SC Riessersee",
         "slug": "sc-riessersee",
@@ -42167,11 +42299,42 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 0,
+        "period2": 1,
+        "period3": 0,
+        "normaltime": 1
+      },
+      "awayScore": {
+        "current": 5,
+        "display": 5,
+        "period1": 2,
+        "period2": 3,
+        "period3": 0,
+        "normaltime": 5
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.period3",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.period3",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1769364312
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -42186,7 +42349,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -43152,7 +43315,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -46076,10 +46239,11 @@
       },
       "customId": "OVrcsfyDd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Gyergyói HK",
         "slug": "gyergyoi-hk",
@@ -46151,11 +46315,42 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 4,
+        "display": 4,
+        "period1": 1,
+        "period2": 2,
+        "period3": 1,
+        "normaltime": 4
+      },
+      "awayScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 0,
+        "period2": 2,
+        "period3": 0,
+        "normaltime": 2
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.period3",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.period3",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1769363382
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -46170,7 +46365,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -46384,7 +46579,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -46468,10 +46663,11 @@
       },
       "customId": "hUwsoHZ",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Dunaújvárosi Acélbikák",
         "slug": "dunaujvarosi-acelbikak",
@@ -46550,11 +46746,42 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 6,
+        "display": 6,
+        "period1": 2,
+        "period2": 4,
+        "period3": 0,
+        "normaltime": 6
+      },
+      "awayScore": {
+        "current": 4,
+        "display": 4,
+        "period1": 1,
+        "period2": 0,
+        "period3": 3,
+        "normaltime": 4
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.period3",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.period3",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1769364685
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -46569,7 +46796,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -48606,7 +48833,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -55560,10 +55787,11 @@
       },
       "customId": "eLgdsreld",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "IHK Sparta Sarpsborg U20",
         "slug": "ihk-sparta-sarpsborg",
@@ -55625,11 +55853,42 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 5,
+        "display": 5,
+        "period1": 2,
+        "period2": 1,
+        "period3": 2,
+        "normaltime": 5
+      },
+      "awayScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 0,
+        "period2": 2,
+        "period3": 0,
+        "normaltime": 2
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.period3",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.period3",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1769363320
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -55644,7 +55903,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -56127,10 +56386,11 @@
       },
       "customId": "jEbscmc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "GKS Tychy",
         "slug": "gks-tychy",
@@ -56206,11 +56466,42 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 9,
+        "display": 9,
+        "period1": 0,
+        "period2": 7,
+        "period3": 2,
+        "normaltime": 9
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "period2": 0,
+        "period3": 0,
+        "normaltime": 0
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.period3",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.period3",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1769364250
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -56225,7 +56516,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -56317,10 +56608,11 @@
       },
       "customId": "cEbsHfd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "KH Energa Toruń",
         "slug": "kh-energa-torun",
@@ -56398,11 +56690,42 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 3,
+        "display": 3,
+        "period1": 2,
+        "period2": 1,
+        "period3": 0,
+        "normaltime": 3
+      },
+      "awayScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 0,
+        "period2": 1,
+        "period3": 1,
+        "normaltime": 2
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.period3",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.period3",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1769364499
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -56417,7 +56740,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -60948,7 +61271,7 @@
         ],
         "changeTimestamp": 1769343504
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14221472,
       "slug": "zvezda-moscow-zauralie-kurgan",
@@ -63031,10 +63354,11 @@
       },
       "customId": "hmcsxjZ",
       "status": {
-        "code": 3,
-        "description": "3rd period",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "HC Prešov",
         "slug": "hc-presov",
@@ -63119,29 +63443,37 @@
         "display": 0,
         "period1": 0,
         "period2": 0,
-        "period3": 0
+        "period3": 0,
+        "normaltime": 0
       },
       "awayScore": {
         "current": 2,
         "display": 2,
         "period1": 1,
         "period2": 0,
-        "period3": 1
+        "period3": 1,
+        "normaltime": 2
       },
       "time": {
-        "played": 2567,
+        "played": 3584,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3,
-        "currentPeriodStartTimestamp": 1769362657
+        "currentPeriodStartTimestamp": 1769364635
       },
       "changes": {
         "changes": [
-          "time.played"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime",
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1769362987
+        "changeTimestamp": 1769364639
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14236874,
       "slug": "hc-presov-hk-nitra",
@@ -63154,7 +63486,6 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -67364,10 +67695,11 @@
       },
       "customId": "FzbshAb",
       "status": {
-        "code": 3,
-        "description": "3rd period",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Mora IK",
         "slug": "mora-ik",
@@ -67453,27 +67785,35 @@
         "display": 5,
         "period1": 0,
         "period2": 3,
-        "period3": 2
+        "period3": 2,
+        "normaltime": 5
       },
       "awayScore": {
         "current": 2,
         "display": 2,
         "period1": 1,
         "period2": 0,
-        "period3": 1
+        "period3": 1,
+        "normaltime": 2
       },
       "time": {
-        "played": 3547,
+        "played": 3596,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3,
-        "currentPeriodStartTimestamp": 1769361098
+        "currentPeriodStartTimestamp": 1769363104
       },
       "changes": {
         "changes": [
+          "time.currentPeriodStart",
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime",
           "time.played"
         ],
-        "changeTimestamp": 1769362987
+        "changeTimestamp": 1769363107
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -67488,7 +67828,6 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -71715,10 +72054,11 @@
       },
       "customId": "eBbsBQo",
       "status": {
-        "code": 3,
-        "description": "3rd period",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Tingsryds AIF",
         "slug": "tingsryds-aif",
@@ -71803,25 +72143,26 @@
         "display": 5,
         "period1": 1,
         "period2": 1,
-        "period3": 3
+        "period3": 3,
+        "normaltime": 5
       },
       "awayScore": {
         "current": 4,
         "display": 4,
         "period1": 1,
         "period2": 2,
-        "period3": 1
+        "period3": 1,
+        "normaltime": 4
       },
       "time": {
-        "currentPeriodStartTimestamp": 1769360786
+        "currentPeriodStartTimestamp": 1769363064
       },
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display",
-          "homeScore.period3"
+          "homeScore.period3",
+          "awayScore.period3"
         ],
-        "changeTimestamp": 1769362143
+        "changeTimestamp": 1769363178
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -71836,7 +72177,6 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -79018,10 +79358,11 @@
       },
       "customId": "pkXisvkXi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "HC Davos U21",
         "slug": "hc-davos-u21-u21",
@@ -79090,11 +79431,42 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 2,
+        "period2": 0,
+        "period3": 0,
+        "normaltime": 2
+      },
+      "awayScore": {
+        "current": 3,
+        "display": 3,
+        "period1": 2,
+        "period2": 1,
+        "period3": 0,
+        "normaltime": 3
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.period3",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.period3",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1769364997
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -79109,7 +79481,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -80657,10 +81029,11 @@
       },
       "customId": "LeXsYDX",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Sheffield Steelers",
         "slug": "sheffield-steelers",
@@ -80741,11 +81114,42 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 6,
+        "display": 6,
+        "period1": 3,
+        "period2": 2,
+        "period3": 1,
+        "normaltime": 6
+      },
+      "awayScore": {
+        "current": 3,
+        "display": 3,
+        "period1": 2,
+        "period2": 1,
+        "period3": 0,
+        "normaltime": 3
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.period3",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.period3",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1769366115
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -81539,7 +81943,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -84793,9 +85197,9 @@
       },
       "customId": "xdtsDdt",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 1,
+        "description": "1st period",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Providence Bruins",
@@ -84869,11 +85273,28 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 1
+      },
+      "awayScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 1
+      },
+      "time": {
+        "played": 1054,
+        "periodLength": 1200,
+        "overtimeLength": 300,
+        "totalPeriodCount": 3,
+        "currentPeriodStartTimestamp": 1769364438
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.played"
+        ],
+        "changeTimestamp": 1769366104
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -84888,6 +85309,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -88900,9 +89322,9 @@
       },
       "customId": "nMHcsbIhd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 1,
+        "description": "1st period",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Maine Mariners",
@@ -88970,11 +89392,28 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 4,
+        "display": 4,
+        "period1": 4
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "time": {
+        "played": 853,
+        "periodLength": 1200,
+        "overtimeLength": 300,
+        "totalPeriodCount": 3,
+        "currentPeriodStartTimestamp": 1769364421
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.played"
+        ],
+        "changeTimestamp": 1769366104
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -88989,6 +89428,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
