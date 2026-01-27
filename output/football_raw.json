@@ -6989,9 +6989,9 @@
       },
       "customId": "fbshEj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 60,
+        "description": "Postponed",
+        "type": "postponed"
       },
       "homeTeam": {
         "name": "Port Vale",
@@ -7070,7 +7070,12 @@
       "awayScore": {},
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type"
+        ],
+        "changeTimestamp": 1769523718
       },
       "hasGlobalHighlights": false,
       "detailId": 1,
@@ -10672,9 +10677,14 @@
       "awayScore": {},
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "cardsCode"
+        ],
+        "changeTimestamp": 1769524320
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14321285,
@@ -12514,8 +12524,8 @@
       },
       "customId": "HQosfox",
       "status": {
-        "code": 31,
-        "description": "Halftime",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -12594,41 +12604,53 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
+        "current": 1,
+        "display": 1,
         "period1": 0,
-        "normaltime": 0
+        "period2": 1,
+        "normaltime": 1
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
+        "current": 2,
+        "display": 2,
         "period1": 0,
-        "normaltime": 0
+        "period2": 2,
+        "normaltime": 2
       },
       "time": {
         "injuryTime1": 1,
-        "currentPeriodStartTimestamp": 1769519715
+        "currentPeriodStartTimestamp": 1769523514,
+        "initial": 2700,
+        "max": 5400,
+        "extra": 540
       },
       "changes": {
         "changes": [
-          "time.injuryTime1",
-          "status.code",
-          "status.description"
+          "cardsCode"
         ],
-        "changeTimestamp": 1769522511
+        "changeTimestamp": 1769525625
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
       "hasEventPlayerHeatMap": true,
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15302521,
+      "homeRedCards": 1,
       "varInProgress": {
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1769523514,
+        "extra": 540
+      },
       "slug": "al-ittihad-kalba-al-ain",
       "startTimestamp": 1769519700,
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -17146,7 +17168,7 @@
         ],
         "changeTimestamp": 1769477015
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
       "hasEventPlayerHeatMap": true,
       "detailId": 1,
@@ -20457,10 +20479,11 @@
       },
       "customId": "qLnsyQT",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Esteghlal FC",
         "slug": "esteghlal-fc",
@@ -20539,43 +20562,38 @@
       "homeScore": {
         "current": 1,
         "display": 1,
-        "period1": 0
+        "period1": 0,
+        "period2": 1,
+        "normaltime": 1
       },
       "awayScore": {
         "current": 0,
         "display": 0,
-        "period1": 0
+        "period1": 0,
+        "period2": 0,
+        "normaltime": 0
       },
       "time": {
-        "currentPeriodStartTimestamp": 1769520989,
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540
+        "currentPeriodStartTimestamp": 1769524306
       },
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.period2",
+          "homeScore.normaltime",
+          "awayScore.period2",
+          "awayScore.normaltime",
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1769521608
+        "changeTimestamp": 1769524308
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15402226,
-      "varInProgress": {
-        "homeTeam": false,
-        "awayTeam": false
-      },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1769520989,
-        "extra": 540
-      },
       "slug": "esteghlal-khuzestan-esteghlal-fc",
       "startTimestamp": 1769517000,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -24225,11 +24243,36 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "time": {
+        "periodLength": 2700,
+        "overtimeLength": 900,
+        "totalPeriodCount": 2,
+        "currentPeriodStartTimestamp": 1769525426
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "time.currentPeriodStart",
+          "time.periodLength",
+          "time.overtimeLength",
+          "time.totalPeriodCount"
+        ],
+        "changeTimestamp": 1769525426
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -26150,8 +26193,8 @@
       },
       "customId": "tRysVxLc",
       "status": {
-        "code": 31,
-        "description": "Halftime",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -26239,26 +26282,35 @@
         "period1": 0
       },
       "time": {
-        "currentPeriodStartTimestamp": 1769521755
+        "currentPeriodStartTimestamp": 1769522865,
+        "initial": 2700,
+        "max": 5400,
+        "extra": 540
       },
       "changes": {
         "changes": [
-          "time.currentPeriodStart",
-          "status.code",
-          "status.description",
-          "awayScore.period1"
+          "cardsCode"
         ],
-        "changeTimestamp": 1769521759
+        "changeTimestamp": 1769523422
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15401967,
+      "homeRedCards": 1,
       "varInProgress": {
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1769522865,
+        "extra": 540
+      },
       "slug": "js-omrane-ca-bizertin",
       "startTimestamp": 1769518800,
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -26369,8 +26421,8 @@
       },
       "customId": "nOrsXcV",
       "status": {
-        "code": 31,
-        "description": "Halftime",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -26449,9 +26501,10 @@
         }
       },
       "homeScore": {
-        "current": 1,
-        "display": 1,
-        "period1": 1
+        "current": 2,
+        "display": 2,
+        "period1": 1,
+        "period2": 1
       },
       "awayScore": {
         "current": 0,
@@ -26460,16 +26513,17 @@
       },
       "time": {
         "injuryTime1": 3,
-        "currentPeriodStartTimestamp": 1769521912
+        "injuryTime2": 4,
+        "currentPeriodStartTimestamp": 1769522941,
+        "initial": 2700,
+        "max": 5400,
+        "extra": 780
       },
       "changes": {
         "changes": [
-          "time.currentPeriodStart",
-          "status.code",
-          "status.description",
-          "awayScore.period1"
+          "time.injuryTime2"
         ],
-        "changeTimestamp": 1769521915
+        "changeTimestamp": 1769525646
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -26478,8 +26532,16 @@
         "homeTeam": false,
         "awayTeam": false
       },
+      "statusTime": {
+        "prefix": "",
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1769522941,
+        "extra": 780
+      },
       "slug": "es-metlaoui-cs-sfaxien",
       "startTimestamp": 1769518800,
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -26590,10 +26652,11 @@
       },
       "customId": "DRysHRy",
       "status": {
-        "code": 31,
-        "description": "Halftime",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Espérance Tunis",
         "slug": "esperance-tunis",
@@ -26673,33 +26736,32 @@
       "homeScore": {
         "current": 1,
         "display": 1,
-        "period1": 1
+        "period1": 1,
+        "period2": 0,
+        "normaltime": 1
       },
       "awayScore": {
         "current": 0,
         "display": 0,
-        "period1": 0
+        "period1": 0,
+        "period2": 0,
+        "normaltime": 0
       },
       "time": {
-        "injuryTime1": 2,
-        "currentPeriodStartTimestamp": 1769521653
+        "currentPeriodStartTimestamp": 1769522803
       },
       "changes": {
         "changes": [
           "time.currentPeriodStart",
-          "status.code",
-          "status.description",
-          "awayScore.period1"
+          "time.injuryTime1",
+          "time.injuryTime2"
         ],
-        "changeTimestamp": 1769521657
+        "changeTimestamp": 1769525913
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15401965,
-      "varInProgress": {
-        "homeTeam": false,
-        "awayTeam": false
-      },
+      "awayRedCards": 1,
       "slug": "js-kairouanaise-esperance-tunis",
       "startTimestamp": 1769518800,
       "finalResultOnly": false,
@@ -26812,10 +26874,11 @@
       },
       "customId": "tRpsFRy",
       "status": {
-        "code": 31,
-        "description": "Halftime",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 3,
       "homeTeam": {
         "name": "ES Zarzis",
         "slug": "es-zarzis",
@@ -26895,35 +26958,30 @@
         "current": 0,
         "display": 0,
         "period1": 0,
+        "period2": 0,
         "normaltime": 0
       },
       "awayScore": {
         "current": 0,
         "display": 0,
         "period1": 0,
+        "period2": 0,
         "normaltime": 0
       },
       "time": {
-        "currentPeriodStartTimestamp": 1769518935
+        "currentPeriodStartTimestamp": 1769522640
       },
       "changes": {
         "changes": [
           "status.code",
           "status.description",
-          "homeScore.period1",
-          "homeScore.normaltime",
-          "awayScore.period1",
-          "awayScore.normaltime"
+          "status.type"
         ],
-        "changeTimestamp": 1769521928
+        "changeTimestamp": 1769525780
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15401973,
-      "varInProgress": {
-        "homeTeam": false,
-        "awayTeam": false
-      },
       "slug": "es-zarzis-club-africain",
       "startTimestamp": 1769518800,
       "finalResultOnly": false,
@@ -27418,10 +27476,11 @@
       },
       "customId": "YgKbsKcEc",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Rekord Bielsko-Biała",
         "slug": "rekord-bielsko-biala",
@@ -27500,231 +27559,33 @@
         "current": 3,
         "display": 3,
         "period1": 3,
-        "period2": 0
+        "period2": 0,
+        "normaltime": 3
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
+        "current": 1,
+        "display": 1,
         "period1": 0,
-        "period2": 0
+        "period2": 1,
+        "normaltime": 1
       },
       "time": {
         "periodLength": 2700,
         "overtimeLength": 900,
         "totalPeriodCount": 2,
-        "currentPeriodStartTimestamp": 1769520670,
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540
+        "currentPeriodStartTimestamp": 1769517999
       },
       "changes": {
         "changes": [
-          "status.code",
-          "status.description",
-          "homeScore.period2",
-          "awayScore.period2",
           "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1769520670
+        "changeTimestamp": 1769523439
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15437041,
-      "varInProgress": {
-        "homeTeam": false,
-        "awayTeam": false
-      },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1769520670,
-        "extra": 540
-      },
       "slug": "ks-goczalkowice-zdroj-rekord-bielsko-biala",
       "startTimestamp": 1769517000,
-      "lastPeriod": "period2",
-      "finalResultOnly": false,
-      "feedLocked": false,
-      "isEditor": false,
-      "eventFilters": {
-        "category": [
-          "club"
-        ],
-        "level": [
-          "pro"
-        ],
-        "gender": [
-          "M"
-        ]
-      }
-    },
-    {
-      "tournament": {
-        "name": "Club Friendly Games",
-        "slug": "club-friendly-games",
-        "category": {
-          "name": "World",
-          "slug": "world",
-          "sport": {
-            "name": "Football",
-            "slug": "football",
-            "id": 1
-          },
-          "id": 1468,
-          "country": {},
-          "flag": "international",
-          "fieldTranslations": {
-            "nameTranslation": {
-              "ar": "العالم",
-              "hi": "विश्व",
-              "bn": "বিশ্ব"
-            },
-            "shortNameTranslation": {}
-          }
-        },
-        "uniqueTournament": {
-          "name": "Club Friendly Games",
-          "slug": "club-friendly-games",
-          "category": {
-            "name": "World",
-            "slug": "world",
-            "sport": {
-              "name": "Football",
-              "slug": "football",
-              "id": 1
-            },
-            "id": 1468,
-            "country": {},
-            "flag": "international",
-            "fieldTranslations": {
-              "nameTranslation": {
-                "ar": "العالم",
-                "hi": "विश्व",
-                "bn": "বিশ্ব"
-              },
-              "shortNameTranslation": {}
-            }
-          },
-          "userCount": 27312,
-          "hasPerformanceGraphFeature": false,
-          "id": 853,
-          "country": {},
-          "hasEventPlayerStatistics": false,
-          "displayInverseHomeAwayTeams": false,
-          "fieldTranslations": {
-            "nameTranslation": {
-              "ar": "مباريات ودية للأندية",
-              "hi": "क्लब फ्रेंडली गेम्स",
-              "bn": "ক্লাব ফ্রেন্ডলি গেমস"
-            },
-            "shortNameTranslation": {}
-          }
-        },
-        "priority": 0,
-        "id": 86,
-        "fieldTranslations": {
-          "nameTranslation": {
-            "ar": "مباريات ودية للأندية",
-            "hi": "क्लब फ्रेंडली गेम्स",
-            "bn": "ক্লাব ফ্রেন্ডলি গেমস"
-          },
-          "shortNameTranslation": {}
-        }
-      },
-      "season": {
-        "name": "Club Friendly Games 2026",
-        "year": "2026",
-        "editor": false,
-        "id": 87177
-      },
-      "customId": "ICEsWmHb",
-      "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
-      },
-      "homeTeam": {
-        "name": "Deutschlandsberger SC",
-        "slug": "deutschlandsberger-sc",
-        "shortName": "DSC",
-        "gender": "M",
-        "sport": {
-          "name": "Football",
-          "slug": "football",
-          "id": 1
-        },
-        "userCount": 891,
-        "nameCode": "DSC",
-        "disabled": false,
-        "national": false,
-        "type": 0,
-        "id": 73883,
-        "country": {
-          "alpha2": "AT",
-          "alpha3": "AUT",
-          "name": "Austria",
-          "slug": "austria"
-        },
-        "subTeams": [],
-        "teamColors": {
-          "primary": "#374df5",
-          "secondary": "#374df5",
-          "text": "#ffffff"
-        },
-        "fieldTranslations": {
-          "nameTranslation": {
-            "ar": "دويتشلاندسبرغر إس سي"
-          },
-          "shortNameTranslation": {
-            "ar": "دي إس سي"
-          }
-        }
-      },
-      "awayTeam": {
-        "name": "USV Draxler Mooskirchen",
-        "slug": "usv-draxler-mooskirchen",
-        "gender": "M",
-        "sport": {
-          "name": "Football",
-          "slug": "football",
-          "id": 1
-        },
-        "userCount": 26,
-        "nameCode": "MOO",
-        "national": false,
-        "type": 0,
-        "id": 205646,
-        "country": {
-          "alpha2": "AT",
-          "alpha3": "AUT",
-          "name": "Austria",
-          "slug": "austria"
-        },
-        "subTeams": [],
-        "teamColors": {
-          "primary": "#374df5",
-          "secondary": "#374df5",
-          "text": "#ffffff"
-        },
-        "fieldTranslations": {
-          "nameTranslation": {
-            "ar": "يو إس في دراكسلر موسكيرخن"
-          },
-          "shortNameTranslation": {}
-        }
-      },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
-      "changes": {
-        "changeTimestamp": 0
-      },
-      "hasGlobalHighlights": false,
-      "crowdsourcingDataDisplayEnabled": false,
-      "id": 15433868,
-      "slug": "usv-draxler-mooskirchen-deutschlandsberger-sc",
-      "startTimestamp": 1769533200,
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
