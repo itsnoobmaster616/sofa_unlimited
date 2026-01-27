@@ -1135,9 +1135,9 @@
       },
       "customId": "OlcsDbd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Sweden",
@@ -1215,17 +1215,36 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1769542262
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "awayScore.current",
+          "awayScore.display",
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1769542266
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15235106,
       "slug": "sweden-hungary",
       "startTimestamp": 1769542200,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -2883,10 +2902,11 @@
       },
       "customId": "NdXsrhqc",
       "status": {
-        "code": 31,
-        "description": "Halftime",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "EH Aalborg",
         "slug": "eh-aalborg",
@@ -2962,27 +2982,38 @@
         }
       },
       "homeScore": {
-        "current": 15,
-        "display": 15,
-        "period1": 15
+        "current": 28,
+        "display": 28,
+        "period1": 15,
+        "period2": 13,
+        "normaltime": 28
       },
       "awayScore": {
-        "current": 13,
-        "display": 13,
-        "period1": 13
+        "current": 31,
+        "display": 31,
+        "period1": 13,
+        "period2": 18,
+        "normaltime": 31
       },
       "time": {
-        "played": 1799,
+        "played": 3600,
         "periodLength": 1800,
         "overtimeLength": 300,
         "totalPeriodCount": 2,
-        "currentPeriodStartTimestamp": 1769538902
+        "currentPeriodStartTimestamp": 1769542164
       },
       "changes": {
         "changes": [
-          "time.played"
+          "time.currentPeriodStart",
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.period2",
+          "homeScore.normaltime",
+          "awayScore.period2",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1769538962
+        "changeTimestamp": 1769542168
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -3085,10 +3116,11 @@
       },
       "customId": "BGbswyr",
       "status": {
-        "code": 31,
-        "description": "Halftime",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "TTH Holstebro",
         "slug": "tth-holstebro",
@@ -3164,19 +3196,21 @@
         }
       },
       "homeScore": {
-        "current": 20,
-        "display": 20,
+        "current": 34,
+        "display": 34,
         "period1": 20,
-        "normaltime": 20
+        "period2": 14,
+        "normaltime": 34
       },
       "awayScore": {
-        "current": 12,
-        "display": 12,
+        "current": 21,
+        "display": 21,
         "period1": 12,
-        "normaltime": 12
+        "period2": 9,
+        "normaltime": 21
       },
       "time": {
-        "played": 1790,
+        "played": 3600,
         "periodLength": 1800,
         "overtimeLength": 300,
         "totalPeriodCount": 2
@@ -3184,9 +3218,10 @@
       "changes": {
         "changes": [
           "status.code",
-          "status.description"
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1769538905
+        "changeTimestamp": 1769542034
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -5825,10 +5860,11 @@
       },
       "customId": "QctsyeH",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "AH Ness Ziona",
         "slug": "ah-ness-ziona",
@@ -5905,14 +5941,16 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0
+        "current": 30,
+        "display": 30,
+        "period1": 0,
+        "normaltime": 0
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0
+        "current": 37,
+        "display": 37,
+        "period1": 0,
+        "normaltime": 0
       },
       "time": {
         "played": 0,
@@ -5922,25 +5960,24 @@
       },
       "changes": {
         "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
           "homeScore.current",
           "homeScore.display",
-          "homeScore.period1",
+          "homeScore.normaltime",
           "awayScore.current",
           "awayScore.display",
-          "awayScore.period1",
-          "time.played",
-          "time.periodLength",
-          "time.overtimeLength",
-          "time.totalPeriodCount"
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1769534657
+        "changeTimestamp": 1769541571
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15166454,
       "slug": "ah-ness-ziona-hapoel-rishon-le-zion",
       "startTimestamp": 1769535000,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -7205,9 +7242,9 @@
       },
       "customId": "aGrsQjuc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "MKS PR Gniezno",
@@ -7284,17 +7321,36 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 10,
+        "display": 10,
+        "period1": 10,
+        "normaltime": 10
+      },
+      "awayScore": {
+        "current": 8,
+        "display": 8,
+        "period1": 8,
+        "normaltime": 8
+      },
+      "time": {
+        "played": 1185,
+        "periodLength": 1800,
+        "overtimeLength": 300,
+        "totalPeriodCount": 2
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.played"
+        ],
+        "changeTimestamp": 1769542211
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14168072,
       "slug": "mks-pr-gniezno-energa-start-elblag",
       "startTimestamp": 1769540400,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -8798,9 +8854,9 @@
       },
       "customId": "EopslNUc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "CBM Elche Mustang",
@@ -8867,17 +8923,34 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "time": {
+        "played": 60,
+        "periodLength": 1800,
+        "overtimeLength": 300,
+        "totalPeriodCount": 2
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.played"
+        ],
+        "changeTimestamp": 1769542263
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15210275,
       "slug": "cb-san-jose-obrero-cbm-elche-mustang",
       "startTimestamp": 1769542200,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -10194,10 +10267,11 @@
       },
       "customId": "eMibsBtKc",
       "status": {
-        "code": 31,
-        "description": "Halftime",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Ystads IF",
         "slug": "ystads-if",
@@ -10268,14 +10342,18 @@
         }
       },
       "homeScore": {
-        "current": 12,
-        "display": 12,
-        "period1": 12
+        "current": 22,
+        "display": 22,
+        "period1": 12,
+        "period2": 10,
+        "normaltime": 22
       },
       "awayScore": {
-        "current": 10,
-        "display": 10,
-        "period1": 10
+        "current": 18,
+        "display": 18,
+        "period1": 10,
+        "period2": 8,
+        "normaltime": 18
       },
       "coverage": -1,
       "time": {
@@ -10287,9 +10365,13 @@
       "changes": {
         "changes": [
           "status.code",
-          "status.description"
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime",
+          "time.played"
         ],
-        "changeTimestamp": 1769538930
+        "changeTimestamp": 1769542110
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -10473,7 +10555,7 @@
       "id": 14571289,
       "slug": "hsg-aargau-ost-spono-nottwil",
       "startTimestamp": 1769540400,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
