@@ -5195,9 +5195,9 @@
       },
       "customId": "aEbsWBo",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 30,
+        "description": "Pause",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Amur Khabarovsk",
@@ -5277,13 +5277,31 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "time": {
+        "played": 1320,
+        "periodLength": 1200,
+        "overtimeLength": 300,
+        "totalPeriodCount": 3,
+        "currentPeriodStartTimestamp": 1769681069
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.played"
+        ],
+        "changeTimestamp": 1769681222
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14142239,
       "slug": "avtomobilist-yekaterinburg-amur-khabarovsk",
@@ -21664,8 +21682,8 @@
       },
       "customId": "fWGsjRhc",
       "status": {
-        "code": 2,
-        "description": "2nd period",
+        "code": 3,
+        "description": "3rd period",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -21745,28 +21763,33 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
+        "current": 2,
+        "display": 2,
         "period1": 0,
-        "period2": 0
+        "period2": 0,
+        "period3": 2
       },
       "awayScore": {
-        "current": 3,
-        "display": 3,
+        "current": 5,
+        "display": 5,
         "period1": 2,
-        "period2": 1
+        "period2": 3,
+        "period3": 0
       },
       "time": {
-        "played": 1879,
+        "played": 3305,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3
       },
       "changes": {
         "changes": [
-          "time.played"
+          "time.played",
+          "time.periodLength",
+          "time.overtimeLength",
+          "time.totalPeriodCount"
         ],
-        "changeTimestamp": 1769677665
+        "changeTimestamp": 1769681223
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -21781,7 +21804,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "lastPeriod": "period2",
+      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -25314,10 +25337,11 @@
       },
       "customId": "XUGsWOW",
       "status": {
-        "code": 3,
-        "description": "3rd period",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Kuznetskie Medvedi U20",
         "slug": "kuznetskie-medvedi-u20",
@@ -25401,26 +25425,33 @@
         "display": 0,
         "period1": 0,
         "period2": 0,
-        "period3": 0
+        "period3": 0,
+        "normaltime": 0
       },
       "awayScore": {
         "current": 3,
         "display": 3,
         "period1": 1,
         "period2": 2,
-        "period3": 0
+        "period3": 0,
+        "normaltime": 3
       },
       "time": {
-        "played": 3378,
+        "played": 0,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3
       },
       "changes": {
         "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime",
           "time.played"
         ],
-        "changeTimestamp": 1769677670
+        "changeTimestamp": 1769678218
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -25435,7 +25466,6 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
