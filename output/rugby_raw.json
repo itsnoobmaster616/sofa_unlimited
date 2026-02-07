@@ -1696,7 +1696,7 @@
       "id": 15346649,
       "slug": "stade-metropolitain-rugby-club-savoie-rumilly",
       "startTimestamp": 1770485400,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -1867,7 +1867,7 @@
       "id": 15346708,
       "slug": "rugby-club-de-auch-rugby-club-tricastin",
       "startTimestamp": 1770487200,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -2038,7 +2038,7 @@
       "id": 15346816,
       "slug": "rc-aubenas-vals-rugby-club-nimois",
       "startTimestamp": 1770489000,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -2437,9 +2437,9 @@
       },
       "customId": "ceHbsgeHb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 60,
+        "description": "Postponed",
+        "type": "postponed"
       },
       "homeTeam": {
         "name": "Toulouse Olympique Broncos XIII",
@@ -2509,7 +2509,12 @@
       "awayScore": {},
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type"
+        ],
+        "changeTimestamp": 1770505226
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -8705,10 +8710,11 @@
       },
       "customId": "VrTsZrT",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Melrose RFC",
         "slug": "melrose-rfc",
@@ -8771,11 +8777,38 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 22,
+        "display": 22,
+        "period1": 3,
+        "period2": 19,
+        "normaltime": 22
+      },
+      "awayScore": {
+        "current": 26,
+        "display": 26,
+        "period1": 19,
+        "period2": 7,
+        "normaltime": 26
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1770505227
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
