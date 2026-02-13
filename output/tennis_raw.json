@@ -8364,6 +8364,7 @@
       }
     },
     {
+      "firstToServe": 1,
       "tournament": {
         "name": "Rotterdam, Netherlands, Doubles",
         "slug": "rotterdam-netherlands-doubles",
@@ -8441,9 +8442,9 @@
       },
       "customId": "JODcsHdad",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 9,
+        "description": "2nd set",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Gille S / Verbeek S",
@@ -8661,11 +8662,28 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 3,
+        "period2": 0,
+        "point": "0"
+      },
+      "awayScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 6,
+        "period2": 0,
+        "point": "0"
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1770979485
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.period1"
+        ],
+        "changeTimestamp": 1770979512
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -8681,6 +8699,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt indoor",
@@ -16274,10 +16293,11 @@
       },
       "customId": "JvDstEBc",
       "status": {
-        "code": 10,
-        "description": "3rd set",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Rebecca Sramkova",
         "slug": "sramkova-rebecca",
@@ -16361,29 +16381,32 @@
         }
       },
       "homeScore": {
-        "current": 1,
-        "display": 1,
+        "current": 2,
+        "display": 2,
         "period1": 5,
         "period2": 7,
-        "period3": 4,
-        "point": "0"
+        "period3": 6,
+        "point": "A",
+        "normaltime": 2
       },
       "awayScore": {
         "current": 1,
         "display": 1,
         "period1": 7,
         "period2": 5,
-        "period3": 0,
-        "point": "40"
+        "period3": 1,
+        "point": "40",
+        "normaltime": 1
       },
       "time": {
         "currentPeriodStartTimestamp": 1770974843
       },
       "changes": {
         "changes": [
-          "awayScore.point"
+          "time.currentPeriodStart",
+          "time.period3"
         ],
-        "changeTimestamp": 1770976330
+        "changeTimestamp": 1770976968
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -16399,7 +16422,6 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
@@ -16957,10 +16979,11 @@
       },
       "customId": "hRhsBqZb",
       "status": {
-        "code": 9,
-        "description": "2nd set",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Hailey Baptiste",
         "slug": "baptiste-hailey",
@@ -17047,33 +17070,481 @@
         }
       },
       "homeScore": {
-        "current": 1,
-        "display": 1,
+        "current": 2,
+        "display": 2,
         "period1": 6,
-        "period2": 5,
-        "point": "15"
+        "period2": 6,
+        "point": "A",
+        "normaltime": 2
       },
       "awayScore": {
         "current": 0,
         "display": 0,
         "period1": 4,
         "period2": 4,
-        "point": "0"
+        "point": "40",
+        "normaltime": 0
       },
       "time": {
         "currentPeriodStartTimestamp": 1770973882
       },
       "changes": {
         "changes": [
-          "homeScore.point"
+          "time.currentPeriodStart",
+          "time.period2"
         ],
-        "changeTimestamp": 1770976336
+        "changeTimestamp": 1770976720
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15533000,
       "slug": "hailey-baptiste-shuai-zhang",
       "startTimestamp": 1770971100,
+      "periods": {
+        "point": "Game",
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "groundType": "Hardcourt outdoor",
+      "isEditor": false,
+      "eventFilters": {
+        "category": [
+          "singles"
+        ],
+        "level": [
+          "pro"
+        ],
+        "tournament": [
+          "p1000"
+        ],
+        "gender": [
+          "F"
+        ]
+      }
+    },
+    {
+      "firstToServe": 2,
+      "tournament": {
+        "name": "Dubai, UAE, Qualifying",
+        "slug": "dubai-uae-qualifying",
+        "category": {
+          "name": "WTA",
+          "slug": "wta",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "country": {},
+          "id": 6,
+          "flag": "wta",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "رابطة لاعبات التنس",
+              "hi": "चैलेंजर",
+              "bn": "ডব্লিউটিএ"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "Dubai",
+          "slug": "dubai",
+          "category": {
+            "name": "WTA",
+            "slug": "wta",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "country": {},
+            "id": 6,
+            "flag": "wta",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "رابطة لاعبات التنس",
+                "hi": "चैलेंजर",
+                "bn": "ডব্লিউটিএ"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 1629,
+          "groundType": "Hardcourt outdoor",
+          "tennisPoints": 1000,
+          "hasPerformanceGraphFeature": false,
+          "country": {},
+          "id": 2612,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "دبي"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "id": 175077
+      },
+      "season": {
+        "name": "WTA Dubai, UAE Women Singles 2026",
+        "year": "2026",
+        "editor": false,
+        "id": 85594
+      },
+      "roundInfo": {
+        "round": 1,
+        "name": "Qualification Round 1"
+      },
+      "customId": "YphsVwec",
+      "status": {
+        "code": 9,
+        "description": "2nd set",
+        "type": "inprogress"
+      },
+      "homeTeam": {
+        "name": "Peyton Stearns",
+        "slug": "stearns-peyton",
+        "shortName": "P. Stearns",
+        "gender": "F",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 3206,
+        "playerTeamInfo": {
+          "id": 3591
+        },
+        "nameCode": "STE",
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "US",
+          "alpha3": "USA",
+          "name": "USA",
+          "slug": "usa"
+        },
+        "id": 261095,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "بيتون ستيرنز",
+            "hi": "पेटन स्टर्न्स",
+            "bn": "পেটন স্টার্নস"
+          },
+          "shortNameTranslation": {
+            "ar": "ب. ستيرنز"
+          }
+        }
+      },
+      "awayTeam": {
+        "name": "Vera Zvonareva",
+        "slug": "zvonareva-vera",
+        "shortName": "V. Zvonareva",
+        "gender": "F",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 1217,
+        "playerTeamInfo": {
+          "id": 287
+        },
+        "nameCode": "ZVO",
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "RU",
+          "alpha3": "RUS",
+          "name": "Russia",
+          "slug": "russia"
+        },
+        "id": 18298,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "فيرا زفوناريفا",
+            "ru": "Вера Звонарева",
+            "hi": "वीरा ज़्वोनारेवा",
+            "bn": "ভেরা জভোনারেভা"
+          },
+          "shortNameTranslation": {
+            "ar": "ف. زفوناريفا"
+          }
+        }
+      },
+      "homeScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 6,
+        "period2": 2,
+        "point": "0"
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 4,
+        "period2": 3,
+        "point": "40"
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1770977964
+      },
+      "changes": {
+        "changes": [
+          "awayScore.point"
+        ],
+        "changeTimestamp": 1770979546
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 15533004,
+      "slug": "peyton-stearns-vera-zvonareva",
+      "startTimestamp": 1770974400,
+      "periods": {
+        "point": "Game",
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set"
+      },
+      "lastPeriod": "period2",
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "groundType": "Hardcourt outdoor",
+      "isEditor": false,
+      "eventFilters": {
+        "category": [
+          "singles"
+        ],
+        "level": [
+          "pro"
+        ],
+        "tournament": [
+          "p1000"
+        ],
+        "gender": [
+          "F"
+        ]
+      }
+    },
+    {
+      "firstToServe": 1,
+      "tournament": {
+        "name": "Dubai, UAE, Qualifying",
+        "slug": "dubai-uae-qualifying",
+        "category": {
+          "name": "WTA",
+          "slug": "wta",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "country": {},
+          "id": 6,
+          "flag": "wta",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "رابطة لاعبات التنس",
+              "hi": "चैलेंजर",
+              "bn": "ডব্লিউটিএ"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "Dubai",
+          "slug": "dubai",
+          "category": {
+            "name": "WTA",
+            "slug": "wta",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "country": {},
+            "id": 6,
+            "flag": "wta",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "رابطة لاعبات التنس",
+                "hi": "चैलेंजर",
+                "bn": "ডব্লিউটিএ"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 1629,
+          "groundType": "Hardcourt outdoor",
+          "tennisPoints": 1000,
+          "hasPerformanceGraphFeature": false,
+          "country": {},
+          "id": 2612,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "دبي"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "id": 175077
+      },
+      "season": {
+        "name": "WTA Dubai, UAE Women Singles 2026",
+        "year": "2026",
+        "editor": false,
+        "id": 85594
+      },
+      "roundInfo": {
+        "round": 1,
+        "name": "Qualification Round 1"
+      },
+      "customId": "bDQsrHHb",
+      "status": {
+        "code": 9,
+        "description": "2nd set",
+        "type": "inprogress"
+      },
+      "homeTeam": {
+        "name": "Yuliia Starodubtseva",
+        "slug": "starodubtsewa-yulia",
+        "shortName": "Y. Starodubtseva",
+        "gender": "F",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 2549,
+        "playerTeamInfo": {
+          "id": 12278
+        },
+        "nameCode": "STA",
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "UA",
+          "alpha3": "UKR",
+          "name": "Ukraine",
+          "slug": "ukraine"
+        },
+        "id": 206617,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "يوليا ستارودوبتسيفا",
+            "hi": "यूलिया स्तारोडुबत्सेवा",
+            "bn": "ইউলিয়া স্টারোডুবতসেওয়া"
+          },
+          "shortNameTranslation": {
+            "ar": "ي. ستارودوبتسيفا"
+          }
+        }
+      },
+      "awayTeam": {
+        "name": "Elena-Gabriela Ruse",
+        "slug": "ruse-elena-gabriela",
+        "shortName": "E. Ruse",
+        "gender": "F",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 3345,
+        "playerTeamInfo": {
+          "id": 746
+        },
+        "nameCode": "RUS",
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "RO",
+          "alpha3": "ROU",
+          "name": "Romania",
+          "slug": "romania"
+        },
+        "id": 103901,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "إلينا-غابرييلا روسي",
+            "ru": "Рузе, Елена Габриэла",
+            "hi": "एलेना गैब्रिएला रुस",
+            "bn": "এলেনা গ্যাব্রিয়েলা রুস"
+          },
+          "shortNameTranslation": {
+            "ar": "إ. روسي"
+          }
+        }
+      },
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 2,
+        "period2": 1,
+        "point": "30"
+      },
+      "awayScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 6,
+        "period2": 3,
+        "point": "0"
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1770977744
+      },
+      "changes": {
+        "changes": [
+          "homeScore.point"
+        ],
+        "changeTimestamp": 1770979552
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 15533008,
+      "slug": "yuliia-starodubtseva-elena-gabriela-ruse",
+      "startTimestamp": 1770975000,
       "periods": {
         "point": "Game",
         "current": "Match",
@@ -17179,37 +17650,37 @@
         "round": 1,
         "name": "Qualification Round 1"
       },
-      "customId": "YphsVwec",
+      "customId": "ZbRsFDcd",
       "status": {
         "code": 8,
         "description": "1st set",
         "type": "inprogress"
       },
       "homeTeam": {
-        "name": "Peyton Stearns",
-        "slug": "stearns-peyton",
-        "shortName": "P. Stearns",
+        "name": "Tereza Valentová",
+        "slug": "valentova-tereza",
+        "shortName": "T. Valentová",
         "gender": "F",
         "sport": {
           "name": "Tennis",
           "slug": "tennis",
           "id": 5
         },
-        "userCount": 3206,
+        "userCount": 3085,
         "playerTeamInfo": {
-          "id": 3591
+          "id": 12386
         },
-        "nameCode": "STE",
+        "nameCode": "VAL",
         "disabled": false,
         "national": false,
         "type": 1,
         "country": {
-          "alpha2": "US",
-          "alpha3": "USA",
-          "name": "USA",
-          "slug": "usa"
+          "alpha2": "CZ",
+          "alpha3": "CZE",
+          "name": "Czechia",
+          "slug": "czechia"
         },
-        "id": 261095,
+        "id": 381430,
         "subTeams": [],
         "teamColors": {
           "primary": "#374df5",
@@ -17218,39 +17689,38 @@
         },
         "fieldTranslations": {
           "nameTranslation": {
-            "ar": "بيتون ستيرنز",
-            "hi": "पेटन स्टर्न्स",
-            "bn": "পেটন স্টার্নস"
+            "ar": "تيريزا فالينتوفا"
           },
           "shortNameTranslation": {
-            "ar": "ب. ستيرنز"
+            "ar": "ت. فالينتوفا"
           }
         }
       },
       "awayTeam": {
-        "name": "Vera Zvonareva",
-        "slug": "zvonareva-vera",
-        "shortName": "V. Zvonareva",
+        "name": "Kimberly Birrell",
+        "slug": "birrell-kimberly",
+        "shortName": "K. Birrell",
         "gender": "F",
         "sport": {
           "name": "Tennis",
           "slug": "tennis",
           "id": 5
         },
-        "userCount": 1217,
+        "userCount": 2146,
         "playerTeamInfo": {
-          "id": 287
+          "id": 489
         },
-        "nameCode": "ZVO",
+        "nameCode": "BIR",
+        "disabled": false,
         "national": false,
         "type": 1,
         "country": {
-          "alpha2": "RU",
-          "alpha3": "RUS",
-          "name": "Russia",
-          "slug": "russia"
+          "alpha2": "AU",
+          "alpha3": "AUS",
+          "name": "Australia",
+          "slug": "australia"
         },
-        "id": 18298,
+        "id": 105099,
         "subTeams": [],
         "teamColors": {
           "primary": "#374df5",
@@ -17259,42 +17729,45 @@
         },
         "fieldTranslations": {
           "nameTranslation": {
-            "ar": "فيرا زفوناريفا",
-            "ru": "Вера Звонарева",
-            "hi": "वीरा ज़्वोनारेवा",
-            "bn": "ভেরা জভোনারেভা"
+            "ar": "كيمبرلي بيريل",
+            "ru": "Кимберли Биррелл",
+            "hi": "किम्बर्ली बिरेल",
+            "bn": "কিম্বার্লি বিরেল"
           },
           "shortNameTranslation": {
-            "ar": "ف. زفوناريفا"
+            "ar": "ك. بيريل"
           }
         }
       },
       "homeScore": {
         "current": 0,
         "display": 0,
-        "period1": 2,
-        "point": "40"
+        "period1": 5,
+        "point": "0"
       },
       "awayScore": {
         "current": 0,
         "display": 0,
-        "period1": 1,
-        "point": "A"
+        "period1": 0,
+        "point": "0"
       },
       "time": {
-        "currentPeriodStartTimestamp": 1770975093
+        "currentPeriodStartTimestamp": 1770977740
       },
       "changes": {
         "changes": [
-          "awayScore.point"
+          "homeScore.period1",
+          "homeScore.point",
+          "awayScore.point",
+          "firstToServe"
         ],
-        "changeTimestamp": 1770976317
+        "changeTimestamp": 1770979503
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
-      "id": 15533004,
-      "slug": "peyton-stearns-vera-zvonareva",
-      "startTimestamp": 1770974400,
+      "id": 15533003,
+      "slug": "tereza-valentova-kimberly-birrell",
+      "startTimestamp": 1770977100,
       "periods": {
         "point": "Game",
         "current": "Match",
@@ -17305,210 +17778,6 @@
         "period5": "5th set"
       },
       "lastPeriod": "period1",
-      "finalResultOnly": false,
-      "feedLocked": false,
-      "groundType": "Hardcourt outdoor",
-      "isEditor": false,
-      "eventFilters": {
-        "category": [
-          "singles"
-        ],
-        "level": [
-          "pro"
-        ],
-        "tournament": [
-          "p1000"
-        ],
-        "gender": [
-          "F"
-        ]
-      }
-    },
-    {
-      "tournament": {
-        "name": "Dubai, UAE, Qualifying",
-        "slug": "dubai-uae-qualifying",
-        "category": {
-          "name": "WTA",
-          "slug": "wta",
-          "sport": {
-            "name": "Tennis",
-            "slug": "tennis",
-            "id": 5
-          },
-          "country": {},
-          "id": 6,
-          "flag": "wta",
-          "fieldTranslations": {
-            "nameTranslation": {
-              "ar": "رابطة لاعبات التنس",
-              "hi": "चैलेंजर",
-              "bn": "ডব্লিউটিএ"
-            },
-            "shortNameTranslation": {}
-          }
-        },
-        "uniqueTournament": {
-          "name": "Dubai",
-          "slug": "dubai",
-          "category": {
-            "name": "WTA",
-            "slug": "wta",
-            "sport": {
-              "name": "Tennis",
-              "slug": "tennis",
-              "id": 5
-            },
-            "country": {},
-            "id": 6,
-            "flag": "wta",
-            "fieldTranslations": {
-              "nameTranslation": {
-                "ar": "رابطة لاعبات التنس",
-                "hi": "चैलेंजर",
-                "bn": "ডব্লিউটিএ"
-              },
-              "shortNameTranslation": {}
-            }
-          },
-          "userCount": 1629,
-          "groundType": "Hardcourt outdoor",
-          "tennisPoints": 1000,
-          "hasPerformanceGraphFeature": false,
-          "country": {},
-          "id": 2612,
-          "hasEventPlayerStatistics": false,
-          "displayInverseHomeAwayTeams": false,
-          "fieldTranslations": {
-            "nameTranslation": {
-              "ar": "دبي"
-            },
-            "shortNameTranslation": {}
-          }
-        },
-        "priority": 0,
-        "id": 175077
-      },
-      "season": {
-        "name": "WTA Dubai, UAE Women Singles 2026",
-        "year": "2026",
-        "editor": false,
-        "id": 85594
-      },
-      "roundInfo": {
-        "round": 1,
-        "name": "Qualification Round 1"
-      },
-      "customId": "kDNbsexcc",
-      "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
-      },
-      "homeTeam": {
-        "name": "Katie Volynets",
-        "slug": "volynets-katie",
-        "shortName": "K. Volynets",
-        "gender": "F",
-        "sport": {
-          "name": "Tennis",
-          "slug": "tennis",
-          "id": 5
-        },
-        "userCount": 2376,
-        "playerTeamInfo": {
-          "id": 3575
-        },
-        "nameCode": "VOL",
-        "national": false,
-        "type": 1,
-        "country": {
-          "alpha2": "US",
-          "alpha3": "USA",
-          "name": "USA",
-          "slug": "usa"
-        },
-        "id": 256104,
-        "subTeams": [],
-        "teamColors": {
-          "primary": "#374df5",
-          "secondary": "#374df5",
-          "text": "#ffffff"
-        },
-        "fieldTranslations": {
-          "nameTranslation": {
-            "ar": "كاتي فولينيتس",
-            "ru": "Волынец, Кэти",
-            "hi": "केटी वोलिनेट्स",
-            "bn": "কেটি ভলিনেটস"
-          },
-          "shortNameTranslation": {
-            "ar": "ك. فولينيتس"
-          }
-        }
-      },
-      "awayTeam": {
-        "name": "Alycia Parks",
-        "slug": "parks-alycia",
-        "shortName": "A. Parks",
-        "gender": "F",
-        "sport": {
-          "name": "Tennis",
-          "slug": "tennis",
-          "id": 5
-        },
-        "userCount": 4172,
-        "playerTeamInfo": {
-          "id": 3463
-        },
-        "nameCode": "PAR",
-        "national": false,
-        "type": 1,
-        "country": {
-          "alpha2": "US",
-          "alpha3": "USA",
-          "name": "USA",
-          "slug": "usa"
-        },
-        "id": 221410,
-        "subTeams": [],
-        "teamColors": {
-          "primary": "#374df5",
-          "secondary": "#374df5",
-          "text": "#ffffff"
-        },
-        "fieldTranslations": {
-          "nameTranslation": {
-            "ar": "أليشا باركس",
-            "ru": "Паркс, Алисия",
-            "hi": "एलिसिया पार्क्स",
-            "bn": "অ্যালিসিয়া পার্ক"
-          },
-          "shortNameTranslation": {
-            "ar": "أ. باركس"
-          }
-        }
-      },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
-      "changes": {
-        "changeTimestamp": 0
-      },
-      "hasGlobalHighlights": false,
-      "crowdsourcingDataDisplayEnabled": false,
-      "id": 15533002,
-      "slug": "katie-volynets-alycia-parks",
-      "startTimestamp": 1770975000,
-      "periods": {
-        "point": "Game",
-        "current": "Match",
-        "period1": "1st set",
-        "period2": "2nd set",
-        "period3": "3rd set",
-        "period4": "4th set",
-        "period5": "5th set"
-      },
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
@@ -17604,37 +17873,36 @@
         "round": 1,
         "name": "Qualification Round 1"
       },
-      "customId": "bDQsrHHb",
+      "customId": "kDNbsexcc",
       "status": {
         "code": 8,
         "description": "1st set",
         "type": "inprogress"
       },
       "homeTeam": {
-        "name": "Yuliia Starodubtseva",
-        "slug": "starodubtsewa-yulia",
-        "shortName": "Y. Starodubtseva",
+        "name": "Katie Volynets",
+        "slug": "volynets-katie",
+        "shortName": "K. Volynets",
         "gender": "F",
         "sport": {
           "name": "Tennis",
           "slug": "tennis",
           "id": 5
         },
-        "userCount": 2549,
+        "userCount": 2376,
         "playerTeamInfo": {
-          "id": 12278
+          "id": 3575
         },
-        "nameCode": "STA",
-        "disabled": false,
+        "nameCode": "VOL",
         "national": false,
         "type": 1,
         "country": {
-          "alpha2": "UA",
-          "alpha3": "UKR",
-          "name": "Ukraine",
-          "slug": "ukraine"
+          "alpha2": "US",
+          "alpha3": "USA",
+          "name": "USA",
+          "slug": "usa"
         },
-        "id": 206617,
+        "id": 256104,
         "subTeams": [],
         "teamColors": {
           "primary": "#374df5",
@@ -17643,39 +17911,40 @@
         },
         "fieldTranslations": {
           "nameTranslation": {
-            "ar": "يوليا ستارودوبتسيفا",
-            "hi": "यूलिया स्तारोडुबत्सेवा",
-            "bn": "ইউলিয়া স্টারোডুবতসেওয়া"
+            "ar": "كاتي فولينيتس",
+            "ru": "Волынец, Кэти",
+            "hi": "केटी वोलिनेट्स",
+            "bn": "কেটি ভলিনেটস"
           },
           "shortNameTranslation": {
-            "ar": "ي. ستارودوبتسيفا"
+            "ar": "ك. فولينيتس"
           }
         }
       },
       "awayTeam": {
-        "name": "Elena-Gabriela Ruse",
-        "slug": "ruse-elena-gabriela",
-        "shortName": "E. Ruse",
+        "name": "Alycia Parks",
+        "slug": "parks-alycia",
+        "shortName": "A. Parks",
         "gender": "F",
         "sport": {
           "name": "Tennis",
           "slug": "tennis",
           "id": 5
         },
-        "userCount": 3345,
+        "userCount": 4172,
         "playerTeamInfo": {
-          "id": 746
+          "id": 3463
         },
-        "nameCode": "RUS",
+        "nameCode": "PAR",
         "national": false,
         "type": 1,
         "country": {
-          "alpha2": "RO",
-          "alpha3": "ROU",
-          "name": "Romania",
-          "slug": "romania"
+          "alpha2": "US",
+          "alpha3": "USA",
+          "name": "USA",
+          "slug": "usa"
         },
-        "id": 103901,
+        "id": 221410,
         "subTeams": [],
         "teamColors": {
           "primary": "#374df5",
@@ -17684,42 +17953,42 @@
         },
         "fieldTranslations": {
           "nameTranslation": {
-            "ar": "إلينا-غابرييلا روسي",
-            "ru": "Рузе, Елена Габриэла",
-            "hi": "एलेना गैब्रिएला रुस",
-            "bn": "এলেনা গ্যাব্রিয়েলা রুস"
+            "ar": "أليشا باركس",
+            "ru": "Паркс, Алисия",
+            "hi": "एलिसिया पार्क्स",
+            "bn": "অ্যালিসিয়া পার্ক"
           },
           "shortNameTranslation": {
-            "ar": "إ. روسي"
+            "ar": "أ. باركس"
           }
         }
       },
       "homeScore": {
         "current": 0,
         "display": 0,
-        "period1": 1,
-        "point": "40"
+        "period1": 3,
+        "point": "15"
       },
       "awayScore": {
         "current": 0,
         "display": 0,
-        "period1": 1,
-        "point": "A"
+        "period1": 4,
+        "point": "30"
       },
       "time": {
-        "currentPeriodStartTimestamp": 1770975606
+        "currentPeriodStartTimestamp": 1770977793
       },
       "changes": {
         "changes": [
           "awayScore.point"
         ],
-        "changeTimestamp": 1770976303
+        "changeTimestamp": 1770979576
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
-      "id": 15533008,
-      "slug": "yuliia-starodubtseva-elena-gabriela-ruse",
-      "startTimestamp": 1770975000,
+      "id": 15533002,
+      "slug": "katie-volynets-alycia-parks",
+      "startTimestamp": 1770977400,
       "periods": {
         "point": "Game",
         "current": "Match",
@@ -17824,37 +18093,37 @@
         "round": 1,
         "name": "Qualification Round 1"
       },
-      "customId": "ZbRsFDcd",
+      "customId": "cttscwcd",
       "status": {
         "code": 0,
         "description": "Not started",
         "type": "notstarted"
       },
       "homeTeam": {
-        "name": "Tereza Valentová",
-        "slug": "valentova-tereza",
-        "shortName": "T. Valentová",
+        "name": "Aliaksandra Sasnovich",
+        "slug": "sasnovich-aliaksandra",
+        "shortName": "A. Sasnovich",
         "gender": "F",
         "sport": {
           "name": "Tennis",
           "slug": "tennis",
           "id": 5
         },
-        "userCount": 3085,
+        "userCount": 3048,
         "playerTeamInfo": {
-          "id": 12386
+          "id": 169
         },
-        "nameCode": "VAL",
+        "nameCode": "SAS",
         "disabled": false,
         "national": false,
         "type": 1,
         "country": {
-          "alpha2": "CZ",
-          "alpha3": "CZE",
-          "name": "Czechia",
-          "slug": "czechia"
+          "alpha2": "BY",
+          "alpha3": "BLR",
+          "name": "Belarus",
+          "slug": "belarus"
         },
-        "id": 381430,
+        "id": 45902,
         "subTeams": [],
         "teamColors": {
           "primary": "#374df5",
@@ -17863,38 +18132,41 @@
         },
         "fieldTranslations": {
           "nameTranslation": {
-            "ar": "تيريزا فالينتوفا"
+            "ar": "ألياكساندرا ساسنوفيتش",
+            "ru": "Саснович, Алиаксандра"
           },
           "shortNameTranslation": {
-            "ar": "ت. فالينتوفا"
+            "ar": "أ. ساسنوفيتش",
+            "hi": "ए. सास्नोविच",
+            "bn": "এ. সাসনোভিচ"
           }
         }
       },
       "awayTeam": {
-        "name": "Kimberly Birrell",
-        "slug": "birrell-kimberly",
-        "shortName": "K. Birrell",
+        "name": "Petra Marčinko",
+        "slug": "marcinko-petra",
+        "shortName": "P. Marčinko",
         "gender": "F",
         "sport": {
           "name": "Tennis",
           "slug": "tennis",
           "id": 5
         },
-        "userCount": 2146,
+        "userCount": 2364,
         "playerTeamInfo": {
-          "id": 489
+          "id": 4879
         },
-        "nameCode": "BIR",
+        "nameCode": "MAR",
         "disabled": false,
         "national": false,
         "type": 1,
         "country": {
-          "alpha2": "AU",
-          "alpha3": "AUS",
-          "name": "Australia",
-          "slug": "australia"
+          "alpha2": "HR",
+          "alpha3": "HRV",
+          "name": "Croatia",
+          "slug": "croatia"
         },
-        "id": 105099,
+        "id": 381052,
         "subTeams": [],
         "teamColors": {
           "primary": "#374df5",
@@ -17903,13 +18175,12 @@
         },
         "fieldTranslations": {
           "nameTranslation": {
-            "ar": "كيمبرلي بيريل",
-            "ru": "Кимберли Биррелл",
-            "hi": "किम्बर्ली बिरेल",
-            "bn": "কিম্বার্লি বিরেল"
+            "ar": "بيتر مارشينكو"
           },
           "shortNameTranslation": {
-            "ar": "ك. بيريل"
+            "ar": "ب. مارشينكو",
+            "hi": "पी. मर्चिंको",
+            "bn": "পি. মার্সিঙ্কো"
           }
         }
       },
@@ -17921,9 +18192,9 @@
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
-      "id": 15533003,
-      "slug": "tereza-valentova-kimberly-birrell",
-      "startTimestamp": 1770975300,
+      "id": 15533009,
+      "slug": "petra-marcinko-aliaksandra-sasnovich",
+      "startTimestamp": 1770980400,
       "periods": {
         "point": "Game",
         "current": "Match",
@@ -18128,212 +18399,7 @@
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15533007,
       "slug": "anastasia-zakharova-julia-grabher",
-      "startTimestamp": 1770978600,
-      "periods": {
-        "point": "Game",
-        "current": "Match",
-        "period1": "1st set",
-        "period2": "2nd set",
-        "period3": "3rd set",
-        "period4": "4th set",
-        "period5": "5th set"
-      },
-      "finalResultOnly": false,
-      "feedLocked": false,
-      "groundType": "Hardcourt outdoor",
-      "isEditor": false,
-      "eventFilters": {
-        "category": [
-          "singles"
-        ],
-        "level": [
-          "pro"
-        ],
-        "tournament": [
-          "p1000"
-        ],
-        "gender": [
-          "F"
-        ]
-      }
-    },
-    {
-      "tournament": {
-        "name": "Dubai, UAE, Qualifying",
-        "slug": "dubai-uae-qualifying",
-        "category": {
-          "name": "WTA",
-          "slug": "wta",
-          "sport": {
-            "name": "Tennis",
-            "slug": "tennis",
-            "id": 5
-          },
-          "country": {},
-          "id": 6,
-          "flag": "wta",
-          "fieldTranslations": {
-            "nameTranslation": {
-              "ar": "رابطة لاعبات التنس",
-              "hi": "चैलेंजर",
-              "bn": "ডব্লিউটিএ"
-            },
-            "shortNameTranslation": {}
-          }
-        },
-        "uniqueTournament": {
-          "name": "Dubai",
-          "slug": "dubai",
-          "category": {
-            "name": "WTA",
-            "slug": "wta",
-            "sport": {
-              "name": "Tennis",
-              "slug": "tennis",
-              "id": 5
-            },
-            "country": {},
-            "id": 6,
-            "flag": "wta",
-            "fieldTranslations": {
-              "nameTranslation": {
-                "ar": "رابطة لاعبات التنس",
-                "hi": "चैलेंजर",
-                "bn": "ডব্লিউটিএ"
-              },
-              "shortNameTranslation": {}
-            }
-          },
-          "userCount": 1629,
-          "groundType": "Hardcourt outdoor",
-          "tennisPoints": 1000,
-          "hasPerformanceGraphFeature": false,
-          "country": {},
-          "id": 2612,
-          "hasEventPlayerStatistics": false,
-          "displayInverseHomeAwayTeams": false,
-          "fieldTranslations": {
-            "nameTranslation": {
-              "ar": "دبي"
-            },
-            "shortNameTranslation": {}
-          }
-        },
-        "priority": 0,
-        "id": 175077
-      },
-      "season": {
-        "name": "WTA Dubai, UAE Women Singles 2026",
-        "year": "2026",
-        "editor": false,
-        "id": 85594
-      },
-      "roundInfo": {
-        "round": 1,
-        "name": "Qualification Round 1"
-      },
-      "customId": "cttscwcd",
-      "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
-      },
-      "homeTeam": {
-        "name": "Aliaksandra Sasnovich",
-        "slug": "sasnovich-aliaksandra",
-        "shortName": "A. Sasnovich",
-        "gender": "F",
-        "sport": {
-          "name": "Tennis",
-          "slug": "tennis",
-          "id": 5
-        },
-        "userCount": 3048,
-        "playerTeamInfo": {
-          "id": 169
-        },
-        "nameCode": "SAS",
-        "disabled": false,
-        "national": false,
-        "type": 1,
-        "country": {
-          "alpha2": "BY",
-          "alpha3": "BLR",
-          "name": "Belarus",
-          "slug": "belarus"
-        },
-        "id": 45902,
-        "subTeams": [],
-        "teamColors": {
-          "primary": "#374df5",
-          "secondary": "#374df5",
-          "text": "#ffffff"
-        },
-        "fieldTranslations": {
-          "nameTranslation": {
-            "ar": "ألياكساندرا ساسنوفيتش",
-            "ru": "Саснович, Алиаксандра"
-          },
-          "shortNameTranslation": {
-            "ar": "أ. ساسنوفيتش",
-            "hi": "ए. सास्नोविच",
-            "bn": "এ. সাসনোভিচ"
-          }
-        }
-      },
-      "awayTeam": {
-        "name": "Petra Marčinko",
-        "slug": "marcinko-petra",
-        "shortName": "P. Marčinko",
-        "gender": "F",
-        "sport": {
-          "name": "Tennis",
-          "slug": "tennis",
-          "id": 5
-        },
-        "userCount": 2364,
-        "playerTeamInfo": {
-          "id": 4879
-        },
-        "nameCode": "MAR",
-        "disabled": false,
-        "national": false,
-        "type": 1,
-        "country": {
-          "alpha2": "HR",
-          "alpha3": "HRV",
-          "name": "Croatia",
-          "slug": "croatia"
-        },
-        "id": 381052,
-        "subTeams": [],
-        "teamColors": {
-          "primary": "#374df5",
-          "secondary": "#374df5",
-          "text": "#ffffff"
-        },
-        "fieldTranslations": {
-          "nameTranslation": {
-            "ar": "بيتر مارشينكو"
-          },
-          "shortNameTranslation": {
-            "ar": "ب. مارشينكو",
-            "hi": "पी. मर्चिंको",
-            "bn": "পি. মার্সিঙ্কো"
-          }
-        }
-      },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
-      "changes": {
-        "changeTimestamp": 0
-      },
-      "hasGlobalHighlights": false,
-      "crowdsourcingDataDisplayEnabled": false,
-      "id": 15533009,
-      "slug": "petra-marcinko-aliaksandra-sasnovich",
-      "startTimestamp": 1770979200,
+      "startTimestamp": 1770980400,
       "periods": {
         "point": "Game",
         "current": "Match",
@@ -18539,7 +18605,7 @@
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15532995,
       "slug": "sonay-kartal-storm-hunter",
-      "startTimestamp": 1770980400,
+      "startTimestamp": 1770982200,
       "periods": {
         "point": "Game",
         "current": "Match",
@@ -18744,7 +18810,212 @@
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15532998,
       "slug": "elisabetta-cocciaretto-donna-vekic",
-      "startTimestamp": 1770984000,
+      "startTimestamp": 1770984600,
+      "periods": {
+        "point": "Game",
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "groundType": "Hardcourt outdoor",
+      "isEditor": false,
+      "eventFilters": {
+        "category": [
+          "singles"
+        ],
+        "level": [
+          "pro"
+        ],
+        "tournament": [
+          "p1000"
+        ],
+        "gender": [
+          "F"
+        ]
+      }
+    },
+    {
+      "tournament": {
+        "name": "Dubai, UAE, Qualifying",
+        "slug": "dubai-uae-qualifying",
+        "category": {
+          "name": "WTA",
+          "slug": "wta",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "country": {},
+          "id": 6,
+          "flag": "wta",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "رابطة لاعبات التنس",
+              "hi": "चैलेंजर",
+              "bn": "ডব্লিউটিএ"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "Dubai",
+          "slug": "dubai",
+          "category": {
+            "name": "WTA",
+            "slug": "wta",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "country": {},
+            "id": 6,
+            "flag": "wta",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "رابطة لاعبات التنس",
+                "hi": "चैलेंजर",
+                "bn": "ডব্লিউটিএ"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 1629,
+          "groundType": "Hardcourt outdoor",
+          "tennisPoints": 1000,
+          "hasPerformanceGraphFeature": false,
+          "country": {},
+          "id": 2612,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "دبي"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "id": 175077
+      },
+      "season": {
+        "name": "WTA Dubai, UAE Women Singles 2026",
+        "year": "2026",
+        "editor": false,
+        "id": 85594
+      },
+      "roundInfo": {
+        "round": 250,
+        "name": "Qualification Final"
+      },
+      "customId": "JvDsBqZb",
+      "status": {
+        "code": 0,
+        "description": "Not started",
+        "type": "notstarted"
+      },
+      "homeTeam": {
+        "name": "Hailey Baptiste",
+        "slug": "baptiste-hailey",
+        "shortName": "H. Baptiste",
+        "gender": "F",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 3288,
+        "playerTeamInfo": {
+          "id": 831
+        },
+        "nameCode": "BAP",
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "US",
+          "alpha3": "USA",
+          "name": "USA",
+          "slug": "usa"
+        },
+        "id": 248326,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "هايلي باتيست",
+            "ru": "Баптист, Хейли",
+            "hi": "हेली बैपटिस्ट",
+            "bn": "হেইলি ব্যাপটিস্ট"
+          },
+          "shortNameTranslation": {
+            "ar": "ه. باتيست"
+          }
+        }
+      },
+      "awayTeam": {
+        "name": "Rebecca Sramkova",
+        "slug": "sramkova-rebecca",
+        "shortName": "R. Sramkova",
+        "gender": "F",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 3047,
+        "playerTeamInfo": {
+          "id": 550
+        },
+        "nameCode": "SRA",
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "SK",
+          "alpha3": "SVK",
+          "name": "Slovakia",
+          "slug": "slovakia"
+        },
+        "id": 71034,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "ريبيكا سرامكوفا",
+            "ru": "Шрамкова, Ребекка"
+          },
+          "shortNameTranslation": {
+            "ar": "ر. سرامكوفا",
+            "hi": "आर. स्रामकोवा",
+            "bn": "আর. শ্রামকোভা"
+          }
+        }
+      },
+      "homeScore": {},
+      "awayScore": {},
+      "time": {},
+      "changes": {
+        "changeTimestamp": 0
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 15536382,
+      "slug": "hailey-baptiste-rebecca-sramkova",
+      "startTimestamp": 1771048800,
       "periods": {
         "point": "Game",
         "current": "Match",
@@ -18947,6 +19218,212 @@
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15535951,
       "slug": "ella-seidel-kamilla-rakhimova",
+      "startTimestamp": 1771048800,
+      "periods": {
+        "point": "Game",
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "groundType": "Hardcourt outdoor",
+      "isEditor": false,
+      "eventFilters": {
+        "category": [
+          "singles"
+        ],
+        "level": [
+          "pro"
+        ],
+        "tournament": [
+          "p1000"
+        ],
+        "gender": [
+          "F"
+        ]
+      }
+    },
+    {
+      "tournament": {
+        "name": "Dubai, UAE, Qualifying",
+        "slug": "dubai-uae-qualifying",
+        "category": {
+          "name": "WTA",
+          "slug": "wta",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "country": {},
+          "id": 6,
+          "flag": "wta",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "رابطة لاعبات التنس",
+              "hi": "चैलेंजर",
+              "bn": "ডব্লিউটিএ"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "Dubai",
+          "slug": "dubai",
+          "category": {
+            "name": "WTA",
+            "slug": "wta",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "country": {},
+            "id": 6,
+            "flag": "wta",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "رابطة لاعبات التنس",
+                "hi": "चैलेंजर",
+                "bn": "ডব্লিউটিএ"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 1629,
+          "groundType": "Hardcourt outdoor",
+          "tennisPoints": 1000,
+          "hasPerformanceGraphFeature": false,
+          "country": {},
+          "id": 2612,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "دبي"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "id": 175077
+      },
+      "season": {
+        "name": "WTA Dubai, UAE Women Singles 2026",
+        "year": "2026",
+        "editor": false,
+        "id": 85594
+      },
+      "roundInfo": {
+        "round": 250,
+        "name": "Qualification Final"
+      },
+      "customId": "aADsfpLb",
+      "status": {
+        "code": 0,
+        "description": "Not started",
+        "type": "notstarted"
+      },
+      "homeTeam": {
+        "name": "Magdalena Frech",
+        "slug": "frech-magdalena",
+        "shortName": "M. Frech",
+        "gender": "F",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 9199,
+        "playerTeamInfo": {
+          "id": 534
+        },
+        "nameCode": "FRE",
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "PL",
+          "alpha3": "POL",
+          "name": "Poland",
+          "slug": "poland"
+        },
+        "id": 71250,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "ماغدالينا فريش",
+            "ru": "Фреч, Магдалена"
+          },
+          "shortNameTranslation": {
+            "ar": "م. فريش",
+            "hi": "एम. फ़्रेच",
+            "bn": "এম. ফ্রেচ"
+          }
+        }
+      },
+      "awayTeam": {
+        "name": "Varvara Gracheva",
+        "slug": "gracheva-varvara",
+        "shortName": "V. Gracheva",
+        "gender": "F",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 3451,
+        "playerTeamInfo": {
+          "id": 3433
+        },
+        "nameCode": "GRA",
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "FR",
+          "alpha3": "FRA",
+          "name": "France",
+          "slug": "france"
+        },
+        "id": 215755,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "فارفارا غراتشيفا",
+            "ru": "Грачева, Варвара"
+          },
+          "shortNameTranslation": {
+            "ar": "ف. غراتشيفا",
+            "hi": "वी. ग्राचेवा",
+            "bn": "ভি. গ্র্যাচেভা"
+          }
+        }
+      },
+      "homeScore": {},
+      "awayScore": {},
+      "time": {},
+      "changes": {
+        "changeTimestamp": 0
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 15536270,
+      "slug": "varvara-gracheva-magdalena-frech",
       "startTimestamp": 1771048800,
       "periods": {
         "point": "Game",
@@ -21281,7 +21758,7 @@
       }
     },
     {
-      "firstToServe": 2,
+      "firstToServe": 1,
       "tournament": {
         "name": "Brisbane 2, Australia",
         "slug": "brisbane-2-australia",
@@ -21358,8 +21835,8 @@
       },
       "customId": "rNusWppd",
       "status": {
-        "code": 8,
-        "description": "1st set",
+        "code": 9,
+        "description": "2nd set",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -21444,25 +21921,29 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 5,
-        "point": "0"
+        "current": 1,
+        "display": 1,
+        "period1": 7,
+        "period2": 4,
+        "period1TieBreak": 7,
+        "point": "30"
       },
       "awayScore": {
         "current": 0,
         "display": 0,
-        "period1": 4,
-        "point": "15"
+        "period1": 6,
+        "period2": 3,
+        "period1TieBreak": 3,
+        "point": "40"
       },
       "time": {
-        "currentPeriodStartTimestamp": 1770973653
+        "currentPeriodStartTimestamp": 1770977386
       },
       "changes": {
         "changes": [
           "awayScore.point"
         ],
-        "changeTimestamp": 1770976330
+        "changeTimestamp": 1770979555
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -21478,7 +21959,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
@@ -21901,7 +22382,7 @@
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15481920,
       "slug": "alex-bolt-hiroki-moriya",
-      "startTimestamp": 1771030800,
+      "startTimestamp": 1771039800,
       "periods": {
         "point": "Game",
         "current": "Match",
@@ -22678,8 +23159,8 @@
       },
       "customId": "jiMcsEBZc",
       "status": {
-        "code": 9,
-        "description": "2nd set",
+        "code": 10,
+        "description": "3rd set",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -22764,26 +23245,30 @@
         "current": 1,
         "display": 1,
         "period1": 7,
-        "period2": 1,
+        "period2": 4,
+        "period3": 4,
         "period1TieBreak": 7,
-        "point": "40"
+        "point": "0"
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
+        "current": 1,
+        "display": 1,
         "period1": 6,
-        "period2": 2,
+        "period2": 6,
+        "period3": 3,
         "period1TieBreak": 5,
-        "point": "15"
+        "point": "0"
       },
       "time": {
-        "currentPeriodStartTimestamp": 1770975587
+        "currentPeriodStartTimestamp": 1770978086
       },
       "changes": {
         "changes": [
-          "homeScore.point"
+          "awayScore.period3",
+          "awayScore.point",
+          "firstToServe"
         ],
-        "changeTimestamp": 1770976324
+        "changeTimestamp": 1770979537
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -22799,7 +23284,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period2",
+      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
@@ -22989,7 +23474,7 @@
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15482556,
       "slug": "maks-kasnikowski-federico-agustin-gomez",
-      "startTimestamp": 1771043400,
+      "startTimestamp": 1771047000,
       "periods": {
         "point": "Game",
         "current": "Match",
@@ -27898,7 +28383,7 @@
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15482599,
       "slug": "gill-gray-clarke-sasikumar",
-      "startTimestamp": 1770976200,
+      "startTimestamp": 1770980400,
       "periods": {
         "point": "Game",
         "current": "Match",
@@ -29891,6 +30376,325 @@
       }
     },
     {
+      "tournament": {
+        "name": "Brisbane 2, Australia, Doubles",
+        "slug": "brisbane-2-australia-doubles",
+        "category": {
+          "name": "Challenger",
+          "slug": "challenger",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "country": {},
+          "id": 72,
+          "flag": "challenger",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "تحدي (تنس)",
+              "hi": "डेनमार्क",
+              "bn": "চ্যালেঞ্জার"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "Brisbane 2, Australia, Doubles",
+          "slug": "atp-challenger-brisbane-2-australia-men-doubles",
+          "category": {
+            "name": "Challenger",
+            "slug": "challenger",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "country": {},
+            "id": 72,
+            "flag": "challenger",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "تحدي (تنس)",
+                "hi": "डेनमार्क",
+                "bn": "চ্যালেঞ্জার"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 11,
+          "groundType": "Hardcourt outdoor",
+          "hasPerformanceGraphFeature": false,
+          "country": {},
+          "id": 24819,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "برزبن 2، أستراليا، زوجي"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "id": 174464
+      },
+      "season": {
+        "name": "ATP Challenger Brisbane 2, Australia Men Doubles 2026",
+        "year": "2026",
+        "editor": false,
+        "id": 87362
+      },
+      "roundInfo": {
+        "round": 28,
+        "name": "Semifinals",
+        "cupRoundType": 2
+      },
+      "customId": "GmHdsIjtj",
+      "status": {
+        "code": 0,
+        "description": "Not started",
+        "type": "notstarted"
+      },
+      "homeTeam": {
+        "name": "Charlton J / Romios M C",
+        "slug": "charlton-j-romios-m-c",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 2,
+        "nameCode": "C/R",
+        "national": false,
+        "type": 2,
+        "country": {},
+        "id": 1170483,
+        "subTeams": [
+          {
+            "name": "Joshua Charlton",
+            "slug": "charlton-joshua",
+            "shortName": "J. Charlton",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 219,
+            "nameCode": "CHA",
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "AU",
+              "alpha3": "AUS",
+              "name": "Australia",
+              "slug": "australia"
+            },
+            "id": 233657,
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "جوشوا تشارلتون"
+              },
+              "shortNameTranslation": {
+                "ar": "ج. تشارلتون"
+              }
+            }
+          },
+          {
+            "name": "Matthew Christopher Romios",
+            "slug": "romios-matthew-christopher",
+            "shortName": "M. C. Romios",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 118,
+            "nameCode": "ROM",
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "AU",
+              "alpha3": "AUS",
+              "name": "Australia",
+              "slug": "australia"
+            },
+            "id": 192256,
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "ماثيو كريستوفر روميوس",
+                "ru": "Ромиос, Мэттью Кристофер"
+              },
+              "shortNameTranslation": {
+                "ar": "م. روميوس"
+              }
+            }
+          }
+        ],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "awayTeam": {
+        "name": "Hulme M / Pearson K",
+        "slug": "hulme-m-pearson-k",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 16,
+        "nameCode": "H/P",
+        "national": false,
+        "type": 2,
+        "country": {},
+        "id": 455631,
+        "subTeams": [
+          {
+            "name": "Matt Hulme",
+            "slug": "hulme-matthew",
+            "shortName": "M. Hulme",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 264,
+            "nameCode": "HUL",
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "AU",
+              "alpha3": "AUS",
+              "name": "Australia",
+              "slug": "australia"
+            },
+            "id": 233127,
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "مات هولم"
+              },
+              "shortNameTranslation": {
+                "ar": "م. هولم"
+              }
+            }
+          },
+          {
+            "name": "Kody Pearson",
+            "slug": "pearson-kody",
+            "shortName": "K. Pearson",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 139,
+            "nameCode": "PEA",
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "AU",
+              "alpha3": "AUS",
+              "name": "Australia",
+              "slug": "australia"
+            },
+            "id": 154490,
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "كودي بيرسون",
+                "ru": "Пирсон, Коди"
+              },
+              "shortNameTranslation": {
+                "ar": "ك. بيرسون"
+              }
+            }
+          }
+        ],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "هولم م / بيرسون ك"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "homeScore": {},
+      "awayScore": {},
+      "time": {},
+      "changes": {
+        "changeTimestamp": 0
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 15481948,
+      "slug": "charlton-romiosc-hulme-pearson",
+      "startTimestamp": 1771030800,
+      "periods": {
+        "point": "Game",
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "groundType": "Hardcourt outdoor",
+      "isEditor": false,
+      "eventFilters": {
+        "category": [
+          "singles"
+        ],
+        "level": [
+          "pro"
+        ],
+        "tournament": [
+          "lower"
+        ],
+        "gender": [
+          "M"
+        ]
+      }
+    },
+    {
       "firstToServe": 1,
       "tournament": {
         "name": "Brisbane 2, Australia, Doubles",
@@ -30193,325 +30997,6 @@
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15481947,
       "slug": "host-markovina-delaney-polmans",
-      "startTimestamp": 1770975000,
-      "periods": {
-        "point": "Game",
-        "current": "Match",
-        "period1": "1st set",
-        "period2": "2nd set",
-        "period3": "3rd set",
-        "period4": "4th set",
-        "period5": "5th set"
-      },
-      "finalResultOnly": false,
-      "feedLocked": false,
-      "groundType": "Hardcourt outdoor",
-      "isEditor": false,
-      "eventFilters": {
-        "category": [
-          "singles"
-        ],
-        "level": [
-          "pro"
-        ],
-        "tournament": [
-          "lower"
-        ],
-        "gender": [
-          "M"
-        ]
-      }
-    },
-    {
-      "tournament": {
-        "name": "Brisbane 2, Australia, Doubles",
-        "slug": "brisbane-2-australia-doubles",
-        "category": {
-          "name": "Challenger",
-          "slug": "challenger",
-          "sport": {
-            "name": "Tennis",
-            "slug": "tennis",
-            "id": 5
-          },
-          "country": {},
-          "id": 72,
-          "flag": "challenger",
-          "fieldTranslations": {
-            "nameTranslation": {
-              "ar": "تحدي (تنس)",
-              "hi": "डेनमार्क",
-              "bn": "চ্যালেঞ্জার"
-            },
-            "shortNameTranslation": {}
-          }
-        },
-        "uniqueTournament": {
-          "name": "Brisbane 2, Australia, Doubles",
-          "slug": "atp-challenger-brisbane-2-australia-men-doubles",
-          "category": {
-            "name": "Challenger",
-            "slug": "challenger",
-            "sport": {
-              "name": "Tennis",
-              "slug": "tennis",
-              "id": 5
-            },
-            "country": {},
-            "id": 72,
-            "flag": "challenger",
-            "fieldTranslations": {
-              "nameTranslation": {
-                "ar": "تحدي (تنس)",
-                "hi": "डेनमार्क",
-                "bn": "চ্যালেঞ্জার"
-              },
-              "shortNameTranslation": {}
-            }
-          },
-          "userCount": 11,
-          "groundType": "Hardcourt outdoor",
-          "hasPerformanceGraphFeature": false,
-          "country": {},
-          "id": 24819,
-          "hasEventPlayerStatistics": false,
-          "displayInverseHomeAwayTeams": false,
-          "fieldTranslations": {
-            "nameTranslation": {
-              "ar": "برزبن 2، أستراليا، زوجي"
-            },
-            "shortNameTranslation": {}
-          }
-        },
-        "priority": 0,
-        "id": 174464
-      },
-      "season": {
-        "name": "ATP Challenger Brisbane 2, Australia Men Doubles 2026",
-        "year": "2026",
-        "editor": false,
-        "id": 87362
-      },
-      "roundInfo": {
-        "round": 28,
-        "name": "Semifinals",
-        "cupRoundType": 2
-      },
-      "customId": "GmHdsIjtj",
-      "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
-      },
-      "homeTeam": {
-        "name": "Charlton J / Romios M C",
-        "slug": "charlton-j-romios-m-c",
-        "gender": "M",
-        "sport": {
-          "name": "Tennis",
-          "slug": "tennis",
-          "id": 5
-        },
-        "userCount": 2,
-        "nameCode": "C/R",
-        "national": false,
-        "type": 2,
-        "country": {},
-        "id": 1170483,
-        "subTeams": [
-          {
-            "name": "Joshua Charlton",
-            "slug": "charlton-joshua",
-            "shortName": "J. Charlton",
-            "gender": "M",
-            "sport": {
-              "name": "Tennis",
-              "slug": "tennis",
-              "id": 5
-            },
-            "userCount": 219,
-            "nameCode": "CHA",
-            "disabled": false,
-            "national": false,
-            "type": 1,
-            "country": {
-              "alpha2": "AU",
-              "alpha3": "AUS",
-              "name": "Australia",
-              "slug": "australia"
-            },
-            "id": 233657,
-            "subTeams": [],
-            "teamColors": {
-              "primary": "#374df5",
-              "secondary": "#374df5",
-              "text": "#ffffff"
-            },
-            "fieldTranslations": {
-              "nameTranslation": {
-                "ar": "جوشوا تشارلتون"
-              },
-              "shortNameTranslation": {
-                "ar": "ج. تشارلتون"
-              }
-            }
-          },
-          {
-            "name": "Matthew Christopher Romios",
-            "slug": "romios-matthew-christopher",
-            "shortName": "M. C. Romios",
-            "gender": "M",
-            "sport": {
-              "name": "Tennis",
-              "slug": "tennis",
-              "id": 5
-            },
-            "userCount": 118,
-            "nameCode": "ROM",
-            "national": false,
-            "type": 1,
-            "country": {
-              "alpha2": "AU",
-              "alpha3": "AUS",
-              "name": "Australia",
-              "slug": "australia"
-            },
-            "id": 192256,
-            "subTeams": [],
-            "teamColors": {
-              "primary": "#374df5",
-              "secondary": "#374df5",
-              "text": "#ffffff"
-            },
-            "fieldTranslations": {
-              "nameTranslation": {
-                "ar": "ماثيو كريستوفر روميوس",
-                "ru": "Ромиос, Мэттью Кристофер"
-              },
-              "shortNameTranslation": {
-                "ar": "م. روميوس"
-              }
-            }
-          }
-        ],
-        "teamColors": {
-          "primary": "#374df5",
-          "secondary": "#374df5",
-          "text": "#ffffff"
-        }
-      },
-      "awayTeam": {
-        "name": "Hulme M / Pearson K",
-        "slug": "hulme-m-pearson-k",
-        "gender": "M",
-        "sport": {
-          "name": "Tennis",
-          "slug": "tennis",
-          "id": 5
-        },
-        "userCount": 16,
-        "nameCode": "H/P",
-        "national": false,
-        "type": 2,
-        "country": {},
-        "id": 455631,
-        "subTeams": [
-          {
-            "name": "Matt Hulme",
-            "slug": "hulme-matthew",
-            "shortName": "M. Hulme",
-            "gender": "M",
-            "sport": {
-              "name": "Tennis",
-              "slug": "tennis",
-              "id": 5
-            },
-            "userCount": 264,
-            "nameCode": "HUL",
-            "national": false,
-            "type": 1,
-            "country": {
-              "alpha2": "AU",
-              "alpha3": "AUS",
-              "name": "Australia",
-              "slug": "australia"
-            },
-            "id": 233127,
-            "subTeams": [],
-            "teamColors": {
-              "primary": "#374df5",
-              "secondary": "#374df5",
-              "text": "#ffffff"
-            },
-            "fieldTranslations": {
-              "nameTranslation": {
-                "ar": "مات هولم"
-              },
-              "shortNameTranslation": {
-                "ar": "م. هولم"
-              }
-            }
-          },
-          {
-            "name": "Kody Pearson",
-            "slug": "pearson-kody",
-            "shortName": "K. Pearson",
-            "gender": "M",
-            "sport": {
-              "name": "Tennis",
-              "slug": "tennis",
-              "id": 5
-            },
-            "userCount": 139,
-            "nameCode": "PEA",
-            "national": false,
-            "type": 1,
-            "country": {
-              "alpha2": "AU",
-              "alpha3": "AUS",
-              "name": "Australia",
-              "slug": "australia"
-            },
-            "id": 154490,
-            "subTeams": [],
-            "teamColors": {
-              "primary": "#374df5",
-              "secondary": "#374df5",
-              "text": "#ffffff"
-            },
-            "fieldTranslations": {
-              "nameTranslation": {
-                "ar": "كودي بيرسون",
-                "ru": "Пирсон, Коди"
-              },
-              "shortNameTranslation": {
-                "ar": "ك. بيرسون"
-              }
-            }
-          }
-        ],
-        "teamColors": {
-          "primary": "#374df5",
-          "secondary": "#374df5",
-          "text": "#ffffff"
-        },
-        "fieldTranslations": {
-          "nameTranslation": {
-            "ar": "هولم م / بيرسون ك"
-          },
-          "shortNameTranslation": {}
-        }
-      },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
-      "changes": {
-        "changeTimestamp": 0
-      },
-      "hasGlobalHighlights": false,
-      "crowdsourcingDataDisplayEnabled": false,
-      "id": 15481948,
-      "slug": "charlton-romiosc-hulme-pearson",
       "startTimestamp": 1771030800,
       "periods": {
         "point": "Game",
@@ -39614,6 +40099,7 @@
       }
     },
     {
+      "firstToServe": 1,
       "tournament": {
         "name": "ITF M15 Almoradi Men",
         "slug": "itf-m15-almoradi-men",
@@ -39680,9 +40166,9 @@
       },
       "customId": "VTkcsOXmd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 8,
+        "description": "1st set",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Alejandro Juan Mano",
@@ -39763,12 +40249,28 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 4,
+        "point": "0"
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 3,
+        "point": "0"
+      },
       "coverage": -1,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.point",
+          "awayScore.period1",
+          "awayScore.point",
+          "firstToServe"
+        ],
+        "changeTimestamp": 1770979505
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -39784,6 +40286,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Clay",
@@ -39870,9 +40373,9 @@
       },
       "customId": "eKndsVCHd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 8,
+        "description": "1st set",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Ignacio Parisca Romera",
@@ -39953,12 +40456,25 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 5,
+        "point": "40"
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 2,
+        "point": "40"
+      },
       "coverage": -1,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.point"
+        ],
+        "changeTimestamp": 1770979567
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -39974,6 +40490,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Clay",
@@ -39994,6 +40511,7 @@
       }
     },
     {
+      "firstToServe": 2,
       "tournament": {
         "name": "ITF M15 Almoradi Men",
         "slug": "itf-m15-almoradi-men",
@@ -40060,9 +40578,9 @@
       },
       "customId": "UAJbsmyQb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 8,
+        "description": "1st set",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Matyas Fuele",
@@ -40143,12 +40661,30 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 6,
+        "point": "0"
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 3,
+        "point": "0"
+      },
       "coverage": -1,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.point",
+          "awayScore.point",
+          "firstToServe"
+        ],
+        "changeTimestamp": 1770979535
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -40164,6 +40700,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Clay",
@@ -40250,9 +40787,9 @@
       },
       "customId": "nwTsEXVb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 8,
+        "description": "1st set",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Sergi Perez Contri",
@@ -40332,12 +40869,25 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 2,
+        "point": "30"
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 3,
+        "point": "0"
+      },
       "coverage": -1,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.point"
+        ],
+        "changeTimestamp": 1770979571
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -40353,6 +40903,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Clay",
@@ -41109,8 +41660,8 @@
       },
       "customId": "JYPbsFqbc",
       "status": {
-        "code": 8,
-        "description": "1st set",
+        "code": 9,
+        "description": "2nd set",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -41193,16 +41744,18 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 5,
-        "point": "40"
+        "current": 1,
+        "display": 1,
+        "period1": 6,
+        "period2": 4,
+        "point": "15"
       },
       "awayScore": {
         "current": 0,
         "display": 0,
         "period1": 2,
-        "point": "30"
+        "period2": 4,
+        "point": "40"
       },
       "coverage": -1,
       "time": {},
@@ -41210,7 +41763,7 @@
         "changes": [
           "awayScore.point"
         ],
-        "changeTimestamp": 1770976314
+        "changeTimestamp": 1770979564
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -41226,7 +41779,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
@@ -41325,8 +41878,8 @@
       },
       "customId": "tJWbsMnFd",
       "status": {
-        "code": 8,
-        "description": "1st set",
+        "code": 10,
+        "description": "3rd set",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -41409,24 +41962,33 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 5,
-        "point": "40"
+        "current": 1,
+        "display": 1,
+        "period1": 6,
+        "period2": 6,
+        "period3": 0,
+        "period1TieBreak": 2,
+        "point": "0"
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 4,
-        "point": "A"
+        "current": 1,
+        "display": 1,
+        "period1": 7,
+        "period2": 2,
+        "period3": 0,
+        "period1TieBreak": 7,
+        "point": "0"
       },
       "coverage": -1,
       "time": {},
       "changes": {
         "changes": [
-          "awayScore.point"
+          "status.code",
+          "status.description",
+          "homeScore.period3",
+          "awayScore.period3"
         ],
-        "changeTimestamp": 1770976305
+        "changeTimestamp": 1770979555
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -41442,7 +42004,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period1",
+      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
@@ -41541,8 +42103,8 @@
       },
       "customId": "tlcdshUqd",
       "status": {
-        "code": 8,
-        "description": "1st set",
+        "code": 9,
+        "description": "2nd set",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -41628,22 +42190,24 @@
       "homeScore": {
         "current": 0,
         "display": 0,
-        "period1": 1,
-        "point": "30"
+        "period1": 4,
+        "period2": 2,
+        "point": "40"
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 1,
-        "point": "0"
+        "current": 1,
+        "display": 1,
+        "period1": 6,
+        "period2": 1,
+        "point": "A"
       },
       "coverage": -1,
       "time": {},
       "changes": {
         "changes": [
-          "homeScore.point"
+          "awayScore.point"
         ],
-        "changeTimestamp": 1770976318
+        "changeTimestamp": 1770979553
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -41659,7 +42223,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
@@ -49601,7 +50165,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "groundType": "Clay",
       "isEditor": false,
@@ -49795,7 +50359,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "groundType": "Clay",
       "isEditor": false,
@@ -49989,7 +50553,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "groundType": "Clay",
       "isEditor": false,
@@ -50646,7 +51210,7 @@
       }
     },
     {
-      "firstToServe": 1,
+      "firstToServe": 2,
       "tournament": {
         "name": "ITF M25 Monastir 4 Men",
         "slug": "itf-m25-monastir-4-men",
@@ -50725,10 +51289,11 @@
       },
       "customId": "KgMbsETJd",
       "status": {
-        "code": 8,
-        "description": "1st set",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Federico Iannaccone",
         "slug": "iannaccone-federico",
@@ -50812,21 +51377,25 @@
         "current": 0,
         "display": 0,
         "period1": 4,
-        "point": "15"
+        "period2": 1,
+        "point": "0"
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 4,
-        "point": "40"
+        "current": 2,
+        "display": 2,
+        "period1": 6,
+        "period2": 6,
+        "point": "0"
       },
       "coverage": -1,
       "time": {},
       "changes": {
         "changes": [
-          "awayScore.point"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1770976321
+        "changeTimestamp": 1770979543
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -50842,7 +51411,6 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
@@ -50941,8 +51509,8 @@
       },
       "customId": "KXVsLqdc",
       "status": {
-        "code": 8,
-        "description": "1st set",
+        "code": 10,
+        "description": "3rd set",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -51027,15 +51595,19 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 2,
-        "point": "15"
+        "current": 1,
+        "display": 1,
+        "period1": 3,
+        "period2": 6,
+        "period3": 0,
+        "point": "30"
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 5,
+        "current": 1,
+        "display": 1,
+        "period1": 6,
+        "period2": 1,
+        "period3": 2,
         "point": "15"
       },
       "coverage": -1,
@@ -51044,7 +51616,7 @@
         "changes": [
           "homeScore.point"
         ],
-        "changeTimestamp": 1770976295
+        "changeTimestamp": 1770979580
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -51060,7 +51632,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period1",
+      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
@@ -51263,7 +51835,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
       "isEditor": false,
@@ -51463,7 +52035,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
       "isEditor": false,
@@ -54086,12 +54658,32 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "point": "0"
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "point": "0"
+      },
       "coverage": -1,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.point",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.point"
+        ],
+        "changeTimestamp": 1770977750
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -54107,7 +54699,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
       "isEditor": false,
@@ -54291,12 +54883,32 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "point": "0"
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "point": "0"
+      },
       "coverage": -1,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.point",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.point"
+        ],
+        "changeTimestamp": 1770977757
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -54312,7 +54924,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
       "isEditor": false,
@@ -54332,6 +54944,7 @@
       }
     },
     {
+      "firstToServe": 2,
       "tournament": {
         "name": "ITF M25 Vila Real de Santo António Men",
         "slug": "itf-m25-vila-real-de-santo-antonio-men",
@@ -54492,12 +55105,33 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "point": "0"
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "point": "0"
+      },
       "coverage": -1,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.point",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.point",
+          "firstToServe"
+        ],
+        "changeTimestamp": 1770977763
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -54513,7 +55147,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
       "isEditor": false,
@@ -56597,8 +57231,8 @@
       },
       "customId": "WqMbsxMYc",
       "status": {
-        "code": 8,
-        "description": "1st set",
+        "code": 9,
+        "description": "2nd set",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -56684,22 +57318,24 @@
       "homeScore": {
         "current": 0,
         "display": 0,
-        "period1": 2,
+        "period1": 3,
+        "period2": 2,
         "point": "15"
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 2,
-        "point": "30"
+        "current": 1,
+        "display": 1,
+        "period1": 6,
+        "period2": 4,
+        "point": "0"
       },
       "coverage": -1,
       "time": {},
       "changes": {
         "changes": [
-          "awayScore.point"
+          "homeScore.point"
         ],
-        "changeTimestamp": 1770976331
+        "changeTimestamp": 1770979548
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -56715,7 +57351,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
@@ -56814,8 +57450,8 @@
       },
       "customId": "ickcsZKwh",
       "status": {
-        "code": 8,
-        "description": "1st set",
+        "code": 9,
+        "description": "2nd set",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -56896,22 +57532,26 @@
       "homeScore": {
         "current": 0,
         "display": 0,
-        "period1": 2,
-        "point": "40"
+        "period1": 3,
+        "period2": 1,
+        "point": "0"
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0,
-        "point": "40"
+        "current": 1,
+        "display": 1,
+        "period1": 6,
+        "period2": 2,
+        "point": "0"
       },
       "coverage": -1,
       "time": {},
       "changes": {
         "changes": [
-          "homeScore.point"
+          "homeScore.point",
+          "awayScore.period2",
+          "awayScore.point"
         ],
-        "changeTimestamp": 1770976327
+        "changeTimestamp": 1770979495
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -56927,7 +57567,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
@@ -57026,8 +57666,8 @@
       },
       "customId": "NBEbsZrZd",
       "status": {
-        "code": 8,
-        "description": "1st set",
+        "code": 9,
+        "description": "2nd set",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -57110,25 +57750,26 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 1,
-        "point": "0"
+        "current": 1,
+        "display": 1,
+        "period1": 6,
+        "period2": 0,
+        "point": "40"
       },
       "awayScore": {
         "current": 0,
         "display": 0,
-        "period1": 2,
+        "period1": 4,
+        "period2": 0,
         "point": "0"
       },
       "coverage": -1,
       "time": {},
       "changes": {
         "changes": [
-          "homeScore.period1",
           "homeScore.point"
         ],
-        "changeTimestamp": 1770976303
+        "changeTimestamp": 1770979553
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -57144,7 +57785,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
@@ -57243,9 +57884,9 @@
       },
       "customId": "vKNbsTPgc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 8,
+        "description": "1st set",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Ava Hrastar",
@@ -57329,29 +57970,23 @@
       "homeScore": {
         "current": 0,
         "display": 0,
-        "period1": 0,
+        "period1": 4,
         "point": "0"
       },
       "awayScore": {
         "current": 0,
         "display": 0,
-        "period1": 0,
+        "period1": 3,
         "point": "0"
       },
       "coverage": -1,
       "time": {},
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display",
           "homeScore.period1",
-          "homeScore.point",
-          "awayScore.current",
-          "awayScore.display",
-          "awayScore.period1",
-          "awayScore.point"
+          "homeScore.point"
         ],
-        "changeTimestamp": 1770975146
+        "changeTimestamp": 1770979541
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -57367,6 +58002,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
@@ -57688,8 +58324,8 @@
       },
       "customId": "kBkcsqeid",
       "status": {
-        "code": 8,
-        "description": "1st set",
+        "code": 9,
+        "description": "2nd set",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -57773,24 +58409,26 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 5,
+        "current": 1,
+        "display": 1,
+        "period1": 7,
+        "period2": 3,
         "point": "30"
       },
       "awayScore": {
         "current": 0,
         "display": 0,
         "period1": 5,
+        "period2": 3,
         "point": "15"
       },
       "coverage": -1,
       "time": {},
       "changes": {
         "changes": [
-          "awayScore.point"
+          "homeScore.point"
         ],
-        "changeTimestamp": 1770976328
+        "changeTimestamp": 1770979565
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -57806,7 +58444,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
@@ -57905,8 +58543,8 @@
       },
       "customId": "cvrstHOb",
       "status": {
-        "code": 8,
-        "description": "1st set",
+        "code": 9,
+        "description": "2nd set",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -57995,21 +58633,23 @@
         "current": 0,
         "display": 0,
         "period1": 4,
-        "point": "15"
+        "period2": 2,
+        "point": "30"
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 3,
-        "point": "40"
+        "current": 1,
+        "display": 1,
+        "period1": 6,
+        "period2": 5,
+        "point": "0"
       },
       "coverage": -1,
       "time": {},
       "changes": {
         "changes": [
-          "awayScore.point"
+          "homeScore.point"
         ],
-        "changeTimestamp": 1770976301
+        "changeTimestamp": 1770979567
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -58025,7 +58665,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
@@ -58124,8 +58764,8 @@
       },
       "customId": "KxYbsJtac",
       "status": {
-        "code": 8,
-        "description": "1st set",
+        "code": 9,
+        "description": "2nd set",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -58211,14 +58851,18 @@
       "homeScore": {
         "current": 0,
         "display": 0,
-        "period1": 4,
-        "point": "0"
+        "period1": 6,
+        "period2": 4,
+        "period1TieBreak": 1,
+        "point": "15"
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 4,
-        "point": "40"
+        "current": 1,
+        "display": 1,
+        "period1": 7,
+        "period2": 1,
+        "period1TieBreak": 7,
+        "point": "30"
       },
       "coverage": -1,
       "time": {},
@@ -58226,7 +58870,7 @@
         "changes": [
           "awayScore.point"
         ],
-        "changeTimestamp": 1770976299
+        "changeTimestamp": 1770979567
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -58242,7 +58886,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
@@ -58341,10 +58985,11 @@
       },
       "customId": "kTLbsuZpd",
       "status": {
-        "code": 9,
-        "description": "2nd set",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Weronika Falkowska",
         "slug": "falkowska-weronika",
@@ -58424,26 +59069,29 @@
         }
       },
       "homeScore": {
-        "current": 1,
-        "display": 1,
+        "current": 2,
+        "display": 2,
         "period1": 6,
-        "period2": 0,
-        "point": "15"
+        "period2": 6,
+        "point": "0"
       },
       "awayScore": {
         "current": 0,
         "display": 0,
         "period1": 4,
-        "period2": 0,
+        "period2": 2,
         "point": "0"
       },
       "coverage": -1,
       "time": {},
       "changes": {
         "changes": [
-          "homeScore.point"
+          "status.code",
+          "status.description",
+          "status.type",
+          "firstToServe"
         ],
-        "changeTimestamp": 1770976337
+        "changeTimestamp": 1770979229
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -58459,7 +59107,6 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
@@ -59661,8 +60308,8 @@
       },
       "customId": "poHdsbnQd",
       "status": {
-        "code": 8,
-        "description": "1st set",
+        "code": 9,
+        "description": "2nd set",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -59748,24 +60395,24 @@
       "homeScore": {
         "current": 0,
         "display": 0,
-        "period1": 0,
-        "point": "0"
+        "period1": 2,
+        "period2": 0,
+        "point": "30"
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 1,
-        "point": "0"
+        "current": 1,
+        "display": 1,
+        "period1": 6,
+        "period2": 2,
+        "point": "15"
       },
       "coverage": -1,
       "time": {},
       "changes": {
         "changes": [
-          "homeScore.point",
-          "awayScore.period1",
-          "awayScore.point"
+          "homeScore.point"
         ],
-        "changeTimestamp": 1770976323
+        "changeTimestamp": 1770979558
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -59781,7 +60428,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
@@ -61648,7 +62295,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "groundType": "Clay",
       "isEditor": false,
@@ -61734,9 +62381,9 @@
       },
       "customId": "OawcspFbd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 8,
+        "description": "1st set",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Luisina Giovannini",
@@ -61816,12 +62463,25 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "point": "30"
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "point": "40"
+      },
       "coverage": -1,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "awayScore.point"
+        ],
+        "changeTimestamp": 1770979571
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -61837,6 +62497,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Clay",
@@ -62030,7 +62691,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "groundType": "Clay",
       "isEditor": false,
@@ -63783,10 +64444,11 @@
       },
       "customId": "DQZcseljd",
       "status": {
-        "code": 8,
-        "description": "1st set",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Celine Naef",
         "slug": "naef-celine",
@@ -63870,26 +64532,28 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 4,
+        "current": 2,
+        "display": 2,
+        "period1": 6,
+        "period2": 6,
         "point": "0"
       },
       "awayScore": {
         "current": 0,
         "display": 0,
         "period1": 0,
+        "period2": 2,
         "point": "0"
       },
       "coverage": -1,
       "time": {},
       "changes": {
         "changes": [
-          "homeScore.period1",
-          "homeScore.point",
-          "awayScore.point"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1770976318
+        "changeTimestamp": 1770979151
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -63905,7 +64569,6 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt indoor",
@@ -66999,10 +67662,11 @@
       },
       "customId": "wmEbsPgxi",
       "status": {
-        "code": 9,
-        "description": "2nd set",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Guiomar Maristany",
         "slug": "maristany-zuleta-de-reales-guiomar",
@@ -67091,10 +67755,10 @@
         "point": "0"
       },
       "awayScore": {
-        "current": 1,
-        "display": 1,
+        "current": 2,
+        "display": 2,
         "period1": 7,
-        "period2": 0,
+        "period2": 6,
         "point": "0"
       },
       "coverage": -1,
@@ -67103,10 +67767,9 @@
         "changes": [
           "status.code",
           "status.description",
-          "homeScore.period2",
-          "awayScore.period2"
+          "status.type"
         ],
-        "changeTimestamp": 1770976270
+        "changeTimestamp": 1770977386
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -67122,7 +67785,6 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -67219,10 +67881,11 @@
       },
       "customId": "OgrsjyYb",
       "status": {
-        "code": 9,
-        "description": "2nd set",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Sinja Kraus",
         "slug": "kraus-sinja",
@@ -67308,26 +67971,28 @@
         }
       },
       "homeScore": {
-        "current": 1,
-        "display": 1,
+        "current": 2,
+        "display": 2,
         "period1": 7,
-        "period2": 0,
-        "point": "30"
+        "period2": 6,
+        "point": "A"
       },
       "awayScore": {
         "current": 0,
         "display": 0,
         "period1": 5,
-        "period2": 0,
-        "point": "0"
+        "period2": 3,
+        "point": "40"
       },
       "coverage": -1,
       "time": {},
       "changes": {
         "changes": [
-          "homeScore.point"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1770976335
+        "changeTimestamp": 1770978351
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -67343,7 +68008,6 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -67440,9 +68104,9 @@
       },
       "customId": "fbUsoPPb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 8,
+        "description": "1st set",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Anna Siskova",
@@ -67526,12 +68190,27 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 3,
+        "point": "0"
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 3,
+        "point": "0"
+      },
       "coverage": -1,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.point",
+          "awayScore.period1",
+          "awayScore.point"
+        ],
+        "changeTimestamp": 1770979481
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -67547,6 +68226,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -67643,9 +68323,9 @@
       },
       "customId": "tqusvoA",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 8,
+        "description": "1st set",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Tereza Martincova",
@@ -67731,12 +68411,25 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 2,
+        "point": "15"
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 1,
+        "point": "30"
+      },
       "coverage": -1,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "awayScore.point"
+        ],
+        "changeTimestamp": 1770979582
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -67752,6 +68445,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -72489,9 +73183,9 @@
       },
       "customId": "XJdjsRfrj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 9,
+        "description": "2nd set",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Cho S / Kim G J",
@@ -72691,12 +73385,27 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 6,
+        "period2": 2,
+        "point": "15"
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 2,
+        "period2": 1,
+        "point": "0"
+      },
       "coverage": -1,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.point"
+        ],
+        "changeTimestamp": 1770979567
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -72712,6 +73421,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
@@ -76473,10 +77183,11 @@
       },
       "customId": "wuOisUXjj",
       "status": {
-        "code": 8,
-        "description": "1st set",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Hrazdil J / Ibrahim K",
         "slug": "hrazdil-j-ibrahim-k",
@@ -76676,26 +77387,29 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 5,
+        "current": 2,
+        "display": 2,
+        "period1": 7,
+        "period2": 6,
         "point": "0"
       },
       "awayScore": {
         "current": 0,
         "display": 0,
-        "period1": 4,
+        "period1": 5,
+        "period2": 3,
         "point": "0"
       },
       "coverage": -1,
       "time": {},
       "changes": {
         "changes": [
-          "homeScore.period1",
-          "homeScore.point",
-          "awayScore.point"
+          "status.code",
+          "status.description",
+          "status.type",
+          "firstToServe"
         ],
-        "changeTimestamp": 1770976323
+        "changeTimestamp": 1770979123
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -76711,7 +77425,6 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
@@ -78363,7 +79076,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "groundType": "Clay",
       "isEditor": false,
@@ -85446,8 +86159,8 @@
       },
       "customId": "OxtjsTxtj",
       "status": {
-        "code": 8,
-        "description": "1st set",
+        "code": 9,
+        "description": "2nd set",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -85647,16 +86360,18 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 1,
-        "point": "40"
+        "current": 1,
+        "display": 1,
+        "period1": 6,
+        "period2": 3,
+        "point": "15"
       },
       "awayScore": {
         "current": 0,
         "display": 0,
-        "period1": 2,
-        "point": "0"
+        "period1": 3,
+        "period2": 5,
+        "point": "40"
       },
       "coverage": -1,
       "time": {},
@@ -85664,7 +86379,7 @@
         "changes": [
           "homeScore.point"
         ],
-        "changeTimestamp": 1770976320
+        "changeTimestamp": 1770979559
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -85680,7 +86395,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
@@ -90962,7 +91677,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "groundType": "Clay",
       "isEditor": false,
@@ -96067,7 +96782,7 @@
       }
     },
     {
-      "firstToServe": 1,
+      "firstToServe": 2,
       "tournament": {
         "name": "UTR PTT Dubai Men + H 02, Group A",
         "slug": "utr-ptt-dubai-men-plus-h-02-group-a",
@@ -96139,10 +96854,11 @@
       },
       "customId": "OjkdsZuMd",
       "status": {
-        "code": 10,
-        "description": "3rd set",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Nicolas Moser",
         "slug": "moser-nicolas",
@@ -96223,25 +96939,28 @@
         "display": 1,
         "period1": 6,
         "period2": 3,
-        "period3": 1,
-        "point": "15"
+        "period3": 5,
+        "point": "15",
+        "normaltime": 1
       },
       "awayScore": {
-        "current": 1,
-        "display": 1,
+        "current": 2,
+        "display": 2,
         "period1": 2,
         "period2": 6,
-        "period3": 3,
-        "point": "0"
+        "period3": 7,
+        "point": "40",
+        "normaltime": 2
       },
       "time": {
         "currentPeriodStartTimestamp": 1770975102
       },
       "changes": {
         "changes": [
-          "homeScore.point"
+          "time.currentPeriodStart",
+          "time.period3"
         ],
-        "changeTimestamp": 1770976318
+        "changeTimestamp": 1770977774
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -96257,7 +96976,6 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt outdoor",
@@ -100070,6 +100788,7 @@
       }
     },
     {
+      "firstToServe": 1,
       "tournament": {
         "name": "UTR PTT Gyor Men 02, Group B",
         "slug": "utr-ptt-gyor-men-02-group-b",
@@ -100141,9 +100860,9 @@
       },
       "customId": "CpgcskgMd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 9,
+        "description": "2nd set",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Daniel Balascak",
@@ -100217,17 +100936,34 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 3,
+        "period2": 0,
+        "point": "40"
+      },
+      "awayScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 6,
+        "period2": 1,
+        "point": "40"
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1770979115
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.point"
+        ],
+        "changeTimestamp": 1770979574
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15514481,
       "slug": "daniel-balascak-alex-solonenko",
-      "startTimestamp": 1770978600,
+      "startTimestamp": 1770977100,
       "periods": {
         "point": "Game",
         "current": "Match",
@@ -100237,6 +100973,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt indoor",
@@ -100417,7 +101154,7 @@
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15497542,
       "slug": "kristijan-juhas-peter-sallay",
-      "startTimestamp": 1770978900,
+      "startTimestamp": 1770979800,
       "periods": {
         "point": "Game",
         "current": "Match",
@@ -100912,10 +101649,11 @@
       },
       "customId": "BRhdsOkej",
       "status": {
-        "code": 9,
-        "description": "2nd set",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Attila Dominik Boros",
         "slug": "boros-attila",
@@ -100992,27 +101730,30 @@
         }
       },
       "homeScore": {
-        "current": 1,
-        "display": 1,
+        "current": 2,
+        "display": 2,
         "period1": 6,
-        "period2": 5,
-        "point": "30"
+        "period2": 6,
+        "point": "40",
+        "normaltime": 2
       },
       "awayScore": {
         "current": 0,
         "display": 0,
         "period1": 2,
         "period2": 1,
-        "point": "0"
+        "point": "15",
+        "normaltime": 0
       },
       "time": {
         "currentPeriodStartTimestamp": 1770974960
       },
       "changes": {
         "changes": [
-          "homeScore.point"
+          "time.currentPeriodStart",
+          "time.period2"
         ],
-        "changeTimestamp": 1770976306
+        "changeTimestamp": 1770976472
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -101028,7 +101769,6 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt indoor",
@@ -101121,8 +101861,8 @@
       },
       "customId": "QjEcspzpj",
       "status": {
-        "code": 8,
-        "description": "1st set",
+        "code": 9,
+        "description": "2nd set",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -101198,23 +101938,37 @@
       "homeScore": {
         "current": 0,
         "display": 0,
-        "period1": 1,
-        "point": "40"
+        "period1": 6,
+        "period2": 0,
+        "period1TieBreak": 0,
+        "point": "0"
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 2,
-        "point": "30"
+        "current": 1,
+        "display": 1,
+        "period1": 7,
+        "period2": 0,
+        "period1TieBreak": 7,
+        "point": "0"
       },
       "time": {
-        "currentPeriodStartTimestamp": 1770974757
+        "currentPeriodStartTimestamp": 1770979448
       },
       "changes": {
         "changes": [
-          "homeScore.point"
+          "time.period1",
+          "time.currentPeriodStart",
+          "status.code",
+          "status.description",
+          "homeScore.period2",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.period1TieBreak",
+          "awayScore.point"
         ],
-        "changeTimestamp": 1770976321
+        "changeTimestamp": 1770979452
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -101230,7 +101984,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt indoor",
@@ -101466,7 +102220,7 @@
       }
     },
     {
-      "firstToServe": 2,
+      "firstToServe": 1,
       "tournament": {
         "name": "UTR PTT Gyor Men 02, Group D",
         "slug": "utr-ptt-gyor-men-02-group-d",
@@ -101538,8 +102292,8 @@
       },
       "customId": "FwYcswXDd",
       "status": {
-        "code": 8,
-        "description": "1st set",
+        "code": 9,
+        "description": "2nd set",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -101616,25 +102370,30 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 3,
-        "point": "15"
+        "current": 1,
+        "display": 1,
+        "period1": 6,
+        "period2": 3,
+        "point": "0"
       },
       "awayScore": {
         "current": 0,
         "display": 0,
-        "period1": 3,
-        "point": "15"
+        "period1": 4,
+        "period2": 4,
+        "point": "0"
       },
       "time": {
-        "currentPeriodStartTimestamp": 1770974522
+        "currentPeriodStartTimestamp": 1770977637
       },
       "changes": {
         "changes": [
-          "awayScore.point"
+          "homeScore.point",
+          "awayScore.period2",
+          "awayScore.point",
+          "firstToServe"
         ],
-        "changeTimestamp": 1770976333
+        "changeTimestamp": 1770979537
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -101650,7 +102409,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Hardcourt indoor",
@@ -117375,7 +118134,7 @@
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15496250,
       "slug": "nela-jandova-daria-gorska",
-      "startTimestamp": 1770980700,
+      "startTimestamp": 1770984000,
       "periods": {
         "point": "Game",
         "current": "Match",
@@ -117763,7 +118522,7 @@
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15496251,
       "slug": "nela-linhartova-tereza-vajsejtlova",
-      "startTimestamp": 1770981900,
+      "startTimestamp": 1770982500,
       "periods": {
         "point": "Game",
         "current": "Match",
@@ -118295,10 +119054,11 @@
       },
       "customId": "zmQbsktGd",
       "status": {
-        "code": 9,
-        "description": "2nd set",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Luisa Meyer Auf Der Heide",
         "slug": "meyer-auf-der-heide-luisa",
@@ -118378,30 +119138,30 @@
         }
       },
       "homeScore": {
-        "current": 1,
-        "display": 1,
+        "current": 2,
+        "display": 2,
         "period1": 6,
-        "period2": 1,
-        "point": "0"
+        "period2": 6,
+        "point": "40",
+        "normaltime": 2
       },
       "awayScore": {
         "current": 0,
         "display": 0,
         "period1": 3,
-        "period2": 0,
-        "point": "0"
+        "period2": 2,
+        "point": "15",
+        "normaltime": 0
       },
       "time": {
         "currentPeriodStartTimestamp": 1770975999
       },
       "changes": {
         "changes": [
-          "homeScore.period2",
-          "homeScore.point",
-          "awayScore.point",
-          "firstToServe"
+          "time.currentPeriodStart",
+          "time.period2"
         ],
-        "changeTimestamp": 1770976264
+        "changeTimestamp": 1770977836
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -118417,7 +119177,6 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Carpet indoor",
@@ -118598,7 +119357,7 @@
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15496259,
       "slug": "alja-senica-valentina-vachkova",
-      "startTimestamp": 1770976500,
+      "startTimestamp": 1770979800,
       "periods": {
         "point": "Game",
         "current": "Match",
@@ -118904,8 +119663,8 @@
       },
       "customId": "ZTocstXxh",
       "status": {
-        "code": 9,
-        "description": "2nd set",
+        "code": 10,
+        "description": "3rd set",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -118984,32 +119743,31 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
+        "current": 1,
+        "display": 1,
         "period1": 6,
-        "period2": 1,
+        "period2": 6,
+        "period3": 3,
         "period1TieBreak": 6,
-        "point": "0"
+        "point": "30"
       },
       "awayScore": {
         "current": 1,
         "display": 1,
         "period1": 7,
         "period2": 0,
+        "period3": 4,
         "period1TieBreak": 8,
         "point": "0"
       },
       "time": {
-        "currentPeriodStartTimestamp": 1770976087
+        "currentPeriodStartTimestamp": 1770977692
       },
       "changes": {
         "changes": [
-          "homeScore.period2",
-          "homeScore.point",
-          "awayScore.point",
-          "firstToServe"
+          "homeScore.point"
         ],
-        "changeTimestamp": 1770976268
+        "changeTimestamp": 1770979555
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -119025,7 +119783,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
-      "lastPeriod": "period2",
+      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Carpet indoor",
@@ -119046,6 +119804,7 @@
       }
     },
     {
+      "firstToServe": 2,
       "tournament": {
         "name": "UTR PTT Olomouc Women 01, Group D",
         "slug": "utr-ptt-olomouc-women-01-group-d",
@@ -119117,9 +119876,9 @@
       },
       "customId": "pypdsjftj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 8,
+        "description": "1st set",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Terezia Perhacova",
@@ -119185,17 +119944,34 @@
           "text": "#ffffff"
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 3,
+        "point": "0"
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 4,
+        "point": "0"
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1770978399
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.period1",
+          "homeScore.point",
+          "firstToServe"
+        ],
+        "changeTimestamp": 1770979570
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15526989,
       "slug": "lujza-zimenova-terezia-perhacova",
-      "startTimestamp": 1770977700,
+      "startTimestamp": 1770978300,
       "periods": {
         "point": "Game",
         "current": "Match",
@@ -119205,6 +119981,7 @@
         "period4": "4th set",
         "period5": "5th set"
       },
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "groundType": "Carpet indoor",
