@@ -1107,8 +1107,8 @@
       },
       "customId": "Nocsrtc",
       "status": {
-        "code": 30,
-        "description": "Pause",
+        "code": 3,
+        "description": "3rd period",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -1184,31 +1184,31 @@
         }
       },
       "homeScore": {
-        "current": 4,
-        "display": 4,
+        "current": 5,
+        "display": 5,
         "period1": 1,
-        "period2": 3
+        "period2": 3,
+        "period3": 1
       },
       "awayScore": {
         "current": 3,
         "display": 3,
         "period1": 2,
-        "period2": 1
+        "period2": 1,
+        "period3": 0
       },
       "time": {
-        "played": 2400,
+        "played": 3101,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3,
-        "currentPeriodStartTimestamp": 1771105526
+        "currentPeriodStartTimestamp": 1771106627
       },
       "changes": {
         "changes": [
-          "status.code",
-          "status.description",
-          "time.currentPeriodStart"
+          "time.played"
         ],
-        "changeTimestamp": 1771105528
+        "changeTimestamp": 1771108142
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -1224,6 +1224,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
+      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -1895,10 +1896,11 @@
       },
       "customId": "AocsDoc",
       "status": {
-        "code": 3,
-        "description": "3rd period",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Finland",
         "slug": "finland",
@@ -1976,31 +1978,34 @@
         "display": 0,
         "period1": 0,
         "period2": 0,
-        "period3": 0
+        "period3": 0,
+        "normaltime": 0
       },
       "awayScore": {
         "current": 1,
         "display": 1,
         "period1": 0,
         "period2": 1,
-        "period3": 0
+        "period3": 0,
+        "normaltime": 1
       },
       "time": {
-        "played": 2400,
+        "played": 3598,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3,
-        "currentPeriodStartTimestamp": 1771105844
+        "currentPeriodStartTimestamp": 1771107879
       },
       "changes": {
         "changes": [
+          "time.currentPeriodStart",
           "status.code",
           "status.description",
-          "homeScore.period3",
-          "awayScore.period3",
-          "time.currentPeriodStart"
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1771105846
+        "changeTimestamp": 1771107891
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -2016,7 +2021,6 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -17203,7 +17207,8 @@
         "period1": 2,
         "period2": 1,
         "period3": 0,
-        "normaltime": 3
+        "normaltime": 3,
+        "overtime": 1
       },
       "awayScore": {
         "current": 3,
@@ -17211,7 +17216,8 @@
         "period1": 1,
         "period2": 2,
         "period3": 0,
-        "normaltime": 3
+        "normaltime": 3,
+        "overtime": 0
       },
       "time": {
         "played": 3900,
@@ -17221,13 +17227,10 @@
       },
       "changes": {
         "changes": [
-          "status.code",
-          "status.description",
-          "status.type",
-          "homeScore.normaltime",
-          "awayScore.normaltime"
+          "homeScore.overtime",
+          "awayScore.overtime"
         ],
-        "changeTimestamp": 1771093679
+        "changeTimestamp": 1771107510
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -18916,7 +18919,8 @@
         "period1": 1,
         "period2": 3,
         "period3": 1,
-        "normaltime": 5
+        "normaltime": 5,
+        "overtime": 0
       },
       "awayScore": {
         "current": 6,
@@ -18924,7 +18928,8 @@
         "period1": 5,
         "period2": 0,
         "period3": 0,
-        "normaltime": 5
+        "normaltime": 5,
+        "overtime": 1
       },
       "time": {
         "played": 3900,
@@ -18934,9 +18939,10 @@
       },
       "changes": {
         "changes": [
-          "time.played"
+          "homeScore.overtime",
+          "awayScore.overtime"
         ],
-        "changeTimestamp": 1771095111
+        "changeTimestamp": 1771107510
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -26741,10 +26747,11 @@
       },
       "customId": "oVfcspVfc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 120,
+        "description": "AP",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Tappara Tampere U20",
         "slug": "tappara-tampere-u20",
@@ -26815,11 +26822,50 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 3,
+        "display": 3,
+        "period1": 0,
+        "period2": 2,
+        "period3": 1,
+        "normaltime": 3,
+        "overtime": 0,
+        "penalties": 0
+      },
+      "awayScore": {
+        "current": 4,
+        "display": 4,
+        "period1": 1,
+        "period2": 1,
+        "period3": 1,
+        "normaltime": 3,
+        "overtime": 0,
+        "penalties": 1
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.period3",
+          "homeScore.normaltime",
+          "homeScore.overtime",
+          "homeScore.penalties",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.period3",
+          "awayScore.normaltime",
+          "awayScore.overtime",
+          "awayScore.penalties"
+        ],
+        "changeTimestamp": 1771107572
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -26834,7 +26880,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -27785,10 +27831,11 @@
       },
       "customId": "uBksxAUb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Diables noirs de Tours",
         "slug": "diables-noirs-de-tours",
@@ -27860,11 +27907,42 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 5,
+        "display": 5,
+        "period1": 2,
+        "period2": 1,
+        "period3": 2,
+        "normaltime": 5
+      },
+      "awayScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 0,
+        "period2": 0,
+        "period3": 1,
+        "normaltime": 1
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.period3",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.period3",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1771106526
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -27879,7 +27957,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -27971,10 +28049,11 @@
       },
       "customId": "jBksdLr",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 110,
+        "description": "AET",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Ours de Villard-De-Lans",
         "slug": "ours-de-villard-de-lans",
@@ -28048,11 +28127,46 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 1,
+        "period2": 0,
+        "period3": 0,
+        "normaltime": 1,
+        "overtime": 1
+      },
+      "awayScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 0,
+        "period2": 0,
+        "period3": 1,
+        "normaltime": 1,
+        "overtime": 0
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.period3",
+          "homeScore.normaltime",
+          "homeScore.overtime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.period3",
+          "awayScore.normaltime",
+          "awayScore.overtime"
+        ],
+        "changeTimestamp": 1771107633
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -28067,7 +28181,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -28159,10 +28273,11 @@
       },
       "customId": "qBksHgbb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Pingouins de Morzine-Avoriaz",
         "slug": "hc-morzine-avoriaz",
@@ -28236,11 +28351,42 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 0,
+        "period2": 1,
+        "period3": 1,
+        "normaltime": 2
+      },
+      "awayScore": {
+        "current": 3,
+        "display": 3,
+        "period1": 2,
+        "period2": 0,
+        "period3": 1,
+        "normaltime": 3
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.period3",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.period3",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1771107633
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -28255,7 +28401,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -32196,10 +32342,11 @@
       },
       "customId": "iNtbsclDd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 110,
+        "description": "AET",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "EC Die Adler Kitzbühel",
         "slug": "ec-die-adler-kitzbuhel",
@@ -32274,11 +32421,46 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 1,
+        "period2": 0,
+        "period3": 0,
+        "normaltime": 1,
+        "overtime": 1
+      },
+      "awayScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 1,
+        "period2": 0,
+        "period3": 0,
+        "normaltime": 1,
+        "overtime": 0
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.period3",
+          "homeScore.normaltime",
+          "homeScore.overtime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.period3",
+          "awayScore.normaltime",
+          "awayScore.overtime"
+        ],
+        "changeTimestamp": 1771107695
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -32293,7 +32475,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -32892,10 +33074,11 @@
       },
       "customId": "VIvesIQXi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 120,
+        "description": "AP",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Valdifiemme HC",
         "slug": "valdifiemme-hc",
@@ -32962,11 +33145,50 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 0,
+        "period2": 0,
+        "period3": 1,
+        "normaltime": 1,
+        "overtime": 0,
+        "penalties": 1
+      },
+      "awayScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 0,
+        "period2": 0,
+        "period3": 1,
+        "normaltime": 1,
+        "overtime": 0,
+        "penalties": 0
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.period3",
+          "homeScore.normaltime",
+          "homeScore.overtime",
+          "homeScore.penalties",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.period3",
+          "awayScore.normaltime",
+          "awayScore.overtime",
+          "awayScore.penalties"
+        ],
+        "changeTimestamp": 1771107818
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -32981,7 +33203,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -33457,10 +33679,11 @@
       },
       "customId": "JQXisMQXi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Hockey Pergine Sapiens",
         "slug": "hockey-pergine-sapiens",
@@ -33527,11 +33750,42 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 4,
+        "display": 4,
+        "period1": 3,
+        "period2": 0,
+        "period3": 1,
+        "normaltime": 4
+      },
+      "awayScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 1,
+        "period2": 0,
+        "period3": 0,
+        "normaltime": 1
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.period3",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.period3",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1771107756
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -33546,7 +33800,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -33632,10 +33886,11 @@
       },
       "customId": "PAXscrKc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Varese Hockey",
         "slug": "varese-hockey",
@@ -33706,11 +33961,42 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 0,
+        "period2": 0,
+        "period3": 1,
+        "normaltime": 1
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "period2": 0,
+        "period3": 0,
+        "normaltime": 0
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.period3",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.period3",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1771107756
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -33725,7 +34011,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -33811,10 +34097,11 @@
       },
       "customId": "RAXsNQXi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "HC Eppan Pirates",
         "slug": "hc-eppan-pirates",
@@ -33885,11 +34172,42 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 4,
+        "display": 4,
+        "period1": 2,
+        "period2": 1,
+        "period3": 1,
+        "normaltime": 4
+      },
+      "awayScore": {
+        "current": 3,
+        "display": 3,
+        "period1": 1,
+        "period2": 1,
+        "period3": 1,
+        "normaltime": 3
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.period3",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.period3",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1771107818
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -33904,7 +34222,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -37442,7 +37760,8 @@
         "period1": 2,
         "period2": 2,
         "period3": 0,
-        "normaltime": 4
+        "normaltime": 4,
+        "overtime": 0
       },
       "awayScore": {
         "current": 5,
@@ -37450,7 +37769,8 @@
         "period1": 1,
         "period2": 2,
         "period3": 1,
-        "normaltime": 4
+        "normaltime": 4,
+        "overtime": 1
       },
       "time": {
         "played": 3900,
@@ -37460,9 +37780,10 @@
       },
       "changes": {
         "changes": [
-          "time.played"
+          "homeScore.overtime",
+          "awayScore.overtime"
         ],
-        "changeTimestamp": 1771092930
+        "changeTimestamp": 1771106526
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -47367,10 +47688,11 @@
       },
       "customId": "YjZsfXZi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "HC Dukla Senica",
         "slug": "hc-dukla-senica",
@@ -47442,11 +47764,42 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 7,
+        "display": 7,
+        "period1": 3,
+        "period2": 2,
+        "period3": 2,
+        "normaltime": 7
+      },
+      "awayScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 0,
+        "period2": 1,
+        "period3": 1,
+        "normaltime": 2
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.period3",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.period3",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1771107879
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -47461,7 +47814,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -47775,10 +48128,11 @@
       },
       "customId": "XBUbsgXZi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Ho Hamikovo Hamuliakovo B",
         "slug": "ho-hamikovo-hamuliakovo-b",
@@ -47847,11 +48201,42 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 3,
+        "display": 3,
+        "period1": 1,
+        "period2": 2,
+        "period3": 0,
+        "normaltime": 3
+      },
+      "awayScore": {
+        "current": 6,
+        "display": 6,
+        "period1": 1,
+        "period2": 1,
+        "period3": 4,
+        "normaltime": 6
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.period3",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.period3",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1771107879
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -47866,7 +48251,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -59773,10 +60158,11 @@
       },
       "customId": "FGWscEX",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Nottingham Panthers",
         "slug": "nottingham-panthers",
@@ -59856,11 +60242,42 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 0,
+        "period2": 1,
+        "period3": 1,
+        "normaltime": 2
+      },
+      "awayScore": {
+        "current": 4,
+        "display": 4,
+        "period1": 1,
+        "period2": 1,
+        "period3": 2,
+        "normaltime": 4
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.period3",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.period3",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1771106526
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -59875,7 +60292,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -60754,8 +61171,8 @@
       },
       "customId": "ldtsDdt",
       "status": {
-        "code": 30,
-        "description": "Pause",
+        "code": 3,
+        "description": "3rd period",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -60831,29 +61248,31 @@
         }
       },
       "homeScore": {
-        "current": 1,
-        "display": 1,
+        "current": 3,
+        "display": 3,
         "period1": 0,
-        "period2": 1
+        "period2": 1,
+        "period3": 2
       },
       "awayScore": {
-        "current": 1,
-        "display": 1,
+        "current": 2,
+        "display": 2,
         "period1": 1,
-        "period2": 0
+        "period2": 0,
+        "period3": 1
       },
       "time": {
-        "played": 2400,
+        "played": 3316,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3,
-        "currentPeriodStartTimestamp": 1771105268
+        "currentPeriodStartTimestamp": 1771106403
       },
       "changes": {
         "changes": [
           "time.played"
         ],
-        "changeTimestamp": 1771105329
+        "changeTimestamp": 1771108142
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -60868,6 +61287,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
+      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -60968,8 +61388,8 @@
       },
       "customId": "rdtsjFud",
       "status": {
-        "code": 30,
-        "description": "Pause",
+        "code": 3,
+        "description": "3rd period",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -61043,29 +61463,31 @@
         }
       },
       "homeScore": {
-        "current": 4,
-        "display": 4,
+        "current": 5,
+        "display": 5,
         "period1": 3,
-        "period2": 1
+        "period2": 1,
+        "period3": 1
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
+        "current": 1,
+        "display": 1,
         "period1": 0,
-        "period2": 0
+        "period2": 0,
+        "period3": 1
       },
       "time": {
-        "played": 2400,
+        "played": 3224,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3,
-        "currentPeriodStartTimestamp": 1771105275
+        "currentPeriodStartTimestamp": 1771106540
       },
       "changes": {
         "changes": [
           "time.played"
         ],
-        "changeTimestamp": 1771105329
+        "changeTimestamp": 1771108142
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -61080,6 +61502,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
+      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -61180,8 +61603,8 @@
       },
       "customId": "mdtsGdt",
       "status": {
-        "code": 30,
-        "description": "Pause",
+        "code": 2,
+        "description": "2nd period",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -61256,27 +61679,29 @@
         }
       },
       "homeScore": {
-        "current": 1,
-        "display": 1,
-        "period1": 1
+        "current": 2,
+        "display": 2,
+        "period1": 1,
+        "period2": 1
       },
       "awayScore": {
         "current": 3,
         "display": 3,
-        "period1": 3
+        "period1": 3,
+        "period2": 0
       },
       "time": {
-        "played": 1200,
+        "played": 2162,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3,
-        "currentPeriodStartTimestamp": 1771105090
+        "currentPeriodStartTimestamp": 1771106230
       },
       "changes": {
         "changes": [
           "time.played"
         ],
-        "changeTimestamp": 1771105142
+        "changeTimestamp": 1771108142
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -61291,6 +61716,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -61391,9 +61817,9 @@
       },
       "customId": "idtsxdt",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 1,
+        "description": "1st period",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Bridgeport Islanders",
@@ -61469,11 +61895,28 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 1
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "time": {
+        "played": 971,
+        "periodLength": 1200,
+        "overtimeLength": 300,
+        "totalPeriodCount": 3,
+        "currentPeriodStartTimestamp": 1771106433
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.played"
+        ],
+        "changeTimestamp": 1771108142
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -61488,6 +61931,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -71431,10 +71875,11 @@
       },
       "customId": "IXXcsUFFd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "LIU Sharks",
         "slug": "liu-sharks",
@@ -71501,11 +71946,42 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 5,
+        "display": 5,
+        "period1": 1,
+        "period2": 1,
+        "period3": 3,
+        "normaltime": 5
+      },
+      "awayScore": {
+        "current": 3,
+        "display": 3,
+        "period1": 1,
+        "period2": 0,
+        "period3": 2,
+        "normaltime": 3
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.period3",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.period3",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1771106096
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -71520,7 +71996,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -72265,7 +72741,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -78750,10 +79226,11 @@
       },
       "customId": "nixcsClxc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Ohio State Buckeyes",
         "slug": "ohio-state-buckeyes",
@@ -78820,11 +79297,42 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 3,
+        "display": 3,
+        "period1": 1,
+        "period2": 2,
+        "period3": 0,
+        "normaltime": 3
+      },
+      "awayScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 1,
+        "period2": 0,
+        "period3": 0,
+        "normaltime": 1
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.period3",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.period3",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1771107879
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -78839,7 +79347,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -79675,10 +80183,11 @@
       },
       "customId": "zFwcsWKwc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Saint Lawrence Saints",
         "slug": "saint-lawrence-saints",
@@ -79749,11 +80258,42 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 2,
+        "period2": 0,
+        "period3": 0,
+        "normaltime": 2
+      },
+      "awayScore": {
+        "current": 4,
+        "display": 4,
+        "period1": 1,
+        "period2": 2,
+        "period3": 1,
+        "normaltime": 4
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.period3",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.period3",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1771108002
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -79768,7 +80308,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
