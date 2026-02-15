@@ -2144,7 +2144,7 @@
       "id": 15332608,
       "slug": "union-drancy-saint-denis-rugby-93-anglet-olympique",
       "startTimestamp": 1771164900,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -3279,7 +3279,7 @@
       "id": 15347064,
       "slug": "rc-aubenas-vals-cs-vienne",
       "startTimestamp": 1771164900,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -3671,8 +3671,8 @@
       },
       "customId": "fjGbscOnj",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -3740,36 +3740,38 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0,
-        "normaltime": 0
+        "current": 12,
+        "display": 12,
+        "period1": 7,
+        "period2": 5,
+        "normaltime": 12
       },
       "awayScore": {
-        "current": 3,
-        "display": 3,
-        "period1": 3,
-        "normaltime": 3
+        "current": 13,
+        "display": 13,
+        "period1": 10,
+        "period2": 3,
+        "normaltime": 13
       },
       "coverage": -1,
       "time": {
-        "currentPeriodStartTimestamp": 1771162200
+        "currentPeriodStartTimestamp": 1771165080
       },
       "changes": {
         "changes": [
           "awayScore.current",
           "awayScore.display",
-          "awayScore.period1",
+          "awayScore.period2",
           "awayScore.normaltime"
         ],
-        "changeTimestamp": 1771163899
+        "changeTimestamp": 1771165964
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15357690,
       "slug": "rugby-pieve-1971-asd-asd-rugby-lyons",
       "startTimestamp": 1771162235,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -5843,7 +5845,7 @@
       "id": 14337460,
       "slug": "le-xiii-baroudeur-de-pia-saint-gardens-bears-xiii",
       "startTimestamp": 1771164000,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -6303,9 +6305,9 @@
       },
       "customId": "LJbsUJb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Batley Bulldogs",
@@ -6371,17 +6373,34 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "period2": 0
+      },
+      "awayScore": {
+        "current": 6,
+        "display": 6,
+        "period1": 6,
+        "period2": 0
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1771164935
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.period2",
+          "awayScore.period2"
+        ],
+        "changeTimestamp": 1771167082
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15180769,
       "slug": "doncaster-batley-bulldogs",
       "startTimestamp": 1771164000,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -11260,7 +11279,7 @@
       "id": 14390212,
       "slug": "mogliano-rugby-femi-cz-rovigo",
       "startTimestamp": 1771164000,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -13090,22 +13109,23 @@
         "current": 12,
         "display": 12,
         "period1": 5,
-        "period2": 7
+        "period2": 7,
+        "normaltime": 12
       },
       "awayScore": {
         "current": 61,
         "display": 61,
         "period1": 28,
-        "period2": 33
+        "period2": 33,
+        "normaltime": 61
       },
       "time": {},
       "changes": {
         "changes": [
-          "status.code",
-          "status.description",
-          "status.type"
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1771164056
+        "changeTimestamp": 1771164473
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -15601,10 +15621,11 @@
       },
       "customId": "VNrsKFAc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Cetransa El Salvador",
         "slug": "cetransa-el-salvador",
@@ -15669,11 +15690,30 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 19,
+        "display": 19,
+        "normaltime": 19
+      },
+      "awayScore": {
+        "current": 28,
+        "display": 28,
+        "normaltime": 28
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1771167180
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -15764,10 +15804,11 @@
       },
       "customId": "NXGdsryVd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Recoletas Universidad de Burgos",
         "slug": "recoletas-universidad-de-burgos",
@@ -15824,18 +15865,37 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 23,
+        "display": 23,
+        "normaltime": 23
+      },
+      "awayScore": {
+        "current": 18,
+        "display": 18,
+        "normaltime": 18
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1771166879
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14784132,
       "slug": "alcobendas-rugby-recoletas-universidad-de-burgos",
       "startTimestamp": 1771156800,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -25518,10 +25578,11 @@
       },
       "customId": "aqqbsUKkc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Uruguay 7s",
         "slug": "uruguay-7s",
@@ -25598,18 +25659,45 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 43,
+        "display": 43,
+        "period1": 24,
+        "period2": 19,
+        "normaltime": 43
+      },
+      "awayScore": {
+        "current": 12,
+        "display": 12,
+        "period1": 7,
+        "period2": 5,
+        "normaltime": 12
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1771165263
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15536294,
       "slug": "uruguay-7s-canada-7s",
       "startTimestamp": 1771162800,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -25679,10 +25767,11 @@
       },
       "customId": "iqqbsCeyb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Kenya 7s",
         "slug": "kenya-7s",
@@ -25759,11 +25848,38 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 5,
+        "display": 5,
+        "period1": 0,
+        "period2": 5,
+        "normaltime": 5
+      },
+      "awayScore": {
+        "current": 21,
+        "display": 21,
+        "period1": 7,
+        "period2": 14,
+        "normaltime": 21
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1771166703
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
