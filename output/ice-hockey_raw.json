@@ -750,8 +750,8 @@
       },
       "customId": "KocsNoc",
       "status": {
-        "code": 2,
-        "description": "2nd period",
+        "code": 3,
+        "description": "3rd period",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -827,29 +827,31 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
+        "current": 1,
+        "display": 1,
         "period1": 0,
-        "period2": 0
+        "period2": 1,
+        "period3": 0
       },
       "awayScore": {
         "current": 0,
         "display": 0,
         "period1": 0,
-        "period2": 0
+        "period2": 0,
+        "period3": 0
       },
       "time": {
-        "played": 1339,
+        "played": 2405,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3,
-        "currentPeriodStartTimestamp": 1771448541
+        "currentPeriodStartTimestamp": 1771451752
       },
       "changes": {
         "changes": [
           "time.played"
         ],
-        "changeTimestamp": 1771448708
+        "changeTimestamp": 1771451775
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -865,7 +867,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "lastPeriod": "period2",
+      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -11316,10 +11318,11 @@
       },
       "customId": "RTBszcXi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "HC Spartak Uhersky Brod",
         "slug": "hc-spartak-uhersky-brod",
@@ -11392,11 +11395,29 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 5,
+        "display": 5,
+        "period1": 2,
+        "period2": 1,
+        "period3": 2,
+        "normaltime": 5
+      },
+      "awayScore": {
+        "current": 3,
+        "display": 3,
+        "period1": 1,
+        "period2": 0,
+        "period3": 2,
+        "normaltime": 3
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.normaltime",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1771451026
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -11411,7 +11432,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -11509,8 +11530,8 @@
       },
       "customId": "lgfcsbiMc",
       "status": {
-        "code": 120,
-        "description": "AP",
+        "code": 110,
+        "description": "AET",
         "type": "finished"
       },
       "winnerCode": 2,
@@ -11583,7 +11604,8 @@
         "period1": 2,
         "period2": 2,
         "period3": 2,
-        "normaltime": 6
+        "normaltime": 6,
+        "overtime": 0
       },
       "awayScore": {
         "current": 7,
@@ -11591,7 +11613,8 @@
         "period1": 2,
         "period2": 2,
         "period3": 2,
-        "normaltime": 6
+        "normaltime": 6,
+        "overtime": 1
       },
       "time": {
         "played": 4200,
@@ -11601,9 +11624,12 @@
       },
       "changes": {
         "changes": [
-          "time.played"
+          "status.code",
+          "status.description",
+          "homeScore.overtime",
+          "awayScore.overtime"
         ],
-        "changeTimestamp": 1771443477
+        "changeTimestamp": 1771449063
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -11716,10 +11742,11 @@
       },
       "customId": "YgpsiLib",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "LHK Jestřábi Prostějov",
         "slug": "lhk-jestrabi-prostejov",
@@ -11798,11 +11825,29 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 4,
+        "display": 4,
+        "period1": 0,
+        "period2": 4,
+        "period3": 0,
+        "normaltime": 4
+      },
+      "awayScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 1,
+        "period2": 0,
+        "period3": 1,
+        "normaltime": 2
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.normaltime",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1771450965
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -11817,7 +11862,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -12582,9 +12627,9 @@
       },
       "customId": "RgpsnFje",
       "status": {
-        "code": 30,
-        "description": "Pause",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
       "winnerCode": 2,
       "homeTeam": {
@@ -12679,12 +12724,11 @@
       "time": {},
       "changes": {
         "changes": [
-          "time.played",
-          "time.periodLength",
-          "time.overtimeLength",
-          "time.totalPeriodCount"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1771447925
+        "changeTimestamp": 1771449135
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -13018,8 +13062,8 @@
       },
       "customId": "JeWdsGBWd",
       "status": {
-        "code": 120,
-        "description": "AP",
+        "code": 110,
+        "description": "AET",
         "type": "finished"
       },
       "winnerCode": 2,
@@ -13096,7 +13140,8 @@
         "period1": 1,
         "period2": 1,
         "period3": 1,
-        "normaltime": 3
+        "normaltime": 3,
+        "overtime": 0
       },
       "awayScore": {
         "current": 4,
@@ -13104,7 +13149,8 @@
         "period1": 2,
         "period2": 0,
         "period3": 1,
-        "normaltime": 3
+        "normaltime": 3,
+        "overtime": 1
       },
       "time": {
         "played": -600,
@@ -13114,9 +13160,12 @@
       },
       "changes": {
         "changes": [
-          "time.played"
+          "status.code",
+          "status.description",
+          "homeScore.overtime",
+          "awayScore.overtime"
         ],
-        "changeTimestamp": 1771444293
+        "changeTimestamp": 1771451271
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -13450,10 +13499,11 @@
       },
       "customId": "rKVdsCcXi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 110,
+        "description": "AET",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "HC Kralupy",
         "slug": "hc-kralupy",
@@ -13523,11 +13573,35 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 5,
+        "display": 5,
+        "period1": 1,
+        "period2": 1,
+        "period3": 2,
+        "normaltime": 4,
+        "extra1": 1,
+        "extra2": 0,
+        "overtime": 1
+      },
+      "awayScore": {
+        "current": 4,
+        "display": 4,
+        "period1": 2,
+        "period2": 2,
+        "period3": 0,
+        "normaltime": 4,
+        "extra1": 0,
+        "extra2": 0,
+        "overtime": 0
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description"
+        ],
+        "changeTimestamp": 1771451271
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -13542,7 +13616,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -13640,10 +13714,11 @@
       },
       "customId": "rcHbsZgGc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "HC Pribram",
         "slug": "hc-pribram",
@@ -13715,11 +13790,29 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 7,
+        "display": 7,
+        "period1": 3,
+        "period2": 1,
+        "period3": 3,
+        "normaltime": 7
+      },
+      "awayScore": {
+        "current": 4,
+        "display": 4,
+        "period1": 0,
+        "period2": 1,
+        "period3": 3,
+        "normaltime": 4
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.normaltime",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1771450965
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -13734,7 +13827,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -15117,9 +15210,9 @@
       },
       "customId": "wcaesKigj",
       "status": {
-        "code": 30,
-        "description": "Pause",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
       "winnerCode": 2,
       "homeTeam": {
@@ -15200,10 +15293,9 @@
         "changes": [
           "status.code",
           "status.description",
-          "status.type",
-          "time.played"
+          "status.type"
         ],
-        "changeTimestamp": 1771447306
+        "changeTimestamp": 1771449109
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -15304,10 +15396,11 @@
       },
       "customId": "kegdsLigj",
       "status": {
-        "code": 3,
-        "description": "3rd period",
-        "type": "inprogress"
+        "code": 120,
+        "description": "AP",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "VUT Brno",
         "slug": "vut-brno",
@@ -15368,26 +15461,35 @@
         "display": 4,
         "period1": 1,
         "period2": 1,
-        "period3": 2
+        "period3": 2,
+        "normaltime": 4,
+        "overtime": 0,
+        "penalties": 0
       },
       "awayScore": {
-        "current": 4,
-        "display": 4,
+        "current": 5,
+        "display": 5,
         "period1": 0,
         "period2": 1,
-        "period3": 3
+        "period3": 3,
+        "normaltime": 4,
+        "overtime": 0,
+        "penalties": 1
       },
       "time": {
-        "played": 3590,
+        "played": 4200,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3
       },
       "changes": {
         "changes": [
-          "time.played"
+          "homeScore.overtime",
+          "homeScore.penalties",
+          "awayScore.overtime",
+          "awayScore.penalties"
         ],
-        "changeTimestamp": 1771448708
+        "changeTimestamp": 1771450045
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -15402,7 +15504,6 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -22416,10 +22517,11 @@
       },
       "customId": "fLgdsilid",
       "status": {
-        "code": 40,
-        "description": "Overtime",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Valerenga Elite U20",
         "slug": "valerenga-elite",
@@ -22481,14 +22583,16 @@
         "display": 6,
         "period1": 1,
         "period2": 1,
-        "period3": 4
+        "period3": 4,
+        "normaltime": 6
       },
       "awayScore": {
         "current": 0,
         "display": 0,
         "period1": 0,
         "period2": 0,
-        "period3": 0
+        "period3": 0,
+        "normaltime": 0
       },
       "time": {
         "played": 3600,
@@ -22500,7 +22604,7 @@
         "changes": [
           "time.played"
         ],
-        "changeTimestamp": 1771448522
+        "changeTimestamp": 1771449684
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -22515,7 +22619,6 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "lastPeriod": "overtime",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -36053,10 +36156,11 @@
       },
       "customId": "UDXsnhgc",
       "status": {
-        "code": 30,
-        "description": "Pause",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Guildford Flames",
         "slug": "guildford-flames",
@@ -36138,19 +36242,23 @@
         }
       },
       "homeScore": {
-        "current": 4,
-        "display": 4,
+        "current": 6,
+        "display": 6,
         "period1": 2,
-        "period2": 2
+        "period2": 2,
+        "period3": 2,
+        "normaltime": 6
       },
       "awayScore": {
         "current": 2,
         "display": 2,
         "period1": 1,
-        "period2": 1
+        "period2": 1,
+        "period3": 0,
+        "normaltime": 2
       },
       "time": {
-        "played": 2400,
+        "played": 3600,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3
@@ -36159,9 +36267,11 @@
         "changes": [
           "status.code",
           "status.description",
-          "time.played"
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1771447979
+        "changeTimestamp": 1771450999
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -36267,10 +36377,11 @@
       },
       "customId": "WDXscEX",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 60,
+        "description": "Postponed",
+        "type": "postponed"
       },
+      "aggregatedWinnerCode": 2,
       "homeTeam": {
         "name": "Belfast Giants",
         "slug": "belfast-giants",
@@ -36351,15 +36462,22 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "aggregated": 2
+      },
+      "awayScore": {
+        "aggregated": 3
+      },
       "time": {},
       "changes": {
         "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
           "homeScore.aggregated",
           "awayScore.aggregated"
         ],
-        "changeTimestamp": 1771435803
+        "changeTimestamp": 1771451272
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -36470,6 +36588,7 @@
         "description": "Pause",
         "type": "inprogress"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Nottingham Panthers",
         "slug": "nottingham-panthers",
@@ -36553,13 +36672,17 @@
         "current": 3,
         "display": 3,
         "period1": 3,
-        "period2": 0
+        "period2": 0,
+        "period3": 0,
+        "normaltime": 3
       },
       "awayScore": {
         "current": 0,
         "display": 0,
         "period1": 0,
-        "period2": 0
+        "period2": 0,
+        "period3": 0,
+        "normaltime": 0
       },
       "time": {},
       "changes": {
@@ -36569,7 +36692,7 @@
           "time.overtimeLength",
           "time.totalPeriodCount"
         ],
-        "changeTimestamp": 1771448462
+        "changeTimestamp": 1771451525
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
