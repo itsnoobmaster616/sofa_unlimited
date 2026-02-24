@@ -1351,9 +1351,9 @@
       },
       "customId": "bgAbsbFHb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 21,
+        "description": "1st Inning",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Karachi Blues",
@@ -1428,12 +1428,38 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "innings": {
+          "inning1": {
+            "score": 0,
+            "wickets": 0,
+            "overs": 0,
+            "runRate": 0
+          }
+        }
+      },
       "coverage": 3,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status",
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.innings",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.innings"
+        ],
+        "changeTimestamp": 1771954512
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -1448,6 +1474,7 @@
         "inning3": "3rd Inning",
         "inning4": "4th Inning"
       },
+      "lastPeriod": "inning1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -1956,18 +1983,27 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0
-      },
-      "awayScore": {
-        "current": 49,
-        "display": 49,
+        "current": 18,
+        "display": 18,
         "innings": {
           "inning1": {
-            "score": 49,
-            "wickets": 2,
-            "overs": 6,
-            "runRate": 8.17
+            "score": 18,
+            "wickets": 1,
+            "overs": 2.1,
+            "runRate": 8.31,
+            "targetRunRate": 8.15
+          }
+        }
+      },
+      "awayScore": {
+        "current": 162,
+        "display": 162,
+        "innings": {
+          "inning1": {
+            "score": 162,
+            "wickets": 6,
+            "overs": 20,
+            "runRate": 8.1
           }
         }
       },
@@ -1975,16 +2011,16 @@
       "time": {},
       "changes": {
         "changes": [
-          "awayScore.current",
-          "awayScore.display",
-          "awayScore.innings"
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.innings"
         ],
-        "changeTimestamp": 1771948997
+        "changeTimestamp": 1771954513
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15454241,
-      "currentBattingTeamId": 1168778,
+      "currentBattingTeamId": 288537,
       "endTimestamp": 1771961400,
       "slug": "pakistan-shaheens-england-lions",
       "startTimestamp": 1771947000,
@@ -2283,10 +2319,11 @@
       },
       "customId": "efAbshfAb",
       "status": {
-        "code": 21,
-        "description": "1st Inning",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "England",
         "slug": "england",
@@ -2364,14 +2401,14 @@
         }
       },
       "homeScore": {
-        "current": 65,
-        "display": 65,
+        "current": 166,
+        "display": 166,
         "innings": {
           "inning1": {
-            "score": 65,
-            "wickets": 4,
-            "overs": 8.2,
-            "runRate": 7.8,
+            "score": 166,
+            "wickets": 8,
+            "overs": 19.1,
+            "runRate": 8.66,
             "targetRunRate": 8.25
           }
         }
@@ -2392,17 +2429,17 @@
       "time": {},
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display",
-          "homeScore.innings"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1771949058
+        "changeTimestamp": 1771952424
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15569678,
-      "currentBattingTeamId": 187757,
-      "endTimestamp": 1771954200,
+      "note": "England beat Pakistan by 2 wickets",
+      "endTimestamp": 1771952400,
       "slug": "england-pakistan",
       "startTimestamp": 1771939800,
       "periods": {
@@ -2412,7 +2449,6 @@
         "inning3": "3rd Inning",
         "inning4": "4th Inning"
       },
-      "lastPeriod": "inning1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
