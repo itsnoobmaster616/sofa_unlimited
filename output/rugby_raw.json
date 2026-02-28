@@ -1427,7 +1427,7 @@
       "id": 15347191,
       "slug": "rugby-club-de-auch-cs-vienne",
       "startTimestamp": 1772299800,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -1584,7 +1584,7 @@
       "id": 15347208,
       "slug": "stade-metropolitain-cercle-amical-lannemezanais",
       "startTimestamp": 1772299800,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -2787,9 +2787,9 @@
       },
       "customId": "yKbsAKb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Warrington Wolves",
@@ -2861,17 +2861,35 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "time": {
+        "played": 782,
+        "periodLength": 2400,
+        "overtimeLength": 600,
+        "totalPeriodCount": 2,
+        "currentPeriodStartTimestamp": 1772299901
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.played"
+        ],
+        "changeTimestamp": 1772300765
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15176271,
       "slug": "warrington-wolves-wakefield-trinity",
       "startTimestamp": 1772299800,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -14010,10 +14028,11 @@
       },
       "customId": "kpcsmgw",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 3,
       "homeTeam": {
         "name": "Lyon Olympique Universitaire",
         "slug": "lyon-olympique-universitaire",
@@ -14092,26 +14111,31 @@
         "current": 13,
         "display": 13,
         "period1": 0,
-        "period2": 13
+        "period2": 13,
+        "normaltime": 13
       },
       "awayScore": {
         "current": 13,
         "display": 13,
         "period1": 3,
-        "period2": 10
+        "period2": 10,
+        "normaltime": 13
       },
       "time": {
-        "played": 7198,
+        "played": 2532,
         "periodLength": 2400,
         "overtimeLength": 600,
         "totalPeriodCount": 2,
-        "currentPeriodStartTimestamp": 1772296619
+        "currentPeriodStartTimestamp": 1772299660
       },
       "changes": {
         "changes": [
-          "time.played"
+          "time.played",
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1772299509
+        "changeTimestamp": 1772299684
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -14119,7 +14143,6 @@
       "id": 14460714,
       "slug": "lyon-olympique-universitaire-rc-toulon",
       "startTimestamp": 1772292900,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -14424,10 +14447,11 @@
       },
       "customId": "vJbipc",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Stade Français Paris",
         "slug": "stade-francais-paris",
@@ -14506,26 +14530,29 @@
         "current": 42,
         "display": 42,
         "period1": 28,
-        "period2": 14
+        "period2": 14,
+        "normaltime": 42
       },
       "awayScore": {
-        "current": 14,
-        "display": 14,
+        "current": 21,
+        "display": 21,
         "period1": 0,
-        "period2": 14
+        "period2": 21,
+        "normaltime": 21
       },
       "time": {
-        "played": 6915,
+        "played": 2463,
         "periodLength": 2400,
         "overtimeLength": 600,
         "totalPeriodCount": 2,
-        "currentPeriodStartTimestamp": 1772296714
+        "currentPeriodStartTimestamp": 1772299735
       },
       "changes": {
         "changes": [
-          "time.played"
+          "awayScore.current",
+          "awayScore.display"
         ],
-        "changeTimestamp": 1772299515
+        "changeTimestamp": 1772300177
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -14533,7 +14560,6 @@
       "id": 14460713,
       "slug": "stade-francais-paris-us-arlequins-perpignanais",
       "startTimestamp": 1772292900,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -14624,9 +14650,9 @@
       },
       "customId": "rJbsOzc",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
       "winnerCode": 1,
       "homeTeam": {
@@ -14704,29 +14730,31 @@
         }
       },
       "homeScore": {
-        "current": 61,
-        "display": 61,
+        "current": 68,
+        "display": 68,
         "period1": 40,
-        "period2": 21
+        "period2": 28,
+        "normaltime": 68
       },
       "awayScore": {
         "current": 13,
         "display": 13,
         "period1": 6,
-        "period2": 7
+        "period2": 7,
+        "normaltime": 13
       },
       "time": {
-        "played": 6728,
+        "played": 2434,
         "periodLength": 2400,
         "overtimeLength": 600,
         "totalPeriodCount": 2,
-        "currentPeriodStartTimestamp": 1772296954
+        "currentPeriodStartTimestamp": 1772300178
       },
       "changes": {
         "changes": [
           "time.played"
         ],
-        "changeTimestamp": 1772299521
+        "changeTimestamp": 1772300481
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -14734,7 +14762,6 @@
       "id": 14460719,
       "slug": "us-montauban-stade-toulousain",
       "startTimestamp": 1772292900,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -19557,10 +19584,11 @@
       },
       "customId": "JldsYKi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Dragons",
         "slug": "dragons",
@@ -19627,17 +19655,36 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 7,
+        "display": 7,
+        "period1": 7
+      },
+      "awayScore": {
+        "current": 5,
+        "display": 5,
+        "period1": 5
+      },
+      "time": {
+        "played": 789,
+        "periodLength": 2400,
+        "overtimeLength": 600,
+        "totalPeriodCount": 2,
+        "currentPeriodStartTimestamp": 1772299861
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.played"
+        ],
+        "changeTimestamp": 1772300816
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14260440,
       "slug": "benetton-treviso-dragons",
       "startTimestamp": 1772299800,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -19728,10 +19775,11 @@
       },
       "customId": "dJbsGgF",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Munster",
         "slug": "munster",
@@ -19799,17 +19847,36 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 7,
+        "display": 7,
+        "period1": 7
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "time": {
+        "played": 908,
+        "periodLength": 2400,
+        "overtimeLength": 600,
+        "totalPeriodCount": 2,
+        "currentPeriodStartTimestamp": 1772299822
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.played"
+        ],
+        "changeTimestamp": 1772300809
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14260441,
       "slug": "zebre-rugby-munster",
       "startTimestamp": 1772299800,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -22400,7 +22467,7 @@
         ],
         "changeTimestamp": 1772297528
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14318983,
       "slug": "gloucester-rugby-bath-rugby",
@@ -24106,10 +24173,11 @@
       },
       "customId": "bXTsnYFi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Rotherham Titans",
         "slug": "rotherham-titans",
@@ -24181,19 +24249,39 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 33,
+        "display": 33,
+        "period1": 26,
+        "period2": 7,
+        "normaltime": 33
+      },
+      "awayScore": {
+        "current": 7,
+        "display": 7,
+        "period1": 0,
+        "period2": 7,
+        "normaltime": 7
+      },
       "coverage": -1,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.normaltime",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1772300518
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14030204,
       "slug": "birmingham-moseley-rugby-rotherham-titans",
       "startTimestamp": 1772287223,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -24279,10 +24367,11 @@
       },
       "customId": "rYFisFWHi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Clifton",
         "slug": "clifton",
@@ -24354,19 +24443,39 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 54,
+        "display": 54,
+        "period1": 42,
+        "period2": 12,
+        "normaltime": 54
+      },
+      "awayScore": {
+        "current": 40,
+        "display": 40,
+        "period1": 14,
+        "period2": 26,
+        "normaltime": 40
+      },
       "coverage": -1,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.normaltime",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1772300644
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14030205,
       "slug": "clifton-leicester-lions-rfc",
       "startTimestamp": 1772289023,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -24644,10 +24753,11 @@
       },
       "customId": "pYFisrWHi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Sedgley Park RUFC",
         "slug": "sedgley-park-rufc",
@@ -24719,19 +24829,39 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 28,
+        "display": 28,
+        "period1": 7,
+        "period2": 21,
+        "normaltime": 28
+      },
+      "awayScore": {
+        "current": 31,
+        "display": 31,
+        "period1": 19,
+        "period2": 12,
+        "normaltime": 31
+      },
       "coverage": -1,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.normaltime",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1772300743
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14030208,
       "slug": "tonbridge-juddians-sedgley-park-rufc",
       "startTimestamp": 1772289023,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -25012,10 +25142,11 @@
       },
       "customId": "ZWTslYFi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Plymouth Albion",
         "slug": "plymouth-albion",
@@ -25087,12 +25218,27 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 26,
+        "display": 26
+      },
+      "awayScore": {
+        "current": 34,
+        "display": 34
+      },
       "coverage": -1,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "awayScore.current",
+          "awayScore.display"
+        ],
+        "changeTimestamp": 1772300767
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -30650,10 +30796,11 @@
       },
       "customId": "PkHdsDcMd",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Croatia",
         "slug": "croatia",
@@ -30736,31 +30883,32 @@
         "normaltime": 3
       },
       "awayScore": {
-        "current": 29,
-        "display": 29,
+        "current": 73,
+        "display": 73,
         "period1": 22,
-        "period2": 7,
-        "normaltime": 29
+        "period2": 51,
+        "normaltime": 73
       },
       "coverage": -1,
-      "time": {
-        "currentPeriodStartTimestamp": 1772290786
-      },
+      "time": {},
       "changes": {
         "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "time.currentPeriodStart",
           "awayScore.current",
           "awayScore.display",
           "awayScore.period2",
           "awayScore.normaltime"
         ],
-        "changeTimestamp": 1772292452
+        "changeTimestamp": 1772300148
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14261697,
       "slug": "croatia-poland",
       "startTimestamp": 1772287200,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
