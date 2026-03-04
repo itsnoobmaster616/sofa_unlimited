@@ -1516,9 +1516,9 @@
       },
       "customId": "DxjdsWOVd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 90,
+        "description": "Abandoned",
+        "type": "canceled"
       },
       "homeTeam": {
         "name": "South Africa Emerging",
@@ -1583,12 +1583,29 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
       "coverage": 3,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.innings",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.innings"
+        ],
+        "changeTimestamp": 1772650149
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -1894,10 +1911,11 @@
       },
       "customId": "AOvcsExjd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Boland",
         "slug": "rocks",
@@ -1964,16 +1982,45 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 224,
+        "display": 224,
+        "innings": {
+          "inning1": {
+            "score": 224,
+            "wickets": 9,
+            "overs": 50,
+            "runRate": 4.48
+          }
+        }
+      },
+      "awayScore": {
+        "current": 181,
+        "display": 181,
+        "innings": {
+          "inning1": {
+            "score": 181,
+            "wickets": 10,
+            "overs": 44.2,
+            "runRate": 4.08,
+            "targetRunRate": 4.5
+          }
+        }
+      },
       "coverage": 3,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type"
+        ],
+        "changeTimestamp": 1772650389
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15581930,
+      "note": "Boland beat Kwazulu-Natal Inland by 43 runs",
       "endTimestamp": 1772650800,
       "slug": "kwazulu-natal-inland-boland",
       "startTimestamp": 1772622000,
@@ -1984,7 +2031,7 @@
         "inning3": "3rd Inning",
         "inning4": "4th Inning"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -2189,7 +2236,7 @@
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15581931,
       "note": "Match Abandoned",
-      "endTimestamp": 1772650800,
+      "endTimestamp": 1772643720,
       "slug": "north-west-lions",
       "startTimestamp": 1772622000,
       "periods": {
