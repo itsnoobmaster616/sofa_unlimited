@@ -3406,7 +3406,7 @@
         ],
         "changeTimestamp": 1772749288
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
       "hasEventPlayerHeatMap": true,
       "detailId": 1,
@@ -6163,6 +6163,8 @@
         "changeTimestamp": 0
       },
       "hasGlobalHighlights": false,
+      "hasXg": true,
+      "hasEventPlayerHeatMap": true,
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14023508,
@@ -9518,7 +9520,7 @@
         ],
         "changeTimestamp": 1772809116
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
       "hasEventPlayerHeatMap": true,
       "detailId": 1,
@@ -17140,10 +17142,11 @@
       },
       "customId": "pihcsLTXd",
       "status": {
-        "code": 31,
-        "description": "Halftime",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Jamshedpur FC",
         "slug": "jamshedpur-fc",
@@ -17216,26 +17219,29 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
+        "current": 1,
+        "display": 1,
         "period1": 0,
-        "normaltime": 0
+        "period2": 1,
+        "normaltime": 1
       },
       "awayScore": {
         "current": 0,
         "display": 0,
         "period1": 0,
+        "period2": 0,
         "normaltime": 0
       },
       "time": {
         "injuryTime1": 3,
-        "currentPeriodStartTimestamp": 1772805750
+        "injuryTime2": 6,
+        "currentPeriodStartTimestamp": 1772809590
       },
       "changes": {
         "changes": [
-          "time.injuryTime1"
+          "time.injuryTime2"
         ],
-        "changeTimestamp": 1772808648
+        "changeTimestamp": 1772812691
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -17244,10 +17250,6 @@
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15508321,
       "homeRedCards": 1,
-      "varInProgress": {
-        "homeTeam": false,
-        "awayTeam": false
-      },
       "slug": "inter-kashi-fc-jamshedpur-fc",
       "startTimestamp": 1772805600,
       "finalResultOnly": false,
@@ -20548,11 +20550,13 @@
         },
         "fieldTranslations": {
           "nameTranslation": {
-            "ar": "جانجوون إف سي",
+            "ar": "جانجون",
             "hi": "गांगवोन ऍफ़सी",
             "ru": "Гангвон ФК"
           },
-          "shortNameTranslation": {}
+          "shortNameTranslation": {
+            "ar": "جانجون"
+          }
         }
       },
       "homeScore": {},
@@ -20714,11 +20718,11 @@
         },
         "fieldTranslations": {
           "nameTranslation": {
-            "ar": "أولسان إتش دي",
+            "ar": "أولسان هيونداي",
             "ru": "Улсан Хюндай"
           },
           "shortNameTranslation": {
-            "ar": "أولسان"
+            "ar": "أولسان هيونداي"
           }
         }
       },
@@ -20751,11 +20755,13 @@
         },
         "fieldTranslations": {
           "nameTranslation": {
-            "ar": "سيؤول",
+            "ar": "سيول",
             "hi": "ऍफ़सी सीओल",
             "ru": "ФК Сеул"
           },
-          "shortNameTranslation": {}
+          "shortNameTranslation": {
+            "ar": "سيول"
+          }
         }
       },
       "homeScore": {},
@@ -30473,7 +30479,7 @@
         ],
         "changeTimestamp": 1772751647
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "detailId": 6,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15573846,
@@ -32392,9 +32398,9 @@
       },
       "customId": "zpbsDpb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Slavia Sofia",
@@ -32474,17 +32480,50 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1772812840,
+        "initial": 0,
+        "max": 2700,
+        "extra": 540
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "awayScore.current",
+          "awayScore.display",
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1772812842
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14598676,
+      "varInProgress": {
+        "homeTeam": false,
+        "awayTeam": false
+      },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1772812840,
+        "extra": 540
+      },
       "slug": "fk-spartak-varna-slavia-sofia",
       "startTimestamp": 1772812800,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -34303,9 +34342,9 @@
       },
       "customId": "lUsAKF",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "1. SK Prostějov",
@@ -34381,17 +34420,50 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1772812820,
+        "initial": 0,
+        "max": 2700,
+        "extra": 540
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.currentPeriodStart",
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "awayScore.current",
+          "awayScore.display"
+        ],
+        "changeTimestamp": 1772812825
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14225216,
+      "varInProgress": {
+        "homeTeam": false,
+        "awayTeam": false
+      },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1772812820,
+        "extra": 540
+      },
       "slug": "1-sk-prostejov-fk-viktoria-zizkov",
       "startTimestamp": 1772812800,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -40389,8 +40461,8 @@
       },
       "customId": "MpWsvBUd",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 31,
+        "description": "Halftime",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -40465,9 +40537,9 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0
+        "current": 2,
+        "display": 2,
+        "period1": 2
       },
       "awayScore": {
         "current": 0,
@@ -40478,19 +40550,15 @@
         "periodLength": 2700,
         "overtimeLength": 900,
         "totalPeriodCount": 2,
-        "currentPeriodStartTimestamp": 1772809284,
-        "initial": 0,
-        "max": 2700,
-        "extra": 540
+        "currentPeriodStartTimestamp": 1772809412
       },
       "changes": {
         "changes": [
           "status.code",
           "status.description",
-          "status.type",
           "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1772809284
+        "changeTimestamp": 1772812112
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -40499,16 +40567,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1772809284,
-        "extra": 540
-      },
       "slug": "nations-fc-bechem-united",
       "startTimestamp": 1772809200,
-      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -42161,10 +42221,11 @@
       },
       "customId": "pZtsZKA",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Arema FC",
         "slug": "arema-fc",
@@ -42240,47 +42301,40 @@
         }
       },
       "homeScore": {
-        "current": 1,
-        "display": 1,
-        "period1": 0,
-        "period2": 1
-      },
-      "awayScore": {
         "current": 3,
         "display": 3,
+        "period1": 0,
+        "period2": 3,
+        "normaltime": 3
+      },
+      "awayScore": {
+        "current": 4,
+        "display": 4,
         "period1": 2,
-        "period2": 1
+        "period2": 2,
+        "normaltime": 4
       },
       "time": {
         "injuryTime1": 3,
-        "currentPeriodStartTimestamp": 1772807724,
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540
+        "injuryTime2": 9,
+        "currentPeriodStartTimestamp": 1772811156
       },
       "changes": {
         "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime",
           "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1772809449
+        "changeTimestamp": 1772811159
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14214976,
-      "varInProgress": {
-        "homeTeam": false,
-        "awayTeam": false
-      },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1772807724,
-        "extra": 540
-      },
       "slug": "bali-united-fc-arema-fc",
       "startTimestamp": 1772803800,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -46532,7 +46586,7 @@
         ],
         "changeTimestamp": 1772734718
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasXg": true,
       "hasEventPlayerStatistics": true,
       "hasEventPlayerHeatMap": true,
@@ -46839,7 +46893,7 @@
         ],
         "changeTimestamp": 1772722504
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasXg": true,
       "hasEventPlayerStatistics": true,
       "hasEventPlayerHeatMap": true,
@@ -47643,11 +47697,13 @@
         },
         "fieldTranslations": {
           "nameTranslation": {
-            "ar": "ماشيدا زيلفيا",
+            "ar": "ماكيدا زيلفيا",
             "hi": "माचिडा ज़ेल्विया",
             "ru": "Машида Зелвия"
           },
-          "shortNameTranslation": {}
+          "shortNameTranslation": {
+            "ar": "ماكيدا زيلفيا"
+          }
         }
       },
       "awayTeam": {
@@ -49424,7 +49480,7 @@
         ],
         "changeTimestamp": 1772798206
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15346081,
       "slug": "fc-osaka-nara-club",
@@ -50898,10 +50954,11 @@
       },
       "customId": "IqbsfGAc",
       "status": {
-        "code": 31,
-        "description": "Halftime",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Kelantan The Real Warriors FC",
         "slug": "kelantan-darul-naim",
@@ -50980,32 +51037,36 @@
       "homeScore": {
         "current": 0,
         "display": 0,
-        "period1": 0
+        "period1": 0,
+        "period2": 0,
+        "normaltime": 0
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0
+        "current": 2,
+        "display": 2,
+        "period1": 0,
+        "period2": 2,
+        "normaltime": 2
       },
       "time": {
         "periodLength": 2700,
         "overtimeLength": 900,
         "totalPeriodCount": 2,
-        "currentPeriodStartTimestamp": 1772806638
+        "currentPeriodStartTimestamp": 1772809487
       },
       "changes": {
         "changes": [
-          "time.currentPeriodStart"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1772809338
+        "changeTimestamp": 1772812728
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14271772,
-      "varInProgress": {
-        "homeTeam": false,
-        "awayTeam": false
-      },
       "slug": "kelantan-the-real-warriors-fc-terengganu",
       "startTimestamp": 1772805600,
       "finalResultOnly": false,
@@ -54223,8 +54284,8 @@
       },
       "customId": "fKrsAiUd",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 31,
+        "description": "Halftime",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -54302,29 +54363,27 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0
+        "current": 1,
+        "display": 1,
+        "period1": 1
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0
+        "current": 1,
+        "display": 1,
+        "period1": 1
       },
       "time": {
         "periodLength": 2700,
         "overtimeLength": 900,
         "totalPeriodCount": 2,
-        "currentPeriodStartTimestamp": 1772809296,
-        "initial": 0,
-        "max": 2700,
-        "extra": 540
+        "currentPeriodStartTimestamp": 1772809296
       },
       "changes": {
         "changes": [
-          "time.currentPeriodStart"
+          "status.code",
+          "status.description"
         ],
-        "changeTimestamp": 1772809296
+        "changeTimestamp": 1772812021
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -54333,16 +54392,8 @@
         "homeTeam": false,
         "awayTeam": false
       },
-      "statusTime": {
-        "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1772809296,
-        "extra": 540
-      },
       "slug": "acs-fc-bacau-fc-voluntari",
       "startTimestamp": 1772809200,
-      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
