@@ -1552,9 +1552,9 @@
       },
       "customId": "GxjdsWOVd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 21,
+        "description": "1st Inning",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "South Africa Emerging",
@@ -1619,12 +1619,40 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "innings": {
+          "inning1": {
+            "score": 0,
+            "wickets": 0,
+            "overs": 0,
+            "runRate": 0,
+            "targetRunRate": 5.56
+          }
+        }
+      },
+      "awayScore": {
+        "current": 277,
+        "display": 277,
+        "innings": {
+          "inning1": {
+            "score": 277,
+            "wickets": 8,
+            "overs": 50,
+            "runRate": 5.54
+          }
+        }
+      },
       "coverage": 3,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "homeScore.innings"
+        ],
+        "changeTimestamp": 1773012368
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -1639,7 +1667,8 @@
         "inning3": "3rd Inning",
         "inning4": "4th Inning"
       },
-      "finalResultOnly": true,
+      "lastPeriod": "inning1",
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -4365,10 +4394,11 @@
       },
       "customId": "baYdsJbBh",
       "status": {
-        "code": 21,
-        "description": "1st Inning",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Mexico",
         "slug": "mexico",
@@ -4470,15 +4500,18 @@
       "time": {},
       "changes": {
         "changes": [
-          "awayScore.innings"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1773010129
+        "changeTimestamp": 1773010733
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15533705,
+      "note": "Mexico beat Suriname by 9 runs",
       "currentBattingTeamId": 940084,
-      "endTimestamp": 1773012600,
+      "endTimestamp": 1773010680,
       "slug": "suriname-mexico",
       "startTimestamp": 1772998200,
       "periods": {
@@ -4488,7 +4521,6 @@
         "inning3": "3rd Inning",
         "inning4": "4th Inning"
       },
-      "lastPeriod": "inning1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
