@@ -461,9 +461,9 @@
       },
       "customId": "YeAbsbfAb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 80,
+        "description": "Interrupted",
+        "type": "interrupted"
       },
       "homeTeam": {
         "name": "Tasmania",
@@ -539,12 +539,37 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "innings": {
+          "inning1": {
+            "score": 0,
+            "wickets": 0,
+            "overs": 0,
+            "runRate": 0
+          }
+        }
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
       "coverage": 2,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.innings",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.innings"
+        ],
+        "changeTimestamp": 1773198431
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -1020,10 +1045,11 @@
       },
       "customId": "cJAbsZLWb",
       "status": {
-        "code": 142,
-        "description": "End of day 2",
-        "type": "willcontinue"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Auckland Aces",
         "slug": "auckland-aces",
@@ -1094,8 +1120,8 @@
         }
       },
       "homeScore": {
-        "current": 252,
-        "display": 252,
+        "current": 374,
+        "display": 374,
         "innings": {
           "inning1": {
             "score": 228,
@@ -1104,22 +1130,28 @@
             "runRate": 3.2
           },
           "inning2": {
-            "score": 24,
-            "wickets": 4,
-            "overs": 14,
-            "runRate": 1.71
+            "score": 146,
+            "wickets": 10,
+            "overs": 47.4,
+            "runRate": 3.06
           }
         }
       },
       "awayScore": {
-        "current": 343,
-        "display": 343,
+        "current": 378,
+        "display": 378,
         "innings": {
           "inning1": {
             "score": 343,
             "wickets": 10,
             "overs": 102,
             "runRate": 3.36
+          },
+          "inning2": {
+            "score": 35,
+            "wickets": 1,
+            "overs": 7.1,
+            "runRate": 4.88
           }
         }
       },
@@ -1127,18 +1159,19 @@
       "time": {},
       "changes": {
         "changes": [
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.innings",
           "status.code",
           "status.description",
-          "status.type",
-          "homeScore.current",
-          "homeScore.display",
-          "homeScore.innings"
+          "status.type"
         ],
-        "changeTimestamp": 1773126854
+        "changeTimestamp": 1773202270
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14424445,
+      "note": "Otago Volts beat Auckland Aces by 9 wickets",
       "endTimestamp": 1773289800,
       "slug": "auckland-aces-otago-volts",
       "startTimestamp": 1773005400,
@@ -1149,7 +1182,7 @@
         "inning3": "3rd Inning",
         "inning4": "4th Inning"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -4016,10 +4049,11 @@
       },
       "customId": "pmKbsmQqd",
       "status": {
-        "code": 21,
-        "description": "1st Inning",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "New Zealand Women",
         "slug": "new-zealand-women",
@@ -4108,14 +4142,14 @@
         }
       },
       "awayScore": {
-        "current": 39,
-        "display": 39,
+        "current": 103,
+        "display": 103,
         "innings": {
           "inning1": {
-            "score": 39,
-            "wickets": 2,
-            "overs": 11.1,
-            "runRate": 3.49,
+            "score": 103,
+            "wickets": 10,
+            "overs": 27.1,
+            "runRate": 3.79,
             "targetRunRate": 6.08
           }
         }
@@ -4124,13 +4158,17 @@
       "time": {},
       "changes": {
         "changes": [
-          "awayScore.innings"
+          "awayScore.innings",
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1773195970
+        "changeTimestamp": 1773199994
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14048757,
+      "note": "New Zealand Women beat Zimbabwe Women by 200 runs",
       "currentBattingTeamId": 417062,
       "endTimestamp": 1773208800,
       "slug": "zimbabwe-women-new-zealand-women",
@@ -4142,7 +4180,6 @@
         "inning3": "3rd Inning",
         "inning4": "4th Inning"
       },
-      "lastPeriod": "inning1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
