@@ -1543,9 +1543,9 @@
       },
       "customId": "yGysCCH",
       "status": {
-        "code": 80,
-        "description": "Interrupted",
-        "type": "interrupted"
+        "code": 60,
+        "description": "Postponed",
+        "type": "postponed"
       },
       "homeTeam": {
         "name": "Maccabi Arazim Ramat Gan",
@@ -1615,34 +1615,27 @@
           }
         }
       },
-      "homeScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0
-      },
-      "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0
-      },
-      "time": {
-        "played": 0,
-        "periodLength": 1800,
-        "overtimeLength": 300,
-        "totalPeriodCount": 2
-      },
+      "homeScore": {},
+      "awayScore": {},
+      "time": {},
       "changes": {
         "changes": [
           "status.code",
           "status.description",
           "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
           "time.played",
           "time.playedLastUpdated",
           "time.periodLength",
           "time.overtimeLength",
           "time.totalPeriodCount"
         ],
-        "changeTimestamp": 1773686716
+        "changeTimestamp": 1773694446
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -2450,9 +2443,9 @@
       },
       "customId": "VJbjsXJbj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 7,
+        "description": "2nd half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "AEISCTE",
@@ -2526,19 +2519,40 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 21,
+        "display": 21,
+        "period1": 9,
+        "period2": 12,
+        "normaltime": 21
+      },
+      "awayScore": {
+        "current": 22,
+        "display": 22,
+        "period1": 12,
+        "period2": 10,
+        "normaltime": 22
+      },
       "coverage": -1,
-      "time": {},
+      "time": {
+        "currentPeriodStartTimestamp": 1773693568
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period2",
+          "homeScore.normaltime"
+        ],
+        "changeTimestamp": 1773695008
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15730290,
       "slug": "aeiscte-aefct",
       "startTimestamp": 1773690300,
-      "finalResultOnly": true,
+      "lastPeriod": "period2",
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -4378,10 +4392,11 @@
       },
       "customId": "KKcsbwCb",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "ŽRK Knjaz Miloš",
         "slug": "zrk-knjaz-milos",
@@ -4452,19 +4467,20 @@
         }
       },
       "homeScore": {
-        "current": 25,
-        "display": 25,
+        "current": 36,
+        "display": 36,
         "period1": 19,
-        "period2": 6
+        "period2": 17,
+        "normaltime": 36
       },
       "awayScore": {
-        "current": 22,
-        "display": 22,
+        "current": 28,
+        "display": 28,
         "period1": 14,
-        "period2": 8
+        "period2": 14,
+        "normaltime": 28
       },
       "time": {
-        "played": 2565,
         "periodLength": 1800,
         "overtimeLength": 300,
         "totalPeriodCount": 2
@@ -4474,14 +4490,13 @@
           "time.played",
           "time.playedLastUpdated"
         ],
-        "changeTimestamp": 1773691254
+        "changeTimestamp": 1773692601
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15676133,
       "slug": "zrk-medicinar-sabac-zrk-knjaz-milos",
       "startTimestamp": 1773687600,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -4640,7 +4655,7 @@
       "id": 15475727,
       "slug": "bm-huesca-polid-san-agustin-zaragoza",
       "startTimestamp": 1773692100,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
