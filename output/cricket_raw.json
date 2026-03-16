@@ -1616,9 +1616,9 @@
       },
       "customId": "agAbsOMfc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 21,
+        "description": "1st Inning",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Abbottabad",
@@ -1694,16 +1694,34 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 34,
+        "display": 34,
+        "innings": {
+          "inning1": {
+            "score": 34,
+            "wickets": 1,
+            "overs": 5,
+            "runRate": 6.8
+          }
+        }
+      },
       "coverage": 2,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "awayScore.innings"
+        ],
+        "changeTimestamp": 1773661989
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15690475,
+      "currentBattingTeamId": 264389,
       "endTimestamp": 1773674100,
       "slug": "lahore-blues-abbottabad",
       "startTimestamp": 1773659700,
@@ -1714,6 +1732,7 @@
         "inning3": "3rd Inning",
         "inning4": "4th Inning"
       },
+      "lastPeriod": "inning1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -4825,7 +4844,7 @@
       "id": 15690609,
       "note": "Cyprus beat Austria by 48 runs",
       "currentBattingTeamId": 417463,
-      "endTimestamp": 1773657300,
+      "endTimestamp": 1773572400,
       "slug": "cyprus-austria",
       "startTimestamp": 1773486000,
       "periods": {
@@ -5103,10 +5122,11 @@
       },
       "customId": "nZqdsAfrd",
       "status": {
-        "code": 21,
-        "description": "1st Inning",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Austria",
         "slug": "austria",
@@ -5180,14 +5200,14 @@
         }
       },
       "homeScore": {
-        "current": 112,
-        "display": 112,
+        "current": 140,
+        "display": 140,
         "innings": {
           "inning1": {
-            "score": 112,
+            "score": 140,
             "wickets": 3,
-            "overs": 15,
-            "runRate": 7.47,
+            "overs": 16.3,
+            "runRate": 8.48,
             "targetRunRate": 6.85
           }
         }
@@ -5208,17 +5228,18 @@
       "time": {},
       "changes": {
         "changes": [
-          "homeScore.innings",
-          "homeScore.current",
-          "homeScore.display"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1773658586
+        "changeTimestamp": 1773659958
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15690612,
+      "note": "Austria beat Cyprus by 7 wickets",
       "currentBattingTeamId": 417463,
-      "endTimestamp": 1773662400,
+      "endTimestamp": 1773659940,
       "slug": "cyprus-austria",
       "startTimestamp": 1773648000,
       "periods": {
@@ -5228,7 +5249,6 @@
         "inning3": "3rd Inning",
         "inning4": "4th Inning"
       },
-      "lastPeriod": "inning1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
