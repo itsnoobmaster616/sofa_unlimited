@@ -13101,7 +13101,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -20317,10 +20317,11 @@
       },
       "customId": "AUGsDptb",
       "status": {
-        "code": 3,
-        "description": "3rd period",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Sahalinskie Akuly U20",
         "slug": "sahalinskie-akuly-u20",
@@ -20402,30 +20403,37 @@
         "display": 3,
         "period1": 2,
         "period2": 0,
-        "period3": 1
+        "period3": 1,
+        "normaltime": 3
       },
       "awayScore": {
         "current": 4,
         "display": 4,
         "period1": 1,
         "period2": 1,
-        "period3": 2
+        "period3": 2,
+        "normaltime": 4
       },
       "time": {
-        "played": 3161,
+        "played": 3008,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3
       },
       "changes": {
         "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime",
           "time.played",
           "time.playedLastUpdated",
           "time.periodLength",
           "time.overtimeLength",
           "time.totalPeriodCount"
         ],
-        "changeTimestamp": 1773741635
+        "changeTimestamp": 1773742413
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -20440,7 +20448,6 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -24904,9 +24911,9 @@
       },
       "customId": "kMXcsrOWi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 1,
+        "description": "1st period",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Dinamo-Neva St. Petersburg",
@@ -24979,11 +24986,28 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 2
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "time": {
+        "played": 770,
+        "periodLength": 1200,
+        "overtimeLength": 300,
+        "totalPeriodCount": 3
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.played",
+          "time.playedLastUpdated"
+        ],
+        "changeTimestamp": 1773746586
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -24999,6 +25023,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
