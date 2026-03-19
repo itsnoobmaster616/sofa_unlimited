@@ -1702,9 +1702,9 @@
       },
       "customId": "IJbsALT",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 31,
+        "description": "Halftime",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Wigan Warriors",
@@ -1772,11 +1772,36 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 10,
+        "display": 10,
+        "period1": 10,
+        "period2": 0
+      },
+      "awayScore": {
+        "current": 14,
+        "display": 14,
+        "period1": 14,
+        "period2": 0
+      },
+      "time": {
+        "played": 2400,
+        "periodLength": 2400,
+        "overtimeLength": 600,
+        "totalPeriodCount": 2,
+        "currentPeriodStartTimestamp": 1773953289
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.currentPeriodStart",
+          "status.code",
+          "status.description",
+          "homeScore.period2",
+          "awayScore.period2",
+          "time.played",
+          "time.playedLastUpdated"
+        ],
+        "changeTimestamp": 1773953294
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -6206,10 +6231,11 @@
       },
       "customId": "LPJdsNPJd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "FNB WSU All Blacks",
         "slug": "fnb-wsu-all-blacks",
@@ -6274,18 +6300,45 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 27,
+        "display": 27,
+        "period1": 22,
+        "period2": 5,
+        "normaltime": 27
+      },
+      "awayScore": {
+        "current": 20,
+        "display": 20,
+        "period1": 15,
+        "period2": 5,
+        "normaltime": 20
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1773950657
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15352869,
       "slug": "fnb-ukzn-impi-fnb-wsu-all-blacks",
       "startTimestamp": 1773939600,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
