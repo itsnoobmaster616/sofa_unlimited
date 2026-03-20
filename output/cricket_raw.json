@@ -3487,9 +3487,9 @@
       },
       "customId": "pmKbstmKb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 21,
+        "description": "1st Inning",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "New Zealand Women",
@@ -3567,16 +3567,36 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 81,
+        "display": 81,
+        "innings": {
+          "inning1": {
+            "score": 81,
+            "wickets": 3,
+            "overs": 10.3,
+            "runRate": 7.71
+          }
+        }
+      },
       "coverage": 1,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.innings"
+        ],
+        "changeTimestamp": 1773973932
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14048760,
+      "currentBattingTeamId": 213118,
       "endTimestamp": 1773985500,
       "slug": "south-africa-women-new-zealand-women",
       "startTimestamp": 1773971100,
@@ -3587,6 +3607,7 @@
         "inning3": "3rd Inning",
         "inning4": "4th Inning"
       },
+      "lastPeriod": "inning1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -3666,10 +3687,11 @@
       },
       "customId": "rmKbsvmKb",
       "status": {
-        "code": 21,
-        "description": "1st Inning",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "West Indies Women",
         "slug": "west-indies-women",
@@ -3744,18 +3766,27 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0
-      },
-      "awayScore": {
-        "current": 101,
-        "display": 101,
+        "current": 121,
+        "display": 121,
         "innings": {
           "inning1": {
-            "score": 101,
-            "wickets": 2,
-            "overs": 14.1,
-            "runRate": 7.13
+            "score": 121,
+            "wickets": 6,
+            "overs": 20,
+            "runRate": 6.05,
+            "targetRunRate": 8.25
+          }
+        }
+      },
+      "awayScore": {
+        "current": 164,
+        "display": 164,
+        "innings": {
+          "inning1": {
+            "score": 164,
+            "wickets": 6,
+            "overs": 20,
+            "runRate": 8.2
           }
         }
       },
@@ -3763,16 +3794,18 @@
       "time": {},
       "changes": {
         "changes": [
-          "awayScore.current",
-          "awayScore.display",
-          "awayScore.innings"
+          "homeScore.innings",
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1773963251
+        "changeTimestamp": 1773971653
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15637939,
-      "currentBattingTeamId": 213117,
+      "note": "Australia Women beat West Indies Women by 43 runs",
+      "currentBattingTeamId": 213120,
       "endTimestamp": 1773973800,
       "slug": "west-indies-women-australia-women",
       "startTimestamp": 1773959400,
@@ -3783,7 +3816,6 @@
         "inning3": "3rd Inning",
         "inning4": "4th Inning"
       },
-      "lastPeriod": "inning1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
