@@ -1471,7 +1471,7 @@
       "id": 15417587,
       "slug": "niort-rc-so-chambery-rugby",
       "startTimestamp": 1774031400,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -1653,7 +1653,7 @@
       "id": 15417584,
       "slug": "ca-perigueux-us-bressane-pa",
       "startTimestamp": 1774031400,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -1836,7 +1836,7 @@
       "id": 15417588,
       "slug": "rc-massy-essonne-rouen-normandie-rugby",
       "startTimestamp": 1774033200,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -4434,9 +4434,9 @@
       },
       "customId": "JJbsrYKb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 7,
+        "description": "2nd half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Toulouse Olympique",
@@ -4511,17 +4511,38 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "period2": 0
+      },
+      "awayScore": {
+        "current": 28,
+        "display": 28,
+        "period1": 28,
+        "period2": 0
+      },
+      "time": {
+        "played": 3085,
+        "periodLength": 2400,
+        "overtimeLength": 600,
+        "totalPeriodCount": 2,
+        "currentPeriodStartTimestamp": 1774033262
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.played",
+          "time.playedLastUpdated"
+        ],
+        "changeTimestamp": 1774034283
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15176278,
       "slug": "toulouse-olympique-st-helens",
       "startTimestamp": 1774029600,
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -16122,10 +16143,11 @@
       },
       "customId": "pJbsbkYb",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Bulls",
         "slug": "bulls",
@@ -16200,32 +16222,35 @@
         }
       },
       "homeScore": {
-        "current": 33,
-        "display": 33,
+        "current": 40,
+        "display": 40,
         "period1": 33,
-        "period2": 0
+        "period2": 7,
+        "normaltime": 40
       },
       "awayScore": {
         "current": 7,
         "display": 7,
         "period1": 7,
-        "period2": 0
+        "period2": 0,
+        "normaltime": 7
       },
       "time": {
-        "played": 4800,
+        "played": 2418,
         "periodLength": 2400,
         "overtimeLength": 600,
         "totalPeriodCount": 2,
-        "currentPeriodStartTimestamp": 1774028930
+        "currentPeriodStartTimestamp": 1774032445
       },
       "changes": {
         "changes": [
           "status.code",
           "status.description",
+          "status.type",
           "time.played",
           "time.playedLastUpdated"
         ],
-        "changeTimestamp": 1774029677
+        "changeTimestamp": 1774032472
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -16233,7 +16258,6 @@
       "id": 14260443,
       "slug": "bulls-cardiff-rugby",
       "startTimestamp": 1774026000,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
