@@ -4121,9 +4121,9 @@
       },
       "customId": "bMnjsfOnj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Brixia ASD",
@@ -4181,8 +4181,16 @@
           "text": "#ffffff"
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 3,
+        "display": 3,
+        "period1": 3
+      },
+      "awayScore": {
+        "current": 3,
+        "display": 3,
+        "period1": 3
+      },
       "coverage": -1,
       "time": {},
       "changes": {
@@ -4193,7 +4201,8 @@
       "id": 15642350,
       "slug": "brixia-asd-italian-floor-design-rugby-bergamo-1950",
       "startTimestamp": 1774186202,
-      "finalResultOnly": false,
+      "lastPeriod": "period1",
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -4347,7 +4356,7 @@
       "id": 15642355,
       "slug": "ghial-rugby-fiumicello-bologna-rugby-club-asd",
       "startTimestamp": 1774186202,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -4501,7 +4510,7 @@
       "id": 15642354,
       "slug": "asd-rugby-bassa-bresciana-leno-rugby-colorno-1975-srl-ssd",
       "startTimestamp": 1774186202,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -4655,7 +4664,7 @@
       "id": 15642353,
       "slug": "rugby-pieve-1971-asd-rugby-rovato-asd",
       "startTimestamp": 1774186202,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -21850,7 +21859,7 @@
       "id": 14390227,
       "slug": "biella-rugby-club-asd-rugby-lyons",
       "startTimestamp": 1774186200,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -22723,8 +22732,8 @@
       },
       "customId": "NIbsJld",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 31,
+        "description": "Halftime",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -22792,28 +22801,30 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0
+        "current": 14,
+        "display": 14,
+        "period1": 14,
+        "period2": 0
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0
+        "current": 7,
+        "display": 7,
+        "period1": 7,
+        "period2": 0
       },
       "time": {
-        "played": 27,
+        "played": 0,
         "periodLength": 2400,
         "overtimeLength": 600,
         "totalPeriodCount": 2,
-        "currentPeriodStartTimestamp": 1774184482
+        "currentPeriodStartTimestamp": 1774187396
       },
       "changes": {
         "changes": [
           "time.played",
           "time.playedLastUpdated"
         ],
-        "changeTimestamp": 1774184534
+        "changeTimestamp": 1774187939
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -22821,7 +22832,6 @@
       "id": 14260450,
       "slug": "dragons-stormers",
       "startTimestamp": 1774184400,
-      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -24279,21 +24289,17 @@
         "normaltime": 24
       },
       "time": {
-        "played": 2428,
+        "played": 2552,
         "periodLength": 2400,
         "overtimeLength": 600,
         "totalPeriodCount": 2
       },
       "changes": {
         "changes": [
-          "homeScore.period1",
-          "homeScore.period2",
-          "homeScore.normaltime",
-          "awayScore.period1",
-          "awayScore.period2",
-          "awayScore.normaltime"
+          "time.played",
+          "time.playedLastUpdated"
         ],
-        "changeTimestamp": 1774164248
+        "changeTimestamp": 1774187754
       },
       "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
@@ -28411,10 +28417,11 @@
       },
       "customId": "VNrsXcHc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Cetransa El Salvador",
         "slug": "cetransa-el-salvador",
@@ -28475,18 +28482,45 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 28,
+        "display": 28,
+        "period1": 10,
+        "period2": 18,
+        "normaltime": 28
+      },
+      "awayScore": {
+        "current": 3,
+        "display": 3,
+        "period1": 3,
+        "period2": 0,
+        "normaltime": 3
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1774187786
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15621122,
       "slug": "fc-barcelona-cetransa-el-salvador",
       "startTimestamp": 1774177200,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -28572,10 +28606,11 @@
       },
       "customId": "JFAcsKFAc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 3,
       "homeTeam": {
         "name": "Real Ciencias Enerside",
         "slug": "real-ciencias-enerside",
@@ -28636,18 +28671,45 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 22,
+        "display": 22,
+        "period1": 16,
+        "period2": 6,
+        "normaltime": 22
+      },
+      "awayScore": {
+        "current": 22,
+        "display": 22,
+        "period1": 3,
+        "period2": 19,
+        "normaltime": 22
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1774187786
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15621121,
       "slug": "real-ciencias-enerside-ampo-ordizia-re",
       "startTimestamp": 1774177200,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -34061,7 +34123,7 @@
       "id": 15741224,
       "slug": "valsugana-rugby-padova-benetton-rugby-treviso-femminile",
       "startTimestamp": 1774186200,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -34238,7 +34300,7 @@
       "id": 15741225,
       "slug": "villorba-rugby-rugby-colorno-femminile",
       "startTimestamp": 1774186200,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
