@@ -13465,7 +13465,7 @@
         ],
         "changeTimestamp": 1774472419
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15633024,
       "slug": "aluron-cmc-warta-zawiercie-cucine-lube-civitanova",
@@ -14114,7 +14114,7 @@
         ],
         "changeTimestamp": 1774472168
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15722900,
       "slug": "lindemans-aalst-allianz-milano",
@@ -16008,9 +16008,9 @@
       },
       "customId": "hqjcsirKc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 9,
+        "description": "2nd set",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Universitario de Deportes",
@@ -16081,22 +16081,23 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0
+        "current": 1,
+        "display": 1,
+        "period1": 25,
+        "period2": 16
       },
       "awayScore": {
         "current": 0,
-        "display": 0
+        "display": 0,
+        "period1": 14,
+        "period2": 10
       },
       "time": {},
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display",
-          "awayScore.current",
-          "awayScore.display"
+          "homeScore.period2"
         ],
-        "changeTimestamp": 1774475404
+        "changeTimestamp": 1774479761
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -16115,6 +16116,7 @@
         "period7": "7th set",
         "overtime": "Overtime"
       },
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -19582,12 +19584,12 @@
       },
       "customId": "ZKIbsaRXd",
       "status": {
-        "code": 100,
-        "description": "Ended",
+        "code": 110,
+        "description": "AET",
         "type": "finished"
       },
       "winnerCode": 1,
-      "aggregatedWinnerCode": 2,
+      "aggregatedWinnerCode": 1,
       "homeTeam": {
         "name": "CS Corona Brasov",
         "slug": "cs-corona-brasov",
@@ -19661,7 +19663,9 @@
         "period1": 25,
         "period2": 25,
         "period3": 25,
-        "aggregated": 0
+        "normaltime": 3,
+        "overtime": 15,
+        "aggregated": 3
       },
       "awayScore": {
         "current": 0,
@@ -19669,6 +19673,8 @@
         "period1": 23,
         "period2": 19,
         "period3": 23,
+        "normaltime": 0,
+        "overtime": 10,
         "aggregated": 3
       },
       "time": {},
@@ -19676,9 +19682,13 @@
         "changes": [
           "status.code",
           "status.description",
-          "status.type"
+          "homeScore.normaltime",
+          "homeScore.overtime",
+          "homeScore.aggregated",
+          "awayScore.normaltime",
+          "awayScore.overtime"
         ],
-        "changeTimestamp": 1774468229
+        "changeTimestamp": 1774478217
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -21529,7 +21539,8 @@
         "period1": 25,
         "period2": 22,
         "period3": 17,
-        "period4": 23
+        "period4": 23,
+        "normaltime": 1
       },
       "awayScore": {
         "current": 3,
@@ -21537,19 +21548,16 @@
         "period1": 21,
         "period2": 25,
         "period3": 25,
-        "period4": 25
+        "period4": 25,
+        "normaltime": 3
       },
       "time": {},
       "changes": {
         "changes": [
-          "status.code",
-          "status.description",
-          "status.type",
-          "awayScore.current",
-          "awayScore.display",
-          "awayScore.period4"
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1774468677
+        "changeTimestamp": 1774476924
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -23912,7 +23920,7 @@
         "period7": "7th set",
         "overtime": "Overtime"
       },
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -24098,7 +24106,7 @@
         "period7": "7th set",
         "overtime": "Overtime"
       },
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -25003,11 +25011,27 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1"
+        ],
+        "changeTimestamp": 1774479012
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
