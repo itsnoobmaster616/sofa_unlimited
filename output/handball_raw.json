@@ -777,9 +777,9 @@
       },
       "customId": "GEbsmjd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "SC DHfK Leipzig",
@@ -859,17 +859,35 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 1,
+        "display": 1
+      },
+      "awayScore": {
+        "current": 1,
+        "display": 1
+      },
+      "time": {
+        "played": 171,
+        "periodLength": 1800,
+        "overtimeLength": 300,
+        "totalPeriodCount": 2,
+        "currentPeriodStartTimestamp": 1774789282
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.played",
+          "time.playedLastUpdated"
+        ],
+        "changeTimestamp": 1774789502
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14211275,
       "slug": "sc-dhfk-leipzig-thsv-eisenach",
       "startTimestamp": 1774789200,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -2266,10 +2284,11 @@
       },
       "customId": "mEbszXIb",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Viveros Balonmano Nava",
         "slug": "viveros-balonmano-nava",
@@ -2348,28 +2367,38 @@
         }
       },
       "homeScore": {
-        "current": 15,
-        "display": 15,
-        "period1": 12
+        "current": 28,
+        "display": 28,
+        "period1": 12,
+        "period2": 16,
+        "normaltime": 28
       },
       "awayScore": {
-        "current": 21,
-        "display": 21,
-        "period1": 16
+        "current": 31,
+        "display": 31,
+        "period1": 16,
+        "period2": 15,
+        "normaltime": 31
       },
       "time": {
-        "played": 2254,
+        "played": 3582,
         "periodLength": 1800,
         "overtimeLength": 300,
         "totalPeriodCount": 2,
-        "currentPeriodStartTimestamp": 1774783294
+        "currentPeriodStartTimestamp": 1774785940
       },
       "changes": {
         "changes": [
-          "time.played",
-          "time.playedLastUpdated"
+          "time.currentPeriodStart",
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.period2",
+          "homeScore.normaltime",
+          "awayScore.period2",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1774783985
+        "changeTimestamp": 1774785945
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -2377,7 +2406,6 @@
       "id": 14251815,
       "slug": "viveros-balonmano-nava-cb-ademar-leon",
       "startTimestamp": 1774780200,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -5498,10 +5526,11 @@
       },
       "customId": "yGbsdOc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 7,
+        "description": "2nd half",
+        "type": "inprogress"
       },
+      "aggregatedWinnerCode": 1,
       "homeTeam": {
         "name": "Team Esbjerg",
         "slug": "team-esbjerg",
@@ -5577,25 +5606,41 @@
         }
       },
       "homeScore": {
-        "aggregated": 37
+        "current": 21,
+        "display": 21,
+        "period1": 15,
+        "aggregated": 58
       },
       "awayScore": {
-        "aggregated": 26
+        "current": 22,
+        "display": 22,
+        "period1": 16,
+        "aggregated": 47
       },
-      "time": {},
+      "time": {
+        "played": 2533,
+        "periodLength": 1800,
+        "overtimeLength": 300,
+        "totalPeriodCount": 2,
+        "currentPeriodStartTimestamp": 1774788531
+      },
       "changes": {
         "changes": [
-          "homeScore.aggregated",
-          "awayScore.aggregated"
+          "awayScore.current",
+          "awayScore.display",
+          "time.played",
+          "time.playedLastUpdated"
         ],
-        "changeTimestamp": 1774155687
+        "changeTimestamp": 1774789507
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15602466,
       "slug": "rk-podravka-team-esbjerg",
       "previousLegEventId": 15602215,
       "startTimestamp": 1774785600,
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -11692,7 +11737,7 @@
       "id": 15641269,
       "slug": "zrk-jajce-rk-galeb-mostar",
       "startTimestamp": 1774787400,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -13192,7 +13237,7 @@
       "id": 15660420,
       "slug": "rk-kakanj-mrk-iskra-bugojno",
       "startTimestamp": 1774785600,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -18481,7 +18526,7 @@
       "id": 15838675,
       "slug": "hc-inter-blagoevgrad-hc-cska-mladost-sofia",
       "startTimestamp": 1774786800,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -26358,10 +26403,11 @@
       },
       "customId": "cOisGPtc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Trešnjevka Zagreb",
         "slug": "tresnjevka-zagreb",
@@ -26435,12 +26481,39 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 39,
+        "display": 39,
+        "period1": 19,
+        "period2": 20,
+        "normaltime": 39
+      },
+      "awayScore": {
+        "current": 25,
+        "display": 25,
+        "period1": 8,
+        "period2": 17,
+        "normaltime": 25
+      },
       "coverage": -1,
-      "time": {},
+      "time": {
+        "played": 3600,
+        "periodLength": 1800,
+        "overtimeLength": 300,
+        "totalPeriodCount": 2
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "providerLock.status",
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime",
+          "time.played",
+          "time.playedLastUpdated"
+        ],
+        "changeTimestamp": 1774788626
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -26541,9 +26614,9 @@
       },
       "customId": "MTrszmUi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "ŽRK Sesvete II",
@@ -26617,18 +26690,37 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 3,
+        "display": 3,
+        "period1": 3
+      },
+      "awayScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 2
+      },
       "coverage": -1,
-      "time": {},
+      "time": {
+        "played": 300,
+        "periodLength": 1800,
+        "overtimeLength": 300,
+        "totalPeriodCount": 2
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1"
+        ],
+        "changeTimestamp": 1774789523
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15244488,
       "slug": "zrk-sesvete-ii-zrk-samobor",
       "startTimestamp": 1774789200,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -30603,10 +30695,11 @@
       },
       "customId": "dFYcseOXi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "RK Maksimir Pastela 2",
         "slug": "rk-maksimir-pastela",
@@ -30676,19 +30769,46 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 41,
+        "display": 41,
+        "period1": 23,
+        "period2": 18,
+        "normaltime": 41
+      },
+      "awayScore": {
+        "current": 22,
+        "display": 22,
+        "period1": 13,
+        "period2": 9,
+        "normaltime": 22
+      },
       "coverage": -1,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1774789333
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15861084,
       "slug": "rk-sisak-2-rk-maksimir-pastela-2",
       "startTimestamp": 1774720800,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -30777,9 +30897,9 @@
       },
       "customId": "mOXisxOXi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "RK Medveščak 101",
@@ -30853,19 +30973,45 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 11,
+        "display": 11,
+        "period1": 11,
+        "normaltime": 11
+      },
+      "awayScore": {
+        "current": 9,
+        "display": 9,
+        "period1": 9,
+        "normaltime": 9
+      },
       "coverage": -1,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.normaltime",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.normaltime",
+          "time.currentPeriodStart",
+          "status.code",
+          "status.description",
+          "status.type",
+          "time.period1Start"
+        ],
+        "changeTimestamp": 1774789520
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15861096,
       "slug": "rk-zg-dubrava-rk-medvescak-101",
       "startTimestamp": 1774788300,
-      "finalResultOnly": false,
+      "lastPeriod": "period1",
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -31131,10 +31277,11 @@
       },
       "customId": "lOXisnOXi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "MRK Sloga SN",
         "slug": "sloga-sn",
@@ -31207,19 +31354,46 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 30,
+        "display": 30,
+        "period1": 15,
+        "period2": 15,
+        "normaltime": 30
+      },
+      "awayScore": {
+        "current": 28,
+        "display": 28,
+        "period1": 15,
+        "period2": 13,
+        "normaltime": 28
+      },
       "coverage": -1,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1774789383
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15861126,
       "slug": "rk-ivanic-grad-2-mrk-sloga-sn",
       "startTimestamp": 1774709100,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -31308,9 +31482,9 @@
       },
       "customId": "fOXisWnbj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 60,
+        "description": "Postponed",
+        "type": "postponed"
       },
       "homeTeam": {
         "name": "RK Jaska",
@@ -31389,7 +31563,12 @@
       "coverage": -1,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type"
+        ],
+        "changeTimestamp": 1774789419
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -32838,7 +33017,7 @@
       "id": 14722239,
       "slug": "rk-krilnik-rk-trilj",
       "startTimestamp": 1774786500,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -36943,7 +37122,7 @@
       "id": 15861876,
       "slug": "zrinski-u18-novska-u18",
       "startTimestamp": 1774784700,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -43742,17 +43921,11 @@
       },
       "homeScore": {
         "current": 28,
-        "display": 28,
-        "period1": 16,
-        "period2": 12,
-        "normaltime": 28
+        "display": 28
       },
       "awayScore": {
         "current": 19,
-        "display": 19,
-        "period1": 9,
-        "period2": 10,
-        "normaltime": 19
+        "display": 19
       },
       "coverage": -1,
       "time": {
@@ -45064,7 +45237,7 @@
       "id": 15662823,
       "slug": "tj-nachod-hc-plzen",
       "startTimestamp": 1774783800,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -47586,9 +47759,9 @@
       },
       "customId": "eJfcsKAgc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 7,
+        "description": "2nd half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Aarhus Håndbold",
@@ -47664,17 +47837,37 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 18,
+        "display": 18,
+        "period1": 15,
+        "period2": 3
+      },
+      "awayScore": {
+        "current": 18,
+        "display": 18,
+        "period1": 12,
+        "period2": 6
+      },
+      "time": {
+        "played": 2625,
+        "periodLength": 1800,
+        "overtimeLength": 300,
+        "totalPeriodCount": 2
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.played",
+          "time.playedLastUpdated"
+        ],
+        "changeTimestamp": 1774789537
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14050342,
       "slug": "agf-handbold-aarhus-handbold",
       "startTimestamp": 1774785600,
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -47773,9 +47966,9 @@
       },
       "customId": "wyrscOtb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 7,
+        "description": "2nd half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "BK Ydun",
@@ -47850,17 +48043,37 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 16,
+        "display": 16,
+        "period1": 12,
+        "period2": 4
+      },
+      "awayScore": {
+        "current": 16,
+        "display": 16,
+        "period1": 13,
+        "period2": 3
+      },
+      "time": {
+        "played": 2675,
+        "periodLength": 1800,
+        "overtimeLength": 300,
+        "totalPeriodCount": 2
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.played",
+          "time.playedLastUpdated"
+        ],
+        "changeTimestamp": 1774789533
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14050347,
       "slug": "bk-ydun-roskilde-handbold",
       "startTimestamp": 1774785600,
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -47959,9 +48172,9 @@
       },
       "customId": "nUTsUhud",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 7,
+        "description": "2nd half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Ejstrup/Hærvejen",
@@ -48036,17 +48249,37 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 23,
+        "display": 23,
+        "period1": 18,
+        "period2": 5
+      },
+      "awayScore": {
+        "current": 21,
+        "display": 21,
+        "period1": 15,
+        "period2": 6
+      },
+      "time": {
+        "played": 2462,
+        "periodLength": 1800,
+        "overtimeLength": 300,
+        "totalPeriodCount": 2
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.played",
+          "time.playedLastUpdated"
+        ],
+        "changeTimestamp": 1774789530
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14050345,
       "slug": "ejstruphaervejen-ajax-kobenhavn",
       "startTimestamp": 1774785600,
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -48145,9 +48378,9 @@
       },
       "customId": "WqYsozgc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 7,
+        "description": "2nd half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Fredericia HK",
@@ -48218,17 +48451,37 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 18,
+        "display": 18,
+        "period1": 13,
+        "period2": 5
+      },
+      "awayScore": {
+        "current": 15,
+        "display": 15,
+        "period1": 11,
+        "period2": 4
+      },
+      "time": {
+        "played": 2572,
+        "periodLength": 1800,
+        "overtimeLength": 300,
+        "totalPeriodCount": 2
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.played",
+          "time.playedLastUpdated"
+        ],
+        "changeTimestamp": 1774789537
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14050348,
       "slug": "gudme-hk-fredericia-hk",
       "startTimestamp": 1774785600,
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -48327,9 +48580,9 @@
       },
       "customId": "YmtbsLhDc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 7,
+        "description": "2nd half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Saeby HK",
@@ -48404,17 +48657,37 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 20,
+        "display": 20,
+        "period1": 13,
+        "period2": 7
+      },
+      "awayScore": {
+        "current": 28,
+        "display": 28,
+        "period1": 23,
+        "period2": 5
+      },
+      "time": {
+        "played": 2672,
+        "periodLength": 1800,
+        "overtimeLength": 300,
+        "totalPeriodCount": 2
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.played",
+          "time.playedLastUpdated"
+        ],
+        "changeTimestamp": 1774789534
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14050344,
       "slug": "saeby-hk-rodovre-hk",
       "startTimestamp": 1774785600,
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -48513,9 +48786,9 @@
       },
       "customId": "BGbsNOkb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 7,
+        "description": "2nd half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "TTH Holstebro",
@@ -48590,17 +48863,37 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 29,
+        "display": 29,
+        "period1": 15,
+        "period2": 14
+      },
+      "awayScore": {
+        "current": 18,
+        "display": 18,
+        "period1": 9,
+        "period2": 9
+      },
+      "time": {
+        "played": 2820,
+        "periodLength": 1800,
+        "overtimeLength": 300,
+        "totalPeriodCount": 2
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.played",
+          "time.playedLastUpdated"
+        ],
+        "changeTimestamp": 1774789539
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14050346,
       "slug": "sondermarkens-ik-tth-holstebro",
       "startTimestamp": 1774785600,
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -50567,7 +50860,7 @@
       "id": 15446964,
       "slug": "rennes-metropole-hb-asul-vaulx-in-velin",
       "startTimestamp": 1774785600,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -57728,10 +58021,11 @@
       },
       "customId": "foIisZAQi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "G.S. Iraklis Thessalonikis",
         "slug": "gs-iraklis-thessalonikis",
@@ -57804,8 +58098,14 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 35,
+        "display": 35
+      },
+      "awayScore": {
+        "current": 22,
+        "display": 22
+      },
       "coverage": -1,
       "time": {},
       "changes": {
@@ -57816,7 +58116,7 @@
       "id": 15849340,
       "slug": "gs-iraklis-thessalonikis-volosox",
       "startTimestamp": 1774774851,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -68316,7 +68616,7 @@
       "id": 15729689,
       "slug": "hogyeszi-sc-rakosmente",
       "startTimestamp": 1774785600,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -72997,10 +73297,11 @@
       },
       "customId": "kmtbsbFae",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 7,
+        "description": "2nd half",
+        "type": "inprogress"
       },
+      "aggregatedWinnerCode": 1,
       "homeTeam": {
         "name": "MOL Esztergom KC",
         "slug": "esztergomi-vitezek",
@@ -73075,25 +73376,39 @@
         }
       },
       "homeScore": {
-        "aggregated": 36
+        "current": 24,
+        "display": 24,
+        "period1": 18,
+        "aggregated": 60
       },
       "awayScore": {
-        "aggregated": 25
+        "current": 20,
+        "display": 20,
+        "period1": 13,
+        "aggregated": 45
       },
-      "time": {},
+      "time": {
+        "played": 2549,
+        "periodLength": 1800,
+        "overtimeLength": 300,
+        "totalPeriodCount": 2,
+        "currentPeriodStartTimestamp": 1774788652
+      },
       "changes": {
         "changes": [
-          "homeScore.aggregated",
-          "awayScore.aggregated"
+          "time.played",
+          "time.playedLastUpdated"
         ],
-        "changeTimestamp": 1774155688
+        "changeTimestamp": 1774789502
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15612238,
       "slug": "mol-esztergom-kc-mosonmagyarovari-kc",
       "previousLegEventId": 15611402,
       "startTimestamp": 1774785600,
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -83363,7 +83678,7 @@
       "id": 15878319,
       "slug": "medalp-innsbruck-telfs",
       "startTimestamp": 1774785600,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -84848,7 +85163,7 @@
       "id": 15878330,
       "slug": "conversano-petrarca",
       "startTimestamp": 1774785600,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -86986,10 +87301,11 @@
       },
       "customId": "TbnjsVbnj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "KACM Handball",
         "slug": "kacm-handball",
@@ -87046,8 +87362,14 @@
           "text": "#ffffff"
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 25,
+        "display": 25
+      },
+      "awayScore": {
+        "current": 26,
+        "display": 26
+      },
       "coverage": -1,
       "time": {},
       "changes": {
@@ -87058,7 +87380,7 @@
       "id": 15867585,
       "slug": "kacm-handball-coder-handball",
       "startTimestamp": 1774720800,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -87140,10 +87462,11 @@
       },
       "customId": "CbnjsGbnj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Raja Agadir Handball",
         "slug": "raja-agadir-handball",
@@ -87200,8 +87523,14 @@
           "text": "#ffffff"
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 33,
+        "display": 33
+      },
+      "awayScore": {
+        "current": 30,
+        "display": 30
+      },
       "coverage": -1,
       "time": {},
       "changes": {
@@ -87212,7 +87541,7 @@
       "id": 15867583,
       "slug": "asfar-handball-raja-agadir-handball",
       "startTimestamp": 1774720800,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -90662,9 +90991,9 @@
       },
       "customId": "oeHbsxqTd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 20,
+        "description": "Started",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Bergsoey IL",
@@ -90736,13 +91065,34 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 47,
+        "display": 47,
+        "period1": 39,
+        "period2": 8
+      },
+      "awayScore": {
+        "current": 36,
+        "display": 36,
+        "period1": 27,
+        "period2": 9
+      },
+      "time": {
+        "played": -1309,
+        "periodLength": 1800,
+        "overtimeLength": 300,
+        "totalPeriodCount": 2
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period2"
+        ],
+        "changeTimestamp": 1774789526
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14084981,
       "slug": "bergsoey-il-charlottenlund-sk",
@@ -91954,9 +92304,9 @@
       },
       "customId": "WmvsCyGc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 20,
+        "description": "Started",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Asane",
@@ -92026,13 +92376,34 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 44,
+        "display": 44,
+        "period1": 25,
+        "period2": 19
+      },
+      "awayScore": {
+        "current": 43,
+        "display": 43,
+        "period1": 29,
+        "period2": 14
+      },
+      "time": {
+        "played": -1328,
+        "periodLength": 1800,
+        "overtimeLength": 300,
+        "totalPeriodCount": 2
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period2"
+        ],
+        "changeTimestamp": 1774789526
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14079186,
       "slug": "asane-glassverket",
@@ -93084,10 +93455,11 @@
       },
       "customId": "TFrsUMtb",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Wybrzeże Gdańsk",
         "slug": "wybrzeze-gdansk",
@@ -93160,19 +93532,21 @@
         }
       },
       "homeScore": {
-        "current": 19,
-        "display": 19,
+        "current": 28,
+        "display": 28,
         "period1": 19,
-        "period2": 0
+        "period2": 9,
+        "normaltime": 28
       },
       "awayScore": {
-        "current": 19,
-        "display": 19,
+        "current": 30,
+        "display": 30,
         "period1": 19,
-        "period2": 0
+        "period2": 11,
+        "normaltime": 30
       },
       "time": {
-        "played": 1801,
+        "played": 3600,
         "periodLength": 1800,
         "overtimeLength": 300,
         "totalPeriodCount": 2
@@ -93180,13 +93554,9 @@
       "changes": {
         "changes": [
           "time.played",
-          "time.playedLastUpdated",
-          "status.code",
-          "status.description",
-          "homeScore.period2",
-          "awayScore.period2"
+          "time.playedLastUpdated"
         ],
-        "changeTimestamp": 1774783985
+        "changeTimestamp": 1774786685
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -93194,7 +93564,6 @@
       "id": 14280979,
       "slug": "wybrzeze-gdansk-mmts-kwidzyn",
       "startTimestamp": 1774780200,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -94925,9 +95294,9 @@
       },
       "customId": "XZwsbxEc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "MKS Jurand Ciechanow",
@@ -95002,17 +95371,38 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 2
+      },
+      "awayScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 2
+      },
+      "time": {
+        "played": 207,
+        "periodLength": 1800,
+        "overtimeLength": 300,
+        "totalPeriodCount": 2
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "time.played",
+          "time.playedLastUpdated"
+        ],
+        "changeTimestamp": 1774789538
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14177800,
       "slug": "sms-kielce-mks-jurand-ciechanow",
       "startTimestamp": 1774789200,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -99005,7 +99395,7 @@
       "id": 15559874,
       "slug": "azs-uniwersytet-warszawski-azs-awf-warszawa",
       "startTimestamp": 1774785600,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -104797,7 +105187,7 @@
       "id": 15536743,
       "slug": "cs-unirea-sannicolau-mare-csu-craiova",
       "startTimestamp": 1774785600,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -105450,10 +105840,11 @@
       },
       "customId": "ZIEiscJEi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "CS OK Sport Oneşti J2",
         "slug": "cs-ok-sport-onesti-j2",
@@ -105526,8 +105917,14 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 56,
+        "display": 56
+      },
+      "awayScore": {
+        "current": 22,
+        "display": 22
+      },
       "coverage": -1,
       "time": {},
       "changes": {
@@ -105538,7 +105935,7 @@
       "id": 15283436,
       "slug": "cs-ok-sport-onesti-j2-lps-piatra-neamt-j2",
       "startTimestamp": 1774771200,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -105633,10 +106030,11 @@
       },
       "customId": "hJEisLdbj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "LPS Vaslui J2",
         "slug": "lps-vaslui-j2",
@@ -105709,8 +106107,14 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 39,
+        "display": 39
+      },
+      "awayScore": {
+        "current": 32,
+        "display": 32
+      },
       "coverage": -1,
       "time": {},
       "changes": {
@@ -105721,7 +106125,7 @@
       "id": 15283437,
       "slug": "lps-iasi-j2-lps-vaslui-j2",
       "startTimestamp": 1774773000,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -105999,10 +106403,11 @@
       },
       "customId": "rIEisMdbj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "HC Dunărea Brăila J2",
         "slug": "hc-dunarea-braila-j2",
@@ -106075,8 +106480,14 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 49,
+        "display": 49
+      },
+      "awayScore": {
+        "current": 28,
+        "display": 28
+      },
       "coverage": -1,
       "time": {},
       "changes": {
@@ -106087,7 +106498,7 @@
       "id": 15283490,
       "slug": "hc-dunarea-braila-j2-css-6-bucuresti-j2",
       "startTimestamp": 1774767600,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -106182,10 +106593,11 @@
       },
       "customId": "VIEisPdbj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "CS Judeţean Prahova J2",
         "slug": "cs-judetean-prahova-j2",
@@ -106258,8 +106670,14 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 14,
+        "display": 14
+      },
+      "awayScore": {
+        "current": 26,
+        "display": 26
+      },
       "coverage": -1,
       "time": {},
       "changes": {
@@ -106270,7 +106688,7 @@
       "id": 15283486,
       "slug": "cs-campina-j2-cs-judetean-prahova-j2",
       "startTimestamp": 1774774800,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -106365,10 +106783,11 @@
       },
       "customId": "TIEisXIEi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "LPS Brăila J2",
         "slug": "lps-braila-j2",
@@ -106441,8 +106860,14 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 27,
+        "display": 27
+      },
+      "awayScore": {
+        "current": 38,
+        "display": 38
+      },
       "coverage": -1,
       "time": {},
       "changes": {
@@ -106453,7 +106878,7 @@
       "id": 15283487,
       "slug": "csm-ploiesti-j2-lps-braila-j2",
       "startTimestamp": 1774774800,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -107002,7 +107427,7 @@
       "id": 15283570,
       "slug": "acs-olympic-rfh-j2-css-2-bucuresti-j2",
       "startTimestamp": 1774783800,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -107280,10 +107705,11 @@
       },
       "customId": "IIEisHebj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "CSS 1 Constanţa J2",
         "slug": "css-1-constanta-j2",
@@ -107356,8 +107782,14 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 35,
+        "display": 35
+      },
+      "awayScore": {
+        "current": 41,
+        "display": 41
+      },
       "coverage": -1,
       "time": {},
       "changes": {
@@ -107368,7 +107800,7 @@
       "id": 15283623,
       "slug": "csm-unirea-slobozia-j2-css-1-constanta-j2",
       "startTimestamp": 1774780200,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -107463,10 +107895,11 @@
       },
       "customId": "EebjsFebj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "AHC Talentul este Cheia București J2",
         "slug": "ahc-talentul-este-cheia-bucuresti-j2",
@@ -107539,8 +107972,14 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 54,
+        "display": 54
+      },
+      "awayScore": {
+        "current": 20,
+        "display": 20
+      },
       "coverage": -1,
       "time": {},
       "changes": {
@@ -107551,7 +107990,7 @@
       "id": 15283625,
       "slug": "ahc-talentul-este-cheia-bucuresti-j2-cs-victoria-tandarei-j2",
       "startTimestamp": 1774782000,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -107646,10 +108085,11 @@
       },
       "customId": "BIEisCIEi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "SCM Dunărea 2020 Giurgiu J2",
         "slug": "scm-dunarea-2020-giurgiu-j2",
@@ -107722,8 +108162,14 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 33,
+        "display": 33
+      },
+      "awayScore": {
+        "current": 38,
+        "display": 38
+      },
       "coverage": -1,
       "time": {},
       "changes": {
@@ -108012,10 +108458,11 @@
       },
       "customId": "IHEisKebj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "CSS Sibiu J2",
         "slug": "css-sibiu-j2",
@@ -108088,8 +108535,14 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 41,
+        "display": 41
+      },
+      "awayScore": {
+        "current": 26,
+        "display": 26
+      },
       "coverage": -1,
       "time": {},
       "changes": {
@@ -108100,7 +108553,7 @@
       "id": 15283660,
       "slug": "cs-magura-cisnadie-j2-css-sibiu-j2",
       "startTimestamp": 1774774800,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -108195,10 +108648,11 @@
       },
       "customId": "BHEisJebj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "ACS Tg. Mures J2",
         "slug": "acs-tg-mures-j2",
@@ -108271,8 +108725,14 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 32,
+        "display": 32
+      },
+      "awayScore": {
+        "current": 37,
+        "display": 37
+      },
       "coverage": -1,
       "time": {},
       "changes": {
@@ -108283,7 +108743,7 @@
       "id": 15283662,
       "slug": "acs-tg-mures-j2-acs-kids-tampa-2015-brasov-j2",
       "startTimestamp": 1774778400,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -108378,10 +108838,11 @@
       },
       "customId": "EHEisFHEi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "CSS Sighişoara J2",
         "slug": "css-sighisoara-j2",
@@ -108454,8 +108915,14 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 20,
+        "display": 20
+      },
+      "awayScore": {
+        "current": 50,
+        "display": 50
+      },
       "coverage": -1,
       "time": {},
       "changes": {
@@ -108466,7 +108933,7 @@
       "id": 15283663,
       "slug": "css-sighisoara-j2-acs-transilvania-brasov-j2",
       "startTimestamp": 1774778400,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -108561,10 +109028,11 @@
       },
       "customId": "FdbjsGdbj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "CS Chimia Rm. Vâlcea J2",
         "slug": "cs-chimia-rm-valcea-j2",
@@ -108637,8 +109105,14 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 49,
+        "display": 49
+      },
+      "awayScore": {
+        "current": 30,
+        "display": 30
+      },
       "coverage": -1,
       "time": {},
       "changes": {
@@ -108649,7 +109123,7 @@
       "id": 15283936,
       "slug": "acs-muntenia-pitesti-j2-cs-chimia-rm-valcea-j2",
       "startTimestamp": 1774774800,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -108744,10 +109218,11 @@
       },
       "customId": "vHEiswHEi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Grup Şcolar Energetic Rm. Vâlcea J2",
         "slug": "grup-scolar-energetic-rm-valcea-j2",
@@ -108820,8 +109295,14 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 53,
+        "display": 53
+      },
+      "awayScore": {
+        "current": 25,
+        "display": 25
+      },
       "coverage": -1,
       "time": {},
       "changes": {
@@ -108832,7 +109313,7 @@
       "id": 15283935,
       "slug": "grup-scolar-energetic-rm-valcea-j2-lps-viitorul-pitesti-j2",
       "startTimestamp": 1774774800,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -109110,10 +109591,11 @@
       },
       "customId": "tHEisDdbj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "CSS Dr. Tr. Severin J2",
         "slug": "css-dr-tr-severin-j2",
@@ -109186,8 +109668,14 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 42,
+        "display": 42
+      },
+      "awayScore": {
+        "current": 31,
+        "display": 31
+      },
       "coverage": -1,
       "time": {},
       "changes": {
@@ -109198,7 +109686,7 @@
       "id": 15283934,
       "slug": "css-targoviste-j2-css-dr-tr-severin-j2",
       "startTimestamp": 1774782000,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -109476,10 +109964,11 @@
       },
       "customId": "Rcbjsddbj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "CSM Deva J2",
         "slug": "csm-deva-j2",
@@ -109552,8 +110041,14 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 23,
+        "display": 23
+      },
+      "awayScore": {
+        "current": 49,
+        "display": 49
+      },
       "coverage": -1,
       "time": {},
       "changes": {
@@ -109564,7 +110059,7 @@
       "id": 15286201,
       "slug": "csm-tg-jiu-j2-csm-deva-j2",
       "startTimestamp": 1774774800,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -109659,10 +110154,11 @@
       },
       "customId": "LGEisTcbj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "ACS Dominicii Timişoara J2",
         "slug": "acs-dominicii-timisoara-j2",
@@ -109735,8 +110231,14 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 30,
+        "display": 30
+      },
+      "awayScore": {
+        "current": 27,
+        "display": 27
+      },
       "coverage": -1,
       "time": {},
       "changes": {
@@ -109747,7 +110249,7 @@
       "id": 15286205,
       "slug": "acs-dominicii-timisoara-j2-csc-millenium-giarmata-j2",
       "startTimestamp": 1774778400,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -109842,10 +110344,11 @@
       },
       "customId": "KGEisQcbj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "LPS Banatul Timişoara J2",
         "slug": "lps-banatul-timisoara",
@@ -109918,8 +110421,14 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 39,
+        "display": 39
+      },
+      "awayScore": {
+        "current": 51,
+        "display": 51
+      },
       "coverage": -1,
       "time": {},
       "changes": {
@@ -109930,7 +110439,7 @@
       "id": 15286206,
       "slug": "csm-mihai-viteazul-vulcan-j2-lps-banatul-timisoara-j2",
       "startTimestamp": 1774780200,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -110025,10 +110534,11 @@
       },
       "customId": "cdbjsedbj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "CSS Gloria Arad J2",
         "slug": "css-gloria-arad-j2",
@@ -110101,8 +110611,14 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 23,
+        "display": 23
+      },
+      "awayScore": {
+        "current": 16,
+        "display": 16
+      },
       "coverage": -1,
       "time": {},
       "changes": {
@@ -110113,7 +110629,7 @@
       "id": 15286202,
       "slug": "lps-tg-jiu-j2-css-gloria-arad-j2",
       "startTimestamp": 1774782000,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -110208,10 +110724,11 @@
       },
       "customId": "PGEispHEi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Liceul Teoretic Traian Vuia Reşiţa J2",
         "slug": "liceul-teoretic-traian-vuia-resita-j2",
@@ -110284,8 +110801,14 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 31,
+        "display": 31
+      },
+      "awayScore": {
+        "current": 33,
+        "display": 33
+      },
       "coverage": -1,
       "time": {},
       "changes": {
@@ -110296,7 +110819,7 @@
       "id": 15286204,
       "slug": "cs-novaci-j2-liceul-teoretic-traian-vuia-resita-j2",
       "startTimestamp": 1774782000,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -110391,10 +110914,11 @@
       },
       "customId": "xGEiszGEi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "CS Gloria 2018 Bistrita-Nasaud J2",
         "slug": "cs-gloria-2018-bistrita-nasaud-j2",
@@ -110467,8 +110991,14 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 33,
+        "display": 33
+      },
+      "awayScore": {
+        "current": 32,
+        "display": 32
+      },
       "coverage": -1,
       "time": {},
       "changes": {
@@ -110479,7 +111009,7 @@
       "id": 15286292,
       "slug": "cs-gloria-2018-bistrita-nasaud-j2-lps-bistrita-j2",
       "startTimestamp": 1774774800,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -110574,10 +111104,11 @@
       },
       "customId": "rGEiswGEi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "CS Marta Baia Mare J2",
         "slug": "cs-marta-baia-mare-j2",
@@ -110650,8 +111181,14 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 23,
+        "display": 23
+      },
+      "awayScore": {
+        "current": 21,
+        "display": 21
+      },
       "coverage": -1,
       "time": {},
       "changes": {
@@ -110662,7 +111199,7 @@
       "id": 15286293,
       "slug": "cs-marta-baia-mare-j2-acs-kks-camin-satu-mare-j2",
       "startTimestamp": 1774774800,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -110940,10 +111477,11 @@
       },
       "customId": "ZCajscDaj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 3,
       "homeTeam": {
         "name": "CSO Buhuşi J3",
         "slug": "cso-buhusi-j3",
@@ -111016,8 +111554,14 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 20,
+        "display": 20
+      },
+      "awayScore": {
+        "current": 20,
+        "display": 20
+      },
       "coverage": -1,
       "time": {},
       "changes": {
@@ -111028,7 +111572,7 @@
       "id": 14704799,
       "slug": "cso-buhusi-j3-csu-suceavaj3",
       "startTimestamp": 1774771200,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -111123,10 +111667,11 @@
       },
       "customId": "XmFisZmFi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "LPS Botoşani J3",
         "slug": "lps-botosani-j3",
@@ -111199,8 +111744,14 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 30,
+        "display": 30
+      },
+      "awayScore": {
+        "current": 36,
+        "display": 36
+      },
       "coverage": -1,
       "time": {},
       "changes": {
@@ -111211,7 +111762,7 @@
       "id": 14704800,
       "slug": "lps-botosani-j3-lps-suceava-j3",
       "startTimestamp": 1774771200,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -111306,10 +111857,11 @@
       },
       "customId": "MlFisOlFi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "LPS Iaşi J3",
         "slug": "lps-iasi",
@@ -111382,8 +111934,14 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 28,
+        "display": 28
+      },
+      "awayScore": {
+        "current": 26,
+        "display": 26
+      },
       "coverage": -1,
       "time": {},
       "changes": {
@@ -111394,7 +111952,7 @@
       "id": 14704797,
       "slug": "lps-iasi-j3-lps-vaslui-j3",
       "startTimestamp": 1774771200,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -111489,10 +112047,11 @@
       },
       "customId": "NlFisaDaj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "ACS Preventis Iaşi J3",
         "slug": "acs-preventis-iasi",
@@ -111565,8 +112124,14 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 43,
+        "display": 43
+      },
+      "awayScore": {
+        "current": 22,
+        "display": 22
+      },
       "coverage": -1,
       "time": {},
       "changes": {
@@ -111577,7 +112142,7 @@
       "id": 14704796,
       "slug": "lps-roman-j3-acs-preventis-iasi-j3",
       "startTimestamp": 1774776600,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -112038,10 +112603,11 @@
       },
       "customId": "YlFisgdbj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "CSM Constanţa J3",
         "slug": "csm-constanta-j3",
@@ -112114,8 +112680,14 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 31,
+        "display": 31
+      },
+      "awayScore": {
+        "current": 20,
+        "display": 20
+      },
       "coverage": -1,
       "time": {},
       "changes": {
@@ -112126,7 +112698,7 @@
       "id": 14705202,
       "slug": "hc-omer-constanta-j3-csm-constanta-j3",
       "startTimestamp": 1774771200,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -112221,10 +112793,11 @@
       },
       "customId": "LlFisPlFi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "CSM Adjud 1946 J3",
         "slug": "csm-adjud-1946",
@@ -112297,8 +112870,14 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 52,
+        "display": 52
+      },
+      "awayScore": {
+        "current": 22,
+        "display": 22
+      },
       "coverage": -1,
       "time": {},
       "changes": {
@@ -112309,7 +112888,7 @@
       "id": 14705455,
       "slug": "csm-adjud-1946-j3-hc-junior-bb-buzau-j3",
       "startTimestamp": 1774771200,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -112404,10 +112983,11 @@
       },
       "customId": "dmFisfmFi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "CSO Tricolorul Breaza J3",
         "slug": "cso-tricolorul-breaza-j3",
@@ -112480,8 +113060,14 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 41,
+        "display": 41
+      },
+      "awayScore": {
+        "current": 20,
+        "display": 20
+      },
       "coverage": -1,
       "time": {},
       "changes": {
@@ -112492,7 +113078,7 @@
       "id": 14705460,
       "slug": "acs-academia-junior-ploiestij3-cso-tricolorul-breaza-j3",
       "startTimestamp": 1774771200,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -112587,10 +113173,11 @@
       },
       "customId": "JlFisbmFi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "CSS Târgovişte J3",
         "slug": "css-targoviste-j3",
@@ -112663,8 +113250,14 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 32,
+        "display": 32
+      },
+      "awayScore": {
+        "current": 25,
+        "display": 25
+      },
       "coverage": -1,
       "time": {},
       "changes": {
@@ -112675,7 +113268,7 @@
       "id": 14705452,
       "slug": "css-targoviste-j3-css-tecuci-j3",
       "startTimestamp": 1774782000,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -112858,7 +113451,7 @@
       "id": 14705457,
       "slug": "csm-ploiesti-j3-acs-academia-junior-ploiestij3",
       "startTimestamp": 1774785600,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -112953,10 +113546,11 @@
       },
       "customId": "lmFisLoFi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "ACS Viitorul H2O Piteşti J3",
         "slug": "acs-viitorul-h2o-pitesti-j3",
@@ -113029,8 +113623,14 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 16,
+        "display": 16
+      },
+      "awayScore": {
+        "current": 46,
+        "display": 46
+      },
       "coverage": -1,
       "time": {},
       "changes": {
@@ -113041,7 +113641,7 @@
       "id": 14712218,
       "slug": "cs-dinamo-bucuresti-j3-acs-viitorul-h2o-pitesti-j3",
       "startTimestamp": 1774771200,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -113136,10 +113736,11 @@
       },
       "customId": "rdbjstdbj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "CSM Alexandria J3",
         "slug": "csm-alexandria-j3",
@@ -113212,8 +113813,14 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 23,
+        "display": 23
+      },
+      "awayScore": {
+        "current": 54,
+        "display": 54
+      },
       "coverage": -1,
       "time": {},
       "changes": {
@@ -113224,7 +113831,7 @@
       "id": 14712217,
       "slug": "csm-alexandria-j3-csm-bucuresti-j3",
       "startTimestamp": 1774771200,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -113319,10 +113926,11 @@
       },
       "customId": "XlFisnmFi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "CSU Piteşti J3",
         "slug": "csu-pitesti-j3",
@@ -113395,8 +114003,14 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 46,
+        "display": 46
+      },
+      "awayScore": {
+        "current": 20,
+        "display": 20
+      },
       "coverage": -1,
       "time": {},
       "changes": {
@@ -113502,10 +114116,11 @@
       },
       "customId": "LmFisvdbj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "CSS Lugoj J3",
         "slug": "css-lugoj-j3",
@@ -113578,8 +114193,14 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 41,
+        "display": 41
+      },
+      "awayScore": {
+        "current": 19,
+        "display": 19
+      },
       "coverage": -1,
       "time": {},
       "changes": {
@@ -113685,10 +114306,11 @@
       },
       "customId": "imFisTmFi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "LPS Alba Iulia J3",
         "slug": "lps-alba-iulia-j3",
@@ -113761,8 +114383,14 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 20,
+        "display": 20
+      },
+      "awayScore": {
+        "current": 44,
+        "display": 44
+      },
       "coverage": -1,
       "time": {},
       "changes": {
@@ -114234,10 +114862,11 @@
       },
       "customId": "BmFisImFi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 3,
       "homeTeam": {
         "name": "AHC Cluj Napoca 2021 J3",
         "slug": "ahc-cluj-napoca-2021-j3",
@@ -114310,8 +114939,20 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "period2": 0,
+        "normaltime": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "period2": 0,
+        "normaltime": 0
+      },
       "coverage": -1,
       "time": {},
       "changes": {
@@ -117479,6 +118120,185 @@
     },
     {
       "tournament": {
+        "name": "Women Kup Srbije",
+        "slug": "women-kup-srbije",
+        "category": {
+          "name": "Serbia",
+          "slug": "serbia",
+          "sport": {
+            "name": "Handball",
+            "slug": "handball",
+            "id": 6
+          },
+          "country": {
+            "alpha2": "RS",
+            "alpha3": "SRB",
+            "name": "Serbia",
+            "slug": "serbia"
+          },
+          "id": 403,
+          "flag": "serbia",
+          "alpha2": "RS",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "صربيا",
+              "ru": "Сербия"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "Women Kup Srbije",
+          "slug": "women-kup-srbije",
+          "category": {
+            "name": "Serbia",
+            "slug": "serbia",
+            "sport": {
+              "name": "Handball",
+              "slug": "handball",
+              "id": 6
+            },
+            "country": {
+              "alpha2": "RS",
+              "alpha3": "SRB",
+              "name": "Serbia",
+              "slug": "serbia"
+            },
+            "id": 403,
+            "flag": "serbia",
+            "alpha2": "RS",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "صربيا",
+                "ru": "Сербия"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 0,
+          "hasPerformanceGraphFeature": false,
+          "country": {},
+          "id": 32766,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false
+        },
+        "priority": 0,
+        "id": 176695
+      },
+      "season": {
+        "name": "25/26",
+        "year": "25/26",
+        "editor": false,
+        "id": 91027
+      },
+      "roundInfo": {
+        "round": 29,
+        "name": "Final",
+        "cupRoundType": 1
+      },
+      "customId": "GjhcsxRIc",
+      "status": {
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
+      },
+      "winnerCode": 1,
+      "homeTeam": {
+        "name": "ŽRK Crvena Zvezda",
+        "slug": "crvena-zvezda",
+        "shortName": "Crvena Zvezda",
+        "gender": "F",
+        "sport": {
+          "name": "Handball",
+          "slug": "handball",
+          "id": 6
+        },
+        "userCount": 435,
+        "nameCode": "CZV",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "country": {
+          "alpha2": "RS",
+          "alpha3": "SRB",
+          "name": "Serbia",
+          "slug": "serbia"
+        },
+        "id": 334622,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "زد آر كيه كرفينا زفيزدا"
+          },
+          "shortNameTranslation": {
+            "ar": "كرفينا زفيزدا"
+          }
+        }
+      },
+      "awayTeam": {
+        "name": "ZJRK Bor RTB",
+        "slug": "zjrk-bor-rtb",
+        "shortName": "ZJRK Bor",
+        "gender": "F",
+        "sport": {
+          "name": "Handball",
+          "slug": "handball",
+          "id": 6
+        },
+        "userCount": 77,
+        "nameCode": "ZJR",
+        "national": false,
+        "type": 0,
+        "country": {
+          "alpha2": "RS",
+          "alpha3": "SRB",
+          "name": "Serbia",
+          "slug": "serbia"
+        },
+        "id": 267981,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "زد جي آر كيه بور آر تي بي"
+          },
+          "shortNameTranslation": {
+            "ar": "زد جي آر كيه بور"
+          }
+        }
+      },
+      "homeScore": {
+        "current": 31,
+        "display": 31
+      },
+      "awayScore": {
+        "current": 28,
+        "display": 28
+      },
+      "time": {},
+      "changes": {
+        "changeTimestamp": 0
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 15905658,
+      "slug": "zrk-crvena-zvezda-zjrk-bor-rtb",
+      "startTimestamp": 1774713600,
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "isEditor": false
+    },
+    {
+      "tournament": {
         "name": "Extraliga, Group A",
         "slug": "extraliga-group-a",
         "category": {
@@ -118663,7 +119483,7 @@
       "id": 14201895,
       "slug": "hc-dac-dunajska-streda-hk-laugaricio-trencin",
       "startTimestamp": 1774785600,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -120549,10 +121369,11 @@
       },
       "customId": "Aqwcsjkzc",
       "status": {
-        "code": 6,
-        "description": "1st half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Chungnam Provincial Office",
         "slug": "chungnam-provincial-office",
@@ -120624,17 +121445,20 @@
         }
       },
       "homeScore": {
-        "current": 11,
-        "display": 11,
-        "period1": 11
+        "current": 23,
+        "display": 23,
+        "period1": 13,
+        "period2": 10,
+        "normaltime": 23
       },
       "awayScore": {
-        "current": 12,
-        "display": 12,
-        "period1": 12
+        "current": 27,
+        "display": 27,
+        "period1": 14,
+        "period2": 13,
+        "normaltime": 27
       },
       "time": {
-        "played": 1643,
         "periodLength": 1800,
         "overtimeLength": 300,
         "totalPeriodCount": 2
@@ -120644,14 +121468,13 @@
           "time.played",
           "time.playedLastUpdated"
         ],
-        "changeTimestamp": 1774783987
+        "changeTimestamp": 1774787400
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14784268,
       "slug": "hanam-city-chungnam-provincial-office",
       "startTimestamp": 1774782000,
-      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -132449,7 +133272,7 @@
       "id": 15423626,
       "slug": "muskiz-eskubaloia-saieko-eskubaloia",
       "startTimestamp": 1774785600,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -133143,10 +133966,11 @@
       },
       "customId": "fLcslNUc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "CB SAN Jose Obrero",
         "slug": "cb-san-jose-obrero",
@@ -133211,18 +134035,38 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 24,
+        "display": 24,
+        "period1": 9,
+        "period2": 15,
+        "normaltime": 24
+      },
+      "awayScore": {
+        "current": 30,
+        "display": 30,
+        "period1": 13,
+        "period2": 17,
+        "normaltime": 30
+      },
+      "time": {
+        "periodLength": 1800,
+        "overtimeLength": 300,
+        "totalPeriodCount": 2
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.played",
+          "time.playedLastUpdated"
+        ],
+        "changeTimestamp": 1774788939
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14141137,
       "slug": "cb-san-jose-obrero-bm-elda-prestigio",
       "startTimestamp": 1774780200,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -133320,9 +134164,9 @@
       },
       "customId": "JZvbsabZc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Lanzarote Zonzamas",
@@ -133396,17 +134240,41 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 10,
+        "display": 10,
+        "period1": 10
+      },
+      "awayScore": {
+        "current": 11,
+        "display": 11,
+        "period1": 11
+      },
+      "time": {
+        "played": 1680,
+        "periodLength": 1800,
+        "overtimeLength": 300,
+        "totalPeriodCount": 2
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "time.played",
+          "time.playedLastUpdated",
+          "time.periodLength",
+          "time.overtimeLength",
+          "time.totalPeriodCount"
+        ],
+        "changeTimestamp": 1774789515
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14141133,
       "slug": "lanzarote-zonzamas-bm-porrino",
       "startTimestamp": 1774783800,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -146555,10 +147423,11 @@
       },
       "customId": "ZyjsvoRb",
       "status": {
-        "code": 6,
-        "description": "1st half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "HIF Karlskrona",
         "slug": "hif-karlskrona",
@@ -146633,32 +147502,36 @@
         }
       },
       "homeScore": {
-        "current": 14,
-        "display": 14,
-        "period1": 14
+        "current": 32,
+        "display": 32,
+        "period1": 17,
+        "period2": 15,
+        "normaltime": 32
       },
       "awayScore": {
-        "current": 13,
-        "display": 13,
-        "period1": 13
+        "current": 33,
+        "display": 33,
+        "period1": 19,
+        "period2": 14,
+        "normaltime": 33
       },
-      "time": {},
+      "time": {
+        "periodLength": 1800,
+        "overtimeLength": 300,
+        "totalPeriodCount": 2
+      },
       "changes": {
         "changes": [
           "time.played",
-          "time.playedLastUpdated",
-          "time.periodLength",
-          "time.overtimeLength",
-          "time.totalPeriodCount"
+          "time.playedLastUpdated"
         ],
-        "changeTimestamp": 1774783985
+        "changeTimestamp": 1774788453
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15901432,
       "slug": "amo-hk-alstermo-hif-karlskrona",
       "startTimestamp": 1774782000,
-      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -150786,9 +151659,9 @@
       },
       "customId": "artbsqzXi",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Goztepe SK",
@@ -150852,17 +151725,35 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 1
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "time": {
+        "played": 184,
+        "periodLength": 1800,
+        "overtimeLength": 300,
+        "totalPeriodCount": 2
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.played",
+          "time.playedLastUpdated"
+        ],
+        "changeTimestamp": 1774789539
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15535425,
       "slug": "goztepe-sk-ankara-yenimahalle-bsk",
       "startTimestamp": 1774789200,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
