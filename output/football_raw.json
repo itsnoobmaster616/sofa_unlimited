@@ -8231,10 +8231,11 @@
       },
       "customId": "tucswuc",
       "status": {
-        "code": 31,
-        "description": "Halftime",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 3,
       "homeTeam": {
         "name": "Brisbane Roar",
         "slug": "brisbane-roar",
@@ -8314,23 +8315,28 @@
         "current": 0,
         "display": 0,
         "period1": 0,
+        "period2": 0,
         "normaltime": 0
       },
       "awayScore": {
         "current": 0,
         "display": 0,
         "period1": 0,
+        "period2": 0,
         "normaltime": 0
       },
       "time": {
         "injuryTime1": 1,
-        "currentPeriodStartTimestamp": 1775124019
+        "injuryTime2": 3,
+        "currentPeriodStartTimestamp": 1775127721
       },
       "changes": {
         "changes": [
-          "time.injuryTime1"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1775126794
+        "changeTimestamp": 1775130615
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -8338,10 +8344,6 @@
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14671768,
-      "varInProgress": {
-        "homeTeam": false,
-        "awayTeam": false
-      },
       "slug": "sydney-fc-brisbane-roar",
       "startTimestamp": 1775124000,
       "finalResultOnly": false,
@@ -13513,10 +13515,11 @@
       },
       "customId": "rorsqOdd",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "South Korea U20",
         "slug": "south-korea-u20",
@@ -13595,46 +13598,38 @@
         "current": 2,
         "display": 2,
         "period1": 1,
-        "period2": 1
+        "period2": 1,
+        "normaltime": 2
       },
       "awayScore": {
         "current": 0,
         "display": 0,
         "period1": 0,
-        "period2": 0
+        "period2": 0,
+        "normaltime": 0
       },
       "time": {
         "periodLength": 2700,
         "overtimeLength": 900,
         "totalPeriodCount": 2,
-        "currentPeriodStartTimestamp": 1775124432,
-        "initial": 2700,
-        "max": 5400,
-        "extra": 540
+        "currentPeriodStartTimestamp": 1775121747
       },
       "changes": {
         "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime",
           "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1775126332
+        "changeTimestamp": 1775127563
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15038434,
-      "varInProgress": {
-        "homeTeam": false,
-        "awayTeam": false
-      },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1775124432,
-        "extra": 540
-      },
       "slug": "uzbekistan-u20-south-korea-u20",
       "startTimestamp": 1775120400,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -17038,9 +17033,9 @@
       },
       "customId": "oBsXiQb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "VSK Aarhus",
@@ -17116,17 +17111,48 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "time": {
+        "periodLength": 2700,
+        "overtimeLength": 900,
+        "totalPeriodCount": 2,
+        "currentPeriodStartTimestamp": 1775129474,
+        "initial": 0,
+        "max": 2700,
+        "extra": 540
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1775129474
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 14073669,
+      "varInProgress": {
+        "homeTeam": false,
+        "awayTeam": false
+      },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1775129474,
+        "extra": 540
+      },
       "slug": "vsk-aarhus-vendsyssel-ff",
       "startTimestamp": 1775129400,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -24698,8 +24724,8 @@
       },
       "customId": "rJnsJTXd",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -24780,34 +24806,40 @@
       "homeScore": {
         "current": 1,
         "display": 1,
-        "period1": 0,
-        "normaltime": 0
+        "period1": 1,
+        "period2": 0,
+        "normaltime": 1
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0,
-        "normaltime": 0
+        "current": 1,
+        "display": 1,
+        "period1": 1,
+        "period2": 0,
+        "normaltime": 1
       },
       "time": {
         "periodLength": 2700,
         "overtimeLength": 900,
         "totalPeriodCount": 2,
-        "currentPeriodStartTimestamp": 1775125800,
-        "initial": 0,
-        "max": 2700,
+        "currentPeriodStartTimestamp": 1775129580,
+        "initial": 2700,
+        "max": 5400,
         "extra": 540
       },
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display",
-          "homeScore.normaltime",
-          "awayScore.normaltime",
+          "status.code",
+          "status.description",
+          "homeScore.period2",
+          "awayScore.period2",
           "time.currentPeriodStart",
-          "time.period1Start"
+          "time.period2Start",
+          "homeScore.period1",
+          "homeScore.normaltime",
+          "awayScore.period1",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1775126822
+        "changeTimestamp": 1775129613
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -24818,14 +24850,14 @@
       },
       "statusTime": {
         "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1775125800,
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1775129580,
         "extra": 540
       },
       "slug": "namdhari-fc-dempo-sc",
       "startTimestamp": 1775125800,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -24940,8 +24972,8 @@
       },
       "customId": "AbYbsTBzh",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -25013,30 +25045,29 @@
       },
       "homeScore": {
         "current": 0,
-        "display": 0
+        "display": 0,
+        "period1": 0
       },
       "awayScore": {
-        "current": 0,
-        "display": 0
+        "current": 1,
+        "display": 1,
+        "period1": 0,
+        "period2": 1
       },
       "time": {
-        "currentPeriodStartTimestamp": 1775125815,
-        "initial": 0,
-        "max": 2700,
+        "injuryTime1": 2,
+        "currentPeriodStartTimestamp": 1775129662,
+        "initial": 2700,
+        "max": 5400,
         "extra": 540
       },
       "changes": {
         "changes": [
-          "status.code",
-          "status.description",
-          "status.type",
-          "homeScore.current",
-          "homeScore.display",
           "awayScore.current",
           "awayScore.display",
-          "time.currentPeriodStart"
+          "awayScore.period2"
         ],
-        "changeTimestamp": 1775125820
+        "changeTimestamp": 1775130254
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -25047,14 +25078,14 @@
       },
       "statusTime": {
         "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1775125815,
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1775129662,
         "extra": 540
       },
       "slug": "diamond-harbour-fc-real-kashmir",
       "startTimestamp": 1775125800,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -26870,8 +26901,8 @@
       },
       "customId": "aicsBwr",
       "status": {
-        "code": 6,
-        "description": "1st half",
+        "code": 7,
+        "description": "2nd half",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -26948,33 +26979,34 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0
+        "current": 1,
+        "display": 1,
+        "period1": 0,
+        "period2": 1
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0
+        "current": 1,
+        "display": 1,
+        "period1": 0,
+        "period2": 1
       },
       "time": {
         "periodLength": 2700,
         "overtimeLength": 900,
         "totalPeriodCount": 2,
-        "currentPeriodStartTimestamp": 1775125811,
-        "initial": 0,
-        "max": 2700,
+        "currentPeriodStartTimestamp": 1775129445,
+        "initial": 2700,
+        "max": 5400,
         "extra": 540
       },
       "changes": {
         "changes": [
-          "homeScore.period1",
-          "awayScore.period1",
-          "time.periodLength",
-          "time.overtimeLength",
-          "time.totalPeriodCount"
+          "eventState.statusIndicator",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period2"
         ],
-        "changeTimestamp": 1775125835
+        "changeTimestamp": 1775130292
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -26985,14 +27017,14 @@
       },
       "statusTime": {
         "prefix": "",
-        "initial": 0,
-        "max": 2700,
-        "timestamp": 1775125811,
+        "initial": 2700,
+        "max": 5400,
+        "timestamp": 1775129445,
         "extra": 540
       },
       "slug": "tikves-kavadarci-bashkimi-1947",
       "startTimestamp": 1775125800,
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -28767,7 +28799,7 @@
         "changes": [
           "cardsCode"
         ],
-        "changeTimestamp": 1775094228
+        "changeTimestamp": 1775129870
       },
       "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
@@ -28775,7 +28807,7 @@
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15400144,
-      "homeRedCards": 2,
+      "homeRedCards": 1,
       "slug": "sportivo-trinidense-olimpia",
       "startTimestamp": 1775086200,
       "finalResultOnly": false,
