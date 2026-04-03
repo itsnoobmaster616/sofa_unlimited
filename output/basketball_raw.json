@@ -12224,9 +12224,9 @@
       },
       "customId": "KfbdsNfbd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 13,
+        "description": "1st quarter",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "West Adelaide Bearcats",
@@ -12294,13 +12294,34 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "awayScore": {
+        "current": 3,
+        "display": 3,
+        "period1": 3
+      },
+      "time": {
+        "played": 105,
+        "periodLength": 600,
+        "overtimeLength": 300,
+        "totalPeriodCount": 4
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "time.played",
+          "time.playedLastUpdated"
+        ],
+        "changeTimestamp": 1775203389
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15346531,
       "periods": {
@@ -12313,6 +12334,7 @@
       },
       "slug": "west-adelaide-bearcats-forestville-eagles",
       "startTimestamp": 1775203200,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -13534,10 +13556,11 @@
       },
       "customId": "agbdsggbd",
       "status": {
-        "code": 15,
-        "description": "3rd quarter",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "West Adelaide Bearcats",
         "slug": "west-adelaide-bearcats",
@@ -13605,16 +13628,22 @@
         }
       },
       "homeScore": {
-        "current": 45,
-        "display": 45,
+        "current": 82,
+        "display": 82,
         "period1": 21,
-        "period2": 24
+        "period2": 24,
+        "period3": 21,
+        "period4": 16,
+        "normaltime": 82
       },
       "awayScore": {
-        "current": 28,
-        "display": 28,
+        "current": 54,
+        "display": 54,
         "period1": 10,
-        "period2": 18
+        "period2": 18,
+        "period3": 13,
+        "period4": 13,
+        "normaltime": 54
       },
       "time": {
         "periodLength": 600,
@@ -13625,10 +13654,11 @@
         "changes": [
           "status.code",
           "status.description",
-          "time.played",
-          "time.playedLastUpdated"
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1775198822
+        "changeTimestamp": 1775202243
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -13644,7 +13674,6 @@
       },
       "slug": "west-adelaide-bearcats-forestville-eagles",
       "startTimestamp": 1775196000,
-      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -25985,10 +26014,11 @@
       },
       "customId": "rlqjstlqj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Virka U15",
         "slug": "virka-u15",
@@ -26045,11 +26075,27 @@
           "text": "#ffffff"
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 50,
+        "display": 50
+      },
+      "awayScore": {
+        "current": 60,
+        "display": 60
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "providerLock.status",
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "awayScore.current",
+          "awayScore.display"
+        ],
+        "changeTimestamp": 1775201226
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -26064,7 +26110,7 @@
       },
       "slug": "virka-u15-radnik-u15",
       "startTimestamp": 1775138400,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
       "eventFilters": {
@@ -47855,6 +47901,401 @@
     },
     {
       "tournament": {
+        "name": "C ESKANA - Group 1",
+        "slug": "c-eskana-group-1",
+        "category": {
+          "name": "Greece Amateur",
+          "slug": "greece-amateur",
+          "sport": {
+            "name": "Basketball",
+            "slug": "basketball",
+            "id": 2
+          },
+          "priority": 0,
+          "country": {
+            "alpha2": "GR",
+            "alpha3": "GRC",
+            "name": "Greece",
+            "slug": "greece"
+          },
+          "id": 1707,
+          "flag": "greece",
+          "alpha2": "GR",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "اليونان هواة",
+              "ru": "Греция Любители"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "C ESKANA",
+          "slug": "c-eskana",
+          "category": {
+            "name": "Greece Amateur",
+            "slug": "greece-amateur",
+            "sport": {
+              "name": "Basketball",
+              "slug": "basketball",
+              "id": 2
+            },
+            "priority": 0,
+            "country": {
+              "alpha2": "GR",
+              "alpha3": "GRC",
+              "name": "Greece",
+              "slug": "greece"
+            },
+            "id": 1707,
+            "flag": "greece",
+            "alpha2": "GR",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "اليونان هواة",
+                "ru": "Греция Любители"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 19,
+          "hasPerformanceGraphFeature": false,
+          "country": {},
+          "id": 23515,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "سي إيسكانا"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "groupName": "Group 1",
+        "id": 138482,
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "C إيسكانا - المجموعة 1"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "season": {
+        "name": "C ESKANA 25/26",
+        "year": "25/26",
+        "editor": false,
+        "id": 81918
+      },
+      "roundInfo": {
+        "round": 22
+      },
+      "customId": "RghcsERyc",
+      "status": {
+        "code": 0,
+        "description": "Not started",
+        "type": "notstarted"
+      },
+      "homeTeam": {
+        "name": "Aris Glyfadas",
+        "slug": "aris-glifadas",
+        "shortName": "Aris Glifadas",
+        "sport": {
+          "name": "Basketball",
+          "slug": "basketball",
+          "id": 2
+        },
+        "userCount": 28,
+        "nameCode": "AGL",
+        "national": false,
+        "type": 0,
+        "country": {
+          "alpha2": "GR",
+          "alpha3": "GRC",
+          "name": "Greece",
+          "slug": "greece"
+        },
+        "id": 309629,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "أريس غليفاداس"
+          },
+          "shortNameTranslation": {
+            "ar": "أريس غليفاداس"
+          }
+        }
+      },
+      "awayTeam": {
+        "name": "Filia Peramatos",
+        "slug": "filia-peramatos",
+        "sport": {
+          "name": "Basketball",
+          "slug": "basketball",
+          "id": 2
+        },
+        "userCount": 23,
+        "nameCode": "FPE",
+        "national": false,
+        "type": 0,
+        "country": {
+          "alpha2": "GR",
+          "alpha3": "GRC",
+          "name": "Greece",
+          "slug": "greece"
+        },
+        "id": 267842,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "فيليا بيراماتوس"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "homeScore": {},
+      "awayScore": {},
+      "time": {},
+      "changes": {
+        "changeTimestamp": 0
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 15940291,
+      "periods": {
+        "current": "Score",
+        "period1": "1st quarter",
+        "period2": "2nd quarter",
+        "period3": "3rd quarter",
+        "period4": "4th quarter",
+        "overtime": "Overtime"
+      },
+      "slug": "aris-glyfadas-filia-peramatos",
+      "startTimestamp": 1775241045,
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "isEditor": false,
+      "eventFilters": {
+        "category": [
+          "club"
+        ],
+        "gender": [
+          "M"
+        ]
+      }
+    },
+    {
+      "tournament": {
+        "name": "C ESKANA - Group 2",
+        "slug": "c-eskana-group-2",
+        "category": {
+          "name": "Greece Amateur",
+          "slug": "greece-amateur",
+          "sport": {
+            "name": "Basketball",
+            "slug": "basketball",
+            "id": 2
+          },
+          "priority": 0,
+          "country": {
+            "alpha2": "GR",
+            "alpha3": "GRC",
+            "name": "Greece",
+            "slug": "greece"
+          },
+          "id": 1707,
+          "flag": "greece",
+          "alpha2": "GR",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "اليونان هواة",
+              "ru": "Греция Любители"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "C ESKANA",
+          "slug": "c-eskana",
+          "category": {
+            "name": "Greece Amateur",
+            "slug": "greece-amateur",
+            "sport": {
+              "name": "Basketball",
+              "slug": "basketball",
+              "id": 2
+            },
+            "priority": 0,
+            "country": {
+              "alpha2": "GR",
+              "alpha3": "GRC",
+              "name": "Greece",
+              "slug": "greece"
+            },
+            "id": 1707,
+            "flag": "greece",
+            "alpha2": "GR",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "اليونان هواة",
+                "ru": "Греция Любители"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 19,
+          "hasPerformanceGraphFeature": false,
+          "country": {},
+          "id": 23515,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "سي إيسكانا"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "groupName": "Group 2",
+        "id": 138483,
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "C إيسكانا - المجموعة 2"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "season": {
+        "name": "C ESKANA 25/26",
+        "year": "25/26",
+        "editor": false,
+        "id": 81918
+      },
+      "roundInfo": {
+        "round": 22
+      },
+      "customId": "OGvcsUbJd",
+      "status": {
+        "code": 0,
+        "description": "Not started",
+        "type": "notstarted"
+      },
+      "homeTeam": {
+        "name": "Panneapolikos Nikaias",
+        "slug": "panneapolikos-nikaias",
+        "shortName": "Panneapolikos",
+        "gender": "M",
+        "sport": {
+          "name": "Basketball",
+          "slug": "basketball",
+          "id": 2
+        },
+        "userCount": 12,
+        "nameCode": "PNI",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "country": {
+          "alpha2": "GR",
+          "alpha3": "GRC",
+          "name": "Greece",
+          "slug": "greece"
+        },
+        "id": 301589,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "بانابوليكوس نيكاياس"
+          },
+          "shortNameTranslation": {
+            "ar": "بانابوليكوس"
+          }
+        }
+      },
+      "awayTeam": {
+        "name": "Trachones Dia Alimou",
+        "slug": "trachones-dia-alimou",
+        "shortName": "Trachones Dia Alimou",
+        "sport": {
+          "name": "Basketball",
+          "slug": "basketball",
+          "id": 2
+        },
+        "userCount": 26,
+        "nameCode": "TDA",
+        "national": false,
+        "type": 0,
+        "country": {
+          "alpha2": "GR",
+          "alpha3": "GRC",
+          "name": "Greece",
+          "slug": "greece"
+        },
+        "id": 460094,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "تراخونيس ديا أليموس"
+          },
+          "shortNameTranslation": {
+            "ar": "تراخونيس ديا أليموس"
+          }
+        }
+      },
+      "homeScore": {},
+      "awayScore": {},
+      "time": {},
+      "changes": {
+        "changeTimestamp": 0
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 15940289,
+      "periods": {
+        "current": "Score",
+        "period1": "1st quarter",
+        "period2": "2nd quarter",
+        "period3": "3rd quarter",
+        "period4": "4th quarter",
+        "overtime": "Overtime"
+      },
+      "slug": "trachones-dia-alimou-panneapolikos-nikaias",
+      "startTimestamp": 1775241000,
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "isEditor": false,
+      "eventFilters": {
+        "category": [
+          "club"
+        ],
+        "gender": [
+          "M"
+        ]
+      }
+    },
+    {
+      "tournament": {
         "name": "C ESKANA - Group 2",
         "slug": "c-eskana-group-2",
         "category": {
@@ -57531,9 +57972,9 @@
       },
       "customId": "cwdjsEgfj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 15,
+        "description": "3rd quarter",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "BC Spartak Pleven U17",
@@ -57603,13 +58044,38 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 44,
+        "display": 44,
+        "period1": 18,
+        "period2": 20,
+        "period3": 6
+      },
+      "awayScore": {
+        "current": 50,
+        "display": 50,
+        "period1": 16,
+        "period2": 22,
+        "period3": 12
+      },
+      "time": {
+        "played": 1574,
+        "periodLength": 600,
+        "overtimeLength": 300,
+        "totalPeriodCount": 4
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.current",
+          "homeScore.display",
+          "time.played",
+          "time.playedLastUpdated",
+          "homeScore.period3"
+        ],
+        "changeTimestamp": 1775203389
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15936375,
       "periods": {
@@ -57622,6 +58088,7 @@
       },
       "slug": "bc-spartak-pleven-u17-roseto-academy-u17",
       "startTimestamp": 1775199600,
+      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -57716,9 +58183,9 @@
       },
       "customId": "bwdjsEWlj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 15,
+        "description": "3rd quarter",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Rens United New York U17",
@@ -57782,13 +58249,37 @@
           "text": "#ffffff"
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 44,
+        "display": 44,
+        "period1": 16,
+        "period2": 18,
+        "period3": 10
+      },
+      "awayScore": {
+        "current": 48,
+        "display": 48,
+        "period1": 19,
+        "period2": 26,
+        "period3": 3
+      },
+      "time": {
+        "played": 1395,
+        "periodLength": 600,
+        "overtimeLength": 300,
+        "totalPeriodCount": 4
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.played",
+          "time.playedLastUpdated",
+          "time.clockRunning",
+          "time.clockRunningLastUpdated"
+        ],
+        "changeTimestamp": 1775203367
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15936376,
       "periods": {
@@ -57801,6 +58292,7 @@
       },
       "slug": "kickz-ibam-u17-rens-united-new-york-u17",
       "startTimestamp": 1775199600,
+      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -59179,9 +59671,9 @@
       },
       "customId": "FkJjsHkJj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 15,
+        "description": "3rd quarter",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "BC Rustavi U16",
@@ -59239,13 +59731,38 @@
           "text": "#ffffff"
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 34,
+        "display": 34,
+        "period1": 16,
+        "period2": 13,
+        "period3": 5
+      },
+      "awayScore": {
+        "current": 43,
+        "display": 43,
+        "period1": 17,
+        "period2": 16,
+        "period3": 10
+      },
+      "time": {
+        "played": 1340,
+        "periodLength": 600,
+        "overtimeLength": 300,
+        "totalPeriodCount": 4
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "awayScore.current",
+          "awayScore.display",
+          "time.played",
+          "time.playedLastUpdated",
+          "awayScore.period3"
+        ],
+        "changeTimestamp": 1775203387
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15915769,
       "periods": {
@@ -59258,6 +59775,7 @@
       },
       "slug": "jump-kazakhstan-u16-bc-rustavi-u16",
       "startTimestamp": 1775199600,
+      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -62380,10 +62898,11 @@
       },
       "customId": "JmxeszyJj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "China 3x3",
         "slug": "china-3x3",
@@ -62450,12 +62969,32 @@
           "text": "#ffffff"
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 19,
+        "display": 19,
+        "normaltime": 19
+      },
+      "awayScore": {
+        "current": 21,
+        "display": 21,
+        "normaltime": 21
+      },
       "coverage": -1,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.period3",
+          "homeScore.period4",
+          "homeScore.normaltime",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.period3",
+          "awayScore.period4",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1775200842
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -63263,10 +63802,11 @@
       },
       "customId": "MyJjsVyJj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "New Zealand 3x3",
         "slug": "new-zealand-3x3",
@@ -63325,12 +63865,22 @@
           "text": "#ffffff"
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 16,
+        "display": 16
+      },
+      "awayScore": {
+        "current": 11,
+        "display": 11
+      },
       "coverage": -1,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.normaltime",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1775202740
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -64127,9 +64677,9 @@
       },
       "customId": "PmxesNAwj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 20,
+        "description": "Started",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "China 3x3",
@@ -64196,12 +64746,22 @@
           "text": "#ffffff"
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 5,
+        "display": 5
+      },
+      "awayScore": {
+        "current": 5,
+        "display": 5
+      },
       "coverage": -1,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "awayScore.current",
+          "awayScore.display"
+        ],
+        "changeTimestamp": 1775203396
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
