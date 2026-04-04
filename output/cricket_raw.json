@@ -4751,9 +4751,9 @@
       },
       "customId": "baYdsfYfe",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 21,
+        "description": "1st Inning",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Mexico",
@@ -4827,16 +4827,34 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 31,
+        "display": 31,
+        "innings": {
+          "inning1": {
+            "score": 31,
+            "wickets": 7,
+            "overs": 8.2,
+            "runRate": 3.72
+          }
+        }
+      },
       "coverage": 1,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "awayScore.innings"
+        ],
+        "changeTimestamp": 1775335086
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15840446,
+      "currentBattingTeamId": 514905,
       "endTimestamp": 1775347200,
       "slug": "costa-rica-mexico",
       "startTimestamp": 1775332800,
@@ -4847,6 +4865,7 @@
         "inning3": "3rd Inning",
         "inning4": "4th Inning"
       },
+      "lastPeriod": "inning1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -6554,10 +6573,11 @@
       },
       "customId": "rfAbsVgAb",
       "status": {
-        "code": 21,
-        "description": "1st Inning",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Southern Rocks",
         "slug": "southern-rocks",
@@ -6645,14 +6665,14 @@
         }
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
+        "current": 274,
+        "display": 274,
         "innings": {
           "inning1": {
-            "score": 0,
-            "wickets": 0,
-            "overs": 0,
-            "runRate": 0,
+            "score": 274,
+            "wickets": 8,
+            "overs": 48.2,
+            "runRate": 5.67,
             "targetRunRate": 5.48
           }
         }
@@ -6661,13 +6681,16 @@
       "time": {},
       "changes": {
         "changes": [
-          "awayScore.innings"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1775331133
+        "changeTimestamp": 1775332032
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15494887,
+      "note": "Mashonaland Eagles beat Southern Rocks by 2 wickets",
       "endTimestamp": 1775316600,
       "slug": "southern-rocks-mashonaland-eagles",
       "startTimestamp": 1775287800,
@@ -6678,7 +6701,6 @@
         "inning3": "3rd Inning",
         "inning4": "4th Inning"
       },
-      "lastPeriod": "inning1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
