@@ -330,9 +330,9 @@
       },
       "customId": "RgAbsTgAb",
       "status": {
-        "code": 61,
-        "description": "Start delayed",
-        "type": "delayed"
+        "code": 80,
+        "description": "Interrupted",
+        "type": "interrupted"
       },
       "homeTeam": {
         "name": "Rajasthan Royals",
@@ -410,17 +410,37 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "innings": {
+          "inning1": {
+            "score": 0,
+            "wickets": 0,
+            "overs": 0,
+            "runRate": 0
+          }
+        }
+      },
       "coverage": 1,
       "time": {},
       "changes": {
         "changes": [
           "status.code",
           "status.description",
-          "status.type"
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.innings",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.innings"
         ],
-        "changeTimestamp": 1775827851
+        "changeTimestamp": 1775832153
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -963,9 +983,9 @@
       },
       "customId": "rYJbsLowj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 21,
+        "description": "1st Inning",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Quetta Gladiators",
@@ -1028,16 +1048,36 @@
           "text": "#ffffff"
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 90,
+        "display": 90,
+        "innings": {
+          "inning1": {
+            "score": 90,
+            "wickets": 1,
+            "overs": 12.5,
+            "runRate": 7.01
+          }
+        }
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
       "coverage": 2,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.innings"
+        ],
+        "changeTimestamp": 1775832740
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15706166,
+      "currentBattingTeamId": 212417,
       "endTimestamp": 1775844000,
       "slug": "rawalpindiz-quetta-gladiators",
       "startTimestamp": 1775829600,
@@ -1048,6 +1088,7 @@
         "inning3": "3rd Inning",
         "inning4": "4th Inning"
       },
+      "lastPeriod": "inning1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -1409,14 +1450,14 @@
         }
       },
       "homeScore": {
-        "current": 118,
-        "display": 118,
+        "current": 193,
+        "display": 193,
         "innings": {
           "inning1": {
-            "score": 118,
-            "wickets": 2,
-            "overs": 29.2,
-            "runRate": 4.02,
+            "score": 193,
+            "wickets": 6,
+            "overs": 44.5,
+            "runRate": 4.3,
             "targetRunRate": 4.38
           }
         }
@@ -1439,7 +1480,7 @@
         "changes": [
           "homeScore.innings"
         ],
-        "changeTimestamp": 1775828410
+        "changeTimestamp": 1775832745
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -1553,9 +1594,9 @@
       },
       "customId": "JEpdsLEpd",
       "status": {
-        "code": 141,
-        "description": "End of day 1",
-        "type": "willcontinue"
+        "code": 21,
+        "description": "1st Inning",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Amo Region",
@@ -1621,7 +1662,15 @@
       },
       "homeScore": {
         "current": 0,
-        "display": 0
+        "display": 0,
+        "innings": {
+          "inning1": {
+            "score": 0,
+            "wickets": 0,
+            "overs": 0,
+            "runRate": 0
+          }
+        }
       },
       "awayScore": {
         "current": 317,
@@ -1641,12 +1690,9 @@
         "changes": [
           "status.code",
           "status.description",
-          "status.type",
-          "awayScore.current",
-          "awayScore.display",
-          "awayScore.innings"
+          "status.type"
         ],
-        "changeTimestamp": 1775752819
+        "changeTimestamp": 1775831894
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -1661,7 +1707,8 @@
         "inning3": "3rd Inning",
         "inning4": "4th Inning"
       },
-      "finalResultOnly": true,
+      "lastPeriod": "inning1",
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -1758,8 +1805,8 @@
       },
       "customId": "IEpdsKEpd",
       "status": {
-        "code": 141,
-        "description": "End of day 1",
+        "code": 142,
+        "description": "End of day 2",
         "type": "willcontinue"
       },
       "homeTeam": {
@@ -1825,26 +1872,32 @@
         }
       },
       "homeScore": {
-        "current": 319,
-        "display": 319,
+        "current": 388,
+        "display": 388,
         "innings": {
           "inning1": {
             "score": 319,
             "wickets": 10,
             "overs": 72,
             "runRate": 4.43
+          },
+          "inning2": {
+            "score": 69,
+            "wickets": 2,
+            "overs": 19,
+            "runRate": 3.63
           }
         }
       },
       "awayScore": {
-        "current": 70,
-        "display": 70,
+        "current": 368,
+        "display": 368,
         "innings": {
           "inning1": {
-            "score": 70,
-            "wickets": 1,
-            "overs": 16,
-            "runRate": 4.38
+            "score": 368,
+            "wickets": 10,
+            "overs": 84.5,
+            "runRate": 4.34
           }
         }
       },
@@ -1854,12 +1907,9 @@
         "changes": [
           "status.code",
           "status.description",
-          "status.type",
-          "awayScore.current",
-          "awayScore.display",
-          "awayScore.innings"
+          "status.type"
         ],
-        "changeTimestamp": 1775749390
+        "changeTimestamp": 1775831230
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -1874,7 +1924,7 @@
         "inning3": "3rd Inning",
         "inning4": "4th Inning"
       },
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
     },
@@ -2426,8 +2476,8 @@
       },
       "customId": "EgAbsHgAb",
       "status": {
-        "code": 21,
-        "description": "1st Inning",
+        "code": 45,
+        "description": "Inn break",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -2505,14 +2555,14 @@
         }
       },
       "homeScore": {
-        "current": 125,
-        "display": 125,
+        "current": 149,
+        "display": 149,
         "innings": {
           "inning1": {
-            "score": 125,
-            "wickets": 5,
-            "overs": 44.2,
-            "runRate": 2.82
+            "score": 149,
+            "wickets": 10,
+            "overs": 51,
+            "runRate": 2.92
           }
         }
       },
@@ -2524,11 +2574,10 @@
       "time": {},
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display",
-          "homeScore.innings"
+          "status.code",
+          "status.description"
         ],
-        "changeTimestamp": 1775828295
+        "changeTimestamp": 1775831297
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -2543,7 +2592,6 @@
         "inning3": "3rd Inning",
         "inning4": "4th Inning"
       },
-      "lastPeriod": "inning1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -2724,14 +2772,14 @@
         }
       },
       "homeScore": {
-        "current": 159,
-        "display": 159,
+        "current": 235,
+        "display": 235,
         "innings": {
           "inning1": {
-            "score": 159,
-            "wickets": 6,
-            "overs": 39,
-            "runRate": 4.08
+            "score": 235,
+            "wickets": 7,
+            "overs": 52.3,
+            "runRate": 4.48
           }
         }
       },
@@ -2747,7 +2795,7 @@
           "homeScore.display",
           "homeScore.innings"
         ],
-        "changeTimestamp": 1775828412
+        "changeTimestamp": 1775831483
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -2943,14 +2991,14 @@
         }
       },
       "homeScore": {
-        "current": 160,
-        "display": 160,
+        "current": 229,
+        "display": 229,
         "innings": {
           "inning1": {
-            "score": 160,
+            "score": 229,
             "wickets": 2,
-            "overs": 40.4,
-            "runRate": 3.93
+            "overs": 56,
+            "runRate": 4.09
           }
         }
       },
@@ -2966,7 +3014,7 @@
           "homeScore.display",
           "homeScore.innings"
         ],
-        "changeTimestamp": 1775827583
+        "changeTimestamp": 1775831597
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -3166,14 +3214,14 @@
         "display": 0
       },
       "awayScore": {
-        "current": 109,
-        "display": 109,
+        "current": 178,
+        "display": 178,
         "innings": {
           "inning1": {
-            "score": 109,
-            "wickets": 5,
-            "overs": 39.1,
-            "runRate": 2.78
+            "score": 178,
+            "wickets": 6,
+            "overs": 55,
+            "runRate": 3.24
           }
         }
       },
@@ -3185,7 +3233,7 @@
           "awayScore.display",
           "awayScore.innings"
         ],
-        "changeTimestamp": 1775827641
+        "changeTimestamp": 1775831652
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -3385,14 +3433,14 @@
         "display": 0
       },
       "awayScore": {
-        "current": 116,
-        "display": 116,
+        "current": 205,
+        "display": 205,
         "innings": {
           "inning1": {
-            "score": 116,
-            "wickets": 4,
-            "overs": 39,
-            "runRate": 2.97
+            "score": 205,
+            "wickets": 6,
+            "overs": 55,
+            "runRate": 3.73
           }
         }
       },
@@ -3404,7 +3452,7 @@
           "awayScore.display",
           "awayScore.innings"
         ],
-        "changeTimestamp": 1775827750
+        "changeTimestamp": 1775831782
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -3604,14 +3652,14 @@
         "display": 0
       },
       "awayScore": {
-        "current": 218,
-        "display": 218,
+        "current": 305,
+        "display": 305,
         "innings": {
           "inning1": {
-            "score": 218,
-            "wickets": 0,
-            "overs": 41,
-            "runRate": 5.32
+            "score": 305,
+            "wickets": 1,
+            "overs": 58,
+            "runRate": 5.26
           }
         }
       },
@@ -3619,11 +3667,9 @@
       "time": {},
       "changes": {
         "changes": [
-          "awayScore.current",
-          "awayScore.display",
           "awayScore.innings"
         ],
-        "changeTimestamp": 1775827878
+        "changeTimestamp": 1775831907
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -3823,14 +3869,14 @@
         "display": 0
       },
       "awayScore": {
-        "current": 189,
-        "display": 189,
+        "current": 273,
+        "display": 273,
         "innings": {
           "inning1": {
-            "score": 189,
-            "wickets": 0,
-            "overs": 42.2,
-            "runRate": 4.46
+            "score": 273,
+            "wickets": 1,
+            "overs": 58,
+            "runRate": 4.71
           }
         }
       },
@@ -3842,7 +3888,7 @@
           "awayScore.display",
           "awayScore.innings"
         ],
-        "changeTimestamp": 1775827934
+        "changeTimestamp": 1775831963
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -4038,14 +4084,14 @@
         }
       },
       "homeScore": {
-        "current": 148,
-        "display": 148,
+        "current": 238,
+        "display": 238,
         "innings": {
           "inning1": {
-            "score": 148,
-            "wickets": 2,
-            "overs": 43.2,
-            "runRate": 3.42
+            "score": 238,
+            "wickets": 3,
+            "overs": 61.1,
+            "runRate": 3.89
           }
         }
       },
@@ -4061,7 +4107,7 @@
           "homeScore.display",
           "homeScore.innings"
         ],
-        "changeTimestamp": 1775828178
+        "changeTimestamp": 1775832494
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -4178,8 +4224,8 @@
       },
       "customId": "DgAbsIgAb",
       "status": {
-        "code": 21,
-        "description": "1st Inning",
+        "code": 45,
+        "description": "Inn break",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -4261,14 +4307,14 @@
         "display": 0
       },
       "awayScore": {
-        "current": 115,
-        "display": 115,
+        "current": 191,
+        "display": 191,
         "innings": {
           "inning1": {
-            "score": 115,
-            "wickets": 7,
-            "overs": 41.2,
-            "runRate": 2.78
+            "score": 191,
+            "wickets": 10,
+            "overs": 54.5,
+            "runRate": 3.48
           }
         }
       },
@@ -4276,11 +4322,13 @@
       "time": {},
       "changes": {
         "changes": [
+          "status.code",
+          "status.description",
           "awayScore.current",
           "awayScore.display",
           "awayScore.innings"
         ],
-        "changeTimestamp": 1775828235
+        "changeTimestamp": 1775832624
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -4295,7 +4343,6 @@
         "inning3": "3rd Inning",
         "inning4": "4th Inning"
       },
-      "lastPeriod": "inning1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -6466,35 +6513,44 @@
         }
       },
       "homeScore": {
-        "current": 83,
-        "display": 83,
+        "current": 86,
+        "display": 86,
         "innings": {
           "inning1": {
-            "score": 83,
-            "wickets": 8,
-            "overs": 18.5,
-            "runRate": 4.41
+            "score": 86,
+            "wickets": 10,
+            "overs": 20,
+            "runRate": 4.3
           }
         }
       },
       "awayScore": {
-        "current": 0,
-        "display": 0
+        "current": 29,
+        "display": 29,
+        "innings": {
+          "inning1": {
+            "score": 29,
+            "wickets": 9,
+            "overs": 13,
+            "runRate": 2.23,
+            "targetRunRate": 4.35
+          }
+        }
       },
       "coverage": 1,
       "time": {},
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display",
-          "homeScore.innings"
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.innings"
         ],
-        "changeTimestamp": 1775828001
+        "changeTimestamp": 1775832627
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15984358,
-      "currentBattingTeamId": 489474,
+      "currentBattingTeamId": 1178810,
       "endTimestamp": 1775837700,
       "slug": "zambia-women-malawi-women",
       "startTimestamp": 1775823300,
@@ -7668,10 +7724,11 @@
       },
       "customId": "uwDdswlJj",
       "status": {
-        "code": 21,
-        "description": "1st Inning",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Uganda A Women",
         "slug": "uganda-a-women",
@@ -7728,14 +7785,14 @@
         }
       },
       "homeScore": {
-        "current": 29,
-        "display": 29,
+        "current": 88,
+        "display": 88,
         "innings": {
           "inning1": {
-            "score": 29,
-            "wickets": 1,
-            "overs": 5,
-            "runRate": 5.8,
+            "score": 88,
+            "wickets": 7,
+            "overs": 20,
+            "runRate": 4.4,
             "targetRunRate": 5.55
           }
         }
@@ -7756,15 +7813,16 @@
       "time": {},
       "changes": {
         "changes": [
-          "homeScore.current",
-          "homeScore.display",
-          "homeScore.innings"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1775827820
+        "changeTimestamp": 1775831247
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15916999,
+      "note": "USA Women beat Uganda A Women by 20 runs",
       "currentBattingTeamId": 1210571,
       "endTimestamp": 1775833200,
       "slug": "ugandawomen-usa-women",
@@ -7776,7 +7834,6 @@
         "inning3": "3rd Inning",
         "inning4": "4th Inning"
       },
-      "lastPeriod": "inning1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false

@@ -3115,10 +3115,11 @@
       },
       "customId": "MeWcsacpd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 1001,
+        "description": "First game",
+        "type": "inprogress"
       },
+      "winnerCode": 3,
       "homeTeam": {
         "name": "ENCE",
         "slug": "ence",
@@ -3185,12 +3186,30 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
       "coverage": 91,
-      "time": {},
+      "time": {
+        "currentPeriodStartTimestamp": 1775831710
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "awayScore.current",
+          "awayScore.display",
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1775831711
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
@@ -6072,10 +6091,11 @@
       },
       "customId": "YMLdsKNJj",
       "status": {
-        "code": 1001,
-        "description": "First game",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Njuškalo",
         "slug": "njuskalo",
@@ -6131,8 +6151,8 @@
         "display": 0
       },
       "awayScore": {
-        "current": 0,
-        "display": 0
+        "current": 1,
+        "display": 1
       },
       "coverage": 91,
       "time": {},
@@ -6231,10 +6251,11 @@
       },
       "customId": "LNJjsMNJj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "GameBoost",
         "slug": "gameboost",
@@ -6279,15 +6300,22 @@
           "text": "#ffffff"
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 1,
+        "display": 1
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
+      "coverage": 91,
       "time": {},
       "changes": {
         "changeTimestamp": 0
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
-      "id": 15981985,
+      "id": 15988536,
       "roundsInAHalf": 12,
       "slug": "gameboost-algebra-bernays",
       "startTimestamp": 1775829600,
@@ -10308,9 +10336,9 @@
       },
       "customId": "CFWcslWXi",
       "status": {
-        "code": 30,
-        "description": "Pause",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
       "winnerCode": 1,
       "homeTeam": {
@@ -10376,28 +10404,31 @@
         }
       },
       "homeScore": {
-        "current": 1,
-        "display": 1,
-        "period1": 1
+        "current": 2,
+        "display": 2,
+        "period1": 1,
+        "period2": 1
       },
       "awayScore": {
         "current": 0,
         "display": 0,
-        "period1": 0
+        "period1": 0,
+        "period2": 0
       },
       "coverage": 91,
       "time": {},
       "changes": {
         "changes": [
-          "homeScore.display",
           "status.code",
           "status.description",
+          "status.type",
           "homeScore.current",
-          "homeScore.period1",
-          "awayScore.period1",
+          "homeScore.display",
+          "homeScore.period2",
+          "awayScore.period2",
           "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1775828107
+        "changeTimestamp": 1775830931
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
@@ -10564,6 +10595,173 @@
       "roundsInAHalf": 12,
       "slug": "young-tigeres-vexar",
       "startTimestamp": 1775835000,
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "isEditor": false
+    },
+    {
+      "tournament": {
+        "name": "CCT Europe Playoffs",
+        "slug": "cct-europe-playoffs",
+        "category": {
+          "name": "Counter Strike",
+          "slug": "csgo",
+          "sport": {
+            "name": "E-sports",
+            "slug": "esports",
+            "id": 72
+          },
+          "priority": 0,
+          "country": {},
+          "id": 1572,
+          "flag": "counter-strike",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "كاونتر سترايك",
+              "hi": "काउंटर स्ट्राइक",
+              "bn": "কাউন্টার স্ট্রাইক",
+              "ru": "Counter Strike"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "CCT Europe",
+          "slug": "cct-europe",
+          "category": {
+            "name": "Counter Strike",
+            "slug": "csgo",
+            "sport": {
+              "name": "E-sports",
+              "slug": "esports",
+              "id": 72
+            },
+            "priority": 0,
+            "country": {},
+            "id": 1572,
+            "flag": "counter-strike",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "كاونتر سترايك",
+                "hi": "काउंटर स्ट्राइक",
+                "bn": "কাউন্টার স্ট্রাইক",
+                "ru": "Counter Strike"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 79,
+          "hasPerformanceGraphFeature": false,
+          "country": {},
+          "id": 22286,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "CCT أوروبا"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "id": 129344,
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "تصفيات CCT أوروبا"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "season": {
+        "name": "Series #20 season 3 2026",
+        "year": "2026",
+        "editor": false,
+        "id": 91922
+      },
+      "customId": "UMVcslWXi",
+      "status": {
+        "code": 0,
+        "description": "Not started",
+        "type": "notstarted"
+      },
+      "homeTeam": {
+        "name": "BIG",
+        "slug": "big",
+        "shortName": "BIG",
+        "sport": {
+          "name": "E-sports",
+          "slug": "esports",
+          "id": 72
+        },
+        "userCount": 579,
+        "nameCode": "BIG",
+        "disabled": false,
+        "national": false,
+        "type": 0,
+        "country": {
+          "alpha2": "DE",
+          "alpha3": "DEU",
+          "name": "Germany",
+          "slug": "germany"
+        },
+        "id": 364394,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "بيج",
+            "bn": "বিগ",
+            "hi": "बिग"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "awayTeam": {
+        "name": "Team Nemesis",
+        "slug": "team-nemesis",
+        "sport": {
+          "name": "E-sports",
+          "slug": "esports",
+          "id": 72
+        },
+        "userCount": 28,
+        "nameCode": "TNE",
+        "national": false,
+        "type": 0,
+        "country": {},
+        "id": 1119811,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "تيم نيمسيس"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "homeScore": {},
+      "awayScore": {},
+      "coverage": 91,
+      "time": {},
+      "changes": {
+        "changeTimestamp": 0
+      },
+      "hasGlobalHighlights": true,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 15988557,
+      "bestOf": 3,
+      "eventType": "best_of",
+      "roundsInAHalf": 12,
+      "slug": "team-nemesis-big",
+      "startTimestamp": 1775836800,
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -11537,9 +11735,9 @@
       },
       "customId": "vFKdsQRnj",
       "status": {
-        "code": 1002,
-        "description": "Second game",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
       "winnerCode": 2,
       "homeTeam": {
@@ -11599,24 +11797,29 @@
       "homeScore": {
         "current": 0,
         "display": 0,
-        "period1": 0
+        "period1": 0,
+        "period2": 0
       },
       "awayScore": {
-        "current": 1,
-        "display": 1,
-        "period1": 1
+        "current": 2,
+        "display": 2,
+        "period1": 1,
+        "period2": 1
       },
       "coverage": 90,
-      "time": {
-        "currentPeriodStartTimestamp": 1775828063
-      },
+      "time": {},
       "changes": {
         "changes": [
           "status.code",
           "status.description",
+          "status.type",
+          "homeScore.period2",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period2",
           "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1775828102
+        "changeTimestamp": 1775829973
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
@@ -12769,10 +12972,11 @@
       },
       "customId": "DMVcsqDWc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 1001,
+        "description": "First game",
+        "type": "inprogress"
       },
+      "winnerCode": 3,
       "homeTeam": {
         "name": "3DMAX",
         "slug": "3dmax",
@@ -12841,12 +13045,25 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 3
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 8
+      },
       "coverage": 92,
-      "time": {},
+      "time": {
+        "currentPeriodStartTimestamp": 1775829802
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "awayScore.period1"
+        ],
+        "changeTimestamp": 1775831892
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
@@ -13470,10 +13687,11 @@
       },
       "customId": "uRPisoYvj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 1001,
+        "description": "First game",
+        "type": "inprogress"
       },
+      "winnerCode": 3,
       "homeTeam": {
         "name": "MANA eSports",
         "slug": "mana-esports",
@@ -13522,12 +13740,30 @@
           "text": "#ffffff"
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
       "coverage": 91,
-      "time": {},
+      "time": {
+        "currentPeriodStartTimestamp": 1775830113
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.display",
+          "awayScore.display",
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "awayScore.current",
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1775830146
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
@@ -13536,7 +13772,7 @@
       "eventType": "best_of",
       "roundsInAHalf": 12,
       "slug": "hashiras-mana-esports",
-      "startTimestamp": 1775829600,
+      "startTimestamp": 1775830200,
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -14812,11 +15048,11 @@
       },
       "customId": "ViqjsXEKj",
       "status": {
-        "code": 1001,
-        "description": "First game",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
-      "winnerCode": 3,
+      "winnerCode": 2,
       "homeTeam": {
         "name": "ImmuNe",
         "slug": "immune",
@@ -14866,28 +15102,28 @@
       },
       "homeScore": {
         "current": 0,
-        "display": 0
+        "display": 0,
+        "period1": 0
       },
       "awayScore": {
-        "current": 0,
-        "display": 0
+        "current": 1,
+        "display": 1,
+        "period1": 1
       },
       "coverage": 90,
-      "time": {
-        "currentPeriodStartTimestamp": 1775824392
-      },
+      "time": {},
       "changes": {
         "changes": [
           "status.code",
           "status.description",
           "status.type",
-          "homeScore.current",
-          "homeScore.display",
+          "homeScore.period1",
           "awayScore.current",
           "awayScore.display",
+          "awayScore.period1",
           "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1775824396
+        "changeTimestamp": 1775828647
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
@@ -14971,10 +15207,11 @@
       },
       "customId": "paaesXEKj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Sashi Academy",
         "slug": "sashi-academy",
@@ -15030,12 +15267,30 @@
           "text": "#ffffff"
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 1
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
       "coverage": 90,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "awayScore.period1",
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1775832066
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
@@ -15119,10 +15374,11 @@
       },
       "customId": "pHZcsViqj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 1001,
+        "description": "First game",
+        "type": "inprogress"
       },
+      "winnerCode": 3,
       "homeTeam": {
         "name": "WAZABI",
         "slug": "wazabi",
@@ -15182,12 +15438,30 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
       "coverage": 90,
-      "time": {},
+      "time": {
+        "currentPeriodStartTimestamp": 1775829801
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.display",
+          "awayScore.display",
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "awayScore.current",
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1775829849
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
@@ -16545,10 +16819,11 @@
       },
       "customId": "bFKjscFKj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Team Eclipse",
         "slug": "team-eclipse",
@@ -16601,12 +16876,30 @@
           "text": "#ffffff"
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 1
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
       "coverage": 90,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "awayScore.period1",
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1775831589
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
@@ -16690,10 +16983,11 @@
       },
       "customId": "oFVcsaFKj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Ølgod Efterskole",
         "slug": "olgod-efterskole",
@@ -16755,12 +17049,30 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "awayScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 1
+      },
       "coverage": 90,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.period1",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1775832487
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
@@ -22713,11 +23025,11 @@
       },
       "customId": "agvjsnEKj",
       "status": {
-        "code": 1001,
-        "description": "First game",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
-      "winnerCode": 3,
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Earth Gaming",
         "slug": "earth-gaming",
@@ -22771,29 +23083,31 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0
+        "current": 2,
+        "display": 2,
+        "period1": 1,
+        "period2": 1
       },
       "awayScore": {
         "current": 0,
-        "display": 0
+        "display": 0,
+        "period1": 0,
+        "period2": 0
       },
       "coverage": 91,
-      "time": {
-        "currentPeriodStartTimestamp": 1775827356
-      },
+      "time": {},
       "changes": {
         "changes": [
-          "homeScore.display",
-          "awayScore.display",
           "status.code",
           "status.description",
           "status.type",
           "homeScore.current",
-          "awayScore.current",
+          "homeScore.display",
+          "homeScore.period2",
+          "awayScore.period2",
           "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1775827389
+        "changeTimestamp": 1775832633
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
@@ -24421,7 +24735,7 @@
         "description": "Pause",
         "type": "inprogress"
       },
-      "winnerCode": 2,
+      "winnerCode": 3,
       "homeTeam": {
         "name": "L1ga Team",
         "slug": "l1ga-team",
@@ -24481,28 +24795,24 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0
+        "current": 1,
+        "display": 1,
+        "period1": 0,
+        "period2": 1
       },
       "awayScore": {
         "current": 1,
         "display": 1,
-        "period1": 1
+        "period1": 1,
+        "period2": 0
       },
       "coverage": 91,
       "time": {},
       "changes": {
         "changes": [
-          "awayScore.display",
-          "status.code",
-          "status.description",
-          "homeScore.period1",
-          "awayScore.current",
-          "awayScore.period1",
-          "time.currentPeriodStart"
+          "homeScore.display"
         ],
-        "changeTimestamp": 1775828109
+        "changeTimestamp": 1775832675
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
@@ -24665,7 +24975,7 @@
       "bestOf": 3,
       "eventType": "best_of",
       "slug": "parivision-mouz",
-      "startTimestamp": 1775829600,
+      "startTimestamp": 1775833200,
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -26027,10 +26337,11 @@
       },
       "customId": "GJVcsZYpj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 1001,
+        "description": "First game",
+        "type": "inprogress"
       },
+      "winnerCode": 3,
       "homeTeam": {
         "name": "Dark Passage",
         "slug": "dark-passage",
@@ -26089,12 +26400,30 @@
           "text": "#ffffff"
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
       "coverage": 91,
-      "time": {},
+      "time": {
+        "currentPeriodStartTimestamp": 1775831841
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.display",
+          "awayScore.display",
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "awayScore.current",
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1775831889
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
@@ -32798,9 +33127,9 @@
       },
       "customId": "JIVcsyJld",
       "status": {
-        "code": 1002,
-        "description": "Second game",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
       "winnerCode": 1,
       "homeTeam": {
@@ -32873,26 +33202,29 @@
         }
       },
       "homeScore": {
-        "current": 1,
-        "display": 1,
+        "current": 2,
+        "display": 2,
         "period1": 15,
-        "period2": 4
+        "period2": 24
       },
       "awayScore": {
         "current": 0,
         "display": 0,
         "period1": 4,
-        "period2": 1
+        "period2": 2
       },
       "coverage": 92,
-      "time": {
-        "currentPeriodStartTimestamp": 1775827271
-      },
+      "time": {},
       "changes": {
         "changes": [
-          "homeScore.period2"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1775828451
+        "changeTimestamp": 1775829548
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
@@ -33063,12 +33395,12 @@
       },
       "homeScore": {},
       "awayScore": {},
-      "coverage": 91,
+      "coverage": 92,
       "time": {},
       "changes": {
         "changeTimestamp": 0
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15900183,
       "bestOf": 3,
@@ -33243,12 +33575,12 @@
       },
       "homeScore": {},
       "awayScore": {},
-      "coverage": 91,
+      "coverage": 92,
       "time": {},
       "changes": {
         "changeTimestamp": 0
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15900190,
       "bestOf": 3,
