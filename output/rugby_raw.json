@@ -152,7 +152,7 @@
       "id": 15449449,
       "slug": "deportiva-francesa-hurling",
       "startTimestamp": 1775932200,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -316,7 +316,7 @@
       "id": 15449444,
       "slug": "san-luis-gimnasia-y-esgrima-de-buenos-aires",
       "startTimestamp": 1775932200,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -472,7 +472,7 @@
       "id": 15449443,
       "slug": "olivos-pucara",
       "startTimestamp": 1775932200,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -628,7 +628,7 @@
       "id": 15449453,
       "slug": "pueyrredon-universitario-de-la-plata",
       "startTimestamp": 1775932200,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -784,7 +784,7 @@
       "id": 15449446,
       "slug": "san-albano-curupayti",
       "startTimestamp": 1775932200,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -940,7 +940,7 @@
       "id": 15449447,
       "slug": "san-cirano-lomas-athletic-club",
       "startTimestamp": 1775932200,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -1024,9 +1024,9 @@
       },
       "customId": "PYajsFwrj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "San Fernando",
@@ -1092,18 +1092,32 @@
           "text": "#ffffff"
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 3,
+        "display": 3,
+        "period1": 3
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
       "coverage": -1,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1"
+        ],
+        "changeTimestamp": 1775933471
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15449451,
       "slug": "san-andres-san-fernando",
       "startTimestamp": 1775932200,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -5652,10 +5666,11 @@
       },
       "customId": "KJbsAKb",
       "status": {
-        "code": 31,
-        "description": "Halftime",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Warrington Wolves",
         "slug": "warrington-wolves",
@@ -5727,29 +5742,32 @@
         }
       },
       "homeScore": {
-        "current": 6,
-        "display": 6,
+        "current": 24,
+        "display": 24,
         "period1": 6,
-        "period2": 0
+        "period2": 18,
+        "normaltime": 24
       },
       "awayScore": {
-        "current": 6,
-        "display": 6,
+        "current": 10,
+        "display": 10,
         "period1": 6,
-        "period2": 0
+        "period2": 4,
+        "normaltime": 10
       },
       "time": {
-        "currentPeriodStartTimestamp": 1775928321
+        "currentPeriodStartTimestamp": 1775932210
       },
       "changes": {
         "changes": [
+          "time.currentPeriodStart",
           "status.code",
           "status.description",
-          "homeScore.period2",
-          "awayScore.period2",
-          "time.currentPeriodStart"
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1775928326
+        "changeTimestamp": 1775932215
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -7181,10 +7199,11 @@
       },
       "customId": "bKbsuKb",
       "status": {
-        "code": 6,
-        "description": "1st half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "London Broncos",
         "slug": "london-broncos",
@@ -7252,32 +7271,41 @@
         }
       },
       "homeScore": {
-        "current": 16,
-        "display": 16,
-        "period1": 16
+        "current": 48,
+        "display": 48,
+        "period1": 28,
+        "period2": 20,
+        "normaltime": 48
       },
       "awayScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0
+        "current": 4,
+        "display": 4,
+        "period1": 0,
+        "period2": 4,
+        "normaltime": 4
       },
       "time": {
-        "currentPeriodStartTimestamp": 1775927065
+        "currentPeriodStartTimestamp": 1775932925
       },
       "changes": {
         "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime",
+          "time.currentPeriodStart",
           "homeScore.current",
           "homeScore.display",
-          "homeScore.period1"
+          "homeScore.period2"
         ],
-        "changeTimestamp": 1775928350
+        "changeTimestamp": 1775932928
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15180834,
       "slug": "london-broncos-sheffield-eagles",
       "startTimestamp": 1775926800,
-      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -13204,10 +13232,11 @@
       },
       "customId": "VIbskJb",
       "status": {
-        "code": 31,
-        "description": "Halftime",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Leinster Rugby",
         "slug": "leinster-rugby",
@@ -13278,30 +13307,37 @@
         }
       },
       "homeScore": {
-        "current": 7,
-        "display": 7,
+        "current": 43,
+        "display": 43,
         "period1": 7,
-        "period2": 0
+        "period2": 36,
+        "normaltime": 43
       },
       "awayScore": {
-        "current": 3,
-        "display": 3,
+        "current": 13,
+        "display": 13,
         "period1": 3,
-        "period2": 0
+        "period2": 10,
+        "normaltime": 13
       },
       "time": {
-        "played": 2400,
+        "played": 2439,
         "periodLength": 2400,
         "overtimeLength": 600,
         "totalPeriodCount": 2,
-        "currentPeriodStartTimestamp": 1775928069
+        "currentPeriodStartTimestamp": 1775931751
       },
       "changes": {
         "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
           "time.played",
           "time.playedLastUpdated"
         ],
-        "changeTimestamp": 1775928788
+        "changeTimestamp": 1775931773
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -20563,7 +20599,7 @@
         "normaltime": 26
       },
       "time": {
-        "played": 2516,
+        "played": 2517,
         "periodLength": 2400,
         "overtimeLength": 600,
         "totalPeriodCount": 2,
@@ -20574,7 +20610,7 @@
           "time.played",
           "time.playedLastUpdated"
         ],
-        "changeTimestamp": 1775906778
+        "changeTimestamp": 1775932837
       },
       "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
@@ -20750,7 +20786,7 @@
       "id": 15345658,
       "slug": "club-champagnat-belgrano-athletic-club",
       "startTimestamp": 1775932200,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -20915,7 +20951,7 @@
       "id": 15345670,
       "slug": "hindu-club-buenos-aires",
       "startTimestamp": 1775932200,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -21083,7 +21119,7 @@
       "id": 15345659,
       "slug": "la-plata-cuba",
       "startTimestamp": 1775932200,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -21236,7 +21272,7 @@
       "id": 15345660,
       "slug": "los-matreros-club-newman",
       "startTimestamp": 1775932200,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -21395,7 +21431,7 @@
       "id": 15345651,
       "slug": "los-tilos-atl-del-rosario",
       "startTimestamp": 1775932200,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -21554,7 +21590,7 @@
       "id": 15345666,
       "slug": "sic-alumni",
       "startTimestamp": 1775932200,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -21713,7 +21749,7 @@
       "id": 15345677,
       "slug": "regatas-bella-vista-casi",
       "startTimestamp": 1775932500,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
@@ -22976,9 +23012,9 @@
       },
       "customId": "vRpbsQKAb",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
       "winnerCode": 2,
       "homeTeam": {
@@ -23056,35 +23092,41 @@
         "current": 19,
         "display": 19,
         "period1": 12,
-        "period2": 7
+        "period2": 7,
+        "normaltime": 19
       },
       "awayScore": {
         "current": 24,
         "display": 24,
         "period1": 10,
-        "period2": 14
+        "period2": 14,
+        "normaltime": 24
       },
       "time": {
-        "played": 7086,
+        "played": 2841,
         "periodLength": 2400,
         "overtimeLength": 600,
         "totalPeriodCount": 2,
-        "currentPeriodStartTimestamp": 1775926047
+        "currentPeriodStartTimestamp": 1775929325
       },
       "changes": {
         "changes": [
+          "homeScore.normaltime",
+          "awayScore.normaltime",
           "time.played",
-          "time.playedLastUpdated"
+          "time.playedLastUpdated",
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1775928913
+        "changeTimestamp": 1775929504
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15106737,
       "slug": "scotland-wales",
       "startTimestamp": 1775922000,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -31143,9 +31185,9 @@
       },
       "customId": "PkHdsvdMd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 31,
+        "description": "Halftime",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Poland",
@@ -31218,12 +31260,27 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 36,
+        "display": 36,
+        "period1": 36
+      },
+      "awayScore": {
+        "current": 3,
+        "display": 3,
+        "period1": 3
+      },
       "coverage": -1,
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1"
+        ],
+        "changeTimestamp": 1775933037
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
