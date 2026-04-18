@@ -840,9 +840,9 @@
       },
       "customId": "huLdsoyJj",
       "status": {
-        "code": 1002,
-        "description": "Second game",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
       "winnerCode": 1,
       "homeTeam": {
@@ -907,26 +907,31 @@
         }
       },
       "homeScore": {
-        "current": 1,
-        "display": 1,
-        "period1": 1
+        "current": 2,
+        "display": 2,
+        "period1": 1,
+        "period2": 1
       },
       "awayScore": {
         "current": 0,
         "display": 0,
-        "period1": 0
+        "period1": 0,
+        "period2": 0
       },
       "coverage": 91,
-      "time": {
-        "currentPeriodStartTimestamp": 1776477914
-      },
+      "time": {},
       "changes": {
         "changes": [
           "status.code",
           "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period2",
+          "awayScore.period2",
           "time.currentPeriodStart"
         ],
-        "changeTimestamp": 1776477962
+        "changeTimestamp": 1776480608
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
@@ -9746,11 +9751,38 @@
       },
       "customId": "vUPdsTXtj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 1001,
+        "description": "First game",
+        "type": "inprogress"
       },
+      "winnerCode": 3,
       "homeTeam": {
+        "name": "Abyssal",
+        "slug": "abyssal",
+        "sport": {
+          "name": "E-sports",
+          "slug": "esports",
+          "id": 72
+        },
+        "userCount": 0,
+        "nameCode": "ABY",
+        "national": false,
+        "type": 0,
+        "country": {
+          "alpha2": "AU",
+          "alpha3": "AUS",
+          "name": "Australia",
+          "slug": "australia"
+        },
+        "id": 1172393,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "awayTeam": {
         "name": "DXA Esports",
         "slug": "dxa-esports",
         "sport": {
@@ -9777,38 +9809,30 @@
           "shortNameTranslation": {}
         }
       },
-      "awayTeam": {
-        "name": "Abyssal",
-        "slug": "abyssal",
-        "sport": {
-          "name": "E-sports",
-          "slug": "esports",
-          "id": 72
-        },
-        "userCount": 0,
-        "nameCode": "ABY",
-        "national": false,
-        "type": 0,
-        "country": {
-          "alpha2": "AU",
-          "alpha3": "AUS",
-          "name": "Australia",
-          "slug": "australia"
-        },
-        "id": 1172393,
-        "subTeams": [],
-        "teamColors": {
-          "primary": "#374df5",
-          "secondary": "#374df5",
-          "text": "#ffffff"
-        }
+      "homeScore": {
+        "current": 0,
+        "display": 0
       },
-      "homeScore": {},
-      "awayScore": {},
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
       "coverage": 91,
-      "time": {},
+      "time": {
+        "currentPeriodStartTimestamp": 1776486771
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "homeScore.display",
+          "awayScore.display",
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "awayScore.current",
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1776486788
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
@@ -9817,7 +9841,7 @@
       "eventType": "best_of",
       "roundsInAHalf": 12,
       "slug": "abyssal-dxa-esports",
-      "startTimestamp": 1776483000,
+      "startTimestamp": 1776486600,
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -9897,37 +9921,12 @@
       },
       "customId": "EFVcsnvrj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 1001,
+        "description": "First game",
+        "type": "inprogress"
       },
+      "winnerCode": 3,
       "homeTeam": {
-        "name": "Ding Cuts",
-        "slug": "ding-cuts",
-        "sport": {
-          "name": "E-sports",
-          "slug": "esports",
-          "id": 72
-        },
-        "userCount": 0,
-        "nameCode": "DCU",
-        "national": false,
-        "type": 0,
-        "country": {
-          "alpha2": "AU",
-          "alpha3": "AUS",
-          "name": "Australia",
-          "slug": "australia"
-        },
-        "id": 1168513,
-        "subTeams": [],
-        "teamColors": {
-          "primary": "#374df5",
-          "secondary": "#374df5",
-          "text": "#ffffff"
-        }
-      },
-      "awayTeam": {
         "name": "Rooster",
         "slug": "rooster",
         "sport": {
@@ -9961,12 +9960,56 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "awayTeam": {
+        "name": "Ding Cuts",
+        "slug": "ding-cuts",
+        "sport": {
+          "name": "E-sports",
+          "slug": "esports",
+          "id": 72
+        },
+        "userCount": 0,
+        "nameCode": "DCU",
+        "national": false,
+        "type": 0,
+        "country": {
+          "alpha2": "AU",
+          "alpha3": "AUS",
+          "name": "Australia",
+          "slug": "australia"
+        },
+        "id": 1168513,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "homeScore": {
+        "current": 0,
+        "display": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0
+      },
       "coverage": 91,
-      "time": {},
+      "time": {
+        "currentPeriodStartTimestamp": 1776487745
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "awayScore.current",
+          "awayScore.display",
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1776487746
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
@@ -9975,7 +10018,7 @@
       "eventType": "best_of",
       "roundsInAHalf": 12,
       "slug": "ding-cuts-rooster",
-      "startTimestamp": 1776483000,
+      "startTimestamp": 1776487500,
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -17987,10 +18030,11 @@
       },
       "customId": "GRkdshKJj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 1002,
+        "description": "Second game",
+        "type": "inprogress"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "InterActive Philippines",
         "slug": "interactive-philippines",
@@ -18049,12 +18093,27 @@
           "text": "#ffffff"
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 1
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
       "coverage": 91,
-      "time": {},
+      "time": {
+        "currentPeriodStartTimestamp": 1776485145
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1776485162
       },
       "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
@@ -18062,7 +18121,7 @@
       "bestOf": 3,
       "eventType": "best_of",
       "slug": "winter-squadrons-interactive-philippines",
-      "startTimestamp": 1776481200,
+      "startTimestamp": 1776482100,
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
