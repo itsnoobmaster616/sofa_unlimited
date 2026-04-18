@@ -193,18 +193,19 @@
         "period1": 0
       },
       "time": {
-        "played": 407,
+        "played": 1200,
         "periodLength": 1200,
         "overtimeLength": 1200,
         "totalPeriodCount": 3,
-        "currentPeriodStartTimestamp": 1776539213
+        "currentPeriodStartTimestamp": 1776541443
       },
       "changes": {
         "changes": [
+          "time.currentPeriodStart",
           "time.played",
           "time.playedLastUpdated"
         ],
-        "changeTimestamp": 1776540184
+        "changeTimestamp": 1776541446
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -4296,10 +4297,11 @@
       },
       "customId": "KCbsOCb",
       "status": {
-        "code": 30,
-        "description": "Pause",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Odense Bulldogs",
         "slug": "odense-bulldogs",
@@ -4401,9 +4403,10 @@
       "changes": {
         "changes": [
           "status.code",
-          "status.description"
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1776539445
+        "changeTimestamp": 1776541306
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -8028,10 +8031,11 @@
       },
       "customId": "UAXsYAX",
       "status": {
-        "code": 3,
-        "description": "3rd period",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "HC Gherdëina",
         "slug": "hc-gherdeina",
@@ -8115,27 +8119,32 @@
         "display": 4,
         "period1": 1,
         "period2": 2,
-        "period3": 1
+        "period3": 1,
+        "normaltime": 4
       },
       "awayScore": {
-        "current": 2,
-        "display": 2,
+        "current": 3,
+        "display": 3,
         "period1": 1,
         "period2": 0,
-        "period3": 1
+        "period3": 2,
+        "normaltime": 3
       },
       "time": {
-        "played": 3010,
+        "played": 3600,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3
       },
       "changes": {
         "changes": [
-          "time.played",
-          "time.playedLastUpdated"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1776540204
+        "changeTimestamp": 1776541401
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -8151,7 +8160,6 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "cupMatchesInRound": 7,
@@ -8863,10 +8871,11 @@
       },
       "customId": "GJAsNIB",
       "status": {
-        "code": 3,
-        "description": "3rd period",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Poland U18",
         "slug": "poland-u18",
@@ -8938,31 +8947,34 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
+        "current": 1,
+        "display": 1,
         "period1": 0,
         "period2": 0,
-        "period3": 0
+        "period3": 1,
+        "normaltime": 1
       },
       "awayScore": {
-        "current": 2,
-        "display": 2,
+        "current": 6,
+        "display": 6,
         "period1": 1,
         "period2": 1,
-        "period3": 0
+        "period3": 4,
+        "normaltime": 6
       },
       "time": {
-        "currentPeriodStartTimestamp": 1776538896
+        "currentPeriodStartTimestamp": 1776541069
       },
       "changes": {
         "changes": [
           "time.currentPeriodStart",
           "status.code",
           "status.description",
-          "homeScore.period3",
-          "awayScore.period3"
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1776538899
+        "changeTimestamp": 1776541074
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -8977,7 +8989,6 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
@@ -11663,6 +11674,239 @@
     },
     {
       "tournament": {
+        "name": "HockeyEttan, Qualification Playoffs",
+        "slug": "hockeyettan-qualification-playoffs",
+        "category": {
+          "name": "Sweden",
+          "slug": "sweden",
+          "sport": {
+            "name": "Ice hockey",
+            "slug": "ice-hockey",
+            "id": 4
+          },
+          "priority": 0,
+          "country": {
+            "alpha2": "SE",
+            "alpha3": "SWE",
+            "name": "Sweden",
+            "slug": "sweden"
+          },
+          "id": 39,
+          "flag": "sweden",
+          "alpha2": "SE",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "السويد",
+              "bn": "সুইডেন",
+              "hi": "स्वीडन",
+              "ru": "Швеция"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "HockeyEttan",
+          "slug": "hockeyettan",
+          "category": {
+            "name": "Sweden",
+            "slug": "sweden",
+            "sport": {
+              "name": "Ice hockey",
+              "slug": "ice-hockey",
+              "id": 4
+            },
+            "priority": 0,
+            "country": {
+              "alpha2": "SE",
+              "alpha3": "SWE",
+              "name": "Sweden",
+              "slug": "sweden"
+            },
+            "id": 39,
+            "flag": "sweden",
+            "alpha2": "SE",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "السويد",
+                "bn": "সুইডেন",
+                "hi": "स्वीडन",
+                "ru": "Швеция"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 223,
+          "hasPerformanceGraphFeature": false,
+          "country": {},
+          "id": 714,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "هوكي إيتان"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "isGroup": false,
+        "isLive": false,
+        "id": 1101,
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "هوكي إيتان، تصفيات التصفيات"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "season": {
+        "name": "HockeyEttan 25/26",
+        "year": "25/26",
+        "editor": false,
+        "id": 80517
+      },
+      "roundInfo": {
+        "round": 29,
+        "name": "Final",
+        "slug": "final",
+        "cupRoundType": 1
+      },
+      "customId": "AQoskRo",
+      "status": {
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
+      },
+      "winnerCode": 1,
+      "homeTeam": {
+        "name": "Hudiksvalls HC",
+        "slug": "hudiksvalls-hc",
+        "shortName": "Hudiksvall",
+        "gender": "M",
+        "sport": {
+          "name": "Ice hockey",
+          "slug": "ice-hockey",
+          "id": 4
+        },
+        "userCount": 334,
+        "nameCode": "HUD",
+        "national": false,
+        "type": 0,
+        "country": {
+          "alpha2": "SE",
+          "alpha3": "SWE",
+          "name": "Sweden",
+          "slug": "sweden"
+        },
+        "id": 37110,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#c01428",
+          "secondary": "#000000",
+          "text": "#000000"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "هوديكفالز إتش سي",
+            "ru": "ХК Худиксваль"
+          },
+          "shortNameTranslation": {
+            "ar": "هوديكفال",
+            "bn": "হুডিক্সভালস",
+            "hi": "हडिकस्वल्ल्स"
+          }
+        }
+      },
+      "awayTeam": {
+        "name": "Visby/Roma HK",
+        "slug": "visbyroma-hk",
+        "shortName": "Visby/Roma",
+        "gender": "M",
+        "sport": {
+          "name": "Ice hockey",
+          "slug": "ice-hockey",
+          "id": 4
+        },
+        "userCount": 185,
+        "nameCode": "VRO",
+        "national": false,
+        "type": 0,
+        "country": {
+          "alpha2": "SE",
+          "alpha3": "SWE",
+          "name": "Sweden",
+          "slug": "sweden"
+        },
+        "id": 37075,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#000000",
+          "secondary": "#ffff00",
+          "text": "#ffff00"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "فيسبي/رومّا إتش كي",
+            "ru": "ХК Висби-Рома"
+          },
+          "shortNameTranslation": {
+            "ar": "فيسبي/رومّا",
+            "bn": "ভিসবি/রোমা",
+            "hi": "विस्बी/रोमा"
+          }
+        }
+      },
+      "homeScore": {
+        "current": 4,
+        "display": 4,
+        "period1": 4,
+        "period2": 0,
+        "period3": 0,
+        "series": 1
+      },
+      "awayScore": {
+        "current": 3,
+        "display": 3,
+        "period1": 1,
+        "period2": 1,
+        "period3": 1,
+        "series": 0
+      },
+      "time": {
+        "played": 2061,
+        "periodLength": 1200,
+        "overtimeLength": 300,
+        "totalPeriodCount": 3
+      },
+      "changes": {
+        "changes": [
+          "status",
+          "status.code",
+          "status.description",
+          "status.type"
+        ],
+        "changeTimestamp": 1776540356
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 15989997,
+      "slug": "hudiksvalls-hc-visbyroma-hk",
+      "startTimestamp": 1776520800,
+      "periods": {
+        "current": "Score",
+        "period1": "1st period",
+        "period2": "2nd period",
+        "period3": "3rd period",
+        "overtime": "Overtime",
+        "penalties": "Penalty"
+      },
+      "finalResultOnly": false,
+      "feedLocked": true,
+      "cupMatchesInRound": 5,
+      "isEditor": false
+    },
+    {
+      "tournament": {
         "name": "U20 Nationell, Playoffs",
         "slug": "u20-nationell-playoffs",
         "category": {
@@ -11989,8 +12233,8 @@
       },
       "customId": "UCbsVCb",
       "status": {
-        "code": 30,
-        "description": "Pause",
+        "code": 3,
+        "description": "3rd period",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -12073,33 +12317,32 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
+        "current": 2,
+        "display": 2,
         "period1": 0,
-        "period2": 0
+        "period2": 0,
+        "period3": 2
       },
       "awayScore": {
         "current": 3,
         "display": 3,
         "period1": 1,
-        "period2": 2
+        "period2": 2,
+        "period3": 0
       },
       "time": {
-        "played": 2400,
+        "played": 3002,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3,
-        "currentPeriodStartTimestamp": 1776540182
+        "currentPeriodStartTimestamp": 1776541302
       },
       "changes": {
         "changes": [
-          "time.currentPeriodStart",
-          "status.code",
-          "status.description",
           "time.played",
           "time.playedLastUpdated"
         ],
-        "changeTimestamp": 1776540186
+        "changeTimestamp": 1776542403
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -12114,6 +12357,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
+      "lastPeriod": "period3",
       "finalResultOnly": false,
       "feedLocked": false,
       "cupMatchesInRound": 7,
@@ -16408,8 +16652,8 @@
       },
       "customId": "nMHcsbIhd",
       "status": {
-        "code": 1,
-        "description": "1st period",
+        "code": 2,
+        "description": "2nd period",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -16479,28 +16723,30 @@
         }
       },
       "homeScore": {
-        "current": 0,
-        "display": 0,
-        "period1": 0
+        "current": 1,
+        "display": 1,
+        "period1": 1,
+        "period2": 0
       },
       "awayScore": {
         "current": 0,
         "display": 0,
-        "period1": 0
+        "period1": 0,
+        "period2": 0
       },
       "time": {
-        "played": 730,
+        "played": 1324,
         "periodLength": 1200,
         "overtimeLength": 300,
         "totalPeriodCount": 3,
-        "currentPeriodStartTimestamp": 1776539068
+        "currentPeriodStartTimestamp": 1776542170
       },
       "changes": {
         "changes": [
           "time.played",
           "time.playedLastUpdated"
         ],
-        "changeTimestamp": 1776540184
+        "changeTimestamp": 1776542403
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -16515,7 +16761,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "lastPeriod": "period1",
+      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false
