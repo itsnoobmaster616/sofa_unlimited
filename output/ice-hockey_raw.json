@@ -100,9 +100,9 @@
       },
       "customId": "PybsUyb",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 1,
+        "description": "1st period",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Tampa Bay Lightning",
@@ -185,16 +185,33 @@
         }
       },
       "homeScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 1,
         "series": 0
       },
       "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
         "series": 1
       },
-      "time": {},
+      "time": {
+        "played": 762,
+        "periodLength": 1200,
+        "overtimeLength": 1200,
+        "totalPeriodCount": 3,
+        "currentPeriodStartTimestamp": 1776813175
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.played",
+          "time.playedLastUpdated"
+        ],
+        "changeTimestamp": 1776814750
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15951860,
       "slug": "tampa-bay-lightning-montreal-canadiens",
@@ -208,6 +225,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "cupMatchesInRound": 7,
@@ -404,9 +422,21 @@
       "awayScore": {
         "series": 0
       },
-      "time": {},
+      "time": {
+        "played": 0,
+        "periodLength": 1200,
+        "overtimeLength": 1200,
+        "totalPeriodCount": 3
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.played",
+          "time.playedLastUpdated",
+          "time.periodLength",
+          "time.overtimeLength",
+          "time.totalPeriodCount"
+        ],
+        "changeTimestamp": 1776813652
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -4379,7 +4409,7 @@
         ],
         "changeTimestamp": 1776802855
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 16013443,
       "slug": "ecdc-memmingen-indians-deggendorfer-sc",
@@ -6715,7 +6745,7 @@
         ],
         "changeTimestamp": 1776795278
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15853175,
       "slug": "hc-presov-dukla-trencin",
@@ -7929,9 +7959,9 @@
       },
       "customId": "idtsndt",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 30,
+        "description": "Pause",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Bridgeport Islanders",
@@ -8007,11 +8037,32 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0
+      },
+      "time": {
+        "played": 1200,
+        "periodLength": 1200,
+        "overtimeLength": 300,
+        "totalPeriodCount": 3,
+        "currentPeriodStartTimestamp": 1776814510
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "time.currentPeriodStart",
+          "status.code",
+          "status.description",
+          "time.played",
+          "time.playedLastUpdated"
+        ],
+        "changeTimestamp": 1776814520
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -9433,7 +9484,7 @@
         "overtime": "Overtime",
         "penalties": "Penalty"
       },
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false
     },
