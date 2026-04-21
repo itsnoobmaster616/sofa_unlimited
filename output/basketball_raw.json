@@ -7540,9 +7540,9 @@
       },
       "customId": "NWbbsFYee",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 31,
+        "description": "Halftime",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Minas Tênis Clube",
@@ -7619,16 +7619,39 @@
         }
       },
       "homeScore": {
+        "current": 56,
+        "display": 56,
+        "period1": 23,
+        "period2": 33,
         "series": 0
       },
       "awayScore": {
+        "current": 54,
+        "display": 54,
+        "period1": 16,
+        "period2": 38,
         "series": 0
       },
-      "time": {},
+      "time": {
+        "played": 1200,
+        "periodLength": 600,
+        "overtimeLength": 300,
+        "totalPeriodCount": 4
+      },
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "status.code",
+          "status.description",
+          "homeScore.current",
+          "homeScore.display",
+          "time.played",
+          "time.playedLastUpdated",
+          "homeScore.period2"
+        ],
+        "changeTimestamp": 1776808149
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 16033358,
       "periods": {
@@ -8848,8 +8871,8 @@
       },
       "customId": "PZjcsrXnd",
       "status": {
-        "code": 30,
-        "description": "Pause",
+        "code": 16,
+        "description": "4th quarter",
         "type": "inprogress"
       },
       "homeTeam": {
@@ -8926,29 +8949,35 @@
         }
       },
       "homeScore": {
-        "current": 30,
-        "display": 30,
+        "current": 46,
+        "display": 46,
         "period1": 21,
-        "period2": 9
+        "period2": 9,
+        "period3": 10,
+        "period4": 6
       },
       "awayScore": {
-        "current": 32,
-        "display": 32,
+        "current": 78,
+        "display": 78,
         "period1": 7,
-        "period2": 25
+        "period2": 25,
+        "period3": 24,
+        "period4": 22
       },
       "time": {
-        "played": 1200,
+        "played": 2400,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
       },
       "changes": {
         "changes": [
-          "status.code",
-          "status.description"
+          "time.played",
+          "time.playedLastUpdated",
+          "time.clockRunning",
+          "time.clockRunningLastUpdated"
         ],
-        "changeTimestamp": 1776804879
+        "changeTimestamp": 1776808261
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -8964,6 +8993,7 @@
       },
       "slug": "sport-recife-unimed-campinas-basquete",
       "startTimestamp": 1776801600,
+      "lastPeriod": "period4",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -34682,10 +34712,11 @@
       },
       "customId": "ICTbsOCTb",
       "status": {
-        "code": 16,
-        "description": "4th quarter",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "UMF Tindastoll",
         "slug": "umf-tindastoll",
@@ -34755,37 +34786,40 @@
         }
       },
       "homeScore": {
-        "current": 86,
-        "display": 86,
+        "current": 95,
+        "display": 95,
         "period1": 27,
         "period2": 17,
         "period3": 24,
-        "period4": 18,
+        "period4": 27,
+        "normaltime": 95,
         "series": 0
       },
       "awayScore": {
-        "current": 88,
-        "display": 88,
+        "current": 96,
+        "display": 96,
         "period1": 25,
         "period2": 23,
         "period3": 21,
-        "period4": 19,
-        "series": 0
+        "period4": 27,
+        "normaltime": 96,
+        "series": 1
       },
       "time": {
-        "played": 2297,
+        "played": 2400,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
       },
       "changes": {
         "changes": [
-          "time.played",
-          "time.playedLastUpdated",
-          "time.clockRunning",
-          "time.clockRunningLastUpdated"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1776805040
+        "changeTimestamp": 1776805760
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -34801,7 +34835,6 @@
       },
       "slug": "umf-tindastoll-stjarnan",
       "startTimestamp": 1776798900,
-      "lastPeriod": "period4",
       "finalResultOnly": false,
       "feedLocked": false,
       "cupMatchesInRound": 5,
@@ -40150,10 +40183,11 @@
       },
       "customId": "TAkjsryKj",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Academy Olimpia",
         "slug": "academy-olimpia",
@@ -40209,11 +40243,47 @@
           "text": "#ffffff"
         }
       },
-      "homeScore": {},
-      "awayScore": {},
+      "homeScore": {
+        "current": 76,
+        "display": 76,
+        "period1": 18,
+        "period2": 16,
+        "period3": 16,
+        "period4": 26,
+        "normaltime": 76
+      },
+      "awayScore": {
+        "current": 80,
+        "display": 80,
+        "period1": 23,
+        "period2": 20,
+        "period3": 12,
+        "period4": 25,
+        "normaltime": 80
+      },
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "providerLock.status",
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.period3",
+          "homeScore.period4",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.period3",
+          "awayScore.period4",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1776806402
       },
       "hasGlobalHighlights": false,
       "crowdsourcingDataDisplayEnabled": false,
@@ -40228,7 +40298,7 @@
       },
       "slug": "vft-basketball-academy-olimpia",
       "startTimestamp": 1776797100,
-      "finalResultOnly": true,
+      "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
       "eventFilters": {
@@ -54339,10 +54409,11 @@
       },
       "customId": "keqhsouwh",
       "status": {
-        "code": 30,
-        "description": "Pause",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Os Belenenses",
         "slug": "os-belenenses",
@@ -54414,30 +54485,40 @@
         }
       },
       "homeScore": {
-        "current": 28,
-        "display": 28,
+        "current": 63,
+        "display": 63,
         "period1": 22,
-        "period2": 6
+        "period2": 6,
+        "period3": 21,
+        "period4": 14,
+        "normaltime": 63
       },
       "awayScore": {
-        "current": 28,
-        "display": 28,
+        "current": 59,
+        "display": 59,
         "period1": 18,
-        "period2": 10
+        "period2": 10,
+        "period3": 9,
+        "period4": 22,
+        "normaltime": 59
       },
       "time": {
-        "played": 1200,
+        "played": 2400,
         "periodLength": 600,
         "overtimeLength": 300,
         "totalPeriodCount": 4
       },
       "changes": {
         "changes": [
-          "status",
           "status.code",
-          "status.description"
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime",
+          "time.played",
+          "time.playedLastUpdated"
         ],
-        "changeTimestamp": 1776805038
+        "changeTimestamp": 1776807600
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -58845,10 +58926,11 @@
       },
       "customId": "LPZsYPZ",
       "status": {
-        "code": 16,
-        "description": "4th quarter",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 2,
       "homeTeam": {
         "name": "Club Ourense Baloncesto",
         "slug": "club-ourense-baloncesto",
@@ -58933,7 +59015,8 @@
         "period1": 16,
         "period2": 26,
         "period3": 21,
-        "period4": 27
+        "period4": 27,
+        "normaltime": 90
       },
       "awayScore": {
         "current": 93,
@@ -58941,7 +59024,8 @@
         "period1": 23,
         "period2": 22,
         "period3": 34,
-        "period4": 14
+        "period4": 14,
+        "normaltime": 93
       },
       "time": {
         "played": 2400,
@@ -58951,13 +59035,13 @@
       },
       "changes": {
         "changes": [
-          "awayScore.current",
-          "awayScore.display",
-          "awayScore.period4",
-          "time.played",
-          "time.playedLastUpdated"
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.normaltime",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1776804385
+        "changeTimestamp": 1776805062
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -58973,7 +59057,6 @@
       },
       "slug": "club-ourense-baloncesto-palencia-baloncesto",
       "startTimestamp": 1776797100,
-      "lastPeriod": "period4",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
