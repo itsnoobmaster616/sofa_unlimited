@@ -12502,7 +12502,7 @@
         ],
         "changeTimestamp": 1776803978
       },
-      "hasGlobalHighlights": false,
+      "hasGlobalHighlights": true,
       "hasXg": true,
       "hasEventPlayerStatistics": true,
       "hasEventPlayerHeatMap": true,
@@ -18424,7 +18424,7 @@
       "id": 16006762,
       "slug": "academia-puerto-cabello-trujillanos-fc",
       "startTimestamp": 1776808800,
-      "finalResultOnly": false,
+      "finalResultOnly": true,
       "feedLocked": false,
       "isEditor": false,
       "eventFilters": {
@@ -21588,9 +21588,9 @@
       },
       "customId": "oznstfce",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "GV San José",
@@ -21666,14 +21666,33 @@
           "shortNameTranslation": {}
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1776808936,
+        "initial": 0,
+        "max": 2700,
+        "extra": 540
+      },
       "changes": {
         "changes": [
-          "cardsCode"
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.normaltime",
+          "eventState.statusIndicator"
         ],
-        "changeTimestamp": 1776807248
+        "changeTimestamp": 1776810683
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -21681,8 +21700,20 @@
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15941957,
+      "varInProgress": {
+        "homeTeam": false,
+        "awayTeam": false
+      },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1776808936,
+        "extra": 540
+      },
       "slug": "gv-san-jose-club-aurora",
       "startTimestamp": 1776808800,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -22602,9 +22633,9 @@
       },
       "customId": "aCAbsCHhd",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Libertad",
@@ -22676,14 +22707,32 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1776808790,
+        "initial": 0,
+        "max": 2700,
+        "extra": 540
+      },
       "changes": {
         "changes": [
-          "cardsCode"
+          "homeScore.period1",
+          "homeScore.normaltime",
+          "awayScore.period1",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1776806122
+        "changeTimestamp": 1776808805
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -22691,8 +22740,20 @@
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15502521,
+      "varInProgress": {
+        "homeTeam": false,
+        "awayTeam": false
+      },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1776808790,
+        "extra": 540
+      },
       "slug": "libertad-guayaquil-city",
       "startTimestamp": 1776808800,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "isEditor": false,
@@ -26529,9 +26590,14 @@
       "awayScore": {},
       "time": {},
       "changes": {
-        "changeTimestamp": 0
+        "changes": [
+          "cardsCode"
+        ],
+        "changeTimestamp": 1776810416
       },
       "hasGlobalHighlights": false,
+      "hasEventPlayerStatistics": true,
+      "hasEventPlayerHeatMap": true,
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15285699,
@@ -34343,10 +34409,11 @@
       },
       "customId": "iOsVLi",
       "status": {
-        "code": 7,
-        "description": "2nd half",
-        "type": "inprogress"
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
       },
+      "winnerCode": 1,
       "homeTeam": {
         "name": "Botafogo",
         "slug": "botafogo",
@@ -34440,16 +34507,15 @@
       "time": {
         "injuryTime1": 3,
         "injuryTime2": 7,
-        "currentPeriodStartTimestamp": 1776805558,
-        "initial": 2700,
-        "max": 5400,
-        "extra": 960
+        "currentPeriodStartTimestamp": 1776805558
       },
       "changes": {
         "changes": [
-          "time.injuryTime2"
+          "status.code",
+          "status.description",
+          "status.type"
         ],
-        "changeTimestamp": 1776808455
+        "changeTimestamp": 1776808688
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -34457,20 +34523,8 @@
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15908984,
-      "varInProgress": {
-        "homeTeam": false,
-        "awayTeam": false
-      },
-      "statusTime": {
-        "prefix": "",
-        "initial": 2700,
-        "max": 5400,
-        "timestamp": 1776805558,
-        "extra": 960
-      },
       "slug": "chapecoense-botafogo",
       "startTimestamp": 1776801600,
-      "lastPeriod": "period2",
       "finalResultOnly": false,
       "feedLocked": false,
       "cupMatchesInRound": 2,
@@ -34588,9 +34642,9 @@
       },
       "customId": "FOsGO",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "São Paulo",
@@ -34667,14 +34721,40 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1776809779,
+        "initial": 0,
+        "max": 2700,
+        "extra": 540
+      },
       "changes": {
         "changes": [
-          "cardsCode"
+          "homeScore.period1",
+          "homeScore.normaltime",
+          "awayScore.period1",
+          "awayScore.normaltime",
+          "time.currentPeriodStart",
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "awayScore.current",
+          "awayScore.display"
         ],
-        "changeTimestamp": 1776806844
+        "changeTimestamp": 1776809783
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -34682,8 +34762,20 @@
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15908977,
+      "varInProgress": {
+        "homeTeam": false,
+        "awayTeam": false
+      },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1776809779,
+        "extra": 540
+      },
       "slug": "sao-paulo-juventude",
       "startTimestamp": 1776809700,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "cupMatchesInRound": 2,
@@ -34801,9 +34893,9 @@
       },
       "customId": "rPsBtc",
       "status": {
-        "code": 0,
-        "description": "Not started",
-        "type": "notstarted"
+        "code": 6,
+        "description": "1st half",
+        "type": "inprogress"
       },
       "homeTeam": {
         "name": "Grêmio",
@@ -34880,14 +34972,32 @@
           }
         }
       },
-      "homeScore": {},
-      "awayScore": {},
-      "time": {},
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 0,
+        "normaltime": 0
+      },
+      "time": {
+        "currentPeriodStartTimestamp": 1776810728,
+        "initial": 0,
+        "max": 2700,
+        "extra": 540
+      },
       "changes": {
         "changes": [
-          "cardsCode"
+          "homeScore.period1",
+          "homeScore.normaltime",
+          "awayScore.period1",
+          "awayScore.normaltime"
         ],
-        "changeTimestamp": 1776807591
+        "changeTimestamp": 1776810827
       },
       "hasGlobalHighlights": false,
       "hasEventPlayerStatistics": true,
@@ -34895,8 +35005,20 @@
       "detailId": 1,
       "crowdsourcingDataDisplayEnabled": false,
       "id": 15908995,
+      "varInProgress": {
+        "homeTeam": false,
+        "awayTeam": false
+      },
+      "statusTime": {
+        "prefix": "",
+        "initial": 0,
+        "max": 2700,
+        "timestamp": 1776810728,
+        "extra": 540
+      },
       "slug": "gremio-confianca",
       "startTimestamp": 1776810600,
+      "lastPeriod": "period1",
       "finalResultOnly": false,
       "feedLocked": false,
       "cupMatchesInRound": 2,
